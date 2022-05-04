@@ -1,9 +1,9 @@
 function displayNav() {
   var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
+  if (!x.className.includes("responsive")) {
+    x.classList.add("responsive");
   } else {
-    x.className = "topnav";
+    x.classList.remove("responsive");
   }
 }
 
