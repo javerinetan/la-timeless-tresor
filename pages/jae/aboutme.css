@@ -118,7 +118,7 @@ section{
 }
 
 .home-bg{
-   background:linear-gradient(90deg, var(--white), transparent 70%), url(../images/home-bg.jpg) no-repeat;
+   background:linear-gradient(90deg, var(--white), transparent 50%), url(../images/abou_usimage2.jpg) no-repeat;
    background-size: cover;
    background-position: center;
 }
