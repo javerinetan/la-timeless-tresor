@@ -1,8 +1,12 @@
 .topnav {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  width: 100%;
   overflow: hidden;
   background-color: transparent;
-  padding: 0px 60px;
   box-shadow: 0px 5px 15px rgb(0 0 0 / 5%);
+  z-index: 99;
 }
 
 .sticky {
@@ -12,6 +16,14 @@
   animation: slide 0.3s ease-in-out;
 }
 
+.sticky a {
+  color: black !important;
+}
+
+.sticky button {
+  color: black !important;
+}
+
 .nav-logo {
   float: left;
   width: 100px;
@@ -19,17 +31,38 @@
 
 .nav-items {
   float: right;
-  margin-top: 20px;
+  margin-top: 25px;
+}
+
+.ti-angle-down {
+    padding-left: 0px;
+    font-size: 8px;
 }
 
 .topnav a {
   float: left;
   display: block;
-  color: black;
+  color: white;
   text-align: center;
-  padding: 14px 16px;
+  padding: 12px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.dropdown .dropbtn {
+  font-size: 13px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 12px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .topnav .icon {
@@ -42,38 +75,28 @@
   z-index: 1;
 }
 
-.dropdown .dropbtn {
-  font-size: 17px;
-  border: none;
-  outline: none;
-  color: black;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-}
-
 .dropdown-content {
   display: none;
   position: fixed;
   background-color: #f9f9f9;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+  opacity: 1;
+  animation: slide2 0.3s ease-in-out;
 }
 
 .dropdown-content a {
   float: none;
   color: black;
-  padding: 12px 16px;
+  padding: 14px 18px;
   text-decoration: none;
   display: block;
   text-align: left;
 }
 
 .topnav a:hover, .dropdown:hover .dropbtn {
-  background-color: #555;
-  color: white;
+  color: #aa8453 !important;
+  transition: all 0.25s ease-in-out;
 }
 
 .dropdown-content a:hover {
@@ -96,7 +119,16 @@
   }
 }
 
-@media screen and (max-width: 700px) {
+@keyframes slide2 {
+  0% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 900px) {
   .topnav a, .dropdown .dropbtn {
     display: none;
   }
@@ -111,9 +143,12 @@
   .nav-items {
     float: none;
   }
+  .nav-logo {
+    float: none;
+  }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
   .topnav.responsive {position: sticky;}
   .topnav.responsive .icon {
     position: relative;
