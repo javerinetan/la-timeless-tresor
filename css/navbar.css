@@ -1,7 +1,15 @@
 .topnav {
   overflow: hidden;
-  background-color: #333;
+  background-color: transparent;
   padding: 0px 60px;
+  box-shadow: 0px 5px 15px rgb(0 0 0 / 5%);
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  animation: slide 0.5s ease-in-out;
 }
 
 .nav-logo {
@@ -17,16 +25,11 @@
 .topnav a {
   float: left;
   display: block;
-  color: #f2f2f2;
+  color: black;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
-}
-
-.active {
-  background-color: #04AA6D;
-  color: white;
 }
 
 .topnav .icon {
@@ -36,13 +39,14 @@
 .dropdown {
   float: left;
   overflow: hidden;
+  z-index: 1;
 }
 
 .dropdown .dropbtn {
   font-size: 17px;
   border: none;
   outline: none;
-  color: white;
+  color: black;
   padding: 14px 16px;
   background-color: inherit;
   font-family: inherit;
@@ -81,6 +85,17 @@
   display: block;
 }
 
+@keyframes slide {
+  0% {
+    opacity: 0.5;
+    top: -50px;
+  }
+  100% {
+    opacity: 1;
+    top: 0;
+  }
+}
+
 @media screen and (max-width: 700px) {
   .topnav a, .dropdown .dropbtn {
     display: none;
@@ -88,6 +103,7 @@
   .topnav a.icon {
     float: right;
     display: block;
+    margin-top: 20px;
   }
   .topnav.responsive img {
     float: none;

@@ -1,4 +1,3 @@
-/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
 function displayNav() {
   var x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
@@ -6,4 +5,14 @@ function displayNav() {
   } else {
     x.className = "topnav";
   }
+}
+
+var navbar = document.getElementById("myTopnav");
+window.onscroll = function() {
+  if (window.pageYOffset >= 300) {
+    navbar.classList.add("sticky");
+  }
+  else {
+      navbar.classList.remove("sticky");
+    }
 }
