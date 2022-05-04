@@ -19,8 +19,10 @@ h1 {
    align-items: flex-start;
 }
 
-.heading{
-  background: url(../resources/images/hotel);
+.heading {
+  background: url(../resources/images/hotel.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .facility .box-container .box{
