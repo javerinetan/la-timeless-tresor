@@ -12,10 +12,6 @@ h1 {
   font-size: 10rem;
 }
 
-img[src*='pool'] {
-  height: 100px;
-  width: 100px;
-}
 
 .grid-container{
   display: inline-grid;
