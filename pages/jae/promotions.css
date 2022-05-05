@@ -295,8 +295,7 @@ section{
    color:var(--light-color);
 }
 
-
-/**family**/
+/**family*/
 
 .family .box-container{
    display: grid;
@@ -322,6 +321,38 @@ section{
 }
 
 .family .box-container .box p{
+   line-height: 2;
+   font-size: 1.5rem;
+   color:var(--light-color);
+}
+
+
+/**restrauant**/
+
+.restrauant .box-container{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+   gap:10rem;
+   align-items: flex-start;
+}
+
+.restrauant .box-container .box{
+   text-align: center;
+}
+
+
+.restrauant .box-container .box img{
+   height: 28rem;
+   margin-bottom: .5rem;
+}
+
+.restrauant .box-container .box h3{
+   font-size: 2rem;
+   color:var(--black);
+   margin:1rem 0;
+}
+
+.restrauant .box-container .box p{
    line-height: 2;
    font-size: 1.5rem;
    color:var(--light-color);
