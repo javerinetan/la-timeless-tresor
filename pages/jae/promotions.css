@@ -229,34 +229,34 @@ section{
 }
 
 /**golf**/
-.scooper{
+.golf{
    display: flex;
    align-items: center;
    flex-wrap: wrap;
    gap:4rem;
 }
 
-.scooper .image{
+.golf .image{
    flex:1 1 40rem;
 }
 
-.scooper .image img{
+.golf .image img{
    width: 100%;
 }
 
-.scooper .content{
+.golf .content{
    flex:1 1 40rem;
 }
 
 
-.scooper .content h3{
+.golf .content h3{
    font-size: 4.5rem;
    color:var(--black);
    font-family: 'Merienda One', cursive;
    padding-bottom: 1rem;
 }
 
-.scooper.content p{
+.golf.content p{
    padding:1rem 0;
    line-height: 2;
    color:var(--light-color);
