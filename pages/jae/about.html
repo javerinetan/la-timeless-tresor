@@ -22,37 +22,32 @@
      <section class="flex">
 
         <a href="#home" class="logo"><img src="https://cdn.discordapp.com/attachments/969863205121826816/971316617009070120/logo.png" alt=""></a>
-
-        <nav class="navbar">
-           <a href="#home">home</a>
-           <a href="#about">about</a>
-           <a href="#menu">menu</a>
-           <a href="#Awards">awards</a>
-           <a href="#team">team</a>
-           <a href="#contact">contact</a>
-        </nav>
-
+        <div class="dropdown">
+             <button class="dropbtn">About Us</button>
+               <div class="dropdown-content">
+                   <a href="#welcome">Welcome</a>
+                   <a href="#history">History</a>
+                   <a href="#signature">Signature</a>
+                   <a href="#Awards">Awards</a>
+                   <a href="#team">Team</a>
+                   <a href="#contact">Contact Us</a>
+        </div>
         <div id="menu-btn" class="fas fa-bars"></div>
+      </section>
+  <div id="menu-btn" class="fas fa-bars"></div>
 
-     </section>
-     <div id="menu-btn" class="fas fa-bars"></div>
-
-   </section>
 
 </header>
-
 <!-- header section ends -->
+<!---Welcome page-->
+<div class="welcome-bg">
 
-<!-- home section starts  -->
-
-<div class="home-bg">
-
-   <section class="home" id="home">
+   <section class="welcome" id="welcome">
 
       <div class="content">
 
-         <h3>Le Timeless Trésor</h3>
-        <center><p>A world away from the everyday, Le Timeless Trésor creates the time and space for you to rediscover the meaning of relaxation, well taken care of by our attentive yet discreet hospitality.Luxuriate in the privacy of the resort’s beachfront and over-water villas that offer an oasis just steps from the sand, or the pleasure of slipping straight from your deck into the cool, clear waters to reach your own private lagoon.</p>
+         <h3> Le Timeless Trésor</h3>
+        <p>Never feel old at timeless Trésor</p>
 
       </div>
 
@@ -60,10 +55,10 @@
 
 </div>
 
-<!-- home section ends -->
-<!-- about section starts  -->
+<!---Welcome page ends---->
 
-<section class="about" id="about">
+<!--History-->
+<section class="history" id="history">
 
    <div class="image">
       <img src="about_hotelmain.jpg" alt="">
@@ -71,18 +66,26 @@
 
    <div class="content">
       <h3>Enjoy your stay in paradise</h3>
-      <p>We offer 7 different kinds of lux room. All the rooms are specially designed by  Muji's original Art Director, Ikko Tanaka is a Japanese graphic design legend.</p>
-      <a href="#Rooms" class="btn">Our Rooms</a>
+      <p>A world away from the everyday, Le Timeless Trésor creates the
+        time and space for you to rediscover the meaning of relaxation,
+        well taken care of by our attentive yet discreet hospitality.
+        Luxuriate in the privacy of the resort’s beachfront and over-water
+        villas that offer an oasis just steps from the sand, or the pleasure
+         of slipping straight from your deck into the cool, clear waters to
+         reach your own private lagoon.
+        We offer 7 different kinds of lux room.
+        All the rooms are specially designed by
+        Muji's original Art Director, Ikko Tanaka is a Japanese graphic
+        design legend.</p>
+      <a href="#Rooms" class="btn">Book Now</a>
       <!---link this to the rooms page -->
    </div>
 
 </section>
+<!-- history  section ends -->
 
-<!-- about section ends -->
-
-<!-- facility section starts  -->
-
-<section class="facility">
+<!--signature section starts-->
+<section class="signatures" id="signature">
 
    <div class="heading">
       <img src="images/heading-img.png" alt="">
@@ -118,18 +121,10 @@
    </div>
 
 </section>
+<!-- siganture section ends -->
+<!-- Awards section starts  -->
 
-<!-- facility section ends -->
-
-
-
-
-
-
-
-<!-- gallery section starts  -->
-
-<section class="Awards" id="Awards">
+<section class="awards" id="awards">
 
    <div class="heading">
       <img src="images/heading-img.png" alt="">
@@ -147,7 +142,7 @@
 
 </section>
 
-<!-- gallery section ends -->
+<!-- awards section ends -->
 
 <!-- team section starts  -->
 
@@ -188,7 +183,6 @@
 </section>
 
 <!-- team section ends -->
-
 <!-- contact section starts  -->
 
 <section class="contact" id="contact">
@@ -207,8 +201,7 @@
       <form action="" method="post">
          <h3>For Enquires </h3>
          <input type="text" name="name" required class="box" maxlength="20" placeholder="enter your name">
-         <input type="number" name="number" required class="box" maxlength="20" placeholder="enter your number" min="0" max="9999999999" onkeypress="if(this.value.length == 10) return false">
-         <input type="number" name="guests" required class="box" maxlength="20" placeholder="how many guests" min="0" max="99" onkeypress="if(this.value.length == 2) return false">
+         <input type="number" name="number" required class="box" maxlength="20" placeholder="enter your phone number" min="0" max="9999999999" onkeypress="if(this.value.length == 10) return false">
          <input type="email" name="email"required class="box" maxlengt required class="box" maxlength="20" placeholder="enter your email">
          <input type="enquire" name="enquire" required class="box" maxlengt required class="box" maxlength="50" placeholder="What is your enquire?">
          <input type="submit" name="send" value="send message" class="btn">
@@ -229,14 +222,14 @@
       <div class="box">
          <i class="fas fa-envelope"></i>
          <h3>our email</h3>
-         <p>javerinetan@gmail.com</p>
-         <p>amber@gmail.com</p>
+         <p>letimelesstrésor@resort.com</p>
+
       </div>
 
       <div class="box">
          <i class="fas fa-clock"></i>
-         <h3>opening hours</h3>
-         <p>24 hours</p>
+         <h3>Counter opening hours </h3>
+         <p>8am-8pm</p>
       </div>
 
       <div class="box">
@@ -249,7 +242,6 @@
          <i class="fas fa-phone"></i>
          <h3>Our number</h3>
          <p>+6598362352</p>
-         <p>+6588031454</p>
       </div>
 
    </div>
