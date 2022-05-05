@@ -11,10 +11,19 @@ body {
   transition: all 0.5s ease-in-out;
 }
 
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 1200px) {
   .container {
     padding-right: 50px;
     padding-left: 50px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    padding-right: 30px;
+    padding-left: 30px;
     margin-right: auto;
     margin-left: auto;
   }
