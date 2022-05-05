@@ -129,7 +129,7 @@
 .dropdown-content a {
   float: none;
   color: black;
-  padding: 14px 30px;
+  padding: 14px 18px;
   font-size: 12px;
   text-decoration: none;
   display: block;
@@ -209,6 +209,12 @@
     text-align: left;
 		border: none;
   }
+	.topnav.responsive .dropdown-content a {
+		padding: 14px 35px;
+	}
+	.topnav.responsive .active {
+		margin: 0 !important;
+	}
   .topnav.responsive .dropdown {float: none;}
   .topnav.responsive .dropdown-content {position: sticky;}
 	.topnav.responsive .nav-items {display: block; animation: fade 0.5s}
