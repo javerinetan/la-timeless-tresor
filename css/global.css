@@ -4,6 +4,11 @@
    src: URL('../fonts/LibreBodoni-Regular.ttf') format('truetype');
  }
 
+ @font-face {
+   font-family: 'LibreBodoni-Italic';
+   src: URL('../fonts/LibreBodoni-Italic.ttf') format('truetype');
+ }
+
 body {
   margin: 0;
 }
@@ -16,7 +21,7 @@ body {
   transition: all 0.5s ease-in-out;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1400px) {
   .container {
     padding-right: 50px;
     padding-left: 50px;

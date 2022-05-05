@@ -38,8 +38,8 @@
 
 .active {
 	border: 2px solid #aa8453;
-	padding: 10px 15px !important;
-	margin: 0px 15px;
+	padding: 10px 14px !important;
+	margin: 0px 14px;
 	transition: all 0.25s ease-in-out;
 }
 
@@ -87,7 +87,7 @@
   display: block;
   color: white;
   text-align: center;
-  padding: 12px 15px;
+  padding: 12px 14px;
   text-decoration: none;
   font-size: 13px;
   text-transform: uppercase;
@@ -99,7 +99,7 @@
   border: none;
   outline: none;
   color: white;
-  padding: 12px 15px;
+  padding: 12px 14px;
   background-color: inherit;
   font-family: inherit;
   margin: 0;
@@ -174,7 +174,7 @@
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1300px) {
   .topnav a, .dropdown .dropbtn {
     display: none;
   }
@@ -197,7 +197,7 @@
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1300px) {
   .topnav.responsive {position: sticky;}
   .topnav.responsive .icon {
     position: relative;
@@ -208,6 +208,7 @@
     display: block;
     text-align: left;
 		border: none;
+		margin: 0 !important;
   }
   .topnav.responsive .dropdown {float: none;}
   .topnav.responsive .dropdown-content {position: sticky;}
