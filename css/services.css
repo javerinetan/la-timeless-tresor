@@ -7,7 +7,7 @@
    --light-color:#666666;
    --border:.2rem solid var(--black);
    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
-
+   --extra: #8c735c;
 }
 
 *{
@@ -180,12 +180,12 @@ section{
    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
    gap:1.5rem;
    align-items: flex-start;
-   margin-left: auto;
-   margin-right: auto;
 }
 
 .services .box-container .box{
    text-align: center;
+   margin-left: auto;
+   margin-right: auto;
 }
 
 
@@ -207,57 +207,8 @@ section{
    color:var(--light-color);
 }
 
-.menu .box-container{
-   display: grid;
-   grid-template-columns: repeat(auto-fit, 30rem);
-   gap:2rem;
-   align-items: flex-start;
-   justify-content: center;
-}
-
-.menu .box-container .box{
-   text-align: center;
-}
-
-.menu .box-container .box img{
-   width: 100%;
-   margin-bottom: 1rem;
-}
-
-.menu .box-container .box h3{
-   font-size: 2rem;
-   color:var(--black);
-}
-
-
-.contact .row .image{
-   flex:1 1 50rem;
-}
-
-.contact .row .image img{
-   width: 100%;
-}
-
-.contact .row form{
-   flex:1 1 30rem;
-   border:var(--border);
-   padding:2rem;
-   text-align: center;
-}
-
-.contact .row form h3{
-   font-size: 2.5rem;
-   margin-bottom: 1rem;
-   color:var(--black);
-}
-
-.contact .row form .box{
-   width: 100%;
-   padding:1.4rem;
-   font-size: 1.8rem;
-   color:var(--black);
-   border:var(--border);
-   margin:1rem 0;
+.footer{
+  background-color: #ccc6bb
 }
 
 .footer .box-container{
@@ -265,6 +216,11 @@ section{
    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
    gap:1.5rem;
    align-items: flex-start;
+}
+
+.footer .heading h3{
+  font-family: 'Libre Bodoni', serif;
+  font-size: 2.7rem;
 }
 
 .footer .box-container .box{
@@ -277,7 +233,7 @@ section{
    height: 6rem;
    width: 6rem;
    border-radius: 50%;
-   background-color: var(--main-color);
+   background-color: var(--extra);
    color:var(--white);
    margin-bottom: 1rem;
 }
@@ -286,6 +242,7 @@ section{
    margin:1rem 0;
    font-size: 2rem;
    color:var(--black);
+   font-family: 'Libre Bodoni', serif;
 }
 
 .footer .box-container .box p{
@@ -294,19 +251,7 @@ section{
    color:var(--light-color);
 }
 
-.footer .credit{
-   text-align: center;
-   margin-top: 3rem;
-   padding-top: 2.5rem;
-   border-top: var(--border);
-   font-size: 2rem;
-   color:var(--black);
-   /* padding-bottom: 7rem; */
-}
 
-.footer .credit span{
-   color:var(--main-color);
-}
 
 
 
