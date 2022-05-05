@@ -66,12 +66,12 @@
 
 .nav-logo {
   float: left;
-  width: 100px;
+  width: 220px;
 }
 
 .nav-items {
   float: right;
-  margin-top: 25px;
+  margin-top: 15px;
 }
 
 .ti-angle-down {
@@ -178,7 +178,7 @@
   .topnav a.icon {
     float: right;
     display: block;
-    margin-top: 20px;
+    margin-top: 10px;
   }
   .topnav.responsive img {
     float: none;
