@@ -39,6 +39,7 @@
 .active {
 	border: 2px solid #aa8453;
 	padding: 10px 15px !important;
+	margin: 0px 15px;
 	transition: all 0.25s ease-in-out;
 }
 
