@@ -294,3 +294,35 @@ section{
    font-size: 1.5rem;
    color:var(--light-color);
 }
+
+
+/**family**/
+
+.family .box-container{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+   gap:10rem;
+   align-items: flex-start;
+}
+
+.family .box-container .box{
+   text-align: center;
+}
+
+
+.family .box-container .box img{
+   height: 28rem;
+   margin-bottom: .5rem;
+}
+
+.family .box-container .box h3{
+   font-size: 2rem;
+   color:var(--black);
+   margin:1rem 0;
+}
+
+.family .box-container .box p{
+   line-height: 2;
+   font-size: 1.5rem;
+   color:var(--light-color);
+}
