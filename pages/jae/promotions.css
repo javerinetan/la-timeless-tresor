@@ -327,33 +327,139 @@ section{
 }
 
 
-/**restrauant**/
 
-.restrauant .box-container{
+
+
+
+
+
+.footer .box-container{
    display: grid;
    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
-   gap:10rem;
+   gap:1.5rem;
    align-items: flex-start;
 }
 
-.restrauant .box-container .box{
+.footer .box-container .box{
    text-align: center;
 }
 
-
-.restrauant .box-container .box img{
-   height: 28rem;
-   margin-bottom: .5rem;
+.footer .box-container .box i{
+   font-size: 2.5rem;
+   line-height: 6rem;
+   height: 6rem;
+   width: 6rem;
+   border-radius: 50%;
+   background-color: var(--extra);
+   color:var(--white);
+   margin-bottom: 1rem;
 }
-
-.restrauant .box-container .box h3{
+.footer .box-container .box h3{
+   margin:1rem 0;
    font-size: 2rem;
    color:var(--black);
-   margin:1rem 0;
 }
 
-.restrauant .box-container .box p{
+.footer .box-container .box p{
    line-height: 2;
-   font-size: 1.5rem;
+   font-size: 1.6rem;
    color:var(--light-color);
+}
+
+.footer .credit{
+   text-align: center;
+   margin-top: 3rem;
+   padding-top: 2.5rem;
+   border-top: var(--border);
+   font-size: 2rem;
+   color:var(--black);
+   /* padding-bottom: 7rem; */
+}
+
+.footer .credit span{
+   color:var(--main-color);
+}
+.footer{
+  background-color: #ccc6bb
+}
+
+
+
+
+
+
+
+
+/* media queries  */
+
+@media (max-width:991px){
+
+   html{
+      font-size: 55%;
+   }
+
+}
+
+@media (max-width:768px){
+
+   #menu-btn{
+      display: inline-block;
+      transition: .2s linear;
+   }
+
+   #menu-btn.fa-times{
+      transform: rotate(180deg);
+   }
+
+   .header .flex .navbar{
+      position: absolute;
+      top:99%; left:0; right:0;
+      background-color: var(--white);
+      border-top: var(--border);
+      border-bottom: var(--border);
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+      transition: .2s linear;
+   }
+
+   .header .flex .navbar.active{
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+   }
+
+   .header .flex .navbar a{
+      display: block;
+      margin:2rem;
+   }
+
+   .home-bg{
+      background-position: left;
+   }
+
+   .home-bg .home{
+      justify-content: center;
+   }
+
+   .home-bg .home .content h3{
+      font-size: 4rem;
+   }
+
+   .about .content h3{
+      font-size: 3rem;
+   }
+
+}
+
+@media (max-width:450px){
+
+   html{
+      font-size: 50%;
+   }
+
+   .heading img{
+      height: 3rem;
+   }
+
+   .heading h3{
+      font-size: 3rem;
+   }
+
 }
