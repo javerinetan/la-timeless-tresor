@@ -4,14 +4,14 @@ body {
 }
 
 .container {
-  padding-right: 120px;
-  padding-left: 120px;
+  padding-right: 100px;
+  padding-left: 100px;
   margin-right: auto;
   margin-left: auto;
   transition: all 0.5s ease-in-out;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1250px) {
   .container {
     padding-right: 50px;
     padding-left: 50px;
