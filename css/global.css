@@ -1,4 +1,9 @@
  /* Global CSS for all the pages */
+ @font-face {
+   font-family: 'LibreBodoni-Regular';
+   src: URL('../fonts/LibreBodoni-Regular.ttf') format('truetype');
+ }
+
 body {
   margin: 0;
 }
