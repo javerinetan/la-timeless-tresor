@@ -262,3 +262,35 @@ section{
    color:var(--light-color);
    font-size: 1.5rem;
 }
+
+
+/**couples**/
+
+.couple .box-container{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+   gap:10rem;
+   align-items: flex-start;
+}
+
+.couple .box-container .box{
+   text-align: center;
+}
+
+
+.couple .box-container .box img{
+   height: 28rem;
+   margin-bottom: .5rem;
+}
+
+.couple .box-container .box h3{
+   font-size: 2rem;
+   color:var(--black);
+   margin:1rem 0;
+}
+
+.couple .box-container .box p{
+   line-height: 2;
+   font-size: 1.5rem;
+   color:var(--light-color);
+}
