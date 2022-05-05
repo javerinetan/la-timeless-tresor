@@ -8,6 +8,7 @@
    --border:.2rem solid var(--black);
    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
    --extra: #8c735c;
+   --try: #e2d5c5;
 }
 
 *{
@@ -350,31 +351,53 @@ section{
 
 /* ferryschedule*/
 
-.ferrytable h3{
-  font-size: 2.5rem;
-  font-family: 'Libre Bodoni', serif;
-}
-
-.ferrytable section{
-  max-width: 1190px;
-  padding: 3rem 2rem;
-}
 
 table,td {
   border: 1px solid;
-  border-color: var(--black);
+  border-collapse: collapse;
 }
 
 table{
   margin-left: auto;
   margin-right: auto;
   table-layout:fixed;
-  float: left;
   width:50%;
+  background-color: var(--try)
 }
 
 td{
   font-size: 1.5rem;
   text-align: center;
   width: 50%;
+  line-height: 30px;
+  font-weight: normal;
+}
+
+h2{
+  font-size: 2.5rem;
+  font-family: 'Libre Bodoni', serif;
+  margin-left: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+.backferry .hotel{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap:1rem;
+  align-items: flex-start;
+}
+
+.ferrytable .hotel{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap:1rem;
+  align-items: flex-start;
+}
+
+.bus .hotel{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap:1rem;
+  align-items: flex-start;
 }
