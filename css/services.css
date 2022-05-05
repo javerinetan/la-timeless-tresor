@@ -46,7 +46,7 @@ html{
 
 section{
    padding:3rem 2rem;
-   max-width: 1200px;
+   max-width: 1270px;
    margin:0 auto;
 }
 
@@ -63,7 +63,7 @@ section{
 .heading h3{
    font-size:4rem;
    color:var(--black);
-   font-family: 'Merienda One', cursive;
+   font-family: 'Libre Bodoni', serif;
 }
 
 .btn{
@@ -122,8 +122,8 @@ section{
    background:linear-gradient(90deg, var(--white), transparent 0%), url(../resources/images/hotel2.jpg) no-repeat;
    background-size: cover;
    background-position: center;
-   height: auto;
-   width: 1200px;
+   height: 400px;
+   width: 1270px;
    text-align: center;
 }
 
@@ -134,11 +134,11 @@ section{
 }
 
 .home-bg .home .content{
-   width: 600px;
+   max-width: 80%;
    text-align: center;
    margin-left: auto;
    margin-right: auto;
-   margin-top: 200px;
+   margin-top: 90px;
 }
 
 .home-bg .home .content h2{
@@ -186,6 +186,18 @@ section{
    text-align: center;
    margin-left: auto;
    margin-right: auto;
+}
+
+.services .box-container .box button{
+  background-color: var(--main-color);
+  border-radius: 8px
+}
+
+.services .box-container .box a {
+  color: var(--white);
+  line-height: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 
@@ -334,4 +346,35 @@ section{
       font-size: 3rem;
    }
 
+}
+
+/* ferryschedule*/
+
+.ferrytable h3{
+  font-size: 2.5rem;
+  font-family: 'Libre Bodoni', serif;
+}
+
+.ferrytable section{
+  max-width: 1190px;
+  padding: 3rem 2rem;
+}
+
+table,td {
+  border: 1px solid;
+  border-color: var(--black);
+}
+
+table{
+  margin-left: auto;
+  margin-right: auto;
+  table-layout:fixed;
+  float: left;
+  width:50%;
+}
+
+td{
+  font-size: 1.5rem;
+  text-align: center;
+  width: 50%;
 }
