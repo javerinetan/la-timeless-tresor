@@ -48,8 +48,8 @@ html{
 }
 
 section{
-   padding:3rem 2rem;
-   max-width: 1270px;
+   padding: 3rem 0rem;
+   max-width: 1300px;
    margin:0 auto;
 }
 
@@ -127,6 +127,10 @@ section{
    margin-left: auto;
    margin-right: auto;
    text-align: center;
+}
+
+.services{
+  padding: 2.5rem;
 }
 
 .services .box-container{
@@ -296,7 +300,9 @@ section{
 }
 
 /* ferryschedule*/
-
+.ferrytable{
+  padding: 2rem;
+}
 
 table,td {
   border: 1px solid;
