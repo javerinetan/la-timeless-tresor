@@ -25,6 +25,31 @@
  	text-transform: none;
  	line-height: 1;
 
+  :root{
+     --main-color:#be9c79;
+     --black: #000000;
+     --white:#ffffff;
+     --light-color:#666666;
+     --border:.2rem solid var(--black);
+     --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+     --extra: #8c735c;
+     --try: #e2d5c5;
+     --bottom: #ccc6bb;
+  }
+
+  ::-webkit-scrollbar{
+     height: .5rem;
+     width: 1rem;
+  }
+
+  ::-webkit-scrollbar-track{
+     background-color: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb{
+     background-color: var(--main-color);
+  }
+
  	/* Better Font Rendering =========== */
  	-webkit-font-smoothing: antialiased;
  	-moz-osx-font-smoothing: grayscale;

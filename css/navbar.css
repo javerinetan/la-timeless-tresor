@@ -1,6 +1,6 @@
 .topnav {
   position: absolute;
-	font-family: 'LibreBodoni-Regular';
+	font-family: 'LibreBodoni-Regular' !important;
   left: 0;
   top: 0;
   width: 100%;

@@ -12,7 +12,11 @@
  }
 
  *{
+<<<<<<< HEAD:css/aboutme.css
     font-family: 'Nunito', sans-serif;
+=======
+
+>>>>>>> 6b4c0f59228cdfc33525e0bc80a94f8a6904d5ff:pages/jae/aboutme.css
     margin:0; padding:0;
     box-sizing: border-box;
     outline: none; border:none;
@@ -38,6 +42,7 @@
     background-color: var(--main-color);
  }
 
+<<<<<<< HEAD:css/aboutme.css
 
  html{
     font-size: 62.5%;
@@ -119,10 +124,97 @@
     font-size: 2.5rem;
     color:var(--black);
     cursor: pointer;
+=======
+
+ html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6.5rem;
+ }
+
+ section{
+    padding:3rem 2rem;
+    max-width: 1200px;
+    margin:0 auto;
+ }
+
+ .heading{
+    text-align: center;
+    margin-bottom: 3rem;
+ }
+
+ .heading img{
+    height: 4rem;
+    margin-bottom: 1rem;
+ }
+
+ .heading h3{
+    font-size:4rem;
+    color:var(--black);
+    font-family: 'Merienda One', cursive;
+ }
+
+ .btn{
+    display: inline-block;
+    margin-top: 1rem;
+    background-color: var(--main-color);
+    cursor: pointer;
+    color:var(--white);
+    font-size: 1.8rem;
+    padding:1rem 3rem;
+ }
+
+ .btn:hover{
+    background-color: var(--black);
+>>>>>>> 6b4c0f59228cdfc33525e0bc80a94f8a6904d5ff:pages/jae/aboutme.css
+ }
+
+ .header{
+    position: sticky;
+    top:0; left: 0; right:0;
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+    z-index: 1000;
+ }
+
+<<<<<<< HEAD:css/aboutme.css
+
+=======
+ .header .flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding:1.5rem 2rem;
+ }
+
+ .header .flex .logo img{
+    height: 13rem;
+ }
+
+ .header .flex .navbar a{
+    margin-left: 2rem;
+    font-size: 2rem;
+    color:var(--black);
+ }
+
+ .header .flex .navbar a:hover{
+    text-decoration: underline;
+    color:var(--main-color);
+ }
+
+
+ #menu-btn{
+    display: none;
+    font-size: 2.5rem;
+    color:var(--black);
+    cursor: pointer;
  }
 
 
 
+>>>>>>> 6b4c0f59228cdfc33525e0bc80a94f8a6904d5ff:pages/jae/aboutme.css
 
 
 
@@ -131,7 +223,11 @@
 
 /*welcome page*/
 .welcome-bg{
+<<<<<<< HEAD:css/aboutme.css
    background:linear-gradient(90deg, var(--white), transparent 0%), url("../resources/images/about_hotelmain.jpg") no-repeat;
+=======
+   background:linear-gradient(90deg, var(--white), transparent 60%), url("../resources/images/about_hotelmain.jpg") no-repeat;
+>>>>>>> 6b4c0f59228cdfc33525e0bc80a94f8a6904d5ff:pages/jae/aboutme.css
    background-size: cover;
    background-position: center;
 }
