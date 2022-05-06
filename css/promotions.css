@@ -63,7 +63,7 @@ section{
 
 .heading h3{
    font-size:4rem;
-   color:var(--white);
+   color:var(--black);
    font-family: 'Merienda One', cursive;
 }
 
@@ -124,16 +124,12 @@ section{
 
 /*welcome page*/
 .promotions-bg{
-<<<<<<< HEAD:css/promotions.css
-   background:linear-gradient(90deg, var(--white), transparent 0%), url('../resources/images/promotions_1.png') no-repeat;
-=======
-   background:linear-gradient(90deg, var(--white), transparent 80%), url('../resources/images/promotions_1.png') no-repeat;
->>>>>>> 6b4c0f59228cdfc33525e0bc80a94f8a6904d5ff:pages/jae/promotions.css
+   background:linear-gradient(90deg, var(--white), transparent 0%), url('../resources/images/pro2.jpg') no-repeat;
    background-size: cover;
    background-position: center;
 }
 
-.promotions-bg .welcome{
+.promotions-bg .promotions{
    min-height: 70rem;
    display: flex;
    align-items: center;
@@ -147,14 +143,14 @@ section{
 
 .promotions-bg .promotions .content h3{
    font-size: 6rem;
-   color:var(--black);
+   color:var(--white);
    font-family: 'Merienda One', cursive;
 }
 
 .promotions-bg .promotions .content p{
    padding:1rem 0;
    font-size: 1.6rem;
-   color:var(--black);
+   color:var(--white);
    line-height: 2;
 }
 /**attraction scooper**/
