@@ -12,42 +12,80 @@
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400;1,400;1,700&display=swap" rel="stylesheet">
    <!-- custom css file link  -->
-   <link rel="stylesheet" href="aboutme.css">
+   <link rel="stylesheet" href="../css/aboutme.css">
 
+<link rel="stylesheet" href="../css/navbar.css">
+<link rel="stylesheet" href="../css/global.css">
 </head>
+
 <body>
+  <nav class="topnav" id="myTopnav">
+     <div class="container">
+       <a href="index.html" style="padding:0; display:inline">
+         <img src="../resources/images/logov2_white.png" alt="Logo" class="nav-logo" id="navLogo">
+       </a>
+       <a href="javascript:void(0);" style="font-size:18px;margin-top: 10px;" class="icon" onclick="displayNav()">&#9776;</a>
+       <div class="nav-items">
+         <div class="dropdown">
+           <button class="dropbtn">The Resort
+             <i class="ti-angle-down"></i>
+           </button>
+           <div class="dropdown-content">
+             <a href="#">Overview<i class="ti-angle-right"></i></a>
+             <a href="#">Accomodations<i class="ti-angle-right"></i></a>
+             <a href="#">Facilities<i class="ti-angle-right"></i></a>
+             <a href="#">Services<i class="ti-angle-right"></i></a>
+           </div>
+         </div>
+         <div class="dropdown">
+           <button class="dropbtn">Dining
+             <i class="ti-angle-down"></i>
+           </button>
+           <div class="dropdown-content">
+             <a href="#">The Restaurant<i class="ti-angle-right"></i></a>
+             <a href="#">Reservation<i class="ti-angle-right"></i></a>
+             <a href="#">Ordering<i class="ti-angle-right"></i></a>
+           </div>
+         </div>
+         <div class="dropdown">
+           <button class="dropbtn">Events & Promotions
+             <i class="ti-angle-down"></i>
+           </button>
+           <div class="dropdown-content">
+             <a href="#news">Events<i class="ti-angle-right"></i></a>
+             <a href="#contact">Promotions<i class="ti-angle-right"></i></a>
+           </div>
+         </div>
+         <div class="dropdown">
+           <button class="dropbtn">Gallery
+             <i class="ti-angle-down"></i>
+           </button>
+           <div class="dropdown-content">
+             <a href="#welcome">Welcome<i class="ti-angle-right"></i></a>
+             <a href="#history">History<i class="ti-angle-right"></i></a>
+             <a href="#signature">Signature<i class="ti-angle-right"></i></a>
+             <a href="#Awards">Awards<i class="ti-angle-right"></i></a>
+             <a href="#team">Team<i class="ti-angle-right"></i></a>
+             <a href="#contact">Contact<i class="ti-angle-right"></i></a>
+           </div>
+         </div>
+         <a href="#contact">Contact</a>
+         <a href="#home" class="active">Book Now</a>
+         <div class="dropdown">
+           <button class="dropbtn"><img src="../resources/images/user_white.png" alt="account" id="account" width="18px">
+             <i class="ti-angle-down"></i>
+           </button>
+           <div class="dropdown-content" style="min-width:120px">
+             <a href="#">Log In<i class="ti-angle-right"></i></a>
+             <a href="#">Sign Up<i class="ti-angle-right"></i></a>
+           </div>
+         </div>
+       </div>
+     </div>
+     <script src="../js/nav.js"></script>
+   </nav>
   <!-- header section starts  -->
-  <header class="header">
 
-     <section class="flex">
-
-        <a href="#home" class="logo"><img src="https://cdn.discordapp.com/attachments/969863205121826816/971316617009070120/logo.png" alt=""></a>
-        <div class="dropdown">
-             <button class="dropbtn">About Us</button>
-               <div class="dropdown-content">
-                   <a href="#welcome">Welcome</a>
-                   <a href="#history">History</a>
-                   <a href="#signature">Signature</a>
-                   <a href="#Awards">Awards</a>
-                   <a href="#team">Team</a>
-                   <a href="#contact">Contact Us</a>
-        </div>
-
-        <div class="dropdown">
-             <button class="dropbtn">Promotions</button>
-               <div class="dropdown-content">
-                   <a href="#attractions">Attractions</a>
-                   <a href="#couples">Couple</a>
-                   <a href="#family">Family</a>
-                  
-        </div>
-
-        <div id="menu-btn" class="fas fa-bars"></div>
-      </section>
-  <div id="menu-btn" class="fas fa-bars"></div>
-
-
-</header>
 <!-- header section ends -->
 <!---Welcome page-->
 <div class="welcome-bg">
@@ -71,7 +109,7 @@
 <section class="history" id="history">
 
    <div class="image">
-      <img src="about_hotelmain.jpg" alt="">
+      <img src="../resources/images/ab2.webp" alt="">
    </div>
 
    <div class="content">
@@ -106,19 +144,19 @@
    <div class="box-container">
 
       <div class="box">
-         <img src="images/icon-1.png" alt="">
+         <img src="../resources/images/clean.png" alt="">
          <h3>Cleaniness </h3>
          <p>Our rooms are cleaned to perfection. All items have been throughly saintized before your stay. So you can put your mind at ease while staying with us .</p>
       </div>
 
       <div class="box">
-         <img src="images/icon-2.png" alt="">
+         <img src="../resources/images/as1.png" alt="">
          <h3>Asthetic Interior </h3>
          <p>Our interior is designed by Neo Culture Technology and arts firm. </p>
       </div>
 
       <div class="box">
-         <img src="images/icon-3.png" alt="">
+         <img src="../resources/images/break1.png" alt="">
          <h3>Breakfast</h3>
          <p>Air flown from france to you. Only serve best of the best. </p>
       </div>

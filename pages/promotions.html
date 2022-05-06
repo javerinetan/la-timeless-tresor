@@ -12,41 +12,78 @@
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400;1,400;1,700&display=swap" rel="stylesheet">
    <!-- custom css file link  -->
-   <link rel="stylesheet" href="promotions.css">
+   <link rel="stylesheet" href="../css/promotions.css">
    <link href="about.html">
+   <link rel="stylesheet" href="../css/navbar.css">
+   <link rel="stylesheet" href="../css/global.css">
 </head>
 <body>
   <!-- Promotions header section starts  -->
-  <header class="header">
-
-     <section class="flex">
-
-        <a href="#home" class="logo"><img src="https://cdn.discordapp.com/attachments/969863205121826816/971316617009070120/logo.png" alt=""></a>
-        <div class="dropdown">
-             <button class="dropbtn">About Us</button>
-               <div class="dropdown-content">
-                   <a href="#welcome">Welcome</a>
-                   <a href="#history">History</a>
-                   <a href="#signature">Signature</a>
-                   <a href="#Awards">Awards</a>
-                   <a href="#team">Team</a>
-                   <a href="#contact">Contact Us</a>
-        </div>
-
-        <div class="dropdown">
-             <button class="dropbtn">Promotions</button>
-               <div class="dropdown-content">
-                   <a href="#attractions">Attractions</a>
-                   <a href="#couples">Couple</a>
-                   <a href="#family">Family</a>
-
-        </div>
-        <div id="menu-btn" class="fas fa-bars"></div>
-      </section>
-  <div id="menu-btn" class="fas fa-bars"></div>
-
-
-</header>
+  <nav class="topnav" id="myTopnav">
+     <div class="container">
+       <a href="index.html" style="padding:0; display:inline">
+         <img src="../resources/images/logov2_white.png" alt="Logo" class="nav-logo" id="navLogo">
+       </a>
+       <a href="javascript:void(0);" style="font-size:18px;margin-top: 10px;" class="icon" onclick="displayNav()">&#9776;</a>
+       <div class="nav-items">
+         <div class="dropdown">
+           <button class="dropbtn">The Resort
+             <i class="ti-angle-down"></i>
+           </button>
+           <div class="dropdown-content">
+             <a href="#">Overview<i class="ti-angle-right"></i></a>
+             <a href="#">Accomodations<i class="ti-angle-right"></i></a>
+             <a href="#">Facilities<i class="ti-angle-right"></i></a>
+             <a href="#">Services<i class="ti-angle-right"></i></a>
+           </div>
+         </div>
+         <div class="dropdown">
+           <button class="dropbtn">Dining
+             <i class="ti-angle-down"></i>
+           </button>
+           <div class="dropdown-content">
+             <a href="#">The Restaurant<i class="ti-angle-right"></i></a>
+             <a href="#">Reservation<i class="ti-angle-right"></i></a>
+             <a href="#">Ordering<i class="ti-angle-right"></i></a>
+           </div>
+         </div>
+         <div class="dropdown">
+           <button class="dropbtn">Events & Promotions
+             <i class="ti-angle-down"></i>
+           </button>
+           <div class="dropdown-content">
+             <a href="#news">Events<i class="ti-angle-right"></i></a>
+             <a href="#contact">Promotions<i class="ti-angle-right"></i></a>
+           </div>
+         </div>
+         <div class="dropdown">
+           <button class="dropbtn">Gallery
+             <i class="ti-angle-down"></i>
+           </button>
+           <div class="dropdown-content">
+             <a href="#welcome">Welcome<i class="ti-angle-right"></i></a>
+             <a href="#history">History<i class="ti-angle-right"></i></a>
+             <a href="#signature">Signature<i class="ti-angle-right"></i></a>
+             <a href="#Awards">Awards<i class="ti-angle-right"></i></a>
+             <a href="#team">Team<i class="ti-angle-right"></i></a>
+             <a href="#contact">Contact<i class="ti-angle-right"></i></a>
+           </div>
+         </div>
+         <a href="#contact">Contact</a>
+         <a href="#home" class="active">Book Now</a>
+         <div class="dropdown">
+           <button class="dropbtn"><img src="../resources/images/user_white.png" alt="account" id="account" width="18px">
+             <i class="ti-angle-down"></i>
+           </button>
+           <div class="dropdown-content" style="min-width:120px">
+             <a href="#">Log In<i class="ti-angle-right"></i></a>
+             <a href="#">Sign Up<i class="ti-angle-right"></i></a>
+           </div>
+         </div>
+       </div>
+     </div>
+     <script src="../js/nav.js"></script>
+   </nav>
 <!-- header section ends -->
 
 <!---Welcome page-->
@@ -102,7 +139,7 @@
   </div>
 
   <div class="image">
-     <img src="https://robbreport.com/wp-content/uploads/2019/07/big-cedar-lodge-gpc_hole11_nosprinklers.jpg?w=1000 alt="">
+     <img src="https://robbreport.com/wp-content/uploads/2019/07/big-cedar-lodge-gpc_hole11_nosprinklers.jpg?w=1000" alt="">
   </div>
 </section>
 
@@ -118,7 +155,7 @@
    <div class="box-container">
 
       <div class="box">
-         <img src="rg3.png" alt="" >
+         <img src="../resources/images/rg3.png" alt="" >
          <h3> MOMENTS TO REMEMBER </h3>
          <p>Enjoy the celebration. Leave the rest to us. Limousine pickup to Le Timeless Trésor and enjoy a 3-course
            romantic dinner for two adults at le meilleur resto with welcome birthday
@@ -127,7 +164,7 @@
       </div>
 
       <div class="box">
-         <img src="rg1.png" alt="">
+         <img src="../resources/images/rg1.png" alt="">
          <h3>502 </h3>
          <p> Enjoy your 2 night 3 days in our specially design couple room by Chanel. Decorations deisgn to fit the romatic night.
            A couple dinner package set just for you two under the night sky with a
@@ -136,7 +173,7 @@
       </div>
 
       <div class="box">
-         <img src="rg2.png" alt="">
+         <img src="../resources/images/rg2.png" alt="">
          <h3> Dar+ling </h3>
          <p> Adventure couple? We have just the right thing for you! Scooper diving and hike La Baie Classique mountain.
             Enjoy your 3 night 4 day in our couple theme room with compliementary spa.</p>
@@ -163,7 +200,7 @@
 
 
       <div class="box">
-         <img src="pr1.png" alt="">
+         <img src="../resources/images/pr1.png" alt="">
          <h3> Fantastic 4 </h3>
             <h4>4 pax</h4>
          <p> $400 per night </p>
@@ -177,7 +214,7 @@
       </div>
 
       <div class="box">
-         <img src="pr2.png" alt="">
+         <img src="../resources/images/pr2.png" alt="">
          <h3> Shiok lah! </h3>
           <h4>6 pax</h4>
          <p> $600 per night .</p>
@@ -191,7 +228,7 @@
 
 
       <div class="box">
-         <img src="pr5.png" alt="">
+         <img src="../resources/images/pr5.png" alt="">
          <h3> Supreme Family Package  </h3>
           <h4>13 pax</h4>
          <p> $888 per night </p>
@@ -207,7 +244,7 @@
 
 
 
-<!-- footer  section ends -->
+<!-- footer section starts  -->
 
 <section class="footer">
 
