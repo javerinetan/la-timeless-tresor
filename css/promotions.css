@@ -164,7 +164,7 @@ section{
 
 /*welcome page*/
 .promotions-bg{
-   background:linear-gradient(90deg, var(--white), transparent 80%), url('promotions_1.png') no-repeat;
+   background:linear-gradient(90deg, var(--white), transparent 80%), url('../resources/images/promotions_1.png') no-repeat;
    background-size: cover;
    background-position: center;
 }
