@@ -1,35 +1,10 @@
-@font-face {
-	font-family: 'themify';
-	src:url('../fonts/themify.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
-}
-
-[class^="ti-"], [class*=" ti-"] {
-	font-family: 'themify';
-	speak: none;
-	font-style: normal;
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	line-height: 1;
-
-	/* Better Font Rendering =========== */
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-}
-
-.ti-angle-down:before {
-	content: "\e64b";
-}
-
 .topnav {
   position: absolute;
 	font-family: 'LibreBodoni-Regular';
   left: 0;
   top: 0;
   width: 100%;
-	padding: 20px 0;
+	padding: 15px 0;
   overflow: hidden;
   background-color: transparent;
   box-shadow: 0px 5px 15px rgb(0 0 0 / 5%);
@@ -38,6 +13,7 @@
 
 .active {
 	border: 2px solid #aa8453;
+	border-radius: 4px;
 	padding: 10px 14px !important;
 	margin: 0px 14px;
 	transition: all 0.25s ease-in-out;
@@ -74,12 +50,26 @@
 
 .nav-items {
   float: right;
-  margin-top: 15px;
+  margin-top: 12px;
 }
 
 .ti-angle-down {
     padding-left: 0px;
     font-size: 8px;
+}
+
+.ti-angle-right {
+	opacity: 0;
+	color: #aa8453;
+	padding-left: 2px;
+	font-size: 10px;
+	font-weight: bold;
+	transition: all 0.3s ease-in-out;
+}
+
+.dropdown-content a:hover .ti-angle-right {
+  opacity: 1;
+	padding-left: 5px;
 }
 
 .topnav a {
@@ -92,6 +82,7 @@
   font-size: 13px;
   text-transform: uppercase;
   letter-spacing: 1px;
+	transition: all 0.3s ease-in-out;
 }
 
 .dropdown .dropbtn {
@@ -105,6 +96,7 @@
   margin: 0;
   text-transform: uppercase;
   letter-spacing: 1px;
+	transition: all 0.3s ease-in-out;
 }
 
 .topnav .icon {
@@ -123,7 +115,7 @@
   background-color: #f9f9f9;
   min-width: 190px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  animation: fade 0.2s ease-in-out;
+  animation: fade 0.25s ease-in-out;
 }
 
 .dropdown-content a {
@@ -145,7 +137,6 @@
 
 .topnav a:hover:not(.active), .dropdown:hover .dropbtn {
   color: #aa8453 !important;
-  transition: all 0.25s ease-in-out;
 }
 
 .dropdown:hover .dropdown-content {
@@ -175,6 +166,18 @@
 }
 
 @media screen and (max-width: 1300px) {
+	.topnav a:not(.dropdown-content a) {
+		font-size: 13px;
+	  padding: 12px 8px;
+	}
+
+	.dropdown .dropbtn {
+	  font-size: 13px;
+	  padding: 12px 8px;
+	}
+}
+
+@media screen and (max-width: 1200px) {
   .topnav a, .dropdown .dropbtn {
     display: none;
   }
@@ -197,7 +200,7 @@
   }
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1200px) {
   .topnav.responsive {position: sticky;}
   .topnav.responsive .icon {
     position: relative;

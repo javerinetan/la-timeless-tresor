@@ -9,6 +9,43 @@
    src: URL('../fonts/LibreBodoni-Italic.ttf') format('truetype');
  }
 
+ @font-face {
+ 	font-family: 'themify';
+ 	src:url('../fonts/themify.woff') format('woff');
+ 	font-weight: normal;
+ 	font-style: normal;
+ }
+
+ [class^="ti-"], [class*=" ti-"] {
+ 	font-family: 'themify';
+ 	speak: none;
+ 	font-style: normal;
+ 	font-weight: normal;
+ 	font-variant: normal;
+ 	text-transform: none;
+ 	line-height: 1;
+
+ 	/* Better Font Rendering =========== */
+ 	-webkit-font-smoothing: antialiased;
+ 	-moz-osx-font-smoothing: grayscale;
+ }
+
+ .ti-angle-down:before {
+ 	content: "\e64b";
+ }
+ .ti-angle-up:before {
+ 	content: "\e648";
+ }
+ .ti-angle-right:before {
+ 	content: "\e649";
+ }
+ .ti-angle-left:before {
+ 	content: "\e64a";
+ }
+ .ti-angle-down:before {
+ 	content: "\e64b";
+ }
+
 body {
   margin: 0;
 }
