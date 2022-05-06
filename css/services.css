@@ -7,8 +7,8 @@
    --light-color:#666666;
    --border:.2rem solid var(--black);
    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
-   --extra: #8c735c;
-   --try: #e2d5c5;
+   --darkbrown: #8c735c;
+   --table: #e2d5c5;
    --bottom: #ccc6bb;
 }
 
@@ -152,7 +152,7 @@ section{
 }
 
 .services .box-container .box button:hover{
-   background-color: var(--extra);
+   background-color: var(--darkbrown);
 }
 
 .services .box-container .box img{
@@ -199,7 +199,7 @@ section{
    height: 6rem;
    width: 6rem;
    border-radius: 50%;
-   background-color: var(--extra);
+   background-color: var(--darkbrown);
    color:var(--white);
    margin-bottom: 1rem;
 }
@@ -305,7 +305,7 @@ table{
   margin-right: auto;
   table-layout:fixed;
   width:50%;
-  background-color: var(--try)
+  background-color: var(--table)
 }
 
 td{
@@ -358,5 +358,5 @@ h2{
 }
 
 .services .box-container .box button:hover{
-   background-color: var(--extra);
+   background-color: var(--darkbrown);
 }

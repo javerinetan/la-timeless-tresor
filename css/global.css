@@ -30,10 +30,7 @@
      --black: #000000;
      --white:#ffffff;
      --light-color:#666666;
-     --border:.2rem solid var(--black);
-     --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
-     --extra: #8c735c;
-     --try: #e2d5c5;
+     --darkbrown: #8c735c;
      --bottom: #ccc6bb;
   }
 
