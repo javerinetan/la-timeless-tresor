@@ -10,6 +10,7 @@
    --darkbrown: #8c735c;
    --table: #e2d5c5;
    --bottom: #ccc6bb;
+   --lightbrown: #e2d5c5;
 }
 
 *{
@@ -76,6 +77,8 @@ section{
    height: 400px;
    width: 1270px;
    text-align: center;
+   margin-left: auto;
+   margin-right: auto;
 }
 
 .home-bg .home{
