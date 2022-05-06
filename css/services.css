@@ -68,9 +68,6 @@ section{
    font-family: 'Libre Bodoni', serif;
 }
 
-button:hover{
-   background-color: var(--extra);
-}
 
 .header{
    position: sticky;
@@ -180,18 +177,21 @@ button:hover{
    margin-right: auto;
 }
 
-.services .box-container .box button{
+button{
   background-color: var(--main-color);
   border-radius: 8px
 }
 
-.services .box-container .box a {
+a {
   color: var(--white);
   line-height: 20px;
   margin-left: 10px;
   margin-right: 10px;
 }
 
+.services .box-container .box button:hover{
+   background-color: var(--extra);
+}
 
 .services .box-container .box img{
    height: 10rem;
