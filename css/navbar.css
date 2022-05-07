@@ -11,6 +11,7 @@
 }
 
 .active {
+  display: none !important;
 	border: 2px solid #aa8453;
 	border-radius: 4px;
 	padding: 10px 14px !important;
@@ -251,6 +252,11 @@
 @media screen and (max-width: 380px) {
 	.book-form, .book-btn {
     display: none;
+  }
+  .active {
+    display: block !important;
+    background-color: #aa8453;
+    color: white !important;
   }
 }
 
