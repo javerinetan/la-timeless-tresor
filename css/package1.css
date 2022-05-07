@@ -118,3 +118,116 @@ section{
    font-size: 2.5rem;
    color:var(--black);
    cursor: pointer;
+}
+
+
+
+/*welcome page*/
+.golfs-bg{
+   background:linear-gradient(90deg, var(--white), transparent 0%), url('https://www.dusitthanilagunasingapore.com/public/golf/images/Masters_Course.jpg') no-repeat;
+   background-size: cover;
+   background-position: center;
+}
+
+.golfs-bg .golfs{
+   min-height: 70rem;
+   display: flex;
+   align-items: center;
+
+}
+
+.golfs-bg .golfs .content{
+   width: 50rem;
+   text-align: center;
+}
+
+.golfs-bg .golfs .content h3{
+   font-size: 6rem;
+   color:var(--white);
+   font-family: 'Merienda One', cursive;
+}
+
+.golfs-bg .golfs .content p{
+   padding:1rem 0;
+   font-size: 1.6rem;
+   color:var(--white);
+   line-height: 2;
+}
+
+
+
+
+
+/* media queries  */
+
+@media (max-width:991px){
+
+   html{
+      font-size: 55%;
+   }
+
+}
+
+@media (max-width:768px){
+
+   #menu-btn{
+      display: inline-block;
+      transition: .2s linear;
+   }
+
+   #menu-btn.fa-times{
+      transform: rotate(180deg);
+   }
+
+   .header .flex .navbar{
+      position: absolute;
+      top:99%; left:0; right:0;
+      background-color: var(--white);
+      border-top: var(--border);
+      border-bottom: var(--border);
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+      transition: .2s linear;
+   }
+
+   .header .flex .navbar.active{
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+   }
+
+   .header .flex .navbar a{
+      display: block;
+      margin:2rem;
+   }
+
+   .home-bg{
+      background-position: left;
+   }
+
+   .home-bg .home{
+      justify-content: center;
+   }
+
+   .home-bg .home .content h3{
+      font-size: 4rem;
+   }
+
+   .about .content h3{
+      font-size: 3rem;
+   }
+
+}
+
+@media (max-width:450px){
+
+   html{
+      font-size: 50%;
+   }
+
+   .heading img{
+      height: 3rem;
+   }
+
+   .heading h3{
+      font-size: 3rem;
+   }
+
+}
