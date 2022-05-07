@@ -1,14 +1,13 @@
-
-
 :root{
    --main-color:#be9c79;
    --black: #000000;
    --white:#ffffff;
    --light-color:#666666;
+   --border:.2rem solid var(--poopb);
    --darkbrown: #8c735c;
    --table: #e2d5c5;
    --bottom: #ccc6bb;
-   --lightbrown: #e2d5c5;
+   --poopb: #6B4615
 }
 
 *{
@@ -46,8 +45,8 @@ html{
 }
 
 section{
-   padding: 3rem 0rem;
-   max-width: 1300px;
+   padding:3rem 2rem;
+   max-width: 1270px;
    margin:0 auto;
 }
 
@@ -64,18 +63,32 @@ section{
 .heading h3{
    font-size:4rem;
    color:var(--black);
-   font-family: 'Libre Bodoni', serif;;
+   font-family: 'Libre Bodoni', serif;
 }
 
 
+.heading{
+   text-align: center;
+   margin-bottom: 3rem;
+}
+
+.heading img{
+   height: 4rem;
+   margin-bottom: 1rem;
+}
+
+.heading h3{
+   font-size:4rem;
+   color:var(--black);
+   font-family: 'Libre Bodoni', serif;
+}
+
 .home-bg{
-   background:linear-gradient(90deg, var(--white), transparent 0%), url(../resources/images/hotel2.jpg) no-repeat;
+   background:linear-gradient(90deg, var(--white), transparent 0%), url(../resources/images/pool2.jfif) no-repeat;
    background-size: cover;
    background-position: center;
    height: 400px;
    text-align: center;
-   margin-left: auto;
-   margin-right: auto;
 }
 
 .home-bg .home{
@@ -95,57 +108,14 @@ section{
 .home-bg .home .content h2{
    font-size: 6rem;
    color:var(--white);
-   font-family: 'Libre Bodoni', serif;
+   font-family: 'Libre Bodoni', serif;;
 }
 
-.about{
-   display: flex;
-   align-items: center;
-   flex-wrap: wrap;
-   gap:4rem;
-}
 
-.about .content{
-   flex:1 1 40rem;
-}
 
-.about .content p{
-   padding:1.5rem 0 0;
-   line-height: 2;
-   color:var(--light-color);
-   font-size: 1.5rem;
-   margin-left: auto;
-   margin-right: auto;
-   text-align: center;
-}
 
-.services{
-  padding: 2.5rem;
-  padding-top: .7rem;
-}
-
-.services .box-container{
-   display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-   gap:3rem;
-   align-items: flex-start;
-   padding: 4rem;
-}
-
-.services .box-container .box{
-   text-align: center;
-   margin: auto auto;
-   border-spacing: 20rem 15rem;
-   width: 300px;
-   height: 210px;
-}
-
-.services .box-container .box button{
-  background-color: var(--main-color);
-  border-radius: 8px
-}
-
-.services .box-container .box a {
+/*text in button*/
+a {
   color: var(--white);
   line-height: 25px;
   margin-left: 15px;
@@ -153,29 +123,65 @@ section{
   font-size: 1.5rem;
 }
 
-.services .box-container .box button:hover{
-   background-color: var(--darkbrown);
+
+
+/* form start*/
+.form{
+  padding:5rem 30rem 10rem;
+}
+.form .row{
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+   gap:2rem;
 }
 
-.services .box-container .box img{
-   height: 45px;
-   margin-top: 1.5rem;
+.form h3{
+  font-family: 'Libre Bodoni', serif;
+  font-size: 4rem;
+  color: var(--table)
 }
 
-.services .box-container .box h3{
+.form .row form{
+   flex:1 1 30rem;
+   border:var(--border);
+   padding:2rem;
+   text-align: center;
+   margin:auto auto;
+}
+
+.form .row form h3{
    font-size: 2.5rem;
+   margin-bottom: 1rem;
+   color:var(--darkbrown);
+}
+
+.form .row form .box{
+   width: 100%;
+   padding:1.4rem;
+   font-size: 1.8rem;
    color:var(--black);
+   border:var(--border);
    margin:1rem 0;
-   font-family: 'Libre Bodoni', serif;
 }
 
-.services .box-container .box p{
-   line-height: 2;
-   font-size: 1.5rem;
-   color:var(--light-color);
-   padding-bottom: 20px;
+.btn {
+  background-color: var(--main-color);
+  border-radius: 8px;
+  line-height: 2;
+  padding: 0 1rem;
+  color: var(--white);
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
 }
 
+.btn:hover{
+  background-color: var(--darkbrown);
+}
+
+/*form end*/
+
+/* footer starts */
 .footer{
   background-color: #ccc6bb
 }
@@ -219,7 +225,6 @@ section{
    font-size: 1.6rem;
    color:var(--light-color);
 }
-
 
 /* media queries  */
 
@@ -293,75 +298,4 @@ section{
       font-size: 3rem;
    }
 
-}
-
-/* ferryschedule*/
-.ferrytable{
-  padding: 2rem;
-}
-
-table,td {
-  border: 1px solid;
-  border-collapse: collapse;
-}
-
-table{
-  margin-left: auto;
-  margin-right: auto;
-  table-layout:fixed;
-  width:50%;
-  background-color: var(--table)
-}
-
-td{
-  font-size: 1.5rem;
-  text-align: center;
-  width: 50%;
-  line-height: 30px;
-  font-weight: normal;
-}
-
-h2{
-  font-size: 2.5rem;
-  font-family: 'Libre Bodoni', serif;
-  margin-left: auto;
-  margin-left: auto;
-  text-align: center;
-}
-
-.backferry .hotel{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap:1rem;
-  align-items: flex-start;
-}
-
-.ferrytable .hotel{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap:1rem;
-  align-items: flex-start;
-}
-
-.bus .hotel{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap:1rem;
-  align-items: flex-start;
-}
-
-.services .box-container .box button{
-  background-color: var(--main-color);
-  border-radius: 8px
-}
-
-.services .box-container .box a {
-  color: var(--white);
-  line-height: 20px;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-.services .box-container .box button:hover{
-   background-color: var(--darkbrown);
 }
