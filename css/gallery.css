@@ -1,0 +1,133 @@
+* {
+  font-family: 'LibreBodoni-Regular';
+}
+
+::-webkit-scrollbar-track{
+   background-color: white !important;
+}
+
+body {
+  background-color: black;
+  height: 1000px;
+}
+
+h1, h2 {
+  letter-spacing: 2.5px;
+}
+
+.galleryimage {
+    width: 100%;
+    object-fit: fill;
+    opacity: 0.5;
+}
+
+#mainsubheader {
+  position: absolute;
+  top: 200px;
+  left: 190px;
+  color: white;
+  font-size: 15px;
+  letter-spacing: 5px;
+  font-family: 'LibreBodoni-Italic';
+}
+
+#mainheader {
+  position: absolute;
+  top: 220px;
+  left: 180px;
+  color: white;
+  font-size: 50px;
+  letter-spacing: 4px;
+  font-family: 'LibreBodoni-Italic';
+}
+
+.mainbody {
+  position: relative;
+  background-color: white;
+  width: 100%;
+  height: 1000px;
+  bottom: 500px;
+  padding-top: 100px;
+  padding-bottom: 200px;
+}
+
+#subtitle {
+  font-size: 15px;
+  padding-left: 80px;
+}
+
+#title {
+  font-size: 40px;
+  padding-left: 80px;
+}
+
+/* Final Video Styles */
+.flexbox-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexbox-item-1 {
+    flex: 1 0 0;
+    min-height: 100px;
+    align-self: flex-end;
+    order: 1;
+}
+
+.flexbox-item-2 {
+    min-height: 200px;
+    flex-grow: 2;
+    flex-basis: 0;
+    align-self: center;
+    order: 2;
+}
+
+.flexbox-item-3 {
+    min-height: 300px;
+    flex-grow: 1;
+    flex-basis: 0;
+    order: 3;
+}
+
+
+.flexbox-item-1 {
+    min-height: 250px;
+    min-width: 400px;
+}
+
+.flexbox-item-2 {
+  min-height: 250px;
+  min-width: 400px;
+}
+
+.flexbox-item-3 {
+  min-height: 250px;
+  min-width: 400px;
+}
+
+.flexbox-container {
+    position: relative;
+}
+
+.flexbox-item {
+    position: relative;
+    background-color: #dfdfdf;
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+
+
+@media all and (min-width: 600px) {
+  .aside { flex: 1 0 0; }
+}
+
+@media all and (min-width: 800px) {
+  .main    { flex: 3 0px; }
+  .aside-1 { order: 1; }
+  .main    { order: 2; }
+  .aside-2 { order: 3; }
+  .footer  { order: 4; }
+}

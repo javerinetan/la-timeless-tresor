@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery</title>
+  <link href="../css/gallery.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/navbar.css">
+  <link rel="stylesheet" href="../css/global.css">
+</head>
+<body>
+  <nav class="topnav" id="myTopnav">
+      <div class="container">
+        <a href="index.html" style="padding:0; display:inline">
+          <img src="../resources/images/logov2_white.png" alt="Logo" class="nav-logo" id="navLogo">
+        </a>
+        <a href="javascript:void(0);" style="font-size:18px;margin-top: 10px;" class="icon" onclick="displayNav()">&#9776;</a>
+        <div class="nav-items">
+          <div class="dropdown">
+            <button class="dropbtn">The Resort
+              <i class="ti-angle-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Overview<i class="ti-angle-right"></i></a>
+              <a href="#">Accomodations<i class="ti-angle-right"></i></a>
+              <a href="#">Facilities<i class="ti-angle-right"></i></a>
+              <a href="#">Services<i class="ti-angle-right"></i></a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">Dining
+              <i class="ti-angle-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">The Restaurant<i class="ti-angle-right"></i></a>
+              <a href="#">Reservation<i class="ti-angle-right"></i></a>
+              <a href="#">Ordering<i class="ti-angle-right"></i></a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">Events & Promotions
+              <i class="ti-angle-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#news">Events<i class="ti-angle-right"></i></a>
+              <a href="#contact">Promotions<i class="ti-angle-right"></i></a>
+            </div>
+          </div>
+          <a href="#about">Gallery</a>
+          <a href="#contact">Contact</a>
+          <a href="#home" class="active">Book Now</a>
+          <div class="dropdown">
+            <button class="dropbtn"><img src="../resources/images/user_white.png" alt="account" id="account" width="18px">
+              <i class="ti-angle-down"></i>
+            </button>
+            <div class="dropdown-content" style="min-width:120px">
+              <a href="#">Log In<i class="ti-angle-right"></i></a>
+              <a href="#">Sign Up<i class="ti-angle-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="../js/nav.js"></script>
+    </nav>
+    <!-- Image + Header -->
+    <div>
+      <img src="../resources/images/galleryimage.jpg" alt="image" class="galleryimage">
+      <h2 id="mainsubheader">IMAGES & VIDEOS</h2>
+      <h1 id="mainheader">Our Gallery</h1>
+    </div>
+    <!-- Image Gallery -->
+    <div class="mainbody">
+      <div class="container">
+        <h2 id="subtitle">IMAGES</h2>
+        <h1 id="title">Image Gallery</h1>
+        <div class="flexbox-container">
+          <img class="flexbox-item flexbox-item-1" src="../resources/images/7.jpg" alt="Example image">
+          <img class="flexbox-item flexbox-item-2" src="../resources/images/7.jpg" alt="Example image">
+          <img class="flexbox-item flexbox-item-3" src="../resources/images/7.jpg"  alt="Example image">
+      </div>
+    </div>
+</body>
