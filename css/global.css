@@ -78,6 +78,25 @@ body {
   margin: 0;
 }
 
+.button-style1 {
+  display: block;
+  padding: 0;
+  border: none;
+  margin: 0;
+  width: 100%;
+  background: #aa8453;
+  color: #fff;
+  font-family: 'LibreBodoni-Regular';
+  font-size: 15px;
+  text-decoration: none;
+  line-height: 62.5px;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
 .container {
   padding-right: 100px;
   padding-left: 100px;

@@ -176,6 +176,7 @@
 }
 
 .book-btn p {
+  font-size: 15px;
   text-align: center;
 }
 
@@ -199,6 +200,7 @@
   position: fixed;
   right: 90px;
   top: 160px;
+  padding: 20px;
   width: 380px;
   height: 400px;
   z-index: 99;
@@ -243,16 +245,23 @@
   }
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 380px) {
 	.book-form, .book-btn {
     display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+	.book-form {
+    right: 60px !important;
+    width: 280px !important;
   }
 }
 
 @media screen and (max-width: 600px) {
 	.book-form {
     right: 60px !important;
-    width: 320px;
+    width: 300px;
   }
   .btn-active {
     right: -50px !important;

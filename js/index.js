@@ -1,4 +1,15 @@
+var navbar = document.getElementById("myTopnav");
+var logo = document.getElementById("navLogo");
+var sidebtn = document.getElementById("sideBtn");
+var account = document.getElementById("account");
+var form = document.getElementById("bookForm");
+
 var firstLoad = true;
+
+if (window.innerWidth > 1000){
+  form.classList.add("show-form");
+  sidebtn.classList.add("btn-active");
+}
 
 function displayNav() {
   var x = document.getElementById("myTopnav");
@@ -9,12 +20,6 @@ function displayNav() {
     x.classList.remove("responsive");
   }
 }
-
-var navbar = document.getElementById("myTopnav");
-var logo = document.getElementById("navLogo");
-var sidebtn = document.getElementById("sideBtn");
-var account = document.getElementById("account");
-var form = document.getElementById("bookForm");
 
 window.onscroll = function() {
   if (window.pageYOffset >= 300) {
