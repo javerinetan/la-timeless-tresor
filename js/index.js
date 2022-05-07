@@ -1,3 +1,5 @@
+var firstLoad = true;
+
 function displayNav() {
   var x = document.getElementById("myTopnav");
 
@@ -19,6 +21,12 @@ window.onscroll = function() {
     navbar.classList.add("sticky");
     sidebtn.classList.add("alt-color");
     form.classList.add("alt-color");
+
+    if (firstLoad) {
+      firstLoad = false;
+      form.classList.remove("show-form");
+      sidebtn.classList.remove("btn-active");
+    }
 
     logo.src = "resources/images/logov2_black.png";
     account.src = "resources/images/user_black.png";
