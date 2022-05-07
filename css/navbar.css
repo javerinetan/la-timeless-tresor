@@ -35,7 +35,7 @@
   color: black !important;
 }
 
-.sticky button {
+.sticky .nav-items button {
   color: black !important;
 }
 
@@ -176,7 +176,9 @@
 }
 
 .book-btn p {
-  font-size: 15px;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
   text-align: center;
 }
 
