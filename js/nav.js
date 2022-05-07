@@ -42,3 +42,8 @@ function displayBookingForm() {
     sidebtn.classList.remove("btn-active");
   }
 }
+
+function dismissBookingForm(){
+  form.classList.remove("show-form");
+  sidebtn.classList.remove("btn-active");
+}

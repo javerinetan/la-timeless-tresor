@@ -183,7 +183,7 @@
 }
 
 .book-arrow {
-  margin-top:5px;
+  margin-top:8px;
   margin-bottom:0px;
   font-size:12px;
   transition: all 0.25s ease-in-out;
@@ -200,7 +200,7 @@
   font-family: 'LibreBodoni-Regular' !important;
   background-color: #F8F5F0;
   position: fixed;
-  right: 90px;
+  right: 75px;
   top: 160px;
   padding: 20px;
   width: 380px;
