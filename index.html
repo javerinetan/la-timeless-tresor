@@ -47,7 +47,19 @@
               <a href="#contact">Promotions<i class="ti-angle-right"></i></a>
             </div>
           </div>
-          <a href="#about">Gallery</a>
+          <div class="dropdown">
+           <button class="dropbtn">Gallery
+             <i class="ti-angle-down"></i>
+           </button>
+           <div class="dropdown-content">
+             <a href="#welcome">Welcome<i class="ti-angle-right"></i></a>
+             <a href="#history">History<i class="ti-angle-right"></i></a>
+             <a href="#signature">Signature<i class="ti-angle-right"></i></a>
+             <a href="#Awards">Awards<i class="ti-angle-right"></i></a>
+             <a href="#team">Team<i class="ti-angle-right"></i></a>
+             <a href="#contact">Contact<i class="ti-angle-right"></i></a>
+           </div>
+         </div>
           <a href="#contact">Contact</a>
           <a href="#home" class="active">Book Now</a>
           <div class="dropdown">
@@ -61,13 +73,18 @@
           </div>
         </div>
       </div>
+      <div class="book-btn" id="sideBtn" onclick="displayBookingForm()">
+        <p class="book-arrow"><i class="ti-angle-up"></i></p>
+        <p class="book-title">Book Now</p>
+      </div>
+      <div class="book-form" id="bookForm">
+
+      </div>
       <script src="js/index.js"></script>
     </nav>
     <header class="banner">
-
     </header>
     <section style="height:2000px;">
-
     </section>
   </body>
 </html>
