@@ -28,8 +28,8 @@ window.onscroll = function() {
     sidebtn.classList.remove("alt-color");
     form.classList.add("alt-color");
 
-    logo.src = "resources/images/logov2_white.png";
-    account.src = "resources/images/user_white.png";
+    logo.src = "../resources/images/logov2_white.png";
+    account.src = "../resources/images/user_white.png";
   }
 }
 
