@@ -20,8 +20,8 @@ window.onscroll = function() {
     sidebtn.classList.add("alt-color");
     form.classList.add("alt-color");
 
-    logo.src = "resources/images/logov2_black.png";
-    account.src = "resources/images/user_black.png";
+    logo.src = "../resources/images/logov2_black.png";
+    account.src = "../resources/images/user_black.png";
   }
   else {
     navbar.classList.remove("sticky");
@@ -32,7 +32,6 @@ window.onscroll = function() {
     account.src = "resources/images/user_white.png";
   }
 }
-
 
 function displayBookingForm() {
   if (!form.className.includes("show-form")) {
