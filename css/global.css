@@ -42,7 +42,7 @@
 
 ::-webkit-scrollbar{
   height: .5rem;
-  width: 1rem;
+  width: 0.8rem;
 }
 
 ::-webkit-scrollbar-track{
