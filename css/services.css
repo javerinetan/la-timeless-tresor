@@ -136,14 +136,17 @@ section{
 .services .box-container{
    display: grid;
    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-   gap:4rem;
+   gap:3rem;
    align-items: flex-start;
+   padding: 4rem;
 }
 
 .services .box-container .box{
    text-align: center;
-   margin-left: auto;
-   margin-right: auto;
+   margin: auto auto;
+   border-spacing: 20rem 15rem;
+   width: 300px;
+   height: 210px;
 }
 
 .services .box-container .box button{
@@ -164,8 +167,8 @@ section{
 }
 
 .services .box-container .box img{
-   height: 40px;
-   margin-bottom: .5rem;
+   height: 45px;
+   margin-top: 1.5rem;
 }
 
 .services .box-container .box h3{
@@ -179,6 +182,7 @@ section{
    line-height: 2;
    font-size: 1.5rem;
    color:var(--light-color);
+   padding-bottom: 20px;
 }
 
 .footer{
