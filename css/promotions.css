@@ -168,6 +168,7 @@ section{
 
 .scooper .image img{
    width: 100%;
+   border-radius:20%;
 }
 
 .scooper .content{
@@ -204,6 +205,7 @@ section{
 
 .golf .image img{
    width: 100%;
+   border-radius:5%;
 }
 
 .golf .content{
@@ -248,6 +250,7 @@ section{
 .couple .box-container .box img{
    height: 28rem;
    margin-bottom: .5rem;
+   border-radius:10%;
 }
 
 .couple .box-container .box h3{
@@ -285,6 +288,7 @@ section{
 .family .box-container .box img{
    height: 28rem;
    margin-bottom: .5rem;
+   border-radius:10%;
 }
 
 .family .box-container .box h3{
