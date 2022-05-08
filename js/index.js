@@ -46,7 +46,6 @@ window.onscroll = function() {
   }
 }
 
-
 function displayBookingForm() {
   if (!form.className.includes("show-form")) {
     form.classList.add("show-form");
@@ -55,4 +54,9 @@ function displayBookingForm() {
     form.classList.remove("show-form");
     sidebtn.classList.remove("btn-active");
   }
+}
+
+function dismissBookingForm(){
+  form.classList.remove("show-form");
+  sidebtn.classList.remove("btn-active");
 }

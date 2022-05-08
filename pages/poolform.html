@@ -4,7 +4,7 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Facilities page</title>
+   <title>Swimming form page</title>
 
    <!-- font awesome cdn link  -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
@@ -13,7 +13,7 @@
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400;1,400;1,700&display=swap" rel="stylesheet">
-   <link rel="stylesheet" href="../css/facilities.css">
+   <link rel="stylesheet" href="../css/fform.css">
    <link rel="stylesheet" href="../css/navbar.css">
    <link rel="stylesheet" href="../css/global.css">
 </head>
@@ -75,98 +75,45 @@
      <script src="../js/nav.js"></script>
    </nav>
 
-
-<!-- header section ends -->
-
-<!-- home section starts  -->
-
+<!--header section starts-->
 <div class="home-bg">
 
    <section class="home" id="home">
 
       <div class="content">
-         <h2>Our Facilities</h2>
+         <h2>pool session booking page</h2>
       </div>
 
    </section>
 
 </div>
 
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
 <!-- home section ends -->
 
-<!-- about section starts  -->
 
-<section class="about" id="about">
+<!-- forms section starts -->
+<section class="form">
+    <div class="row">
 
-   <div class="content">
-      <p>From luxurious spa treatments and workouts with a view, to swims in a vintage scene, expect nothing less than indulgent experiences at the La Timeless tresor.
-       <br>
-         These are the facilities offered by La Timeless Trésor. We hope you enjoy staying with us<p>
-   </div>
+     <form action="" method="post">
+        <h3>book a table</h3>
+        <input type="text" name="number" required class="box" maxlength="20" placeholder="hotel confirmation number">
+        <input type="number" name="cdate" required class="box" maxlength="20" placeholder="check-in date" min="01" max="20" onkeypress="if(this.value.length == 10) return false">
+        <input type="number" name="guests" required class="box" maxlength="20" placeholder="how many guests" min="0" max="99" onkeypress="if(this.value.length == 2) return false">
+        <input type="submit" name="send" value="send message" class="btn">
+     </form>
 
-</section>
 
-<!-- about section ends -->
-
-<!-- facilities section starts -->
-
-  <section class="facilities">
-    <div class="image">
-        <img src="../resources/images/pool.jpg" alt="pool">
-    </div>
-    <div class="content">
-      <h3>Swimming pool</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam suscipit sunt repellendus, dolorum recusandae placeat quae. Iste eaque aspernatur, animi deleniti voluptas, sunt molestias eveniet sint consectetur facere a ex.</p>
-      <button><a href="poolform.html" target="_blank">book now</a></button>
-    </div>
-
-    <br>
-
-    <div class="image">
-        <img src="../resources/images/gym.jpg" alt="gym">
-    </div>
-    <div class="content">
-      <h3>Gym</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam suscipit sunt repellendus, dolorum recusandae placeat quae. Iste eaque aspernatur, animi deleniti voluptas, sunt molestias eveniet sint consectetur facere a ex.</p>
-      <button><a href="gymform.html" target="_blank">book now</a></button>
-    </div>
-
-    <br>
-
-    <div class="image">
-        <img src="../resources/images/spa.jpg" alt="spa">
-    </div>
-    <div class="content">
-      <h3>spa</h3>
-      <p>Enjoy treatment spas for beauty and wellness<p>
-      <button><a href="https://chillspa.com/" target="_blank">Know More</a></button>
-    </div>
-
-    <br>
-
-    <div class="image">
-        <img src="../resources/images/PhotoBooth.jpg" alt="PhotoBooth">
-    </div>
-    <div class="content">
-      <h3>PhotoBooth</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam suscipit sunt repellendus, dolorum recusandae placeat quae. Iste eaque aspernatur, animi deleniti voluptas, sunt molestias eveniet sint consectetur facere a ex.</p>
-      <button><a href="https://dollop.sg/" target="_blank">Learn More</a></button>
-    </div>
-    <br>
-    <div class="image">
-        <img src="../resources/images/massage.jpg" alt="massage">
-    </div>
-    <div class="content">
-      <h3>massage</h3>
-      <p>Relax with massages by professional masseur here at Le Massage<p>
-      <button><a href="https://chillspa.com/" target="_blank">Know More</a></button>
-    </div>
-
+  </div>
 </section>
 
 
-
-<!-- facilities section end -->
+<!-- forms section end -->
 
 <!-- footer section starts  -->
 
@@ -198,8 +145,8 @@
       <div class="box">
          <i class="fas fa-phone"></i>
          <h3>our number</h3>
-         <p>+123-456-7890</p>
-         <p>+111-222-3333</p>
+         <p>+65-9999</p>
+         <p>+65-965</p>
       </div>
 
    </div>
