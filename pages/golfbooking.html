@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400;1,400;1,700&display=swap" rel="stylesheet">
    <!-- custom css file link  -->
-   <link rel="stylesheet" href="../css/golf.css">
+   <link rel="stylesheet" href="../css/golfbooking.css">
    <link rel="stylesheet" href="../css/navbar.css">
    <link rel="stylesheet" href="../css/global.css">
 </head>
@@ -85,104 +85,55 @@
    </nav>
 <!-- header section ends -->
 
-<!---Welcome page-->
-<div class="intro-bg">
+<body>
 
-   <section class="intro">
+       <section class = "banner">
+           <h2>BOOK YOUR TABLE NOW</h2>
+           <div class = "card-container">
+               <div class = "card-img">
+                   <!-- image here -->
+               </div>
 
-      <div class="content">
-           <h3> An Ode </h3>
-           <p>An acclaimed landmark on the worlds golfing scene, An Ode
-              is home to one of the world's
-             finest golf playgrounds, treating guests with an enriching
-             experience to a golfing paradise with its revered 36-hole
-             championship golf courses and a wide range of golfing
-             facilities.</p>
-      </div>
+               <div class = "card-content">
+                   <h3>Reservation</h3>
+                   <form>
+                       <div class = "form-row">
+                           <select name = "days">
+                               <option value = "day-select">Select Day</option>
+                               <option value = "sunday">Sunday</option>
+                               <option value = "monday">Monday</option>
+                               <option value = "tuesday">Tuesday</option>
+                               <option value = "wednesday">Wednesday</option>
+                               <option value = "thursday">Thursday</option>
+                               <option value = "friday">Friday</option>
+                               <option value = "saturday">Saturday</option>
+                           </select>
 
-   </section>
+                           <select name = "hours">
+                               <option value = "hour-select">Select Hour</option>
+                               <option value = "10">10: 00</option>
+                               <option value = "10">12: 00</option>
+                               <option value = "10">14: 00</option>
+                               <option value = "10">16: 00</option>
+                               <option value = "10">18: 00</option>
+                               <option value = "10">20: 00</option>
+                               <option value = "10">22: 00</option>
+                           </select>
+                       </div>
 
-</div>
-<!---golf course-->
-<section class="Family" >
+                       <div class = "form-row">
+                           <input type = "text" placeholder="Full Name">
+                           <input type = "text" placeholder="Phone Number">
+                       </div>
 
-   <div class="image">
+                       <div class = "form-row">
+                           <input type = "number" placeholder="How Many Persons?" min = "1">
+                           <input type = "submit" value = "BOOK TABLE">
+                       </div>
+                   </form>
+               </div>
+           </div>
+       </section>
 
-      <img src="https://cdn.vox-cdn.com/thumbor/Y6_6Sz_zNMHfqVRuFldCDAFOb0w=/0x0:1200x800/1200x800/filters:focal(504x304:696x496)/cdn.vox-cdn.com/uploads/chorus_image/image/69338654/unnamed__12_.0.jpg" alt="">
-
-   </div>
-
-   <div class="content">
-      <h3>Mini Golf </h3>
-      <p>The world craziest and most unique mini golf venue, Par none.
-        Forget the usual windmills and castles, putt your stuff through s
-        hark-infested waters and pop culture references like America's
-        favourite cartoon family's couch and into the Nine Iron Throne itself. Each hole will keep you wanting more.
-        We have space for the whole crew, young, old, big, small –
-        no worries. </p>
-      <h4>Prices:
-      <p> Children below 12 play for free </p>
-      <p> 12-16 years old :$40 </p>
-      <p> Audults: $76</p>
-      <p> Senior Citizen:$38 </p>
-
-
-      <a href="golfbook.html" class="btn">Book Now</a>
-      <!---link this to the bottom page -->
-   </div>
-
-
-
-</section>
-<!-- couse 2 -->
-
-<section class="Classique" >
-
-
-  <div class="content">
-     <h3>Classique Course</h3>
-     <p>Our classic Course revls in its reputation as one of the most difficult
-       and dramatic test of golf in the World, due to its formidable
-       challenge, the Classique unflods over hilly terrain. This activity is
-       only for 16 years old and above.<p>
-      <h4>Prices</h4>
-        <p>$70 per hotel guest  </p>
-        <p>$120 for outside guest</p>
-     <a href="golfbook.html" class="btn">Book Now</a>
-
-  </div>
-
-  <div class="image">
-     <img src="../resources/images/golf2.png" alt="">
-  </div>
-</section>
-
-<!---course 3---->
-<section class="digi" >
-
-   <div class="image">
-
-      <img src="../resources/images/golf3.jpeg" alt="">
-
-   </div>
-
-   <div class="content">
-      <h3>DIGI Golf </h3>
-      <p> Experience the latest high technology of AI at our specially
-      design golf course setup. Imporve accuracry and aim with fun , interative way to
-       play golf.  </p>
-      <h4>Prices:
-      <p>$57.50/hr (1-4 people)</p>
-      <p>$72.50/hr (5-6 people) </p>
-
-
-      <a href="golfbook.html" class="btn">Book Now</a>
-      <!---link this to the bottom page -->
-   </div>
-
-
-
-</section>
-
-
-<!--booking-->
+   </body>
+</html>
