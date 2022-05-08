@@ -12,7 +12,7 @@
 }
 
 *{
-   font-family: 'Libre Bodoni', serif;
+   font-family: 'Nunito', sans-serif;
    margin:0; padding:0;
    box-sizing: border-box;
    outline: none; border:none;
@@ -64,11 +64,7 @@ section{
 .heading h3{
    font-size:4rem;
    color:var(--black);
-<<<<<<< HEAD
    font-family: 'Libre Bodoni', serif;;
-=======
-   font-family: 'Libre Bodoni', serif;
->>>>>>> ba856b8574d844a1834dae1b765a1b20549d13a1
 }
 
 .btn{
@@ -148,11 +144,7 @@ section{
 .promotions-bg .promotions .content h3{
    font-size: 6rem;
    color:var(--white);
-<<<<<<< HEAD
    font-family: 'Libre Bodoni', serif;
-=======
-   font-family:'Libre Bodoni', serif;
->>>>>>> ba856b8574d844a1834dae1b765a1b20549d13a1
 }
 
 .promotions-bg .promotions .content p{
@@ -226,15 +218,9 @@ section{
    padding-bottom: 1rem;
 }
 
-<<<<<<< HEAD
 .golf .content p{
    padding:1rem 0;
    line-height: 2rem;
-=======
-.golf.content p{
-   padding:3.5rem 0;
-   line-height: 2;
->>>>>>> ba856b8574d844a1834dae1b765a1b20549d13a1
    color:var(--light-color);
    font-size: 1.5rem;
 }
