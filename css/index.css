@@ -28,6 +28,7 @@
   color: white;
   position: relative;
   top: 180px;
+  animation: title-slide 1s ease-in-out;
 }
 
 .heading h1 {
@@ -48,13 +49,35 @@
 @media screen and (max-width: 600px) {
   .heading h1 {
     font-size: 40px;
-    letter-spacing: 8px;
+    letter-spacing: 4px;
   }
 }
 
 @media screen and (max-width: 400px) {
   .heading h1 {
     font-size: 28px;
-    letter-spacing: 8px;
+    letter-spacing: 3px;
+  }
+}
+
+@keyframes title-slide {
+  0% {
+    opacity: 0.8;
+    left: -110px;
+  }
+  100% {
+    opacity: 1;
+    left: 0px;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+    margin-top: 20px;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0px;
   }
 }
