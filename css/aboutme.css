@@ -334,6 +334,7 @@ section{
    margin:1rem 0;
    font-size: 2rem;
    color:var(--black);
+   font-family: 'Libre Bodoni', serif;
 }
 
 .footer .box-container .box p{
