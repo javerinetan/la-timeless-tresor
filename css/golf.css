@@ -162,6 +162,7 @@ section{
    align-items: center;
    flex-wrap: wrap;
    gap:4rem;
+   padding: 50px;
 }
 
 .Family .image{
@@ -207,6 +208,7 @@ section{
    align-items: center;
    flex-wrap: wrap;
    gap:4rem;
+   padding: 50px;
 }
 
 .Classique .image{
@@ -243,6 +245,7 @@ section{
    align-items: center;
    flex-wrap: wrap;
    gap:4rem;
+   padding: 50px;
 }
 
 .digi .image{
