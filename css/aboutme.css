@@ -12,7 +12,7 @@
 }
 
 *{
-   font-family: 'Nunito', sans-serif;
+   font-family: 'Libre Bodoni', serif;
    margin:0; padding:0;
    box-sizing: border-box;
    outline: none; border:none;
@@ -182,9 +182,15 @@ section{
    padding-bottom: 1rem;
 }
 
+<<<<<<< HEAD
 .history .content p{
    padding:1rem 0;
    line-height: 2rem;
+=======
+.history.content p{
+   padding:3.5rem 0;
+   line-height: 2;
+>>>>>>> ba856b8574d844a1834dae1b765a1b20549d13a1
    color:var(--light-color);
    font-size: 1.5rem;
 }
