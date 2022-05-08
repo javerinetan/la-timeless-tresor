@@ -44,9 +44,28 @@ html{
 
 section{
    padding:3rem 2rem;
-   max-width: 1270px;
+   max-width: 1300px;
    margin:0 auto;
 }
+
+.btn{
+  background-color: var(--main-color);
+  border-radius: 8px;
+  line-height: 25px;
+  margin-top: 10px;
+  margin-left: 0px;
+  padding:4px 14px;
+  text-align: left;
+}
+.btn:hover{
+   background-color: var(--darkbrown);
+}
+
+a {
+    color: var(--white);
+    text-align: center;
+    font-size: 1.5rem;
+  }
 
 .heading{
    text-align: center;
@@ -62,10 +81,6 @@ section{
    font-size:4rem;
    color:var(--black);
    font-family: 'Libre Bodoni', serif;
-}
-
-button:hover{
-   background-color: var(--darkbrown);
 }
 
 .home-bg{
@@ -126,19 +141,6 @@ button:hover{
   gap:4rem;
   padding-bottom: 10rem;
 }
-
- button{
-    background-color: var(--main-color);
-    border-radius: 8px
-  }
-
-a {
-    color: var(--white);
-    line-height: 25px;
-    margin-left: 15px;
-    margin-right: 15px;
-    font-size: 1.5rem;
-  }
 
   .facilities .image{
      flex:1 1 40rem;

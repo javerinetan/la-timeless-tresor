@@ -47,7 +47,7 @@ html{
 
 section{
    padding:3rem 2rem;
-   max-width: 1200px;
+   max-width: 1300px;
    margin:0 auto;
 }
 
@@ -64,7 +64,7 @@ section{
 .heading h3{
    font-size:4rem;
    color:var(--black);
-   font-family: 'Merienda One', cursive;
+   font-family: 'Libre Bodoni', serif;
 }
 
 .btn{
@@ -144,7 +144,7 @@ section{
 .welcome-bg .welcome .content h3{
    font-size: 6rem;
    color:var(--white);
-   font-family: 'Merienda One', cursive;
+   font-family: 'Libre Bodoni', serif;
 }
 
 .welcome-bg .welcome .content p{
@@ -159,6 +159,7 @@ section{
    align-items: center;
    flex-wrap: wrap;
    gap:4rem;
+   padding:50px;
 }
 
 .history .image{
@@ -177,13 +178,13 @@ section{
 .history .content h3{
    font-size: 4.5rem;
    color:var(--black);
-   font-family: 'Merienda One', cursive;
+   font-family: 'Libre Bodoni', serif;
    padding-bottom: 1rem;
 }
 
-.history.content p{
+.history .content p{
    padding:1rem 0;
-   line-height: 2;
+   line-height: 2rem;
    color:var(--light-color);
    font-size: 1.5rem;
 }
@@ -195,6 +196,7 @@ section{
    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
    gap:1.5rem;
    align-items: flex-start;
+   padding: 50px;
 }
 
 .signature .box-container .box{
@@ -211,12 +213,19 @@ section{
    font-size: 2rem;
    color:var(--black);
    margin:1rem 0;
+   font-family: 'Libre Bodoni', serif;
 }
 
 .signature .box-container .box p{
-   line-height: 2;
+   line-height: 2rem;
    font-size: 1.5rem;
    color:var(--light-color);
+}
+
+.signature .heading h5{
+   line-height: 2rem;
+   font-size: 1.5rem;
+   color:var(--black);
 }
 
 /**awards**/
@@ -225,6 +234,7 @@ section{
    grid-template-columns: repeat(auto-fit, 33rem);
    gap:1.5rem;
    justify-content: center;
+   padding: 50px;
 }
 
 .award .box-container img{
@@ -239,6 +249,7 @@ section{
    grid-template-columns: repeat(auto-fit, 33rem);
    gap:1.5rem;
    justify-content: center;
+   padding: 50px;
 }
 
 .team .box-container .box{
@@ -261,6 +272,7 @@ section{
    align-items: center;
    flex-wrap: wrap;
    gap:2rem;
+   padding: 50px
 }
 
 .contact .row .image{
@@ -282,6 +294,7 @@ section{
    font-size: 2.5rem;
    margin-bottom: 1rem;
    color:var(--black);
+   font-family: 'Libre Bodoni', serif;
 }
 
 .contact .row form .box{
@@ -300,6 +313,7 @@ section{
    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
    gap:1.5rem;
    align-items: flex-start;
+   padding: 50px;
 }
 
 .footer .box-container .box{

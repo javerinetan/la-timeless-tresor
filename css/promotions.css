@@ -47,7 +47,7 @@ html{
 
 section{
    padding:3rem 2rem;
-   max-width: 1200px;
+   max-width: 1300px;
    margin:0 auto;
 }
 
@@ -64,7 +64,7 @@ section{
 .heading h3{
    font-size:4rem;
    color:var(--black);
-   font-family: 'Merienda One', cursive;
+   font-family: 'Libre Bodoni', serif;;
 }
 
 .btn{
@@ -144,7 +144,7 @@ section{
 .promotions-bg .promotions .content h3{
    font-size: 6rem;
    color:var(--white);
-   font-family: 'Merienda One', cursive;
+   font-family: 'Libre Bodoni', serif;
 }
 
 .promotions-bg .promotions .content p{
@@ -159,6 +159,7 @@ section{
    align-items: center;
    flex-wrap: wrap;
    gap:4rem;
+   padding: 50px;
 }
 
 .scooper .image{
@@ -177,13 +178,13 @@ section{
 .scooper .content h3{
    font-size: 4.5rem;
    color:var(--black);
-   font-family: 'Merienda One', cursive;
+   font-family: 'Libre Bodoni', serif;
    padding-bottom: 1rem;
 }
 
-.scooper.content p{
+.scooper .content p{
    padding:1rem 0;
-   line-height: 2;
+   line-height: 2rem;
    color:var(--light-color);
    font-size: 1.5rem;
 }
@@ -194,6 +195,7 @@ section{
    align-items: center;
    flex-wrap: wrap;
    gap:4rem;
+   padding: 50px;
 }
 
 .golf .image{
@@ -212,13 +214,13 @@ section{
 .golf .content h3{
    font-size: 4.5rem;
    color:var(--black);
-   font-family: 'Merienda One', cursive;
+   font-family: 'Libre Bodoni', serif;
    padding-bottom: 1rem;
 }
 
-.golf.content p{
+.golf .content p{
    padding:1rem 0;
-   line-height: 2;
+   line-height: 2rem;
    color:var(--light-color);
    font-size: 1.5rem;
 }
@@ -231,6 +233,11 @@ section{
    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
    gap:10rem;
    align-items: flex-start;
+   padding: 50px
+}
+
+.couple .heading h5{
+  font-size: 1.5rem;
 }
 
 .couple .box-container .box{
@@ -247,6 +254,7 @@ section{
    font-size: 2rem;
    color:var(--black);
    margin:1rem 0;
+   font-family: 'Libre Bodoni', serif;
 }
 
 .couple .box-container .box p{
@@ -262,6 +270,11 @@ section{
    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
    gap:10rem;
    align-items: flex-start;
+   padding: 50px;
+}
+
+.family .heading h5{
+  font-size: 1.5rem;
 }
 
 .family .box-container .box{
@@ -277,20 +290,28 @@ section{
 .family .box-container .box h3{
    font-size: 2rem;
    color:var(--black);
-   margin:1rem 0;
+   margin:1rem 0 ;
+   font-family: 'Libre Bodoni', serif;
 }
 
 .family .box-container .box p{
-   line-height: 2;
+   line-height: 2rem;
    font-size: 1.5rem;
    color:var(--light-color);
 }
 
 
+.family .box-container .box h4{
+   line-height: 2rem;
+   font-size: 1.5rem;
+   color:var(--black);
+   padding-bottom: 1rem;
+}
 
 
+.footer{
 
-
+}
 
 .footer .box-container{
    display: grid;
