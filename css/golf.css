@@ -47,7 +47,7 @@ html{
 
 section{
    padding:3rem 2rem;
-   max-width: 1200px;
+   max-width: 1300px;
    margin:0 auto;
 }
 
@@ -64,7 +64,7 @@ section{
 .heading h3{
    font-size:4rem;
    color:var(--black);
-   font-family: 'Merienda One', cursive;
+   font-family: 'Libre Bodoni', serif;;
 }
 
 .btn{
@@ -144,14 +144,14 @@ section{
 .intro-bg .intro .content h3{
    font-size: 6rem;
    color:var(--white);
-   font-family: 'Merienda One', cursive;
+   font-family: 'Libre Bodoni', serif;
 }
 
 .intro-bg .intro .content p{
    padding:1rem 0;
    font-size: 1.6rem;
    color:var(--white);
-   line-height: 2;
+   line-height: 2rem;
 }
 
 
@@ -180,15 +180,24 @@ section{
 .Family .content h3{
    font-size: 4.5rem;
    color:var(--black);
-   font-family: 'Merienda One', cursive;
+   font-family: 'Libre Bodoni', serif;
    padding-bottom: 1rem;
 }
 
-.Family.content p{
+.Family .content p{
    padding:1rem 0;
-   line-height: 2;
+   line-height: 2rem;
    color:var(--light-color);
    font-size: 1.5rem;
+}
+
+.price p{
+  line-height: .5rem;
+  font-weight: normal;
+}
+
+.price h4{
+  font-size: 1.5rem;
 }
 
 
@@ -216,16 +225,17 @@ section{
 .Classique .content h3{
    font-size: 4.5rem;
    color:var(--black);
-   font-family: 'Merienda One', cursive;
+   font-family: 'Libre Bodoni', serif;
    padding-bottom: 1rem;
 }
 
-.Classique.content p{
+.Classique .content p{
    padding:1rem 0;
-   line-height: 2;
+   line-height: 2rem;
    color:var(--light-color);
    font-size: 1.5rem;
 }
+
 
 /**course3**/
 .digi{
@@ -251,13 +261,13 @@ section{
 .digi .content h3{
    font-size: 4.5rem;
    color:var(--black);
-   font-family: 'Merienda One', cursive;
+   font-family: 'Libre Bodoni', serif;
    padding-bottom: 1rem;
 }
 
-.digi.content p{
+.digi .content p{
    padding:1rem 0;
-   line-height: 2;
+   line-height: 2rem;
    color:var(--light-color);
    font-size: 1.5rem;
 }

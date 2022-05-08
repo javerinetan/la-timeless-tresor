@@ -47,7 +47,7 @@ html{
 
 section{
    padding:3rem 2rem;
-   max-width: 1200px;
+   max-width: 1300px;
    margin:0 auto;
 }
 
@@ -64,7 +64,7 @@ section{
 .heading h3{
    font-size:4rem;
    color:var(--black);
-   font-family: 'Libre Bodoni', serif
+   font-family: 'Libre Bodoni', serif;
 }
 
 .btn{
@@ -141,7 +141,7 @@ section{
 .welcome-bg .welcome .content h3{
    font-size: 5rem;
    color:var(--Black);
-   font-family: 'Libre Bodoni', serif
+   font-family: 'Libre Bodoni', serif;
 }
 
 .welcome-bg .welcome .content p{
@@ -154,13 +154,13 @@ section{
 .book .content h1{
   font-size: 7rem;
   color:var(--Black);
-  font-family: 'Libre Bodoni', serif
+  font-family: 'Libre Bodoni', serif;
   text-align: left;
 }
 
 .book .content h3,h4{
   font-size: 5rem;
   color:var(--Black);
-  font-family: 'Libre Bodoni', serif
+  font-family: 'Libre Bodoni', serif;
   text-align: left;
 }
