@@ -139,7 +139,12 @@ a {
   align-items: center;
   flex-wrap: wrap;
   gap:4rem;
+  border-left: 2rem;
+  border-right: 2rem;
+  padding-right: 3rem;
+  padding-right: 3rem;
   padding-bottom: 10rem;
+  max-width: 1300px;
 }
 
   .facilities .image{
