@@ -17,16 +17,16 @@ function displayNav() {
 window.onscroll = function() {
   if (window.pageYOffset >= 300) {
     navbar.classList.add("sticky");
-    sidebtn.classList.add("alt-color");
-    form.classList.add("alt-color");
+    //sidebtn.classList.add("alt-color");
+    //form.classList.add("alt-color");
 
     logo.src = "../resources/images/logov2_black.png";
     account.src = "../resources/images/logov2_black.png";
   }
   else {
     navbar.classList.remove("sticky");
-    sidebtn.classList.remove("alt-color");
-    form.classList.add("alt-color");
+    // sidebtn.classList.remove("alt-color");
+    //form.classList.add("alt-color");
 
     logo.src = "../resources/images/logov2_white.png";
     account.src = "../resources/images/logov2_white.png";
