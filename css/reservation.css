@@ -1,24 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400;1,400;1,700&display=swap');
 
-:root{
-   --main-color:#be9c79;
-   --black:#333;
-   --white:#fff;
-   --light-color:#666;
-   --border:.2rem solid var(--black);
-   --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
-   --extra: #8c735c;
 
-}
-
-*{
-   font-family: 'Libre Bodoni', serif
-   margin:0; padding:0;
-   box-sizing: border-box;
-   outline: none; border:none;
-   text-decoration: none;
-   text-transform: capitalize;
-}
 
 *::selection{
    background-color: var(--main-color);
@@ -47,7 +29,7 @@ html{
 
 section{
    padding:3rem 2rem;
-   max-width: 1200px;
+   max-width: 100%;
    margin:0 auto;
 }
 
@@ -88,6 +70,7 @@ section{
    box-shadow: var(--box-shadow);
    z-index: 1000;
 }
+
 
 .header .flex{
    display: flex;
@@ -172,7 +155,7 @@ section{
 
 .reserved .box-container .box img{
    height: 45rem;
-   margin-bottom: .5rem;
+   margin-bottom: 0.5rem;
    align-items: center;
 }
 
