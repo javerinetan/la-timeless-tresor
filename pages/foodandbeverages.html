@@ -6,11 +6,64 @@
 <title>Food And Beverages</title>
 <link rel="stylesheet" href="../css/navbar.css">
 <link rel="stylesheet" href="../css/foodandbeverage.css">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400;1,400;1,700&display=swap" rel="stylesheet">
+
 </head>
 
-<img src="../resources/images/hotellogo.jpg" width="120" height="120">
 <!---header for navigation--->
-
+<nav class="topnav" id="myTopnav">
+     <div class="container">
+       <a href="index.html" style="padding:0; display:inline">
+         <img src="../resources/images/logov2_white.png" alt="Logo" class="nav-logo" id="navLogo">
+       </a>
+       <a href="javascript:void(0);" style="font-size:18px;margin-top: 10px;" class="icon" onclick="displayNav()">&#9776;</a>
+       <div class="nav-items">
+         <div class="dropdown">
+           <button class="dropbtn">The Resort
+             <i class="ti-angle-down"></i>
+           </button>
+           <div class="dropdown-content">
+             <a href="#">Overview<i class="ti-angle-right"></i></a>
+             <a href="#">Accomodations<i class="ti-angle-right"></i></a>
+             <a href="facilities.html">Facilities<i class="ti-angle-right"></i></a>
+             <a href="./services.html">Services<i class="ti-angle-right"></i></a>
+           </div>
+         </div>
+         <div class="dropdown">
+           <button class="dropbtn">Dining
+             <i class="ti-angle-down"></i>
+           </button>
+           <div class="dropdown-content">
+             <a href="#">The Restaurant<i class="ti-angle-right"></i></a>
+             <a href="#">Reservation<i class="ti-angle-right"></i></a>
+             <a href="#">Ordering<i class="ti-angle-right"></i></a>
+           </div>
+         </div>
+         <div class="dropdown">
+           <button class="dropbtn">Events & Promotions
+             <i class="ti-angle-down"></i>
+           </button>
+           <div class="dropdown-content">
+             <a href="#news">Events<i class="ti-angle-right"></i></a>
+             <a href="#contact">Promotions<i class="ti-angle-right"></i></a>
+           </div>
+         </div>
+         <a href="#about">Gallery</a>
+         <a href="#contact">Contact</a>
+         <a href="#home" class="active">Book Now</a>
+         <div class="dropdown">
+           <button class="dropbtn"><img src="../resources/images/user_white.png" alt="account" id="account" width="18px">
+             <i class="ti-angle-down"></i>
+           </button>
+           <div class="dropdown-content" style="min-width:120px">
+             <a href="#">Log In<i class="ti-angle-right"></i></a>
+             <a href="#">Sign Up<i class="ti-angle-right"></i></a>
+           </div>
+         </div>
+       </div>
+     </div>
+     <script src="../js/nav.js"></script>
+   </nav>
 
 <!---image of promotion and also have swapping images from time to time--->
 <div id="Promotions">
@@ -18,7 +71,7 @@
   </div>
 
 <!---food types on the left side--->
-<div class='Food Types'>
+<div class='FoodTypes'>
   <ul>
     <li>Main Courses</li>
     <li>Entrees</li>
@@ -30,17 +83,17 @@
 <!---food on the right side--->
 <div class="Food">
   <ul>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
+    <li>food</li>
+    <li>food</li>
+    <li>food</li>
+    <li>food</li>
+    <li>food</li>
+    <li>food</li>
+    <li>food</li>
+    <li>food</li>
+    <li>food</li>
+    <li>food</li>
+    <li>food</li>
   </ul>
 
 </div>

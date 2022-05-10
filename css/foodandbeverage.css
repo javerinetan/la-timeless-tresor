@@ -1,27 +1,9 @@
+/*Food Types*/
+.FoodTypes{color: blue;
+text-align: left;}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.header{
-  color: blue;
+/*Food*/
+.Food{color:red;
+  text-align: center;
+  
 }
