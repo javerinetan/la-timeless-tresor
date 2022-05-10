@@ -44,7 +44,7 @@ html{
 
 section{
    padding:3rem 2rem;
-   max-width: 1300px;
+   max-width: 100%;
    margin:0 auto;
 }
 
@@ -139,7 +139,10 @@ a {
   align-items: center;
   flex-wrap: wrap;
   gap:4rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
   padding-bottom: 10rem;
+  max-width: 1300px;
 }
 
   .facilities .image{

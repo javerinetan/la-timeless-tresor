@@ -313,6 +313,10 @@
   .nav-logo {
     float: none;
   }
+  .nav-items:nth-child(3) a{
+    background-color: white;
+    color: black !important;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -340,5 +344,7 @@
     display: block;
     width: 100%;
     text-align: left;
+    color: black;
+    background-color: white
   }
 }
