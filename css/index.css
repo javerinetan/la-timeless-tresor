@@ -24,7 +24,6 @@
 }
 
 .heading {
-  font-family: 'LibreBodoni-Regular';
   color: white;
   position: relative;
   top: 180px;
@@ -32,6 +31,7 @@
 }
 
 .heading h1 {
+  font-family: 'LibreBodoni-Regular';
   font-size: 60px;
   color: white;
   margin: 0;
