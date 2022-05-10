@@ -139,6 +139,7 @@ section{
 .intro-bg .intro .content{
    width: 110rem;
    text-align: center;
+   margin: auto;
 }
 
 .intro-bg .intro .content h3{
