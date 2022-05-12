@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="resources/images/logo.png">
     <title>La Timeless Trésor</title>
     <link rel="stylesheet" href="css/index.css">
 
@@ -81,21 +82,25 @@
         <h2>Booking</h2>
         <input class="chk-in input-style1" type="date">
         <input class="chk-out input-style1" type="date">
-        <select class="adult input-style1" name="adult">
-          <option value="">Adult</option>
-          <option value="">1</option>
-          <option value="">2</option>
-          <option value="">3</option>
-          <option value="">4</option>
-        </select>
-        <select class="child input-style1" name="">
-          <option value="">Child</option>
-          <option value="">0</option>
-          <option value="">1</option>
-          <option value="">2</option>
-          <option value="">3</option>
-          <option value="">4</option>
-        </select>
+        <div class="form-container" style="padding: 0px 7.5px 0px 0px">
+          <select class="adult input-style2" name="adult">
+            <option value="">Adult</option>
+            <option value="">1</option>
+            <option value="">2</option>
+            <option value="">3</option>
+            <option value="">4</option>
+          </select>
+        </div>
+        <div class="form-container" style="padding: 0px 0px 0px 7.5px">
+          <select class="child input-style2" name="">
+            <option value="">Child</option>
+            <option value="">0</option>
+            <option value="">1</option>
+            <option value="">2</option>
+            <option value="">3</option>
+            <option value="">4</option>
+          </select>
+        </div>
         <button class="button-style1">Check Availability</button>
       </div>
       <script src="js/index.js"></script>
