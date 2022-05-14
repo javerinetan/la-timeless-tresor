@@ -3,6 +3,7 @@ var logo = document.getElementById("navLogo");
 var sidebtn = document.getElementById("sideBtn");
 var account = document.getElementById("account");
 var form = document.getElementById("bookForm");
+var indicator = document.getElementById("indicator");
 
 var firstLoad = true;
 
@@ -26,6 +27,7 @@ window.onscroll = function() {
     navbar.classList.add("sticky");
     sidebtn.classList.add("alt-color");
     form.classList.add("alt-color");
+    indicator.classList.add("to-top");
 
     if (firstLoad) {
       firstLoad = false;
@@ -39,6 +41,7 @@ window.onscroll = function() {
   else {
     navbar.classList.remove("sticky");
     sidebtn.classList.remove("alt-color");
+    indicator.classList.remove("to-top");
     form.classList.add("alt-color");
 
     logo.src = "resources/images/logov2_white.png";
@@ -59,4 +62,12 @@ function displayBookingForm() {
 function dismissBookingForm(){
   form.classList.remove("show-form");
   sidebtn.classList.remove("btn-active");
+}
+
+function scrollAction(){
+  if (window.pageYOffset >= 300){
+    window.scrollTo(0, 0);
+  } else {
+      window.scrollTo(0, window.innerHeight);
+  }
 }
