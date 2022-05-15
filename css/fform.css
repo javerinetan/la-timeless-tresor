@@ -55,57 +55,35 @@ section{
    margin-bottom: 3rem;
 }
 
-.heading img{
-   height: 4rem;
-   margin-bottom: 1rem;
-}
-
 .heading h3{
    font-size:4rem;
    color:var(--black);
    font-family: 'Libre Bodoni', serif;
 }
 
-
-.heading{
-   text-align: center;
-   margin-bottom: 3rem;
-}
-
-.heading img{
-   height: 4rem;
-   margin-bottom: 1rem;
-}
-
-.heading h3{
-   font-size:4rem;
-   color:var(--black);
-   font-family: 'Libre Bodoni', serif;
-}
-
-.home-bg{
-   background:linear-gradient(90deg, var(--white), transparent 0%), url(../resources/images/pool2.jfif) no-repeat;
+.phome-bg{
+   background:linear-gradient(90deg, var(--white), transparent 0%), url(../resources/images/pool2.jpg) no-repeat;
    background-size: cover;
    background-position: center;
-   height: 400px;
+   height: 500px;
    text-align: center;
 }
 
-.home-bg .home{
+.phome-bg .home{
    min-height: 600px;
    display: flex;
    align-items: center;
 }
 
-.home-bg .home .content{
+.phome-bg .home .content{
    max-width: 80%;
    text-align: center;
    margin-left: auto;
    margin-right: auto;
-   margin-top: 90px;
+   margin-top: 140px;
 }
 
-.home-bg .home .content h2{
+.phome-bg .home .content h2{
    font-size: 6rem;
    color:var(--white);
    font-family: 'Libre Bodoni', serif;;
@@ -160,7 +138,7 @@ a {
    width: 100%;
    padding:1.4rem;
    font-size: 1.8rem;
-   color:var(--black);
+   color:var(--lightcolor);
    border:var(--border);
    margin:1rem 0;
 }
@@ -173,6 +151,8 @@ a {
   color: var(--white);
   margin-top: 1.5rem;
   font-size: 1.5rem;
+  padding-left: auto;
+  padding-right: auto;
 }
 
 .btn:hover{
@@ -298,4 +278,104 @@ a {
       font-size: 3rem;
    }
 
+}
+
+/* spa */
+.sm{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  height: 4rem;
+  width: 3rem;
+  background-color: #f1f1f1;
+}
+
+#spa{
+  padding:5rem 30rem 20rem
+}
+
+
+.form .row form label{
+   font-size: 2rem;
+   margin-bottom: 1rem;
+   color:var(--darkbrown);
+   font-family: 'Libre Bodoni', serif;
+   text-align: left;
+}
+
+.form .row .cdate{
+  color: var(--lightcolor);
+}
+
+select{
+  display: flex;
+  border: .2rem solid var(--poopb);
+  height: 4rem;
+
+}
+
+select:hover{
+  color: var(--darkbrown);
+}
+
+.shome-bg {
+   background:linear-gradient(90deg, var(--white), transparent 0%), url(../resources/images/spa2.jpg) no-repeat;
+   background-size: cover;
+   background-position: center;
+   height: 500px;
+   text-align: center;
+}
+
+.shome-bg .home{
+   min-height: 600px;
+   display: flex;
+   align-items: center;
+}
+
+.shome-bg .home .content{
+   max-width: 90%;
+   text-align: center;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 90px;
+}
+
+.shome-bg .home .content h2{
+   font-size: 6rem;
+   color:var(--white);
+   font-family: 'Libre Bodoni', serif;
+   padding-left: auto;
+   padding-right: auto;
+}
+
+
+/*gym form*/
+
+.ghome-bg{
+   background:linear-gradient(90deg, var(--white), transparent 0%), url(../resources/images/gym2.jpg) no-repeat;
+   background-size: cover;
+   background-position: center;
+   height: 500px;
+   text-align: center;
+}
+
+.ghome-bg .home{
+   min-height: 600px;
+   display: flex;
+   align-items: center;
+}
+
+.ghome-bg .home .content{
+   max-width: 80%;
+   text-align: center;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 90px;
+}
+
+.ghome-bg .home .content h2{
+   font-size: 6rem;
+   color:var(--white);
+   font-family: 'Libre Bodoni', serif;;
 }
