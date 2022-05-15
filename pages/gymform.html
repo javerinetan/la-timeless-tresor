@@ -99,9 +99,10 @@
 
      <form action="" method="post">
         <h3>book a gym session</h3>
-        <input type="text" name="number" required class="box" maxlength="20" placeholder="hotel confirmation number">
-        <input type="text" name="cdate" required class="box" maxlength="20" placeholder="check-in date (DD/MM/YYYY)" onkeypress="if(this.value.length == 10) return false">
-        <input type="text" name="guests" required class="box" maxlength="20" placeholder="how many guests" onkeypress="if(this.value.length == 2) return false">
+        <label for='confnum'>hotel confirmation number:</label>
+        <input type="text" name="number" required class="box" pattern="[1-9] {6,6}" placeholder="hotel confirmation number" required>
+        <label for='check-in'>check-in date:</label>
+        <input type="date" name="cdate" required class="box" min="2020-01-01" max="2023-01-01" required>
         <input type="submit" name="send" value="next" class="btn">
      </form>
 

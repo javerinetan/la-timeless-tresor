@@ -83,7 +83,7 @@ a {
 
 
 .home-bg{
-   background:linear-gradient(90deg, var(--white), transparent 0%), url(../resources/images/hotel2.jpg) no-repeat;
+   background:linear-gradient(90deg, var(--white), transparent 0%), url(../resources/images/desk.jpg) no-repeat;
    background-size: cover;
    background-position: center;
    height: 500px;
@@ -293,6 +293,38 @@ a {
 }
 
 /* ferryschedule*/
+
+.thome-bg{
+   background:linear-gradient(90deg, var(--white), transparent 0%), url(../resources/images/hotel2.jpg) no-repeat;
+   background-size: cover;
+   background-position: center;
+   height: 500px;
+   text-align: center;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.thome-bg .home{
+   min-height: 600px;
+   display: flex;
+   align-items: center;
+}
+
+.thome-bg .home .content{
+   max-width: 80%;
+   text-align: center;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 90px;
+}
+
+.thome-bg .home .content h2{
+   font-size: 6rem;
+   color:var(--white);
+   font-family: 'Libre Bodoni', serif;
+}
+
+
 .ferrytable{
   padding: 2rem;
 }
