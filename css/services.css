@@ -83,7 +83,7 @@ a {
 
 
 .home-bg{
-   background:linear-gradient(90deg, var(--white), transparent 0%), url(../resources/images/desk.jpg) no-repeat;
+   background:linear-gradient(90deg, var(--white), transparent 0%), url(../resources/images/table.jpg) no-repeat;
    background-size: cover;
    background-position: center;
    height: 500px;
