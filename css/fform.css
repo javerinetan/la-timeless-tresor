@@ -95,19 +95,21 @@ section{
 
 
 /*text in button*/
-a {
+.form a {
   color: var(--white);
   line-height: 25px;
   margin-left: 15px;
   margin-right: 15px;
-  font-size: 1.5rem;
 }
 
 
 
 /* form start*/
 .form{
-  padding:10rem 30rem 10rem;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  width: 70rem;
+  min-width: 40rem;
 }
 .form .row{
    display: flex;
@@ -181,7 +183,7 @@ select{
   border-radius: 8px;
   line-height: 3rem;
   color: var(--white);
-  margin-top: 5rem;
+  margin-top: 6rem;
   font-size: 1.8rem;
   padding-left: 1rem;
   padding-right: 1rem;
