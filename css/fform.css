@@ -316,16 +316,9 @@ select{
 
 /* spa */
 
-#spa{
-  padding:10rem 30rem 10rem
-}
-
 .form .row .cdate{
   color: var(--lightcolor);
 }
-
-
-
 .shome-bg {
    background:linear-gradient(90deg, var(--white), transparent 0%), url(../resources/images/spa2.jpg) no-repeat;
    background-size: cover;

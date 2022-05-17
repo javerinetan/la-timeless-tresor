@@ -106,11 +106,11 @@ section{
    grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
    gap:2.5rem;
    align-items: flex-start;
-   padding: 50px;
 }
 
 .reserved .box-container .box{
    text-align: center;
+   padding: .8rem;
 }
 
 
