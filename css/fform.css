@@ -132,6 +132,12 @@ a {
    border-radius: 1.5rem;
 }
 
+.form .row form p{
+   line-height: 2rem;
+   font-size: 1.5rem;
+   text-align: left;
+}
+
 .form .row form label{
    font-size: 2rem;
    margin-bottom: 1.5rem;
@@ -159,18 +165,26 @@ label{
   padding-top: 1.5rem;
 }
 
-
+select{
+  display: flex;
+  background-color: white;
+  height: 5rem;
+  width: 15rem;
+  font-size: 1.8rem;
+  padding-left: 1.3rem;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+}
 
 .btn {
   background-color: var(--main-color);
   border-radius: 8px;
-  line-height: 2;
-  padding: 0 1rem;
+  line-height: 3rem;
   color: var(--white);
-  margin-top: 1.5rem;
-  font-size: 1.5rem;
-  padding-left: auto;
-  padding-right: auto;
+  margin-top: 5rem;
+  font-size: 1.8rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .btn:hover{
@@ -308,15 +322,6 @@ label{
   color: var(--lightcolor);
 }
 
-select{
-  display: flex;
-  background-color: white;
-  height: 5rem;
-  width: 15rem;
-  font-size: 1.8rem;
-  padding-left: 1.3rem;
-  border-radius: 1rem;
-}
 
 
 .shome-bg {

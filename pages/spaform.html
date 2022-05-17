@@ -100,7 +100,7 @@
      <form action="" method="POST">
         <h3>book a session at la massage</h3>
         <label for='confnum'>hotel confirmation number:</label>
-        <input type="text" name="number" required class="box" pattern="[1-9] {6,6}" placeholder="hotel confirmation number" required>
+        <input type="text" name="number" required class="box" placeholder="hotel confirmation number" required>
         <label for='check-in'>check-in date:</label>
         <input type="date" name="cdate" required class="box" min="2020-01-01" max="2023-01-01" required>
         <label for="type">Type of session:</label>
@@ -108,7 +108,9 @@
            <option value="spa">Spa</option>
            <option value="massage">Massage</option>
           </select>
-        <input type="submit" name="send" value="next" class="btn">
+          <br>
+        <a href="./spaformdate.html" class="btn">submit</a>
+        <!--or massage <a href="./massageformdate.html" class="btn">submit</a>-->
      </form>
 
 
