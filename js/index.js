@@ -23,7 +23,7 @@ function displayNav() {
 }
 
 window.onscroll = function() {
-  if (window.pageYOffset >= 300) {
+  if (window.pageYOffset >= 250) {
     navbar.classList.add("sticky");
     sidebtn.classList.add("alt-color");
     form.classList.add("alt-color");
@@ -68,6 +68,6 @@ function scrollAction(){
   if (window.pageYOffset >= 300){
     window.scrollTo(0, 0);
   } else {
-      window.scrollTo(0, window.innerHeight);
+    window.scrollTo(0, window.innerHeight - navbar.clientHeight);
   }
 }
