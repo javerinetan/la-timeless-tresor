@@ -11,7 +11,7 @@
 <body>
   <nav class="topnav" id="myTopnav">
       <div class="container">
-        <a href="index.html" style="padding:0; display:inline">
+        <a href="../index.html" style="padding:0; display:inline">
           <img src="../resources/images/logov2_white.png" alt="Logo" class="nav-logo" id="navLogo">
         </a>
         <a href="javascript:void(0);" style="font-size:18px;margin-top: 10px;" class="icon" onclick="displayNav()">&#9776;</a>
@@ -84,7 +84,10 @@
     </nav>
     <!-- Image + Header -->
     <div>
-      <img src="../resources/images/galleryimage.jpg" alt="image" class="galleryimage">
+        <header class="banner" onclick="dismissBookingForm()">
+          <div class="layer">
+          </div>
+        </header>
       <h2 id="mainsubheader">IMAGES & VIDEOS</h2>
       <h1 id="mainheader">Our Gallery</h1>
     </div>
@@ -92,11 +95,29 @@
     <div class="mainbody">
       <div class="container">
         <h2 id="subtitle">IMAGES</h2>
-        <h1 id="title">Image Gallery</h1>
-        <div class="flexbox-container">
-          <img class="flexbox-item flexbox-item-1" src="../resources/images/galleryimg1.jpg" alt="Example image">
-          <img class="flexbox-item flexbox-item-2" src="../resources/images/galleryimg2.jpg" alt="Example image">
-          <img class="flexbox-item flexbox-item-3" src="../resources/images/galleryimg3.jpg"  alt="Example image">
-      </div>
+        <h1 id="title">OUR GALLERY</h1>
+        <div>
+          <div onclick="show('all')">All</div>
+          <div onclick="show('exterior')">Exterior</div>
+          <div onclick="show('dining')">Dining</div>
+          <div onclick="show('experience')">Experience</div>
+          <div onclick="show('interior')">Interior</div>
+        </div>
+          <section class="all flexbox-container" id="all">
+            <img class="flexbox-item flexbox-item-1" src="../resources/images/galleryimg1.jpg" alt="Example image">
+          </section>
+          <section class="exterior flexbox-container" id="exterior">
+            <img class="flexbox-item flexbox-item-2" src="../resources/images/galleryimg2.jpg" alt="Example image">
+          </section>
+          <section class="dining flexbox-container" id="dining">
+              <img class="flexbox-item flexbox-item-3" src="../resources/images/galleryimg3.jpg"  alt="Example image">
+          </section>
+          <section class="experience flexbox-container" id="experience">
+            <img src="#" class="#">
+          </section>
+          <section class="interior flexbox-container" id="interior">
+            <img src="#" class="#">
+          </section>
     </div>
+    <script type="text/javascript" src="../js/gallery.js"></script>
 </body>
