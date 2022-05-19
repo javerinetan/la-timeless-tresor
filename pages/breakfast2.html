@@ -14,7 +14,6 @@
    <link rel="stylesheet" href="../css/breakfast.css">
    <link rel="stylesheet" href="../css/navbar.css">
    <link rel="stylesheet" href="../css/global.css">
-  
 </head>
 <body>
   <!-- Promotions header section starts  -->
@@ -110,26 +109,14 @@
      <form action="" method="POST">
         <h3>Reservation for Breakfast</h3>
 
-        <label for='confnum'>Enter Name:</label>
-        <input type="text" name="number" required class="box" placeholder="Please enter your full name" required>
-        <label for='check-in'> Select booking date:</label>
-        <input type="date" name="cdate" required class="box" min="2022-25-05" max="2023-01-01" required>
-        <label for="type">Choose time slot:</label>
-          <select name="sm" id="type">
-           <option value="7.00am">7.00am</option>
-           <option value="7.30am">7.30am</option>
-           <option value="8.00am">8.00am</option>
-           <option value="8.30am">8.30am</option>
-           <option value="9.00am">9.00am</option>
-           <option value="9.30am">9.30am</option>
-           <option value="10.00am">10.00am</option>
-           <option value="10.30am">10.30am</option>
-           <option value="11.00am">11.00am</option>
-           <option value="11.30am">11.30am</option>
-          </select>
+        <input type="text" name="name" required class="box" maxlength="20" placeholder="enter your name">
+        <input type="number" name="number" required class="box" maxlength="20" placeholder="enter your phone number" min="0" max="9999999999" onkeypress="if(this.value.length == 10) return false">
+        <input type="email" name="email"required class="box" maxlengt required class="box" maxlength="20" placeholder="enter your email">
+        <input type="enquire" name="enquire" required class="box" maxlengt required class="box" maxlength="50" placeholder="What is your enquire?">
+<script src="../js/breafast.js"></script>
 
 
-        <a href="./breakfast2.html" class="btn">Next</a>
+        <a href="./confirmation.html" class="btn">Next</a>
         <!--or massage <a href="./massageformdate.html" class="btn">submit</a>-->
      </form>
 
