@@ -169,13 +169,13 @@ label{
 
 select{
   display: flex;
-  background-color: white;
   height: 5rem;
   width: 15rem;
   font-size: 1.8rem;
   padding-left: 1.3rem;
   border-radius: 1rem;
   margin-bottom: 2rem;
+  outline: var(--darkbrown);
 }
 
 .btn {
