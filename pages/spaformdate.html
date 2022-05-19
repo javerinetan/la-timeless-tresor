@@ -79,7 +79,7 @@
    <section class="home" id="home">
 
       <div class="content">
-         <h2>spa session booking page</h2>
+         <h2>Le massage session booking page</h2>
       </div>
 
    </section>
@@ -102,9 +102,13 @@
         <h3>choose your a spa session</h3>
         <label for='date'>Date:</label>
         <input type="date" name="cdate" required class="box" min="2020-01-01" max="2023-01-01" required>
+        <label for="type">Type of session:</label>
+          <select name="sm" id="type">
+           <option value="spa">Spa</option>
+           <option value="massage">Massage</option>
+          </select>
         <label for="type">Time: *</label>
           <select name="time" id="type">
-           <option value="time1">0600</option>
            <option value="time2">0800</option>
            <option value="time3">1000</option>
            <option value="time4">1200</option>
@@ -112,10 +116,9 @@
            <option value="time6">1600</option>
            <option value="time7">1800</option>
            <option value="time8">2000</option>
-           <option value="time9">2200</option>
           </select>
           <p>*each session is 2hrs long</p>
-        <a href=""><input type="submit" name="send" value="next" class="btn"></a>
+        <a href="spaformdone.html" class="btn">submit</a>
      </form>
 
 

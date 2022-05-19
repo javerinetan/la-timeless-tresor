@@ -4,7 +4,7 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Massage Booking Page</title>
+   <title>Spa Booking Page</title>
 
    <!-- font awesome cdn link  -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
@@ -32,8 +32,8 @@
            <div class="dropdown-content">
              <a href="#">Overview<i class="ti-angle-right"></i></a>
              <a href="#">Accomodations<i class="ti-angle-right"></i></a>
-             <a href="./facilities.html">Facilities<i class="ti-angle-right"></i></a>
-             <a href="./services.html">Services<i class="ti-angle-right"></i></a>
+             <a href="facilities.html">Facilities<i class="ti-angle-right"></i></a>
+             <a href="services.html">Services<i class="ti-angle-right"></i></a>
            </div>
          </div>
          <div class="dropdown">
@@ -79,7 +79,7 @@
    <section class="home" id="home">
 
       <div class="content">
-         <h2>massage session booking page</h2>
+         <h2>Le massage session booking page</h2>
       </div>
 
    </section>
@@ -95,30 +95,14 @@
 
 
 <!-- forms section starts -->
-<section class="form">
-    <div class="row">
-
-     <form action="" method="post">
-        <h3>choose your a massage session</h3>
-        <label for='date'>Date:</label>
-        <input type="date" name="cdate" required class="box" min="2020-01-01" max="2023-01-01" required>
-        <label for="type">Time:*</label>
-          <select name="time" id="type">
-           <option value="time1">0600</option>
-           <option value="time2">0800</option>
-           <option value="time3">1000</option>
-           <option value="time4">1200</option>
-           <option value="time5">1400</option>
-           <option value="time6">1600</option>
-           <option value="time7">1800</option>
-           <option value="time8">2000</option>
-           <option value="time9">2200</option>
-          </select>
-          <p>*each session is 2hrs long</p>
-        <a href=""><input type="submit" name="send" value="next" class="btn"></a>
-     </form>
-
-
+<section class="done">
+    <div class="box-container">
+      <div class="box">
+        <h3>booking confirmed !</h3>
+        <p>an email has been sent to you. if you want to change the booking please change it through the link in that email</p>
+        <a href="facilities.html" class="btn" id="back1">facilities page </a>
+        <a href="./index.html" class="btn" id="back2">home page </a>
+  </div>
   </div>
 </section>
 
