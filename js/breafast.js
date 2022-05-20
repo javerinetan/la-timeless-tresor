@@ -1,6 +1,4 @@
-<script>
-
-  window.addEventListener("DOMContentLoaded", function(e) {
+window.addEventListener("DOMContentLoaded", function(e) {
 
     var myForm = document.getElementById("example4");
     var checkForm = function(e) {
@@ -52,5 +50,3 @@
   // validation was successful
   return true;
 }
-
-</script>
