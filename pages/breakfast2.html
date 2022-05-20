@@ -14,6 +14,7 @@
    <link rel="stylesheet" href="../css/breakfast.css">
    <link rel="stylesheet" href="../css/navbar.css">
    <link rel="stylesheet" href="../css/global.css">
+ <script src="../breafast.js"></script>
 </head>
 <body>
   <!-- header section starts  -->
@@ -110,12 +111,12 @@
 
         <input type="text" name="name" required class="box" maxlength="20" placeholder="enter your name">
         <input type="number" name="number" required class="box" maxlength="20" placeholder="enter your phone number" min="0" max="9999999999" onkeypress="if(this.value.length == 10) return false">
-        <input type="email" name="email"required class="box" maxlengt required class="box" maxlength="20" placeholder="enter your email">
+        <input type="email" name="email"required class="box" maxlengt required class="box" maxlength="50" placeholder="enter your email">
         <input type="enquire" name="enquire" required class="box" maxlengt required class="box" maxlength="50" placeholder="What is your enquire?">
 
 
 
-        <a href="./confirmation.html" name="send" value="send message" class="btn">Next</a>
+        <button onclick="alertFunc()" name="send" value="send message" class="btn" id="Nextbtn">Next</button>
 
      </form>
 
