@@ -109,8 +109,9 @@ section{
   padding-top: 10rem;
   padding-bottom: 10rem;
   width: 70rem;
-  min-width: 40rem;
+  min-width: 30rem;
 }
+
 .form .row{
    display: flex;
    align-items: center;
@@ -291,81 +292,7 @@ select{
    color:var(--light-color);
 }
 
-/* media queries  */
-
-@media (max-width:991px){
-
-   html{
-      font-size: 55%;
-   }
-
-}
-
-@media (max-width:768px){
-
-   #menu-btn{
-      display: inline-block;
-      transition: .2s linear;
-   }
-
-   #menu-btn.fa-times{
-      transform: rotate(180deg);
-   }
-
-   .header .flex .navbar{
-      position: absolute;
-      top:99%; left:0; right:0;
-      background-color: var(--white);
-      border-top: var(--border);
-      border-bottom: var(--border);
-      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-      transition: .2s linear;
-   }
-
-   .header .flex .navbar.active{
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-   }
-
-   .header .flex .navbar a{
-      display: block;
-      margin:2rem;
-   }
-
-   .home-bg{
-      background-position: left;
-   }
-
-   .home-bg .home{
-      justify-content: center;
-   }
-
-   .home-bg .home .content h3{
-      font-size: 4rem;
-   }
-
-   .about .content h3{
-      font-size: 3rem;
-   }
-
-}
-
-@media (max-width:450px){
-
-   html{
-      font-size: 50%;
-   }
-
-   .heading img{
-      height: 3rem;
-   }
-
-   .heading h3{
-      font-size: 3rem;
-   }
-
-}
-
-/* spa */
+/* spa form */
 
 .form .row .cdate{
   color: var(--lightcolor);
@@ -389,7 +316,7 @@ select{
    text-align: center;
    margin-left: auto;
    margin-right: auto;
-   margin-top: 90px;
+   margin-top: 140px;
 }
 
 .shome-bg .home .content h2{
@@ -404,7 +331,7 @@ select{
 /*gym form*/
 
 .ghome-bg{
-   background:linear-gradient(90deg, var(--white), transparent 0%), url(../resources/images/gym2.jpg) no-repeat;
+   background:linear-gradient(90deg, var(--white), transparent 0%), url(../resources/images/gym3.jpg) no-repeat;
    background-size: cover;
    background-position: center;
    height: 500px;
@@ -418,11 +345,11 @@ select{
 }
 
 .ghome-bg .home .content{
-   max-width: 80%;
+   max-width: 90%;
    text-align: center;
    margin-left: auto;
    margin-right: auto;
-   margin-top: 90px;
+   margin-top: 140px;
 }
 
 .ghome-bg .home .content h2{

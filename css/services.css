@@ -174,7 +174,7 @@ a {
 }
 
 .footer{
-  background-color: #ccc6bb
+  background-color: #ccc6bb;
 }
 
 .footer .box-container{
@@ -217,85 +217,10 @@ a {
    color:var(--light-color);
 }
 
-
-/* media queries  */
-
-@media (max-width:991px){
-
-   html{
-      font-size: 55%;
-   }
-
-}
-
-@media (max-width:768px){
-
-   #menu-btn{
-      display: inline-block;
-      transition: .2s linear;
-   }
-
-   #menu-btn.fa-times{
-      transform: rotate(180deg);
-   }
-
-   .header .flex .navbar{
-      position: absolute;
-      top:99%; left:0; right:0;
-      background-color: var(--white);
-      border-top: var(--border);
-      border-bottom: var(--border);
-      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-      transition: .2s linear;
-   }
-
-   .header .flex .navbar.active{
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-   }
-
-   .header .flex .navbar a{
-      display: block;
-      margin:2rem;
-   }
-
-   .home-bg{
-      background-position: left;
-   }
-
-   .home-bg .home{
-      justify-content: center;
-   }
-
-   .home-bg .home .content h3{
-      font-size: 4rem;
-   }
-
-   .about .content h3{
-      font-size: 3rem;
-   }
-
-}
-
-@media (max-width:450px){
-
-   html{
-      font-size: 50%;
-   }
-
-   .heading img{
-      height: 3rem;
-   }
-
-   .heading h3{
-      font-size: 3rem;
-   }
-
-}
-
 /* ferryschedule*/
 
 .thome-bg{
-   background:linear-gradient(90deg, var(--white), transparent 0%), url(../resources/images/hotel2.jpg) no-repeat;
+   background:linear-gradient(90deg, var(--white), transparent 0%), url(../resources/images/table.jpg) no-repeat;
    background-size: cover;
    background-position: center;
    height: 500px;
@@ -322,11 +247,8 @@ a {
    font-size: 6rem;
    color:var(--white);
    font-family: 'Libre Bodoni', serif;
-}
-
-
-.ferrytable{
-  padding: 2rem;
+   margin-left: auto;
+   margin-right: auto;
 }
 
 table,td {
@@ -339,7 +261,8 @@ table{
   margin-right: auto;
   table-layout:fixed;
   width:50%;
-  background-color: var(--table)
+  background-color: var(--table);
+  min-width: 25rem;
 }
 
 td{
@@ -361,21 +284,18 @@ h2{
 .backferry .hotel{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap:1rem;
   align-items: flex-start;
 }
 
 .ferrytable .hotel{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap:1rem;
   align-items: flex-start;
 }
 
 .bus .hotel{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap:1rem;
   align-items: flex-start;
 }
 
