@@ -127,17 +127,38 @@ section{
 
 
 /* form start*/
+
+/*extra
+padding-top: 5rem;
+padding-bottom: 5rem;
+width: 55rem;
+min-width: 45rem;*/
+
 .form{
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-  width: 55rem;
-  min-width: 45rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap:4rem;
+  padding: 50px;
+
 }
-.form .row{
+
+.form .image{
+   flex:1 1 40rem;
+}
+
+.form .image img{
+  width: 100%;
+}
+
+.form .content{
+   flex:1 1 40rem;
+}
+.form .content{
    display: flex;
    align-items: center;
    flex-wrap: wrap;
-   gap:2rem;
+   gap:0rem;
 }
 
 .form h3{
@@ -146,7 +167,7 @@ section{
   color: var(--black);
 }
 
-.form .row form{
+.form .content form{
    flex:1 1 30rem;
    padding:2rem;
    text-align: center;
@@ -156,27 +177,27 @@ section{
    border-radius: 1.5rem;
 }
 
-.form .row form p{
+.form .content form p{
    line-height: 2rem;
    font-size: 1.5rem;
    text-align: left;
 }
 
-.form .row form label{
+.form .content form label{
    font-size: 2rem;
    margin-bottom: 1.5rem;
    font-family: 'Libre Bodoni', serif;
    text-align: left;
 }
 
-.form .row form h3{
+.form .content form h3{
    font-size: 2.5rem;
    margin-bottom: 1rem;
    color:var(--darkbeige);
    padding-top: 1.5rem;
 }
 
-.form .row form .box{
+.form .content form .box{
    width: 100%;
    padding:1.4rem;
    font-size: 1.8rem;
@@ -215,22 +236,6 @@ select{
   background-color: var(--darkbrown);
 }
 
-.fl {
-   display: flex;
-   align-items: center;
-   flex-wrap: wrap;
-   gap:4rem;
-   padding: 50px;
-}
-
-.fl .image{
-   flex:1 1 40rem;
-}
-
-.fl .image img{
-  display: flex;
-  width: 100%;
-}
 
 /* footer starts */
 .footer{
