@@ -107,7 +107,7 @@ body {
   font-family: 'LibreBodoni-Regular';
   font-size: 15px;
   text-decoration: none;
-  line-height: 62.5px;
+  padding: 20px;
   position: relative;
   cursor: pointer;
   transition: all 0.3s ease-out;
@@ -139,8 +139,8 @@ body {
   border-radius: 0;
 }
 .container {
-  padding-right: 100px;
-  padding-left: 100px;
+  padding-right: 120px;
+  padding-left: 120px;
   width: 100%;
   margin-right: auto;
   margin-left: auto;
@@ -149,8 +149,8 @@ body {
 
 @media screen and (max-width: 1400px) {
   .container {
-    padding-right: 50px;
-    padding-left: 50px;
+    padding-right: 80px;
+    padding-left: 80px;
     margin-right: auto;
     margin-left: auto;
   }

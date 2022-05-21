@@ -82,9 +82,17 @@
         <p class="book-title">Book Now</p>
       </div>
       <div class="book-form" id="bookForm">
-        <h2>Booking</h2>
-        <input class="chk-in input-style1" type="date">
-        <input class="chk-out input-style1" type="date">
+        <h4>Le Timeless Tresor</h4>
+        <h2>Check Availability</h2>
+        <input class="chk-in input-style1" type="text" placeholder="Check in" onfocus="(this.type='date')" onblur="(this.type='text')">
+        <input class="chk-out input-style1" type="text" placeholder="Check out" onfocus="(this.type='date')" onblur="(this.type='text')">
+        <select class="room input-style2" name="adult">
+          <option value="">Room Type</option>
+          <option value="">1</option>
+          <option value="">2</option>
+          <option value="">3</option>
+          <option value="">4</option>
+        </select>
         <div class="form-container" style="padding: 0px 7.5px 0px 0px">
           <select class="adult input-style2" name="adult">
             <option value="">Adult</option>
@@ -121,15 +129,20 @@
     <section class="section1" onclick="dismissBookingForm()">
       <div class="container">
         <article>
+          <span>
+            <i class="star-rating"></i>
+            <i class="star-rating"></i>
+            <i class="star-rating"></i>
+            <i class="star-rating"></i>
+            <i class="star-rating"></i>
+          </span>
           <h1>An<br>Unforgettable Escape</h1>
-          <h4>Le Timeless tresor</h4>
+          <h4>Le Timeless Tresor Vintage Resort</h4>
           <p>Welcome to the best five-star deluxe hotel in New York. Hotel elementum sesue the aucan vestibulum aliquam justo in sapien rutrum volutpat. Donec in quis the pellentesque velit.</p>
+          <button class="button-style1">Learn more</button>
         </article>
         <aside>
-          <div>
-            <img src="resources/images/room_vert1.jpg" style="left: 130px;top: 80px;">
-            <img src="resources/images/rest_vert1.jpg">
-          </div>
+          <img src="resources/images/combined.png">
         </aside>
       </div>
     </section>
