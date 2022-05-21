@@ -128,12 +128,6 @@ section{
 
 /* form start*/
 
-/*extra
-padding-top: 5rem;
-padding-bottom: 5rem;
-width: 55rem;
-min-width: 45rem;*/
-
 .form{
   display: flex;
   align-items: center;
