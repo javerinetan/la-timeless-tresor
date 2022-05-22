@@ -178,6 +178,9 @@
   color: #aa8453;
 }
 
+.book-form h2 {
+  margin-bottom: 15px;
+}
 .form-container {
   float: left;
   width: 50%;
@@ -221,6 +224,10 @@
   text-align: center;
 }
 
+.book-btn .ti-angle-up {
+  font-weight: bold;
+}
+
 .book-arrow {
   margin-top:8px;
   margin-bottom:0px;
@@ -254,6 +261,17 @@
   margin: 15px 0px;
 }
 
+.button-style1 .ti-angle-right {
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.button-style1:hover .ti-angle-right {
+    opacity: 1;
+  margin-right: -10px;
+}
+
 .scroll-indicator {
   position: fixed;
   cursor: pointer;
@@ -266,7 +284,7 @@
   border-radius: 50%;
   background-color: #aa8453;
   transition: all 1s ease-in-out;
-  animation: jump 1s ease-in-out;
+  animation: jump 1.5s ease-in-out;
   animation-iteration-count: infinite;
 }
 

@@ -115,6 +115,10 @@ body {
   text-transform: uppercase;
 }
 
+.button-style1:hover {
+  background: #9e7a4c;
+}
+
 .input-style1 {
   display: block;
   width: 100%;
