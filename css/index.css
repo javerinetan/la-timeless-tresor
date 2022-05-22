@@ -119,16 +119,13 @@
   padding-right: 100px;
 }
 
-.section2 .container {
+.section2 .wrapper {
+  width: 100%;
   display: inline-block;
   margin-bottom: 100px;
   background-color: #F8F5F0;
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-.section2 aside {
-  float: right;
+  padding: 50px;
+  padding-left: 0px;
 }
 
 .section2 .section-title {
@@ -150,6 +147,7 @@
 
 .section2 article {
   width: 30%;
+  padding-left: 30px;
   float: right;
 }
 
@@ -171,6 +169,9 @@
   width: 550px;
 }
 
+.section3 .wrapper {
+  
+}
 
 @media screen and (max-width: 1200px) {
   .section1 aside img {
@@ -188,15 +189,15 @@
     width: 40%;
     float: right;
   }
+  .section-title {
+    font-size: 30px;
+  }
 }
 
 @media screen and (max-width: 900px) {
   .heading h1 {
     font-size: 40px;
     letter-spacing: 4px;
-  }
-  .section-title {
-    font-size: 30px;
   }
   .section1 aside img {
     width: 250px;
@@ -233,8 +234,8 @@
   .section2 aside, .section2 article {
     width: 100%;
   }
-  .section2 .container {
-
+  .section2 .section-sub-title {
+    margin-bottom: 30px;
   }
 }
 
@@ -249,11 +250,11 @@
   .section2 {
     padding-right: 0px;
   }
-  .section2 .section-sub-title {
-    margin-bottom: 30px;
-  }
   .carousel-cell img {
     display: block;
+  }
+  .section2 .wrapper {
+    padding: 30px;
   }
 }
 

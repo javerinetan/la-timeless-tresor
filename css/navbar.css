@@ -286,6 +286,7 @@
   animation: none !important;
   transform: rotate(180deg);
   right: 40px;
+  padding: 15px 15px 10px 15px !important;
 }
 
 .scroll-indicator.to-top:hover {
