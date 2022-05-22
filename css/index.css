@@ -43,7 +43,7 @@
 }
 
 .section-title {
-  font-size: 35px;
+  font-size: 40px;
   margin-bottom: 5px;
 }
 
@@ -74,7 +74,7 @@
 }
 
 .section1 aside img {
-  width: 380px;
+  width: 450px;
 }
 
 .star-rating {
@@ -123,7 +123,8 @@
   display: inline-block;
   margin-bottom: 100px;
   background-color: #F8F5F0;
-  padding: 40px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .section2 aside {
@@ -142,10 +143,6 @@
   margin-bottom: 20px;
 }
 
-.section2 .section-title, .section2 .section-sub-title {
-  text-align: right;
-}
-
 .section2 aside {
   width: 70%;
   float: right;
@@ -156,35 +153,56 @@
   float: right;
 }
 
+.section2 .section-sub-title {
+  text-align: right;
+}
+
+.carousel {
+  width: 100%;
+}
+
 .carousel-cell {
-  width: 66%;
-  height: 200px;
-  margin-right: 10px;
-  background: #8C8;
-  border-radius: 5px;
-  counter-increment: carousel-cell;
+  margin-right: 20px;
+  overflow: hidden;
 }
 
-/* cell number */
-.carousel-cell:before {
+.carousel-cell img {
   display: block;
-  text-align: center;
-  content: counter(carousel-cell);
-  line-height: 200px;
-  font-size: 80px;
-  color: white;
+  width: 550px;
 }
 
-@media screen and (max-width: 800px) {
+
+@media screen and (max-width: 1200px) {
+  .section1 aside img {
+    width: 350px;
+  }
+  .carousel-cell img {
+    display: block;
+    width: 400px;
+  }
+  .section2 aside {
+    width: 60%;
+    float: right;
+  }
+  .section2 article {
+    width: 40%;
+    float: right;
+  }
+}
+
+@media screen and (max-width: 900px) {
   .heading h1 {
     font-size: 40px;
     letter-spacing: 4px;
   }
-  .section1 h1 {
-    font-size: 35px;
+  .section-title {
+    font-size: 30px;
   }
   .section1 aside img {
     width: 250px;
+  }
+  .section2 {
+    padding-right: 50px;
   }
 }
 
@@ -193,17 +211,17 @@
     font-size: 40px;
     letter-spacing: 4px;
   }
-  .section1 aside,article {
+  .section1 aside, .section1 article{
       width: 100%;
       text-align: center;
-    }
+  }
   .section1 aside {
     margin-top: 50px;
   }
   .section1 aside img {
     width: 350px;
   }
-  .section1 .container {
+  .section1 .container, .section2 .container {
     display: inline-block;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -211,6 +229,12 @@
   .section1 .button-style2 {
     margin: 0 auto;
     margin-top: 40px;
+  }
+  .section2 aside, .section2 article {
+    width: 100%;
+  }
+  .section2 .container {
+
   }
 }
 
@@ -221,6 +245,15 @@
   }
   .section1 aside img {
     width: 100%;
+  }
+  .section2 {
+    padding-right: 0px;
+  }
+  .section2 .section-sub-title {
+    margin-bottom: 30px;
+  }
+  .carousel-cell img {
+    display: block;
   }
 }
 
