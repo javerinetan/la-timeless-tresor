@@ -88,10 +88,10 @@
         <input class="chk-out input-style1" type="text" placeholder="Check out" onfocus="(this.type='date')" onblur="(this.type='text')">
         <select class="room input-style2" name="adult">
           <option value="">Room Type</option>
-          <option value="">1</option>
-          <option value="">2</option>
-          <option value="">3</option>
-          <option value="">4</option>
+          <option value="">Junior Room</option>
+          <option value="">Double Room</option>
+          <option value="">Family Suite</option>
+          <option value="">Deluxe Suite</option>
         </select>
         <div class="form-container" style="padding: 0px 7.5px 0px 0px">
           <select class="adult input-style2" name="adult">
@@ -100,6 +100,7 @@
             <option value="">2</option>
             <option value="">3</option>
             <option value="">4</option>
+            <option value="">5</option>
           </select>
         </div>
         <div class="form-container" style="padding: 0px 0px 0px 7.5px">
@@ -110,6 +111,7 @@
             <option value="">2</option>
             <option value="">3</option>
             <option value="">4</option>
+            <option value="">5</option>
           </select>
         </div>
         <button class="button-style1">Check<i class="ti-angle-right"></i></button>
@@ -129,21 +131,30 @@
     <section class="section1" onclick="dismissBookingForm()">
       <div class="container">
         <article>
-          <h1>An<br>Unforgettable Escape</h1>
-          <span>
+          <h1 class="section-title">An<br>Unforgettable Escape</h1>
+          <span style="display: none;">
             <i class="star-rating"></i>
             <i class="star-rating"></i>
             <i class="star-rating"></i>
             <i class="star-rating"></i>
             <i class="star-rating"></i>
           </span>
-          <h4>Le Timeless Tresor Vintage Resort</h4>
-          <p>Welcome to the best five-star deluxe hotel in New York. Hotel elementum sesue the aucan vestibulum aliquam justo in sapien rutrum volutpat. Donec in quis the pellentesque velit.</p>
-          <button class="button-style1">Learn more</button>
+          <h4>Le Timeless Tresor</h4>
+          <p class="section-sub-title">Welcome to the best five-star deluxe hotel in New York. Hotel elementum sesue the aucan vestibulum aliquam justo in sapien rutrum volutpat. Donec in quis the pellentesque velit.</p>
+          <button class="button-style2">Learn more<i class="ti-angle-right"></i></button>
         </article>
         <aside>
           <img src="resources/images/combined.png">
         </aside>
+      </div>
+    </section>
+    <section class="section2" onclick="dismissBookingForm()">
+      <div class="container">
+        <article>
+          <h1 class="section-title">An<br>Unforgettable Escape</h1>
+          <h4>Le Timeless Tresor</h4>
+          <p class="section-sub-title">Welcome to the best five-star deluxe hotel in New York. Hotel elementum sesue the aucan vestibulum aliquam justo in sapien rutrum volutpat.</p>
+        </article>
       </div>
     </section>
   </body>

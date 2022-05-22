@@ -261,17 +261,6 @@
   margin: 15px 0px;
 }
 
-.button-style1 .ti-angle-right {
-  color: white;
-  font-size: 12px;
-  font-weight: bold;
-}
-
-.button-style1:hover .ti-angle-right {
-    opacity: 1;
-  margin-right: -10px;
-}
-
 .scroll-indicator {
   position: fixed;
   cursor: pointer;
