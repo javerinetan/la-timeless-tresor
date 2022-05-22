@@ -6,6 +6,7 @@
     <link rel="icon" href="resources/images/logo.png">
     <title>La Timeless Trésor</title>
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/flickity.css" media="screen">
 
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/global.css">
@@ -155,7 +156,17 @@
           <h4>Le Timeless Tresor</h4>
           <p class="section-sub-title">Welcome to the best five-star deluxe hotel in New York. Hotel elementum sesue the aucan vestibulum aliquam justo in sapien rutrum volutpat.</p>
         </article>
+        <p><code>wrapAround: true</code></p>
+        <!-- Flickity HTML init -->
+        <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
+          <div class="gallery-cell"></div>
+          <div class="gallery-cell"></div>
+          <div class="gallery-cell"></div>
+          <div class="gallery-cell"></div>
+          <div class="gallery-cell"></div>
+        </div>
       </div>
     </section>
+    <script src="js/flickity.pkgd.min.js"></script>
   </body>
 </html>
