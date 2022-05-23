@@ -344,6 +344,22 @@
   }
 }
 
+@media screen and (max-height: 700px) {
+	.book-form {
+    top: 115px;
+    padding: 35px 40px;
+  }
+  .book-btn {
+    top: 135px;
+  }
+}
+
+@media screen and (max-height: 600px) {
+	.book-form, .book-btn {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 500px) {
 	.book-form {
     right: 60px !important;

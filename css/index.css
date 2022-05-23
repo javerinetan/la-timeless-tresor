@@ -211,7 +211,7 @@
   width: 100%;
 }
 
-.section3 .button-style2, .section4 .button-style2 {
+.section3 .button-style2, .section4 .button-style2, .section5 .button-style2 {
     margin-top: 40px;
     padding: 15px 25px 15px 25px;
     width: 250px;
@@ -247,7 +247,7 @@
 }
 
 .section5 .box-content {
-  margin: 15px;
+  margin: 20px;
   border: 1px solid darkgray;
   min-height: 250px;
   padding: 25px;
@@ -263,7 +263,6 @@
 }
 
 .section5 .grid button {
-  width: 250px;
   margin: 0 auto;
   margin-top: 30px;
   display: inline-block;
