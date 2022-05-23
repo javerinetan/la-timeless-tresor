@@ -11,12 +11,14 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400;1,400;1,700&display=swap" rel="stylesheet">
    <!-- custom css file link  -->
-   <link rel="stylesheet" href="../css/reservation.css">
+   <link rel="stylesheet" href="../css/teatime.css">
    <link rel="stylesheet" href="../css/navbar.css">
    <link rel="stylesheet" href="../css/global.css">
+ <script src="../breafast.js"></script>
 </head>
 <body>
-  <!-- Promotions header section starts  -->
+   <script src="../js/breafast.js"></script>
+  <!-- header section starts  -->
   <nav class="topnav" id="myTopnav">
      <div class="container">
        <a href="index.html" style="padding:0; display:inline">
@@ -78,84 +80,92 @@
      <script src="../js/nav.js"></script>
    </nav>
 <!-- header section ends -->
-<!--begining-->
-<div class="restaurantreservation-bg">
+<!---Welcome page-->
+<div class="main-bg">
 
-   <section class="restaurantreservation" >
+   <section class="main">
 
       <div class="content">
-
-         <h3> Restaurant Reservation</h3>
-        <p> Serving only the best to you </p>
-
+           <h3> Restaurant Reservation Booking  </h3>
+           <p>Please read the terms and condition before booking. No refunds will be given.</p>
       </div>
 
    </section>
 
 </div>
 
-<!--dining packages--->
 
-<section class="reserved" >
+<!-- forms section starts -->
+<section class="form" >
 
+   <div class="image">
+
+      <img src="../resources/images/teatime.jpg" alt="">
+
+   </div>
+
+   <div class="content">
+
+     <form action="" method="POST">
+     <script src="../js/breafast.js"></script>
+        <h3>Reservation for Tea Time</h3>
+
+        <input type="text" name="name" required class="box" maxlength="20" placeholder="enter your name">
+        <input type="tel" name="phone" required class="box" maxlength="8" placeholder="enter your phone number" min="80000000" max="9999999999" onkeypress="if(this.value.length == 8) return false">
+        <input type="email" name="email"required class="box" maxlengt required class="box" maxlength="50" placeholder="enter your email">
+
+        <button onclick="myFunction()" name="send" value="send message" class="btn" id="Nextbtn">Next</button>
+
+
+
+
+
+  </div>
+</section>
+
+
+<!-- forms section end -->
+
+<!-- footer section starts  -->
+
+<section class="footer">
   <div class="heading">
-       <img src="images/heading-img.png" alt="">
-       <h3>Le Timeless Trésor Restaurant </h3>
-       <h5>Fine dining specially for you and your family</h5>
-    </div>
+    <h3>Contact Us</h3>
+  </div>
 
    <div class="box-container">
 
       <div class="box">
-         <img src="../resources/images/food1.jpg" alt="">
-         <h3>Breakfast</h3>
-         <p> $30 per person </p>
-         <p>Taste the savoury breakfast buffee from france to you.</p>
-         <p> Taste a variety of food from france at you table </p>
-        <a href="breakfast.html" class="btn">Book Now</a>
+         <i class="fas fa-envelope"></i>
+         <h3>our email</h3>
+         <p>LaTimelessTresor@resort.com</p>
       </div>
 
       <div class="box">
-         <img src="../resources/images/food2.jpg" alt="">
-         <h3> Tea Time Set  </h3>
-         <p> $35 per set only !!  </p>
-         <p>Taste the classic taste of  france sweet treats</p>
-         <p>Endulged yourself in our freshly brewed wide selection of tea</p>
-         <a href="teatime.html" class="btn">Book Now</a>
+         <i class="fas fa-clock"></i>
+         <h3>counter opening hours</h3>
+         <p>08:00am to 08:00pm</p>
       </div>
 
       <div class="box">
-         <img src="../resources/images/food3.jpg" alt="">
-         <h3> Dinner in le meilleur resto </h3>
-         <p>  Starting form $88++  </p>
-         <p> Experience the high class of french dinning </p>
-         <p>4 course meal:</p>
-         <p>1 appitiser </p>
-         <p>1 soup </p>
-         <p>1 main dish </p>
-         <p>1 desert </p>
-         <p> Add on our famour LeBre Champagin for just $37 </p>
-
-
-         <a href="reservationform.html" class="btn">Book Now</a>
+         <i class="fas fa-map-marker-alt"></i>
+         <h3>Resort location</h3>
+         <p>La Baie Classique, Singapore</p>
       </div>
-
 
       <div class="box">
-         <img src="../resources/images/food4.webp" alt="">
-         <h3> Dining under the stars </h3>
-         <p>  Starting form $120++  </p>
-         <p>Enjoy the spectcular night view while having your food.</p>
-         <p> 6 Couse meal:</p>
-         <p> 2 appitiser </p>
-         <p> 1 starter </p>
-         <p> 1 soup </p>
-         <p> 1 main dish </p>
-         <p> 1 desert </p>
-         <p> + 1 Complimentary bottle of our LeBre Champagin </p>
-
-         <a href="reservationform.html" class="btn">Book Now</a>
+         <i class="fas fa-phone"></i>
+         <h3>our number</h3>
+         <p>+65-9999</p>
+         <p>+65-965</p>
       </div>
+
+   </div>
+
 
 </section>
-<!-- siganture section ends -->
+
+<!-- footer section ends -->
+
+</body>
+</html>
