@@ -199,6 +199,15 @@ section{
    border-radius: 1rem;
 }
 
+.form .content form .boxs{
+   width: 100%;
+   padding:1.4rem;
+   font-size: 1.8rem;
+   margin:1rem 0;
+   border-radius: 1rem;
+}
+
+
 label{
   display: block;
   padding-top: 1.5rem;
