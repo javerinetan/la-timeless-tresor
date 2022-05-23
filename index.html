@@ -17,7 +17,7 @@
         <a href="index.html" style="padding:0; display:inline">
           <img src="resources/images/logov2_white.png" alt="Logo" class="nav-logo" id="navLogo">
         </a>
-        <a href="javascript:void(0);" style="font-size:18px;margin-top: 10px;" class="icon" onclick="displayNav()">&#9776;</a>
+        <a href="javascript:void(0);" style="font-size:18px;margin-top: 10px;" class="icon" onclick="displayNav();dismissBookingForm()">&#9776;</a>
         <div class="nav-items">
           <div class="dropdown">
             <button class="dropbtn">The Resort
@@ -121,6 +121,10 @@
     <header class="banner" onclick="dismissBookingForm()">
       <div class="layer">
       </div>
+      <video autoplay loop muted id="banner-video">
+        <source src="resources/media/video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+      </video>
       <div class="container">
         <div class="heading">
           <h1 class="title">Experience<br>Luxury</h1>
