@@ -4,21 +4,21 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Pool Booking Page</title>
+   <title>Restaurantuant booking </title>
 
    <!-- font awesome cdn link  -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
    <link rel="icon" href="../resources/images/logo.png">
-   <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400;1,400;1,700&display=swap" rel="stylesheet">
-   <link rel="stylesheet" href="../css/fform.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400;1,400;1,700&display=swap" rel="stylesheet">
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="../css/teatime.css">
    <link rel="stylesheet" href="../css/navbar.css">
    <link rel="stylesheet" href="../css/global.css">
+
 </head>
 <body>
-
-<!-- header section starts  -->
-
-<nav class="topnav" id="myTopnav">
+  <!-- Promotions header section starts  -->
+  <nav class="topnav" id="myTopnav">
      <div class="container">
        <a href="index.html" style="padding:0; display:inline">
          <img src="../resources/images/logov2_white.png" alt="Logo" class="nav-logo" id="navLogo">
@@ -32,8 +32,8 @@
            <div class="dropdown-content">
              <a href="#">Overview<i class="ti-angle-right"></i></a>
              <a href="#">Accomodations<i class="ti-angle-right"></i></a>
-             <a href="facilities.html">Facilities<i class="ti-angle-right"></i></a>
-             <a href="services.html">Services<i class="ti-angle-right"></i></a>
+             <a href="#">Facilities<i class="ti-angle-right"></i></a>
+             <a href="#">Services<i class="ti-angle-right"></i></a>
            </div>
          </div>
          <div class="dropdown">
@@ -42,7 +42,7 @@
            </button>
            <div class="dropdown-content">
              <a href="#">The Restaurant<i class="ti-angle-right"></i></a>
-             <a href="#">Reservation<i class="ti-angle-right"></i></a>
+             <a href="reservation.html">Reservation<i class="ti-angle-right"></i></a>
              <a href="#">Ordering<i class="ti-angle-right"></i></a>
            </div>
          </div>
@@ -52,10 +52,17 @@
            </button>
            <div class="dropdown-content">
              <a href="#news">Events<i class="ti-angle-right"></i></a>
-             <a href="#contact">Promotions<i class="ti-angle-right"></i></a>
+             <a href="promotions.html">Promotions<i class="ti-angle-right"></i></a>
            </div>
          </div>
-         <a href="#about">Gallery</a>
+         <div class="dropdown">
+           <button class="dropbtn" >Gallery
+             <i class="ti-angle-down"></i>
+           </button>
+           <div class="dropdown-content">
+            <a href="./about.html">AboutUs<i class="ti-angle-right"></i></a>
+           </div>
+         </div>
          <a href="#contact">Contact</a>
          <a href="#home" class="active">Book Now</a>
          <div class="dropdown">
@@ -71,15 +78,15 @@
      </div>
      <script src="../js/nav.js"></script>
    </nav>
+<!-- header section ends -->
+<!---Welcome page-->
+<div class="main-bg">
 
-
-<!--header section starts-->
-<div class="phome-bg">
-
-   <section class="home" id="home">
+   <section class="main">
 
       <div class="content">
-         <h2>pool session booking page</h2>
+           <h3> Restaurant Reservation Booking  </h3>
+           <p>Please read the terms and condition before booking. No refunds will be given.</p>
       </div>
 
    </section>
@@ -87,23 +94,44 @@
 </div>
 
 
-<!-- header section ends -->
-
-<!-- home section starts  -->
-
-<!-- home section ends -->
-
-
 <!-- forms section starts -->
-<section class="done">
-    <div class="box-container">
-      <div class="box">
-        <h3>booking confirmed !</h3>
-        <p>an email has been sent to you. if you want to change the booking please change it through the link in that email</p>
-        <a href="facilities.html" class="btn" id="back1">facilities page </a>
-        <a href="../index.html" class="btn" id="back2">home page </a>
+<section class="form" >
+   <div class="image">
+
+      <img src="../resources/images/teatime.jpg" alt="">
+
+   </div>
+
+   <div class="content">
+
+     <form action="" method="POST">
+        <h3>Reservation for Tea Time</h3>
+
+        <label for='check-in'> Select booking date:</label>
+        <input type="date" name="cdate" required class="box" min="2022-25-05" max="2023-01-01" required>
+
+        <label for="type">Choose time slot:</label>
+          <select name="sm" id="type">
+           <option value="7.00am">7.00am</option>
+           <option value="7.30am">7.30am</option>
+           <option value="8.00am">8.00am</option>
+           <option value="8.30am">8.30am</option>
+           <option value="9.00am">9.00am</option>
+           <option value="9.30am">9.30am</option>
+           <option value="10.00am">10.00am</option>
+           <option value="10.30am">10.30am</option>
+           <option value="11.00am">11.00am</option>
+           <option value="11.30am">11.30am</option>
+          </select>
+
+          <a href="teatime2.html" class="btn" >next</a>
+
+
+     </form>
+
+
   </div>
-  </div>
+
 </section>
 
 
@@ -140,6 +168,7 @@
          <i class="fas fa-phone"></i>
          <h3>our number</h3>
          <p>+65-9999</p>
+         <p>+65-965</p>
       </div>
 
    </div>
