@@ -247,7 +247,7 @@
 }
 
 .section5 .box-content {
-  margin: 20px;
+  margin: 10px;
   border: 1px solid darkgray;
   min-height: 250px;
   padding: 25px;
@@ -266,6 +266,25 @@
   margin: 0 auto;
   margin-top: 30px;
   display: inline-block;
+}
+
+.reveal {
+  opacity: 0;
+}
+
+.reveal.left.animate {
+  opacity: 1;
+  animation: fade-left 1s ease-in-out;
+}
+
+.reveal.right.animate {
+  opacity: 1;
+  animation: fade-right 1s ease-in-out;
+}
+
+.reveal.up.animate {
+  opacity: 1;
+  animation: fade-up 1s ease-in-out;
 }
 
 @media screen and (max-width: 1200px) {
@@ -409,5 +428,44 @@
   100% {
     opacity: 1;
     margin-top: 0px;
+  }
+}
+
+@keyframes fade-right {
+  0% {
+    position: relative;
+    opacity: 0;
+    left: 40px;
+  }
+  100% {
+    position: relative;
+    opacity: 1;
+    left: 0px;
+  }
+}
+
+@keyframes fade-left {
+  0% {
+    position: relative;
+    opacity: 0;
+    right: 40px;
+  }
+  100% {
+    position: relative;
+    opacity: 1;
+    right: 0px;
+  }
+}
+
+@keyframes fade-up {
+  0% {
+    position: relative;
+    opacity: 0;
+    top: 40px;
+  }
+  100% {
+    position: relative;
+    opacity: 1;
+    top: 0px;
   }
 }
