@@ -53,7 +53,6 @@
 
 .section-subheading {
   text-transform: uppercase;
-  text-align: left;
   color: #aa8453;
   font-size: 18px;
   margin-bottom: 20px;
@@ -162,6 +161,10 @@
   display: inline-block;
 }
 
+.section3 .container {
+  padding-right: 0px !important;
+}
+
 .section3 aside {
   width: 50%;
   float: right;
@@ -169,12 +172,9 @@
 
 .section3 article {
   width: 50%;
-  padding-left: 40px;
-  float: right;
-}
-
-.section3 article {
   padding: 40px;
+  text-align: right;
+  float: right;
 }
 
 .section3 img {
