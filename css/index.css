@@ -43,7 +43,7 @@
 }
 
 .section-title {
-  font-size: 40px;
+  font-size: 38px;
   margin-bottom: 5px;
 }
 
@@ -125,7 +125,7 @@
   margin-top: 100px;
   margin-bottom: 100px;
   background-color: #F8F5F0;
-  padding: 60px;
+  padding: 65px;
   padding-left: 0px;
 }
 
@@ -172,13 +172,17 @@
 
 .section3 article {
   width: 50%;
-  padding: 40px;
+  padding: 50px;
   text-align: right;
   float: right;
 }
 
 .section3 img {
   width: 100%;
+}
+
+.section3 .btn-container {
+  float: right;
 }
 
 .section4 .wrapper {
@@ -200,7 +204,7 @@
 }
 
 .section4 article {
-  padding: 40px;
+  padding: 50px;
 }
 
 .section4 img {
@@ -211,6 +215,58 @@
     margin-top: 40px;
     padding: 15px 25px 15px 25px;
     width: 250px;
+}
+
+.section5 .container {
+  text-align: center;
+  width: 100%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: inline-block;
+}
+
+.section5 .section-title{
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.section5 .section-subheading {
+  text-align: center;
+  font-size: 15px;
+  margin-bottom: 0px;
+}
+
+.section5 .grid {
+  width: 100%
+}
+
+.section5 .box {
+  width: 33%;
+  float: left;
+  text-align: left;
+}
+
+.section5 .box-content {
+  margin: 15px;
+  border: 1px solid darkgray;
+  min-height: 250px;
+  padding: 25px;
+}
+
+.section5 .box img {
+  width: 70px;
+}
+
+.section5 .box h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.section5 .grid button {
+  width: 250px;
+  margin: 0 auto;
+  margin-top: 30px;
+  display: inline-block;
 }
 
 @media screen and (max-width: 1200px) {
@@ -232,6 +288,9 @@
   .section-title {
     font-size: 30px;
   }
+  .section-title {
+    font-size: 25px;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -244,6 +303,13 @@
   }
   .section2 {
     padding-right: 50px;
+  }
+  .section2 .wrapper, .section3 .wrapper, .section4 .wrapper {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  .section5 .box {
+    width: 50%;
   }
 }
 
@@ -280,6 +346,10 @@
   .section2 .section-sub-title {
     margin-bottom: 30px;
   }
+  .section3 .btn-container {
+    float: none;
+    width: 100%;
+  }
   .section3 article, .section3 aside, .section4 article, .section4 aside {
     width: 100%;
   }
@@ -287,9 +357,15 @@
     margin-top: 40px !important;
     width: 100% !important;
   }
-  .section2 .wrapper, .section3 .wrapper, .section4 .wrapper {
+  .section2 .wrapper, .section3 .wrapper, .section4 .wrapper, .section5 .container {
     margin-top: 30px;
     margin-bottom: 30px;
+  }
+  .section5 .box {
+    width: 100%;
+  }
+  .section5 .box-content {
+    margin: 10px 0px;
   }
 }
 
