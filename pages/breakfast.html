@@ -110,9 +110,13 @@
         <label for='check-in'> Select booking date:</label>
         <input type="date" name="cdate" required class="box" min="2022-25-05" max="2023-01-01" required>
 
+
         <label for='adult'>Adults:</label>
-         <input type="number" name="number" required class="box" id="adult" maxlength="0.2" placeholder="Adults:" min="1" max="15" onkeypress="if(this.value.length == 2) return false">
-         
+         <input type="number" name="number" required class="boxs" id="adult" maxlength="0.2" placeholder="Adults:" min="1" max="15" onkeypress="if(this.value.length == 2) return false">
+
+         <label for='child'>Children:</label>
+          <input type="number" name="number" required class="boxes" id="adult" maxlength="0.2" placeholder="Children:" min="0" max="15" onkeypress="if(this.value.length == 2) return false">
+
         <label for="type">Choose time slot:</label>
           <select name="sm" id="type">
            <option value="7.00am">7.00am</option>
