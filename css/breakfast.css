@@ -225,7 +225,14 @@ section{
   float: left;
 }
 
+.form .box-container form label #child{
+   font-size: 2rem;
+   margin-bottom: 1.3rem;
+   margin-left: 15rem
+   font-family: 'Libre Bodoni', serif;
+   text-align:center;
 
+}
 
 
 
