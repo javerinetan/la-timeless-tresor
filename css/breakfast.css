@@ -204,7 +204,7 @@ section{
   width: 11rem;
   padding:1.4rem;
   font-size: 1.8rem;
-  margin-left: 15rem;
+  margin-left: 0rem;
   border-radius: 1rem;
 }
 
@@ -216,7 +216,9 @@ section{
   margin-right: 15rem;
   border-radius: 1rem;
 }
+.child{
 
+}
 
 label{
   display: block;
