@@ -85,15 +85,10 @@ h1, h2 {
 
 .segcontrol {
   float: left;
+  width: 100%;
 }
 
-.exteriorColumn, .diningColumn {
-  width: 33.3%;
-  padding: 15px;
-  float: left;
-}
-
-.exteriorRow, .diningRow {
+.exteriorRow, .diningRow, .experienceRow, .interiorRow {
   content: "";
   clear: both;
   display: table;
@@ -102,39 +97,23 @@ h1, h2 {
   margin-right: auto;
 }
 
+.exteriorColumn, .diningColumn, .experienceColumn, .interiorColumn {
+  width: 33.3%;
+  padding: 15px;
+  float: left;
+}
 
-.container ul {
-  position: relative;
-  width: 350px;
-  height: 50px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  border-radius: 35px;
-  background: rgba(255, 255, 255, 0.65);
-  box-shadow: 0 12.5px 10px rgba(0, 0, 0, 0.08), 0 100px 80px rgba(0, 0, 0, 0.03);
-  overflow: hidden;
+.exteriorColumn2 {
+  width: 50%;
+  padding: 15px;
+  float: left;
 }
-.container ul li {
-  list-style: none;
-  display: grid;
-  place-items: center;
-  font-family: "montserrat";
-  color: #ff3636;
-  z-index: 10;
-  cursor: pointer;
-}
-.container ul .focus {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: calc(100% / 3);
-  height: 100%;
-  border-radius: 35px;
-  background: #fff;
-  box-shadow: 0 12.5px 10px rgba(0, 0, 0, 0.015), 0 100px 80px rgba(0, 0, 0, 0.03);
-}
-.container ul .focus.second {
-  left: calc(-100% / 3);
+
+.exteriorColumn3 {
+  width: 33.3%;
+  padding: 15px;
+  float: left;
+  height: 500px;
 }
 
 @media all and (min-width: 600px) {
