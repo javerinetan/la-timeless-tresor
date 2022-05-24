@@ -1,9 +1,30 @@
-/*Food Types*/
-.FoodTypes{color: blue;
-text-align: left;}
+/*Promotions*/
+#Promotions img{  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 
-/*Food*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Menu*/
+.FoodTypes{color: blue;
+text-align: left;
+}
+
 .Food{color:red;
   text-align: center;
-  
+
 }

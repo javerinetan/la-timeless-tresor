@@ -319,21 +319,6 @@
   width: 100%;
 }
 
-.reveal.left.animate {
-  opacity: 1;
-  animation: fade-left 1s ease-in-out;
-}
-
-.reveal.right.animate {
-  opacity: 1;
-  animation: fade-right 1s ease-in-out;
-}
-
-.reveal.up.animate {
-  opacity: 1;
-  animation: fade-up 1s ease-in-out;
-}
-
 @media screen and (max-width: 1200px) {
   .section1 aside img {
     width: 350px;
