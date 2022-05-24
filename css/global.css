@@ -181,6 +181,60 @@ body {
   transition: all 0.5s ease-in-out;
 }
 
+.reveal.left.animate {
+  opacity: 1;
+  animation: fade-left 1s ease-in-out;
+}
+
+.reveal.right.animate {
+  opacity: 1;
+  animation: fade-right 1s ease-in-out;
+}
+
+.reveal.up.animate {
+  opacity: 1;
+  animation: fade-up 1s ease-in-out;
+}
+
+@keyframes fade-right {
+  0% {
+    position: relative;
+    opacity: 0;
+    left: 40px;
+  }
+  100% {
+    position: relative;
+    opacity: 1;
+    left: 0px;
+  }
+}
+
+@keyframes fade-left {
+  0% {
+    position: relative;
+    opacity: 0;
+    right: 40px;
+  }
+  100% {
+    position: relative;
+    opacity: 1;
+    right: 0px;
+  }
+}
+
+@keyframes fade-up {
+  0% {
+    position: relative;
+    opacity: 0;
+    top: 40px;
+  }
+  100% {
+    position: relative;
+    opacity: 1;
+    top: 0px;
+  }
+}
+
 @media screen and (max-width: 1400px) {
   .container {
     padding-right: 80px;
