@@ -86,7 +86,34 @@ h1, h2 {
 .segcontrol {
   float: left;
   width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 50px;
+  margin-bottom: 50px;
+  margin-top: 60px;
+  background-color: #FAF7F2;
 }
+
+.segcontrol div {
+  float: left;
+  padding: 30px;
+  background-image: linear-gradient(to right, rgba(255,255,255,0) 50%, #ddd 50%);
+  background-position: -0% 0;
+  background-size: 200% auto;
+  color: #222;
+  font-size: 1.00em;
+  line-height: 1 em;
+  text-decoration: none;
+  transition: background-position 0.5s ease-out;
+}
+
+.segcontrol div:hover {
+  background-position: -99.99% 0;
+}
+
 
 .exteriorRow, .diningRow, .experienceRow, .interiorRow {
   content: "";
@@ -103,13 +130,13 @@ h1, h2 {
   float: left;
 }
 
-.exteriorColumn2 {
+.exteriorColumn2, .diningColumn2, .experienceColumn2, .interiorColumn2 {
   width: 50%;
   padding: 15px;
   float: left;
 }
 
-.exteriorColumn3 {
+.exteriorColumn3, .diningColumn3, .experienceColumn3, .interiorColumn3 {
   width: 33.3%;
   padding: 15px;
   float: left;
