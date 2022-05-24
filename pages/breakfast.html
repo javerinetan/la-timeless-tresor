@@ -4,7 +4,7 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Restaurantuant booking </title>
+   <title>Restaurant booking </title>
 
    <!-- font awesome cdn link  -->
    <link rel="icon" href="../resources/images/logo.png">
@@ -110,12 +110,18 @@
         <label for='check-in'> Select booking date:</label>
         <input type="date" name="cdate" required class="box" min="2022-25-05" max="2023-01-01" required>
 
+<div class="box-container" id="child">
 
         <label for='adult'>Adults:</label>
-         <input type="number" name="number" required class="boxs" id="adult" maxlength="0.2" placeholder="Adults:" min="1" max="15" onkeypress="if(this.value.length == 2) return false">
-
+         <input type="number" name="number" required class="box" id="adult" maxlength="0.2" placeholder="Adults:" min="1" max="15" onkeypress="if(this.value.length == 2) return false" required>
+</div>
+<div class="box-container" id="adult">
          <label for='child' class="child">Children:</label>
-          <input type="number" name="number" required class="boxes" id="child" maxlength="0.2" placeholder="Children:" min="0" max="15" onkeypress="if(this.value.length == 2) return false">
+          <input type="number" name="number" required class="box" id="child" maxlength="0.2" placeholder="Children:" min="0" max="15" onkeypress="if(this.value.length == 2) return false" required >
+</div>
+
+
+<div class="box-container" id="type">
 
         <label for="type">Choose time slot:</label>
           <select name="sm" id="type">
@@ -130,9 +136,8 @@
            <option value="11.00am">11.00am</option>
            <option value="11.30am">11.30am</option>
           </select>
-
           <a href="breakfast2.html" class="btn" >next</a>
-
+</div>
 
      </form>
 
