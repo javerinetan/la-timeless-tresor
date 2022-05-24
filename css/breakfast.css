@@ -65,9 +65,8 @@ section{
 .heading h3{
    font-size:4rem;
    color:var(--black);
-   font-family: 'Libre Bodoni', serif
+   font-family: 'Libre Bodoni', serif;
 }
-
 .btn{
    display: inline-block;
    margin-top: 1rem;
@@ -79,8 +78,9 @@ section{
 }
 
 .btn:hover{
-   background-color: var(--black);
+   background-color: var(--darkbrown);
 }
+
 /*welcome page*/
 .main-bg{
    background:linear-gradient(90deg, var(--white), transparent 0%), url('../resources/images/bbk1.jpg') no-repeat;
