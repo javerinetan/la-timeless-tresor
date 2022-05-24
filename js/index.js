@@ -88,7 +88,7 @@ var flkty = new Flickity( carousel, {
 var review = document.querySelector('.review-carousel');
 var flkty = new Flickity( review, {
   prevNextButtons: false,
-  autoPlay: 1500,
+  autoPlay: 4500,
   pauseAutoPlayOnHover: false
 });
 
