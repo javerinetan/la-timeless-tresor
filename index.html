@@ -17,7 +17,7 @@
         <a href="index.html" style="padding:0; display:inline">
           <img src="resources/images/logov2_white.png" alt="Logo" class="nav-logo" id="navLogo">
         </a>
-        <a href="javascript:void(0);" style="font-size:18px;margin-top: 10px;" class="icon" onclick="displayNav()">&#9776;</a>
+        <a href="javascript:void(0);" style="font-size:18px;margin-top: 10px;" class="icon" onclick="displayNav();dismissBookingForm()">&#9776;</a>
         <div class="nav-items">
           <div class="dropdown">
             <button class="dropbtn">The Resort
@@ -121,6 +121,10 @@
     <header class="banner" onclick="dismissBookingForm()">
       <div class="layer">
       </div>
+      <video autoplay loop muted id="banner-video">
+        <source src="resources/media/video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+      </video>
       <div class="container">
         <div class="heading">
           <h1 class="title">Experience<br>Luxury</h1>
@@ -130,7 +134,7 @@
     </header>
     <section class="section1" onclick="dismissBookingForm()">
       <div class="container">
-        <article>
+        <article class="reveal left">
           <h1 class="section-title">An<br>Unforgettable Escape</h1>
           <span style="display: none;">
             <i class="star-rating"></i>
@@ -143,17 +147,18 @@
           <p class="section-sub-title">Welcome to the best five-star deluxe hotel in New York. Hotel elementum sesue the aucan vestibulum aliquam justo in sapien rutrum volutpat. Donec in quis the pellentesque velit.</p>
           <button class="button-style2">Learn more<i class="ti-angle-right"></i></button>
         </article>
-        <aside>
+        <aside class="reveal right">
           <img src="resources/images/combined.png">
         </aside>
       </div>
     </section>
     <section class="section2" onclick="dismissBookingForm()">
-      <div class="wrapper">
+      <div class="wrapper reveal left">
         <article>
           <h1 class="section-title">An<br>Unforgettable Escape</h1>
           <h4 class="section-subheading">Le Timeless Tresor</h4>
           <p class="section-sub-title">Welcome to the best five-star deluxe hotel in New York. Donec In Quis The Pellentesque Velit.</p>
+          <button class="button-style2">View Gallery<i class="ti-angle-right"></i></button>
         </article>
         <aside>
           <div class="carousel">
@@ -167,7 +172,7 @@
       </div>
     </section>
     <section class="section3" onclick="dismissBookingForm()">
-      <div class="wrapper">
+      <div class="wrapper reveal right">
         <aside>
           <img src="resources/images/restaurant.jpg" alt="image">
         </aside>
@@ -182,7 +187,7 @@
       </div>
     </section>
     <section class="section4" onclick="dismissBookingForm()">
-      <div class="wrapper">
+      <div class="wrapper reveal left">
         <aside>
           <img src="resources/images/restaurant.jpg" alt="image">
         </aside>
@@ -199,42 +204,42 @@
         <h4 class="section-subheading">Le Timeless Tresor</h4>
         <h1 class="section-title">Facilities & Services</h1>
         <div class="grid">
-          <div class="box">
+          <div class="box reveal up">
             <div class="box-content">
               <img src="resources/icons/wifi.png" alt="Wifi">
               <h4>Fiber Internet</h4>
               <p>Welcome to the best five-star deluxe hotel in New York. Hotel</p>
             </div>
           </div>
-          <div class="box">
+          <div class="box reveal up">
             <div class="box-content">
               <img src="resources/icons/wifi.png" alt="Wifi">
               <h4>Fiber Internet</h4>
               <p>Welcome to the best five-star deluxe hotel in New York. Hotel</p>
             </div>
           </div>
-          <div class="box">
+          <div class="box reveal up">
             <div class="box-content">
               <img src="resources/icons/wifi.png" alt="Wifi">
               <h4>Fiber Internet</h4>
               <p>Welcome to the best five-star deluxe hotel in New York. Hotel</p>
             </div>
           </div>
-          <div class="box">
+          <div class="box reveal up">
             <div class="box-content">
               <img src="resources/icons/wifi.png" alt="Wifi">
               <h4>Fiber Internet</h4>
               <p>Welcome to the best five-star deluxe hotel in New York. Hotel</p>
             </div>
           </div>
-          <div class="box">
+          <div class="box reveal up">
             <div class="box-content">
               <img src="resources/icons/wifi.png" alt="Wifi">
               <h4>Fiber Internet</h4>
               <p>Welcome to the best five-star deluxe hotel in New York. Hotel</p>
             </div>
           </div>
-          <div class="box">
+          <div class="box reveal up">
             <div class="box-content">
               <img src="resources/icons/wifi.png" alt="Wifi">
               <h4>Fiber Internet</h4>

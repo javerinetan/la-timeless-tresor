@@ -1,12 +1,15 @@
-.banner {
-  background-image: url("../resources/images/banner.jpg");
+#banner-video {
   top: 0;
   left: 0;
   height: 100vh;
   width: 100%;
-  background-size: cover;
-  background-position: center;
-  /* background-attachment: fixed; */
+  z-index: -1;
+  object-fit: cover;
+}
+
+.banner .container {
+  position: absolute;
+  top: 0;
 }
 
 .layer {
@@ -109,12 +112,6 @@
   transform: rotate(35deg);
 }
 
-.section1 .button-style2 {
-  margin-top: 40px;
-  padding: 15px 25px 15px 25px;
-  width: 250px;
-}
-
 .section2 {
   padding-right: 100px;
 }
@@ -211,7 +208,7 @@
   width: 100%;
 }
 
-.section3 .button-style2, .section4 .button-style2, .section5 .button-style2 {
+.section1 .button-style2, .section2 .button-style2, .section3 .button-style2, .section4 .button-style2, .section5 .button-style2 {
     margin-top: 40px;
     padding: 15px 25px 15px 25px;
     width: 250px;
@@ -247,8 +244,8 @@
 }
 
 .section5 .box-content {
-  margin: 20px;
-  border: 1px solid darkgray;
+  margin: 10px;
+  border: 1px solid lightgray;
   min-height: 250px;
   padding: 25px;
 }
@@ -266,6 +263,25 @@
   margin: 0 auto;
   margin-top: 30px;
   display: inline-block;
+}
+
+.reveal {
+  opacity: 0;
+}
+
+.reveal.left.animate {
+  opacity: 1;
+  animation: fade-left 1s ease-in-out;
+}
+
+.reveal.right.animate {
+  opacity: 1;
+  animation: fade-right 1s ease-in-out;
+}
+
+.reveal.up.animate {
+  opacity: 1;
+  animation: fade-up 1s ease-in-out;
 }
 
 @media screen and (max-width: 1200px) {
@@ -342,6 +358,9 @@
   .section2 aside, .section2 article {
     width: 100%;
   }
+  .section2 .button-style2 {
+    margin-bottom: 40px;
+  }
   .section2 .section-sub-title {
     margin-bottom: 30px;
   }
@@ -383,7 +402,7 @@
     display: block;
   }
   .section2 .wrapper {
-    padding: 30px;
+    padding: 50px 30px;
   }
   .section2 article {
     padding-left: 0px;
@@ -409,5 +428,44 @@
   100% {
     opacity: 1;
     margin-top: 0px;
+  }
+}
+
+@keyframes fade-right {
+  0% {
+    position: relative;
+    opacity: 0;
+    left: 40px;
+  }
+  100% {
+    position: relative;
+    opacity: 1;
+    left: 0px;
+  }
+}
+
+@keyframes fade-left {
+  0% {
+    position: relative;
+    opacity: 0;
+    right: 40px;
+  }
+  100% {
+    position: relative;
+    opacity: 1;
+    right: 0px;
+  }
+}
+
+@keyframes fade-up {
+  0% {
+    position: relative;
+    opacity: 0;
+    top: 40px;
+  }
+  100% {
+    position: relative;
+    opacity: 1;
+    top: 0px;
   }
 }
