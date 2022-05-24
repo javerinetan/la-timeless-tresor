@@ -8,80 +8,114 @@
   <link rel="stylesheet" href="../css/navbar.css">
   <link rel="stylesheet" href="../css/global.css">
 </head>
-<body>
+<body onload="showAll()">
   <nav class="topnav" id="myTopnav">
-      <div class="container">
-        <a href="../index.html" style="padding:0; display:inline">
-          <img src="../resources/images/logov2_white.png" alt="Logo" class="nav-logo" id="navLogo">
-        </a>
-        <a href="javascript:void(0);" style="font-size:18px;margin-top: 10px;" class="icon" onclick="displayNav()">&#9776;</a>
-        <div class="nav-items">
-          <div class="dropdown">
-            <button class="dropbtn">The Resort
-              <i class="ti-angle-down"></i>
-            </button>
-            <div class="dropdown-content">
-              <a href="#">Overview<i class="ti-angle-right"></i></a>
-              <a href="#">Accomodations<i class="ti-angle-right"></i></a>
-              <a href="#">Facilities<i class="ti-angle-right"></i></a>
-              <a href="#">Services<i class="ti-angle-right"></i></a>
-            </div>
+    <div class="container">
+      <a href="index.html" style="padding:0; display:inline">
+        <img src="../resources/images/logov2_white.png" alt="Logo" class="nav-logo" id="navLogo">
+      </a>
+      <a href="javascript:void(0);" style="font-size:18px;margin-top: 10px;" class="icon" onclick="displayNav()">&#9776;</a>
+      <div class="nav-items">
+        <div class="dropdown">
+          <button class="dropbtn">The Resort
+            <i class="ti-angle-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">Overview<i class="ti-angle-right"></i></a>
+            <a href="../pages/accommodations.html">Accomodations<i class="ti-angle-right"></i></a>
+            <a href="#">Facilities<i class="ti-angle-right"></i></a>
+            <a href="#">Services<i class="ti-angle-right"></i></a>
           </div>
-          <div class="dropdown">
-            <button class="dropbtn">Dining
-              <i class="ti-angle-down"></i>
-            </button>
-            <div class="dropdown-content">
-              <a href="#">The Restaurant<i class="ti-angle-right"></i></a>
-              <a href="#">Reservation<i class="ti-angle-right"></i></a>
-              <a href="#">Ordering<i class="ti-angle-right"></i></a>
-            </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Dining
+            <i class="ti-angle-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">The Restaurant<i class="ti-angle-right"></i></a>
+            <a href="#">Reservation<i class="ti-angle-right"></i></a>
+            <a href="#">Ordering<i class="ti-angle-right"></i></a>
           </div>
-          <div class="dropdown">
-            <button class="dropbtn">Events & Promotions
-              <i class="ti-angle-down"></i>
-            </button>
-            <div class="dropdown-content">
-              <a href="#news">Events<i class="ti-angle-right"></i></a>
-              <a href="#contact">Promotions<i class="ti-angle-right"></i></a>
-            </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Events & Promotions
+            <i class="ti-angle-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#news">Events<i class="ti-angle-right"></i></a>
+            <a href="#contact">Promotions<i class="ti-angle-right"></i></a>
           </div>
-          <div class="dropdown">
-           <button class="dropbtn">Gallery
-             <i class="ti-angle-down"></i>
-           </button>
-           <div class="dropdown-content">
-             <a href="#welcome">Welcome<i class="ti-angle-right"></i></a>
-             <a href="#history">History<i class="ti-angle-right"></i></a>
-             <a href="#signature">Signature<i class="ti-angle-right"></i></a>
-             <a href="#Awards">Awards<i class="ti-angle-right"></i></a>
-             <a href="#team">Team<i class="ti-angle-right"></i></a>
-             <a href="#contact">Contact<i class="ti-angle-right"></i></a>
-           </div>
+        </div>
+        <div class="dropdown">
+         <button class="dropbtn">Gallery
+           <i class="ti-angle-down"></i>
+         </button>
+         <div class="dropdown-content">
+           <a href="../pages/gallery.html">Welcome<i class="ti-angle-right"></i></a>
+           <a href="#history">History<i class="ti-angle-right"></i></a>
+           <a href="#signature">Signature<i class="ti-angle-right"></i></a>
+           <a href="#awards">Awards<i class="ti-angle-right"></i></a>
+           <a href="#team">Team<i class="ti-angle-right"></i></a>
+           <a href="#contact">Contact<i class="ti-angle-right"></i></a>
          </div>
-          <a href="#contact">Contact</a>
-          <a href="#home" class="active">Book Now</a>
-          <div class="dropdown">
-            <button class="dropbtn"><img src="../resources/images/user_white.png" alt="account" id="account" width="18px">
-              <i class="ti-angle-down"></i>
-            </button>
-            <div class="dropdown-content" style="min-width:120px">
-              <a href="#">Log In<i class="ti-angle-right"></i></a>
-              <a href="#">Sign Up<i class="ti-angle-right"></i></a>
-            </div>
+       </div>
+        <a href="#contact">Contact</a>
+        <a href="#home" class="active">Book Now</a>
+        <div class="dropdown">
+          <button class="dropbtn"><img src="../resources/images/user_white.png" alt="account" id="account" width="18px">
+            <i class="ti-angle-down"></i>
+          </button>
+          <div class="dropdown-content" style="min-width:120px">
+            <a href="#">Log In<i class="ti-angle-right"></i></a>
+            <a href="#">Sign Up<i class="ti-angle-right"></i></a>
           </div>
         </div>
       </div>
-      <div class="book-btn" id="sideBtn" onclick="displayBookingForm()">
-        <p class="book-arrow"><i class="ti-angle-up"></i></p>
-        <p class="book-title">Book Now</p>
+    </div>
+    <div class="scroll-indicator" id="indicator" onclick="scrollAction()">
+      <i class="ti-angle-down"></i>
+    </div>
+    <div class="book-btn" id="sideBtn" onclick="displayBookingForm()">
+      <p class="book-arrow"><i class="ti-angle-up"></i></p>
+      <p class="book-title">Book Now</p>
+    </div>
+    <div class="book-form" id="bookForm">
+      <h4>Le Timeless Tresor</h4>
+      <h2>Check Availability</h2>
+      <input class="chk-in input-style1" type="text" placeholder="Check in" onfocus="(this.type='date')" onblur="(this.type='text')">
+      <input class="chk-out input-style1" type="text" placeholder="Check out" onfocus="(this.type='date')" onblur="(this.type='text')">
+      <select class="room input-style2" name="adult">
+        <option value="">Room Type</option>
+        <option value="">Junior Room</option>
+        <option value="">Double Room</option>
+        <option value="">Family Suite</option>
+        <option value="">Deluxe Suite</option>
+      </select>
+      <div class="form-container" style="padding: 0px 7.5px 0px 0px">
+        <select class="adult input-style2" name="adult">
+          <option value="">Adult</option>
+          <option value="">1</option>
+          <option value="">2</option>
+          <option value="">3</option>
+          <option value="">4</option>
+          <option value="">5</option>
+        </select>
       </div>
-      <div class="book-form" id="bookForm">
-        <h2>Booking</h2>
-        <button class="button-style1">Check Availability</button>
+      <div class="form-container" style="padding: 0px 0px 0px 7.5px">
+        <select class="child input-style2" name="">
+          <option value="">Child</option>
+          <option value="">0</option>
+          <option value="">1</option>
+          <option value="">2</option>
+          <option value="">3</option>
+          <option value="">4</option>
+          <option value="">5</option>
+        </select>
       </div>
-      <script src="../js/nav.js"></script>
-    </nav>
+      <button class="button-style1">Check<i class="ti-angle-right"></i></button>
+    </div>
+    <script type="text/javascript" src="../js/nav.js"></script>
+  </nav>
     <!-- Image + Header -->
     <div>
         <header class="banner" onclick="dismissBookingForm()">
@@ -96,28 +130,31 @@
       <div class="container">
         <h2 id="subtitle">IMAGES</h2>
         <h1 id="title">OUR GALLERY</h1>
-        <div>
-          <div onclick="show('all')">All</div>
+        <div class="segcontrol">
+          <div onclick="showAll()">All</div>
           <div onclick="show('exterior')">Exterior</div>
           <div onclick="show('dining')">Dining</div>
           <div onclick="show('experience')">Experience</div>
           <div onclick="show('interior')">Interior</div>
         </div>
-          <section class="all flexbox-container" id="all">
-            <img class="flexbox-item flexbox-item-1" src="../resources/images/galleryimg1.jpg" alt="Example image">
+        <div>
+          <section class="exteriorRow" id="exterior">
+            <img class="exteriorColumn" src="../resources/images/galleryimg2.jpg" alt="Example image">
+            <img class="exteriorColumn" src="../resources/images/galleryimg2.jpg" alt="Example image">
+            <img class="exteriorColumn" src="../resources/images/galleryimg2.jpg" alt="Example image">
           </section>
-          <section class="exterior flexbox-container" id="exterior">
-            <img class="flexbox-item flexbox-item-2" src="../resources/images/galleryimg2.jpg" alt="Example image">
+          <section class="diningRow" id="dining">
+            <img class="diningColumn" src="../resources/images/galleryimg3.jpg"  alt="Example image">
+            <img class="diningColumn" src="../resources/images/galleryimg3.jpg"  alt="Example image">
+            <img class="diningColumn" src="../resources/images/galleryimg3.jpg"  alt="Example image">
           </section>
-          <section class="dining flexbox-container" id="dining">
-              <img class="flexbox-item flexbox-item-3" src="../resources/images/galleryimg3.jpg"  alt="Example image">
-          </section>
-          <section class="experience flexbox-container" id="experience">
+          <section class="experience" id="experience">
             <img src="#" class="#">
           </section>
-          <section class="interior flexbox-container" id="interior">
+          <section class="interior " id="interior">
             <img src="#" class="#">
           </section>
+        </div>
     </div>
     <script type="text/javascript" src="../js/gallery.js"></script>
 </body>

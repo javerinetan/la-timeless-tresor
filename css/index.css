@@ -25,7 +25,8 @@
 .heading {
   color: white;
   position: relative;
-  top: 180px;
+  top: 200px;
+  text-align: center;
   animation: title-slide 1s ease-in-out;
 }
 
@@ -178,7 +179,7 @@
   width: 100%;
 }
 
-.section3 .btn-container {
+.section3 .btn-container, .section6 .btn-container {
   float: right;
 }
 
@@ -208,7 +209,7 @@
   width: 100%;
 }
 
-.section1 .button-style2, .section2 .button-style2, .section3 .button-style2, .section4 .button-style2, .section5 .button-style2 {
+.section1 .button-style2, .section2 .button-style2, .section3 .button-style2, .section4 .button-style2, .section5 .button-style2, .section6 .button-style2{
     margin-top: 40px;
     padding: 15px 25px 15px 25px;
     width: 250px;
@@ -267,6 +268,55 @@
 
 .reveal {
   opacity: 0;
+}
+
+.section6 .wrapper {
+  width: 100%;
+  margin-top: 100px;
+  padding: 65px 0px;
+  background-color: #F8F5F0;
+  margin-bottom: 100px;
+  display: inline-block;
+}
+
+.section6 .right {
+  float: left;
+}
+
+.section6 .right, .section6 .left {
+  float: left;
+  width: 100%;
+  margin: 60px 0px;
+}
+
+.section6 .right img {
+  float: left;
+  width: 55%;
+  height: 400px;
+}
+
+.section6 .right article {
+  float: left;
+  width: 45%;
+  padding: 50px;
+  text-align: left;
+}
+
+.section6 .left img {
+  float: right;
+  width: 55%;
+  height: 400px;
+}
+
+.section6 .left article {
+  float: right;
+  width: 45%;
+  padding: 50px;
+  text-align: right;
+}
+
+.section6 img {
+  width: 100%;
 }
 
 .reveal.left.animate {
@@ -364,7 +414,7 @@
   .section2 .section-sub-title {
     margin-bottom: 30px;
   }
-  .section3 .btn-container {
+  .section3 .btn-container, .section6 .btn-container {
     float: none;
     width: 100%;
   }
@@ -384,6 +434,10 @@
   }
   .section5 .box-content {
     margin: 10px 0px;
+  }
+  .section6 .right img, .section6 .left img, .section6 .right article, .section6 .left article  {
+    width: 100%;
+    float: none;
   }
 }
 

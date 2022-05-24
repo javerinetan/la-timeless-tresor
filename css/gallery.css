@@ -83,6 +83,26 @@ h1, h2 {
   display: block !important;
 }
 
+.segcontrol {
+  float: left;
+}
+
+.exteriorColumn, .diningColumn {
+  width: 33.3%;
+  padding: 15px;
+  float: left;
+}
+
+.exteriorRow, .diningRow {
+  content: "";
+  clear: both;
+  display: table;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
 .container ul {
   position: relative;
   width: 350px;
@@ -116,66 +136,6 @@ h1, h2 {
 .container ul .focus.second {
   left: calc(-100% / 3);
 }
-
-/* Final Video Styles */
-.flexbox-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30px;
-}
-
-.flexbox-item-1 {
-    flex: 1 0 0;
-    min-height: 100px;
-    align-self: flex-end;
-    order: 1;
-}
-
-.flexbox-item-2 {
-    min-height: 200px;
-    flex-grow: 2;
-    flex-basis: 0;
-    align-self: center;
-    order: 2;
-}
-
-.flexbox-item-3 {
-    min-height: 300px;
-    flex-grow: 1;
-    flex-basis: 0;
-    order: 3;
-}
-
-
-.flexbox-item-1 {
-    min-height: 250px;
-    min-width: 400px;
-}
-
-.flexbox-item-2 {
-  min-height: 250px;
-  min-width: 400px;
-}
-
-.flexbox-item-3 {
-  min-height: 250px;
-  min-width: 400px;
-}
-
-.flexbox-container {
-    position: relative;
-}
-
-.flexbox-item {
-    position: relative;
-    background-color: #dfdfdf;
-    font-size: 100px;
-    display: flex;
-    justify-content: center;
-    margin: 30px;
-}
-
 
 @media all and (min-width: 600px) {
   .aside { flex: 1 0 0; }
