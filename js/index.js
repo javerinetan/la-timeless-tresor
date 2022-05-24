@@ -77,10 +77,17 @@ var carousel = document.querySelector('.carousel');
 var flkty = new Flickity( carousel, {
   imagesLoaded: true,
   percentPosition: false,
-  freeScroll: true,
   contain: true,
+  freeScroll: true,
   prevNextButtons: false,
   pageDots: false,
+  autoPlay: 1500,
+  pauseAutoPlayOnHover: false
+});
+
+var review = document.querySelector('.review-carousel');
+var flkty = new Flickity( review, {
+  prevNextButtons: false,
   autoPlay: 1500,
   pauseAutoPlayOnHover: false
 });
