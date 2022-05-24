@@ -19,58 +19,73 @@
 <!-- header section starts  -->
 
 <nav class="topnav" id="myTopnav">
-     <div class="container">
-       <a href="index.html" style="padding:0; display:inline">
-         <img src="../resources/images/logov2_white.png" alt="Logo" class="nav-logo" id="navLogo">
-       </a>
-       <a href="javascript:void(0);" style="font-size:18px;margin-top: 10px;" class="icon" onclick="displayNav()">&#9776;</a>
-       <div class="nav-items">
-         <div class="dropdown">
-           <button class="dropbtn">The Resort
-             <i class="ti-angle-down"></i>
-           </button>
-           <div class="dropdown-content">
-             <a href="#">Overview<i class="ti-angle-right"></i></a>
-             <a href="#">Accomodations<i class="ti-angle-right"></i></a>
-             <a href="facilities.html">Facilities<i class="ti-angle-right"></i></a>
-             <a href="services.html">Services<i class="ti-angle-right"></i></a>
-           </div>
-         </div>
-         <div class="dropdown">
-           <button class="dropbtn">Dining
-             <i class="ti-angle-down"></i>
-           </button>
-           <div class="dropdown-content">
-             <a href="#">The Restaurant<i class="ti-angle-right"></i></a>
-             <a href="#">Reservation<i class="ti-angle-right"></i></a>
-             <a href="#">Ordering<i class="ti-angle-right"></i></a>
-           </div>
-         </div>
-         <div class="dropdown">
-           <button class="dropbtn">Events & Promotions
-             <i class="ti-angle-down"></i>
-           </button>
-           <div class="dropdown-content">
-             <a href="#news">Events<i class="ti-angle-right"></i></a>
-             <a href="#contact">Promotions<i class="ti-angle-right"></i></a>
-           </div>
-         </div>
-         <a href="#about">Gallery</a>
-         <a href="#contact">Contact</a>
-         <a href="#home" class="active">Book Now</a>
-         <div class="dropdown">
-           <button class="dropbtn"><img src="../resources/images/user_white.png" alt="account" id="account" width="18px">
-             <i class="ti-angle-down"></i>
-           </button>
-           <div class="dropdown-content" style="min-width:120px">
-             <a href="#">Log In<i class="ti-angle-right"></i></a>
-             <a href="#">Sign Up<i class="ti-angle-right"></i></a>
-           </div>
+    <div class="container">
+      <a href="../index.html" style="padding:0; display:inline">
+        <img src="../resources/images/logov2_white.png" alt="Logo" class="nav-logo" id="navLogo">
+      </a>
+      <a href="javascript:void(0);" style="font-size:18px;margin-top: 10px;" class="icon" onclick="displayNav()">&#9776;</a>
+      <div class="nav-items">
+        <div class="dropdown">
+          <button class="dropbtn">The Resort
+            <i class="ti-angle-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">Overview<i class="ti-angle-right"></i></a>
+            <a href="../pages/accommodations.html">Accomodations<i class="ti-angle-right"></i></a>
+            <a href="facilities.html">Facilities<i class="ti-angle-right"></i></a>
+            <a href="services.html">Services<i class="ti-angle-right"></i></a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Dining
+            <i class="ti-angle-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">The Restaurant<i class="ti-angle-right"></i></a>
+            <a href="#">Reservation<i class="ti-angle-right"></i></a>
+            <a href="#">Ordering<i class="ti-angle-right"></i></a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Events & Promotions
+            <i class="ti-angle-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#news">Events<i class="ti-angle-right"></i></a>
+            <a href="#contact">Promotions<i class="ti-angle-right"></i></a>
+          </div>
+        </div>
+        <div class="dropdown">
+         <button class="dropbtn">Gallery
+           <i class="ti-angle-down"></i>
+         </button>
+         <div class="dropdown-content">
+           <a href="../pages/gallery.html">Welcome<i class="ti-angle-right"></i></a>
+           <a href="#history">History<i class="ti-angle-right"></i></a>
+           <a href="#signature">Signature<i class="ti-angle-right"></i></a>
+           <a href="#awards">Awards<i class="ti-angle-right"></i></a>
+           <a href="#team">Team<i class="ti-angle-right"></i></a>
+           <a href="#contact">Contact<i class="ti-angle-right"></i></a>
          </div>
        </div>
-     </div>
-     <script src="../js/nav.js"></script>
-   </nav>
+        <a href="#contact">Contact</a>
+        <a href="#home" class="active">Book Now</a>
+        <div class="dropdown">
+          <button class="dropbtn"><img src="../resources/images/user_white.png" alt="account" id="account" width="18px">
+            <i class="ti-angle-down"></i>
+          </button>
+          <div class="dropdown-content" style="min-width:120px">
+            <a href="#">Log In<i class="ti-angle-right"></i></a>
+            <a href="#">Sign Up<i class="ti-angle-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator" id="indicator" onclick="scrollAction()">
+      <i class="ti-angle-down"></i>
+    </div>
+    <script type="text/javascript" src="../js/nav.js"></script>
+  </nav>
 
 
 <!--header section starts-->
