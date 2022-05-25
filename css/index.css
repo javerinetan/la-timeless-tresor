@@ -350,7 +350,7 @@
 .section7 .box-content {
   margin: 10px;
   min-height: 250px;
-  padding: 25px;
+  padding: 20px;
 }
 
 .section7 .box img {
@@ -402,8 +402,8 @@
   color: white;
 }
 
-.section8 .section-subheading {
-
+.section8 .section-sub-title {
+  width: 80%;
 }
 
 .review-carousel .carousel-cell {
@@ -564,6 +564,12 @@
   .section6 .right img, .section6 .left img, .section6 .right article, .section6 .left article  {
     width: 100%;
     float: none;
+  }
+  .section6 .right, .section6 .left {
+    margin: 40px 0px;
+  }
+  .section7 .box-content {
+    padding: 10px;
   }
 }
 
