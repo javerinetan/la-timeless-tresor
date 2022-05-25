@@ -140,40 +140,38 @@ a {
   max-width: 1300px;
 }
 
-  .facilities .image{
-     flex:1 1 40rem;
-  }
+.facilities .image{
+  flex:1 1 40rem;
+}
 
-  .facilities .image img{
-     width: 100%;
-  }
+.facilities .image img{
+  width: 100%;
+}
 
-  .facilities .content{
-     flex:1 1 38rem;
-  }
+.facilities .content{
+  flex:1 1 38rem;
+}
 
-  .facilities .content h3{
-     font-size: 4.5rem;
-     color:var(--black);
-     font-family: 'Libre Bodoni', serif;
-     padding-bottom: .5rem;
-  }
+.facilities .content h3{
+  font-size: 4.5rem;
+  color:var(--black);
+  font-family: 'Libre Bodoni', serif;
+  padding-bottom: .5rem;
+}
 
-  .facilities .content p{
-     padding:1rem 0 1rem;
-     line-height: 2;
-     color:var(--light-color);
-     font-size: 1.5rem;
-  }
+.facilities .content p{
+  padding:0.5rem 0 1rem;
+  line-height: 2;
+  color:var(--light-color);
+  font-size: 1.5rem;
+}
 
-  .facilities .content strong{
-     padding:0rem 0 1.5rem;
-     line-height: 2;
-     color:var(--black);
-     font-size: 2rem;
-     font-family: 'Libre Bodoni', serif;
-  }
-
+.facilities .content strong{
+  line-height: 2;
+  color:var(--black);
+  font-size: 2rem;
+  font-family: 'Libre Bodoni', serif;
+}
 
 /* footer starts */
 .footer{
