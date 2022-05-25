@@ -11,7 +11,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400;1,400;1,700&display=swap" rel="stylesheet">
    <!-- custom css file link  -->
-   <link rel="stylesheet" href="../css/indoor.css">
+   <link rel="stylesheet" href="../css/mainformjae.css">
    <link rel="stylesheet" href="../css/navbar.css">
    <link rel="stylesheet" href="../css/global.css">
 
@@ -122,6 +122,7 @@
   </nav>
   <!-- header section ends -->
 <!---Welcome page-->
+
 <div class="main-bg">
 
    <section class="main">
@@ -146,21 +147,27 @@
 
    <div class="content">
 
-     <form action="" method="POST">
-        <h3>Reservation for indoor dinner</h3>
+     <form action="indoor2.html" method="POST">
+        <h3>Reservation for Indoor dining </h3>
 
         <label for='check-in'> Select booking date:</label>
-        <input type="date" name="cdate" required class="box" min="2022-25-05" max="2023-01-01" required>
+        <input type="date" name="cdate" required class="box" min="2022-25-05" max="2023-01-01" >
+
+        <div class="form-container" style="padding: 0px 7.5px 0px 0px">
+          <label for="number">Adult:</label>
+        <input type="number" name="number" required class="box" id="adult" maxlength="0.2" placeholder="Adult:" min="1" max="15" onkeypress="if(this.value.length == 2) return false"  >
+        </div>
+
+  <div class="form-container" style="padding: 0px 0px 0px 7.5px">
+      <label for="number">Children:</label>
+          <input type="number" name="number" required class="box" id="child" maxlength="0.2" placeholder="Children:" min="0" max="15" onkeypress="if(this.value.length == 2) return false" >
+</div>
 
 
-        <label for='adult'>Adults:</label>
-         <input type="number" name="number" required class="boxs" id="adult" maxlength="0.2" placeholder="Adults:" min="1" max="15" onkeypress="if(this.value.length == 2) return false">
 
-         <label for='child'>Children:</label>
-          <input type="number" name="number" required class="boxes" id="child" maxlength="0.2" placeholder="Children:" min="0" max="15" onkeypress="if(this.value.length == 2) return false">
 
         <label for="type">Choose time slot:</label>
-          <select name="sm" id="type">
+          <select class="form-container" name="adult" id="type">
            <option value="7.00am">7.00am</option>
            <option value="7.30am">7.30am</option>
            <option value="8.00am">8.00am</option>
@@ -172,8 +179,8 @@
            <option value="11.00am">11.00am</option>
            <option value="11.30am">11.30am</option>
           </select>
+          <a href="indoor2.html" class="btn"  class="form-container">next<i class="ti-angle-right"></i></a>
 
-          <a href="indoor2.html" class="btn" >next</a>
 
 
      </form>
@@ -187,6 +194,7 @@
 <!-- forms section end -->
 
 <!-- footer section starts  -->
+
 
 <section class="footer">
   <div class="heading">
@@ -217,13 +225,13 @@
          <i class="fas fa-phone"></i>
          <h3>our number</h3>
          <p>+65-9999</p>
-         <p>+65-965</p>
       </div>
 
    </div>
 
 
 </section>
+
 
 <!-- footer section ends -->
 
