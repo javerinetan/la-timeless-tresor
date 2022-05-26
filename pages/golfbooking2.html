@@ -4,14 +4,14 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Restaurant booking </title>
+   <title> Golf booking </title>
 
    <!-- font awesome cdn link  -->
    <link rel="icon" href="../resources/images/logo.png">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400;1,400;1,700&display=swap" rel="stylesheet">
    <!-- custom css file link  -->
-   <link rel="stylesheet" href="../css/mainformjae.css">
+   <link rel="stylesheet" href="../css/golfbooking.css">
    <link rel="stylesheet" href="../css/navbar.css">
    <link rel="stylesheet" href="../css/global.css">
  <script src="../breafast.js"></script>
@@ -91,8 +91,8 @@
    <section class="main">
 
       <div class="content">
-           <h3> Restaurant Reservation Booking  </h3>
-           <p>Please read the terms and condition before booking. No refunds will be given.</p>
+        <h3> Golf Booking  </h3>
+        <p>The best for you</p>
       </div>
 
    </section>
@@ -113,11 +113,18 @@
 
      <form action="golfbooking3.html" method="POST">
 
-        <h3>Reservation for Breakfast</h3>
+        <h3>golf booking page</h3>
         <label for="text">Name:</label>
         <input type="text" name="name" required class="box" maxlength="20" placeholder="enter your name">
-        <label for="tel">Phone Number( Sg numbers only):</label>
+        <div class="form-container" style="padding: 0px 7.5px 0px 0px">
+        <label for="tel">Phone Number:</label>
         <input type="tel" name="phone" required class="box" maxlength="8" placeholder="enter your phone number" min="80000000" max="9999999999" onkeypress="if(this.value.length == 8) return false">
+        </div>
+        <div class="form-container" style="padding: 0px 0px 0px 7.5px">
+        <label for="text">Promo Code</label>
+        <input type="text" name="code" class="box" maxlength="20" placeholder="code:" >
+        </div>
+
         <label for="email">Email:</label>
         <input type="email" name="email"required class="box" maxlengt required class="box" maxlength="50" placeholder="enter your email">
 

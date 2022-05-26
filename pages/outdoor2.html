@@ -11,7 +11,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400;1,400;1,700&display=swap" rel="stylesheet">
    <!-- custom css file link  -->
-   <link rel="stylesheet" href="../css/outdoor.css">
+   <link rel="stylesheet" href="../css/mainformjae.css">
    <link rel="stylesheet" href="../css/navbar.css">
    <link rel="stylesheet" href="../css/global.css">
  <script src="../breafast.js"></script>
@@ -81,45 +81,7 @@
       <div class="scroll-indicator" id="indicator" onclick="scrollAction()">
         <i class="ti-angle-down"></i>
       </div>
-      <div class="book-btn" id="sideBtn" onclick="displayBookingForm()">
-        <p class="book-arrow"><i class="ti-angle-up"></i></p>
-        <p class="book-title">Book Now</p>
-      </div>
-      <div class="book-form" id="bookForm">
-        <h4>Le Timeless Tresor</h4>
-        <h2>Check Availability</h2>
-        <input class="chk-in input-style1" type="text" placeholder="Check in" onfocus="(this.type='date')" onblur="(this.type='text')">
-        <input class="chk-out input-style1" type="text" placeholder="Check out" onfocus="(this.type='date')" onblur="(this.type='text')">
-        <select class="room input-style2" name="adult">
-          <option value="">Room Type</option>
-          <option value="">Junior Room</option>
-          <option value="">Double Room</option>
-          <option value="">Family Suite</option>
-          <option value="">Deluxe Suite</option>
-        </select>
-        <div class="form-container" style="padding: 0px 7.5px 0px 0px">
-          <select class="adult input-style2" name="adult">
-            <option value="">Adult</option>
-            <option value="">1</option>
-            <option value="">2</option>
-            <option value="">3</option>
-            <option value="">4</option>
-            <option value="">5</option>
-          </select>
-        </div>
-        <div class="form-container" style="padding: 0px 0px 0px 7.5px">
-          <select class="child input-style2" name="">
-            <option value="">Child</option>
-            <option value="">0</option>
-            <option value="">1</option>
-            <option value="">2</option>
-            <option value="">3</option>
-            <option value="">4</option>
-            <option value="">5</option>
-          </select>
-        </div>
-        <button class="button-style1">Check<i class="ti-angle-right"></i></button>
-      </div>
+
       <script type="text/javascript" src="../js/nav.js"></script>
     </nav>
 <!-- header section ends -->
@@ -149,17 +111,18 @@
 
    <div class="content">
 
-     <form action="" method="POST">
+     <form action="outdoor3.html" method="POST">
 
         <h3>Reservation for dinner under the stars</h3>
 
+        <label for="text">Name:</label>
         <input type="text" name="name" required class="box" maxlength="20" placeholder="enter your name">
+        <label for="tel">Phone Number( Sg numbers only):</label>
         <input type="tel" name="phone" required class="box" maxlength="8" placeholder="enter your phone number" min="80000000" max="9999999999" onkeypress="if(this.value.length == 8) return false">
+        <label for="email">Email:</label>
         <input type="email" name="email"required class="box" maxlengt required class="box" maxlength="50" placeholder="enter your email">
 
-        <button onclick="myFunction()" name="send" value="send message" class="btn" id="Nextbtn">Next</button>
-
-
+        <button onclick="myFunction()" name="send" value="send message" class="btn"  id="Nextbtn">Next</button>
 
 
 

@@ -79,45 +79,7 @@
     <div class="scroll-indicator" id="indicator" onclick="scrollAction()">
       <i class="ti-angle-down"></i>
     </div>
-    <div class="book-btn" id="sideBtn" onclick="displayBookingForm()">
-      <p class="book-arrow"><i class="ti-angle-up"></i></p>
-      <p class="book-title">Book Now</p>
-    </div>
-    <div class="book-form" id="bookForm">
-      <h4>Le Timeless Tresor</h4>
-      <h2>Check Availability</h2>
-      <input class="chk-in input-style1" type="text" placeholder="Check in" onfocus="(this.type='date')" onblur="(this.type='text')">
-      <input class="chk-out input-style1" type="text" placeholder="Check out" onfocus="(this.type='date')" onblur="(this.type='text')">
-      <select class="room input-style2" name="adult">
-        <option value="">Room Type</option>
-        <option value="">Junior Room</option>
-        <option value="">Double Room</option>
-        <option value="">Family Suite</option>
-        <option value="">Deluxe Suite</option>
-      </select>
-      <div class="form-container" style="padding: 0px 7.5px 0px 0px">
-        <select class="adult input-style2" name="adult">
-          <option value="">Adult</option>
-          <option value="">1</option>
-          <option value="">2</option>
-          <option value="">3</option>
-          <option value="">4</option>
-          <option value="">5</option>
-        </select>
-      </div>
-      <div class="form-container" style="padding: 0px 0px 0px 7.5px">
-        <select class="child input-style2" name="">
-          <option value="">Child</option>
-          <option value="">0</option>
-          <option value="">1</option>
-          <option value="">2</option>
-          <option value="">3</option>
-          <option value="">4</option>
-          <option value="">5</option>
-        </select>
-      </div>
-      <button class="button-style1">Check<i class="ti-angle-right"></i></button>
-    </div>
+
     <script type="text/javascript" src="../js/nav.js"></script>
   </nav>
   <!-- header section ends -->
@@ -168,18 +130,17 @@
 
         <label for="type">Choose time slot:</label>
           <select class="form-container" name="adult" id="type">
-           <option value="7.00am">7.00am</option>
-           <option value="7.30am">7.30am</option>
-           <option value="8.00am">8.00am</option>
-           <option value="8.30am">8.30am</option>
-           <option value="9.00am">9.00am</option>
-           <option value="9.30am">9.30am</option>
-           <option value="10.00am">10.00am</option>
-           <option value="10.30am">10.30am</option>
-           <option value="11.00am">11.00am</option>
-           <option value="11.30am">11.30am</option>
+            <option value="6.00pm">6.00pm</option>
+            <option value="6.30pm">6.30pm</option>
+            <option value="7.00pm">7.00pm</option>
+            <option value="7.30pm">7.30pm</option>
+            <option value="8.00pm">8.00pm</option>
+            <option value="8.30pm">8.30pm</option>
+            <option value="9.00pm">9.00pm</option>
+            <option value="9.30pm">9.30pm</option>
+            <option value="10.00pm">10.00pm</option>
           </select>
-          <a href="indoor2.html" class="btn"  class="form-container">next<i class="ti-angle-right"></i></a>
+          <button onclick="myFunction()" name="send" value="send message" class="btn3"  id="Nextbtn">Next</button>
 
 
 
