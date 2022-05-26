@@ -264,6 +264,7 @@
 .scroll-indicator {
   position: fixed;
   cursor: pointer;
+  font-size: 15px;
   box-shadow: 0px 5px 15px rgb(0 0 0 / 5%);
   color: white;
   bottom: 40px;
@@ -358,10 +359,7 @@
 	.book-form, .book-btn {
     display: none;
   }
-}
-
-@media screen and (max-width: 500px) {
-	.book-form {
+  .book-form {
     right: 60px !important;
     padding: 30px;
   }
@@ -370,7 +368,7 @@
 @media screen and (max-width: 600px) {
 	.book-form {
     right: 60px !important;
-    width: 320px;
+    width: 330px;
   }
   .btn-active {
     right: -50px !important;

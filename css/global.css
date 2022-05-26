@@ -196,6 +196,106 @@ body {
   animation: fade-up 1s ease-in-out;
 }
 
+/* footer starts */
+.footer {
+  background-color: #222;
+  display: inline-block;
+  width: 100%;
+}
+
+.footer .container {
+  padding-top: 70px;
+  display: inline-block;
+}
+
+.footer section {
+   float: left;
+   width: 33.33%;
+}
+
+.footer .box {
+  width: 100%;
+  color: white;
+  display: inline-block;
+}
+
+.footer h3 {
+  font-size: 15px;
+}
+
+.footer p {
+  font-size: 15px;
+  color: darkgray;
+  padding-bottom: 15px;
+}
+
+.footer .box a {
+  color: darkgray;
+  padding-top: 8px;
+  display: inline-block;
+  width: 40%;
+  float: left;
+  font-size: 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer .box a:hover {
+  padding-left: 5px;
+  color: #aa8453;
+}
+
+.footer .box a:hover .ti-angle-right {
+  opacity: 1;
+  padding-left: 5px;
+}
+
+.footer .box .ti-angle-right {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.footer .box img {
+  width: 230px;
+  margin-bottom: 20px;
+}
+
+.footer section:nth-child(2) .box {
+  margin-bottom: 20px;
+}
+
+.footer section:nth-child(3) i {
+  margin-bottom: 15px;
+  font-size: 28px;
+  width: 30px;
+  color: #aa8453;
+  float: left;
+  text-align: left;
+  margin-right: 15px;
+}
+
+.footer section:nth-child(3) p {
+  margin-bottom: 6px;
+  width: 80%;
+  text-align: left;
+  float: left;
+}
+
+.footer section:nth-child(3) h3 {
+  text-align: left;
+  margin-bottom: 3px;
+  width: 80%;
+  float: left;
+}
+
+.footer hr {
+  width: 100%;
+  height: 1px;
+  display: inline-block;
+  background-color: #333;
+}
+
+/* footer end */
+
 @keyframes fade-right {
   0% {
     position: relative;
@@ -244,11 +344,39 @@ body {
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
+  .footer section:nth-child(2) .box{
+    float: left;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 850px) {
   .container {
     padding-right: 30px;
     padding-left: 30px;
     margin-right: auto;
     margin-left: auto;
+  }
+  .footer section {
+     float: left;
+     width: 100%;
+     padding: 0px;
+     padding-bottom: 50px;
+  }
+  .footer section:nth-child(3) .box {
+    width: 50%;
+    float: left;
+  }
+  .footer .box a {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .footer section:nth-child(3) .box {
+    width: 100%;
+    float: left;
   }
 }

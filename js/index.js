@@ -74,7 +74,7 @@ function scrollAction(){
 
 // Carousel
 var carousel = document.querySelector('.carousel');
-var flkty = new Flickity( carousel, {
+var flkty1 = new Flickity( carousel, {
   imagesLoaded: true,
   percentPosition: false,
   contain: true,
@@ -88,7 +88,7 @@ var flkty = new Flickity( carousel, {
 var review = document.querySelector('.review-carousel');
 var flkty = new Flickity( review, {
   prevNextButtons: false,
-  autoPlay: 1500,
+  autoPlay: 4500,
   pauseAutoPlayOnHover: false
 });
 
@@ -98,10 +98,10 @@ var docStyle = document.documentElement.style;
 var transformProp = typeof docStyle.transform == 'string' ?
   'transform' : 'WebkitTransform';
 
-flkty.on( 'scroll', function() {
-  flkty.slides.forEach( function( slide, i ) {
+flkty1.on( 'scroll', function() {
+  flkty1.slides.forEach( function( slide, i ) {
     var img = imgs[i];
-    var x = ( slide.target + flkty.x ) * -1/3;
+    var x = ( slide.target + flkty1.x ) * -1/3;
     img.style[ transformProp ] = 'translateX(' + x  + 'px)';
   });
 });
