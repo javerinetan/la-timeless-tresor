@@ -20,7 +20,6 @@
    text-transform: capitalize;
 }
 
-
 html{
    font-size: 62.5%;
    overflow-x: hidden;
@@ -204,7 +203,7 @@ select{
   display: inline-block;
   background-color: var(--main-color);
   border-radius: 10px;
-  width: 30%;
+  width: 45%;
   line-height: 4rem;
   color: var(--white);
   margin-top: 1rem;
@@ -219,26 +218,28 @@ select{
   display: inline-block;
   background-color: var(--main-color);
   border-radius: 10px;
-  width: 30%;
-  line-height: 3rem;
+  width: 25%;
+  line-height: 4rem;
   color: var(--white);
-  margin-top: 1rem;
-  font-size: 2rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  margin-top: 0.5rem;
+  font-size: 1.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+
 }
 
 .btn2 {
   display: inline-block;
   background-color: var(--main-color);
   border-radius: 10px;
-  width: 20%;
-  line-height: 3rem;
+  width: 15%;
+  line-height: 7rem;
   color: var(--white);
   margin-top: 1rem;
-  font-size: 2rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  font-size: 1.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+
 }
 
 .btn3 {
