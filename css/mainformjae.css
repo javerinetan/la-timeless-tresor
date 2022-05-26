@@ -216,13 +216,16 @@ select{
 
 .btn1 {
   display: inline-block;
-  background-color: var(--main-color);
-  border-radius: 10px;
-  float:left;
-  margin-left: 13rem;
-  font-size: 2rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+   background-color: var(--main-color);
+   border-radius: 10px;
+   width: 30%;
+   line-height: 5rem;
+   color: var(--white);
+   margin-top: 1rem;
+   font-size: 1.5rem;
+   padding-left: 0.5rem;
+   padding-right: 0.5rem;
+
 
 }
 
@@ -230,11 +233,13 @@ select{
   display: inline-block;
   background-color: var(--main-color);
   border-radius: 10px;
-  float:right;
-  margin-right: 13rem;
-  font-size: 2rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  width: 13rem;
+  line-height: 5rem;
+  color: var(--white);
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 
 }
 
