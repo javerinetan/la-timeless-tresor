@@ -160,17 +160,21 @@ a {
 }
 
 .facilities .content p{
-  padding:0.5rem 0 1rem;
+  padding:0.5rem 0 1.5rem;
   line-height: 2;
   color:var(--light-color);
   font-size: 1.5rem;
 }
 
 .facilities .content strong{
-  line-height: 2;
+  line-height: 2rem;
   color:var(--black);
   font-size: 2rem;
   font-family: 'Libre Bodoni', serif;
+}
+
+#op{
+  padding: 0;
 }
 
 /* footer starts */
@@ -213,7 +217,7 @@ a {
 }
 
 .footer .box-container .box p{
-   line-height: 2;
+   line-height: 2rem;
    font-size: 1.6rem;
    color:var(--light-color);
 }

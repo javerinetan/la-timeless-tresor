@@ -242,11 +242,13 @@ select{
 .done .box-container .box #back1{
   float:left;
   margin-left: 13rem;
+  font-size: 2rem;
 }
 
 .done .box-container .box #back2{
   float:right;
   margin-right: 13rem;
+  font-size: 2rem;
 }
 
 a{
