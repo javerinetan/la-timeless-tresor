@@ -138,18 +138,76 @@
 </div>
 
 <!--next-->
+<section class="form" >
+   <div class="image">
 
-<div class="booking">
-  <section class="book">
-    <div class="content">
+      <img src="../resources/images/bf.png" alt="">
+
+   </div>
+
+   <div class="content">
+
+     <form action="breakfast2.html" method="POST">
+        <h3>golf booking page</h3>
+
+           <label for='check-in'> Select booking date:</label>
+           <input type="date" name="cdate" required class="box" min="2022-25-05" max="2023-01-01" >
+
+            <div class="form-container" style="padding: 0px 7.5px 0px 0px">
+            <label for="number">Adult:</label>
+            <input type="number" name="number" required class="box" id="adult" maxlength="0.2" placeholder="Adult:" min="1" max="15" onkeypress="if(this.value.length == 2) return false"  >
+            </div>
+
+            <div class="form-container" style="padding: 0px 0px 0px 7.5px">
+            <label for="number">Children:</label>
+            <input type="number" name="number" required class="box" id="child" maxlength="0.2" placeholder="Children:" min="0" max="15" onkeypress="if(this.value.length == 2) return false" >
+            </div>
+
+             <label for="type">Choose time slot:</label>
+               <select class="form-container" name="adult" id="type">
+                      <option value="6.00am">6.00am</option>
+                      <option value="6.30am">6.30am</option>
+                      <option value="7.00am">7.00am</option>
+                      <option value="7.30am">7.30am</option>
+                      <option value="8.00am">8.00am</option>
+                      <option value="8.30am">8.30am</option>
+                      <option value="9.00am">9.00am</option>
+                      <option value="9.30am">9.30am</option>
+                      <option value="10.00am">10.00am</option>
+                      <option value="10.30am">10.30am</option>
+                      <option value="11.00am">11.00am</option>
+                      <option value="11.30am">11.30am</option>
+                      <option value="12.00pm">12.00pm</option>
+                      <option value="12.30pm">12.30pm</option>
+                      <option value="1.00pm">1.00pm</option>
+                      <option value="1.30pm">1.30pm</option>
+                      <option value="2.00pm">2.00pm</option>
+                      <option value="2.30pm">2.30pm</option>
+                      <option value="3.00pm">3.00pm</option>
+                      <option value="3.30pm">3.30pm</option>
+                      <option value="4.00pm">4.00pm</option>
+                      <option value="4.30pm">4.30pm</option>
+                      <option value="5.00pm">5.00pm</option>
+                      <option value="5.30pm">5.30pm</option>
+                      <option value="6.00pm">6.00pm</option>
+                      <option value="6.30pm">6.30pm</option>
+                      <option value="7.00pm">7.00pm</option>
+                      <option value="7.30pm">7.30pm</option>
+                      <option value="8.00pm">8.00pm</option>
+                      <option value="8.30pm">8.30pm</option>
+                      <option value="9.00pm">9.00pm</option>
+               </select>
+
+           <button onclick="myFunction()" name="send" value="send message" class="btn3"  id="Nextbtn">Next</button>
 
 
-      <hr/>
-       <h3> SORRY ALL HAVE BEEN BOOK </h3>
-      <h4> NO reservation  available</h4>
 
-    <center><button><img src="https://i.pinimg.com/originals/23/69/e3/2369e3e1812a01cf821b1b0d0f2b6a7a.gif"  href="golfpackage.html"><button>
-</center>
-</div>
+     </form>
 
-</div>
+
+  </div>
+
+</section>
+
+
+<!-- forms section end -->
