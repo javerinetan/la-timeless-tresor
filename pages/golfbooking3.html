@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Restaurant  booking </title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="icon" href="../resources/images/logo.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400;1,400;1,700&display=swap" rel="stylesheet">
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="../css/mainformjae.css">
+   <link rel="stylesheet" href="../css/navbar.css">
+   <link rel="stylesheet" href="../css/global.css">
+ <script src="../breafast.js"></script>
+</head>
+<body>
+   <script src="../js/breafast.js"></script>
+  <!-- header section starts  -->
+  <nav class="topnav" id="myTopnav">
+      <div class="container">
+        <a href="../index.html" style="padding:0; display:inline">
+          <img src="../resources/images/logov2_white.png" alt="Logo" class="nav-logo" id="navLogo">
+        </a>
+        <a href="javascript:void(0);" style="font-size:18px;margin-top: 10px;" class="icon" onclick="displayNav()">&#9776;</a>
+        <div class="nav-items">
+          <div class="dropdown">
+            <button class="dropbtn">The Resort
+              <i class="ti-angle-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Overview<i class="ti-angle-right"></i></a>
+              <a href="../pages/accommodations.html">Accomodations<i class="ti-angle-right"></i></a>
+              <a href="#">Facilities<i class="ti-angle-right"></i></a>
+              <a href="#">Services<i class="ti-angle-right"></i></a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">Dining
+              <i class="ti-angle-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">The Restaurant<i class="ti-angle-right"></i></a>
+              <a href="../pages/reservation.html">Reservation<i class="ti-angle-right"></i></a>
+              <a href="#">Ordering<i class="ti-angle-right"></i></a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">Events & Promotions
+              <i class="ti-angle-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#news">Events<i class="ti-angle-right"></i></a>
+              <a href="../pages/promotions.html">Promotions<i class="ti-angle-right"></i></a>
+            </div>
+          </div>
+          <div class="dropdown">
+           <button class="dropbtn">Gallery
+             <i class="ti-angle-down"></i>
+           </button>
+           <div class="dropdown-content">
+             <a href="../pages/gallery.html">Welcome<i class="ti-angle-right"></i></a>
+             <a href="../pages/about.html">History<i class="ti-angle-right"></i></a>
+           </div>
+         </div>
+          <a href="#contact">Contact</a>
+          <a href="#home" class="active">Book Now</a>
+          <div class="dropdown">
+            <button class="dropbtn"><img src="../resources/images/user_white.png" alt="account" id="account" width="18px">
+              <i class="ti-angle-down"></i>
+            </button>
+            <div class="dropdown-content" style="min-width:120px">
+              <a href="#">Log In<i class="ti-angle-right"></i></a>
+              <a href="#">Sign Up<i class="ti-angle-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator" id="indicator" onclick="scrollAction()">
+        <i class="ti-angle-down"></i>
+      </div>
+
+      <script type="text/javascript" src="../js/nav.js"></script>
+    </nav>
+    <div class="main-bg">
+
+       <section class="main">
+
+          <div class="content">
+               <h3> Restaurant Reservation Booking  </h3>
+               <p>Please read the terms and condition before booking. No refunds will be given.</p>
+          </div>
+
+       </section>
+
+    </div>
+
+
+    <!-- forms section starts -->
+    <section class="form" >
+
+       <div class="image">
+
+          <img src="../resources/images/golf4.jpg" alt="">
+
+       </div>
+
+       <div class="content">
+
+         <form action="reservation.html" method="POST">
+
+            <h3>Reservation for Breakfast</h3>
+            <p>an email has been sent to you. If you want to change the booking please call the Le Meilleur Resto. </p>
+
+           <a href="reservation.html" class="btn1">Reservation Page<i class="ti-angle-right"></i></a>
+           <a href="index.html" class="btn2" >Home  Page<i class="ti-angle-right"></i></a>
+
+
+
+
+
+
+      </div>
+    </section>
+
+
+    <!-- footer section ends -->
+
+    <section class="footer">
+      <div class="heading">
+        <h3>Contact Us</h3>
+      </div>
+
+       <div class="box-container">
+
+          <div class="box">
+             <i class="fas fa-envelope"></i>
+             <h3>our email</h3>
+             <p>LaTimelessTresor@resort.com</p>
+          </div>
+
+          <div class="box">
+             <i class="fas fa-clock"></i>
+             <h3>counter opening hours</h3>
+             <p>08:00am to 08:00pm</p>
+          </div>
+
+          <div class="box">
+             <i class="fas fa-map-marker-alt"></i>
+             <h3>Resort location</h3>
+             <p>La Baie Classique, Singapore</p>
+          </div>
+
+          <div class="box">
+             <i class="fas fa-phone"></i>
+             <h3>our number</h3>
+             <p>+65-9999</p>
+             <p>+65-965</p>
+          </div>
+
+       </div>
+
+
+    </section>
+    </body>
+    </html>
