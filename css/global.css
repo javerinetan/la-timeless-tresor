@@ -78,6 +78,15 @@
  .ti-angle-down:before {
  	content: "\e64b";
  }
+ .fa-facebook:hover {
+   color: #4866AB !important;
+ }
+ .fa-twitter:hover {
+   color: #1CA0F2 !important;
+ }
+ .fa-instagram:hover {
+   color: #E84858 !important;
+ }
 
 html {
   scroll-behavior: smooth;
@@ -204,7 +213,7 @@ body {
 }
 
 .footer .container {
-  padding-top: 70px;
+  padding-top: 85px;
   display: inline-block;
 }
 
@@ -231,9 +240,9 @@ body {
 
 .footer .box a {
   color: darkgray;
-  padding-top: 8px;
+  padding-top: 10px;
   display: inline-block;
-  width: 40%;
+  width: 45%;
   float: left;
   font-size: 15px;
   transition: all 0.3s ease-in-out;
@@ -255,22 +264,38 @@ body {
 }
 
 .footer .box img {
-  width: 230px;
-  margin-bottom: 20px;
+  width: 240px;
+  margin-bottom: 15px;
+}
+
+.footer section:nth-child(1) p {
+  width: 80%;
+  margin-bottom: 45px;
+}
+
+.footer section:nth-child(1) i {
+  margin-bottom: 15px;
+  font-size: 25px;
+  color: #aa8453;
+  float: left;
+  margin-top: 15px;
+  text-align: left;
+  margin-right: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
 
 .footer section:nth-child(2) .box {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .footer section:nth-child(3) i {
-  margin-bottom: 15px;
   font-size: 28px;
   width: 30px;
   color: #aa8453;
   float: left;
   text-align: left;
-  margin-right: 15px;
+  margin-right: 25px;
 }
 
 .footer section:nth-child(3) p {
@@ -282,7 +307,7 @@ body {
 
 .footer section:nth-child(3) h3 {
   text-align: left;
-  margin-bottom: 3px;
+  margin-bottom: 5px;
   width: 80%;
   float: left;
 }
@@ -292,6 +317,25 @@ body {
   height: 1px;
   display: inline-block;
   background-color: #333;
+}
+
+.footer .tc {
+  width:100%;
+  text-align: center;
+  color: darkgray;
+  padding: 20px;
+  padding-bottom: 0px;
+}
+
+.footer .tc a {
+  width:100%;
+  text-align: center;
+  color: darkgray;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer .tc a:hover {
+  color: #aa8453;
 }
 
 /* footer end */
@@ -370,7 +414,7 @@ body {
     float: left;
   }
   .footer .box a {
-    width: 50%;
+    width: 30%;
   }
 }
 
@@ -378,5 +422,8 @@ body {
   .footer section:nth-child(3) .box {
     width: 100%;
     float: left;
+  }
+  .footer .box a {
+    width: 40%;
   }
 }
