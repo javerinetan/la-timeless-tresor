@@ -211,7 +211,7 @@ body {
 .footer section {
    float: left;
    width: 33.33%;
-   padding: 25px;
+   padding: 30px;
 }
 
 .footer .box {
@@ -221,6 +221,7 @@ body {
 }
 
 .footer p {
+  font-size: 15px;
   color: darkgray;
   padding-bottom: 15px;
 }
@@ -231,6 +232,7 @@ body {
   display: inline-block;
   width: 100%;
   float: left;
+  font-size: 15px;
   transition: all 0.3s ease-in-out;
 }
 
@@ -339,11 +341,14 @@ body {
      float: left;
      width: 100%;
      padding: 0px;
-     padding-bottom: 60px;
+     padding-bottom: 50px;
   }
   .footer section:nth-child(3) .box {
     width: 50%;
     float: left;
+  }
+  .footer .box a {
+    width: 50%;
   }
 }
 
