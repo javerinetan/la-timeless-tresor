@@ -39,10 +39,11 @@ section{
    background:linear-gradient(90deg, var(--white), transparent 0%), url('../resources/images/golfmainheader.jpg') no-repeat;
    background-size: cover;
    background-position: center;
+   display: flex;
 }
 
 .main-bg .main{
-   min-height: 70rem;
+   min-height: 60rem;
    display: flex;
    align-items: center;
 
@@ -51,12 +52,14 @@ section{
 .main-bg .main .content{
    width: 50rem;
    text-align: center;
+   padding-top:15rem;
 }
 
 .main-bg .main .content h3{
    font-size: 6rem;
    color:var(--white);
    font-family: 'Libre Bodoni', serif;
+   text-align: center;
 
 }
 
@@ -65,7 +68,7 @@ section{
    font-size: 1.6rem;
    color:var(--white);
    line-height: 2;
-   float: center;
+   text-align: center;
 }
 
 
