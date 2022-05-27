@@ -21,11 +21,46 @@
 
 
 /*Menu*/
-.FoodTypes{color: blue;
-text-align: left;
+.Menu{
+  display:table;
+  width: 95%;
+  border: 15px solid black;
+  padding: 100px;
+  margin:50px;
 }
 
-.Food{color:red;
-  text-align: center;
+.Menu #Left{
+  display: table-cell;
+  align: left;
+  display: table;
+}
+
+.Menu #Left li{
+  display: block;
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+  border: 1px solid blue;
+  background-color: yellow;
+
+}
+
+.Menu #Left span #a{
+  display: block;
+  width: 100px;
+  height: 30px;
+  padding: 5px;
+  border: 1px solid blue;
+  background-color: yellow;
+
+}
+
+.Menu #Right{
+  display: table-cell;
+  text-align: right;
+}
+
+.Menu ul li{
+  list-style: none;
 
 }
