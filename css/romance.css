@@ -85,6 +85,15 @@ section{
   width: 100%;
 }
 
+.form .image2{
+   flex:1 1 40rem;
+}
+
+.form .image2 img{
+  width: 100%;
+  line-height: 50rem;
+}
+
 .form .content{
    flex:1 1 40rem;
 }
