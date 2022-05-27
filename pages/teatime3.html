@@ -4,20 +4,21 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Golf Booking </title>
+   <title>Restaurant booking </title>
 
    <!-- font awesome cdn link  -->
    <link rel="icon" href="../resources/images/logo.png">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400;1,400;1,700&display=swap" rel="stylesheet">
    <!-- custom css file link  -->
-   <link rel="stylesheet" href="../css/golfbooking.css">
+   <link rel="stylesheet" href="../css/mainformjae.css">
    <link rel="stylesheet" href="../css/navbar.css">
    <link rel="stylesheet" href="../css/global.css">
-
+ <script src="../breafast.js"></script>
 </head>
 <body>
-  <!-- Promotions header section starts  -->
+   <script src="../js/breafast.js"></script>
+  <!-- header section starts  -->
   <nav class="topnav" id="myTopnav">
       <div class="container">
         <a href="../index.html" style="padding:0; display:inline">
@@ -83,106 +84,36 @@
 
       <script type="text/javascript" src="../js/nav.js"></script>
     </nav>
+    <div class="main-bg">
 
-<!---header -->
-<div class="main-bg">
+       <section class="main">
 
-   <section class="main">
+          <div class="content">
+               <h3> Restaurant Reservation Booking  </h3>
+               <p>Please read the terms and condition before booking. No refunds will be given.</p>
+          </div>
 
-      <div class="content">
-           <h3> Golf Booking  </h3>
-           <p>The best for you</p>
-      </div>
+       </section>
 
-   </section>
+    </div>
 
-</div>
-
-<!--next-->
-<section class="form" >
+<!-- forms section starts -->
+ <section class="form" >
    <div class="image">
+      <img src="../resources/images/teatime.jpg" alt="">
 
-      <img src="../resources/images/golf4.jpg" alt="">
-
-   </div>
-
-   <div class="content">
-
-     <form action="golfbooking2.html" method="POST">
-        <h3>golf booking page</h3>
-        <div class="form-containers" style="padding: 0px 0px 0px 7.5px; width: 100%">
-          <label for="slot">Choose the course:</label>
-          <select class="form-containers" style="width: 100%" name="">
-            <option value="Minigolf">Mini Golf</option>
-            <option value="classiquecourse">Classique Course</option>
-            <option value="Digicourse">DIGI course</option>
-          </select>
-        </div>
-        <div class="form-containers" style="padding: 0px 7.5px 0px 0px">
-          <label for='check-in'> Select booking date:</label>
-          <input class="form-containers" style="width: 100%" type="date" name="cdate" required class="boxs" min="2022-25-05" max="2023-01-01" >
-        </div>
-        <div class="form-containers" style="padding: 0px 0px 0px 7.5px">
-          <label for="slot">Choose the time slot:</label>
-          <select class="form-containers" style="width: 100%" name="">
-            <option value="6.00am">6.00am</option>
-            <option value="6.30am">6.30am</option>
-            <option value="7.00am">7.00am</option>
-            <option value="7.30am">7.30am</option>
-            <option value="8.00am">8.00am</option>
-            <option value="8.30am">8.30am</option>
-            <option value="9.00am">9.00am</option>
-            <option value="9.30am">9.30am</option>
-            <option value="10.00am">10.00am</option>
-            <option value="10.30am">10.30am</option>
-            <option value="11.00am">11.00am</option>
-            <option value="11.30am">11.30am</option>
-            <option value="12.00pm">12.00pm</option>
-            <option value="12.30pm">12.30pm</option>
-            <option value="1.00pm">1.00pm</option>
-            <option value="1.30pm">1.30pm</option>
-            <option value="2.00pm">2.00pm</option>
-            <option value="2.30pm">2.30pm</option>
-            <option value="3.00pm">3.00pm</option>
-            <option value="3.30pm">3.30pm</option>
-            <option value="4.00pm">4.00pm</option>
-            <option value="4.30pm">4.30pm</option>
-            <option value="5.00pm">5.00pm</option>
-            <option value="5.30pm">5.30pm</option>
-            <option value="6.00pm">6.00pm</option>
-            <option value="6.30pm">6.30pm</option>
-            <option value="7.00pm">7.00pm</option>
-            <option value="7.30pm">7.30pm</option>
-            <option value="8.00pm">8.00pm</option>
-            <option value="8.30pm">8.30pm</option>
-            <option value="9.00pm">9.00pm</option>
-          </select>
-        </div>
-            <div class="form-container" style="padding: 0px 7.5px 0px 0px">
-            <label for="number">Adult:</label>
-            <input type="number" name="number" required class="box" id="adult" maxlength="0.2" placeholder="Adult:" min="1" max="15" onkeypress="if(this.value.length == 2) return false"  >
-            </div>
-
-            <div class="form-container" style="padding: 0px 0px 0px 7.5px">
-            <label for="number">Children:</label>
-            <input type="number" name="number" required class="box" id="child" maxlength="0.2" placeholder="Children:" min="0" max="15" onkeypress="if(this.value.length == 2) return false" >
-            </div>
-
-
-
-           <button onclick="myFunction()" name="send" value="send message" class="btn3"  id="Nextbtn">Next</button>
-
-
-
-     </form>
-
-
-  </div>
-
+       </div>
+       <div class="content">
+         <form action="" method="POST">
+            <h3>Reservation for Tea Time</h3>
+            <p>an email has been sent to you. If you want to change the booking please call the Le Meilleur Resto. </p>
+          <a href="reservation.html" class="btn1" >Reservation Page<i class="ti-angle-right"></i></a>
+          <a href="#index.html" class="btn2"  >Home  Page<i class="ti-angle-right"></i></a>
+      </div>
 </section>
 
 
-<!-- forms section end -->
+
 <!-- footer section ends -->
 <footer class="footer">
    <div class="container">
