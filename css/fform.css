@@ -21,24 +21,6 @@
    text-transform: capitalize;
 }
 
-*::selection{
-   background-color: var(--main-color);
-   color:var(--white);
-}
-
-::-webkit-scrollbar{
-   height: .5rem;
-   width: .8rem;
-}
-
-::-webkit-scrollbar-track{
-   background-color: transparent;
-}
-
-::-webkit-scrollbar-thumb{
-   background-color: var(--main-color);
-}
-
 html{
    font-size: 62.5%;
    overflow-x: hidden;
@@ -95,11 +77,12 @@ section{
 
 
 /*text in button*/
-.form a {
+.form button {
   color: var(--white);
-  line-height: 25px;
+  line-height: 30px;
   margin-left: 15px;
   margin-right: 15px;
+  font-size: 2.3rem;
 }
 
 
@@ -108,7 +91,7 @@ section{
 .form{
   padding-top: 10rem;
   padding-bottom: 10rem;
-  width: 70rem;
+  width: 68rem;
   min-width: 30rem;
 }
 
@@ -150,7 +133,7 @@ section{
 }
 
 .form .row form h3{
-   font-size: 2.5rem;
+   font-size: 3rem;
    margin-bottom: 1rem;
    color:var(--darkbeige);
    padding-top: 1.5rem;
@@ -189,13 +172,15 @@ select{
 .btn {
   background-color: var(--main-color);
   border-radius: 8px;
-  line-height: 3rem;
   color: var(--white);
   font-size: 1.8rem;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  line-height: 30px;
+  margin-top: 10px;
+  margin-left: 0px;
+  padding:5px 25px;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
 }
 
 .btn:hover{
@@ -233,17 +218,25 @@ select{
 
 .done .box-container .box p{
   font-size: 2rem;
-  padding: 4rem 5rem 5rem ;
+  padding: 4rem 5rem 3.5rem ;
 }
 
 .done .box-container .box #back1{
   float:left;
-  margin-left: 15rem;
+  margin-left: 13rem;
+  font-size: 2rem;
 }
 
 .done .box-container .box #back2{
   float:right;
-  margin-right: 15rem;
+  margin-right: 13rem;
+  font-size: 2rem;
+}
+
+a{
+  color: var(--white);
+  text-align: center;
+  font-size: 3rem;
 }
 /*form done page end*/
 

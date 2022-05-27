@@ -23,18 +23,6 @@
    color:var(--white);
 }
 
-::-webkit-scrollbar{
-   height: .5rem;
-   width: 1rem;
-}
-
-::-webkit-scrollbar-track{
-   background-color: transparent;
-}
-
-::-webkit-scrollbar-thumb{
-   background-color: var(--main-color);
-}
 
 html{
    font-size: 62.5%;
@@ -204,7 +192,7 @@ section{
 /**team*/
 .team .box-container{
    display: grid;
-   grid-template-columns: repeat(auto-fit, 33rem);
+   grid-template-columns: repeat(auto-fit, 20rem);
    gap:1.5rem;
    justify-content: center;
    padding: 50px;
@@ -214,16 +202,14 @@ section{
    text-align: center;
 }
 
-.team .box-container .box img{
-   width: 100%;
-   object-fit: cover;
-   margin-bottom: .5rem;
-}
 
 .team .box-container .box h3{
    font-size: 2rem;
    color:var(--black);
 }
+
+
+/**contact**/
 
 .contact .row{
    display: flex;
@@ -266,7 +252,7 @@ section{
 
 
 
-
+/**footer**/
 .footer{
   background-color: #ccc6bb
 }

@@ -4,7 +4,7 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Restaurantuant booking </title>
+   <title>Restaurant booking </title>
 
    <!-- font awesome cdn link  -->
    <link rel="icon" href="../resources/images/logo.png">
@@ -14,10 +14,11 @@
    <link rel="stylesheet" href="../css/mainformjae.css">
    <link rel="stylesheet" href="../css/navbar.css">
    <link rel="stylesheet" href="../css/global.css">
-
+ <script src="../breafast.js"></script>
 </head>
 <body>
-  <!-- Promotions header section starts  -->
+   <script src="../js/breafast.js"></script>
+  <!-- header section starts  -->
   <nav class="topnav" id="myTopnav">
       <div class="container">
         <a href="../index.html" style="padding:0; display:inline">
@@ -80,112 +81,75 @@
       <div class="scroll-indicator" id="indicator" onclick="scrollAction()">
         <i class="ti-angle-down"></i>
       </div>
+
       <script type="text/javascript" src="../js/nav.js"></script>
     </nav>
-<!-- header section ends -->
-<!---Welcome page-->
-<div class="main-bg">
+    <div class="main-bg">
 
-   <section class="main">
+       <section class="main">
 
-      <div class="content">
-           <h3> Restaurant Reservation Booking  </h3>
-           <p>Please read the terms and condition before booking. No refunds will be given.</p>
-      </div>
+          <div class="content">
+               <h3> Restaurant Reservation Booking  </h3>
+               <p>Please read the terms and condition before booking. No refunds will be given.</p>
+          </div>
 
-   </section>
+       </section>
 
-</div>
-
+    </div>
 
 <!-- forms section starts -->
-<section class="form" >
+ <section class="form" >
    <div class="image">
+      <img src="../resources/images/bf.png" alt="">
 
-      <img src="../resources/images/teatime.jpg" alt="">
-
-   </div>
-
-   <div class="content">
-
-     <form action="teatime2.html" method="POST">
-        <h3>Reservation for Tea Time</h3>
-
-        <label for='check-in'> Select booking date:</label>
-        <input type="date" name="cdate" required class="box" min="2022-25-05" max="2023-01-01" >
-
-         <div class="form-container" style="padding: 0px 7.5px 0px 0px">
-         <label for="number">Adult:</label>
-         <input type="number" name="number" required class="box" id="adult" maxlength="0.2" placeholder="Adult:" min="1" max="15" onkeypress="if(this.value.length == 2) return false"  >
-         </div>
-
-         <div class="form-container" style="padding: 0px 0px 0px 7.5px">
-         <label for="number">Children:</label>
-         <input type="number" name="number" required class="box" id="child" maxlength="0.2" placeholder="Children:" min="0" max="15" onkeypress="if(this.value.length == 2) return false" >
-         </div>
-
-          <label for="type">Choose time slot:</label>
-            <select class="form-container" name="adult" id="type">
-                   <option value="3.00am">3.00am</option>
-                   <option value="3.30am">3.30am</option>
-                   <option value="4.00am">4.00am</option>
-                   <option value="4.30am">4.30am</option>
-                   <option value="5.00am">5.00am</option>
-
-            </select>
-
-        <button onclick="myFunction()" name="send" value="send message" class="btn3"  id="Nextbtn">Next</button>
-
-     </form>
+       </div>
+       <div class="content">
+         <form action="" method="POST">
+            <h3>Reservation for Breakfast</h3>
+            <p>an email has been sent to you. If you want to change the booking please call the Le Meilleur Resto. </p>
+          <a href="reservation.html" class="btn1" >Reservation Page<i class="ti-angle-right"></i></a>
+          <a href="#index.html" class="btn2"  >Home  Page<i class="ti-angle-right"></i></a>
+      </div>
+</section>#
 
 
-  </div>
+    <!-- footer section ends -->
 
-</section>
-
-
-<!-- forms section end -->
-
-<!-- footer section starts  -->
-
-<section class="footer">
-  <div class="heading">
-    <h3>Contact Us</h3>
-  </div>
-
-   <div class="box-container">
-
-      <div class="box">
-         <i class="fas fa-envelope"></i>
-         <h3>our email</h3>
-         <p>LaTimelessTresor@resort.com</p>
+    <section class="footer">
+      <div class="heading">
+        <h3>Contact Us</h3>
       </div>
 
-      <div class="box">
-         <i class="fas fa-clock"></i>
-         <h3>counter opening hours</h3>
-         <p>08:00am to 08:00pm</p>
-      </div>
+       <div class="box-container">
 
-      <div class="box">
-         <i class="fas fa-map-marker-alt"></i>
-         <h3>Resort location</h3>
-         <p>La Baie Classique, Singapore</p>
-      </div>
+          <div class="box">
+             <i class="fas fa-envelope"></i>
+             <h3>our email</h3>
+             <p>LaTimelessTresor@resort.com</p>
+          </div>
 
-      <div class="box">
-         <i class="fas fa-phone"></i>
-         <h3>our number</h3>
-         <p>+65-9999</p>
-         <p>+65-965</p>
-      </div>
+          <div class="box">
+             <i class="fas fa-clock"></i>
+             <h3>counter opening hours</h3>
+             <p>08:00am to 08:00pm</p>
+          </div>
 
-   </div>
+          <div class="box">
+             <i class="fas fa-map-marker-alt"></i>
+             <h3>Resort location</h3>
+             <p>La Baie Classique, Singapore</p>
+          </div>
+
+          <div class="box">
+             <i class="fas fa-phone"></i>
+             <h3>our number</h3>
+             <p>+65-9999</p>
+             <p>+65-965</p>
+          </div>
+
+       </div>
 
 
-</section>
-
-<!-- footer section ends -->
-
-</body>
-</html>
+    </section>
+    </body>
+    </html>
