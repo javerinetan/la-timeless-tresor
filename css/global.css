@@ -213,7 +213,7 @@ body {
 }
 
 .footer .container {
-  padding-top: 80px;
+  padding-top: 90px;
   padding-bottom: 50px;
   display: inline-block;
 }
@@ -236,12 +236,12 @@ body {
 
 .footer p {
   font-size: 15px;
-  color: darkgray;
+  color: dimgray;
   padding-bottom: 15px;
 }
 
 .footer .box a {
-  color: darkgray;
+  color: dimgray;
   padding-top: 10px;
   display: inline-block;
   width: 45%;
