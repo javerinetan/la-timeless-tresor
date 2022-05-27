@@ -8,6 +8,10 @@
    --extra: #8c735c;
 
 }
+::-webkit-scrollbar{
+  width: 0.8rem !important;
+}
+
 
 html{
    font-size: 62.5%;
@@ -70,7 +74,7 @@ section{
 .main-bg .main .content{
   width: 60rem;
   text-align: center;
-  padding-top:15rem;
+  padding-top:20rem;
 }
 
 .main-bg .main .content h3{
@@ -86,4 +90,46 @@ section{
   color:var(--white);
   line-height: 2;
   text-align: center;
+}
+
+
+/*coursell image moving*/
+.carousel {
+  width: 100%;
+}
+
+.carousel-cell {
+  margin-right: 20px;
+  overflow: hidden;
+}
+
+.carousel-cell img {
+  display: block;
+  width: 580px;
+}
+
+/*text*/
+.section2 {
+  padding-right: 100px;
+}
+
+.section2 .wrapper {
+  width: 100%;
+  display: inline-block;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  background-color: #F8F5F0;
+  padding: 75px 40px;
+  padding-left: 0px;
+}
+
+.section2 aside {
+  width: 70%;
+  float: right;
+}
+
+.section2 article {
+  width: 30%;
+  padding-left: 40px;
+  float: right;
 }

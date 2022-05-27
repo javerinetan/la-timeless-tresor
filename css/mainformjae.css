@@ -11,6 +11,9 @@
    --beige: #E8D3B9;
    --darkbeige: #3F2e19;
 }
+::-webkit-scrollbar{
+  width: 0.8rem !important;
+}
 *{
    font-family: 'Nunito', sans-serif;
    margin:0; padding:0;

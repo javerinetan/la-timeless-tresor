@@ -11,7 +11,9 @@
    --beige: #E8D3B9;
    --darkbeige: #3F2e19;
 }
-
+::-webkit-scrollbar{
+  width: 0.8rem !important;
+}
 html{
    font-size: 62.5%;
    overflow-x: hidden;
