@@ -1,8 +1,16 @@
+/*TopPicture*/
+#toppicture img{
+  width: 100%;
+}
+
+
+
 /*Promotions*/
 #Promotions img{  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 100px auto auto auto;
   width: 90%;
+  border: 10px;
+  border-style: double;
 
 
 }
@@ -20,13 +28,21 @@
 
 
 
-/*Menu*/
+/*Menu Left*/
 .Menu{
   display:table;
   width: 95%;
-  border: 15px solid black;
-  padding: 100px;
+  border: 10px solid black;
+  padding: 50px 100px 100px 10px;
   margin:50px;
+}
+
+.Menu .Left {
+  display:table;
+  border: 10px;
+  border-style: inset;
+  border-color: purple;
+  padding: 5px;
 }
 
 .Menu .Left #MainCourse li{
@@ -36,27 +52,30 @@ height: 50px;
 padding: 5px;
 border: 1px solid blue;
 background-color: white;
+margin: 10px 10px 8px;
+text-align: center;
 
 }
-
-
-
 
 .Menu .Left li{
   display: block;
 width: 100px;
-height: 100px;
+height: 30px;
 padding: 5px;
 border: 1px solid black;
 background-color: yellow;
+margin: 5px 10px;
+text-align: center;
 }
 
 
 
-
-.Menu #Right{
+/*Menu Center*/
+.Menu .Center{
   display: table-cell;
-  text-align: right;
+  width: 70%
+  text-align: center;
+  border: 10px solid black;
 }
 
 .Menu ul li{
