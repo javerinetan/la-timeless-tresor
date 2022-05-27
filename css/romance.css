@@ -241,7 +241,7 @@ select{
   display: inline-block;
   background-color: var(--main-color);
   border-radius: 10px;
-  width: 13rem;
+  width: 35%;
   line-height: 5rem;
   color: var(--white);
   margin-top: 1rem;
@@ -254,8 +254,8 @@ select{
 /*text in button*/
 .form a {
   color: var(--white);
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-right: 20px;
+  margin-left: 20px;
   text-align:center;
 }
 
