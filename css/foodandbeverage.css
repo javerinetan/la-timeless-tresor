@@ -29,31 +29,30 @@
   margin:50px;
 }
 
-.Menu #Left{
-  display: table-cell;
-  align: left;
-  display: table;
-}
-
-.Menu #Left li{
+.Menu .Left #MainCourse li{
   display: block;
-  width: 100px;
-  height: 100px;
-  padding: 5px;
-  border: 1px solid blue;
-  background-color: yellow;
+width: 200px;
+height: 50px;
+padding: 5px;
+border: 1px solid blue;
+background-color: white;
 
 }
 
-.Menu #Left span #a{
+
+
+
+.Menu .Left li{
   display: block;
-  width: 100px;
-  height: 30px;
-  padding: 5px;
-  border: 1px solid blue;
-  background-color: yellow;
-
+width: 100px;
+height: 100px;
+padding: 5px;
+border: 1px solid black;
+background-color: yellow;
 }
+
+
+
 
 .Menu #Right{
   display: table-cell;
