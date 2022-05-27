@@ -11,10 +11,28 @@
 
 hr {
   display: inline-block;
-  width: 60%;
+  width: 100%;
   background-color: gray;
   height: 1px;
   margin: 30px 0px;
+}
+
+.heading {
+  color: white;
+  position: relative;
+  top: 200px;
+  text-align: center;
+  animation: title-slide 1s ease-in-out;
+}
+
+.heading h1 {
+  font-family: 'LibreBodoni-Regular';
+  font-size: 50px;
+  color: white;
+  margin: 0;
+  font-weight: lighter;
+  text-transform: uppercase;
+  letter-spacing: 8px;
 }
 
 .section1 .container {
@@ -41,16 +59,22 @@ hr {
 }
 
 .section1 .box {
-  width: 33%;
+  width: 50%;
   float: left;
   text-align: left;
+  padding: 40px;
+  transition: all 0.4s ease-in-out;
+}
+
+.section1 .box:hover {
+  padding: 20px;
+  box-shadow: 0px 5px 15px rgb(0 0 0 / 5%)
 }
 
 .section1 .box-content {
   margin: 10px;
-  min-height: 250px;
   padding: 20px;
-  text-align: center;
+  background-color: white;
 }
 
 .section1 .box img {
@@ -58,9 +82,9 @@ hr {
 }
 
 .section1 .box h4 {
-  font-size: 20px;
+  font-size: 23px;
   margin-top: 10px;
-  text-align: center;
+  text-align: left;
 }
 
 .section1 .box .button-style2 {
@@ -177,6 +201,20 @@ hr {
   }
   .section1 .box {
     width: 50%;
+  }
+  .section1 .box {
+    width: 50%;
+    float: left;
+    text-align: left;
+    padding: 30px;
+    transition: all 0.4s ease-in-out;
+  }
+  .section1 .box-content {
+    padding: 10px;
+  }
+  .section1 .box:hover {
+    padding: 10px;
+    box-shadow: 0px 5px 15px rgb(0 0 0 / 5%)
   }
 }
 
