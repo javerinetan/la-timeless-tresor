@@ -110,8 +110,14 @@
 
      <form action="golfbooking2.html" method="POST">
         <h3>golf booking page</h3>
-
-
+        <div class="form-containers" style="padding: 0px 0px 0px 7.5px; width: 100%">
+          <label for="slot">Choose the course:</label>
+          <select class="form-containers" style="width: 100%" name="">
+            <option value="Minigolf">Mini Golf</option>
+            <option value="classiquecourse">Classique Course</option>
+            <option value="Digicourse">DIGI course</option>
+          </select>
+        </div>
         <div class="form-containers" style="padding: 0px 7.5px 0px 0px">
           <label for='check-in'> Select booking date:</label>
           <input class="form-containers" style="width: 100%" type="date" name="cdate" required class="boxs" min="2022-25-05" max="2023-01-01" >
