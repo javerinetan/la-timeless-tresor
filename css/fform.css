@@ -21,32 +21,16 @@
    text-transform: capitalize;
 }
 
-::-webkit-scrollbar{
-  width: 0.8rem !important;
-}
-
 html{
-   font-size: 62.5%;
    overflow-x: hidden;
    scroll-behavior: smooth;
    scroll-padding-top: 6.5rem;
 }
 
 section{
-   padding:3rem 2rem;
+   padding:1.9rem 1rem;
    max-width: 100%;
    margin:0 auto;
-}
-
-.heading{
-   text-align: center;
-   margin-bottom: 3rem;
-}
-
-.heading h3{
-   font-size:4rem;
-   color:var(--black);
-   font-family: 'Libre Bodoni', serif;
 }
 
 .phome-bg{
@@ -72,116 +56,113 @@ section{
 }
 
 .phome-bg .home .content h2{
-   font-size: 6rem;
+   font-size: 3.8rem;
    color:var(--white);
    font-family: 'Libre Bodoni', serif;;
 }
 
-
-
-
 /*text in button*/
 .form button {
   color: var(--white);
-  line-height: 30px;
-  margin-left: 15px;
-  margin-right: 15px;
-  font-size: 2.1rem;
+  line-height: 18.8px;
+  margin-left: 9.4px;
+  margin-right: 9.4px;
+  font-size: 1.3rem;
+  padding: 10px 30px;
 }
-
-
 
 /* form start*/
 .form{
-  padding-top: 10rem;
-  padding-bottom: 10rem;
+  padding-top: 6.3rem;
+  padding-bottom: 6.3rem;
   width: 68rem;
   min-width: 30rem;
+  padding: 6.3rem 14rem;
 }
 
 .form .row{
    display: flex;
    align-items: center;
    flex-wrap: wrap;
-   gap:2rem;
+   gap:1.3rem;
 }
 
 .form h3{
   font-family: 'Libre Bodoni', serif;
-  font-size: 4rem;
+  font-size: 2.5rem;
   color: var(--black);
 }
 
 .form .row form{
-   flex:1 1 30rem;
-   padding:2rem;
+   flex:1 1 20rem;
+   padding:1.3rem;
    text-align: center;
    margin:auto auto;
    background-color: var(--beige);
-   padding-bottom: 3.5rem;
+   padding-bottom: 2.2rem;
    border-radius: 1.5rem;
 }
 
 .form .row form p{
-   line-height: 2rem;
-   font-size: 1.5rem;
+   line-height: 1.3rem;
+   font-size: .94rem;
    text-align: left;
-   margin-bottom: 3rem;
+   margin-bottom: 1.9rem;
 }
 
 .form .row form label{
-   font-size: 2rem;
-   margin-bottom: 1.5rem;
+   font-size: 1.3rem;
+   margin-bottom: .94rem;
    font-family: 'Libre Bodoni', serif;
    text-align: left;
 }
 
 .form .row form h3{
-   font-size: 3rem;
-   margin-bottom: 1rem;
+   font-size: 1.9rem;
+   margin-bottom: .6rem;
    color:var(--darkbeige);
-   padding-top: 1.5rem;
+   padding-top: .94rem;
    font-family: 'Libre Bodoni', serif;
 
 }
 
 .form .row form .box{
    width: 100%;
-   padding:1.4rem;
-   font-size: 1.8rem;
-   margin:1rem 0;
-   border-radius: 1rem;
+   padding:.9rem;
+   font-size: 1.1rem;
+   margin:.6rem 0;
+   border-radius: .6rem;
 }
 
 #last{
-  margin-bottom: 3rem;
+  margin-bottom: 1.9rem;
 }
 
 label{
   display: block;
-  padding-top: 1.5rem;
+  padding-top: .94rem;
 }
 
 select{
   display: flex;
-  height: 5rem;
-  width: 15rem;
-  font-size: 1.8rem;
-  padding-left: 1.3rem;
-  border-radius: 1rem;
-  margin-bottom: 2rem;
+  height: 3.1rem;
+  width: 9.4rem;
+  font-size: 1.1rem;
+  padding-left: .8rem;
+  border-radius: .6rem;
+  margin-bottom: 1.3rem;
   outline: var(--darkbrown);
 }
 
 .btn {
   background-color: var(--main-color);
-  border-radius: 8px;
+  border-radius: 5px;
   color: var(--white);
-  font-size: 2.1rem;
-  line-height: 30px;
-  margin-top: 10px;
+  font-size: 1.31rem;
+  line-height: 18.8px;
+  margin-top: 6.3px;
   margin-left: 0px;
-  padding:5px 30px;
+  padding:10px 30px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -195,99 +176,54 @@ select{
 
 /*form done page*/
 .done{
-    padding-top: 10rem;
-    padding-bottom: 10rem;
-    width: 70rem;
-    min-width: 40rem;
+    width: 69rem;
+    min-width: 50rem;
+    padding: 6.3rem 14rem;
 }
 
 .done .box-container{
   flex:1 1 30rem;
-  padding:2rem;
+  padding:1.3rem;
   text-align: center;
   margin:auto auto;
   background-color: var(--beige);
-  padding-bottom: 3.5rem;
-  border-radius: 1.5rem;
-  height: 35rem;
+  padding-bottom: 2.2rem;
+  border-radius: .94rem;
+  height: 21.9rem; /**idk if need to change this**/
 }
 
 .done .box-container .box h3{
-   font-size: 3rem;
-   margin-bottom: 1rem;
+   font-size: 1.9rem;
+   margin-bottom: .6rem;
    color:var(--darkbeige);
-   padding-top: 1.5rem;
+   padding-top: .94rem;
    font-family: 'Libre Bodoni', serif;
 }
 
 .done .box-container .box p{
-  font-size: 2rem;
-  padding: 4rem 5rem 3.5rem ;
+  font-size: 1.3rem;
+  padding: 2.5rem 3.1rem 2.2rem ;
 }
 
 .done .box-container .box #back1{
   float:left;
-  margin-left: 13rem;
-  font-size: 2rem;
+  margin-left: 6.5rem;
+  font-size: 1.3rem;
 }
 
 .done .box-container .box #back2{
   float:right;
-  margin-right: 13rem;
-  font-size: 2rem;
+  margin-right: 6.5rem;
+  font-size: 1.3rem;
 }
 
 a{
   color: var(--white);
   text-align: center;
-  font-size: 3rem;
+  font-size: 1.9rem;
 }
 /*form done page end*/
 
-/* footer starts */
-.footer{
-  background-color: #ccc6bb
-}
-
-.footer .box-container{
-   display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
-   gap:1.5rem;
-   align-items: flex-start;
-}
-
-.footer .heading h3{
-  font-family: 'Libre Bodoni', serif;
-  font-size: 2.7rem;
-}
-
-.footer .box-container .box{
-   text-align: center;
-}
-
-.footer .box-container .box i{
-   font-size: 2.5rem;
-   line-height: 6rem;
-   height: 6rem;
-   width: 6rem;
-   border-radius: 50%;
-   background-color: var(--darkbrown);
-   color:var(--white);
-   margin-bottom: 1rem;
-}
-
-.footer .box-container .box h3{
-   margin:1rem 0;
-   font-size: 2rem;
-   color:var(--black);
-   font-family: 'Libre Bodoni', serif;
-}
-
-.footer .box-container .box p{
-   line-height: 2;
-   font-size: 1.6rem;
-   color:var(--light-color);
-}
 
 /* spa form */
 
@@ -317,7 +253,7 @@ a{
 }
 
 .shome-bg .home .content h2{
-   font-size: 6rem;
+   font-size: 3.8rem;
    color:var(--white);
    font-family: 'Libre Bodoni', serif;
    padding-left: auto;
@@ -350,7 +286,7 @@ a{
 }
 
 .ghome-bg .home .content h2{
-   font-size: 6rem;
+   font-size: 3.8rem;
    color:var(--white);
    font-family: 'Libre Bodoni', serif;;
 }

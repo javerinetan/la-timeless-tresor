@@ -234,6 +234,7 @@ body {
   background-color: #F5EFE8;
   display: inline-block;
   width: 100%;
+  text-align: left !important;
 }
 
 .footer .container {
@@ -272,6 +273,7 @@ body {
   float: left;
   font-size: 15px;
   transition: all 0.3s ease-in-out;
+  text-align: left !important;
 }
 
 .footer .box a:hover {
