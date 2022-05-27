@@ -126,7 +126,7 @@ section{
 
 .form .content form label{
    font-size: 2rem;
-   margin-bottom: 0.5rem;
+   margin-bottom: 0rem;
    font-family: 'Libre Bodoni', serif;
    text-align: left;
 }
@@ -158,7 +158,25 @@ section{
   margin: 0px;
 }
 
+.form-containers.slot {
+  margin: 0px;
+}
+
+.form-containers.cdate {
+  margin: 0px;
+}
+
+.form-containers .slot, .form-container .cdate {
+  margin: 0px;
+}
 .form-container {
+  float: left;
+  width: 50%;
+  padding: 7.5px;
+  margin-bottom: 30px;
+  border-radius: 1rem;
+}
+.form-containers {
   float: left;
   width: 50%;
   padding: 7.5px;
