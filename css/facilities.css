@@ -33,11 +33,10 @@ section{
 
 .btn{
   background-color: var(--main-color);
-  border-radius: 8px;
   line-height: 30px;
   margin-top: 10px;
   margin-left: 0px;
-  padding:5px 15px;
+  padding:5px 20px;
   text-align: left;
 }
 .btn:hover{
@@ -62,7 +61,7 @@ a {
 }
 
 .home-bg{
-   background:linear-gradient(90deg, var(--white), transparent 0%), url(../resources/images/hotel3.jpg) no-repeat;
+   background:linear-gradient(90deg, var(--white), transparent 0%), url(../resources/images/hotel4.jpg) no-repeat;
    background-size: cover;
    background-position: center;
    height: 500px;
