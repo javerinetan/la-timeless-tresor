@@ -79,6 +79,10 @@ section{
    color:var(--white);
    font-family: 'Libre Bodoni', serif;
 }
+.promotions-bg .promotions .content h4{
+   font-size: 5rem;
+   color:var(--white);
+}
 
 .promotions-bg .promotions .content p{
    padding:1rem 0;
@@ -191,6 +195,12 @@ section{
    color:var(--black);
    margin:1rem 0;
    font-family: 'Libre Bodoni', serif;
+}
+
+.couple .box-container .box h4{
+   font-size: 1.2rem;
+   color:var(--black);
+   margin:1rem 0;
 }
 
 .couple .box-container .box p{
