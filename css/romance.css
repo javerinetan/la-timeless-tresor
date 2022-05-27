@@ -11,13 +11,6 @@
    --beige: #E8D3B9;
    --darkbeige: #3F2e19;
 }
-*{
-   margin:0; padding:0;
-   box-sizing: border-box;
-   outline: none; border:none;
-   text-decoration: none;
-   text-transform: capitalize;
-}
 
 html{
    font-size: 62.5%;
@@ -50,7 +43,7 @@ section{
 }
 
 .main-bg .main .content{
-   width: 50rem;
+   width: 60rem;
    text-align: center;
    padding-top:15rem;
 }
