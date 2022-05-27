@@ -54,32 +54,36 @@ section{
 
 /*welcome page*/
 .main-bg{
-   background:linear-gradient(90deg, var(--white), transparent 0%), url('../resources/images/pro2.jpg') no-repeat;
+   background:linear-gradient(90deg, var(--white), transparent 0%), url('../resources/images/520.jpg') no-repeat;
    background-size: cover;
    background-position: center;
+   display: flex;
 }
 
 .main-bg .main{
-   min-height: 70rem;
-   display: flex;
-   align-items: center;
+  min-height: 60rem;
+  display: flex;
+  align-items: center;
 
 }
 
 .main-bg .main .content{
-   width: 50rem;
-   text-align: center;
+  width: 60rem;
+  text-align: center;
+  padding-top:15rem;
 }
 
 .main-bg .main .content h3{
-   font-size: 6rem;
-   color:var(--white);
-   font-family: 'Libre Bodoni', serif;
+  font-size: 6rem;
+  color:var(--white);
+  font-family: 'Libre Bodoni', serif;
+  text-align: center;
 }
 
 .main-bg .main .content p{
-   padding:1rem 0;
-   font-size: 1.6rem;
-   color:var(--white);
-   line-height: 2;
+  padding:1rem 0;
+  font-size: 1.6rem;
+  color:var(--white);
+  line-height: 2;
+  text-align: center;
 }
