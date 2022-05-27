@@ -14,14 +14,6 @@
 ::-webkit-scrollbar{
   width: 0.8rem !important;
 }
-*{
-   font-family: 'Nunito', sans-serif;
-   margin:0; padding:0;
-   box-sizing: border-box;
-   outline: none; border:none;
-   text-decoration: none;
-   text-transform: capitalize;
-}
 
 html{
    font-size: 62.5%;
@@ -40,23 +32,23 @@ section{
 
 /*welcome page*/
 .main-bg{
-   background:linear-gradient(90deg, var(--white), transparent 0%), url('../resources/images/bbk1.jpg') no-repeat;
+   background:linear-gradient(90deg, var(--white), transparent 0%), url('../resources/images/mainfamily2.jpg') no-repeat;
    background-size: cover;
    background-position: center;
    display: flex;
 }
 
 .main-bg .main{
-   min-height:60rem;
+   min-height: 60rem;
    display: flex;
    align-items: center;
 
 }
 
 .main-bg .main .content{
-  width: 100rem;
-  text-align: center;
-  padding-top:14rem;
+   width: 60rem;
+   text-align: center;
+   padding-top:15rem;
 }
 
 .main-bg .main .content h3{
@@ -68,7 +60,7 @@ section{
 }
 
 .main-bg .main .content p{
-   padding:0.5rem 0;
+   padding:1rem 0;
    font-size: 1.6rem;
    color:var(--white);
    line-height: 2;
@@ -84,7 +76,7 @@ section{
   align-items: center;
   flex-wrap: wrap;
   gap:4rem;
-  padding: 50px;
+  padding: 80px;
 
 }
 
@@ -94,6 +86,15 @@ section{
 
 .form .image img{
   width: 100%;
+}
+
+.form .image2{
+   flex:1 1 40rem;
+}
+
+.form .image2 img{
+  width: 100%;
+  line-height: 50rem;
 }
 
 .form .content{
@@ -113,7 +114,7 @@ section{
 }
 
 .form .content form{
-   flex:1 1 30rem;
+   flex:1 1 40rem;
    padding:2rem;
    text-align: center;
    margin:auto auto;
@@ -133,7 +134,7 @@ section{
 
 .form .content form label{
    font-size: 2rem;
-   margin-bottom: 0.5rem;
+   margin-bottom: 0rem;
    font-family: 'Libre Bodoni', serif;
    text-align: left;
 }
@@ -147,7 +148,7 @@ section{
 
 .form .content form .box{
    width: 100%;
-   padding:1.4rem;
+   padding:1.3rem;
    font-size: 1.8rem;
    margin:1rem 0;
    border-radius: 1rem;
@@ -165,6 +166,18 @@ section{
   margin: 0px;
 }
 
+.form-containers.slot {
+  margin: 0px;
+}
+
+.form-containers.cdate {
+  margin: 0px;
+
+}
+
+.form-containers .slot, .form-container .cdate {
+  margin: 0px;
+}
 .form-container {
   float: left;
   width: 50%;
@@ -172,13 +185,24 @@ section{
   margin-bottom: 30px;
   border-radius: 1rem;
 }
+.form-containers {
+  float: left;
+  width: 50%;
+  padding: 11.5px;
+  border-radius: 1rem;
+  font-size: 18px;
+  margin-bottom: 1rem;
+}
 
 
 label{
   display: block;
-  padding-top: 0.5rem;
+  padding-top: 1.5rem;
 }
 
+input{
+ padding-top: 1.5rem;
+}
 
 select{
   display: flex;
@@ -229,7 +253,7 @@ select{
   display: inline-block;
   background-color: var(--main-color);
   border-radius: 10px;
-  width: 13rem;
+  width: 35%;
   line-height: 5rem;
   color: var(--white);
   margin-top: 1rem;
@@ -242,8 +266,8 @@ select{
 /*text in button*/
 .form a {
   color: var(--white);
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-right: 20px;
+  margin-left: 20px;
   text-align:center;
 }
 
@@ -260,50 +284,4 @@ select{
   font-size: 2rem;
   padding-left: 1rem;
   padding-right: 1rem;
-}
-
-
-/**footer**/
-.footer{
-  background-color: #ccc6bb
-}
-
-.footer .box-container{
-   display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
-   gap:1.5rem;
-   align-items: flex-start;
-}
-
-.footer .heading h3{
-  font-family: 'Libre Bodoni', serif;
-  font-size: 2.7rem;
-}
-
-.footer .box-container .box{
-   text-align: center;
-}
-
-.footer .box-container .box i{
-   font-size: 2.5rem;
-   line-height: 6rem;
-   height: 6rem;
-   width: 6rem;
-   border-radius: 50%;
-   background-color: var(--darkbrown);
-   color:var(--white);
-   margin-bottom: 1rem;
-}
-
-.footer .box-container .box h3{
-   margin:1rem 0;
-   font-size: 2rem;
-   color:var(--black);
-   font-family: 'Libre Bodoni', serif;
-}
-
-.footer .box-container .box p{
-   line-height: 2;
-   font-size: 1.6rem;
-   color:var(--light-color);
 }

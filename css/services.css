@@ -20,6 +20,10 @@
    text-transform: capitalize;
 }
 
+::-webkit-scrollbar{
+  width: 0.8rem !important;
+}
+
 html{
    font-size: 62.5%;
    overflow-x: hidden;
@@ -60,7 +64,7 @@ a {
 .heading h3{
    font-size:4rem;
    color:var(--black);
-   font-family: 'Libre Bodoni', serif;
+   font-family:'Libre Bodoni', serif;
 }
 
 
