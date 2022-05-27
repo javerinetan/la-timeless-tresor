@@ -220,7 +220,7 @@ h1, h2 {
   width: 33.3%;
   padding: 15px;
   float: left;
-  height: 500px;
+  height: 400px;
 }
 
 @media all and (min-width: 600px) {
