@@ -93,7 +93,7 @@ section{
 }
 
 
-/*coursell image moving*/
+
 * {box-sizing:border-box}
 
 /* Slideshow container */
@@ -102,13 +102,19 @@ section{
   position: relative;
   margin: auto;
   padding-top: 1rem;
+  margin-left: 10rem;
 }
 
 /* Make the images invisible by default */
 .Containers {
-  display: none;
+  display: flex;
 }
 
+.Containers img{
+  width: 100%;
+  height: 80rem;
+  flex:1 1 40rem;
+}
 /* forward & Back buttons */
 .Back, .forward {
   cursor: pointer;
@@ -123,12 +129,14 @@ section{
   transition: 0.4s ease;
   border-radius: 0 5px 5px 0;
   user-select: none;
+  margin-left: 10rem;
 }
 
 /* Place the "forward button" to the right */
 .forward {
   right: 0;
   border-radius: 4px 0 0 4px;
+  margin-left: 10rem;
 }
 
 /*when the user hovers,add a black background with some little opacity */
@@ -162,14 +170,14 @@ section{
   height: 16px;
   width: 16px;
   margin: 0 3px;
-  background-color: #acc;
+  background-color:var(--black) ;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.5s ease;
 }
 
 .enable, .dots:hover {
-  background-color: #717161;
+  background-color: var(--light-color);
 }
 
 /* Faint animation */

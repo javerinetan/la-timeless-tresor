@@ -27,9 +27,9 @@ function SlideShow(n) {
   circles[slidePosition-1].className += " enable";
 }
 
+
 var slidePosition = 0;
 SlideShow();
-
 function SlideShow() {
   var i;
   var slides = document.getElementsByClassName("Containers");
@@ -39,5 +39,5 @@ function SlideShow() {
   slidePosition++;
   if (slidePosition > slides.length) {slidePosition = 1}
   slides[slidePosition-1].style.display = "block";
-  setTimeout(SlideShow, 5000); // Change image every 5 seconds
+  setTimeout(SlideShow, 100000); // Change image every 5 seconds
 }
