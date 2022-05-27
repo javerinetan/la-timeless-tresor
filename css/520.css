@@ -1,0 +1,89 @@
+:root{
+   --main-color:#be9c79;
+   --black:#333;
+   --white:#fff;
+   --light-color:#666;
+   --border:.2rem solid var(--black);
+   --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+   --extra: #8c735c;
+
+}
+
+html{
+   font-size: 62.5%;
+   overflow-x: hidden;
+   scroll-behavior: smooth;
+   scroll-padding-top: 6.5rem;
+}
+
+section{
+   padding:3rem 2rem;
+   max-width: 1300px;
+   margin:0 auto;
+}
+
+.heading{
+   text-align: center;
+   margin-bottom: 3rem;
+}
+
+.heading img{
+   height: 4rem;
+   margin-bottom: 1rem;
+}
+
+.heading h3{
+   font-size:4rem;
+   color:var(--black);
+   font-family: 'Libre Bodoni', serif;;
+}
+
+.btn{
+   display: inline-block;
+   margin-top: 1rem;
+   background-color: var(--main-color);
+   cursor: pointer;
+   color:var(--white);
+   font-size: 1.8rem;
+   padding:1rem 3rem;
+}
+
+.btn:hover{
+   background-color: var(--darkbrown);
+}
+
+/*welcome page*/
+.main-bg{
+   background:linear-gradient(90deg, var(--white), transparent 0%), url('../resources/images/520.jpg') no-repeat;
+   background-size: cover;
+   background-position: center;
+   display: flex;
+}
+
+.main-bg .main{
+  min-height: 60rem;
+  display: flex;
+  align-items: center;
+
+}
+
+.main-bg .main .content{
+  width: 60rem;
+  text-align: center;
+  padding-top:15rem;
+}
+
+.main-bg .main .content h3{
+  font-size: 6rem;
+  color:var(--white);
+  font-family: 'Libre Bodoni', serif;
+  text-align: center;
+}
+
+.main-bg .main .content p{
+  padding:1rem 0;
+  font-size: 1.6rem;
+  color:var(--white);
+  line-height: 2;
+  text-align: center;
+}

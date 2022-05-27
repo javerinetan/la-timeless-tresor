@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>520</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="icon" href="../resources/images/logo.png">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400;1,400;1,700&display=swap" rel="stylesheet">
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="../css/520.css">
+   <link href="about.html">
+   <link rel="stylesheet" href="../css/navbar.css">
+   <link rel="stylesheet" href="../css/global.css">
+</head>
+<body>
+  <!-- Promotions header section starts  -->
+  <nav class="topnav" id="myTopnav">
+      <div class="container">
+        <a href="../index.html" style="padding:0; display:inline">
+          <img src="../resources/images/logov2_white.png" alt="Logo" class="nav-logo" id="navLogo">
+        </a>
+        <a href="javascript:void(0);" style="font-size:18px;margin-top: 10px;" class="icon" onclick="displayNav()">&#9776;</a>
+        <div class="nav-items">
+          <div class="dropdown">
+            <button class="dropbtn">The Resort
+              <i class="ti-angle-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Overview<i class="ti-angle-right"></i></a>
+              <a href="../pages/accommodations.html">Accomodations<i class="ti-angle-right"></i></a>
+              <a href="#">Facilities<i class="ti-angle-right"></i></a>
+              <a href="#">Services<i class="ti-angle-right"></i></a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">Dining
+              <i class="ti-angle-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">The Restaurant<i class="ti-angle-right"></i></a>
+              <a href="../pages/reservation.html">Reservation<i class="ti-angle-right"></i></a>
+              <a href="#">Ordering<i class="ti-angle-right"></i></a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">Events & Promotions
+              <i class="ti-angle-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#news">Events<i class="ti-angle-right"></i></a>
+              <a href="../pages/promotions.html">Promotions<i class="ti-angle-right"></i></a>
+            </div>
+          </div>
+          <div class="dropdown">
+           <button class="dropbtn">Gallery
+             <i class="ti-angle-down"></i>
+           </button>
+           <div class="dropdown-content">
+             <a href="../pages/gallery.html">Welcome<i class="ti-angle-right"></i></a>
+             <a href="../pages/about.html">History<i class="ti-angle-right"></i></a>
+           </div>
+         </div>
+          <a href="#contact">Contact</a>
+          <a href="#home" class="active">Book Now</a>
+          <div class="dropdown">
+            <button class="dropbtn"><img src="../resources/images/user_white.png" alt="account" id="account" width="18px">
+              <i class="ti-angle-down"></i>
+            </button>
+            <div class="dropdown-content" style="min-width:120px">
+              <a href="#">Log In<i class="ti-angle-right"></i></a>
+              <a href="#">Sign Up<i class="ti-angle-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator" id="indicator" onclick="scrollAction()">
+        <i class="ti-angle-down"></i>
+      </div>
+      <div class="book-btn" id="sideBtn" onclick="displayBookingForm()">
+        <p class="book-arrow"><i class="ti-angle-up"></i></p>
+        <p class="book-title">Book Now</p>
+      </div>
+      <div class="book-form" id="bookForm">
+        <h4>Le Timeless Tresor</h4>
+        <h2>Check Availability</h2>
+        <input class="chk-in input-style1" type="text" placeholder="Check in" onfocus="(this.type='date')" onblur="(this.type='text')">
+        <input class="chk-out input-style1" type="text" placeholder="Check out" onfocus="(this.type='date')" onblur="(this.type='text')">
+        <select class="room input-style2" name="adult">
+          <option value="">Room Type</option>
+          <option value="">Junior Room</option>
+          <option value="">Double Room</option>
+          <option value="">Family Suite</option>
+          <option value="">Deluxe Suite</option>
+        </select>
+        <div class="form-container" style="padding: 0px 7.5px 0px 0px">
+          <select class="adult input-style2" name="adult">
+            <option value="">Adult</option>
+            <option value="">1</option>
+            <option value="">2</option>
+            <option value="">3</option>
+            <option value="">4</option>
+            <option value="">5</option>
+          </select>
+        </div>
+        <div class="form-container" style="padding: 0px 0px 0px 7.5px">
+          <select class="child input-style2" name="">
+            <option value="">Child</option>
+            <option value="">0</option>
+            <option value="">1</option>
+            <option value="">2</option>
+            <option value="">3</option>
+            <option value="">4</option>
+            <option value="">5</option>
+          </select>
+        </div>
+        <button class="button-style1">Check<i class="ti-angle-right"></i></button>
+      </div>
+      <script type="text/javascript" src="../js/nav.js"></script>
+    </nav>
+<!-- header section ends -->
+<!---Welcome page-->
+<div class="main-bg">
+
+   <section class="main">
+
+      <div class="content">
+
+         <h3>520</h3>
+        <p>Enjoy Your Stay In Our Specially Design Couple Room By Chanel. Decorations Deisgn To Fit The Romatic Night. A Couple Dinner Package Set Just For You Two Under The Night Sky With A Compliementary Bottle Of Champagin, AR Lenoble, From France</p>
+
+      </div>
+
+   </section>
+
+</div>
