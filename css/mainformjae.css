@@ -229,7 +229,7 @@ select{
   display: inline-block;
   background-color: var(--main-color);
   border-radius: 10px;
-  width: 13rem;
+  width: 35%;
   line-height: 5rem;
   color: var(--white);
   margin-top: 1rem;
