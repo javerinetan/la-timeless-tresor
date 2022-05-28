@@ -36,7 +36,7 @@ html{
 
 section{
    padding:3rem 2rem;
-   max-width: 1300px;
+   max-width: 2000px;
    margin:0 auto;
 }
 
@@ -112,7 +112,7 @@ section{
 }
 
 .history .image{
-   flex:1 1 40rem;
+   flex:1 1 65rem;
 }
 
 .history .image img{
@@ -120,7 +120,7 @@ section{
 }
 
 .history .content{
-   flex:1 1 40rem;
+   flex:1 1 63rem;
 }
 
 
@@ -187,8 +187,8 @@ section{
 }
 
 .award .box-container img{
-   height: 100%;
    width: 100%;
+   height: 100%;
    object-fit: cover;
 }
 
