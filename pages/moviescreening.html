@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Movie Screening Timetable page</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+   <link rel="icon" href="../resources/images/logo.png">
+   <link rel="stylesheet" href="../css/facilities.css">
+   <link rel="stylesheet" href="../css/navbar.css">
+   <link rel="stylesheet" href="../css/global.css">
+</head>
+
+<body>
+<nav class="topnav" id="myTopnav">
+    <div class="container">
+      <a href="../index.html" style="padding:0; display:inline">
+        <img src="../resources/images/logov2_white.png" alt="Logo" class="nav-logo" id="navLogo">
+      </a>
+      <a href="javascript:void(0);" style="font-size:18px;margin-top: 10px;" class="icon" onclick="displayNav()">&#9776;</a>
+      <div class="nav-items">
+        <div class="dropdown">
+          <button class="dropbtn">The Resort
+            <i class="ti-angle-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">Overview<i class="ti-angle-right"></i></a>
+            <a href="../pages/accommodations.html">Accomodations<i class="ti-angle-right"></i></a>
+            <a href="facilities.html">Facilities<i class="ti-angle-right"></i></a>
+            <a href="services.html">Services<i class="ti-angle-right"></i></a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Dining
+            <i class="ti-angle-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">The Restaurant<i class="ti-angle-right"></i></a>
+            <a href="#">Reservation<i class="ti-angle-right"></i></a>
+            <a href="#">Ordering<i class="ti-angle-right"></i></a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Events & Promotions
+            <i class="ti-angle-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#news">Events<i class="ti-angle-right"></i></a>
+            <a href="#contact">Promotions<i class="ti-angle-right"></i></a>
+          </div>
+        </div>
+        <div class="dropdown">
+         <button class="dropbtn">Gallery
+           <i class="ti-angle-down"></i>
+         </button>
+         <div class="dropdown-content">
+              <a href="../pages/gallery.html">Welcome<i class="ti-angle-right"></i></a>
+              <a href="../pages/about.html">History<i class="ti-angle-right"></i></a>
+        </div>
+       </div>
+        <a href="#contact">Contact</a>
+        <a href="#home" class="active">Book Now</a>
+        <div class="dropdown">
+          <button class="dropbtn"><img src="../resources/images/user_white.png" alt="account" id="account" width="18px">
+            <i class="ti-angle-down"></i>
+          </button>
+          <div class="dropdown-content" style="min-width:120px">
+            <a href="#">Log In<i class="ti-angle-right"></i></a>
+            <a href="#">Sign Up<i class="ti-angle-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator" id="indicator" onclick="scrollAction()">
+      <i class="ti-angle-down"></i>
+    </div>
+    <div class="book-btn" id="sideBtn" onclick="displayBookingForm()">
+      <p class="book-arrow"><i class="ti-angle-up"></i></p>
+      <p class="book-title">Book Now</p>
+    </div>
+    <div class="book-form" id="bookForm">
+      <h4>Le Timeless Tresor</h4>
+      <h2>Check Availability</h2>
+      <input class="chk-in input-style1" type="text" placeholder="Check in" onfocus="(this.type='date')" onblur="(this.type='text')">
+      <input class="chk-out input-style1" type="text" placeholder="Check out" onfocus="(this.type='date')" onblur="(this.type='text')">
+      <select class="room input-style2" name="adult">
+        <option value="">Room Type</option>
+        <option value="">Junior Room</option>
+        <option value="">Double Room</option>
+        <option value="">Family Suite</option>
+        <option value="">Deluxe Suite</option>
+      </select>
+      <div class="form-container" style="padding: 0px 7.5px 0px 0px">
+        <select class="adult input-style2" name="adult">
+          <option value="">Adult</option>
+          <option value="">1</option>
+          <option value="">2</option>
+          <option value="">3</option>
+          <option value="">4</option>
+          <option value="">5</option>
+        </select>
+      </div>
+      <div class="form-container" style="padding: 0px 0px 0px 7.5px">
+        <select class="child input-style2" name="">
+          <option value="">Child</option>
+          <option value="">0</option>
+          <option value="">1</option>
+          <option value="">2</option>
+          <option value="">3</option>
+          <option value="">4</option>
+          <option value="">5</option>
+        </select>
+      </div>
+      <button class="button-style1">Check<i class="ti-angle-right"></i></button>
+    </div>
+    <script type="text/javascript" src="../js/nav.js"></script>
+  </nav>
+
+
+
+  <!-- header section ends -->
+
+  <!-- home section starts  -->
+
+  <div class="mhome-bg">
+
+     <section class="home" id="home">
+
+        <div class="content">
+           <h2>movie screening Timetable</h2>
+        </div>
+
+     </section>
+
+  </div>
+
+  <!-- home section ends -->
+
+  <!-- about section starts  -->
+
+  <section class="about" id="about">
+
+     <div class="content">
+        <p>This is our movie theatre screening timings
+         <br>
+           We hope you enjoy watching them <p>
+     </div>
+  </section>
+     <section class="movie">
+        <div class="box-container">
+           <div class="box">
+              <img src="../resources/images/movie1.jpg" alt="hp">
+              <h3>harry potter</h3>
+              <p><strong>room 1</strong>
+                <br>
+                monday: 1000, 1400, 1800
+                <br>
+                tuesday: 1000, 1400, 1800
+                <br>
+                wednesday: 1000, 1400, 1800
+                <br>
+                thursday: 1000, 1400, 1800
+                <br>
+                friday: 0900, 1500, 2000, 2300
+                <br>
+                saturday: 0900, 1500, 2000, 2300
+                <br>
+                sunday: 0900, 1500, 2000, 2300
+              </p>
+           </div>
+
+           <div class="box">
+              <img src="../resources/images/movie2.jpeg" alt="frozen2">
+              <h3>Frozen 2</h3>
+              <p><strong>room 2</strong>
+                <br>
+                monday: 1000, 1400, 1800
+                <br>
+                tuesday: 1000, 1400, 1800
+                <br>
+                wednesday: 1000, 1400, 1800
+                <br>
+                thursday: 1000, 1400, 1800
+                <br>
+                friday: 0900, 1500, 2000, 2300
+                <br>
+                saturday: 0900, 1500, 2000, 2300
+                <br>
+                sunday: 0900, 1500, 2000, 2300
+              </p>
+           </div>
+
+           <div class="box">
+              <img src="../resources/images/movie3.jpg" alt="avengers end game">
+              <h3>avengers end game</h3>
+              <p><strong>room 3</strong>
+                <br>
+                monday: 1000, 1400, 1800
+                <br>
+                tuesday: 1000, 1400, 1800
+                <br>
+                wednesday: 1000, 1400, 1800
+                <br>
+                thursday: 1000, 1400, 1800
+                <br>
+                friday: 0900, 1500, 2000, 2300
+                <br>
+                saturday: 0900, 1500, 2000, 2300
+                <br>
+                sunday: 0900, 1500, 2000, 2300
+              </p>
+           </div>
+
+           <div class="box">
+               <img src="../resources/images/movie6.jpg" alt="cra">
+               <h3>crazy rich asians</h3>
+               <p><strong>room 4</strong>
+                 <br>
+                 monday: 1000, 1400, 1800
+                 <br>
+                 tuesday: 1000, 1400, 1800
+                 <br>
+                 wednesday: 1000, 1400, 1800
+                 <br>
+                 thursday: 1000, 1400, 1800
+                 <br>
+                 friday: 0900, 1500, 2000, 2300
+                 <br>
+                 saturday: 0900, 1500, 2000, 2300
+                 <br>
+                 sunday: 0900, 1500, 2000, 2300
+               </p>
+           </div>
+
+           <div class="box">
+               <img src="../resources/images/movie5.jpg" alt="jumanji">
+               <h3>jumanji</h3>
+               <p><strong>room 5</strong>
+                 <br>
+                 monday: 1000, 1400, 1800
+                 <br>
+                 tuesday: 1000, 1400, 1800
+                 <br>
+                 wednesday: 1000, 1400, 1800
+                 <br>
+                 thursday: 1000, 1400, 1800
+                 <br>
+                 friday: 0900, 1500, 2000, 2300
+                 <br>
+                 saturday: 0900, 1500, 2000, 2300
+                 <br>
+                 sunday: 0900, 1500, 2000, 2300
+               </p>
+           </div>
+
+          <div class="box">
+            <img src="../resources/images/movie4.jpg" alt="anabelle">
+               <h3>anabelle</h3>
+               <p><strong>Pg14 room 6</strong>
+                 <br>
+                 monday: 2100, 2400, 0200
+                 <br>
+                 tuesday: 2200, 0100
+                 <br>
+                 wednesday: 2100, 2400, 0200
+                 <br>
+                 thursday: 2200, 0100
+                 <br>
+                 friday: 2300, 0200
+                 <br>
+                 saturday: 1900, 2100, 2400, 0200
+                 <br>
+                 sunday: 2100, 2400, 0200
+              </p>
+          </div>
+
+        </div>
+     <br>
+     <br>
+     </section>
+
+<footer class="footer">
+   <div class="container">
+     <section>
+       <div class="box">
+          <img src="../resources/images/logov2_black.png">
+       </div>
+       <div class="box">
+          <p>Turquoise waters lap at white-sand shores. Towering palms rustle overhead. Welcome to Le Tresor.</p>
+       </div>
+       <div class="box">
+          <h3>Follow us</h3>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-instagram"></i>
+       </div>
+     </section>
+     <section>
+       <div class="box">
+          <h3>The Resort</h3>
+          <a href="#">Overview<i class="ti-angle-right"></i></a>
+          <a href="#">Accomodations<i class="ti-angle-right"></i></a>
+          <a href="#">Facilities<i class="ti-angle-right"></i></a>
+          <a href="#">Services<i class="ti-angle-right"></i></a>
+          <a href="#">Dining<i class="ti-angle-right"></i></a>
+          <a href="#">Gallery<i class="ti-angle-right"></i></a>
+          <a href="#">Contact Us<i class="ti-angle-right"></i></a>
+          <a href="#">Events<i class="ti-angle-right"></i></a>
+          <a href="#">Promotions<i class="ti-angle-right"></i></a>
+       </div>
+       <div class="box">
+          <h3>My Account</h3>
+          <a href="#">Log in<i class="ti-angle-right"></i></a>
+          <a href="#">Sign up<i class="ti-angle-right"></i></a>
+       </div>
+     </section>
+     <section>
+       <div class="box">
+          <i class="fas fa-envelope"></i>
+          <h3>Email</h3>
+          <p>LaTimelessTresor@resort.com</p>
+       </div>
+       <div class="box">
+          <i class="fas fa-clock"></i>
+          <h3>Hotline Hours</h3>
+          <p>08:00am to 08:00pm</p>
+       </div>
+       <div class="box">
+          <i class="fas fa-map-marker-alt"></i>
+          <h3>Location</h3>
+          <p>La Baie Classique, Singapore</p>
+       </div>
+       <div class="box">
+          <i class="fas fa-phone"></i>
+          <h3>Contact</h3>
+          <p>+65-9999</p>
+       </div>
+     </section>
+     <hr>
+   </div>
+   <section style="width:100%; background-color: #222">
+    <div class="container" style="padding: 10px;">
+      <div class="tc">
+        <a href="#">Terms & Conditions</a> |
+        <a href="#">Privacy Policy</a>
+      </div>
+      <div style="width:100%; padding: 20px; text-align: center">
+        <p>Copyright 2022 &copy; Le Timeless Tresor | All right reserved.</p>
+      </div>
+    </div>
+   </section>
+</footer>
+</body>
+</html>

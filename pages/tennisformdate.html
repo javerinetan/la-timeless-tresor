@@ -4,7 +4,7 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Pool Booking Page</title>
+   <title>Tennis Court Booking Page</title>
 
    <!-- font awesome cdn link  -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
@@ -84,12 +84,12 @@
 
 
 <!--header section starts-->
-<div class="phome-bg">
+<div class="thome-bg">
 
    <section class="home" id="home">
 
       <div class="content">
-         <h2>pool session booking page</h2>
+         <h2>Tennis Court booking page</h2>
       </div>
 
    </section>
@@ -99,20 +99,32 @@
 
 <!-- header section ends -->
 
+<!-- home section starts  -->
+
+<!-- home section ends -->
 
 
 <!-- forms section starts -->
 <section class="form">
     <div class="row">
 
-     <form action="poolformdate.html" method="post">
-        <h3>book a pool session</h3>
-        <label for='confnum'>hotel confirmation number:</label>
-        <input type="text" name="number" required class="box" placeholder="hotel confirmation number" required>
-        <label for='check-in'>check-in date:</label>
-        <input type="date" name="cdate" required class="box" min="2020-01-01" max="2023-01-01" id="last" required>
-        <br>
-        <button class="btn">next</button>
+     <form action="tennisformdone.html" method="post">
+        <h3>choose your a tennis court slot</h3>
+        <label for='date'>Date:</label>
+        <input type="date" name="cdate" required class="box" min="2020-01-01" max="2023-01-01" required>
+        <label for="type">Time: *</label>
+          <select name="time" id="type">
+            <option value="6am">0600</option>
+            <option value="8am">0800</option>
+            <option value="10am">1000</option>
+            <option value="12pm">1200</option>
+            <option value="2pm">1400</option>
+            <option value="4pm">1600</option>
+            <option value="6pm">1800</option>
+            <option value="8pm">2000</option>
+          </select>
+          <p>*each session is 2hrs long</p>
+      <input type="submit" name="send" value="submit" class="btn"></input>
      </form>
 
 

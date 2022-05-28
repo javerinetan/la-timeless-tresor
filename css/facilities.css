@@ -72,7 +72,7 @@ a{
 .home-bg .home .content h2{
    font-size: 3.8rem;
    color:var(--white);
-   font-family: 'Libre Bodoni', serif;;
+   font-family: 'Libre Bodoni', serif;
 }
 
 .about{
@@ -147,4 +147,95 @@ a{
 
 #oh{
   padding-bottom: 1.5rem !important;
+}
+
+/**movie timetable**/
+.mhome-bg{
+   background:linear-gradient(90deg, var(--white), transparent 0%), url(../resources/images/cinema2.webp) no-repeat;
+   background-size: cover;
+   background-position: center;
+   height: 500px;
+   text-align: center;
+}
+
+.mhome-bg .home{
+   min-height: 600px;
+   display: flex;
+   align-items: center;
+}
+
+.mhome-bg .home .content{
+   max-width: 80%;
+   text-align: center;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 90px;
+}
+
+.mhome-bg .home .content h2{
+   font-size: 3.8rem;
+   color:var(--white);
+   font-family: 'Libre Bodoni', serif;;
+}
+
+
+.about{
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+   gap:2.5rem;
+}
+
+.about .content{
+   flex:1 1 20rem;
+}
+
+.about .content p{
+   padding:.94rem 0 0;
+   line-height: 2rem;
+   color:var(--light-color);
+   font-size: .94rem;
+   margin-left: auto;
+   margin-right: auto;
+   text-align: center;
+}
+
+.movie{
+  padding: 1.6rem;
+  padding-top: .44rem;
+}
+
+.movie .box-container{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+   gap:1.9rem;
+   align-items: flex-start;
+   padding: 2.5rem;
+}
+
+.movie .box-container .box{
+   text-align: center;
+   margin: auto auto;
+   border-spacing: 12.5rem 9.4rem;
+   width: 300px;
+   height: 500px;
+}
+
+.movie .box-container .box img{
+   height: 200px;
+   margin-top: .94rem;
+}
+
+.movie .box-container .box h3{
+   font-size: 1.6rem;
+   color:var(--black);
+   margin:.6rem 0;
+   font-family: 'Libre Bodoni', serif;
+}
+
+.movie .box-container .box p{
+   line-height: 2rem;
+   font-size: .94rem;
+   color:var(--light-color);
+   padding-bottom: 12.5px;
 }
