@@ -86,7 +86,7 @@ hr {
 }
 
 .form .wrapper {
-  width: 60%;
+  width: 70%;
 }
 
 .form input {
@@ -97,8 +97,9 @@ hr {
 
 .form .input-container {
   float: left;
-  width:50%;
+  width: 50%;
   padding-right: 15px;
+  margin-bottom: 15px;
 }
 
 .content .form.container {
@@ -113,8 +114,8 @@ hr {
   margin-top: 100px;
   margin-right: 80px;
   padding: 30px;
-  height: 450px;
-  width: 30%;
+  width: 25%;
+  height: 500px;
   float: right;
   position: -webkit-sticky;
   position: sticky;
@@ -128,8 +129,8 @@ hr {
 }
 
 .content .result.container {
-  padding-top: 100px;
   padding-bottom: 100px;
+  padding-right: 0px;
   width: 70%;
   float: left;
 }
@@ -155,4 +156,61 @@ hr {
 .box .info {
   float: left;
   width: 50%;
+  padding: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+
+}
+
+@media screen and (max-width: 900px) {
+  .heading h1 {
+    font-size: 40px;
+    letter-spacing: 4px;
+  }
+  .form .input-container {
+    width: 80%;
+    padding-right: 0px;
+  }
+  .form .button-style2 {
+    width: 80%;
+  }
+  .booking-details {
+    width: 35%;
+    margin-right: 40px;
+  }
+  .form .wrapper {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .heading h1 {
+    font-size: 40px;
+    letter-spacing: 4px;
+  }
+  .booking-details {
+    position: static;
+    width: 100%;
+    float: none;
+    margin-top: 0px;
+    margin-right: 0px;
+  }
+  .form .wrapper {
+    width: 100%
+  }
+  .content .result.container {
+    width: 100%;
+  }
+  .content .form.container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .heading h1 {
+    font-size: 28px;
+    letter-spacing: 3px;
+  }
 }
