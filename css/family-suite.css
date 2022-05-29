@@ -52,8 +52,8 @@ hr {
 }
 
 .section-title {
-  font-size: 40px;
-  margin-bottom: 5px;
+  font-size: 35px;
+  margin-bottom: 15px;
 }
 
 .section-sub-title {
@@ -65,7 +65,7 @@ hr {
   text-align: left;
   color: #aa8453;
   font-size: 18px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .room-info .container {
@@ -87,6 +87,27 @@ hr {
 .room-info .amenities {
   width: 40%;
   float: left;
+}
+
+.recommends {
+  background-color: #F8F5F0;
+}
+
+.recommends .container {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: inline-block;
+  text-align: center;
+}
+
+.recommends .box{
+  float: left;
+  padding: 15px;
+  width: 33.33%;
+}
+
+.recommends .box img{
+  width: 100%;
 }
 
 @media screen and (max-width: 1200px) {
