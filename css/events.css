@@ -1,12 +1,248 @@
+* {
+  font-family: 'LibreBodoni-Regular';
+}
+
+::-webkit-scrollbar-track{
+   background-color: white !important;
+}
+
+body {
+  background-color: black;
+  height: 1000px;
+}
+
+h1, h2 {
+  letter-spacing: 2.5px;
+}
+
+.banner {
+  background-image: url("../resources/images/banner.jpg");
+  top: 0;
+  left: 0;
+  height: 50vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  /* background-attachment: fixed; */
+}
+
+.layer {
+  background-color: black;
+  opacity: 0.4;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50%;
+  width: 100%;
+}
+
+#mainsubheader {
+  position: absolute;
+  top: 160px;
+  left: 100px;
+  color: white;
+  font-size: 10px;
+  letter-spacing: 5px;
+}
+
+#mainheader {
+  position: absolute;
+  top: 180px;
+  left: 90px;
+  color: white;
+  font-size: 45px;
+  letter-spacing: 4px;
+}
+
+.mainbody {
+  position: relative;
+  background-color: white;
+  width: 100%;
+  display: inline-block;
+  padding-top: 100px;
+  padding-bottom: 200px;
+}
+
+#subtitle {
+  font-size: 25px;
+  text-align: center;
+  color: #B0A48D;
+}
+
+#title {
+  font-size: 40px;
+  text-align: center;
+}
+
+/* Segmented Control */
+.all, .exterior, .dining, .experience, .interior{
+  display: none;
+}
+
+.display {
+  display: block !important;
+}
+
+.segcontrol {
+  float: left;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 50px;
+  margin-bottom: 50px;
+  margin-top: 80px;
+  background-color: #FAF7F2;
+}
+
+.segcontrol div {
+  float: left;
+  background-image: linear-gradient(to right, rgba(255,255,255,0) 50%, #ddd 50%);
+  background-position: -0% 0;
+  background-size: 200% auto;
+  color: #222;
+  font-size: 1.00em;
+  line-height: 1 em;
+  text-decoration: none;
+  transition: background-position 0.5s ease-out;
+  cursor: pointer;
+}
+
+.segcontrol div:hover {
+  background-position: -99.99% 0;
+}
+
+/* Style the Image Used to Trigger the Modal */
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+
+
+.exteriorRow, .diningRow, .experienceRow, .interiorRow {
+  content: "";
+  clear: both;
+  display: table;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.exteriorColumn, .diningColumn, .experienceColumn, .interiorColumn {
+  width: 33.3%;
+  padding: 15px;
+  float: left;
+}
+
+.exteriorColumn2, .diningColumn2, .experienceColumn2, .interiorColumn2 {
+  width: 50%;
+  padding: 15px;
+  float: left;
+}
+
+.exteriorColumn3, .diningColumn3, .experienceColumn3, .interiorColumn3 {
+  width: 33.3%;
+  padding: 15px;
+  float: left;
+  height: 400px;
+}
+
+@media all and (min-width: 600px) {
+  .aside { flex: 1 0 0; }
+}
+
+@media all and (min-width: 800px) {
+  .main    { flex: 3 0px; }
+  .aside-1 { order: 1; }
+  .main    { order: 2; }
+  .aside-2 { order: 3; }
+  .footer  { order: 4; }
+}
+
+
 *, *:before, *:after {
 -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
 }
 
 body {
- overflow: hidden;
  font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Helvetica Neue', Arial, Helvetica, sans-serif;
  font-weight: 100;
- color: rgba(255, 255, 255, 1);
  margin: 0;
  padding: 0;
  background: #4A4A4A;
@@ -18,20 +254,26 @@ body {
  user-select: none;
 }
 
+div .container {
+  overflow: hidden;
+}
+
 #calendar {
   -webkit-transform: translate3d(0, 0, 0);
   -moz-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
   width: 420px;
   margin: 0 auto;
-  height: 570px;
+  height: 580px;
   overflow: hidden;
+  margin-right: 80%;
+  margin-top: 100px;
 }
 
 .header {
   height: 50px;
   width: 420px;
-  background: #aa8453;
+  background: rgba(66, 66, 66, 1);
   text-align: center;
   position:relative;
   z-index: 100;
@@ -58,13 +300,13 @@ body {
 
 .left {
   border-width: 7.5px 10px 7.5px 0;
-  border-color: transparent white transparent transparent;
+  border-color: transparent rgba(160, 159, 160, 1) transparent transparent;
   left: 20px;
 }
 
 .right {
   border-width: 7.5px 0 7.5px 10px;
-  border-color: transparent transparent transparent white;
+  border-color: transparent transparent transparent rgba(160, 159, 160, 1);
   right: 20px;
 }
 
@@ -117,7 +359,7 @@ body {
   text-align: center;
   vertical-align: top;
   cursor: pointer;
-  background: white;
+  background: #4A4A4A;
   position: relative;
   z-index: 100;
 }
@@ -127,21 +369,20 @@ body {
 }
 
 .day.today {
-  color: black;
+  color: rgba(156, 202, 235, 1);
 }
 
 .day-name {
   font-size: 9px;
   text-transform: uppercase;
   margin-bottom: 5px;
-  color: black;
+  color: rgba(255, 255, 255, .5);
   letter-spacing: .7px;
 }
 
 .day-number {
   font-size: 24px;
   letter-spacing: 1.5px;
-  color: black;
 }
 
 
