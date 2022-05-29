@@ -1,7 +1,5 @@
-
-
 :root{
-   --main-color:#be9c79;
+   --main-color:#BB9C75;
    --black: #000000;
    --white:#ffffff;
    --light-color:#666666;
@@ -21,26 +19,25 @@
 }
 
 html{
-   font-size: 62.5%;
    overflow-x: hidden;
    scroll-behavior: smooth;
    scroll-padding-top: 6.5rem;
 }
 
 section{
-   padding: 3rem 0rem;
    max-width: 100%;
    margin:0 auto;
 }
 
 .btn{
   background-color: var(--main-color);
-  border-radius: 8px;
-  line-height: 25px;
-  margin-top: 10px;
+  border-radius: 5px;
+  line-height: 15.6px;
+  margin-top: 6.3px;
   margin-left: 0px;
-  padding:2px 10px;
+  padding:1.3px 9px;
   text-align: left;
+  font-size: .94rem;
 }
 .btn:hover{
    background-color: var(--darkbrown);
@@ -49,23 +46,10 @@ section{
 a {
     color: var(--white);
     text-align: center;
-    font-size: 1.5rem;
   }
 
-.heading{
-   text-align: center;
-   margin-bottom: 3rem;
-}
-
-.heading h3{
-   font-size:4rem;
-   color:var(--black);
-   font-family: 'Libre Bodoni', serif;
-}
-
-
 .home-bg{
-   background:linear-gradient(90deg, var(--white), transparent 0%), url(../resources/images/hotel.jpg) no-repeat;
+   background:linear-gradient(90deg, var(--white), transparent 0%), url(../resources/images/services.webp) no-repeat;
    background-size: cover;
    background-position: center;
    height: 500px;
@@ -89,7 +73,7 @@ a {
 }
 
 .home-bg .home .content h2{
-   font-size: 6rem;
+   font-size: 3.8rem;
    color:var(--white);
    font-family: 'Libre Bodoni', serif;
 }
@@ -98,105 +82,76 @@ a {
    display: flex;
    align-items: center;
    flex-wrap: wrap;
-   gap:4rem;
+   gap:2.5rem;
+   padding: 1.9rem 2rem;
 }
 
 .about .content{
-   flex:1 1 40rem;
+   flex:1 1 20rem;
 }
 
 .about .content p{
-   padding:1.5rem 0 0;
-   line-height: 2;
+   padding:.94rem 0 0;
+   line-height: 2rem;
    color:var(--light-color);
-   font-size: 1.5rem;
+   font-size: .94rem;
    margin-left: auto;
    margin-right: auto;
    text-align: center;
 }
 
 .services{
-  padding: 2.5rem;
-  padding-top: .7rem;
+  padding: 1.6rem;
+  padding-top: .44rem;
 }
 
 .services .box-container{
    display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-   gap:3rem;
+   grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+   gap:1.9rem;
    align-items: flex-start;
-   padding: 4rem;
+   padding: 2.5rem;
 }
 
 .services .box-container .box{
    text-align: center;
    margin: auto auto;
-   border-spacing: 20rem 15rem;
+   border-spacing: 12.5rem 9.4rem;
    width: 300px;
    height: 210px;
 }
 
 .services .box-container .box img{
    height: 45px;
-   margin-top: 1.5rem;
+   margin-top: .94rem;
 }
 
 .services .box-container .box h3{
-   font-size: 2.5rem;
+   font-size: 1.6rem;
    color:var(--black);
-   margin:1rem 0;
+   margin:.6rem 0;
    font-family: 'Libre Bodoni', serif;
 }
 
 .services .box-container .box p{
-   line-height: 2;
-   font-size: 1.5rem;
+   line-height: 2rem;
+   font-size: .94rem;
    color:var(--light-color);
-   padding-bottom: 20px;
+   padding-bottom: 12.5px;
 }
 
-.footer{
-  background-color: #ccc6bb;
+.services .box-container .box button{
+  background-color: var(--main-color);
+  border-radius: 5px
 }
 
-.footer .box-container{
-   display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
-   gap:1.5rem;
-   align-items: flex-start;
+.services .box-container .box a {
+  color: var(--white);
+  line-height: 12.5px;
 }
 
-.footer .heading h3{
-  font-family: 'Libre Bodoni', serif;
-  font-size: 2.7rem;
-}
-
-.footer .box-container .box{
-   text-align: center;
-}
-
-.footer .box-container .box i{
-   font-size: 2.5rem;
-   line-height: 6rem;
-   height: 6rem;
-   width: 6rem;
-   border-radius: 50%;
+.services .box-container .box button:hover{
    background-color: var(--darkbrown);
-   color:var(--white);
-   margin-bottom: 1rem;
-}
-
-.footer .box-container .box h3{
-   margin:1rem 0;
-   font-size: 2rem;
-   color:var(--black);
-   font-family: 'Libre Bodoni', serif;
-}
-
-.footer .box-container .box p{
-   line-height: 2;
-   font-size: 1.6rem;
-   color:var(--light-color);
 }
 
 /* ferryschedule*/
@@ -226,7 +181,7 @@ a {
 }
 
 .thome-bg .home .content h2{
-   font-size: 6rem;
+   font-size: 3.8rem;
    color:var(--white);
    font-family: 'Libre Bodoni', serif;
    margin-left: auto;
@@ -248,7 +203,7 @@ table{
 }
 
 td{
-  font-size: 1.5rem;
+  font-size: 1rem;
   text-align: center;
   width: 50%;
   line-height: 30px;
@@ -256,11 +211,12 @@ td{
 }
 
 h2{
-  font-size: 2.5rem;
+  font-size: 1.6rem;
   font-family: 'Libre Bodoni', serif;
   margin-left: auto;
   margin-left: auto;
   text-align: center;
+  padding-bottom: 10px
 }
 
 .backferry .hotel{
@@ -279,20 +235,4 @@ h2{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   align-items: flex-start;
-}
-
-.services .box-container .box button{
-  background-color: var(--main-color);
-  border-radius: 8px
-}
-
-.services .box-container .box a {
-  color: var(--white);
-  line-height: 20px;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-.services .box-container .box button:hover{
-   background-color: var(--darkbrown);
 }

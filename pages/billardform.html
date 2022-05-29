@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Billard room Booking Page</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+   <link rel="icon" href="../resources/images/logo.png">
+   <link rel="stylesheet" href="../css/fform.css">
+   <link rel="stylesheet" href="../css/navbar.css">
+   <link rel="stylesheet" href="../css/global.css">
+</head>
+<body>
+
+<!-- header section starts  -->
+
+<nav class="topnav" id="myTopnav">
+    <div class="container">
+      <a href="../index.html" style="padding:0; display:inline">
+        <img src="../resources/images/logov2_white.png" alt="Logo" class="nav-logo" id="navLogo">
+      </a>
+      <a href="javascript:void(0);" style="font-size:18px;margin-top: 10px;" class="icon" onclick="displayNav()">&#9776;</a>
+      <div class="nav-items">
+        <div class="dropdown">
+          <button class="dropbtn">The Resort
+            <i class="ti-angle-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">Overview<i class="ti-angle-right"></i></a>
+            <a href="../pages/accommodations.html">Accomodations<i class="ti-angle-right"></i></a>
+            <a href="facilities.html">Facilities<i class="ti-angle-right"></i></a>
+            <a href="services.html">Services<i class="ti-angle-right"></i></a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Dining
+            <i class="ti-angle-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">The Restaurant<i class="ti-angle-right"></i></a>
+            <a href="#">Reservation<i class="ti-angle-right"></i></a>
+            <a href="#">Ordering<i class="ti-angle-right"></i></a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Events & Promotions
+            <i class="ti-angle-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#news">Events<i class="ti-angle-right"></i></a>
+            <a href="#contact">Promotions<i class="ti-angle-right"></i></a>
+          </div>
+        </div>
+        <div class="dropdown">
+         <button class="dropbtn">Gallery
+           <i class="ti-angle-down"></i>
+         </button>
+         <div class="dropdown-content">
+             <a href="../pages/gallery.html">Welcome<i class="ti-angle-right"></i></a>
+             <a href="../pages/about.html">History<i class="ti-angle-right"></i></a>
+         </div>
+       </div>
+        <a href="#contact">Contact</a>
+        <a href="#home" class="active">Book Now</a>
+        <div class="dropdown">
+          <button class="dropbtn"><img src="../resources/images/user_white.png" alt="account" id="account" width="18px">
+            <i class="ti-angle-down"></i>
+          </button>
+          <div class="dropdown-content" style="min-width:120px">
+            <a href="#">Log In<i class="ti-angle-right"></i></a>
+            <a href="#">Sign Up<i class="ti-angle-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator" id="indicator" onclick="scrollAction()">
+      <i class="ti-angle-down"></i>
+    </div>
+    <script type="text/javascript" src="../js/nav.js"></script>
+  </nav>
+
+
+<!--header section starts-->
+<div class="bhome-bg">
+
+   <section class="home" id="home">
+
+      <div class="content">
+         <h2>billard room booking page</h2>
+      </div>
+
+   </section>
+
+</div>
+
+
+<!-- header section ends -->
+
+
+
+<!-- forms section starts -->
+<section class="form">
+    <div class="row">
+
+     <form action="billardformdate.html" method="post">
+        <h3>book a billard room</h3>
+        <label for='confnum'>hotel confirmation number:</label>
+        <input type="text" name="number" required class="box" placeholder="hotel confirmation number" required>
+        <label for='check-in'>check-in date:</label>
+        <input type="date" name="cdate" required class="box" min="2020-01-01" max="2023-01-01" id="last" required>
+        <br>
+        <button class="btn">next</button>
+     </form>
+
+
+  </div>
+</section>
+
+
+<!-- forms section end -->
+
+<!-- footer section starts  -->
+
+<footer class="footer">
+   <div class="container">
+     <section>
+       <div class="box">
+          <img src="../resources/images/logov2_black.png">
+       </div>
+       <div class="box">
+          <p>Turquoise waters lap at white-sand shores. Towering palms rustle overhead. Welcome to Le Tresor.</p>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-instagram"></i>
+       </div>
+       <div class="box newsletter">
+         <h3>Join Newsletter</h3>
+         <input type="text" placeholder="email">
+         <button><i class="fa-solid fa-arrow-right"></i></button>
+       </div>
+     </section>
+     <section>
+       <div class="box">
+          <h3>The Resort</h3>
+          <a href="#">Overview<i class="ti-angle-right"></i></a>
+          <a href="#">Accomodations<i class="ti-angle-right"></i></a>
+          <a href="#">Facilities<i class="ti-angle-right"></i></a>
+          <a href="#">Services<i class="ti-angle-right"></i></a>
+          <a href="#">Dining<i class="ti-angle-right"></i></a>
+          <a href="#">Gallery<i class="ti-angle-right"></i></a>
+          <a href="#">Contact Us<i class="ti-angle-right"></i></a>
+          <a href="#">Events<i class="ti-angle-right"></i></a>
+          <a href="#">Promotions<i class="ti-angle-right"></i></a>
+       </div>
+       <div class="box">
+          <h3>My Account</h3>
+          <a href="#">Log in<i class="ti-angle-right"></i></a>
+          <a href="#">Sign up<i class="ti-angle-right"></i></a>
+       </div>
+     </section>
+     <section>
+       <div class="box">
+          <i class="fas fa-envelope"></i>
+          <h3>Email</h3>
+          <p>LaTimelessTresor@resort.com</p>
+       </div>
+       <div class="box">
+          <i class="fas fa-clock"></i>
+          <h3>Hotline Hours</h3>
+          <p>08:00am to 08:00pm</p>
+       </div>
+       <div class="box">
+          <i class="fas fa-map-marker-alt"></i>
+          <h3>Location</h3>
+          <p>La Baie Classique, Singapore</p>
+       </div>
+       <div class="box">
+          <i class="fas fa-phone"></i>
+          <h3>Contact</h3>
+          <p>+65-9999</p>
+       </div>
+     </section>
+     <hr>
+   </div>
+   <section style="width:100%; background-color: #222">
+    <div class="container" style="padding: 10px;">
+      <div class="tc">
+        <a href="#">Terms & Conditions</a> |
+        <a href="#">Privacy Policy</a>
+      </div>
+      <div style="width:100%; padding: 20px; text-align: center">
+        <p>Copyright 2022 &copy; Le Timeless Tresor | All right reserved.</p>
+      </div>
+    </div>
+   </section>
+</footer>
+<!-- footer section ends -->
+
+</body>
+</html>

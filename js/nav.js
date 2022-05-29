@@ -7,11 +7,6 @@ var indicator = document.getElementById("indicator");
 
 var firstLoad = true;
 
-if (window.innerWidth > 1000){
-  form.classList.add("show-form");
-  sidebtn.classList.add("btn-active");
-}
-
 function displayNav() {
   var x = document.getElementById("myTopnav");
 

@@ -1,0 +1,287 @@
+:root{
+   --main-color:#be9c79;
+   --black: #000000;
+   --white:#ffffff;
+   --light-color:#666666;
+   --border:.2rem solid var(--poopb);
+   --darkbrown: #8c735c;
+   --table: #e2d5c5;
+   --bottom: #ccc6bb;
+   --poopb: #6B4615;
+   --beige: #E8D3B9;
+   --darkbeige: #3F2e19;
+}
+::-webkit-scrollbar{
+  width: 0.8rem !important;
+}
+
+html{
+   font-size: 62.5%;
+   overflow-x: hidden;
+   scroll-behavior: smooth;
+   scroll-padding-top: 6.5rem;
+}
+
+section{
+   padding:3rem 2rem;
+   max-width: 100%;
+   margin:0 auto;
+}
+
+
+
+/*welcome page*/
+.main-bg{
+   background:linear-gradient(90deg, var(--white), transparent 0%), url('../resources/images/mainromance.png') no-repeat;
+   background-size: cover;
+   background-position: center;
+   display: flex;
+}
+
+.main-bg .main{
+   min-height: 60rem;
+   display: flex;
+   align-items: center;
+
+}
+
+.main-bg .main .content{
+   width: 60rem;
+   text-align: center;
+   padding-top:15rem;
+}
+
+.main-bg .main .content h3{
+   font-size: 6rem;
+   color:var(--white);
+   font-family: 'Libre Bodoni', serif;
+   text-align: center;
+
+}
+
+.main-bg .main .content p{
+   padding:1rem 0;
+   font-size: 1.6rem;
+   color:var(--white);
+   line-height: 2;
+   text-align: center;
+}
+
+
+
+/* form start*/
+
+.form{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap:4rem;
+  padding: 80px;
+
+}
+
+.form .image{
+   flex:1 1 40rem;
+}
+
+.form .image img{
+  width: 100%;
+}
+
+.form .image2{
+   flex:1 1 40rem;
+}
+
+.form .image2 img{
+  width: 100%;
+  line-height: 50rem;
+}
+
+.form .content{
+   flex:1 1 40rem;
+}
+.form .content{
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+   gap:0rem;
+}
+
+.form h3{
+  font-family: 'Libre Bodoni', serif;
+  font-size: 4rem;
+  color: var(--black);
+}
+
+.form .content form{
+   flex:1 1 40rem;
+   padding:2rem;
+   text-align: center;
+   margin:auto auto;
+   background-color: var(--beige);
+   padding-bottom: 3.5rem;
+   border-radius: 1.5rem;
+}
+
+.form .content form p{
+   line-height: 3rem;
+   font-size: 2.5rem;
+   text-align: center;
+   padding: 2rem 2rem;
+   margin: 3rem;
+
+}
+
+.form .content form label{
+   font-size: 2rem;
+   margin-bottom: 0rem;
+   font-family: 'Libre Bodoni', serif;
+   text-align: left;
+}
+
+.form .content form h3{
+   font-size: 2.5rem;
+   margin-bottom: 1rem;
+   color:var(--darkbeige);
+   padding-top: 1.5rem;
+}
+
+.form .content form .box{
+   width: 100%;
+   padding:1.3rem;
+   font-size: 1.8rem;
+   margin:1rem 0;
+   border-radius: 1rem;
+}
+
+.form-container.adult {
+  margin: 0px;
+}
+
+.form-container.child {
+  margin: 0px;
+}
+
+.form-container .child, .form-container .adult {
+  margin: 0px;
+}
+
+.form-containers.slot {
+  margin: 0px;
+}
+
+.form-containers.cdate {
+  margin: 0px;
+
+}
+
+.form-containers .slot, .form-container .cdate {
+  margin: 0px;
+}
+.form-container {
+  float: left;
+  width: 50%;
+  padding: 7.5px;
+  margin-bottom: 30px;
+  border-radius: 1rem;
+}
+.form-containers {
+  float: left;
+  width: 50%;
+  padding: 11.5px;
+  border-radius: 1rem;
+  font-size: 18px;
+  margin-bottom: 1rem;
+}
+
+
+label{
+  display: block;
+  padding-top: 1.5rem;
+}
+
+input{
+ padding-top: 1.5rem;
+}
+
+select{
+  display: flex;
+  background-color: white;
+  height: 5rem;
+  width: 15rem;
+  font-size: 1.8rem;
+  padding-left: 1.3rem;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+}
+/**buttons color**/
+.btn:hover{
+  background-color: var(--darkbrown);
+}
+/**page2**/
+.btn {
+  display: inline-block;
+  background-color: var(--main-color);
+  border-radius: 10px;
+  width: 45%;
+  line-height: 4rem;
+  color: var(--white);
+  margin-top: 1rem;
+  font-size: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+
+/**page3**/
+.btn1 {
+  display: inline-block;
+   background-color: var(--main-color);
+   border-radius: 10px;
+   width: 35%;
+   line-height: 5rem;
+   color: var(--white);
+   margin-top: 1rem;
+   font-size: 1.5rem;
+   padding-left: 0.5rem;
+   padding-right: 0.5rem;
+
+
+}
+
+.btn2 {
+  display: inline-block;
+  background-color: var(--main-color);
+  border-radius: 10px;
+  width: 35%;
+  line-height: 5rem;
+  color: var(--white);
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+
+}
+
+/*text in button*/
+.form a {
+  color: var(--white);
+  margin-right: 20px;
+  margin-left: 20px;
+  text-align:center;
+}
+
+
+/**page 2**/
+.btn3 {
+  display: inline-block;
+  background-color: var(--main-color);
+  border-radius: 10px;
+  width: 45%;
+  line-height: 5rem;
+  color: var(--white);
+  margin-top: 0rem;
+  font-size: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}

@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400;1,400;1,700&display=swap');
-
 :root{
    --main-color:#be9c79;
    --black:#333;
@@ -10,32 +8,8 @@
    --extra: #8c735c;
 
 }
-
-*{
-   font-family: 'Nunito', sans-serif;
-   margin:0; padding:0;
-   box-sizing: border-box;
-   outline: none; border:none;
-   text-decoration: none;
-   text-transform: capitalize;
-}
-
-*::selection{
-   background-color: var(--main-color);
-   color:var(--white);
-}
-
 ::-webkit-scrollbar{
-   height: .5rem;
-   width: 1rem;
-}
-
-::-webkit-scrollbar-track{
-   background-color: transparent;
-}
-
-::-webkit-scrollbar-thumb{
-   background-color: var(--main-color);
+  width: 0.8rem !important;
 }
 
 html{
@@ -81,47 +55,6 @@ section{
    background-color: var(--darkbrown);
 }
 
-.header{
-   position: sticky;
-   top:0; left: 0; right:0;
-   background-color: var(--white);
-   box-shadow: var(--box-shadow);
-   z-index: 1000;
-}
-
-.header .flex{
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-   position: relative;
-   padding:1.5rem 2rem;
-}
-
-.header .flex .logo img{
-   height: 13rem;
-}
-
-.header .flex .navbar a{
-   margin-left: 2rem;
-   font-size: 2rem;
-   color:var(--black);
-}
-
-.header .flex .navbar a:hover{
-   text-decoration: underline;
-   color:var(--main-color);
-}
-
-
-#menu-btn{
-   display: none;
-   font-size: 2.5rem;
-   color:var(--black);
-   cursor: pointer;
-}
-
-
-
 /*welcome page*/
 .promotions-bg{
    background:linear-gradient(90deg, var(--white), transparent 0%), url('../resources/images/pro2.jpg') no-repeat;
@@ -145,6 +78,10 @@ section{
    font-size: 6rem;
    color:var(--white);
    font-family: 'Libre Bodoni', serif;
+}
+.promotions-bg .promotions .content h4{
+   font-size: 5rem;
+   color:var(--white);
 }
 
 .promotions-bg .promotions .content p{
@@ -260,6 +197,12 @@ section{
    font-family: 'Libre Bodoni', serif;
 }
 
+.couple .box-container .box h4{
+   font-size: 1.2rem;
+   color:var(--black);
+   margin:1rem 0;
+}
+
 .couple .box-container .box p{
    line-height: 2;
    font-size: 1.5rem;
@@ -286,8 +229,8 @@ section{
 
 
 .family .box-container .box img{
-   height: 28rem;
-   margin-bottom: .5rem;
+   width: 100%;
+   margin-bottom: 0.5rem;
    border-radius:10%;
 }
 
@@ -310,60 +253,4 @@ section{
    font-size: 1.5rem;
    color:var(--black);
    padding-bottom: 1rem;
-}
-
-
-.footer{
-
-}
-
-.footer .box-container{
-   display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
-   gap:1.5rem;
-   align-items: flex-start;
-}
-
-.footer .box-container .box{
-   text-align: center;
-}
-
-.footer .box-container .box i{
-   font-size: 2.5rem;
-   line-height: 6rem;
-   height: 6rem;
-   width: 6rem;
-   border-radius: 50%;
-   background-color: var(--extra);
-   color:var(--white);
-   margin-bottom: 1rem;
-}
-.footer .box-container .box h3{
-   margin:1rem 0;
-   font-size: 2rem;
-   color:var(--black);
-   font-family: 'Libre Bodoni', serif;
-}
-
-.footer .box-container .box p{
-   line-height: 2;
-   font-size: 1.6rem;
-   color:var(--light-color);
-}
-
-.footer .credit{
-   text-align: center;
-   margin-top: 3rem;
-   padding-top: 2.5rem;
-   border-top: var(--border);
-   font-size: 2rem;
-   color:var(--black);
-   /* padding-bottom: 7rem; */
-}
-
-.footer .credit span{
-   color:var(--main-color);
-}
-.footer{
-  background-color: #ccc6bb
 }
