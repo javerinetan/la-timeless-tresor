@@ -68,137 +68,30 @@ hr {
   margin-bottom: 20px;
 }
 
-
-.section1 .container {
-  text-align: center;
-  width: 100%;
+.room-info .container {
   margin-top: 100px;
   margin-bottom: 100px;
   display: inline-block;
 }
 
-.section1 .section-title{
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.section1 .section-subheading {
-  text-align: center;
-  font-size: 15px;
-  margin-bottom: 0px;
-}
-
-.section1 .grid {
-  width: 100%
-}
-
-.section1 .box {
-  width: 50%;
+.room-info .info {
+  width: 60%;
   float: left;
-  text-align: left;
-  padding: 40px;
-  transition: all 0.4s ease-in-out;
 }
 
-.section1 .box:hover {
-  padding: 20px;
-  box-shadow: 0px 5px 15px rgb(0 0 0 / 5%)
-}
-
-.section1 .box-content {
-  margin: 10px;
-  padding: 20px;
-  background-color: white;
-}
-
-.section1 .box img {
-  width: 100%;
-}
-
-.section1 .box h4 {
-  font-size: 23px;
-  margin-top: 10px;
-  text-align: left;
-}
-
-.section1 .box .button-style2 {
-  width: 100%;
-}
-
-.star-rating {
-  position: relative;
-  display: inline-block;
-  width: 0;
-  height: 0;
-  margin-left: 0.9em;
-  margin-right: 0.9em;
-  margin-bottom: 2em;
-  border-right: 0.3em solid transparent;
-  border-bottom: 0.7em solid #e4a853;
-  border-left: 0.3em solid transparent;
-  /* Controlls the size of the stars. */
-  font-size: 8px;
-}
-
-.star-rating:before, .star-rating:after {
-  content: "";
-  display: block;
-  width: 0;
-  height: 0;
-  position: absolute;
-  top: 0.6em;
-  left: -1em;
-  border-right: 1em solid transparent;
-  border-bottom: 0.7em solid #e4a853;
-  border-left: 1em solid transparent;
-  transform: rotate(-35deg);
-}
-.star-rating:after {
-  transform: rotate(35deg);
+.room-info .amenities {
+  width: 40%;
+  float: left;
 }
 
 @media screen and (max-width: 1200px) {
-  .section1 aside img {
-    width: 350px;
-  }
-  .carousel-cell img {
-    display: block;
-    width: 400px;
-  }
-  .section2 aside {
-    width: 60%;
-    float: right;
-  }
-  .section2 article {
-    width: 40%;
-    float: right;
-  }
-  .section-title {
-    font-size: 30px;
-  }
+
 }
 
 @media screen and (max-width: 900px) {
   .heading h1 {
     font-size: 40px;
     letter-spacing: 4px;
-  }
-  .section1 .box {
-    width: 50%;
-  }
-  .section1 .box {
-    width: 50%;
-    float: left;
-    text-align: left;
-    padding: 30px;
-    transition: all 0.4s ease-in-out;
-  }
-  .section1 .box-content {
-    padding: 10px;
-  }
-  .section1 .box:hover {
-    padding: 10px;
-    box-shadow: 0px 5px 15px rgb(0 0 0 / 5%)
   }
 }
 
@@ -207,30 +100,12 @@ hr {
     font-size: 40px;
     letter-spacing: 4px;
   }
-  .section1 .box {
-    width: 100%;
-  }
 }
 
 @media screen and (max-width: 400px) {
   .heading h1 {
     font-size: 28px;
     letter-spacing: 3px;
-  }
-  .section1 aside img {
-    width: 100%;
-  }
-  .section2 {
-    padding-right: 0px;
-  }
-  .carousel-cell img {
-    display: block;
-  }
-  .section2 .wrapper {
-    padding: 30px;
-  }
-  .section2 article {
-    padding-left: 0px;
   }
 }
 
