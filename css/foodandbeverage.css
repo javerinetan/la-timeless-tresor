@@ -1,32 +1,39 @@
+/*h1, p*/
+h1{
+  font-family: 'LibreBodoni-Regular', serif;
+
+}
+
+p{
+  font-family: 'Libre Bodoni', serif;
+}
+
 /*TopPicture*/
 #toppicture img{
   width: 100%;
 }
 
+/*About us*/
+#Header{
+  text-align: center;
+}
 
+#AboutUs{
+  text-align: center;
+}
 
 /*Promotions*/
-#Promotions img{  display: block;
+#Promotions img{
+  display: block;
   margin: 100px auto auto auto;
   width: 90%;
   border: 10px;
   border-style: double;
-
-
 }
-
-
-
-
-
-
-
-
 
 /*Menu Remove list style*/
 .Menu ul li{
   list-style: none;
-
 }
 
 /*Menu Left*/
@@ -109,4 +116,22 @@ padding: auto;
 margin: 30px auto;
 border: 1px solid blue;
 background-color: white;
+}
+
+/*Testimony*/
+footer{
+  display: table;
+  height: auto;
+  width: 100%;
+  border: 10px solid black;
+}
+
+.Testimonies img{ /*Image*/
+  display: table-cell;
+
+}
+
+.Testimonies p{ /*Text*/
+  display: table-cell;
+
 }
