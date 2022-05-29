@@ -136,11 +136,31 @@
       <div class="wrapper" id="form-section">
         <h2>Check Availability</h2>
         <p>Provide the check-in/out dates and we will search for available rooms.</p>
-        <form class="" action="index.html" method="post">
-          <input class="input-style1" type="date" name="" value="">
-          <input class="input-style1" type="date" name="" value="">
-          <input class="input-style1" type="text" name="" value="">
-          <input class="input-style1" type="text" name="" value="">
+        <form action="index.html" method="post">
+          <div class="input-container">
+            <input class="input-style1" type="date" name="" value="">
+            <select class="input-style1" name="adult" style="width:47.5%;float:left">
+              <option value="">Adult</option>
+              <option value="">1</option>
+              <option value="">2</option>
+              <option value="">3</option>
+              <option value="">4</option>
+              <option value="">5</option>
+            </select>
+            <select class="input-style1" name="" style="width:47.5%;float:right">
+              <option value="">Child</option>
+              <option value="">0</option>
+              <option value="">1</option>
+              <option value="">2</option>
+              <option value="">3</option>
+              <option value="">4</option>
+              <option value="">5</option>
+            </select>
+          </div>
+          <div class="input-container">
+            <input class="input-style1" type="date" name="" value="">
+            <input class="input-style1" type="text" name="" value="">
+          </div>
           <button type="button" class="button-style2" name="button">Search </button>
         </form>
       </div>
@@ -149,7 +169,13 @@
       <div class="wrapper">
         <h2>Available Rooms</h2>
         <div class="box">
-
+          <div class="image">
+            <img src="../resources/images/galleryimg4.jpg" alt="">
+          </div>
+          <div class="info">
+            <h2>Family suite</h2>
+            <p>Provide the check-in/out dates and we will search for available rooms.</p>
+          </div>
         </div>
       </div>
     </div>

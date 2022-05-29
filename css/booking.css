@@ -86,14 +86,19 @@ hr {
 }
 
 .form .wrapper {
-  width: 70%;
+  width: 60%;
 }
 
 .form input {
   float: left;
-  width: 45%;
-  margin-right: 15px;
+  width: 100%;
   margin-bottom: 15px;
+}
+
+.form .input-container {
+  float: left;
+  width:50%;
+  padding-right: 15px;
 }
 
 .content .form.container {
@@ -131,10 +136,23 @@ hr {
 
 .result .box {
   background-color: #F5EFE8;
-  height: 400px;
   width: 100%;
 }
 
 .result h2 {
   margin-bottom: 20px;
+}
+
+.box .image {
+  float: left;
+  width: 50%;
+}
+
+.box .image img{
+  width: 100%;
+}
+
+.box .info {
+  float: left;
+  width: 50%;
 }
