@@ -69,7 +69,12 @@ background-color: yellow;
 text-align: center;
 }
 
+/*Menu Images*/
+.Menu img{
+  width: 400px;
+  height:300px;
 
+}
 
 /*Menu Center*/
 .Menu .Center{ /*Center Food*/
@@ -79,7 +84,7 @@ text-align: center;
 
 }
 
-.Menu .Center li{
+.Menu .Center li{ /*Blocks for the Food*/
   display: block;
 width: 400px;
 height: 400px;
@@ -90,14 +95,13 @@ background-color: white;
 }
 
 /*Menu Right*/
-.Menu .Right{
+.Menu .Right{ /*Right Food*/
 display: table-cell;
 width: 70%;
 text-align: center;
-border: 10px solid black;
 }
 
-.Menu .Right li{
+.Menu .Right li{ /*Blocks for the Food*/
   display: block;
 width: 400px;
 height: 400px;
