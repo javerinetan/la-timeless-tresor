@@ -23,13 +23,14 @@
 
 
 
+/*Menu Remove list style*/
+.Menu ul li{
+  list-style: none;
 
-
-
-
+}
 
 /*Menu Left*/
-.Menu{
+.Menu{ /*Main Table*/
   display:table;
   width: 95%;
   border: 10px solid black;
@@ -37,7 +38,7 @@
   margin:50px;
 }
 
-.Menu .Left {
+.Menu .Left { /*Left Side Table*/
   display:table;
   border: 10px;
   border-style: inset;
@@ -45,40 +46,63 @@
   padding: 5px;
 }
 
-.Menu .Left #MainCourse li{
+.Menu .Left #MainCourse li{ /*Main Course Block in Table*/
   display: block;
 width: 200px;
 height: 50px;
 padding: 5px;
+margin: 10px 10px 8px;
 border: 1px solid blue;
 background-color: white;
-margin: 10px 10px 8px;
 text-align: center;
 
 }
 
-.Menu .Left li{
+.Menu .Left li{ /*Dish Type Blocks in Table*/
   display: block;
 width: 100px;
 height: 30px;
 padding: 5px;
+margin: 5px 10px;
 border: 1px solid black;
 background-color: yellow;
-margin: 5px 10px;
 text-align: center;
 }
 
 
 
 /*Menu Center*/
-.Menu .Center{
+.Menu .Center{ /*Center Food*/
   display: table-cell;
-  width: 70%
+  width: 70%;
   text-align: center;
-  border: 10px solid black;
+
 }
 
-.Menu ul li{
-  list-style: none;
+.Menu .Center li{
+  display: block;
+width: 400px;
+height: 400px;
+padding: auto;
+margin: 30px auto;
+border: 1px solid blue;
+background-color: white;
+}
 
+/*Menu Right*/
+.Menu .Right{
+display: table-cell;
+width: 70%;
+text-align: center;
+border: 10px solid black;
+}
+
+.Menu .Right li{
+  display: block;
+width: 400px;
+height: 400px;
+padding: auto;
+margin: 30px auto;
+border: 1px solid blue;
+background-color: white;
 }
