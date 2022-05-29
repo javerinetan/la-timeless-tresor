@@ -1,5 +1,5 @@
 :root{
-   --main-color:#be9c79;
+   --main-color:#BB9C75;
    --black: #000000;
    --white:#ffffff;
    --light-color:#666666;
@@ -15,7 +15,6 @@
    outline: none; border:none;
    text-decoration: none;
    text-transform: capitalize;
-
 }
 
 html{
@@ -25,7 +24,6 @@ html{
 }
 
 section{
-  padding: 1.9rem 1rem;
    max-width: 100%;
    margin:0 auto;
 }
@@ -36,6 +34,7 @@ section{
   margin-left: 0px;
   padding:3.1px 20px;
   text-align: left;
+  font-size: 1.3rem;
 }
 .btn:hover{
    background-color: var(--darkbrown);
@@ -44,7 +43,6 @@ section{
 a{
     color: var(--white);
     text-align: center;
-    font-size: 1.3rem;
   }
 
 .home-bg{
@@ -80,6 +78,7 @@ a{
    align-items: center;
    flex-wrap: wrap;
    gap:4rem;
+   padding: 1.9rem 1rem;
 }
 
 .about .content{

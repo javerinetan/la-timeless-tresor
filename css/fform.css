@@ -1,5 +1,5 @@
 :root{
-   --main-color:#be9c79;
+   --main-color:#BB9C75;
    --black: #000000;
    --white:#ffffff;
    --light-color:#666666;
@@ -28,7 +28,6 @@ html{
 }
 
 section{
-   padding:1.9rem 1rem;
    max-width: 100%;
    margin:0 auto;
 }
@@ -166,6 +165,7 @@ select{
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  font-size: 1.9rem;
 }
 
 .btn:hover{
@@ -220,7 +220,6 @@ select{
 a{
   color: var(--white);
   text-align: center;
-  font-size: 1.9rem;
 }
 /*form done page end*/
 
