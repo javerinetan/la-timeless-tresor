@@ -12,14 +12,7 @@
   width: 0.8rem !important;
 }
 
-*{
-   font-family: 'Nunito', sans-serif;
-   margin:0; padding:0;
-   box-sizing: border-box;
-   outline: none; border:none;
-   text-decoration: none;
-   text-transform: capitalize;
-}
+
 
 *::selection{
    background-color: var(--main-color);
@@ -138,6 +131,13 @@ section{
    font-size: 1.5rem;
 }
 
+.a-style {
+  color: #aa8453;
+  font-size: 18px;
+  display: inline-block;
+  border-bottom: 1px solid;
+  transition: all 0.4s ease-out;
+}
 /**Signature**/
 
 .signature .box-container{
