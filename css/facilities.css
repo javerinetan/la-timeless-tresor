@@ -101,14 +101,11 @@ a{
   align-items: center;
   flex-wrap: wrap;
   gap:2.5rem;
-  padding-left: 1.9rem;
-  padding-right: 1.9rem;
-  padding-bottom: 6.3rem;
-  max-width: 1300px;
+  padding: 0 1.9rem 6.3rem;
 }
 
 .facilities .image{
-  flex:1 1 27rem;
+  flex:1 1 26rem;
 }
 
 .facilities .image img{
@@ -117,6 +114,7 @@ a{
 
 .facilities .content{
   flex:1 1 25rem;
+  padding-right: 1rem;
 }
 
 .facilities .content h3{
