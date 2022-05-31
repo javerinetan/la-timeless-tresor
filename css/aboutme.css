@@ -87,11 +87,11 @@ section{
 }
 /**history**/
 .history{
-   display: flex;
-   align-items: center;
-   flex-wrap: wrap;
-   gap:2.5rem;
-   padding:31.25px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap:2.5rem;
+  padding: 31.25px;
 }
 
 .history .image{
@@ -100,6 +100,7 @@ section{
 
 .history .image img{
    width: 100%;
+    border-radius:5%;
 }
 
 .history .content{
@@ -111,14 +112,14 @@ section{
    font-size: 2.8rem;
    color:var(--black);
    font-family: 'Libre Bodoni', serif;
-   padding-bottom: 1rem;
+   padding-bottom: 0.625rem;
 }
 
 .history .content p{
-   padding:1rem 0;
-   line-height: 1.25rem;
-   color:var(--light-color);
-   font-size: 0.9rem;
+  padding:1rem 0;
+  line-height: 1.25rem;
+  color:var(--light-color);
+  font-size: 0.9rem;
 }
 
 .a-style {
