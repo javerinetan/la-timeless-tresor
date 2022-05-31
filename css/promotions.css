@@ -12,12 +12,6 @@
   width: 0.8rem !important;
 }
 
-html{
-   font-size: 62.5%;
-   overflow-x: hidden;
-   scroll-behavior: smooth;
-   scroll-padding-top: 6.5rem;
-}
 
 section{
    padding:3rem 2rem;
@@ -31,7 +25,7 @@ section{
 }
 
 .heading img{
-   height: 4rem;
+   height: 2.5rem;
    margin-bottom: 1rem;
 }
 
@@ -63,21 +57,21 @@ section{
 }
 
 .promotions-bg .promotions{
-   min-height: 70rem;
+   min-height: 40rem;
    display: flex;
    align-items: center;
 
 }
 
 .promotions-bg .promotions .content{
-   width: 50rem;
+   width: 40rem;
    text-align: center;
 }
 
 .promotions-bg .promotions .content h3{
-   font-size: 6rem;
-   color:var(--white);
-   font-family: 'Libre Bodoni', serif;
+  font-size: 3.5rem;
+  color:var(--white);
+  font-family: 'Libre Bodoni', serif;
 }
 .promotions-bg .promotions .content h4{
    font-size: 5rem;
@@ -85,22 +79,22 @@ section{
 }
 
 .promotions-bg .promotions .content p{
-   padding:1rem 0;
-   font-size: 1.6rem;
-   color:var(--white);
-   line-height: 2;
+  padding:1rem 0;
+  font-size: 1rem;
+  color:var(--white);
+  line-height: 2;
 }
 /**attraction scooper**/
 .scooper{
    display: flex;
    align-items: center;
    flex-wrap: wrap;
-   gap:4rem;
-   padding: 50px;
+   gap:2.5rem;
+   padding: 31.25px;
 }
 
 .scooper .image{
-   flex:1 1 40rem;
+   flex:1 1 25rem;
 }
 
 .scooper .image img{
@@ -109,12 +103,12 @@ section{
 }
 
 .scooper .content{
-   flex:1 1 40rem;
+   flex:1 1 25rem;
 }
 
 
 .scooper .content h3{
-   font-size: 4.5rem;
+   font-size: 2.8rem;
    color:var(--black);
    font-family: 'Libre Bodoni', serif;
    padding-bottom: 1rem;
