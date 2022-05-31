@@ -122,6 +122,7 @@ section{
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
+
 }
 
 /* Position the "next button" to the right */
@@ -176,6 +177,7 @@ section{
   animation-name: fade;
   animation-duration: 1.5s;
 }
+
 
 @keyframes fade {
   from {opacity: .4}
