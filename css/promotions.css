@@ -106,7 +106,7 @@ section{
    font-size: 2.8rem;
    color:var(--black);
    font-family: 'Libre Bodoni', serif;
-   padding-bottom: 1rem;
+   padding-bottom: 0.625rem;
 }
 
 .scooper .content p{
@@ -201,15 +201,15 @@ section{
 /**family*/
 
 .family .box-container{
-   display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
-   gap:10rem;
-   align-items: flex-start;
-   padding: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16.875rem, 1fr));
+  gap:6.25rem;
+  align-items: flex-start;
+  padding: 31.25px
 }
 
 .family .heading h5{
-  font-size: 1.5rem;
+  font-size: 0.93rem;
 }
 
 .family .box-container .box{
@@ -224,22 +224,22 @@ section{
 }
 
 .family .box-container .box h3{
-   font-size: 2rem;
+   font-size: 1.25rem;
    color:var(--black);
    margin:1rem 0 ;
    font-family: 'Libre Bodoni', serif;
 }
 
 .family .box-container .box p{
-   line-height: 2rem;
-   font-size: 1.5rem;
+   line-height: 1.25rem;
+   font-size: 0.9375rem;
    color:var(--light-color);
 }
 
 
 .family .box-container .box h4{
-   line-height: 2rem;
-   font-size: 1.5rem;
+   line-height: 1.25rem;
+   font-size: 0.9375rem;
    color:var(--black);
    padding-bottom: 1rem;
 }
