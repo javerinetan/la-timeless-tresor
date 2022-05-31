@@ -41,12 +41,12 @@ section{
 
 .btn{
    display: inline-block;
-   margin-top: 1rem;
+   margin-top: 0.625rem;
    background-color: var(--main-color);
    cursor: pointer;
    color:var(--white);
-   font-size: 1.8rem;
-   padding:1rem 3rem;
+   font-size: 1.125rem;
+   padding:0.625rem 1.875rem;
 }
 
 .btn:hover{
@@ -71,7 +71,6 @@ section{
 .welcome-bg .welcome .content{
    width: 40rem;
    text-align: center;
-   padding-left: 10rem;
 }
 
 .welcome-bg .welcome .content h3{
