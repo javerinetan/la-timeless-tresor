@@ -123,15 +123,21 @@ footer{
   display: table;
   height: auto;
   width: 100%;
-  border: 10px solid black;
+  border: 5px solid black;
 }
 
 .Testimonies img{ /*Image*/
-  display: table-cell;
+  float: left;
+  border: 1px solid black;
+  height: 400px;
+  width: 400px;
+  padding: 50px;
 
 }
 
 .Testimonies p{ /*Text*/
-  display: table-cell;
-
+  text-align: center;
+  padding: 120  px;
+  margin-left: 350px;
+  border: 10px solid black;
 }
