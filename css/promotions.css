@@ -14,9 +14,9 @@
 
 
 section{
-   padding:3rem 2rem;
-   max-width: 1300px;
-   margin:0 auto;
+  padding:1.875rem 1.25rem;
+  max-width: 100%;
+  margin:0 auto;
 }
 
 .heading{
@@ -24,25 +24,20 @@ section{
    margin-bottom: 3rem;
 }
 
-.heading img{
-   height: 2.5rem;
-   margin-bottom: 1rem;
-}
-
 .heading h3{
-   font-size:4rem;
+   font-size:2.5rem;
    color:var(--black);
    font-family: 'Libre Bodoni', serif;;
 }
 
 .btn{
-   display: inline-block;
-   margin-top: 1rem;
-   background-color: var(--main-color);
-   cursor: pointer;
-   color:var(--white);
-   font-size: 1.8rem;
-   padding:1rem 3rem;
+  display: inline-block;
+  margin-top: 0.625rem;
+  background-color: var(--main-color);
+  cursor: pointer;
+  color:var(--white);
+  font-size: 1.125rem;
+  padding:0.625rem 1.875rem;
 }
 
 .btn:hover{
@@ -115,10 +110,10 @@ section{
 }
 
 .scooper .content p{
-   padding:1rem 0;
-   line-height: 2rem;
-   color:var(--light-color);
-   font-size: 1.5rem;
+  padding:1rem 0;
+  line-height: 1.25rem;
+  color:var(--light-color);
+  font-size: 0.9rem;
 }
 
 /**golf**/
@@ -127,11 +122,11 @@ section{
    align-items: center;
    flex-wrap: wrap;
    gap:4rem;
-   padding: 50px;
+   padding: 31.25px;
 }
 
 .golf .image{
-   flex:1 1 40rem;
+   flex:1 1 25rem;
 }
 
 .golf .image img{
@@ -140,22 +135,22 @@ section{
 }
 
 .golf .content{
-   flex:1 1 40rem;
+   flex:1 1 25rem;
 }
 
 
 .golf .content h3{
-   font-size: 4.5rem;
-   color:var(--black);
-   font-family: 'Libre Bodoni', serif;
-   padding-bottom: 1rem;
+  font-size: 2.8rem;
+  color:var(--black);
+  font-family: 'Libre Bodoni', serif;
+  padding-bottom: 1rem;
 }
 
 .golf .content p{
-   padding:1rem 0;
-   line-height: 2rem;
-   color:var(--light-color);
-   font-size: 1.5rem;
+  padding:1rem 0;
+  line-height: 1.25rem;
+  color:var(--light-color);
+  font-size: 0.9rem;
 }
 
 
@@ -163,14 +158,14 @@ section{
 
 .couple .box-container{
    display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
-   gap:10rem;
+   grid-template-columns: repeat(auto-fit, minmax(16.875rem, 1fr));
+   gap:6.25rem;
    align-items: flex-start;
-   padding: 50px
+   padding: 31.25px
 }
 
 .couple .heading h5{
-  font-size: 1.5rem;
+  font-size: 0.93rem;
 }
 
 .couple .box-container .box{
@@ -179,27 +174,27 @@ section{
 
 
 .couple .box-container .box img{
-   height: 28rem;
+   height: 17.5rem;
    margin-bottom: .5rem;
    border-radius:10%;
 }
 
 .couple .box-container .box h3{
-   font-size: 2rem;
+   font-size: 0.9375rem;
    color:var(--black);
    margin:1rem 0;
    font-family: 'Libre Bodoni', serif;
 }
 
 .couple .box-container .box h4{
-   font-size: 1.2rem;
+   font-size: 0.75rem;
    color:var(--black);
    margin:1rem 0;
 }
 
 .couple .box-container .box p{
-   line-height: 2;
-   font-size: 1.5rem;
+   line-height: 1.25;
+   font-size: 0.9375rem;
    color:var(--light-color);
 }
 
