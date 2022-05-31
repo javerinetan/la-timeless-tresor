@@ -123,7 +123,7 @@ section{
 
 .a-style {
   color: #aa8453;
-  font-size: 18px;
+  font-size:  1.25rem;
   display: inline-block;
   border-bottom: 1px solid;
   transition: all 0.4s ease-out;
