@@ -78,9 +78,8 @@ text-align: center;
 
 /*Menu Images*/
 .Menu img{
-  width: 400px;
+  width: 100%;
   height:300px;
-
 }
 
 /*DropDown*/
@@ -148,7 +147,7 @@ text-align: center;
   height: 400px;
   padding: auto;
   margin: 30px auto;
-  border: 1px solid blue;
+  border: 10px solid #BB9C75;
   background-color: white;
 }
 
@@ -161,12 +160,13 @@ text-align: center;
 
 .Menu .Right li{ /*Blocks for the Food*/
   display: block;
-width: 400px;
-height: 400px;
-padding: auto;
-margin: 30px auto;
-border: 1px solid blue;
-background-color: white;
+  width: 400px;
+  height: 400px;
+  padding: auto;
+  margin: 30px auto;
+  border: 1px solid blue;
+  border: 10px solid #BB9C75;
+  background-color: white;
 }
 
 /*Testimony*/
