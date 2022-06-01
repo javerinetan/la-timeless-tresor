@@ -20,43 +20,33 @@
 }
 
 
-html{
-   font-size: 62.5%;
-   overflow-x: hidden;
-   scroll-behavior: smooth;
-   scroll-padding-top: 6.5rem;
-}
 
 section{
-   padding:3rem 2rem;
-   max-width: 1300px;
-   margin:0 auto;
+  max-width: 100%;
+  margin:0 auto;
 }
 
 .heading{
    text-align: center;
-   margin-bottom: 3rem;
-}
+   margin-bottom: 1.875rem;
+ }
 
-.heading img{
-   height: 4rem;
-   margin-bottom: 1rem;
-}
 
 .heading h3{
-   font-size:4rem;
+   font-size: 2.5rem;
    color:var(--black);
    font-family: 'Libre Bodoni', serif;
+   padding-top:2rem;
 }
 
 .btn{
    display: inline-block;
-   margin-top: 1rem;
+   margin-top: 0.625rem;
    background-color: var(--main-color);
    cursor: pointer;
    color:var(--white);
-   font-size: 1.8rem;
-   padding:1rem 3rem;
+   font-size: 1.125rem;
+   padding:0.625rem 1.875rem;
 }
 
 .btn:hover{
@@ -72,80 +62,89 @@ section{
 }
 
 .welcome-bg .welcome{
-   min-height: 70rem;
+   min-height: 40rem;
    display: flex;
    align-items: center;
 
 }
 
 .welcome-bg .welcome .content{
-   width: 50rem;
+   width: 40rem;
    text-align: center;
 }
 
 .welcome-bg .welcome .content h3{
-   font-size: 6rem;
+   font-size: 3.5rem;
    color:var(--white);
    font-family: 'Libre Bodoni', serif;
 }
 
 .welcome-bg .welcome .content p{
    padding:1rem 0;
-   font-size: 1.6rem;
+   font-size: 1rem;
    color:var(--white);
    line-height: 2;
 }
 /**history**/
 .history{
-   display: flex;
-   align-items: center;
-   flex-wrap: wrap;
-   gap:4rem;
-   padding:50px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap:2.5rem;
+  padding: 31.25px;
 }
 
 .history .image{
-   flex:1 1 40rem;
+   flex:1 1 25rem;
 }
 
 .history .image img{
    width: 100%;
+    border-radius:5%;
 }
 
 .history .content{
-   flex:1 1 40rem;
+   flex:1 1 25rem;
 }
 
 
 .history .content h3{
-   font-size: 4.5rem;
+   font-size: 2.8rem;
    color:var(--black);
    font-family: 'Libre Bodoni', serif;
-   padding-bottom: 1rem;
+   padding-bottom: 0.625rem;
 }
 
 .history .content p{
-   padding:1rem 0;
-   line-height: 2rem;
-   color:var(--light-color);
-   font-size: 1.5rem;
+  padding:1rem 0;
+  line-height: 1.25rem;
+  color:var(--light-color);
+  font-size: 0.9rem;
 }
 
 .a-style {
   color: #aa8453;
-  font-size: 18px;
+  font-size:  1.25rem;
   display: inline-block;
   border-bottom: 1px solid;
   transition: all 0.4s ease-out;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 /**Signature**/
 
 .signature .box-container{
    display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
-   gap:1.5rem;
+   grid-template-columns: repeat(auto-fit, minmax(16.875rem, 1fr));
+   gap:1.1rem;
    align-items: flex-start;
-   padding: 50px;
+   padding: 31.25px;
 }
 
 .signature .box-container .box{
@@ -154,36 +153,38 @@ section{
 
 
 .signature .box-container .box img{
-   height: 8rem;
+   height: 7rem;
    margin-bottom: .5rem;
+   padding-bottom: 2rem;
 }
 
 .signature .box-container .box h3{
-   font-size: 2rem;
+   font-size: 1.25rem;
    color:var(--black);
    margin:1rem 0;
    font-family: 'Libre Bodoni', serif;
+
 }
 
 .signature .box-container .box p{
-   line-height: 2rem;
-   font-size: 1.5rem;
+   line-height: 1.25rem;
+   font-size: 0.93rem;
    color:var(--light-color);
 }
 
 .signature .heading h5{
-   line-height: 2rem;
-   font-size: 1.5rem;
+   line-height: 1.25rem;
+   font-size: 0.93rem;
    color:var(--black);
 }
 
 /**awards**/
 .award .box-container{
    display: grid;
-   grid-template-columns: repeat(auto-fit, 33rem);
-   gap:1.5rem;
+   grid-template-columns: repeat(auto-fit, 18rem);
+   gap:0.9rem;
    justify-content: center;
-   padding: 50px;
+   padding-bottom: 2rem;
 }
 
 .award .box-container img{
@@ -194,10 +195,10 @@ section{
 /**team*/
 .team .box-container{
    display: grid;
-   grid-template-columns: repeat(auto-fit, 20rem);
-   gap:1.5rem;
+   grid-template-columns: repeat(auto-fit, 12.5rem);
+   gap:0.9rem;
    justify-content: center;
-   padding: 50px;
+   padding-bottom: 2rem;
 }
 
 .team .box-container .box{
@@ -206,7 +207,7 @@ section{
 
 
 .team .box-container .box h3{
-   font-size: 2rem;
+   font-size: 1.25rem;
    color:var(--black);
 }
 
@@ -217,12 +218,12 @@ section{
    display: flex;
    align-items: center;
    flex-wrap: wrap;
-   gap:2rem;
-   padding: 50px
+   gap:1.25rem;
+   padding: 31.25px
 }
 
 .contact .row .image{
-   flex:1 1 50rem;
+   flex:1 1 31.25rem;
 }
 
 .contact .row .image img{
@@ -230,23 +231,23 @@ section{
 }
 
 .contact .row form{
-   flex:1 1 30rem;
+   flex:1 1 31.25rem;
    border:var(--border);
-   padding:2rem;
+   padding:1rem;
    text-align: center;
 }
 
 .contact .row form h3{
-   font-size: 2.5rem;
-   margin-bottom: 1rem;
+   font-size: 1.56rem;
+   margin-bottom: 0.6rem;
    color:var(--black);
    font-family: 'Libre Bodoni', serif;
 }
 
 .contact .row form .box{
    width: 100%;
-   padding:1.4rem;
-   font-size: 1.8rem;
+   padding:0.5rem;
+   font-size: 1.125rem;
    color:var(--black);
    border:var(--border);
    margin:1rem 0;
