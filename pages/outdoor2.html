@@ -117,10 +117,16 @@
 
         <label for="text">Name:</label>
         <input type="text" name="name" required class="box" maxlength="20" placeholder="enter your name">
-        <label for="tel">Phone Number( Sg numbers only):</label>
+        <div class="form-container" style="padding: 0px 7.5px 0px 0px">
+        <label for="tel">Phone Number:</label>
         <input type="tel" name="phone" required class="box" maxlength="8" placeholder="enter your phone number" min="80000000" max="9999999999" onkeypress="if(this.value.length == 8) return false">
-        <label for="email">Email:</label>
-        <input type="email" name="email"required class="box" maxlengt required class="box" maxlength="50" placeholder="enter your email">
+        </div>
+        <div class="form-container" style="padding: 0px 0px 0px 7.5px">
+          <label for="email">Email:</label>
+          <input type="email" name="email"required class="box" maxlengt required class="box" maxlength="50" placeholder="enter your email">
+        </div>
+        <label for="information">Any thing we should take note:</label>
+        <input type="email" name="email"required class="box" maxlengt required class="box" maxlength="1000" placeholder="Allegies,etc">
 
         <button onclick="myFunction()" name="send" value="send message" class="btn"  id="Nextbtn">Next</button>
 
