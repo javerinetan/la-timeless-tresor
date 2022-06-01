@@ -8,31 +8,24 @@
   width: 0.8rem !important;
 }
 
-html{
-   font-size: 62.5%;
-   overflow-x: hidden;
-   scroll-behavior: smooth;
-   scroll-padding-top: 6.5rem;
-}
-
 section{
-   padding:3rem 2rem;
+   padding:1.875rem 1.25rem;
    max-width: 100%;
    margin:0 auto;
 }
 
 .heading{
    text-align: center;
-   margin-bottom: 3rem;
+   margin-bottom: 1.875rem;
 }
 
 .heading img{
-   height: 4rem;
+   height: 2.5rem;
    margin-bottom: 1rem;
 }
 
 .heading h3{
-   font-size:4rem;
+   font-size:2.5rem;
    color:var(--black);
    font-family: 'Libre Bodoni', serif
 }
@@ -43,8 +36,8 @@ section{
    background-color: var(--main-color);
    cursor: pointer;
    color:var(--white);
-   font-size: 1.8rem;
-   padding:1rem 3rem;
+   font-size: 1.125rem;
+   padding:0.625rem 1.875rem;
 }
 
 .btn:hover{
@@ -61,26 +54,26 @@ section{
 }
 
 .restaurantreservation-bg .restaurantreservation{
-   min-height: 70rem;
+   min-height: 40rem;
    display: flex;
    align-items: center;
 
 }
 
 .restaurantreservation-bg .restaurantreservation .content{
-   width: 50rem;
+   width: 40rem;
    text-align: center;
 }
 
 .restaurantreservation-bg .restaurantreservation .content h3{
-   font-size: 6rem;
+   font-size: 3.5rem;
    color:var(--white);
    font-family: 'Libre Bodoni', serif;
 }
 
 .restaurantreservation-bg .restaurantreservation .content p{
    padding:1rem 0;
-   font-size: 1.6rem;
+   font-size: 1rem;
    color:var(--white);
    line-height: 2;
 }
@@ -91,8 +84,8 @@ section{
 
 .reserved .box-container{
    display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
-   gap:2.5rem;
+   grid-template-columns: repeat(auto-fit, minmax(31.25rem, 1fr));
+   gap:1.56rem;
    align-items: flex-start;
 }
 
@@ -104,27 +97,26 @@ section{
 
 .reserved .box-container .box img{
    width:100%;
-   height:45rem;
-
+   height:28.1rem;
    margin-bottom: 0.5rem;
    align-items: center;
 }
 
 .reserved .box-container .box h3{
-   font-size: 2rem;
+   font-size: 1.25rem;
    color:var(--black);
    margin:1rem 0;
    font-family: 'Libre Bodoni', serif;
 }
 
 .reserved .box-container .box p{
-   line-height: 2rem;
-   font-size: 1.5rem;
+   line-height: 1.25rem;
+   font-size: 0.93rem;
    color:var(--light-color);
 }
 
 .reserved .heading h5{
-   line-height: 2rem;
-   font-size: 1.5rem;
+   line-height: 1.25rem;
+   font-size: 0.93rem;
    color:var(--black);
 }
