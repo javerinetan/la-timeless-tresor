@@ -118,6 +118,7 @@ text-align: center;
 
 .dropdownfab:hover .dropdown-contentfab {
   display: block;
+  background-color: #F8F5F0;
 }
 
 
