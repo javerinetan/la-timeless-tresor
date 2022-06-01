@@ -19,17 +19,11 @@
 }
 
 
-html{
-   font-size: 62.5%;
-   overflow-x: hidden;
-   scroll-behavior: smooth;
-   scroll-padding-top: 6.5rem;
-}
 
 section{
-   padding:3rem 2rem;
-   max-width: 1300px;
-   margin:0 auto;
+  padding:1.875rem 1.25rem;
+  max-width: 100%;
+  margin:0 auto;
 }
 
 .heading{
@@ -38,7 +32,7 @@ section{
 }
 
 .heading img{
-   height: 4rem;
+   height: 2.5rem;
    margin-bottom: 1rem;
 }
 
@@ -54,8 +48,8 @@ section{
    background-color: var(--main-color);
    cursor: pointer;
    color:var(--white);
-   font-size: 1.8rem;
-   padding:1rem 3rem;
+   font-size: 1.125rem;
+   padding:0.625rem 1.875rem;
 }
 
 .btn:hover{
@@ -79,7 +73,7 @@ section{
 }
 
 .intro-bg .intro{
-   min-height: 40rem;
+   min-height: 25rem;
    display: flex;
    align-items: center;
 
@@ -92,14 +86,14 @@ section{
 }
 
 .intro-bg .intro .content h3{
-   font-size: 6rem;
+   font-size: 3.75rem;
    color:var(--white);
    font-family: 'Libre Bodoni', serif;
 }
 
 .intro-bg .intro .content p{
    padding:1rem 0;
-   font-size: 1.6rem;
+   font-size: 1rem;
    color:var(--white);
    line-height: 2rem;
 }
@@ -112,25 +106,25 @@ section{
    align-items: center;
    flex-wrap: wrap;
    gap:4rem;
-   padding: 50px;
+   padding: 31.25px;
 }
 
 .Family .image{
-   flex:1 1 40rem;
+   flex:1 1 25rem;
 }
 
 .Family .image img{
    width: 100%;
-   height: 45rem;
+   height: 28.125rem;
 }
 
 .Family .content{
-   flex:1 1 40rem;
+   flex:1 1 25rem;
 }
 
 
 .Family .content h3{
-   font-size: 4.5rem;
+   font-size: 2.8125rem;
    color:var(--black);
    font-family: 'Libre Bodoni', serif;
    padding-bottom: 1rem;
@@ -138,9 +132,9 @@ section{
 
 .Family .content p{
    padding:1rem 0;
-   line-height: 2rem;
+   line-height: 1.25rem;
    color:var(--light-color);
-   font-size: 1.5rem;
+   font-size: 0.9375rem;
 }
 
 .price p{
@@ -158,26 +152,26 @@ section{
    display: flex;
    align-items: center;
    flex-wrap: wrap;
-   gap:4rem;
-   padding: 50px;
+   gap:2.5rem;
+   padding: 31.25px;
 }
 
 .Classique .image{
-   flex:1 1 40rem;
+   flex:1 1 25rem;
 }
 
 .Classique .image img{
   width: 100%;
-  height: 40rem;
+  height: 25rem;
 }
 
 .Classique .content{
-   flex:1 1 40rem;
+   flex:1 1 25rem;
 }
 
 
 .Classique .content h3{
-   font-size: 4.5rem;
+   font-size: 2.8125rem;
    color:var(--black);
    font-family: 'Libre Bodoni', serif;
    padding-bottom: 1rem;
@@ -185,37 +179,37 @@ section{
 
 .Classique .content p{
    padding:1rem 0;
-   line-height: 2rem;
+   line-height: 1.25rem;
    color:var(--light-color);
-   font-size: 1.5rem;
+   font-size: 0.9375rem;
 }
 
 
 /**course3**/
 .digi{
-   display: flex;
-   align-items: center;
-   flex-wrap: wrap;
-   gap:4rem;
-   padding: 50px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap:2.5rem;
+  padding: 31.25px;
 }
 
 .digi .image{
-   flex:1 1 40rem;
+   flex:1 1 25rem;
 }
 
 .digi .image img{
   width: 100%;
-  height: 30rem;
+  height: 18.75rem;
 }
 
 .digi .content{
-   flex:1 1 40rem;
+   flex:1 1 25rem;
 }
 
 
 .digi .content h3{
-   font-size: 4.5rem;
+   font-size: 2.8125rem;
    color:var(--black);
    font-family: 'Libre Bodoni', serif;
    padding-bottom: 1rem;
@@ -223,7 +217,7 @@ section{
 
 .digi .content p{
    padding:1rem 0;
-   line-height: 2rem;
+   line-height: 1.25rem;
    color:var(--light-color);
-   font-size: 1.5rem;
+   font-size: 0.9375rem;
 }
