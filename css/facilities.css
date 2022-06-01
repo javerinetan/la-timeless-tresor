@@ -32,13 +32,29 @@ section{
   background-color: var(--main-color);
   line-height: 18.8px;
   margin-left: 0px;
-  padding:3.1px 20px;
+  padding:5px 35px;
   text-align: left;
-  font-size: 1.3rem;
+  font-size: 1.3rem ;
+  color: white !important;
 }
 
 .btn:hover{
    background-color: var(--darkbrown);
+}
+
+.ti-angle-right {
+  color: white !important;
+}
+
+.btn:hover .ti-angle-right {
+  opacity: 1;
+  margin-right: 1px;
+}
+
+.btn .ti-angle-right {
+  color: white !important;
+  font-size: 1rem;
+  font-weight: bold;
 }
 
 a{
