@@ -99,6 +99,7 @@ text-align: center;
   z-index: 1;
   border: 10px solid black;
   width: 400px;
+  height: 100px
 }
 
 .dropdownfab:hover .dropdown-contentfab {
