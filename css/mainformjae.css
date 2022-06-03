@@ -169,6 +169,7 @@ select{
   background-color: white;
   height: 3.125rem;
   font-size: 1.12rem;
+  margin:1rem 0;
 }
 
 /**buttons color**/
@@ -242,4 +243,5 @@ select{
   font-size: 1.3rem;
   padding-left: 0.7rem;
   padding-right: 0.7rem;
+  margin:1rem 0;
 }
