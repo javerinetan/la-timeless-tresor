@@ -162,7 +162,7 @@ select{
   line-height: 18.8px;
   margin-top: 6.3px;
   margin-left: 0px;
-  padding:10px 5px 10px 25px;
+  padding:10px 12px 10px 30px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -233,13 +233,13 @@ input #submit{
 
 .done .box-container .box #back1{
   float:left;
-  margin-left: 6.5rem;
+  margin-left: 6rem;
   font-size: 1.3rem;
 }
 
 .done .box-container .box #back2{
   float:right;
-  margin-right: 6.5rem;
+  margin-right: 6rem;
   font-size: 1.3rem;
 }
 

@@ -32,7 +32,7 @@ section{
   background-color: var(--main-color);
   line-height: 18.8px;
   margin-left: 0px;
-  padding:5px 35px;
+  padding:5px 30px 5px 35px;
   text-align: left;
   font-size: 1.3rem ;
   color: white !important;
