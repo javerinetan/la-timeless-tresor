@@ -84,12 +84,12 @@ text-align: center;
 }
 
 /*DropDown*/
-.dropdownfab{
+.dropdownfab{ /*Main Dropdown*/
   position: relative;
   display: inline-block;
 }
 
-.dropdown-contentfab{
+.dropdown-contentfab{ /*Content Of Dropdown*/
   display: none;
   position: absolute;
   background-color: #f9f9f9;
@@ -98,13 +98,13 @@ text-align: center;
   z-index: 1;
   border: 10px solid #F5EFE8;
   width: 100%;
-  height: 100px;
-  overflow: scroll;
+  height: auto;
+  overflow: visible;
   animation: growDown 300ms ease-in-out forwards;
 }
 
 
-@keyframes growDown {
+@keyframes growDown { /*Animation For the Dropdown*/
   0% {
     transform: scaleY(0)
   }
@@ -117,11 +117,22 @@ text-align: center;
 }
 
 
-.dropdownfab:hover .dropdown-contentfab {
+.dropdownfab:hover .dropdown-contentfab { /*When hover over the image, Dropdown box appears*/
   display: block;
   background-color: #F8F5F0;
 }
 
+.Add{ /*Add Box*/
+  font-size: 50px;
+  background-color: #F5EFE8;
+  border-radius: 15px;
+  padding: 5px;
+}
+
+.Add:hover{ /*Add Box Hover*/
+  background-color: white;
+  font-weight: bolder;
+}
 
 /*Menu Center*/
 .Menu .Center{ /*Center Food*/
@@ -137,9 +148,10 @@ text-align: center;
   height: 400px;
   padding: auto;
   margin: 30px auto;
-  border: 10px solid #AA8453;
+  border: 10px solid #F8F5F0;
   border-style: dotted;
-  background-color: #BB9C75;
+  border-radius: 25px;
+  background-color: #F5EFE8;
 }
 
 /*Menu Right*/
@@ -155,9 +167,10 @@ text-align: center;
   height: 400px;
   padding: auto;
   margin: 30px auto;
-  border: 10px solid #AA8453;
+  border: 10px solid #F8F5F0;
   border-style: dotted;
-  background-color: #BB9C75;
+  border-radius: 25px;
+  background-color: #F5EFE8;
 }
 
 /*Testimony*/
