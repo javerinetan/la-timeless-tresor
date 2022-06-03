@@ -266,7 +266,7 @@ text-align: center;
 }
 
 /*Testimony*/
-footer{ /*Table for Testimony*/
+.Testimonies{ /*Table for Testimony*/
   display: table;
   height: auto;
   width: 100%;
