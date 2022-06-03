@@ -7,13 +7,6 @@
     this.events = events;
     this.current = moment().date(1);
     this.draw();
-    var current = document.querySelector('.today');
-    if(current) {
-      var self = this;
-      window.setTimeout(function() {
-        self.openDay(current);
-      }, 500);
-    }
   }
 
   Calendar.prototype.draw = function() {

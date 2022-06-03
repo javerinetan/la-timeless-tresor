@@ -248,7 +248,7 @@
 }
 
 .book-btn.alt-color {
-  background-color: #aa8453 !important;
+  background-color: #c4ac80 !important;
   color: white;
 }
 
@@ -272,7 +272,7 @@
   text-align: center;
   padding: 13px 13px 8px 13px;
   border-radius: 50%;
-  background-color: #aa8453;
+  background-color: #c4ac80;
   transition: all 1s ease-in-out;
   animation: jump 1.5s ease-in-out;
   animation-iteration-count: infinite;

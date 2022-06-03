@@ -650,7 +650,7 @@ div .container {
   margin-left: 2%;
   margin-bottom: 5%;
   margin-right: 2%;
-  height: 300px;
+  height: 350px;
   box-shadow: 1px 1px 10px #888888;
 }
 
@@ -660,7 +660,7 @@ div .container {
   margin-left: 2%;
   margin-bottom: 5%;
   margin-right: 2%;
-  height: 300px;
+  height: 350px;
   box-shadow: 1px 1px 10px #888888;
 }
 
@@ -670,7 +670,7 @@ div .container {
   margin-left: 2%;
   margin-bottom: 5%;
   margin-right: 2%;
-  height: 300px;
+  height: 350px;
   box-shadow: 1px 1px 10px #888888;
 }
 
@@ -680,7 +680,7 @@ div .container {
   margin-left: 2%;
   margin-bottom: 5%;
   margin-right: 2%;
-  height: 300px;
+  height: 350px;
   box-shadow: 1px 1px 10px #888888;
 }
 
@@ -722,6 +722,11 @@ div .container {
   transition: color .35s cubic-bezier(.3,.1,.3,1),background-color .35s cubic-bezier(.3,.1,.3,1);
   margin-left: 20px;
   margin-top: 40px;
+}
+
+.cta:hover {
+  background-color: #c4ac80;
+  color: white;
 }
 
 /* SCROLLBAR */
