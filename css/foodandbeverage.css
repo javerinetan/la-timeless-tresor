@@ -145,6 +145,7 @@ p{
   border-radius: 30px 15px;
   background-color: #F8F5F0;
   text-align: center;
+  cursor: default;
 }
 
 
@@ -158,6 +159,7 @@ p{
   border-radius: 15px 30px;
   background-color: #F8F5F0;
   text-align: center;
+  cursor: pointer;
 }
 
 .Menu .Left .Course li:hover{ /*Hover over types of food*/
