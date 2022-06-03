@@ -7,8 +7,7 @@
 }
 
 body {
-  background-color: black;
-  height: 1000px;
+  background-color: black
 }
 
 h1, h2 {
@@ -122,6 +121,7 @@ h1, h2 {
 }
 
 #myImg:hover {opacity: 0.7;}
+
 
 /* The Modal (background) */
 .modal {
@@ -266,14 +266,15 @@ div .container {
   margin: 0 auto;
   height: 580px;
   overflow: hidden;
-  margin-right: 80%;
   margin-top: 100px;
+  float: left;
+  box-shadow: 5px 5px 10px #888888;
 }
 
 .header {
   height: 50px;
   width: 420px;
-  background: rgba(66, 66, 66, 1);
+  background: #B0A48D;
   text-align: center;
   position:relative;
   z-index: 100;
@@ -286,6 +287,7 @@ div .container {
   line-height: 50px;
   font-weight: 100;
   letter-spacing: 1px;
+  color: white;
 }
 
 .left, .right {
@@ -300,13 +302,13 @@ div .container {
 
 .left {
   border-width: 7.5px 10px 7.5px 0;
-  border-color: transparent rgba(160, 159, 160, 1) transparent transparent;
+  border-color: transparent white transparent transparent;
   left: 20px;
 }
 
 .right {
   border-width: 7.5px 0 7.5px 10px;
-  border-color: transparent transparent transparent rgba(160, 159, 160, 1);
+  border-color: transparent transparent transparent white;
   right: 20px;
 }
 
@@ -348,10 +350,6 @@ div .container {
   opacity: 1;
 }
 
-.week {
- background: #4A4A4A;
-}
-
 .day {
   display: inline-block;
   width: 60px;
@@ -359,7 +357,7 @@ div .container {
   text-align: center;
   vertical-align: top;
   cursor: pointer;
-  background: #4A4A4A;
+  background: white;
   position: relative;
   z-index: 100;
 }
@@ -376,7 +374,7 @@ div .container {
   font-size: 9px;
   text-transform: uppercase;
   margin-bottom: 5px;
-  color: rgba(255, 255, 255, .5);
+  color: black;
   letter-spacing: .7px;
 }
 
@@ -506,7 +504,7 @@ div .container {
   bottom: 0;
   width: 100%;
   height: 30px;
-  background: rgba(60, 60, 60, 1);
+  background: white;
   line-height: 30px;
 
 }
@@ -623,4 +621,161 @@ div .container {
 }
 @keyframes fadeOutShink  {
   to { opacity: 0; padding: 0px; height: 0px; }
+}
+
+.eventslist {
+  display: block;
+  width: 800px;
+  height: 975px;
+  padding: 5px;
+  float: right;
+  margin-top: 80px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.event1 {
+  background-color: white;
+  margin-top: 2%;
+  margin-left: 2%;
+  margin-bottom: 5%;
+  margin-right: 2%;
+  height: 350px;
+  box-shadow: 1px 1px 10px #888888;
+}
+
+.event2 {
+  background-color: white;
+  margin-top: 2%;
+  margin-left: 2%;
+  margin-bottom: 5%;
+  margin-right: 2%;
+  height: 300px;
+  box-shadow: 1px 1px 10px #888888;
+}
+
+.event3 {
+  background-color: white;
+  margin-top: 2%;
+  margin-left: 2%;
+  margin-bottom: 5%;
+  margin-right: 2%;
+  height: 300px;
+  box-shadow: 1px 1px 10px #888888;
+}
+
+.event4 {
+  background-color: white;
+  margin-top: 2%;
+  margin-left: 2%;
+  margin-bottom: 5%;
+  margin-right: 2%;
+  height: 300px;
+  box-shadow: 1px 1px 10px #888888;
+}
+
+.event5 {
+  background-color: white;
+  margin-top: 2%;
+  margin-left: 2%;
+  margin-bottom: 5%;
+  margin-right: 2%;
+  height: 300px;
+  box-shadow: 1px 1px 10px #888888;
+}
+
+.eventType {
+  font-size: 10px;
+  display: block;
+  float: left;
+}
+
+.eventdesc {
+  float: left;
+  font-size: 15px;
+  color: #777778;
+  padding-top: 50px;
+  padding-left: 20px;
+}
+
+.eventdesc2 {
+  font-family: Lucida Handwriting;
+  font-size: 15px;
+  color: #aa8453;
+  padding-top: 80px;
+  padding-left: 20px;
+}
+
+.eventdesc3 {
+  font-size: 15px;
+  color: black;
+  padding-top: 30px;
+  padding-left: 20px;
+}
+
+.cta {
+  display: inline-block;
+  padding: 1.25rem 4.375rem;
+  border: 1px solid #b0a48d;
+  color: #b0a48d;
+  position: relative;
+  transition: color .35s cubic-bezier(.3,.1,.3,1),background-color .35s cubic-bezier(.3,.1,.3,1);
+  margin-left: 20px;
+  margin-top: 40px;
+}
+
+/* SCROLLBAR */
+/* width */
+.eventslist ::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.eventslist ::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.eventslist ::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+.eventslist ::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+#eventimage1 {
+  padding: 20px;
+  width: 45%;
+  height: 100%;
+  float: left;
+}
+
+#eventimage2 {
+  padding: 20px;
+  width: 45%;
+  height: 100%;
+  float: left;
+}
+
+#eventimage3 {
+  padding: 20px;
+  width: 45%;
+  height: 100%;
+  float: left;
+}
+
+#eventimage4 {
+  padding: 20px;
+  width: 45%;
+  height: 100%;
+  float: left;
+}
+
+#eventimage5 {
+  padding: 20px;
+  width: 45%;
+  height: 100%;
+  float: left;
 }

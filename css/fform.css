@@ -161,15 +161,40 @@ select{
   line-height: 18.8px;
   margin-top: 6.3px;
   margin-left: 0px;
-  padding:10px 30px;
+  padding:10px 5px 10px 25px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  font-size: 1.9rem;
+  font-size: 1.5rem;
+  color: white !important;
 }
 
 .btn:hover{
   background-color: var(--darkbrown);
+}
+
+.ti-angle-right {
+  color: white !important;
+}
+
+.btn:hover .ti-angle-right {
+  opacity: 1;
+  margin-right: 1px;
+}
+
+.btn .ti-angle-right {
+  color: white !important;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+#submit{
+  padding:10px 10px !important;
+}
+
+input #submit{
+  padding:0;
+  width:20px;
 }
 
 /*form end*/

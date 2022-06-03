@@ -242,8 +242,8 @@ select{
 /*text in button*/
 .form a {
   color: var(--white);
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 31.25px;
+  margin-right: 31.25px;
   text-align:center;
 }
 

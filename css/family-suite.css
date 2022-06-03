@@ -86,7 +86,8 @@ hr {
 
 .room-info .amenities {
   width: 40%;
-  float: left;
+  float: right;
+  text-align: right;
 }
 
 .recommends {
