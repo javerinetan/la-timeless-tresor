@@ -178,10 +178,16 @@ h1, h2 {
 }
 
 .eventdesc {
-  font-size: 15px;
+  font-size: 25px;
   color: grey;
 }
 
 .eventdesc2 {
   color: #B0A48D;
+  font-size: 23px;
+  font-family: Lucida Handwriting;
+}
+
+.eventdesc3 {
+  font-size: 15px;
 }
