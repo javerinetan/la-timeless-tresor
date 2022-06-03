@@ -221,6 +221,7 @@ p{
 .Add:hover{ /*Add Box Hover*/
   background-color: white;
   font-weight: bolder;
+  cursor: pointer;
 }
 
 /*Menu Center*/
