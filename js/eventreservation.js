@@ -58,11 +58,11 @@ const openTL = new TimelineMax({ paused: true })
   }, 0)
   .to(".play-triangle", 1, {
     scaleX: 1,
-    ease: ExpoScaleEase.config(2, 1, Power2.easeInOut)
+    ease: Power2.easeInOut
   }, 0)
   .to(".play-triangle", 1, {
     rotationY: 0,
-    ease: ExpoScaleEase.config(10, .01, Power2.easeInOut)
+    ease: Power2.easeInOut
   }, 0)
   .to(".play-video", 1, {
     visibility: "visible",

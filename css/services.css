@@ -35,9 +35,9 @@ section{
   line-height: 15.6px;
   margin-top: 6.3px;
   margin-left: 0px;
-  padding:1.3px 9px;
+  padding:1.5px 13px;
   text-align: left;
-  font-size: .94rem;
+  font-size: 1rem;
 }
 .btn:hover{
    background-color: var(--darkbrown);
