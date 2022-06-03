@@ -14,26 +14,12 @@
 ::-webkit-scrollbar{
   width: 0.8rem !important;
 }
-*{
-   font-family: 'Nunito', sans-serif;
-   margin:0; padding:0;
-   box-sizing: border-box;
-   outline: none; border:none;
-   text-decoration: none;
-   text-transform: capitalize;
-}
 
-html{
-   font-size: 62.5%;
-   overflow-x: hidden;
-   scroll-behavior: smooth;
-   scroll-padding-top: 6.5rem;
-}
 
 section{
-   padding:3rem 2rem;
-   max-width: 100%;
-   margin:0 auto;
+  padding:1.875rem 1.25rem;
+  max-width: 100%;
+  margin:0 auto;
 }
 
 
@@ -47,7 +33,7 @@ section{
 }
 
 .main-bg .main{
-   min-height:60rem;
+   min-height:40rem;
    display: flex;
    align-items: center;
 
@@ -56,11 +42,11 @@ section{
 .main-bg .main .content{
   width: 100rem;
   text-align: center;
-  padding-top:14rem;
+  padding-top:8.75rem;
 }
 
 .main-bg .main .content h3{
-   font-size: 6rem;
+   font-size: 3.5rem;
    color:var(--white);
    font-family: 'Libre Bodoni', serif;
    text-align: center;
@@ -69,9 +55,9 @@ section{
 
 .main-bg .main .content p{
    padding:0.5rem 0;
-   font-size: 1.6rem;
+   font-size: 1rem;
    color:var(--white);
-   line-height: 2;
+   line-height: 1;
    text-align: center;
 }
 
@@ -84,12 +70,11 @@ section{
   align-items: center;
   flex-wrap: wrap;
   gap:4rem;
-  padding: 50px;
-
+  padding: 31.25px;
 }
 
 .form .image{
-   flex:1 1 40rem;
+   flex:1 1 25rem;
 }
 
 .form .image img{
@@ -97,7 +82,7 @@ section{
 }
 
 .form .content{
-   flex:1 1 40rem;
+   flex:1 1 25rem;
 }
 .form .content{
    display: flex;
@@ -108,12 +93,12 @@ section{
 
 .form h3{
   font-family: 'Libre Bodoni', serif;
-  font-size: 4rem;
+  font-size: 2.5rem;
   color: var(--black);
 }
 
 .form .content form{
-   flex:1 1 30rem;
+   flex:1 1 25rem;
    padding:2rem;
    text-align: center;
    margin:auto auto;
@@ -123,34 +108,33 @@ section{
 }
 
 .form .content form p{
-   line-height: 3rem;
-   font-size: 2.5rem;
+   line-height: 1.875rem;
+   font-size: 1.56rem;
    text-align: center;
-   padding: 2rem 2rem;
-   margin: 3rem;
-
+   padding: 1.25rem 1.25rem;
+   margin: 1.875rem;
 }
 
 .form .content form label{
-   font-size: 2rem;
-   margin-bottom: 0.5rem;
-   font-family: 'Libre Bodoni', serif;
-   text-align: left;
+  font-size: 1.25rem;
+  margin-bottom: 0rem;
+  font-family: 'Libre Bodoni', serif;
+  text-align: left;
 }
 
 .form .content form h3{
-   font-size: 2.5rem;
-   margin-bottom: 1rem;
-   color:var(--darkbeige);
-   padding-top: 1.5rem;
+  font-size: 1.56rem;
+  margin-bottom: 1rem;
+  color:var(--darkbeige);
+  padding-top: 1.5rem;
 }
 
 .form .content form .box{
-   width: 100%;
-   padding:1.4rem;
-   font-size: 1.8rem;
-   margin:1rem 0;
-   border-radius: 1rem;
+  width: 100%;
+  padding:0.81rem;
+  font-size: 1.12rem;
+  margin:1rem 0;
+  border-radius: 8px;
 }
 
 .form-container.adult {
@@ -169,27 +153,25 @@ section{
   float: left;
   width: 50%;
   padding: 7.5px;
-  margin-bottom: 30px;
-  border-radius: 1rem;
+  margin-bottom: 18.75px;
+  border-radius: 8px;
 }
 
 
 label{
   display: block;
-  padding-top: 0.5rem;
+  padding-top: 0.9375rem;
 }
 
 
 select{
   display: flex;
   background-color: white;
-  height: 5rem;
-  width: 15rem;
-  font-size: 1.8rem;
-  padding-left: 1.3rem;
-  border-radius: 1rem;
-  margin-bottom: 2rem;
+  height: 3.125rem;
+  font-size: 1.12rem;
+  margin:1rem 0;
 }
+
 /**buttons color**/
 .btn:hover{
   background-color: var(--darkbrown);
@@ -198,14 +180,15 @@ select{
 .btn {
   display: inline-block;
   background-color: var(--main-color);
-  border-radius: 10px;
-  width: 45%;
-  line-height: 4rem;
+  border-radius: 6.25px;
+  width: 28.1%;
+  line-height: 3.125rem;
   color: var(--white);
-  margin-top: 1rem;
-  font-size: 2rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  margin-top: 0rem;
+  font-size: 1.5rem;
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+
 }
 
 
@@ -215,10 +198,10 @@ select{
    background-color: var(--main-color);
    border-radius: 10px;
    width: 35%;
-   line-height: 5rem;
+   line-height: 3.125rem;
    color: var(--white);
    margin-top: 1rem;
-   font-size: 1.5rem;
+   font-size: 1rem;
    padding-left: 0.5rem;
    padding-right: 0.5rem;
 
@@ -230,10 +213,10 @@ select{
   background-color: var(--main-color);
   border-radius: 10px;
   width: 35%;
-  line-height: 5rem;
+  line-height: 3.125rem;
   color: var(--white);
   margin-top: 1rem;
-  font-size: 1.5rem;
+  font-size: 1rem;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 
@@ -242,8 +225,8 @@ select{
 /*text in button*/
 .form a {
   color: var(--white);
-  margin-left: 31.25px;
-  margin-right: 31.25px;
+  margin-right: 20px;
+  margin-left: 20px;
   text-align:center;
 }
 
@@ -252,12 +235,13 @@ select{
 .btn3 {
   display: inline-block;
   background-color: var(--main-color);
-  border-radius: 10px;
+  border-radius: 6.25px;
   width: 45%;
-  line-height: 5rem;
+  line-height: 3.125rem;
   color: var(--white);
   margin-top: 0rem;
-  font-size: 2rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  font-size: 1.3rem;
+  padding-left: 0.7rem;
+  padding-right: 0.7rem;
+  margin:1rem 0;
 }
