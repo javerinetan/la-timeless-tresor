@@ -75,8 +75,7 @@ section{
   padding-top: 6.3rem;
   padding-bottom: 6.3rem;
   width: 68rem;
-  min-width: 30rem;
-  padding: 6.3rem 14rem;
+  padding: 6.3rem 0;
 }
 
 .form .row{
@@ -100,6 +99,8 @@ section{
    background-color: var(--beige);
    padding-bottom: 2.2rem;
    border-radius: 1.5rem;
+   max-width: 40rem;
+   min-width: 10rem;
 }
 
 .form .row form p{
@@ -189,7 +190,7 @@ select{
 }
 
 #submit{
-  padding:10px 10px !important;
+  padding:10px 20px !important;
 }
 
 input #submit{
