@@ -126,8 +126,15 @@ h3{
 
 
 }
+.map{
+  background-color: #BB9C75;
+  border: 10px dashed #AA8453;
+  border-radius: 40px;
 
-.map img{
+}
+
+
+.map iframe{
   background-color: #BB9C75;
   width: 550px;
   height: 800px;
