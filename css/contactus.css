@@ -9,8 +9,9 @@
 }
 
 #toppicture img:hover{
-  opacity:95%;
+  opacity:90%;
 }
+
 
 /*Words in the Picture*/
 #WordsInPicture{
@@ -19,6 +20,7 @@
   left: 35%;
   font-weight: bold;
   font-size: 100px;
+  color: #Aa8453;
 }
 
 /*typology*/
