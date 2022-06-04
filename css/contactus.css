@@ -24,7 +24,7 @@
 /*typology*/
 h1{
   font-family: 'LibreBodoni-Regular', serif;
-  font-size: 200px;
+  font-size: 100px;
 
 
 }
@@ -35,6 +35,32 @@ h3{
   color: green;
 
 
+
+
+}
+
+/*Contact Us*/
+.ContactUs{
+  border: 10px solid black;
+}
+
+.ContactUs h1{
+  position: absolute;
+
+
+}
+
+.ContactUs h2{
+  position: absolute;
+  margin-top: 110px;
+  margin-left: 30px;
+  font-size: 20px;
+}
+
+.ContactUs h3{\
+  position: relative;
+  margin-top: 200px;
+  border: 10px solid red;
 
 
 }
