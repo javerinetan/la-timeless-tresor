@@ -282,8 +282,7 @@ text-align: center;
 }
 
 .Testimonies p{ /*Text*/
-  text-align: center;
-  padding: 120  px;
+  text-align: left;
   margin-left: 350px;
-  border: 10px solid black;
+  margin-top: 125px;;
 }
