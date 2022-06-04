@@ -118,7 +118,6 @@ section{
    font-size: 2.8125rem;
    color:var(--black);
    font-family: 'Libre Bodoni', serif;
-   padding-bottom: 1rem;
 }
 
 .Family .content p{
@@ -127,7 +126,7 @@ section{
    color:var(--light-color);
    font-size: 0.9375rem;
 }
-
+/*price fonts*/
 .price p{
   line-height: .5rem;
   font-weight: normal;
@@ -135,6 +134,11 @@ section{
 
 .price h4{
   font-size: 1.5rem;
+}
+.price h5{
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+  font-weight: normal;
 }
 
 
@@ -165,7 +169,6 @@ section{
    font-size: 2.8125rem;
    color:var(--black);
    font-family: 'Libre Bodoni', serif;
-   padding-bottom: 1rem;
 }
 
 .Classique .content p{
@@ -203,7 +206,6 @@ section{
    font-size: 2.8125rem;
    color:var(--black);
    font-family: 'Libre Bodoni', serif;
-   padding-bottom: 1rem;
 }
 
 .digi .content p{
