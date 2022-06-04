@@ -1,0 +1,40 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+/*TopPicture*/
+#toppicture img{
+  width: 100%;
+}
+
+#toppicture img:hover{
+  opacity:95%;
+}
+
+/*Words in the Picture*/
+#WordsInPicture{
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  font-weight: bold;
+  font-size: 100px;
+}
+
+/*typology*/
+h1{
+  font-family: 'LibreBodoni-Regular', serif;
+  font-size: 200px;
+
+
+}
+
+h3{
+  font-family: 'LibreBodoni-Regular', serif;
+
+  color: green;
+
+
+
+
+}
