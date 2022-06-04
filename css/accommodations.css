@@ -12,7 +12,7 @@
 .heading {
   color: white;
   position: relative;
-  top: 350px;
+  top: 250px;
   text-align: center;
   animation: title-slide 1s ease-in-out;
 }
@@ -35,7 +35,7 @@
 
 .layer {
   background-color: black;
-  opacity: 0.6;
+  opacity: 0.55;
   position: absolute;
   top: 0;
   left: 0;
@@ -65,85 +65,62 @@
   display: inline-block;
 }
 
-.section1 .section-title{
-  text-align: center;
+.room-left, .room-right {
+  margin-bottom: 60px;
+  display: inline-block;
+  opacity: 0;
+}
+
+.room-left img{
+  width: 50%;
+  float: left;
+}
+
+.room-left article{
+  width: 45%;
+  float: left;
+  padding: 70px;
+  background-color: #F8F5F0;
+  margin-top: 100px;
+  margin-left: -100px;
+  z-index: 1;
+}
+
+.room-left .amenities {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.room-left .amenities i{
+  font-size: 18px;
+  margin: 10px;
+}
+
+.room-right img{
+  width: 50%;
+  float: right;
+}
+
+.room-right article{
+  width: 45%;
+  float: right;
+  padding: 60px;
+  background-color: #F8F5F0;
+  margin-top: 100px;
+  margin-right: -100px;
+  z-index: 1;
+}
+
+.room-right .amenities {
+  display: inline-block;
   margin-bottom: 30px;
 }
 
-.section1 .section-subheading {
-  text-align: center;
-  font-size: 15px;
-  margin-bottom: 0px;
-}
-
-.section1 .grid {
-  width: 100%
-}
-
-.section1 .box {
-  width: 50%;
-  float: left;
-  text-align: left;
-  padding: 40px;
-  transition: all 0.4s ease-in-out;
-}
-
-.section1 .box:hover {
-  padding: 20px;
-  box-shadow: 0px 5px 15px rgb(0 0 0 / 5%)
-}
-
-.section1 .box-content {
+.room-right .amenities i{
+  font-size: 20px;
   margin: 10px;
-  padding: 20px;
-  background-color: white;
 }
 
-.section1 .box img {
-  width: 100%;
-}
-
-.section1 .box h4 {
-  font-size: 23px;
-  margin-top: 10px;
-  text-align: left;
-}
-
-.section1 .box .button-style2 {
-  width: 100%;
-}
-
-.star-rating {
-  position: relative;
-  display: inline-block;
-  width: 0;
-  height: 0;
-  margin-left: 0.9em;
-  margin-right: 0.9em;
-  margin-bottom: 2em;
-  border-right: 0.3em solid transparent;
-  border-bottom: 0.7em solid #e4a853;
-  border-left: 0.3em solid transparent;
-  /* Controlls the size of the stars. */
-  font-size: 8px;
-}
-
-.star-rating:before, .star-rating:after {
-  content: "";
-  display: block;
-  width: 0;
-  height: 0;
-  position: absolute;
-  top: 0.6em;
-  left: -1em;
-  border-right: 1em solid transparent;
-  border-bottom: 0.7em solid #e4a853;
-  border-left: 1em solid transparent;
-  transform: rotate(-35deg);
-}
-.star-rating:after {
-  transform: rotate(35deg);
-}
 
 @media screen and (max-width: 1200px) {
   .section1 aside img {
