@@ -229,7 +229,6 @@ body {
   animation: fade-up 1s ease-in-out;
 }
 
-
 .star-rating {
   position: relative;
   display: inline-block;
@@ -239,7 +238,7 @@ body {
   margin-right: 0.9em;
   margin-bottom: 2em;
   border-right: 0.3em solid transparent;
-  border-bottom: 0.7em solid #e4a853;
+  border-bottom: 0.7em solid #aa8453;
   border-left: 0.3em solid transparent;
   /* Controlls the size of the stars. */
   font-size: 8px;
@@ -254,7 +253,7 @@ body {
   top: 0.6em;
   left: -1em;
   border-right: 1em solid transparent;
-  border-bottom: 0.7em solid #e4a853;
+  border-bottom: 0.7em solid #aa8453;
   border-left: 1em solid transparent;
   transform: rotate(-35deg);
 }
