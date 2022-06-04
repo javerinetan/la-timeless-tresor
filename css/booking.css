@@ -67,11 +67,12 @@
 }
 
 .form p {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
+  color: darkgray;
 }
 
 .form .wrapper {
-  width: 70%;
+  width: 65%;
 }
 
 .form input {
@@ -95,11 +96,12 @@
 }
 
 .booking-details {
+  text-align: left;
   background-color: white;
   margin-top: 100px;
   margin-right: 80px;
-  padding: 30px;
-  width: 25%;
+  padding: 40px;
+  width: 28%;
   float: right;
   position: -webkit-sticky;
   position: sticky;
@@ -142,19 +144,23 @@
   padding-top: 100px;
   padding-bottom: 100px;
   padding-right: 0px;
-  width: 70%;
+  width: 65%;
   float: left;
 }
 
 .result .box {
   width: 100%;
   display: inline-block;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
   opacity: 0;
 }
 
+.result h1 {
+  margin-bottom: 35px;
+}
+
 .result h2 {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .box .image {
@@ -169,7 +175,18 @@
 .box .info {
   float: left;
   width: 50%;
-  padding: 20px;
+  padding: 0px 20px ;
+}
+
+.info .amenities {
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.info .amenities i{
+  font-size: 18px;
+  color: #aa8453;
+  margin: 10px;
 }
 
 @media screen and (max-width: 1200px) {

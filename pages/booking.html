@@ -128,7 +128,8 @@
   </header>
   <div class="content reveal up">
     <div class="booking-details" id="bookingDetails">
-      <h2 class="section-title-sm" style="margin:0px;">Booking Details</h2>
+      <h4 class="section-subheading">Le Timeless Trésor</h4>
+      <h2 class="section-title-sm" style="margin:0px;">Your stay</h2>
       <hr class="horizontal-line">
       <div style="display:inline-block; width:100%">
         <div>
@@ -152,61 +153,78 @@
           <span>-</span>
         </div>
       </div>
-      <a type="button" class="button-style2" name="button">Proceed</a>
+      <a class="button-style2" name="button">Proceed<i class="ti-angle-right"></i></a>
     </div>
     <div class="form container">
       <div class="wrapper" id="form-section">
         <h4 class="section-subheading">Booking</h4>
         <h1 class="section-title">Check Availability</h1>
         <hr class="horizontal-line">
-        <p class="section-sub-title">Provide the check-in/out dates and we will search for available rooms.</p>
         <form action="index.html" method="post">
           <div class="input-container">
+            <p>Check in date</p>
             <input class="input-style1" type="date" name="" value="">
-            <select class="input-style1" name="adult" style="width:48%;float:left">
-              <option value="">Adult</option>
-              <option value="">1</option>
-              <option value="">2</option>
-              <option value="">3</option>
-              <option value="">4</option>
-              <option value="">5</option>
-            </select>
-            <select class="input-style1" name="" style="width:48%;float:right">
-              <option value="">Child</option>
-              <option value="">0</option>
-              <option value="">1</option>
-              <option value="">2</option>
-              <option value="">3</option>
-              <option value="">4</option>
-              <option value="">5</option>
-            </select>
+            <div style="width:48%;float:left">
+              <p>No. of Adult</p>
+              <select class="input-style1" name="adult">
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+                <option value="">5</option>
+              </select>
+            </div>
+            <div style="width:48%;float:right">
+              <p>No. of Child</p>
+              <select class="input-style1" name="">
+                <option value="">0</option>
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+                <option value="">5</option>
+              </select>
+            </div>
           </div>
           <div class="input-container">
+            <p>Check out date</p>
             <input class="input-style1" type="date" name="" value="">
+            <p>Room Type</p>
             <select class="input-style1" name="Room">
               <option value="">Room Type</option>
-              <option value="">1</option>
-              <option value="">2</option>
-              <option value="">3</option>
-              <option value="">4</option>
-              <option value="">5</option>
+              <option value="">Any</option>
+              <option value="">Junior Suite</option>
+              <option value="">Family Suite</option>
+              <option value="">Deluxe Suite</option>
+              <option value="">Executive Suite</option>
             </select>
           </div>
-          <button type="button" class="button-style2" name="button">Search </button>
+          <a href="#results" style="display: inline-block;width: 100%;margin-top: 20px;">
+            <button type="button" class="button-style2" name="button" style="width: 48%;">Search<i class="ti-angle-right"></i></button>
+          </a>
         </form>
       </div>
     </div>
-    <div class="result container">
+    <div class="result container" id="results">
       <div class="wrapper">
-        <h2>Available Rooms</h2>
+        <h1>Available Rooms</h1>
         <div class="box reveal left">
           <div class="image">
             <img src="../resources/images/galleryimg4.jpg" alt="">
           </div>
           <div class="info">
-            <h2 class="section-title">Family suite</h2>
-            <p>Provide the check-in/out dates and we will search for available rooms.</p>
-            <a href="pages/gallery.html" class="a-style1">Select this room<i class="fa-solid fa-arrow-right"></i></a>
+            <h2 class="section-title-sm">Family suite</h2>
+            <p style="font-weight: bold;font-size: 20px">$350 /night</p>
+            <div class="amenities">
+              <i class="fa-solid fa-person"></i>2-4
+              <i class="fa-solid fa-bath"></i>Bathtub
+              <i class="fa-solid fa-wifi"></i>Internet
+              <i class="fa-solid fa-bed"></i> King-sized
+            </div>
+            <a href="pages/gallery.html" class="a-style1">Room details<i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#results" style="display: inline-block;width: 100%;margin-top: 20px;">
+              <button type="button" class="button-style2" name="button" style="width: 100%;">Select this room<i class="ti-angle-right"></i></button>
+            </a>
           </div>
         </div>
         <div class="box reveal left">
@@ -214,9 +232,18 @@
             <img src="../resources/images/galleryimg4.jpg" alt="">
           </div>
           <div class="info">
-            <h2 class="section-title">Deluxe suite</h2>
-            <p>Provide the check-in/out dates and we will search for available rooms.</p>
-            <a href="pages/gallery.html" class="a-style1">Select this room<i class="fa-solid fa-arrow-right"></i></a>
+            <h2 class="section-title-sm">Deluxe suite</h2>
+            <p style="font-weight: bold;font-size: 20px">$450 /night</p>
+            <div class="amenities">
+              <i class="fa-solid fa-person"></i>2-4
+              <i class="fa-solid fa-bath"></i>Bathtub
+              <i class="fa-solid fa-wifi"></i>Internet
+              <i class="fa-solid fa-bed"></i> King-sized
+            </div>
+            <a href="pages/gallery.html" class="a-style1">Room details<i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#results" style="display: inline-block;width: 100%;margin-top: 20px;">
+              <button type="button" class="button-style2" name="button" style="width: 100%;">Select this room<i class="ti-angle-right"></i></button>
+            </a>
           </div>
         </div>
       </div>
