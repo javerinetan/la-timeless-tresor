@@ -66,13 +66,13 @@
 }
 
 .room-left, .room-right {
-  margin-bottom: 60px;
   display: inline-block;
   opacity: 0;
 }
 
 .room-left img{
   width: 50%;
+  margin-top: 100px;
   float: left;
 }
 
@@ -81,8 +81,6 @@
   float: left;
   padding: 70px;
   background-color: #F8F5F0;
-  margin-top: 100px;
-  margin-left: -100px;
   z-index: 1;
 }
 
@@ -95,32 +93,6 @@
   font-size: 18px;
   margin: 10px;
 }
-
-.room-right img{
-  width: 50%;
-  float: right;
-}
-
-.room-right article{
-  width: 45%;
-  float: right;
-  padding: 60px;
-  background-color: #F8F5F0;
-  margin-top: 100px;
-  margin-right: -100px;
-  z-index: 1;
-}
-
-.room-right .amenities {
-  display: inline-block;
-  margin-bottom: 30px;
-}
-
-.room-right .amenities i{
-  font-size: 20px;
-  margin: 10px;
-}
-
 
 @media screen and (max-width: 1200px) {
   .section1 aside img {
