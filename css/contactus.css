@@ -41,7 +41,7 @@ h3{
 
 /*Contact Us*/
 .ContactUs{
-  margin-bottom: 300px;
+  margin-bottom: 500px;
 }
 
 .ContactUs h1{
@@ -74,7 +74,7 @@ h3{
 #Bot{
   background-color: #F8F5F0;
   font-size: 50px;
-  padding: 100px;
+  padding: 60px;
   border-radius: 25px;
   border: 5px groove #BB9C72;
   margin-right: 50px;
@@ -93,12 +93,10 @@ h3{
 #Human{
   background-color: #F8F5F0;
   font-size: 50px;
-  padding: 100px;
+  padding: 60px;
   border-radius: 25px;
   border: 5px groove #BB9C72;
   margin-left:50px;
-
-
 
 }
 
@@ -110,7 +108,20 @@ h3{
 
 }
 
+/*Map*/
+.map{
+  display: block;
+  position: absolute;
+  margin-left: 65%;
+  top: 130%;
 
+
+}
+
+.map img{
+  width: 550px;
+  height: 800px;
+}
 
 
 
