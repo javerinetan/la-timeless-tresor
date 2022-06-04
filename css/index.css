@@ -25,7 +25,7 @@
 .heading {
   color: white;
   position: relative;
-  top: 200px;
+  top: 150px;
   text-align: center;
   animation: title-slide 1s ease-in-out;
 }
@@ -42,7 +42,8 @@
 
 .heading p {
   margin: 0;
-  font-size: 25px;
+  font-size: 20px;
+  margin-bottom: 10px;
 }
 
 .horizontal-line {
