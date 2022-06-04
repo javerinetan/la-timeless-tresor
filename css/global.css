@@ -219,6 +219,12 @@ body {
   font-size: 40px;
 }
 
+.section-title-sm {
+  font-family: 'LibreBodoni-Regular';
+  font-weight: 100;
+  font-size: 30px;
+}
+
 .section-sub-title {
   color: darkgray;
   margin-bottom: 40px;
