@@ -6,7 +6,7 @@
   width: 100%;
   background-size: cover;
   background-position: center;
-  /* background-attachment: fixed; */
+  background-attachment: fixed;
 }
 
 hr {
@@ -20,7 +20,7 @@ hr {
 .heading {
   color: white;
   position: relative;
-  top: 200px;
+  top: 350px;
   text-align: center;
   animation: title-slide 1s ease-in-out;
 }
@@ -35,9 +35,24 @@ hr {
   letter-spacing: 8px;
 }
 
+.heading p {
+  margin: 0;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.layer {
+  background-color: black;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
 .section-title {
   font-size: 38px;
-  margin-bottom: 20px;
 }
 
 .section-sub-title {
@@ -51,7 +66,7 @@ hr {
 }
 
 .signup .container {
-  text-align: center;
+  text-align: left;
   width: 100%;
   margin-top: 100px;
   margin-bottom: 100px;
@@ -64,16 +79,18 @@ hr {
 }
 
 .signup article .container {
-  padding-right: 10px;
   text-align: left;
 }
 
 .signup .box {
   float: left;
-  text-align: center;
-  width: 25%;
+  width: 20%;
   padding: 10px;
   padding-left: 0px;
+}
+
+.signup .box p{
+  font-weight: bold;
 }
 
 .signup .box i {
@@ -86,7 +103,18 @@ hr {
 .signup .form {
   float: left;
   background-color: #F8F5F0;
-  width: 40%
+  width: 40%;
+  display: inline-block;
+}
+
+.form .wrapper {
+  margin: 100px 0px;
+  padding: 0px 60px;
+}
+
+.form .button-style1 {
+  text-align: center;
+  margin-top: 50px;
 }
 
 @media screen and (max-width: 1200px) {
