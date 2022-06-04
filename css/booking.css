@@ -227,3 +227,14 @@
     letter-spacing: 3px;
   }
 }
+
+@keyframes title-slide {
+  0% {
+    opacity: 0.8;
+    left: -110px;
+  }
+  100% {
+    opacity: 1;
+    left: 0px;
+  }
+}
