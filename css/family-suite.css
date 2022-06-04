@@ -35,7 +35,7 @@
 
 .layer {
   background-color: black;
-  opacity: 0.55;
+  opacity: 0.75;
   position: absolute;
   top: 0;
   left: 0;
@@ -74,14 +74,31 @@
 }
 
 .room-info .info .button-style1 {
-  margin-top: 100px;
+  margin-top: 40px;
+  width: 350px;
+}
+
+.room-info .info .button-style1:hover {
+  margin-top: 40px;
   width: 350px;
 }
 
 .room-info .amenities {
-  width: 40%;
+  width: 20%;
   float: right;
   text-align: right;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.room-info .amenities div{
+  text-align: right;
+}
+
+.room-info .amenities i{
+  font-size: 18px;
+  margin: 10px;
+  color: #aa8453;
 }
 
 .recommends {
