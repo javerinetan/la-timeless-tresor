@@ -71,7 +71,7 @@
   display: inline-block;
   margin-top: -5px;
   margin-bottom: 80px;
-  padding: 75px 40px;
+  padding: 100px 40px;
   padding-left: 0px;
   background-color: #F8F5F0;
 }
@@ -159,7 +159,7 @@
 
 .section3 img {
   width: 100%;
-  filter:brightness(70%);
+  filter:brightness(75%);
 }
 
 .section3 .btn-container, .section6 .btn-container {
@@ -226,12 +226,6 @@
   width: 100%;
 }
 
-.section1 .button-style2, .section2 .button-style2, .section3 .button-style2, .section4 .button-style2, .section5 .button-style2, .section6 .button-style2, .section7 .button-style2{
-    margin-top: 40px;
-    padding: 15px 25px 15px 25px;
-    width: 250px;
-}
-
 .section5 .container {
   text-align: left;
   width: 100%;
@@ -281,10 +275,7 @@
 
 .section6 .wrapper {
   width: 100%;
-  margin-top: 100px;
-  padding: 65px 0px;
-  background-color: #F8F5F0;
-  margin-bottom: 100px;
+  margin-bottom: 80px;
   display: inline-block;
 }
 
@@ -403,7 +394,6 @@
   top: 300px;
   padding: 30px;
   width: 100%;
-  box-shadow: 1px 1px 10px #888888;
   transition: all 0.4s ease-in-out;
 }
 
