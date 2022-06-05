@@ -16,7 +16,7 @@
 /*Words in the Picture*/
 #WordsInPicture{
   position: absolute;
-  top: 50%;
+  top: 25%;
   left: 35%;
   font-weight: bold;
   font-size: 100px;
@@ -54,11 +54,11 @@ h3{
 .ContactUs h2{
   position: absolute;
   margin-top: -10px;
-  margin-left: 90px;
+  margin-left: 60px;
   font-size: 20px;
 }
 
-.ContactUs h3{\
+.ContactUs h3{
   position: relative;
   margin-top: 200px;
 
@@ -123,7 +123,7 @@ h3{
   display: block;
   position: absolute;
   margin-left: 65%;
-  top: 143%;
+  top: 75%;
 
 
 
