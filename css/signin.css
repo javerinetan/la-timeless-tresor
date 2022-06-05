@@ -19,6 +19,25 @@ a{
 
 }
 
+p{
+  font-family: 'Libre Bodoni', serif;
+
+}
+
+b{
+  font-family: 'Libre Bodoni', serif;
+
+}
+
+button{
+  font-family: 'Libre Bodoni', serif;
+
+}
+
+input{
+  font-family: 'Libre Bodoni', serif;
+
+}
 /*Top Picture*/
 #toppicture img{
   width: 100%;
