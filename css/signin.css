@@ -65,6 +65,10 @@ a{
   width: 50%;
   margin-left: 100px;
 }
+
+.container{
+  background-color:#F8F5F0;
+}
 /* Full-width input fields */
   input[type=text], input[type=password] {
   width: 100%;
@@ -87,7 +91,7 @@ hr {
 
 /* Set a style for all buttons */
 button {
-  background-color: #04AA6D;
+  background-color: #BB9C75;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
