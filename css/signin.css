@@ -1,4 +1,49 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+/*Typology*/
+h1{
+  font-family: 'LibreBodoni-Regular', serif;
+  font-size: 100px;
+}
+
+h2{
+  font-family: 'LibreBodoni-Regular', serif;
+  font-size: 20px;
+}
+
+a{
+  font-family: 'Libre Bodoni', serif;
+
+}
+
 /*Top Picture*/
 #toppicture img{
   width: 100%;
+}
+
+
+/*Content*/
+.content .New { /*Right Content*/
+  position: relative;
+  left:70%;
+  margin-top: 200px;
+  margin-bottom: 500px;
+}
+
+.content .New h1{
+  margin-left: 80px;
+
+}
+
+.content .New h2{
+  margin-top: 1px;
+  margin-bottom: 100px;
+}
+
+.content .New a{
+  font-size: 100px;
+  margin-left: 25px;
 }
