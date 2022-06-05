@@ -114,7 +114,6 @@ p{
   list-style: none;
 }
 
-/*Menu Left*/
 .Menu{ /*Main Table*/
   display:table;
   width: 95%;
@@ -124,6 +123,7 @@ p{
   margin:50px;
 }
 
+/*Menu Left*/
 .Menu .Left { /*Left Side Table*/
   display:table;
   border: 10px;
