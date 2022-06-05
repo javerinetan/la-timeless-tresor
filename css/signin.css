@@ -28,7 +28,8 @@ a{
 /*Content*/
 .content .New { /*Right Content*/
   position: relative;
-  left:70%;
+  left: 70%;
+  width: 30%;
   margin-top:  100px;
   margin-bottom: 500px;
 }
@@ -58,9 +59,10 @@ a{
 }
 
 
-.content .login{
+.content .login{ /*Left Content*/
   position: absolute;
   width: 50%;
+  margin-left: 100px;
 }
 /* Full-width input fields */
   input[type=text], input[type=password] {
@@ -105,7 +107,7 @@ button:hover {
 }
 
 /* Float cancel and signup buttons and add an equal width */
-.cancelbtn, .signupbtn {
+.cancelbtn, .signinbtn {
   float: left;
   width: 50%;
 }
@@ -124,7 +126,7 @@ button:hover {
 
 /* Change styles for cancel button and signup button on extra small screens */
 @media screen and (max-width: 300px) {
-  .cancelbtn, .signupbtn {
+  .cancelbtn, .signinbtn {
     width: 100%;
   }
 }
