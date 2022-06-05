@@ -14,9 +14,23 @@ p{
   font-family: 'Libre Bodoni', serif;
 }
 
+/*Words in the picture*/
+#WordsInPicture{
+  position: absolute;
+  top: 75%;
+  left: 35%;
+  font-weight: bold;
+  font-size: 100px;
+  color: #Aa8453;
+}
+
 /*TopPicture*/
 #toppicture img{
   width: 100%;
+}
+
+#toppicture img:hover{
+  opacity: 90%;
 }
 
 /*About us*/
