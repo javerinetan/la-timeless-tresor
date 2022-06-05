@@ -28,15 +28,15 @@ a{
 /*Content*/
 .content .New { /*Right Content*/
   position: relative;
-  left: 70%;
+  left: 65%;
   width: 30%;
+  padding: 16px;
   margin-top:  100px;
   margin-bottom: 300px;
 }
 
 .content .New h1{
   margin-left: 80px;
-  
 
 }
 
