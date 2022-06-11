@@ -41,7 +41,7 @@ section{
 .btn:hover{
    background-color: var(--darkbrown);
 }
-
+/**arrow head when hover**/
 .ti-angle-right {
   color: white !important;
 }
@@ -63,7 +63,7 @@ a{
   }
 
 .home-bg{
-   background:linear-gradient(90deg, var(--white), transparent 0%), url(../resources/images/hotel4.jpg) no-repeat;
+   background:linear-gradient(90deg, var(--white), transparent 0%), url(../resources/images/hotel.jpg) no-repeat;
    background-size: cover;
    background-position: center;
    height: 500px;
@@ -87,7 +87,8 @@ a{
 .home-bg .home .content h2{
    font-size: 3.8rem;
    color:var(--white);
-   font-family: 'Libre Bodoni', serif;
+   font-family: 'LibreBodoni-Regular';
+   font-weight: 100;
 }
 
 .about{
@@ -112,56 +113,83 @@ a{
 
 /* facilities start*/
 
-
-.facilities{
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap:2.5rem;
-  padding: 0 1.9rem 3rem;
-}
-
-.facilities .image{
-  flex:1 1 26rem;
-}
-
-.facilities .image img{
-  width: 100%;
-}
-
-.facilities .content{
-  flex:1 1 25rem;
-  padding-right: 1rem;
-}
-
-.facilities .content h3{
-  font-size: 3rem;
-  color:var(--black);
-  font-family: 'Libre Bodoni', serif;
-  padding-bottom: .3rem;
-}
-
-.facilities .content p{
-  padding:0.3rem 0 .9rem;
-  line-height: 1.8rem;
-  color:var(--light-color);
-  font-size: .94rem;
-}
-
-.facilities .content strong{
-  line-height: 1.5rem;
-  color:var(--black);
-  font-size: 1.3rem;
-  font-family: 'Libre Bodoni', serif;
-}
-
-#op{
+#op{ /* additional info above button*/
   padding: 0 0 .4rem;
 }
 
 #oh{
   padding-bottom: 1.5rem !important;
 }
+
+.facilities{
+  padding: 0 1.5rem;
+}
+/**content image**/
+.facilities .right img {
+  float: left; /* this so so the image will be on the left while the text is on the right*/
+  width: 55%; /* sizing image to half the page*/
+}
+
+.facilities .left img {
+  float: right;
+  width: 55%;
+}
+/**content**/
+.facilities .right, .facilities .left {
+  float: left;
+  width: 100%;
+  margin: 60px 0px;
+}
+
+/**content text location**/
+.facilities .right article {
+  float: left;
+  width: 45%;
+  padding: 50px;
+  text-align: center;
+}
+
+
+.facilities .left article {
+  float: right;
+  width: 45%;
+  padding: 50px;
+  text-align: center;
+}
+/**content button**/
+.button1 {
+  display: inline-block;
+  padding: 1rem 4rem;
+  font-size: 1.2rem;
+  border: 1px solid #b0a48d;
+  position: relative;
+  color: #b0a48d;
+  background-color: transparent;/* too allow the color to be emoty**/
+}
+.button1:hover{
+  position: relative;
+  background-color:#bb9c75 ;/**change color when hover*/
+  color: white;
+  font-size: 1.2rem;
+  padding: 1rem 4rem;
+  border: 1px solid #b0a48d;
+
+
+}
+/**content subtitle**/
+.subtitle{
+  color: darkgray;
+  margin-bottom: 20px;
+}
+/*line to seperate tittle and content**/
+.line {
+  width: 40%;
+  height: 1px;
+  display: inline-block;
+  background-color: #aa8453;
+  margin: 20px 0px;
+}
+
 
 /**movie timetable**/
 .mhome-bg{
@@ -189,7 +217,8 @@ a{
 .mhome-bg .home .content h2{
    font-size: 3.8rem;
    color:var(--white);
-   font-family: 'Libre Bodoni', serif;;
+   font-family: 'Libre Bodoni', serif;
+   font-weight: 100;
 }
 
 
@@ -252,4 +281,180 @@ a{
    font-size: .94rem;
    color:var(--light-color);
    padding-bottom: 12.5px;
+}
+
+@media screen and (max-width: 400px){
+  .home-bg .home .content h2{
+    font-size: 2rem;
+  }
+
+  .home-bg{
+    height: 250px;
+  }
+
+  .home-bg .home .content{
+    margin-top:0;
+    margin-bottom: 20px;
+  }
+
+  .about .content p{
+    font-size: .8rem;
+    padding: .5rem 1rem .3rem;
+    line-height: 1.3rem;
+  }
+
+  .facilities{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:.9rem;
+    padding: 1rem 1rem 1rem;
+  }
+
+  .facilities .image{
+    width: 30%;
+  }
+
+  .facilities .image img{
+    width: 300px;
+  }
+
+  .facilities .content{
+    padding-right: 0;
+  }
+
+  .facilities .content h3{
+    font-size: 2rem;
+    color:var(--black);
+    font-family: 'Libre Bodoni', serif;
+    padding-bottom: .3rem;
+  }
+
+  .facilities .content p{
+    padding:0.3rem 0 .9rem;
+    line-height: 1.1rem;
+    color:var(--light-color);
+    font-size: .7rem;
+  }
+
+  .facilities .content strong{
+    line-height: 1.1rem;
+    color:var(--black);
+    font-size: 1rem;
+    font-family: 'Libre Bodoni', serif;
+  }
+}
+
+@media screen and (max-width: 920px){
+  .home-bg .home .content h2{
+    font-size: 3.2rem;
+  }
+
+  .home-bg{
+    height: 500px;
+  }
+
+  .home-bg .home .content{
+    margin-top:0;
+    margin-top: 90px;
+  }
+
+  .about{
+     display: flex;
+     align-items: center;
+     flex-wrap: wrap;
+     gap:1.5rem;
+     padding: .8rem .8rem 0;
+  }
+
+  .about .content p{
+    font-size: .8rem;
+    padding: .5rem .8rem .3rem;
+    line-height: 1.3rem;
+  }
+
+  .facilities{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    padding: 1rem 2rem 2rem;
+  }
+
+  .facilities .image{
+    flex:1 1 15rem;
+  }
+
+  .facilities .content{
+    flex:1 1 15rem;
+    padding-right: 1rem;
+  }
+
+  .facilities .image{
+    width: 40%;
+  }
+
+  .facilities .content{
+    padding-right: 0;
+  }
+
+  .facilities .content h3{
+    font-size: 2rem;
+    color:var(--black);
+    font-family: 'Libre Bodoni', serif;
+    padding-bottom: .3rem;
+  }
+
+  .facilities .content p{
+    padding:0.3rem 0 .5rem;
+    line-height: 1.1rem;
+    color:var(--light-color);
+    font-size: .7rem;
+  }
+
+  .facilities .content strong{
+    line-height: 1.1rem;
+    color:var(--black);
+    font-size: 1rem;
+    font-family: 'Libre Bodoni', serif;
+  }
+
+  #op{
+    padding: 0 0 .4rem;
+  }
+
+  #oh{
+    padding-bottom: 1rem !important;
+  }
+
+  /**button**/
+  .btn{
+    background-color: var(--main-color);
+    line-height: 10px;
+    margin-left: 0px;
+    padding:5px 15px 5px 20px;
+    text-align: left;
+    font-size: .96rem ;
+    color: white !important;
+  }
+
+  .btn:hover{
+     background-color: var(--darkbrown);
+  }
+
+  .ti-angle-right {
+    color: white !important;
+  }
+
+  .btn:hover .ti-angle-right {
+    opacity: 1;
+    margin-right: 1px;
+  }
+
+  .btn .ti-angle-right {
+    color: white !important;
+    font-size: .9rem;
+    font-weight: bold;
+  }
+
 }
