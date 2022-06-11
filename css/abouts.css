@@ -74,8 +74,7 @@
 .section .right article {
   float: left;
   width: 45%;
-  padding: 40px;
-  text-align: left;
+  padding: 50px;
   text-align: center;
 }
 
@@ -84,7 +83,7 @@
   float: right;
   width: 45%;
   padding: 50px;
-  text-align: right;
+  text-align: center;
 }
 /**content button**/
 .button1 {
