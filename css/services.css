@@ -78,6 +78,16 @@ a {
    font-family: 'Libre Bodoni', serif;
 }
 
+.layer {
+  background-color: black;
+  opacity: 0.4;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 30rem;
+  width: 100%;
+}
+
 .about{
    display: flex;
    align-items: center;
