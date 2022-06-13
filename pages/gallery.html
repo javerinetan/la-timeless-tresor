@@ -117,19 +117,22 @@
   </nav>
 
     <!-- Image + Header -->
-    <div>
-        <header class="banner" onclick="dismissBookingForm()">
-          <div class="layer">
-          </div>
-        </header>
-      <h2 id="mainsubheader">IMAGES & VIDEOS</h2>
-      <h1 id="mainheader">Our Gallery</h1>
-    </div>
+    <header class="banner" onclick="dismissBookingForm()">
+      <div class="layer">
+      </div>
+      <div class="container">
+        <div class="heading">
+          <p class="section-subheading">IMAGES & VIDEOS</p>
+          <h1 class="title">Our Gallery</h1>
+        </div>
+      </div>
+    </header>
     <!-- Image Gallery -->
     <div class="mainbody">
-      <div class="container">
-        <h2 id="subtitle">IMAGES</h2>
-        <h1 id="title">OUR GALLERY</h1>
+      <div class="container" style="text-align: center">
+        <h4 class="section-subheading">IMAGES</h4>
+        <h1 class="section-title">OUR GALLERY</h1>
+        <hr class="horizontal-line">
         <div class="segcontrol">
           <div onclick="showAll()">ALL</div>
           <div onclick="show('exterior')">EXTERIOR</div>
@@ -140,13 +143,10 @@
         <div>
           <!-- The Modal -->
           <div id="myModal" class="modal">
-
             <!-- The Close Button -->
             <span class="close">&times;</span>
-
             <!-- Modal Content (The Image) -->
             <img class="modal-content" id="img01">
-
             <!-- Modal Caption (Image Text) -->
             <div id="caption"></div>
           </div>
