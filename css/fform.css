@@ -57,7 +57,8 @@ section{
 .phome-bg .home .content h2{
    font-size: 3.8rem;
    color:var(--white);
-   font-family: 'Libre Bodoni', serif;;
+   font-family: 'Libre Bodoni', serif;
+   font-weight: 100;
 }
 
 /*text in button*/
@@ -98,7 +99,6 @@ section{
    margin:auto auto;
    background-color: var(--beige);
    padding-bottom: 2.2rem;
-   border-radius: 1.5rem;
    max-width: 40rem;
    min-width: 10rem;
 }
@@ -131,7 +131,6 @@ section{
    padding:.9rem;
    font-size: 1.1rem;
    margin:.6rem 0;
-   border-radius: .6rem;
 }
 
 #last{
@@ -214,8 +213,7 @@ input #submit{
   margin:auto auto;
   background-color: var(--beige);
   padding-bottom: 2.2rem;
-  border-radius: .94rem;
-  height: 21.9rem; /**idk if need to change this**/
+  height: 21.9rem;
 }
 
 .done .box-container .box h3{
@@ -285,6 +283,7 @@ a{
    font-family: 'Libre Bodoni', serif;
    padding-left: auto;
    padding-right: auto;
+   font-weight: 100;
 }
 
 
@@ -315,7 +314,8 @@ a{
 .ghome-bg .home .content h2{
    font-size: 3.8rem;
    color:var(--white);
-   font-family: 'Libre Bodoni', serif;;
+   font-family: 'Libre Bodoni', serif;
+   font-weight: 100;
 }
 
 /**billard form**/
@@ -345,7 +345,8 @@ a{
 .bhome-bg .home .content h2{
    font-size: 3.8rem;
    color:var(--white);
-   font-family: 'Libre Bodoni', serif;;
+   font-family: 'Libre Bodoni', serif;
+   font-weight: 100;
 }
 
 /**tennis form**/
@@ -375,5 +376,6 @@ a{
 .thome-bg .home .content h2{
    font-size: 3.8rem;
    color:var(--white);
-   font-family: 'Libre Bodoni', serif;;
+   font-family: 'Libre Bodoni', serif;
+   font-weight: 100;
 }
