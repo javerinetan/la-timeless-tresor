@@ -254,7 +254,7 @@ body {
  user-select: none;
 }
 
-div .container {
+section .container {
   overflow: hidden;
 }
 
