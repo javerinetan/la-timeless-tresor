@@ -159,7 +159,7 @@
       <div class="layer"></div>
       <div class="container">
         <article class="reveal fade">
-          <h4 class="section-subheading">exquisite Island</h4>
+          <h4 class="section-subheading">Exquisite Island</h4>
           <h1 class="section-title">Le Classique Baie</h1>
           <hr class="horizontal-line">
           <p class="section-sub-title" style="margin-bottom: 0px;">Explore Le Classique Baie, a 10km Island located 5 kilometers off the shore of Singapore</p>
@@ -190,7 +190,7 @@
     <section class="section3" onclick="dismissBookingForm()">
       <div class="wrapper reveal right">
         <aside>
-          <img src="resources/images/room.jpg" alt="image">
+          <img src="resources/images/room.jpg" alt="Room" id="roomImage">
         </aside>
         <article>
           <h4 class="section-subheading"><i class="fa-solid fa-cart-flatbed-suitcase"></i> World class</h4>
@@ -198,19 +198,19 @@
           <hr class="horizontal-line">
           <p class="section-sub-title">Our rooms are designed to transport you into an environment made for leisure and luxury. Take your mind off and find a private paradise along the beaches.</p>
           <div class="room-selector">
-            <div class="box selected">
+            <div class="box selected" id="1" onclick="displayRoom(this)">
               <i class="fa-solid fa-bed"></i>
               <p>Junior</p>
             </div>
-            <div class="box">
+            <div class="box" id="2" onclick="displayRoom(this)">
               <i class="fa-solid fa-bed"></i>
               <p>Family</p>
             </div>
-            <div class="box">
+            <div class="box" id="3" onclick="displayRoom(this)">
               <i class="fa-solid fa-bed"></i>
               <p>Deluxe</p>
             </div>
-            <div class="box" style="border-right: 2px solid #c4ac80">
+            <div class="box" id="4" onclick="displayRoom(this)" style="border-right: 2px solid #c4ac80">
               <i class="fa-solid fa-bed"></i>
               <p>Executive</p>
             </div>
