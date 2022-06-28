@@ -88,8 +88,8 @@
 /**content button**/
 .button1 {
   display: inline-block;
-  padding: 1rem 4rem;
-  font-size: 1.1rem;
+  padding: 1rem 4.1rem;
+  font-size: 1rem;
   border: 1px solid #b0a48d;
   position: relative;
   color: #b0a48d;
@@ -99,8 +99,8 @@
   position: relative;
   background-color:#bb9c75 ;/**change color when hover*/
   color: white;
-  padding: 1rem 4rem;
-  font-size: 1.1rem;
+  padding: 1rem 4.1rem;
+  font-size: 1rem;
   border: 1px solid #b0a48d;
 
 
@@ -117,56 +117,6 @@
   display: inline-block;
   background-color: #aa8453;
   margin: 20px 0px;
-}
-
-
-/**signature section**/
-.section2 .container1 {
-  text-align: center;
-  width: 100%;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  display: inline-block;
-}
-
-.section2 .box-container{
-   display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(16.875rem, 1fr));
-   gap:1.1rem;
-   align-items: flex-start;
-   padding: 1.5rem;
-}
-
-.section2 .box-container .box{
-   text-align: center;
-   border: 1px solid lightgray;
-   min-height: 310px;
-   padding: 25px;
-}
-
-
-.section2 .box-container .box img{
-  width: 30%;
-}
-
-.section2 .box-container .box h3{
-   font-size: 1.25rem;
-   color:var(--black);
-   margin:1rem 0;
-   font-family: 'Libre Bodoni', serif;
-
-}
-
-.section2 .box-container .box p{
-   line-height: 1.25rem;
-   font-size: 0.93rem;
-   color:var(--light-color);
-}
-
-.section2 .heading h5{
-   line-height: 1.25rem;
-   font-size: 0.93rem;
-   color:var(--black);
 }
 
 
