@@ -47,7 +47,7 @@ a {
   /**to make the image less bright**/
   .layer {
     background-color: black;
-    opacity: 0.4;
+    opacity: 0.3;
     position: absolute;
     top: 0;
     left: 0;

@@ -163,33 +163,51 @@ a{
 
 
 /**movie timetable**/
-.mhome-bg{
-   background:linear-gradient(90deg, var(--white), transparent 0%), url(../resources/images/cinema2.webp) no-repeat;
-   background-size: cover;
-   background-position: center;
-   height: 500px;
-   text-align: center;
+
+.mmain-bg {      /**imgae**/
+  background:linear-gradient(90deg, var(--white), transparent 0%), url('../resources/images/cinema2.webp') no-repeat;
+  background-size: cover;
+  background-position: center;
+  top: 0;
+  left: 0;
+  height: 500px;
+  width: 100%;
+  z-index: -1;
+  object-fit: cover;
 }
 
-.mhome-bg .home{
-   min-height: 600px;
-   display: flex;
-   align-items: center;
+.banner .container {
+  position: absolute;
+  top: 0;
+}
+/**to make the image less bright**/
+.layer {
+  background-color: black;
+  opacity: 0.3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 500px;
+  width: 100%;
+}
+/**heading fonts**/
+.heading {   /**heading space and position **/
+  color: white;
+  position: relative;
+  top: 315px;
+  text-align: center;
 }
 
-.mhome-bg .home .content{
-   max-width: 80%;
-   text-align: center;
-   margin-left: auto;
-   margin-right: auto;
-   margin-top: 90px;
-}
-
-.mhome-bg .home .content h2{
-   font-size: 3.8rem;
-   color:var(--white);
-   font-family: 'Libre Bodoni', serif;
-   font-weight: 100;
+.heading h1 {
+  font-family: 'LibreBodoni-Regular';
+  font-size: 50px;
+  color: white;
+  font-weight: lighter;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  top: 250px;
+  text-align: center !important;
+  margin:auto;
 }
 
 

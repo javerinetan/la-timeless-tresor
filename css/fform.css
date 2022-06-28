@@ -12,53 +12,51 @@
    --darkbeige: #3F2e19;
 }
 
-*{
-   font-family: 'Nunito', sans-serif;
-   margin:0; padding:0;
-   box-sizing: border-box;
-   outline: none; border:none;
-   text-decoration: none;
-   text-transform: capitalize;
+
+.pmain-bg {      /**imgae**/
+  background:linear-gradient(90deg, var(--white), transparent 0%), url('../resources/images/pool2.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  top: 0;
+  left: 0;
+  height: 500px;
+  width: 100%;
+  z-index: -1;
+  object-fit: cover;
 }
 
-html{
-   overflow-x: hidden;
-   scroll-behavior: smooth;
-   scroll-padding-top: 6.5rem;
+.banner .container {
+  position: absolute;
+  top: 0;
+}
+/**to make the image less bright**/
+.layer {
+  background-color: black;
+  opacity: 0.3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 500px;
+  width: 100%;
+}
+/**heading fonts**/
+.heading {   /**heading space and position **/
+  color: white;
+  position: relative;
+  top: 315px;
+  text-align: center;
 }
 
-section{
-   max-width: 100%;
-   margin:0 auto;
-}
-
-.phome-bg{
-   background:linear-gradient(90deg, var(--white), transparent 0%), url(../resources/images/pool2.jpg) no-repeat;
-   background-size: cover;
-   background-position: center;
-   height: 500px;
-   text-align: center;
-}
-
-.phome-bg .home{
-   min-height: 600px;
-   display: flex;
-   align-items: center;
-}
-
-.phome-bg .home .content{
-   max-width: 80%;
-   text-align: center;
-   margin-left: auto;
-   margin-right: auto;
-   margin-top: 140px;
-}
-
-.phome-bg .home .content h2{
-   font-size: 3.8rem;
-   color:var(--white);
-   font-family: 'Libre Bodoni', serif;
-   font-weight: 100;
+.heading h1 {
+  font-family: 'LibreBodoni-Regular';
+  font-size: 50px;
+  color: white;
+  font-weight: lighter;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  top: 250px;
+  text-align: center !important;
+  margin:auto;
 }
 
 /*text in button*/
@@ -255,127 +253,57 @@ a{
 .form .row .cdate{
   color: var(--lightcolor);
 }
-.shome-bg {
-   background:linear-gradient(90deg, var(--white), transparent 0%), url(../resources/images/spa2.jpg) no-repeat;
-   background-size: cover;
-   background-position: center;
-   height: 500px;
-   text-align: center;
+
+.smain-bg {      /**imgae**/
+  background:linear-gradient(90deg, var(--white), transparent 0%), url('../resources/images/spa2.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  top: 0;
+  left: 0;
+  height: 500px;
+  width: 100%;
+  z-index: -1;
+  object-fit: cover;
 }
 
-.shome-bg .home{
-   min-height: 600px;
-   display: flex;
-   align-items: center;
+.gmain-bg {      /**imgae**/
+  background:linear-gradient(90deg, var(--white), transparent 0%), url('../resources/images/gym3.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  top: 0;
+  left: 0;
+  height: 500px;
+  width: 100%;
+  z-index: -1;
+  object-fit: cover;
 }
 
-.shome-bg .home .content{
-   max-width: 90%;
-   text-align: center;
-   margin-left: auto;
-   margin-right: auto;
-   margin-top: 140px;
-}
-
-.shome-bg .home .content h2{
-   font-size: 3.8rem;
-   color:var(--white);
-   font-family: 'Libre Bodoni', serif;
-   padding-left: auto;
-   padding-right: auto;
-   font-weight: 100;
-}
-
-
-/*gym form*/
-
-.ghome-bg{
-   background:linear-gradient(90deg, var(--white), transparent 0%), url(../resources/images/gym3.jpg) no-repeat;
-   background-size: cover;
-   background-position: center;
-   height: 500px;
-   text-align: center;
-}
-
-.ghome-bg .home{
-   min-height: 600px;
-   display: flex;
-   align-items: center;
-}
-
-.ghome-bg .home .content{
-   max-width: 90%;
-   text-align: center;
-   margin-left: auto;
-   margin-right: auto;
-   margin-top: 140px;
-}
-
-.ghome-bg .home .content h2{
-   font-size: 3.8rem;
-   color:var(--white);
-   font-family: 'Libre Bodoni', serif;
-   font-weight: 100;
-}
 
 /**billard form**/
 
-.bhome-bg{
-   background:linear-gradient(90deg, var(--white), transparent 0%), url(../resources/images/billard2.jpg) no-repeat;
-   background-size: cover;
-   background-position: center;
-   height: 500px;
-   text-align: center;
+.bmain-bg {      /**imgae**/
+  background:linear-gradient(90deg, var(--white), transparent 0%), url('../resources/images/billard2.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  top: 0;
+  left: 0;
+  height: 500px;
+  width: 100%;
+  z-index: -1;
+  object-fit: cover;
 }
 
-.bhome-bg .home{
-   min-height: 600px;
-   display: flex;
-   align-items: center;
-}
-
-.bhome-bg .home .content{
-   max-width: 90%;
-   text-align: center;
-   margin-left: auto;
-   margin-right: auto;
-   margin-top: 140px;
-}
-
-.bhome-bg .home .content h2{
-   font-size: 3.8rem;
-   color:var(--white);
-   font-family: 'Libre Bodoni', serif;
-   font-weight: 100;
-}
 
 /**tennis form**/
 
-.thome-bg{
-   background:linear-gradient(90deg, var(--white), transparent 0%), url(../resources/images/tennis2.jpg) no-repeat;
-   background-size: cover;
-   background-position: center;
-   height: 500px;
-   text-align: center;
-}
-
-.thome-bg .home{
-   min-height: 600px;
-   display: flex;
-   align-items: center;
-}
-
-.thome-bg .home .content{
-   max-width: 90%;
-   text-align: center;
-   margin-left: auto;
-   margin-right: auto;
-   margin-top: 140px;
-}
-
-.thome-bg .home .content h2{
-   font-size: 3.8rem;
-   color:var(--white);
-   font-family: 'Libre Bodoni', serif;
-   font-weight: 100;
+.tmain-bg {      /**imgae**/
+  background:linear-gradient(90deg, var(--white), transparent 0%), url('../resources/images/tennis2.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  top: 0;
+  left: 0;
+  height: 500px;
+  width: 100%;
+  z-index: -1;
+  object-fit: cover;
 }
