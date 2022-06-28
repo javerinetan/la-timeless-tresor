@@ -28,46 +28,50 @@ a {
     text-align: center;
   }
 
-.home-bg{
-   background:linear-gradient(90deg, var(--white), transparent 0%), url(../resources/images/services.webp) no-repeat;
-   background-size: cover;
-   background-position: center;
-   height: 500px;
-   text-align: center;
-   margin-left: auto;
-   margin-right: auto;
-}
+  .main-bg {      /**imgae**/
+    background:linear-gradient(90deg, var(--white), transparent 0%), url('../resources/images/services.webp') no-repeat;
+    background-size: cover;
+    background-position: center;
+    top: 0;
+    left: 0;
+    height: 500px;
+    width: 100%;
+    z-index: -1;
+    object-fit: cover;
+  }
 
-.home-bg .home{
-   min-height: 600px;
-   display: flex;
-   align-items: center;
-}
+  .banner .container {
+    position: absolute;
+    top: 0;
+  }
+  /**to make the image less bright**/
+  .layer {
+    background-color: black;
+    opacity: 0.4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 500px;
+    width: 100%;
+  }
+  /**heading fonts**/
+  .heading {   /**heading space and position **/
+    color: white;
+    position: relative;
+    top: 315px;
+    text-align: center;
+  }
 
-.home-bg .home .content{
-   max-width: 80%;
-   text-align: center;
-   margin-left: auto;
-   margin-right: auto;
-   margin-top: 90px;
-}
-
-.home-bg .home .content h2{
-   font-size: 3.8rem;
-   color:var(--white);
-   font-family: 'Libre Bodoni', serif;
-   font-weight: lighter;
-}
-
-.layer {
-  background-color: black;
-  opacity: 0.4;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 500px;
-  width: 100%;
-}
+  .heading h1 {
+    font-family: 'LibreBodoni-Regular';
+    font-size: 50px;
+    color: white;
+    margin: 0;
+    font-weight: lighter;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    top: 250px;
+  }
 
 .about{
    display: flex;
@@ -145,36 +149,21 @@ a {
 
 /* ferryschedule*/
 
-.thome-bg{
-   background:linear-gradient(90deg, var(--white), transparent 0%), url(../resources/images/table.jpg) no-repeat;
-   background-size: cover;
-   background-position: center;
-   height: 500px;
-   text-align: center;
-   margin-left: auto;
-   margin-right: auto;
+.tmain-bg {      /**imgae**/
+  background:linear-gradient(90deg, var(--white), transparent 0%), url('../resources/images/table.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  top: 0;
+  left: 0;
+  height: 500px;
+  width: 100%;
+  z-index: -1;
+  object-fit: cover;
 }
 
-.thome-bg .home{
-   min-height: 600px;
-   display: flex;
-   align-items: center;
-}
-
-.thome-bg .home .content{
-   max-width: 80%;
-   text-align: center;
-   margin-left: auto;
-   margin-right: auto;
-   margin-top: 90px;
-}
-
-.thome-bg .home .content h2{
-   font-size: 3.8rem;
-   color:var(--white);
-   font-family: 'Libre Bodoni', serif;
-   margin-left: auto;
-   margin-right: auto;
+.banner .container {
+  position: absolute;
+  top: 0;
 }
 
 table,td {
