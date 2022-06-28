@@ -72,6 +72,18 @@ function scrollAction(){
   }
 }
 
+// Room Selector
+function displayRoom(element){
+  boxes = document.querySelectorAll('.room-selector .box');
+  for (const box of boxes) {
+    box.classList.remove('selected');
+  }
+
+  element.classList.add('selected');
+  document.getElementById('roomImage').src ="resources/images/galleryimg"+ element.id +".jpg";
+
+}
+
 // Carousel
 var carousel = document.querySelector('.carousel');
 var flkty1 = new Flickity( carousel, {
