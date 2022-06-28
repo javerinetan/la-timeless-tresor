@@ -132,8 +132,8 @@ a{
 /**content button**/
 .button1 {
   display: inline-block;
-  padding: 1rem 4rem;
-  font-size: 1.1rem;
+  padding: 1rem 4.1rem;
+  font-size: 1rem;
   border: 1px solid #b0a48d;
   position: relative;
   color: #b0a48d;
@@ -143,11 +143,9 @@ a{
   position: relative;
   background-color:#bb9c75 ;/**change color when hover*/
   color: white;
-  font-size: 1.1rem;
-  padding: 1rem 4rem;
+  font-size: 1rem;
+  padding: 1rem 4.1rem;
   border: 1px solid #b0a48d;
-
-
 }
 /**content subtitle**/
 .subtitle{

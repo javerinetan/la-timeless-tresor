@@ -18,8 +18,6 @@ section{
    margin:0 auto;
 }
 
-
-
 /*welcome page*/
 .main-bg{
    background:linear-gradient(90deg, var(--white), transparent 0%), url('../resources/images/golfmainheader.jpg') no-repeat;
