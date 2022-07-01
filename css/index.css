@@ -14,7 +14,7 @@
 
 .layer {
   background-color: black;
-  opacity: 0.4;
+  opacity: 0.5;
   position: absolute;
   top: 0;
   left: 0;
@@ -106,7 +106,7 @@
   background-image: url("../resources/images/island.jpg");
   top: 0;
   left: 0;
-  height: 80vh;
+  height: 500px;
   width: 100%;
   background-size: cover;
   background-position: center;
@@ -128,7 +128,7 @@
   text-align: center;
   display: inline-block;
   position: absolute;
-  bottom: 150px;
+  bottom: 110px;
 }
 
 .section3 .wrapper {
@@ -153,7 +153,6 @@
   padding: 60px;
   height: 550px;
   text-align: center;
-  margin-top: 80px;
   float: right;
 }
 
@@ -442,12 +441,18 @@
     width: 400px;
   }
   .section2 aside {
-    width: 60%;
+    width: 100%;
     float: right;
   }
   .section2 article {
-    width: 40%;
-    float: right;
+    width: 100%;
+    padding: 80px;
+    padding-top: 0px;
+    padding-bottom: 40px;
+    text-align: center;
+  }
+  .section2 .wrapper {
+    padding-right: 0px;
   }
   .section-title {
     font-size: 30px;
@@ -465,10 +470,7 @@
   .section1 aside img {
     width: 250px;
   }
-  .section2 {
-    padding-right: 50px;
-  }
-  .section2 .wrapper, .section3 .wrapper, .section4 .wrapper {
+  .section3 .wrapper, .section4 .wrapper {
     margin-top: 60px;
     margin-bottom: 60px;
   }
@@ -476,7 +478,15 @@
     width: 50%;
   }
   .section7 .box {
-    width: 100%;
+    width: 50%;
+  }
+  .section3 article {
+    width: auto;
+    float: none;
+  }
+  .section3 aside {
+    width: auto;
+    float: none;
   }
 }
 
