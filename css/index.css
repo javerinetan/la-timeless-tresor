@@ -70,7 +70,6 @@
   width: 100%;
   display: inline-block;
   margin-top: -5px;
-  margin-bottom: 80px;
   padding: 100px 40px;
   padding-left: 0px;
   background-color: #F8F5F0;
@@ -128,7 +127,7 @@
   text-align: center;
   display: inline-block;
   position: absolute;
-  bottom: 110px;
+  bottom: 6vw;
 }
 
 .section3 .wrapper {
@@ -144,21 +143,24 @@
 
 .section3 aside {
   width: 50%;
-  height: 600px;
-  float: right;
+  display: inline;
+  float: left;
 }
 
 .section3 article {
   width: 50%;
   padding: 60px;
-  height: 550px;
   text-align: center;
-  float: right;
+  float: left;
 }
 
 .section3 img {
   width: 100%;
   filter:brightness(75%);
+}
+
+.section3 .section-sub-title {
+  padding-bottom: 40px;
 }
 
 .section3 .btn-container, .section6 .btn-container {
@@ -205,16 +207,15 @@
 
 .section4 aside {
   width: 50%;
-  float: left;
+  display: inline;
+  float: right;
 }
 
 .section4 article {
   width: 50%;
   padding-left: 40px;
-  float: left;
+  float: right;
   text-align: center;
-  height: 550px;
-
 }
 
 .section4 article {
@@ -381,6 +382,7 @@
   margin: 30px;
   padding: 20px;
   height: 450px;
+  margin-bottom: 110px;
   background-color: black;
   background-position: center;
   background-size: cover;
@@ -471,8 +473,8 @@
     width: 250px;
   }
   .section3 .wrapper, .section4 .wrapper {
-    margin-top: 60px;
-    margin-bottom: 60px;
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
   .section5 .box {
     width: 50%;
@@ -480,13 +482,20 @@
   .section7 .box {
     width: 50%;
   }
-  .section3 article {
+  .section3 article, .section4 article {
     width: auto;
     float: none;
   }
-  .section3 aside {
+  .section3 aside, .section4 aside {
     width: auto;
     float: none;
+  }
+  .section6 .right img, .section6 .left img, .section6 .right article, .section6 .left article  {
+    width: 100%;
+    float: none;
+  }
+  .section6 .right, .section6 .left {
+    margin: 40px 0px;
   }
 }
 
@@ -520,11 +529,11 @@
   .section2 aside, .section2 article {
     width: 100%;
   }
+  .section2 article, .section3 article, .section4 article {
+    padding: 40px;
+  }
   .section2 .button-style2 {
     margin-bottom: 40px;
-  }
-  .section2 .section-sub-title {
-    margin-bottom: 30px;
   }
   .section3 .btn-container, .section6 .btn-container {
     float: none;
@@ -537,22 +546,15 @@
     margin-top: 40px !important;
     width: 100% !important;
   }
-  .section2 .wrapper, .section3 .wrapper, .section4 .wrapper, .section5 .container {
-    margin-top: 30px;
-    margin-bottom: 30px;
+  .section3 .wrapper, .section4 .wrapper, .section5 .container {
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
   .section5 .box {
+    width: 50%;
+  }
+  .section7 .box {
     width: 100%;
-  }
-  .section5 .box-content {
-    margin: 10px 0px;
-  }
-  .section6 .right img, .section6 .left img, .section6 .right article, .section6 .left article  {
-    width: 100%;
-    float: none;
-  }
-  .section6 .right, .section6 .left {
-    margin: 40px 0px;
   }
   .section7 .box-content {
     padding: 10px;
@@ -577,7 +579,13 @@
     padding: 50px 30px;
   }
   .section2 article {
-    padding-left: 0px;
+    padding: 0px;
+  }
+  .section5 .box {
+    width: 100%;
+  }
+  .section5 .box-content {
+    margin: 10px 0px;
   }
 }
 
