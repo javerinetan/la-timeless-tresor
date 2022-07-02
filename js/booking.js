@@ -4,7 +4,9 @@ var form = document.getElementById("form-section");
 window.addEventListener('scroll', colorChange);
 
 function colorChange(){
-  if (window.pageYOffset >= window.innerHeight + form.clientHeight) {
+  console.log(window.pageYOffset);
+  console.log(window.innerHeight + form.clientHeight);
+  if (window.pageYOffset >= window.innerHeight) {
     display.classList.add("alt-color");
   }
   else {

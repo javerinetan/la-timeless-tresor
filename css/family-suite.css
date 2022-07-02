@@ -1,7 +1,7 @@
 .banner {
   top: 0;
   left: 0;
-  height: 100vh;
+  height: 70vh;
   width: 100%;
   background-size: cover;
   background-position: center;
@@ -35,16 +35,16 @@
 
 .layer {
   background-color: black;
-  opacity: 0.75;
+  opacity: 0.8;
   position: absolute;
   top: 0;
   left: 0;
-  height: 100%;
+  height: 70vh;
   width: 100%;
 }
 
 .main-carousel img {
-  height: 100vh;
+  height: 70vh;
   width: 100%;
 }
 
@@ -75,7 +75,6 @@
 
 .room-info .info .button-style1 {
   margin-top: 40px;
-  width: 350px;
 }
 
 .room-info .info .button-style1:hover {
@@ -137,6 +136,24 @@
   .heading h1 {
     font-size: 40px;
     letter-spacing: 4px;
+  }
+  .room-info .info {
+    width: 100%;
+  }
+  .room-info .amenities {
+    width: 100%;
+    text-align: left;
+    padding-top: 40px;
+  }
+  .room-info .amenities div {
+    text-align: left;
+    float: left;
+  }
+  .recommends .box {
+    width: 100%;
+  }
+  .main-carousel img, .banner, .layer {
+    height: 60vh;
   }
 }
 
