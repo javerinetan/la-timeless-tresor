@@ -5,10 +5,11 @@
   background-position: center;
   top: 0;
   left: 0;
-  height: 500px;
+  height: 70vh;
   width: 100%;
   z-index: -1;
   object-fit: cover;
+  background-attachment: fixed;
 }
 
 .banner .container {
@@ -18,11 +19,11 @@
 /**to make the image less bright**/
 .layer {
   background-color: black;
-  opacity: 0.4;
+  opacity: 0.5;
   position: absolute;
   top: 0;
   left: 0;
-  height: 500px;
+  height: 70vh;
   width: 100%;
 }
 /**heading fonts**/
@@ -31,6 +32,7 @@
   position: relative;
   top: 250px;
   text-align: center;
+  animation: title-slide 1s ease-in-out;
 }
 
 .heading h1 {
