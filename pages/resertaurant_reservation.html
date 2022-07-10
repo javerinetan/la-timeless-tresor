@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../resources/images/logo.png">
+    <title>La Timeless Trésor-Restaurant Reservation</title>
+    <!--link to css and jv-->
+    <link rel="stylesheet" href="../css/reservations.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  </head>
+  <body>
+    <nav class="topnav" id="myTopnav">
+      <div class="container">
+        <a href="../index.html" style="padding:0; display:inline">
+          <img src="../resources/images/logov2_white.png" alt="Logo" class="nav-logo" id="navLogo">
+        </a>
+        <a href="javascript:void(0);" style="font-size:18px;margin-top: 10px;" class="icon" onclick="displayNav();dismissBookingForm()">&#9776;</a>
+        <div class="nav-items">
+          <div class="dropdown">
+            <button class="dropbtn">The Resort
+              <i class="ti-angle-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="../index.html">Overview<i class="ti-angle-right"></i></a>
+              <a href="../pages/accommodations.html">Accomodations<i class="ti-angle-right"></i></a>
+              <a href="../pages/facilities.html">Facilities<i class="ti-angle-right"></i></a>
+              <a href="../pages/services.html">Services<i class="ti-angle-right"></i></a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">Dining
+              <i class="ti-angle-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="../pages/">The Restaurant<i class="ti-angle-right"></i></a>
+              <a href="../pages/reservation.html">Reservation<i class="ti-angle-right"></i></a>
+              <a href="#">Ordering<i class="ti-angle-right"></i></a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">Events & Promotions
+              <i class="ti-angle-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="../pages/events.html">Events<i class="ti-angle-right"></i></a>
+              <a href="../pages/promotions.html">Promotions<i class="ti-angle-right"></i></a>
+            </div>
+          </div>
+          <div class="dropdown">
+           <button class="dropbtn">Gallery
+             <i class="ti-angle-down"></i>
+           </button>
+           <div class="dropdown-content">
+             <a href="../pages/gallery.html">Welcome<i class="ti-angle-right"></i></a>
+             <a href="../pages/abouts.html">History<i class="ti-angle-right"></i></a>
+           </div>
+         </div>
+          <a href="#contact">Contact</a>
+          <a href="#home" class="active">Book Now</a>
+          <div class="dropdown">
+            <button class="dropbtn"><img src="../resources/images/user_white.png" alt="account" id="account" width="18px">
+              <i class="ti-angle-down"></i>
+            </button>
+            <div class="dropdown-content" style="min-width:120px">
+              <a href="#">Log In<i class="ti-angle-right"></i></a>
+              <a href="pages/signup.html">Sign Up<i class="ti-angle-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator" id="indicator" onclick="scrollAction()">
+        <i class="ti-angle-down"></i>
+      </div>
+      <div class="book-btn" id="sideBtn" onclick="displayBookingForm()">
+        <p class="book-arrow"><i class="ti-angle-up"></i></p>
+        <p class="book-title">Book Now</p>
+      </div>
+      <div class="book-form" id="bookForm">
+        <h4>Le Timeless Tresor</h4>
+        <h2>Check Availability</h2>
+        <input class="chk-in input-style1" type="text" placeholder="Check in" onfocus="(this.type='date')" onblur="(this.type='text')">
+        <input class="chk-out input-style1" type="text" placeholder="Check out" onfocus="(this.type='date')" onblur="(this.type='text')">
+        <select class="room input-style2" name="adult">
+          <option value="">Room Type</option>
+          <option value="">Junior Room</option>
+          <option value="">Double Room</option>
+          <option value="">Family Suite</option>
+          <option value="">Deluxe Suite</option>
+        </select>
+        <div class="form-container" style="padding: 0px 7.5px 0px 0px">
+          <select class="adult input-style2" name="adult">
+            <option value="">Adult</option>
+            <option value="">1</option>
+            <option value="">2</option>
+            <option value="">3</option>
+            <option value="">4</option>
+            <option value="">5</option>
+          </select>
+        </div>
+        <div class="form-container" style="padding: 0px 0px 0px 7.5px">
+          <select class="child input-style2" name="">
+            <option value="">Child</option>
+            <option value="">0</option>
+            <option value="">1</option>
+            <option value="">2</option>
+            <option value="">3</option>
+            <option value="">4</option>
+            <option value="">5</option>
+          </select>
+        </div>
+        <button class="button-style1">Check<i class="ti-angle-right"></i></button>
+      </div>
+    </nav>
+    <script type="text/javascript" src="../js/nav.js"></script>
+
+<!--end of intro-->
+<!--heading-->
+<header class="banner" onclick="dismissBookingForm()"> <!--so the banner wont come out-->
+  <div class="layer"></div>
+  <div class="main-bg"><!--insert image link to css-->
+  <div class="container">
+    <div class="heading">
+      <p class="section-subheading">Serving only the best </p>
+      <h1 class="title">Restaurant Reservation</h1>
+    </div>
+  </div>
+</header>
+<!--end of heading-->
+<!--dining packages--->
+
+<section class="reserved" >
+  <div class ="content">
+       <h4 class="section-subheading">Le Timeless Trésor Restaurant </h4>
+       <h1 class="section-title">Fine dining specially for you and your family</h1>
+       <hr class="line">
+  </div>
+  <div class="box-container">
+    <div class="box">
+         <img src="../resources/images/food1.jpg" alt="">
+         <h3 class="section-title">Breakfast</h3>
+         <p class ="section-sub-title"> $30 per person </p>
+         <p>Taste the savoury breakfast buffee from france to you.</p>
+         <p> Taste a variety of food from france at you table </p>
+         <a href="breakfast.html" class="btn">Book Now</a>
+    </div>
+
+    <div class="box">
+         <img src="../resources/images/food2.jpg" alt="">
+         <h3 class="section-title"> Tea Time Set  </h3>
+         <p class ="section-sub-title"> $35 per set only !!  </p>
+         <p>Taste the classic taste of  france sweet treats</p>
+         <p>Endulged yourself in our freshly brewed wide selection of tea</p>
+         <a href="teatime.html" class="btn">Book Now</a>
+    </div>
+
+    <div class="box">
+         <img src="../resources/images/food3.jpg" alt="">
+         <h3 class="section-title"> Dinner in le meilleur resto </h3>
+         <p class ="section-sub-title">  Starting form $88++  </p>
+         <p> Experience the high class of french dinning </p>
+         <p>4 course meal:</p>
+         <p>1 Appetizer </p>
+         <p>1 soup </p>
+         <p>1 main dish </p>
+         <p>1 desert </p>
+         <p> Add on our famour LeBre Champagin for just $37 </p>
+
+
+         <a href="indoor.html" class="btn">Book Now</a>
+    </div>
+
+
+      <div class="box">
+         <img src="../resources/images/food4.webp" alt="">
+         <h3 class="section-title"> Dining under the stars </h3>
+         <p class ="section-sub-title">  Starting form $120++  </p>
+         <p>Enjoy the spectcular night view while having your food.</p>
+         <p> 6 Couse meal:</p>
+         <p> 2 Appetizer</p>
+         <p> 1 starter </p>
+         <p> 1 soup </p>
+         <p> 1 main dish </p>
+         <p> 1 desert </p>
+         <p> + 1 Complimentary bottle of our LeBre Champagin </p>
+
+         <a href="outdoor.html" class="btn">Book Now</a>
+      </div>
+
+</section>
