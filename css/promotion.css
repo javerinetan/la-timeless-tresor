@@ -61,6 +61,16 @@
   float: right;
   width: 55%;
 }
+
+/*line to seperate tittle and content**/
+.line {
+  width: 40%;
+  height: 1px;
+  display: inline-block;
+  background-color: #aa8453;
+  margin: 20px 0px;
+}
+
 /**content**/
 .section .right, .section .left {
   float: left;
@@ -103,4 +113,44 @@
   border: 1px solid #b0a48d;
 
 
+}
+/**romantic package**/
+.content{
+  text-align: center; /**to aligin the header*/
+}
+
+/**to make it 3 in one row*/
+.boxes{
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  text-align: center;
+}
+/** resize the image**/
+.boxes img{
+  width:100%;
+  height:28rem;
+  margin-bottom: 1rem;
+  align-items: center;
+}
+
+/** clear floats after the boxes**/
+.box-container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/**responsive layout-makes the colums(boxes) stack on top of each other**/
+@media screen and (max-width: 600px) {
+  .section .right img,   .section5 .right img, .section .left img, .section .right article,.section5 .right article, .section .left article  {
+    width: 100%;
+    float: none;
+  }
+  .section .right, .section .left {
+    margin: 40px 0px;
+  }
+  .boxes {
+    width: 100%;
+  }
 }
