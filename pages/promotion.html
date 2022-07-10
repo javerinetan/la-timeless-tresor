@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../resources/images/logo.png">
+    <title>La Timeless Trésor-Promotion</title>
+    <!--link to css and jv-->
+    <link rel="stylesheet" href="../css/promotion.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  </head>
+  <body>
+    <nav class="topnav" id="myTopnav">
+      <div class="container">
+        <a href="../index.html" style="padding:0; display:inline">
+          <img src="../resources/images/logov2_white.png" alt="Logo" class="nav-logo" id="navLogo">
+        </a>
+        <a href="javascript:void(0);" style="font-size:18px;margin-top: 10px;" class="icon" onclick="displayNav();dismissBookingForm()">&#9776;</a>
+        <div class="nav-items">
+          <div class="dropdown">
+            <button class="dropbtn">The Resort
+              <i class="ti-angle-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="../index.html">Overview<i class="ti-angle-right"></i></a>
+              <a href="../pages/accommodations.html">Accomodations<i class="ti-angle-right"></i></a>
+              <a href="../pages/facilities.html">Facilities<i class="ti-angle-right"></i></a>
+              <a href="../pages/services.html">Services<i class="ti-angle-right"></i></a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">Dining
+              <i class="ti-angle-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="../pages/">The Restaurant<i class="ti-angle-right"></i></a>
+              <a href="../pages/resertaurant_reservation.html">Reservation<i class="ti-angle-right"></i></a>
+              <a href="#">Ordering<i class="ti-angle-right"></i></a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">Events & Promotions
+              <i class="ti-angle-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="../pages/events.html">Events<i class="ti-angle-right"></i></a>
+              <a href="../pages/promotion.html">Promotions<i class="ti-angle-right"></i></a>
+            </div>
+          </div>
+          <div class="dropdown">
+           <button class="dropbtn">Gallery
+             <i class="ti-angle-down"></i>
+           </button>
+           <div class="dropdown-content">
+             <a href="../pages/gallery.html">Welcome<i class="ti-angle-right"></i></a>
+             <a href="../pages/abouts.html">History<i class="ti-angle-right"></i></a>
+           </div>
+         </div>
+          <a href="#contact">Contact</a>
+          <a href="#home" class="active">Book Now</a>
+          <div class="dropdown">
+            <button class="dropbtn"><img src="../resources/images/user_white.png" alt="account" id="account" width="18px">
+              <i class="ti-angle-down"></i>
+            </button>
+            <div class="dropdown-content" style="min-width:120px">
+              <a href="#">Log In<i class="ti-angle-right"></i></a>
+              <a href="pages/signup.html">Sign Up<i class="ti-angle-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator" id="indicator" onclick="scrollAction()">
+        <i class="ti-angle-down"></i>
+      </div>
+      <div class="book-btn" id="sideBtn" onclick="displayBookingForm()">
+        <p class="book-arrow"><i class="ti-angle-up"></i></p>
+        <p class="book-title">Book Now</p>
+      </div>
+      <div class="book-form" id="bookForm">
+        <h4>Le Timeless Tresor</h4>
+        <h2>Check Availability</h2>
+        <input class="chk-in input-style1" type="text" placeholder="Check in" onfocus="(this.type='date')" onblur="(this.type='text')">
+        <input class="chk-out input-style1" type="text" placeholder="Check out" onfocus="(this.type='date')" onblur="(this.type='text')">
+        <select class="room input-style2" name="adult">
+          <option value="">Room Type</option>
+          <option value="">Junior Room</option>
+          <option value="">Double Room</option>
+          <option value="">Family Suite</option>
+          <option value="">Deluxe Suite</option>
+        </select>
+        <div class="form-container" style="padding: 0px 7.5px 0px 0px">
+          <select class="adult input-style2" name="adult">
+            <option value="">Adult</option>
+            <option value="">1</option>
+            <option value="">2</option>
+            <option value="">3</option>
+            <option value="">4</option>
+            <option value="">5</option>
+          </select>
+        </div>
+        <div class="form-container" style="padding: 0px 0px 0px 7.5px">
+          <select class="child input-style2" name="">
+            <option value="">Child</option>
+            <option value="">0</option>
+            <option value="">1</option>
+            <option value="">2</option>
+            <option value="">3</option>
+            <option value="">4</option>
+            <option value="">5</option>
+          </select>
+        </div>
+        <button class="button-style1">Check<i class="ti-angle-right"></i></button>
+      </div>
+    </nav>
+    <script type="text/javascript" src="../js/nav.js"></script>
+  <!--heading-->
+    <header class="banner" onclick="dismissBookingForm()"> <!--so the banner wont come out-->
+      <div class="layer"></div>
+      <div class="main-bg"><!--insert image link to css-->
+      <div class="container">
+        <div class="heading">
+          <p class="section-subheading">Le Timeless Tresor</p>
+          <h1 class="title">Rising to the highest comfort</h1>
+        </div>
+      </div>
+    </header>
+  <!--end of heading-->
+  <section class="section">
+  <!--content1-->
+      <div class = "right"> <!--tell where the text should be-->
+        <img src="https://i.gifer.com/g33h.gif">
+          <article> <!--this is the create the col-->
+            <h4 class="section-subheading">Water Activities</h4>
+            <h1 class="section-title">Scuba Dive with the fishes</h1> <!-- key in the class="section-title" cause it states the font for that line, it is in the global css-->
+            <hr class="line"><!--create a line-->
+            <p class="subtitle">Looking for an adventure to witness the wonders of an underwater paradise? Or if you are seeking new challenges in the vast ocean,
+              we have a dive trip for you! Our passionate and dedicated crew will be by your side to ensure that your trip with Gill Divers will be
+              an enriching and fulfilling one, leaving you wanting for more! All hotel guests will be given a 25% of when the book. So what are you waiting for?
+            Come and book your tickets .</p>
+            <a href="https://scubaknights.com/overseas-trips" class="button1">Book Now</a>
+        </article>
+      </div>
+  <!--content2-->
+      <div class="left">
+         <img src="../resources/images/ab1.jfif" alt="image">
+         <article>
+           <h4 class="section-subheading">Land Activity</h4>
+           <h1 class="section-title">Golfing in world's 3rd largest golf course</h1>
+           <hr class="line">
+           <p class="subtitle">
+             Ever wonder what the world's 3 largest golf courses look like? Now you can! Famous golf players like Tiger Woods have come here to play on the
+             amazing course we offer. We have integrated into two sections one for the adults and a mini-course area so kids can play too. What are you waiting for?
+              All hotel guests are entitled to discounted rates that will differ based on your rooms.
+           </p>
+        </article>
+      </div>
