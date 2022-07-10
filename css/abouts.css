@@ -125,6 +125,9 @@
     margin-bottom: 10px;
     display: inline-block;
   }
+  .section3{
+    margin: 0 15rem;
+  }
 
 
   /** to make it responsive**/
