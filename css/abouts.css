@@ -118,27 +118,22 @@
 
 
   /**awards section**/
-  .section3 .container2 {
+.section3 .container2 {
     text-align: center;
     width: 100%;
     margin-top: 10px;
     margin-bottom: 10px;
     display: inline-block;
-  }
-
-.section3 .box-conatiner{
-  display: inline-block;
-  float: right;
-  padding: 0 10rem;
 }
 
+.section3 .box-conatiner{
+  margin: 0 5rem;
+}
 .section3 img{
-    width: 20%;
-    float: left;
-    text-align: left;
-    margin: 10px;
-    min-height: 200px;
-    padding: 25px;
+  float: left;
+  width: 25%;
+  padding: 10px;
+  height: 300px;
   }
 
 
@@ -151,11 +146,6 @@
     .section .right, .section .left {
       margin: 40px 0px;
     }
-
-@media screen and (max-width: 1400px) {
-  .section3 .box-conatiner {
-    padding-right: 80px;
-    padding-left: 80px;
-    margin-right: auto;
-    margin-left: auto;
+    .section3 img {  /** this is to make sure if to small it will rejust to below   **/
+      width: 100%;
     }
