@@ -143,55 +143,30 @@
     margin-bottom: 10px;
     display: inline-block;
 }
-.section4 .column {
+.section4 .column { /*to make it form 3 by 3*/
   float: left;
-  width: 33.3%;
+  width: 20%;
   margin-bottom: 16px;
   padding: 0 10px;
 }
 
-.section4 .card {
+.section4 .card {   /**give an effect of pop out**/
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   margin: 20px;
 }
 
-.section4 .about-section {
-  padding: 40px;
-  text-align: center;
-  background-color: #474e5d;
-  color: white;
-}
 
-.section4 .container4 {
-  padding: 20px 40px;
-}
-
-.section4 .container::after, .row::after {
-  content: "";
-  clear: both;
-  display: table;
+.section4 .container4 { /**to create the tickness of the box for the content**/
+  padding: 20px 25px;
 }
 
 .section4 .title {
   color: grey;
 }
 
-.section4 .button_contact {
-  display: inline-block;
-  width: 100%;
-  padding: 1rem 4.1rem;
-  font-size: 1rem;
-  border: 1px solid #b0a48d;
-  position: relative;
-  color: #b0a48d;
-  background-color: transparent;
+.section4 .container4{
+  text-align: center;
 }
-
-.section4 .button_contact:hover {
-  background-color: #bb9c75;
-  color: white;
-}
-
 
   /** to make it responsive**/
   @media screen and (max-width: 600px) {
