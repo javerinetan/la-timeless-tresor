@@ -168,6 +168,10 @@
   text-align: center;
 }
 
+.section4 i{
+  color: #bb9c75;
+}
+
   /** to make it responsive**/
   @media screen and (max-width: 600px) {
     .section .right img, .section .left img, .section .right article, .section .left article  {
