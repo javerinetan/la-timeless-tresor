@@ -128,6 +128,11 @@
   .section3{
     margin: 0 15rem;
   }
+  .section3 img{
+    display:inline-block;
+    width: 20rem;
+    height: 20rem;
+  }
 
 
   /** to make it responsive**/
