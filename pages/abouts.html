@@ -300,13 +300,27 @@
 </section>
 <!--end of team section-->
 <!-- Enquire section-->
-<section class="section3">
-   <div class="container2">
+<section class="section5">
+   <div class="container5">
         <h4 class="section-subheading"><i class="fa-solid fa-star"></i>24/7 helpdesk</h4>
         <h1 class="section-title">Enquires</h1>
-        <hr class="line">
    </div>
-   
+   <div class="right">
+     <img src="../resources/images/enquires.jpg" alt="">
+     <article> <!--this is the create the col-->
+       <form action="" method="post">
+          <h3>For Enquires </h3>
+          <input type="text" name="name" required class="box" maxlength="20" placeholder="enter your name">
+          <input type="number" name="number" required class="box" maxlength="20" placeholder="phone number" min="0" max="9999999999" onkeypress="if(this.value.length == 10) return false">
+          <input type="email" name="email"required class="box" maxlengt required class="box" maxlength="20" placeholder="enter your email">
+          <input type="enquire" name="enquire" required class="box" maxlengt required class="box" maxlength="50" placeholder="What is your enquire?">
+          <input type="submit" name="send" value="send message" class="btn">
+       </form>
+   </article>
+ </div>
+
+
+
 </section>
 <!--footer-->
 <footer class="footer">
