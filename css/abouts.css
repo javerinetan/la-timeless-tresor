@@ -49,10 +49,7 @@
   margin-bottom: 10px;
 }
 /**end of heading**/
-/**content margin**/
-.section{
-  padding: 0 1.5rem;
-}
+
 /**content image**/
 .section .right img {
   float: left; /* this so so the image will be on the left while the text is on the right*/
