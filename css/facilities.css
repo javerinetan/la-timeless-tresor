@@ -94,9 +94,6 @@ a{
   padding-bottom: 1.5rem !important;
 }
 
-.facilities{
-  padding: 0 1.5rem;
-}
 /**content image**/
 .facilities .right img {
   float: left; /* this so so the image will be on the left while the text is on the right*/

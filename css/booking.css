@@ -2,7 +2,7 @@
   background-image: url("../resources/images/campfire.jpg");
   top: 0;
   left: 0;
-  height: 100vh;
+  height: 70vh;
   width: 100%;
   background-size: cover;
   background-position: center;
@@ -39,7 +39,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  height: 100%;
+  height: 70vh;
   width: 100%;
 }
 
@@ -175,11 +175,10 @@
 .box .info {
   float: left;
   width: 50%;
-  padding: 0px 20px ;
+  padding: 0px 40px;
 }
 
 .info .amenities {
-  display: inline-block;
   margin-top: 20px;
 }
 
@@ -189,8 +188,19 @@
   margin: 10px;
 }
 
-@media screen and (max-width: 1200px) {
-
+@media screen and (max-width: 1100px) {
+  .box .image, .box .info{
+    width: 100%;
+    padding: 0px;
+    padding-bottom: 20px;
+  }
+  .content .result.container {
+    width: 55%;
+  }
+  .booking-details {
+    width: 35%;
+    margin-right: 40px;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -204,10 +214,6 @@
   }
   .form .button-style2 {
     width: 80%;
-  }
-  .booking-details {
-    width: 35%;
-    margin-right: 40px;
   }
   .form .wrapper {
     width: 60%;
@@ -231,6 +237,7 @@
   }
   .content .result.container {
     width: 100%;
+    padding: 30px
   }
   .content .form.container {
     padding-top: 60px;

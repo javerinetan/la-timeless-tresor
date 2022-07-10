@@ -412,8 +412,7 @@
     float: none;
   }
   .nav-items:nth-child(3) a{
-    background-color: white;
-    color: black !important;
+
   }
 }
 
@@ -442,7 +441,6 @@
     display: block;
     width: 100%;
     text-align: left;
-    color: black;
-    background-color: white
+    color: white;
   }
 }

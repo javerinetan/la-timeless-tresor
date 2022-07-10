@@ -113,7 +113,6 @@ body {
   width: 100%;
   background: #c4ac80;
   color: #fff;
-  font-family: 'LibreBodoni-Regular';
   font-size: 15px;
   text-decoration: none;
   padding: 20px;
@@ -159,7 +158,8 @@ body {
 
 .button-style3 {
   display: inline-block;
-  padding: 1.25rem 4.375rem;
+  padding: 1.1rem 4.3rem;
+  font-size: 16px;
   border: 1px solid #b0a48d;
   color: #b0a48d;
   background-color: transparent;
