@@ -4,7 +4,7 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Billard room Booking Page</title>
+   <title>Billard room Booking | La Timeless Trésor</title>
 
    <!-- font awesome cdn link  -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
@@ -79,6 +79,45 @@
     <div class="scroll-indicator" id="indicator" onclick="scrollAction()">
       <i class="ti-angle-down"></i>
     </div>
+    <div class="book-btn" id="sideBtn" onclick="displayBookingForm()">
+      <p class="book-arrow"><i class="ti-angle-up"></i></p>
+      <p class="book-title">Book Now</p>
+    </div>
+    <div class="book-form" id="bookForm">
+      <h4>Le Timeless Tresor</h4>
+      <h2>Check Availability</h2>
+      <input class="chk-in input-style1" type="text" placeholder="Check in" onfocus="(this.type='date')" onblur="(this.type='text')">
+      <input class="chk-out input-style1" type="text" placeholder="Check out" onfocus="(this.type='date')" onblur="(this.type='text')">
+      <select class="room input-style2" name="adult">
+        <option value="">Room Type</option>
+        <option value="">Junior Room</option>
+        <option value="">Double Room</option>
+        <option value="">Family Suite</option>
+        <option value="">Deluxe Suite</option>
+      </select>
+      <div class="form-container" style="padding: 0px 7.5px 0px 0px">
+        <select class="adult input-style2" name="adult">
+          <option value="">Adult</option>
+          <option value="">1</option>
+          <option value="">2</option>
+          <option value="">3</option>
+          <option value="">4</option>
+          <option value="">5</option>
+        </select>
+      </div>
+      <div class="form-container" style="padding: 0px 0px 0px 7.5px">
+        <select class="child input-style2" name="">
+          <option value="">Child</option>
+          <option value="">0</option>
+          <option value="">1</option>
+          <option value="">2</option>
+          <option value="">3</option>
+          <option value="">4</option>
+          <option value="">5</option>
+        </select>
+      </div>
+      <button class="button-style1">Check<i class="ti-angle-right"></i></button>
+    </div>
     <script type="text/javascript" src="../js/nav.js"></script>
   </nav>
 
@@ -90,7 +129,7 @@
   <div class="bmain-bg"><!--insert image link to css-->
   <div class="container">
     <div class="heading">
-      <h1 class="content">billard room booking page</h1>
+      <h1 class="content">billiard room booking page</h1>
     </div>
   </div>
 </div>
@@ -105,7 +144,7 @@
     <div class="row">
 
      <form action="billardformdate.html" method="post">
-        <h3>book a billard room</h3>
+        <h3>book a billiard room</h3>
         <label for='confnum'>hotel confirmation number:</label>
         <input type="text" name="number" required class="box" placeholder="hotel confirmation number" required>
         <label for='check-in'>check-in date:</label>
