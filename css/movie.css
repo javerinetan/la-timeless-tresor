@@ -1,87 +1,154 @@
-* {box-sizing:border-box}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
+.section-title {
+  font-size: 38px;
 }
 
-/* Hide the images by default */
-.mySlides {
-  display: none;
+.section-sub-title {
+  color: darkgray;
+  padding-bottom: 20px;
 }
 
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
+.section-subheading {
+  text-transform: uppercase;
+  color: #aa8453;
   font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
 }
 
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
+.section1 .container {
   text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
+  width: 100%;
+  margin-top: 100px;
+  margin-bottom: 100px;
   display: inline-block;
-  transition: background-color 0.6s ease;
+  opacity: 1;
 }
 
-.active, .dot:hover {
-  background-color: #717171;
+.room-left, .room-right {
+  display: inline-block;
 }
 
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
+.room-left img{
+  width: 50%;
+  margin-top: 100px;
+  float: left;
+}
+
+.room-left article{
+  width: 45%;
+  float: left;
+  padding: 70px;
+  background-color: #F8F5F0;
+  z-index: 1;
+}
+
+.room-left .amenities {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.room-left .amenities i{
+  font-size: 18px;
+  margin: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  .section1 aside img {
+    width: 350px;
+  }
+  .section2 aside {
+    width: 60%;
+    float: right;
+  }
+  .section2 article {
+    width: 40%;
+    float: right;
+  }
+  .section-title {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .heading h1 {
+    font-size: 40px;
+    letter-spacing: 4px;
+  }
+  .section1 .box {
+    width: 50%;
+  }
+  .section1 .box {
+    width: 50%;
+    float: left;
+    text-align: left;
+    padding: 30px;
+    transition: all 0.4s ease-in-out;
+  }
+  .section1 .box-content {
+    padding: 10px;
+  }
+  .section1 .box:hover {
+    padding: 10px;
+    box-shadow: 0px 5px 15px rgb(0 0 0 / 5%)
+  }
+  .carousel-cell img {
+    width: 100%;
+    margin-top: 0px;
+  }
+  .room-left article {
+    width: 100%;
+    padding: 40px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .heading h1 {
+    font-size: 40px;
+    letter-spacing: 4px;
+  }
+  .section1 .box {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .heading h1 {
+    font-size: 28px;
+    letter-spacing: 3px;
+  }
+  .section1 aside img {
+    width: 100%;
+  }
+  .section2 {
+    padding-right: 0px;
+  }
+  .carousel-cell img {
+    display: block;
+  }
+  .section2 .wrapper {
+    padding: 30px;
+  }
+  .section2 article {
+    padding-left: 0px;
+  }
+}
+
+@keyframes title-slide {
+  0% {
+    opacity: 0.8;
+    left: -110px;
+  }
+  100% {
+    opacity: 1;
+    left: 0px;
+  }
 }
 
 @keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  0% {
+    opacity: 0;
+    margin-top: 20px;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0px;
+  }
 }

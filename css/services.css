@@ -32,6 +32,7 @@ a {
     background:linear-gradient(90deg, var(--white), transparent 0%), url('../resources/images/services.webp') no-repeat;
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     top: 0;
     left: 0;
     height: 500px;
@@ -73,27 +74,47 @@ a {
     top: 250px;
   }
 
-.about{
-   display: flex;
-   align-items: center;
-   flex-wrap: wrap;
-   gap:2.5rem;
-   padding: 1.9rem 2rem;
-}
+  .about{
+    text-align: center;
+    margin-top: 70px!important;
+  }
 
-.about .content{
-   flex:1 1 20rem;
-}
+  .pageName {
+    font-family: 'LibreBodoni-Regular';
+    font-weight: 100;
+    font-size: 40px;
+    text-align: center;
+  }
 
-.about .content p{
-   padding:.94rem 0 0;
-   line-height: 2rem;
-   color:var(--light-color);
-   font-size: .94rem;
-   margin-left: auto;
-   margin-right: auto;
-   text-align: center;
-}
+  .content {
+    color: darkgray;
+    padding-bottom: 20px;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    text-align: center;
+  }
+
+  .hotelName {
+    font-family: 'LibreBodoni-Regular';
+    font-weight: 100;
+    text-transform: uppercase;
+    color: #aa8453;
+    letter-spacing: 1px;
+    font-size: 16px;
+    margin-bottom: 12px;
+    text-align: center;
+  }
+
+  .horizontal-line{
+    width: 40%;
+    height: 1px;
+    display: inline-block;
+    background-color: #aa8453;
+    margin: 30px 0px;
+  }
 
 .services{
   padding-top: .44rem;
