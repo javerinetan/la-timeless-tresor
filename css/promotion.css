@@ -5,7 +5,7 @@
   background-position: center;
   top: 0;
   left: 0;
-  height: 70vh;
+  height: 500px;
   width: 100%;
   z-index: -1;
   object-fit: cover;
@@ -23,7 +23,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  height: 70vh;
+  height: 500px;
   width: 100%;
 }
 /**heading fonts**/
@@ -130,7 +130,7 @@
 /** resize the image**/
 .boxes img{
   width:100%;
-  height:28rem;
+  height:16rem;
   margin-bottom: 1rem;
   align-items: center;
 }
