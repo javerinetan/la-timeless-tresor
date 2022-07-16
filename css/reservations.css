@@ -56,6 +56,12 @@
   text-align: center;
   padding-top: 100px;
 }
+
+.subtitle {
+    color: darkgray;
+    margin-bottom: 20px;
+    padding:0 40px;
+}
 /*line to seperate tittle and content**/
 .line {
   width: 40%;
@@ -107,8 +113,37 @@
   border: 1px solid #b0a48d;
 
 }
+/** to make the page responsive **/
+
+@media screen and (max-width: 400px){
+    .heading h1 {
+        font-size: 28px;
+        letter-spacing: 3px;
+    }
+  }
+
 @media screen and (max-width: 600px) {
+  .heading h1{
+    font-size:40px;
+    letter-spacing: 4px;
+  }
   .boxes{
     width: 100%;
   }
+
+}
+
+
+@media screen and (max-width: 900px){
+    .heading h1 {
+        font-size: 40px;
+        letter-spacing: 4px;
+    }
+  }
+
+
+@media screen and (max-width: 1200px){
+.section-title{
+  font-size: 30px;
+}
 }
