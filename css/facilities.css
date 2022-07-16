@@ -41,7 +41,7 @@ header{
    background:linear-gradient(90deg, var(--white), transparent 0%), url(../resources/images/hotel.jpg) no-repeat;
    background-size: cover;
    background-position: center;
-   background-attachment: fixed;
+   background-attachment: fixed; /*fix the image so it doesnt move when u scroll down**/
    height: 500px;
    text-align: center;
 }
@@ -254,28 +254,6 @@ header{
   text-align: center !important;
   margin:auto;
 }
-
-
-/* .about{
-   display: flex;
-   align-items: center;
-   flex-wrap: wrap;
-   gap:2.5rem;
-}
-
-.about .content{
-   flex:1 1 20rem;
-}
-
-.about .content p{
-   padding:.94rem 0 0;
-   line-height: 2rem;
-   color:var(--light-color);
-   font-size: .94rem;
-   margin-left: auto;
-   margin-right: auto;
-   text-align: center;
-} */
 
 .movie{
   padding: 1.6rem;

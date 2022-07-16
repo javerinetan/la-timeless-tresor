@@ -2,7 +2,7 @@
   background-image: url("../resources/images/room.jpg");
   top: 0;
   left: 0;
-  height: 70vh;
+  height: 500px;
   width: 100%;
   background-size: cover;
   background-position: center;
@@ -12,7 +12,7 @@
 .heading {
   color: white;
   position: relative;
-  top: 250px;
+  top: 315px;
   text-align: center;
   animation: title-slide 1s ease-in-out;
 }
@@ -39,7 +39,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  height: 70vh;
+  height: 500px;
   width: 100%;
 }
 
