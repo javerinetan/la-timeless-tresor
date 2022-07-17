@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="../resources/images/logo.png">
-  <title>Booking | La Timeless Trésor</title>
+  <title>Restaurant Reservation | La Timeless Trésor</title>
   <link rel="stylesheet" href="../css/jae_forms.css">
   <link rel="stylesheet" href="../css/navbar.css">
   <link rel="stylesheet" href="../css/global.css">
@@ -115,55 +115,31 @@
     </div>
     <script type="text/javascript" src="../js/nav.js"></script>
   </nav>
-  <header class="banner" onclick="dismissBookingForm()">
+<!-- end of header-->
+<!-- start the page about intro-->
+  <header class="banner" onclick="dismissBookingForm()"> <!-- so the side thing will not come out-->
     <div class="layer">
     </div>
     <div class="container">
       <div class="heading">
         <p class="section-subheading">Le Timeless Tresor</p>
-        <h1 class="title">Craft your experience</h1>
+        <h1 class="title">Restaurant Reservation Booking </h1>
       </div>
     </div>
   </header>
-  <div class="content reveal up">
-    <div class="booking-details" id="bookingDetails">
-      <h4 class="section-subheading">Le Timeless Trésor</h4>
-      <h2 class="section-title-sm" style="margin:0px;">Your stay</h2>
-      <hr class="horizontal-line">
-      <div style="display:inline-block; width:100%">
-        <div>
-          <p>Check in</p>
-          <span>-</span>
-        </div>
-        <div>
-          <p>Check out</p>
-          <span>-</span>
-        </div>
-        <div>
-          <p>Adult</p>
-          <span>-</span>
-        </div>
-        <div>
-          <p>Child</p>
-          <span>-</span>
-        </div>
-        <div>
-          <p>Room Type</p>
-          <span>-</span>
-        </div>
-      </div>
-      <a class="button-style2" name="button">Proceed<i class="ti-angle-right"></i></a>
-    </div>
+<!-- end of the image header-->
+<!-- start of form-->
+<section class = "form">
     <div class="form container">
       <div class="wrapper" id="form-section">
-        <h4 class="section-subheading">Booking</h4>
+        <h4 class="section-subheading">Breakfast Booking</h4>
         <h1 class="section-title">Check Availability</h1>
         <hr class="horizontal-line">
         <form action="index.html" method="post">
           <div class="input-container">
-            <p>Check in date</p>
+            <p>Select Booking Date</p>
             <input class="input-style1" type="date" name="" value="">
-            <div style="width:48%;float:left">
+            <div style="width:48%; float:left">
               <p>No. of Adult</p>
               <select class="input-style1" name="adult">
                 <option value="">1</option>
@@ -186,68 +162,99 @@
             </div>
           </div>
           <div class="input-container">
-            <p>Check out date</p>
-            <input class="input-style1" type="date" name="" value="">
-            <p>Room Type</p>
-            <select class="input-style1" name="Room">
-              <option value="">Room Type</option>
-              <option value="">Any</option>
-              <option value="">Junior Suite</option>
-              <option value="">Family Suite</option>
-              <option value="">Deluxe Suite</option>
-              <option value="">Executive Suite</option>
+            <p>Choose Time Slot:</p>
+            <select class="input-style1" name="time">
+              <<option value="6.00am">6.00am</option>
+              <option value="6.30am">6.30am</option>
+              <option value="7.00am">7.00am</option>
+              <option value="7.30am">7.30am</option>
+              <option value="8.00am">8.00am</option>
+              <option value="8.30am">8.30am</option>
+              <option value="9.00am">9.00am</option>
+              <option value="9.30am">9.30am</option>
+              <option value="10.00am">10.00am</option>
             </select>
           </div>
-          <a href="#results" style="display: inline-block;width: 100%;margin-top: 20px;">
             <button type="button" class="button-style2" name="button" style="width: 48%;">Search<i class="ti-angle-right"></i></button>
-          </a>
         </form>
       </div>
     </div>
-    <div class="result container" id="results">
-      <div class="wrapper">
-        <h1>Available Rooms (2)</h1>
-        <div class="box reveal left">
-          <div class="image">
-            <img src="../resources/images/galleryimg3.jpg" alt="">
-          </div>
-          <div class="info">
-            <h2 class="section-title-sm">Family suite</h2>
-            <p style="font-weight: bold;font-size: 20px">$450 /night</p>
-            <div class="amenities">
-              <i class="fa-solid fa-person"></i>2-4
-              <i class="fa-solid fa-bath"></i>Bathtub
-              <i class="fa-solid fa-wifi"></i>Internet
-              <i class="fa-solid fa-bed"></i> King-sized
-            </div>
-            <a href="pages/gallery.html" class="a-style1">Room details<i class="fa-solid fa-arrow-right"></i></a>
-            <a href="#results" style="display: inline-block;width: 100%;margin-top: 20px;">
-              <button type="button" class="button-style2" name="button" style="width: 100%;">Select this room<i class="ti-angle-right"></i></button>
-            </a>
-          </div>
+  </section>
+  <!--footer-->
+  <footer class="footer">
+     <div class="container">
+       <section>
+         <div class="box">
+            <img src="../resources/images/logov2_black.png">
+         </div>
+         <div class="box">
+            <p>Turquoise waters lap at white-sand shores. Towering palms rustle overhead. Welcome to Le Tresor.</p>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+         </div>
+         <div class="box newsletter">
+           <h3>Join Newsletter</h3>
+           <input type="text" placeholder="email">
+           <button><i class="fa-solid fa-arrow-right"></i></button>
+         </div>
+       </section>
+       <section>
+         <div class="box">
+            <h3>The Resort</h3>
+            <a href="#">Overview<i class="ti-angle-right"></i></a>
+            <a href="#">Accomodations<i class="ti-angle-right"></i></a>
+            <a href="#">Facilities<i class="ti-angle-right"></i></a>
+            <a href="#">Services<i class="ti-angle-right"></i></a>
+            <a href="#">Dining<i class="ti-angle-right"></i></a>
+            <a href="#">Gallery<i class="ti-angle-right"></i></a>
+            <a href="#">Contact Us<i class="ti-angle-right"></i></a>
+            <a href="#">Events<i class="ti-angle-right"></i></a>
+            <a href="#">Promotions<i class="ti-angle-right"></i></a>
+         </div>
+         <div class="box">
+            <h3>My Account</h3>
+            <a href="#">Log in<i class="ti-angle-right"></i></a>
+            <a href="#">Sign up<i class="ti-angle-right"></i></a>
+         </div>
+       </section>
+       <section>
+         <div class="box">
+            <i class="fas fa-envelope"></i>
+            <h3>Email</h3>
+            <p>LaTimelessTresor@resort.com</p>
+         </div>
+         <div class="box">
+            <i class="fas fa-clock"></i>
+            <h3>Hotline Hours</h3>
+            <p>08:00am to 08:00pm</p>
+         </div>
+         <div class="box">
+            <i class="fas fa-map-marker-alt"></i>
+            <h3>Location</h3>
+            <p>La Baie Classique, Singapore</p>
+         </div>
+         <div class="box">
+            <i class="fas fa-phone"></i>
+            <h3>Contact</h3>
+            <p>+65-9999</p>
+         </div>
+       </section>
+       <hr>
+     </div>
+     <section style="width:100%; background-color: #222">
+      <div class="container" style="padding: 10px;">
+        <div class="tc">
+          <a href="#">Terms & Conditions</a> |
+          <a href="#">Privacy Policy</a>
         </div>
-        <div class="box reveal left">
-          <div class="image">
-            <img src="../resources/images/room.jpg" alt="">
-          </div>
-          <div class="info">
-            <h2 class="section-title-sm">Deluxe suite</h2>
-            <p style="font-weight: bold;font-size: 20px">$550 /night</p>
-            <div class="amenities">
-              <i class="fa-solid fa-person"></i>2-4
-              <i class="fa-solid fa-bath"></i>Bathtub
-              <i class="fa-solid fa-wifi"></i>Internet
-              <i class="fa-solid fa-bed"></i> King-sized
-            </div>
-            <a href="pages/gallery.html" class="a-style1">Room details<i class="fa-solid fa-arrow-right"></i></a>
-            <a href="#results" style="display: inline-block;width: 100%;margin-top: 20px;">
-              <button type="button" class="button-style2" name="button" style="width: 100%;">Select this room<i class="ti-angle-right"></i></button>
-            </a>
-          </div>
+        <div style="width:100%; padding: 20px; text-align: center">
+          <p>Copyright 2022 &copy; Le Timeless Tresor | All right reserved.</p>
         </div>
       </div>
-    </div>
-  </div>
-  <script src="../js/booking.js" type="text/javascript"></script>
-  <script src="../js/main.js" type="text/javascript"></script>
+     </section>
+  </footer>
+
+
+
 </body>
