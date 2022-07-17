@@ -64,7 +64,7 @@ header{
   margin-top:70px!important;
 }
 
-.pageName {
+.page-name {
   font-family: 'LibreBodoni-Regular';
   font-weight: 100;
   font-size: 40px;
@@ -82,7 +82,7 @@ header{
   text-align: center;
 }
 
-.hotelName {
+.hotel-name {
   font-family: 'LibreBodoni-Regular';
   font-weight: 100;
   text-transform: uppercase;
@@ -99,6 +99,14 @@ header{
   display: inline-block;
   background-color: #aa8453;
   margin: 30px 0px;
+}
+
+.line {
+  width: 40%;
+  height: 1px;
+  display: inline-block;
+  background-color: #aa8453;
+  margin: 20px 0px;
 }
 
 /* facilities start*/
@@ -166,24 +174,69 @@ header{
   color: darkgray;
   margin-bottom: 20px;
 }
-/*line to seperate tittle and content**/
-.line {
-  width: 40%;
-  height: 1px;
-  display: inline-block;
-  background-color: #aa8453;
-  margin: 20px 0px;
+
+
+
+@media screen and (max-width: 500px){
+    .about .content{
+      font-size: 85% !important;
+      margin: 10px;
+    }
+    .page-name {
+      font-size: 200% !important;
+    }
+    .hotel-name{
+      font-size: 80% !important;
+    }
+    .horizontal-line{
+      margin: 20px 0px !important;
+    }
+    .facilities .right img,   .facilities .right img, .facilities .left img, .facilities .right article,.facilities .right article, .facilities .left article  {
+      width: 100%;
+      float: none;
+    }
+    .facilities .right, .facilities .left {
+      margin: 40px 0px;
+    }
+
+  }
+
+
+@media screen and (max-width: 900px){
+  .heading h1 {
+      font-size: 40px;
+      letter-spacing: 4px;
+  }
+  .facilities .left article {
+    padding: 20px!important;
+    font-size: 80%;
+  }
+  .facilities .right article {
+    padding: 30px!important;
+    font-size: 80%;
+  }
+  .subtitle {
+    font-size: 90%!important;
+  }
+  .section-subheading{
+    font-size: 120%!important;
+  }
+  .section-title{
+    font-size: 200%!important;
+  }
+  .button1 {
+    padding: 0.8rem 3.28rem;
+    font-size: 0.8rem;
+  }
+  .button1:hover{
+    font-size: 0.8rem;
+    padding: 0.8rem 3.28rem;
+  }
 }
 
-@media screen and (max-width: 600px) {
-  .facilities .right img, .facilities .left img, .facilities .right article, .facilities .left article  {
-    width: 100%;
-    float: none;
+
+@media screen and (max-width: 1200px){
+  .section-title{
+    font-size: 30px;
   }
-  .facilities .right, .facilities .left {
-    margin: 40px 0px;
-  }
-  .home-bg, .mmain-bg{
-    height: 200px;
-    background-size: cover;
-  }
+}
