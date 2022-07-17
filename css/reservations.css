@@ -100,8 +100,6 @@
 }
 
 /** to make the page responsive **/
-
-
 @media screen and (max-width: 500px) {
   .main-carousel{
     width:400px!important;
@@ -112,6 +110,7 @@
     font-size: 28px;
     letter-spacing: 3px;
   }
+
   .image-left img{
     height: 20rem;
   }
@@ -125,9 +124,6 @@
     text-align: center;
   }
 
-  .section-title{
-    font-size: 23px;
-  }
   .section-sub-title{
     font-size: 11px !important;
   }

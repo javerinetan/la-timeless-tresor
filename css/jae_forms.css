@@ -1,0 +1,264 @@
+.banner {
+  background-image: url("../resources/images/bf.png");
+  top: 0;
+  left: 0;
+  height: 500px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.heading {
+  color: white;
+  position: relative;
+  top: 315px;
+  text-align: center;
+  animation: title-slide 1s ease-in-out;
+}
+
+.heading h1 {
+  font-family: 'LibreBodoni-Regular';
+  font-size: 50px;
+  color: white;
+  margin: 0;
+  font-weight: lighter;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+}
+
+.heading p {
+  margin: 0;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.layer {
+  background-color: black;
+  opacity: 0.3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 500px;
+  width: 100%;
+}
+
+.section-title {
+  font-size: 38px;
+}
+
+.section-sub-title {
+  color: darkgray;
+}
+
+.section-subheading {
+  text-transform: uppercase;
+  color: #aa8453;
+  font-size: 18px;
+}
+
+.content {
+  display: inline-block;
+  width: 100%;
+}
+
+.form h2 {
+  margin-bottom: 12px;
+}
+
+.form p {
+  margin-bottom: 10px;
+  color: darkgray;
+}
+
+.form .wrapper {
+  width: 65%;
+}
+
+.form input {
+  float: left;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.form .input-container {
+  float: left;
+  width: 50%;
+  padding-right: 15px;
+  margin-bottom: 15px;
+}
+
+.content .form.container {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  width: 100%;
+  background-color: #F5EFE8;
+}
+
+.booking-details {
+  text-align: left;
+  background-color: white;
+  margin-top: 100px;
+  margin-right: 80px;
+  padding: 40px;
+  width: 28%;
+  float: right;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 200px;
+  transition: all 0.4s ease-in-out;
+  box-shadow: 0px 5px 15px rgb(0 0 0 / 5%);
+}
+
+.booking-details h2 {
+  margin-bottom: 18px;
+}
+
+.booking-details div {
+  width: 50%;
+  margin-bottom: 10px;
+  float: left;
+}
+
+.booking-details div p {
+  font-weight: bold;
+}
+
+.booking-details div span {
+  color: gray;
+  margin-bottom: 12px;
+}
+
+.booking-details a {
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  margin-top: 18px;
+}
+
+.booking-details.alt-color {
+  background-color: #F5EFE8;
+}
+
+.content .result.container {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-right: 0px;
+  width: 65%;
+  float: left;
+}
+
+.result .box {
+  width: 100%;
+  display: inline-block;
+  margin-bottom: 60px;
+  opacity: 0;
+}
+
+.result h1 {
+  margin-bottom: 35px;
+}
+
+.result h2 {
+  margin-bottom: 15px;
+}
+
+.box .image {
+  float: left;
+  width: 50%;
+}
+
+.box .image img{
+  width: 100%;
+}
+
+.box .info {
+  float: left;
+  width: 50%;
+  padding: 0px 40px;
+}
+
+.info .amenities {
+  margin-top: 20px;
+}
+
+.info .amenities i{
+  font-size: 18px;
+  color: #aa8453;
+  margin: 10px;
+}
+
+@media screen and (max-width: 1100px) {
+  .box .image, .box .info{
+    width: 100%;
+    padding: 0px;
+    padding-bottom: 20px;
+  }
+  .content .result.container {
+    width: 55%;
+  }
+  .booking-details {
+    width: 35%;
+    margin-right: 40px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .heading h1 {
+    font-size: 40px;
+    letter-spacing: 4px;
+  }
+  .form .input-container {
+    width: 80%;
+    padding-right: 0px;
+  }
+  .form .button-style2 {
+    width: 80%;
+  }
+  .form .wrapper {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .heading h1 {
+    font-size: 40px;
+    letter-spacing: 4px;
+  }
+  .booking-details {
+    position: static;
+    width: 100%;
+    float: none;
+    margin-top: 0px;
+    margin-right: 0px;
+  }
+  .form .wrapper {
+    width: 100%
+  }
+  .content .result.container {
+    width: 100%;
+    padding: 30px
+  }
+  .content .form.container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .heading h1 {
+    font-size: 28px;
+    letter-spacing: 3px;
+  }
+}
+
+@keyframes title-slide {
+  0% {
+    opacity: 0.8;
+    left: -110px;
+  }
+  100% {
+    opacity: 1;
+    left: 0px;
+  }
+}
