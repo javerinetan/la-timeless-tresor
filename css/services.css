@@ -67,7 +67,7 @@ a {
     margin-top: 70px!important;
   }
 
-  .pageName {
+  .page-name {
     font-family: 'LibreBodoni-Regular';
     font-weight: 100;
     font-size: 40px;
@@ -76,16 +76,17 @@ a {
 
   .content {
     color: darkgray;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     display: block;
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     text-align: center;
+    margin-bottom: 40px !important;
   }
 
-  .hotelName {
+  .hotel-name {
     font-family: 'LibreBodoni-Regular';
     font-weight: 100;
     text-transform: uppercase;
@@ -158,10 +159,11 @@ a {
 
 /* ferryschedule*/
 
-.tmain-bg {      /**imgae**/
+.tmain-bg {      /**image**/
   background:linear-gradient(90deg, var(--white), transparent 0%), url('../resources/images/table.jpg') no-repeat;
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   top: 0;
   left: 0;
   height: 500px;
@@ -185,8 +187,8 @@ table{
   margin-right: auto;
   table-layout:fixed;
   width:50%;
-  background-color: var(--table);
-  min-width: 25rem;
+  background-color: #F5EFE8;
+  min-width: 19rem;
 }
 
 td{
@@ -199,7 +201,8 @@ td{
 
 h2{
   font-size: 1.6rem;
-  font-family: 'Libre Bodoni', serif;
+  font-family: 'LibreBodoni-Regular';
+  font-weight: 100;
   margin-left: auto;
   margin-left: auto;
   text-align: center;
@@ -222,4 +225,57 @@ h2{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   align-items: flex-start;
+}
+
+@media screen and (max-width: 400px){
+  .heading h1 {
+    font-size: 35px;
+    letter-spacing: 4px;
+  }
+  .about .content{
+    font-size: 85% !important;
+  }
+  .page-name {
+    font-size: 200% !important;
+  }
+  .hotel-name{
+    font-size: 80% !important;
+  }
+  .horizontal-line{
+    margin: 20px 0px 13px!important;
+  }
+  .services .box-container{
+    padding:1.5px; /*idk how to settle this boxcontainer ..*/
+    gap:0;
+    margin-left: 1.5rem;
+    margin-right: 2rem;
+  }
+  /*for timtable*/
+  table{
+    width: 10%;
+  }
+  td{
+    width:20%;
+    font-size: 0.9rem;
+  }
+  h2{
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .heading h1 {
+    font-size: 35px;
+    letter-spacing: 4px;
+  }
+}
+
+@media screen and (max-width: 900px){
+  .horizontal-line{
+    margin: 24px 0px 16px!important;
+  }
+  .content{
+    margin-left:1rem;
+    margin-right: 1rem;
+  }
 }

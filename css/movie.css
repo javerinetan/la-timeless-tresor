@@ -50,13 +50,6 @@
   margin-top:70px!important;
 }
 
-.page-name {
-  font-family: 'LibreBodoni-Regular';
-  font-weight: 100;
-  font-size: 40px;
-  text-align: center;
-}
-
 .about .content {
   color: darkgray;
   padding-bottom: 20px;
@@ -65,6 +58,13 @@
   margin-block-end: 1em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
+  text-align: center;
+}
+
+.page-name {
+  font-family: 'LibreBodoni-Regular';
+  font-weight: 100;
+  font-size: 40px;
   text-align: center;
 }
 
@@ -109,25 +109,16 @@
   margin-bottom: 20px;
 }
 
-.section1 .container {
-  text-align: center;
-  width: 100%;
-  margin-top: 100px;
-  margin-bottom: 100px;
-  display: inline-block;
-  opacity: 1;
-}
-
-.room-left, .room-right {
+.movie-content{
   display: inline-block;
 }
 
-.room-left img{
+.movie-content img{
   width: 41%;
   float: left;
 }
 
-.room-left article{
+.movie-content article{
   width: 59%;
   float: left;
   padding: 77px 55px 39px !important;
@@ -148,7 +139,6 @@
 
 
 @media screen and (max-width: 1200px) {
-
   .section2 article {
     width: 40%;
     float: right;
@@ -169,7 +159,7 @@
   .movie-title{
     font-size: 30px;
   }
-  .room-left article{
+  .movie-content article{
     padding: 44px 20px 15px !important;
     background-color: #F8F5F0;
     z-index: 1;
@@ -192,13 +182,13 @@
     width:500px!important;
   }
   .heading h1 {
-    font-size: 40px;
+    font-size: 35px;
     letter-spacing: 4px;
   }
   .movie-title{
     font-size: 25px;
   }
-  .room-left article{
+  .movie-content article{
     padding: 39px 20px 18px !important;
     background-color: #F8F5F0;
     z-index: 1;
@@ -218,19 +208,18 @@
 
 @media screen and (max-width: 500px) {
   .heading h1 {
-    font-size: 28px;
+    font-size: 35px;
     letter-spacing: 3px;
   }
   .about .content{
     font-size: 85% !important;
   }
-  .about .pageName {
-    font-size: 70% !important;
+  .page-name {
+    font-size: 200% !important;
   }
-  .about .hotelName{
-    font-size: 60% !important;
+  .hotel-name{
+    font-size: 80% !important;
   }
-
   .carousel-cell img {
     display: block;
     width:70%;
@@ -239,7 +228,7 @@
     margin-left: auto;
     margin-right: auto;
   }
-  .room-left article {
+  .movie-content article {
     width: 100%;
     padding: 40px;
   }
@@ -288,5 +277,3 @@
     margin-top: 0px;
   }
 }
-
-/**from here on**/
