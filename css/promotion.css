@@ -1,14 +1,12 @@
 /**front part **/
 .main-bg {      /**imgae**/
   background:linear-gradient(90deg, var(--white), transparent 0%), url('../resources/images/pro2.jpg') no-repeat;
-  background-size: cover;
-  background-position: center;
   top: 0;
   left: 0;
-  height: 70vh;
+  height: 500px;
   width: 100%;
-  z-index: -1;
-  object-fit: cover;
+  background-size: cover;
+  background-position: center;
   background-attachment: fixed;
 }
 
@@ -23,7 +21,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  height: 70vh;
+  height: 500px;
   width: 100%;
 }
 /**heading fonts**/
