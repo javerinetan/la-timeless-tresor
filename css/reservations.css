@@ -83,7 +83,7 @@
 
 .image-left article{
   width: 45%;
-  padding: 80px;
+  padding: 180px 100px;
   float: left;
   background-color: #F8F5F0;
   z-index: 1;
@@ -94,14 +94,74 @@
   display: inline-block;
 }
 
+
 /** to make the page responsive **/
 
-@media screen and (max-width: 400px){
-    .heading h1 {
-        font-size: 28px;
-        letter-spacing: 3px;
-    }
+
+@media screen and (max-width: 500px) {
+  .heading h1 {
+    font-size: 28px;
+    letter-spacing: 3px;
   }
+  .image-left img{
+    height: 20rem;
+  }
+
+  .image-left article{
+    width: 100%;
+    padding: 30px 0px !important;
+    float: left;
+    background-color: #F8F5F0;
+    z-index: 1;
+    text-align: center;
+  }
+
+  .section-title{
+    font-size: 23px;
+  }
+  .section-sub-title{
+    font-size: 11px !important;
+  }
+}
+media screen and (max-width: 1200px) {
+
+  .section2 article {
+    width: 40%;
+    float: right;
+  }
+  .section-title {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .main-carousel{
+    width:600px!important;
+  }
+  .heading h1 {
+    font-size: 40px;
+    letter-spacing: 4px;
+  }
+  .movie-title{
+    font-size: 30px;
+  }
+  .room-left article{
+    padding: 44px 20px 15px !important;
+    background-color: #F8F5F0;
+    z-index: 1;
+    text-align: center;
+  }
+  .horizontal-line{
+    margin: 24px 0px 16px!important;
+  }
+  .room{
+    font-size: 15px;
+    margin-bottom: 16px;
+  }
+  .movie-sub-title{
+    font-size: 15px!important;
+  }
+}
 
 @media screen and (max-width: 600px) {
   .main-carousel{
@@ -111,7 +171,10 @@
     font-size: 40px;
     letter-spacing: 4px;
   }
-  .image-left article{
+  .movie-title{
+    font-size: 25px;
+  }
+  .room-left article{
     padding: 39px 20px 18px !important;
     background-color: #F8F5F0;
     z-index: 1;
@@ -120,38 +183,63 @@
   .horizontal-line{
     margin: 20px 0px 13px!important;
   }
-  .boxes{
+  .room{
+    font-size: 13px;
+    margin-bottom: 13px;
+  }
+  .movie-sub-title{
+    font-size: 12px!important;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .heading h1 {
+    font-size: 28px;
+    letter-spacing: 3px;
+  }
+  .about .content{
+    font-size: 85% !important;
+  }
+  .about .pageName {
+    font-size: 70% !important;
+  }
+  .about .hotelName{
+    font-size: 60% !important;
+  }
+
+  .carousel-cell img {
+    display: block;
+    width:70%;
+    float: none;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .room-left article {
     width: 100%;
+    padding: 40px;
   }
-
+  .main-carousel{
+    width:80%!important;
   }
-
-
-
-@media screen and (max-width: 900px){
-    .main-carousel{
-      width:600px!important;
-    }
-    .heading h1 {
-      font-size: 40px;
-      letter-spacing: 4px;
-    }
-    .image-left article{
-      width: 100%;
-      padding: 40px;
-    }
-    .horizontal-line{
-      margin: 24px 0px 16px!important;
-    }
-    .carousel-cell img {
-      width: 100%;
-      margin-top: 0px;
-    }
+  .movie-title{
+    font-size: 23px;
   }
-
-  @media screen and (max-width: 1200px){
-  .section-title{
-    font-size: 30px;
+  .room-left article{
+    padding: 39px 20px 18px !important;
+    background-color: #F8F5F0;
+    z-index: 1;
+    text-align: center;
+  }
+  .horizontal-line{
+    margin: 20px 0px 13px!important;
+  }
+  .room{
+    font-size: 12px;
+    margin-bottom: 13px;
+  }
+  .movie-sub-title{
+    font-size: 11px!important;
   }
 }
 
