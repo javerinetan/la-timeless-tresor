@@ -15,7 +15,7 @@ var checkinElem = document.querySelector("#checkin-date");
 var checkoutElem = document.querySelector("#checkout-date");
 var reservationdate = document.querySelector("#date");
 
-reservationdate.setAttribute("min",dateTomorrow) //this is so it starts one day after the day it is today 
+reservationdate.setAttribute("min",dateTomorrow) //this is so it starts one day after the day it is today
 checkinElem.setAttribute("min", dateTomorrow);
 
 checkinElem.onchange = function () {
