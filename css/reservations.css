@@ -71,79 +71,138 @@
   margin: 20px 0px;
 }
 
-/** making it 4 by 4**/
-.box-container{
-  box-sizing: border-box;
-}
-.boxes{
-  float: left;
+
+
+/** making caro**/
+.image-left img{
   width: 50%;
-  padding: 15px;
+  margin-top: 100px;
+  float: left;
+  height: 30rem;
+}
+
+.image-left article{
+  width: 50%;
+  padding: 180px 100px;
+  float: left;
+  background-color: #F8F5F0;
+  z-index: 1;
   text-align: center;
 }
-.boxes img{
-  width:100%;
-  height:28rem;
-  margin-bottom: 1rem;
-  align-items: center;
-}
-.box-container:after {
-  content: "";
-  display: table;
-  clear: both;
-}
 
-/**content button**/
-.btn {
+.image-left{
   display: inline-block;
-  padding: 1rem 4.1rem;
-  font-size: 1rem;
-  border: 1px solid #b0a48d;
-  position: relative;
-  color: #b0a48d;
-  background-color: transparent;/* too allow the color to be emoty**/
-  margin-top:1rem;
 }
-.btn:hover{
-  position: relative;
-  background-color:#bb9c75 ;/**change color when hover*/
-  color: white;
-  padding: 1rem 4.1rem;
-  font-size: 1rem;
-  border: 1px solid #b0a48d;
 
+.main-carousel{
+  width:65%!important;
+  margin: auto;
 }
+
 /** to make the page responsive **/
 
-@media screen and (max-width: 400px){
-    .heading h1 {
-        font-size: 28px;
-        letter-spacing: 3px;
-    }
+
+@media screen and (max-width: 500px) {
+  .main-carousel{
+    width:400px!important;
+    margin: auto;
   }
 
+  .heading h1 {
+    font-size: 28px;
+    letter-spacing: 3px;
+  }
+  .image-left img{
+    height: 20rem;
+  }
+
+  .image-left article{
+    width: 100%;
+    padding: 30px 0px !important;
+    float: left;
+    background-color: #F8F5F0;
+    z-index: 1;
+    text-align: center;
+  }
+
+  .section-title{
+    font-size: 23px;
+  }
+  .section-sub-title{
+    font-size: 11px !important;
+  }
+}
+
 @media screen and (max-width: 600px) {
-  .heading h1{
-    font-size:40px;
+  .main-carousel{
+    width:500px!important;
+  }
+  .heading h1 {
+    font-size: 40px;
     letter-spacing: 4px;
+  }
+  .image-left article{
+    padding: 39px 20px 18px !important;
+    background-color: #F8F5F0;
+    z-index: 1;
+    text-align: center;
+  }
+  .horizontal-line{
+    margin: 20px 0px 13px!important;
   }
   .boxes{
     width: 100%;
   }
 
-}
-
-
-@media screen and (max-width: 900px){
-    .heading h1 {
-        font-size: 40px;
-        letter-spacing: 4px;
-    }
   }
 
 
-@media screen and (max-width: 1200px){
-.section-title{
-  font-size: 30px;
+
+@media screen and (max-width: 900px){
+    .main-carousel{
+      width:600px!important;
+    }
+    .heading h1 {
+      font-size: 40px;
+      letter-spacing: 4px;
+    }
+    .image-left article{
+      width: 100%;
+      padding: 40px;
+    }
+    .horizontal-line{
+      margin: 24px 0px 16px!important;
+    }
+    .carousel-cell img {
+      width: 100%;
+      margin-top: 0px;
+    }
+  }
+
+  @media screen and (max-width: 1200px){
+  .section-title{
+    font-size: 30px;
+  }
 }
+
+@keyframes title-slide {
+  0% {
+    opacity: 0.8;
+    left: -110px;
+  }
+  100% {
+    opacity: 1;
+    left: 0px;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+    margin-top: 20px;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0px;
+  }
 }
