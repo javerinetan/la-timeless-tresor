@@ -82,7 +82,7 @@
 }
 
 .image-left article{
-  width: 45%;
+  width: 50%;
   padding: 180px 100px;
   float: left;
   background-color: #F8F5F0;
@@ -94,11 +94,20 @@
   display: inline-block;
 }
 
+.main-carousel{
+  width:65%!important;
+  margin: auto;
+}
 
 /** to make the page responsive **/
 
 
 @media screen and (max-width: 500px) {
+  .main-carousel{
+    width:400px!important;
+    margin: auto;
+  }
+
   .heading h1 {
     font-size: 28px;
     letter-spacing: 3px;
