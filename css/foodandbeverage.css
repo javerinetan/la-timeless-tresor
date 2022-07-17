@@ -4,7 +4,7 @@
 }
 
 .banner {
-  background-image: url("../resources/images/pool2.jpg");
+  background-image: url("../resources/images/dining.jpg");
   top: 0;
   left: 0;
   height: 70vh;
@@ -17,7 +17,7 @@
 .heading {
   color: white;
   position: relative;
-  top: 200px;
+  top: 250px;
   text-align: center;
   animation: title-slide 1s ease-in-out;
 }
@@ -47,6 +47,27 @@
   height: 70vh;
   width: 100%;
 }
+
+.section1 .container {
+  display: inline-block;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.section1 aside, .section1 article {
+  width: 50%;
+  float: left;
+  text-align: left;
+}
+
+.section1 aside {
+  text-align: center;
+}
+
+.section1 aside img {
+  width: 500px;
+}
+
 /*h1, p*/
 h1{
   font-family: 'LibreBodoni-Regular', serif;
