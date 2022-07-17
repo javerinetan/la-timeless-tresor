@@ -68,7 +68,7 @@
   margin-bottom: 50px;
 }
 
-.form .wrapper { /** this is to make it 65% the width displayed**/
+.form .wrapper { /** this is to make the form it 65% the width displayed**/
   width: 65%;
 }
 
@@ -76,6 +76,7 @@
   color: black;
   margin-bottom: 15px;
 }
+
 
 /** recommendation section **/
 .recommends .container {  /** the area of the box to store this **/
