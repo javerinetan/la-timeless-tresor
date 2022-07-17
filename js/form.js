@@ -1,9 +1,23 @@
-<script>
-function validateForm() {
-  let x = document.forms["Booking"]["adult"].value;
-  if (x == "") {
-    alert("Number of adult must be filled out");
-    return false;
-  }
+var currentDateTime = new Date();
+var year = currentDateTime.getFullYear();
+var month = (currentDateTime.getMonth() + 1);
+var date = (currentDateTime.getDate() + 1);
+
+if(date < 10) {
+  date = '0' + date;
 }
-</script>
+if(month < 10) {
+  month = '0' + month;
+}
+
+var dateTomorrow = year + "-" + month + "-" + date;
+var checkinElem = document.querySelector("#checkin-date");
+var checkoutElem = document.querySelector("#checkout-date");
+var reservationdate = document.querySelector("#date");
+
+reservationdate.setAttribute("min",dateTomorrow)
+checkinElem.setAttribute("min", dateTomorrow);
+
+checkinElem.onchange = function () {
+    checkoutElem.setAttribute("min", this.value);
+}

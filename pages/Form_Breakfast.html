@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="../css/jae_forms.css">
   <link rel="stylesheet" href="../css/navbar.css">
   <link rel="stylesheet" href="../css/global.css">
-  <script type="text/javascript" src="../js/form.js"></script>
 </head>
 <body>
   <nav class="topnav" id="myTopnav">
@@ -129,16 +128,21 @@
   </header>
 <!-- end of the image header-->
 <!-- start of form-->
+<script type="text/javascript" src="../js/form.js"></script>
 <section class = "form">
     <div class="form container">
       <div class="wrapper" id="form-section">
         <h4 class="section-subheading">Breakfast Booking</h4>
         <h1 class="section-title">Check Availability</h1>
         <hr class="horizontal-line">
-        <form action="../pages/Form_Breakfast.html" method="post" name="Booking">
+        <p class="info"> Please do note that the hotel reserves all rights to cancel your
+          reservation shoudld there be a need. Any extra charges needed will be charged to you.
+          Please do call us 7 days before any cancellation.
+          Failure to cancel in advance will result in a fine. Children above 12 years old is consider and adult. If you have any enquries please call <a href="tel:+6588031454">+65 88031454</a></p>
+        <form action="../pages/Form_Breakfast.html" method="Post" name="Booking">
           <div class="input-container">
             <p>Select Booking Date</p>
-            <input class="input-style1" type="date" name="date" value=""  min="2022-01-08" max="2023-01-01" required>
+            <input class="input-style1" type="date" name="date" id="date" value="" required>
             <div style="width:48%; float:left">
               <p>No. of Adult</p>
               <input type="number" class="input-style1"  name="adult"  id="adult" maxlength="0.2" placeholder="Adult:" min="1" max="5" onkeypress="if(this.value.length == 2) return false" required >

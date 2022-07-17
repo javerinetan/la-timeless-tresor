@@ -72,6 +72,11 @@
   width: 65%;
 }
 
+.form .info{
+  color: black;
+  margin-bottom: 15px;
+}
+
 /** recommendation section **/
 .recommends .container {  /** the area of the box to store this **/
   margin-top: 100px;
