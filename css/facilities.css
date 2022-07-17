@@ -1,13 +1,3 @@
-:root{
-   --main-color:#BB9C75;
-   --black: #000000;
-   --white:#ffffff;
-   --light-color:#666666;
-   --darkbrown: #8c735c;
-   --table: #e2d5c5;
-   --bottom: #ccc6bb;
-}
-
 *{
    font-family: 'Nunito', sans-serif;
    margin:0; padding:0;
@@ -39,13 +29,13 @@ header{
 
 .home-bg{
    background:linear-gradient(90deg, var(--white), transparent 0%), url(../resources/images/hotel.jpg) no-repeat;
-   background-size: cover;
+   background-size:cover;
    background-position: center;
-   background-attachment: fixed;
+   background-attachment: fixed;/*fix the image so it doesnt move when u scroll down**/
    height: 500px;
    text-align: center;
+   object-fit: cover;
 }
-
 
 .home-bg .home{
    display: flex;
@@ -68,26 +58,6 @@ header{
    text-transform: uppercase;
    letter-spacing: 8px;
 }
-
-/**.about{
-   display: flex;
-   align-items: center;
-   flex-wrap: wrap;
-   gap:4rem;
-   padding: 1.9rem 1rem;
-}
-
-.about .content{
-   flex:1 1 25rem;
-}
-
-.about .content p{
-   padding: .9rem 1.3rem .6rem;
-   line-height: 2rem;
-   color:var(--light-color);
-   font-size: 1rem;
-   text-align: center;
-}**/
 
 .about{
   text-align: center;
@@ -205,118 +175,6 @@ header{
   margin: 20px 0px;
 }
 
-
-/**movie timetable**/
-
-.mmain-bg {      /**imgae**/
-  background:linear-gradient(90deg, var(--white), transparent 0%), url('../resources/images/cinema2.webp') no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  top: 0;
-  left: 0;
-  height: 500px;
-  width: 100%;
-  z-index: -1;
-  object-fit: cover;
-}
-
-.banner .container {
-  position: absolute;
-  top: 0;
-}
-/**to make the image less bright**/
-.layer {
-  background-color: black;
-  opacity: 0.3;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 500px;
-  width: 100%;
-}
-/**heading fonts**/
-.heading {   /**heading space and position **/
-  color: white;
-  position: relative;
-  top: 315px;
-  text-align: center;
-}
-
-.heading h1 {
-  font-family: 'LibreBodoni-Regular';
-  font-size: 50px;
-  color: white;
-  font-weight: lighter;
-  text-transform: uppercase;
-  letter-spacing: 8px;
-  top: 250px;
-  text-align: center !important;
-  margin:auto;
-}
-
-
-/* .about{
-   display: flex;
-   align-items: center;
-   flex-wrap: wrap;
-   gap:2.5rem;
-}
-
-.about .content{
-   flex:1 1 20rem;
-}
-
-.about .content p{
-   padding:.94rem 0 0;
-   line-height: 2rem;
-   color:var(--light-color);
-   font-size: .94rem;
-   margin-left: auto;
-   margin-right: auto;
-   text-align: center;
-} */
-
-.movie{
-  padding: 1.6rem;
-  padding-top: .44rem;
-}
-
-.movie .box-container{
-   display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-   gap:1.9rem;
-   align-items: flex-start;
-   padding: 2.5rem;
-}
-
-.movie .box-container .box{
-   text-align: center;
-   margin: auto auto;
-   border-spacing: 12.5rem 9.4rem;
-   width: 300px;
-   height: 600px;
-}
-
-.movie .box-container .box img{
-   height: 250px;
-   margin-top: .94rem;
-}
-
-.movie .box-container .box h3{
-   font-size: 1.6rem;
-   color:var(--black);
-   margin:.6rem 0;
-   font-family: 'Libre Bodoni', serif;
-}
-
-.movie .box-container .box p{
-   line-height: 2rem;
-   font-size: .94rem;
-   color:var(--light-color);
-   padding-bottom: 12.5px;
-}
-
 @media screen and (max-width: 600px) {
   .facilities .right img, .facilities .left img, .facilities .right article, .facilities .left article  {
     width: 100%;
@@ -324,4 +182,8 @@ header{
   }
   .facilities .right, .facilities .left {
     margin: 40px 0px;
+  }
+  .home-bg, .mmain-bg{
+    height: 200px;
+    background-size: cover;
   }

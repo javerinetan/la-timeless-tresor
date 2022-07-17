@@ -137,26 +137,47 @@
 
 <!-- header section ends -->
 
+<div class="content reveal up">
 
+  <div class="form container">
+    <div class="wrapper" id="form-section">
+      <h4 class="section-subheading">Facility Booking</h4>
+      <h1 class="section-title">book a billiard room</h1>
+      <hr class="horizontal-line">
+      <form action="billardformdone.html" method="post">
+        <div class="input-container">
+          <p>Hotel Confirmation Number</p>
+          <input class="leftform" type="text" name="" value="">
+          <p>Email</p>
+          <input class="leftform" type="text" name="number" value="">
 
-<!-- forms section starts -->
-<section class="form">
-    <div class="row">
+        </div>
 
-     <form action="billardformdate.html" method="post">
-        <h3>book a billiard room</h3>
-        <label for='confnum'>hotel confirmation number:</label>
-        <input type="text" name="number" required class="box" placeholder="hotel confirmation number" required>
-        <label for='check-in'>check-in date:</label>
-        <input type="date" name="cdate" required class="box" min="2020-01-01" max="2023-01-01" id="last" required>
-        <br>
-        <button class="btn">next</button>
-     </form>
+        <div class="input-container">
+          <p>Session Date</p>
+          <input class="input-style1" type="date" name="" value="">
+          <div style="width:48%;float:left">
+            <p>Time *</p>
+            <select name="time" class="input-style1">
+              <option value="6am">0600</option>
+              <option value="8am">0800</option>
+              <option value="10am">1000</option>
+              <option value="12pm">1200</option>
+              <option value="2pm">1400</option>
+              <option value="4pm">1600</option>
+              <option value="6pm">1800</option>
+              <option value="8pm">2000</option>
+            </select>
+          </div>
+        </div>
+        <p style="display: inline-block;width: 100%;">*Each session is 2hrs long</p>
+        <a href="billardformdone.html" style="display: inline-block;width: 100%;margin-top: 20px;">
+        <button type="button" class="button-style2" name="button" style="width: 48%;">Book Now<i class="ti-angle-right"></i></button>
+      </a>
+      </form>
 
-
+    </div>
   </div>
-</section>
-
 
 <!-- forms section end -->
 

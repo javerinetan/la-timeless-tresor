@@ -1,15 +1,3 @@
-:root{
-   --main-color:#BB9C75;
-   --black: #000000;
-   --white:#ffffff;
-   --light-color:#666666;
-   --darkbrown: #8c735c;
-   --table: #e2d5c5;
-   --bottom: #ccc6bb;
-   --lightbrown: #e2d5c5;
-}
-
-
 .btn{
   background-color: var(--main-color);
   line-height: 15.6px;

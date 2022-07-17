@@ -1,16 +1,112 @@
-.section-title {
-  font-size: 38px;
+
+.mmain-bg {      /**imgae**/
+  background:linear-gradient(90deg, var(--white), transparent 0%), url('../resources/images/cinema2.webp') no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  top: 0;
+  left: 0;
+  height: 500px;
+  width: 100%;
+  z-index: -1;
 }
 
-.section-sub-title {
+.banner .container {
+  position: absolute;
+  top: 0;
+}
+/**to make the image less bright**/
+.layer {
+  background-color: black;
+  opacity: 0.3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 500px;
+  width: 100%;
+}
+/**heading fonts**/
+.heading {   /**heading space and position **/
+  color: white;
+  position: relative;
+  top: 315px;
+  text-align: center;
+}
+
+.heading h1 {
+  font-family: 'LibreBodoni-Regular';
+  font-size: 50px;
+  color: white;
+  font-weight: lighter;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  top: 250px;
+  text-align: center !important;
+  margin:auto;
+}
+
+.about{
+  text-align: center;
+  margin-top:70px!important;
+}
+
+.page-name {
+  font-family: 'LibreBodoni-Regular';
+  font-weight: 100;
+  font-size: 40px;
+  text-align: center;
+}
+
+.about .content {
   color: darkgray;
   padding-bottom: 20px;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  text-align: center;
 }
 
-.section-subheading {
+.hotel-name {
+  font-family: 'LibreBodoni-Regular';
+  font-weight: 100;
   text-transform: uppercase;
   color: #aa8453;
-  font-size: 18px;
+  letter-spacing: 1px;
+  font-size: 16px;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.horizontal-line{
+  width: 40%;
+  height: 1px;
+  display: inline-block;
+  background-color: #aa8453;
+  margin: 30px 0px;
+}
+
+.movie-title {
+  font-size: 38px;
+  font-family: 'LibreBodoni-Regular';
+  font-weight: 100;
+  color: black;
+  letter-spacing: 1px;
+}
+
+.movie-sub-title {
+  color: darkgray;
+}
+
+.room {
+  font-family: 'LibreBodoni-Regular';
+  font-weight: 100;
+  text-transform: uppercase;
+  color: #aa8453;
+  letter-spacing: 1px;
+  font-size: 20px;
+  margin-bottom: 20px;
 }
 
 .section1 .container {
@@ -27,37 +123,32 @@
 }
 
 .room-left img{
-  width: 50%;
-  margin-top: 100px;
+  width: 41%;
   float: left;
 }
 
 .room-left article{
-  width: 45%;
+  width: 59%;
   float: left;
-  padding: 70px;
+  padding: 77px 55px 39px !important;
   background-color: #F8F5F0;
   z-index: 1;
+  text-align: center;
 }
 
-.room-left .amenities {
+
+.horizontal-line{
+  width: 40%;
+  height: 1px;
   display: inline-block;
-  margin-bottom: 20px;
+  background-color: #aa8453;
+  margin: 30px 0px;
+  text-align: center;
 }
 
-.room-left .amenities i{
-  font-size: 18px;
-  margin: 10px;
-}
 
 @media screen and (max-width: 1200px) {
-  .section1 aside img {
-    width: 350px;
-  }
-  .section2 aside {
-    width: 60%;
-    float: right;
-  }
+
   .section2 article {
     width: 40%;
     float: right;
@@ -68,66 +159,111 @@
 }
 
 @media screen and (max-width: 900px) {
+  .main-carousel{
+    width:600px!important;
+  }
   .heading h1 {
     font-size: 40px;
     letter-spacing: 4px;
   }
-  .section1 .box {
-    width: 50%;
+  .movie-title{
+    font-size: 30px;
   }
-  .section1 .box {
-    width: 50%;
-    float: left;
-    text-align: left;
-    padding: 30px;
-    transition: all 0.4s ease-in-out;
+  .room-left article{
+    padding: 44px 20px 15px !important;
+    background-color: #F8F5F0;
+    z-index: 1;
+    text-align: center;
   }
-  .section1 .box-content {
-    padding: 10px;
+  .horizontal-line{
+    margin: 24px 0px 16px!important;
   }
-  .section1 .box:hover {
-    padding: 10px;
-    box-shadow: 0px 5px 15px rgb(0 0 0 / 5%)
+  .room{
+    font-size: 15px;
+    margin-bottom: 16px;
   }
+  .movie-sub-title{
+    font-size: 15px!important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main-carousel{
+    width:500px!important;
+  }
+  .heading h1 {
+    font-size: 40px;
+    letter-spacing: 4px;
+  }
+  .movie-title{
+    font-size: 25px;
+  }
+  .room-left article{
+    padding: 39px 20px 18px !important;
+    background-color: #F8F5F0;
+    z-index: 1;
+    text-align: center;
+  }
+  .horizontal-line{
+    margin: 20px 0px 13px!important;
+  }
+  .room{
+    font-size: 13px;
+    margin-bottom: 13px;
+  }
+  .movie-sub-title{
+    font-size: 12px!important;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .heading h1 {
+    font-size: 28px;
+    letter-spacing: 3px;
+  }
+  .about .content{
+    font-size: 85% !important;
+  }
+  .about .pageName {
+    font-size: 70% !important;
+  }
+  .about .hotelName{
+    font-size: 60% !important;
+  }
+
   .carousel-cell img {
-    width: 100%;
+    display: block;
+    width:70%;
+    float: none;
     margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .room-left article {
     width: 100%;
     padding: 40px;
   }
-}
-
-@media screen and (max-width: 600px) {
-  .heading h1 {
-    font-size: 40px;
-    letter-spacing: 4px;
+  .main-carousel{
+    width:80%!important;
   }
-  .section1 .box {
-    width: 100%;
+  .movie-title{
+    font-size: 23px;
   }
-}
-
-@media screen and (max-width: 400px) {
-  .heading h1 {
-    font-size: 28px;
-    letter-spacing: 3px;
+  .room-left article{
+    padding: 39px 20px 18px !important;
+    background-color: #F8F5F0;
+    z-index: 1;
+    text-align: center;
   }
-  .section1 aside img {
-    width: 100%;
+  .horizontal-line{
+    margin: 20px 0px 13px!important;
   }
-  .section2 {
-    padding-right: 0px;
+  .room{
+    font-size: 12px;
+    margin-bottom: 13px;
   }
-  .carousel-cell img {
-    display: block;
-  }
-  .section2 .wrapper {
-    padding: 30px;
-  }
-  .section2 article {
-    padding-left: 0px;
+  .movie-sub-title{
+    font-size: 11px!important;
   }
 }
 
@@ -152,3 +288,5 @@
     margin-top: 0px;
   }
 }
+
+/**from here on**/

@@ -51,6 +51,12 @@
   margin-bottom: 10px;
 }
 /**end of heading**/
+/**content subtitle**/
+.subtitle {
+    color: darkgray;
+    margin-bottom: 20px;
+    padding:0 40px;
+}
 /**content image**/
 .section .right img {
   float: left; /* this so so the image will be on the left while the text is on the right*/
@@ -130,7 +136,7 @@
 /** resize the image**/
 .boxes img{
   width:100%;
-  height:28rem;
+  height:16rem;
   margin-bottom: 1rem;
   align-items: center;
 }
@@ -150,7 +156,22 @@
   padding-bottom: 100px;
 }
 /**responsive layout-makes the colums(boxes) stack on top of each other**/
+/** to make it responsive**/
+@media screen and (max-width: 400px){
+    .heading h1 {
+        font-size: 28px;
+        letter-spacing: 3px;
+    }
+    .section5 .right img {
+      height: 40rem;
+    }
+  }
+
 @media screen and (max-width: 600px) {
+  .heading h1{
+    font-size:40px;
+    letter-spacing: 4px;
+  }
   .section .right img,   .section5 .right img, .section .left img, .section .right article,.section5 .right article, .section .left article  {
     width: 100%;
     float: none;
@@ -161,4 +182,18 @@
   .boxes {
     width: 100%;
   }
+
+
+@media screen and (max-width: 900px){
+    .heading h1 {
+        font-size: 40px;
+        letter-spacing: 4px;
+    }
+  }
+
+
+@media screen and (max-width: 1200px){
+.section-title{
+  font-size: 30px;
+}
 }
