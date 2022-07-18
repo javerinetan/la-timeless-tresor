@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gallery</title>
   <link href="../css/gallery.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/flickity.css" media="screen">
   <link rel="stylesheet" href="../css/navbar.css">
   <link rel="stylesheet" href="../css/global.css">
   <link rel="icon" href="../resources/images/logo.png">
@@ -122,7 +123,7 @@
       </div>
       <div class="container">
         <div class="heading">
-          <p class="section-subheading">IMAGES & VIDEOS</p>
+          <p class="section-subheading">IMAGES</p>
           <h1 class="title">Our Gallery</h1>
         </div>
       </div>
@@ -131,24 +132,35 @@
     <div class="mainbody">
       <div class="container" style="text-align: center">
         <h4 class="section-subheading">IMAGES</h4>
-        <h1 class="section-title">OUR GALLERY</h1>
+        <h1 class="section-title">Our Gallery</h1>
         <hr class="horizontal-line">
         <div class="segcontrol">
-          <div onclick="showAll()">ALL</div>
-          <div onclick="show('exterior')">EXTERIOR</div>
-          <div onclick="show('dining')">DINING</div>
-          <div onclick="show('experience')">EXPERIENCE</div>
-          <div onclick="show('interior')">INTERIOR</div>
+          <div onclick="showAll()" class="click" id="btn0">ALL</div>
+          <div onclick="show(this)" title="exterior" id="btn1">EXTERIOR</div>
+          <div onclick="show(this)" title="dining" id="btn2">DINING</div>
+          <div onclick="show(this)" title="experience" id="btn3">EXPERIENCE</div>
+          <div onclick="show(this)" title="interior" id="btn4">INTERIOR</div>
         </div>
         <div>
           <!-- The Modal -->
-          <div id="myModal" class="modal">
+          <div onclick="dimiss()" id="myModal" class="modal">
             <!-- The Close Button -->
             <span class="close">&times;</span>
             <!-- Modal Content (The Image) -->
             <img class="modal-content" id="img01">
             <!-- Modal Caption (Image Text) -->
             <div id="caption"></div>
+            <!-- Modal Image Carousel -->
+            <section>
+              <div class="carousel">
+                <flickity ref="flickity" :options="flickityOptions">
+                <div class="carousel-cell"><img src="../resources/images/galleryimg2.jpg" alt="image"></div>
+                <div class="carousel-cell"><img src="../resources/images/galleryimg2.jpg" alt="image"></div>
+                <div class="carousel-cell"><img src="../resources/images/galleryimg2.jpg" alt="image"></div>
+                <div class="carousel-cell"><img src="../resources/images/galleryimg2.jpg" alt="image"></div>
+                <div class="carousel-cell"><img src="../resources/images/galleryimg2.jpg" alt="image"></div>
+              </div>
+            </section>
           </div>
           <section class="exteriorRow" id="exterior">
             <img class="exteriorColumn" id="myImg" src="../resources/images/galleryimg2.jpg" alt="Example image" onclick="displayModal(this.src, this.alt)">
@@ -266,6 +278,7 @@
       </div>
      </section>
   </footer>
+  <script src="../js/flickity.pkgd.min.js"></script>
   <script src="../js/main.js"></script>
   <script src="../js//moment.min.js"></script>
   <script type="text/javascript" src="../js/gallery.js"></script>
