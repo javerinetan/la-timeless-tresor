@@ -106,7 +106,7 @@ header{
   height: 1px;
   display: inline-block;
   background-color: #aa8453;
-  margin: 20px 0px;
+  margin: 30px 0px;
 }
 
 /* facilities start*/
@@ -116,7 +116,8 @@ header{
 }
 
 #oh{
-  padding-bottom: 1.5rem !important;
+  padding-top: 1rem;
+  padding-bottom: 36px !important;
 }
 
 /**content image**/
@@ -141,7 +142,7 @@ header{
   float: left;
   width: 45%;
   padding: 50px;
-  text-align: center;
+  text-align: left;
 }
 
 
@@ -149,7 +150,7 @@ header{
   float: right;
   width: 45%;
   padding: 50px;
-  text-align: center;
+  text-align: right;
 }
 /**content button**/
 .button1 {
@@ -194,9 +195,13 @@ header{
     .facilities .right img,   .facilities .right img, .facilities .left img, .facilities .right article,.facilities .right article, .facilities .left article  {
       width: 100%;
       float: none;
+      text-align: center;
     }
     .facilities .right, .facilities .left {
       margin: 40px 0px;
+    }
+    .line{
+      margin:30px 0px;
     }
 
   }
