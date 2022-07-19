@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>About Us Website Design</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="icon" href="../resources/images/logo.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400;1,400;1,700&display=swap" rel="stylesheet">
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="../css/aboutme.css">
+
+<link rel="stylesheet" href="../css/navbar.css">
+<link rel="stylesheet" href="../css/global.css">
+</head>
+
+<body>
+  <nav class="topnav" id="myTopnav">
+      <div class="container">
+        <a href="../index.html" style="padding:0; display:inline">
+          <img src="../resources/images/logov2_white.png" alt="Logo" class="nav-logo" id="navLogo">
+        </a>
+        <a href="javascript:void(0);" style="font-size:18px;margin-top: 10px;" class="icon" onclick="displayNav()">&#9776;</a>
+        <div class="nav-items">
+          <div class="dropdown">
+            <button class="dropbtn">The Resort
+              <i class="ti-angle-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Overview<i class="ti-angle-right"></i></a>
+              <a href="../pages/accommodations.html">Accomodations<i class="ti-angle-right"></i></a>
+              <a href="#">Facilities<i class="ti-angle-right"></i></a>
+              <a href="#">Services<i class="ti-angle-right"></i></a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">Dining
+              <i class="ti-angle-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">The Restaurant<i class="ti-angle-right"></i></a>
+              <a href="../pages/reservation.html">Reservation<i class="ti-angle-right"></i></a>
+              <a href="#">Ordering<i class="ti-angle-right"></i></a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">Events & Promotions
+              <i class="ti-angle-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#news">Events<i class="ti-angle-right"></i></a>
+              <a href="../pages/promotions.html">Promotions<i class="ti-angle-right"></i></a>
+            </div>
+          </div>
+          <div class="dropdown">
+           <button class="dropbtn">Gallery
+             <i class="ti-angle-down"></i>
+           </button>
+           <div class="dropdown-content">
+             <a href="../pages/gallery.html">Welcome<i class="ti-angle-right"></i></a>
+             <a href="../pages/about.html">History<i class="ti-angle-right"></i></a>
+           </div>
+         </div>
+          <a href="#contact">Contact</a>
+          <a href="#home" class="active">Book Now</a>
+          <div class="dropdown">
+            <button class="dropbtn"><img src="../resources/images/user_white.png" alt="account" id="account" width="18px">
+              <i class="ti-angle-down"></i>
+            </button>
+            <div class="dropdown-content" style="min-width:120px">
+              <a href="#">Log In<i class="ti-angle-right"></i></a>
+              <a href="#">Sign Up<i class="ti-angle-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator" id="indicator" onclick="scrollAction()">
+        <i class="ti-angle-down"></i>
+      </div>
+      <div class="book-btn" id="sideBtn" onclick="displayBookingForm()">
+        <p class="book-arrow"><i class="ti-angle-up"></i></p>
+        <p class="book-title">Book Now</p>
+      </div>
+      <div class="book-form" id="bookForm">
+        <h4>Le Timeless Tresor</h4>
+        <h2>Check Availability</h2>
+        <input class="chk-in input-style1" type="text" placeholder="Check in" onfocus="(this.type='date')" onblur="(this.type='text')">
+        <input class="chk-out input-style1" type="text" placeholder="Check out" onfocus="(this.type='date')" onblur="(this.type='text')">
+        <select class="room input-style2" name="adult">
+          <option value="">Room Type</option>
+          <option value="">Junior Room</option>
+          <option value="">Double Room</option>
+          <option value="">Family Suite</option>
+          <option value="">Deluxe Suite</option>
+        </select>
+        <div class="form-container" style="padding: 0px 7.5px 0px 0px">
+          <select class="adult input-style2" name="adult">
+            <option value="">Adult</option>
+            <option value="">1</option>
+            <option value="">2</option>
+            <option value="">3</option>
+            <option value="">4</option>
+            <option value="">5</option>
+          </select>
+        </div>
+        <div class="form-container" style="padding: 0px 0px 0px 7.5px">
+          <select class="child input-style2" name="">
+            <option value="">Child</option>
+            <option value="">0</option>
+            <option value="">1</option>
+            <option value="">2</option>
+            <option value="">3</option>
+            <option value="">4</option>
+            <option value="">5</option>
+          </select>
+        </div>
+        <button class="button-style1">Check<i class="ti-angle-right"></i></button>
+      </div>
+      <script type="text/javascript" src="../js/nav.js"></script>
+    </nav>
+  <!-- header section starts  -->
+
+<!-- header section ends -->
+<!---Welcome page-->
+<div class="welcome-bg">
+
+   <section class="welcome" id="welcome">
+
+      <div class="content">
+
+         <h3> Le Timeless Trésor</h3>
+        <p>Rising Comfort to the Highest level</p>
+
+      </div>
+
+   </section>
+
+</div>
+
+<!---Welcome page ends---->
+
+<!--History-->
+<section class="history" id="history">
+
+   <div class="image">
+
+      <img src="../resources/images/ab2.webp" class="hover-shadow" >
+
+   </div>
+
+   <div class="content">
+      <h3>Enjoy your stay in paradise</h3>
+      <p>A world away from every day, Le Timeless Trésor creates the
+        time and space for you to rediscover the meaning of relaxation,
+        well taken care of by our attentive yet discreet hospitality.
+        Luxuriate in the privacy of the resort’s beachfront and over-water
+        villas that offer an oasis just steps from the sand, or the pleasure
+         of slipping straight from your deck into the cool, clear waters to
+         reach your private lagoon.
+        We offer 7 different kinds of lux rooms.
+        All the rooms are specially designed by
+        Muji's original Art Director, Ikko Tanaka is a Japanese graphic
+        design legend.</p>
+
+   </div>
+
+   <div class="content">
+      <h3>Our History</h3>
+      <p>We were founded in 2001 by Damian Lau. He envisioned a resort that fulfilled
+        all senses. We hold the highest quality of services for you. Le timeless Tressor
+        is a leading family, leisure resort in Le Classique Baie. It is an integrated resort more then
+        5000 5-star hotel rooms, suites, villas, and mansions across multiple locations on our island.
+        World-class celebrity chef restaurants, largest casino, state of the art museum, complex golf course.
+       It has an intimate setting designed, to relax and rejuvenate your senses, so that every moment at Le Timeless Tresor is a unique memory.
+
+      </p>
+   </div>
+   <div class="image">
+
+      <img src="../resources/images/ab1.jfif" class="hover-shadow">
+
+   </div>
+
+   <div class="image">
+
+      <img src="../resources/images/jship.jpg" class="hover-shadow">
+
+   </div>
+
+   <div class="content">
+      <h3>Getting here</h3>
+      <p> Explore La Baie Classique by coming by on our complementary ferry
+        service. Take our ferry from Harbourfront port to our island.
+        You will just need to show your hotel confirmation to our staff to board
+      the ferry or you could pay a $10 admission fee per private guest. </p>
+
+      <p> You can get here by your own private yard. We have space just for you to park your yatch and boats. </p>
+      <a href="../pages/stimetable.html" class="a-style">Click here to view timetable
+     <i class="fa-solid fa-arrow-right"></i></i></a>
+
+   </div>
+
+   <div class="content">
+      <h3>why join as a member</h3>
+      <p> Join our family and get benefits. Every $1 you spent you get 1 point,
+        which can be used to offset the cost of your hotel room on the next stay.
+        You will get a free complimentary spa and 25% off your dining.</p>
+        <a href="../pages/signup.html" class="a-style">Sign Up now
+       <i class="fa-solid fa-arrow-right"></i></i></a>
+
+      </p>
+   </div>
+   <div class="image">
+
+   <img src="../resources/images/frontdesk.jpeg" class="hover-shadow">
+
+   </div>
+
+   <div class="image">
+
+      <img src="../resources/images/eco.webp" class="hover-shadow">
+
+   </div>
+
+   <div class="content">
+      <h3>ecofriendly resort</h3>
+      <p> Our hotel uses eco-friendly materials as part of saving the earth. We do not use plastic and we encourage the use of reusing.
+        We will provide all our guests with a special set of metal straws. All the products provided are made of eco-friendly materials.
+        All our bedsheets, blanket, and towel are made from bamboo materials. the hotel also adheres to eco-friendly practices, including using photo sensors
+        to monitor light levels and minimizing water usage by harvesting rain. The building itself was designed with sustainability in mind.
+      </p>
+      <a href="https://lovebambooloo.com/?gclid=Cj0KCQjw-daUBhCIARIsALbkjSaqB_I5qr-xkbXMeMtiGJZNIhUT2DYGZs91pGg6UtmmG3R5QOcvHCgaAiEPEALw_wcB" class="a-style"> Our Supplier
+     <i class="fa-solid fa-arrow-right"></i></i></a>
+
+   </div>
+</section>
+<!-- history  section ends -->
+
+<!--signature section starts-->
+<section class="signature" id="signature">
+
+  <div class="heading">
+       <img src="images/heading-img.png" alt="">
+       <h3>Le Timeless Trésor Signature </h3>
+       <h5>Just Some Of Our Speciality</h5>
+    </div>
+
+   <div class="box-container">
+
+      <div class="box">
+         <img src="../resources/icons/jclean.png" alt="">
+         <h3>Cleaniness </h3>
+         <p>Our rooms are cleaned to perfection. All items have been thoroughly saintized before your stay. So you can put your mind at ease while staying with us .</p>
+      </div>
+
+      <div class="box">
+         <img src="../resources/icons/jinterior.png" alt="">
+         <h3>Asthetic Interior </h3>
+         <p>Our interior is designed by Neo Culture Technology and arts firm. </p>
+      </div>
+
+      <div class="box">
+         <img src="../resources/icons/jbreakfasticon.png" alt="">
+         <h3>Breakfast</h3>
+         <p>Air flown from france to you. Only serve best of the best. </p>
+      </div>
+
+      <div class="box">
+         <img src="../resources/icons/jferry.png" alt="">
+         <h3>Ferry Service </h3>
+         <p>Compliementary to the island</p>
+      </div>
+
+      <div class="box">
+         <img src="../resources/icons/jlock.png" alt="">
+         <h3>Security </h3>
+         <p>Our hotel has high class security. You can just put your mind at ease as we have high class technology to stop any soughts of crime.</p>
+      </div>
+
+      <div class="box">
+         <img src="../resources/icons/jrefreshments.png" alt="">
+         <h3>Refreshments </h3>
+         <p>Be greeted with frozen cool yogurt flown in from France to you and our high-quality frozen fruits from Japan. </p>
+      </div>
+
+      <div class="box">
+         <img src="../resources/icons/jspa.png" alt="">
+         <h3>Spa </h3>
+         <p> Unbuckle your mind with the hot spring water and with a nice message from experts from around the world. High-class services from Aroma@art to you. </p>
+      </div>
+
+      <div class="box">
+         <img src="../resources/icons/jmovie.png" alt="">
+         <h3>Movies </h3>
+         <p>Enjoy the fantastic view under the beautiful night sky while watching the latest movies in trend</p>
+      </div>
+   </div>
+
+</section>
+<!-- siganture section ends -->
+<!-- Awards section starts  -->
+
+<section class="awards" id="awards">
+
+  <div class="heading">
+       <img src="images/heading-img.png" alt="">
+       <h3>Our Awards </h3>
+    </div>
+
+   <div class="box-container">
+     <center>
+      <img src="../resources/images/ab1.png" alt="" width="200" height="180">
+      <img src="../resources/images/ab2.jpg" alt="" width="300" height="180">
+      <img src="../resources/images/ab3.png" alt="" width="250" height="180">
+      <img src="../resources/images/ab4.png" alt="" width="250" height="180">
+    </center>
+   </div>
+
+</section>
+
+<!-- awards section ends -->
+
+<!-- team section starts  -->
+
+<section class="team" id="team">
+
+   <div class="heading">
+      <h3>our team</h3>
+   </div>
+
+   <div class="box-container">
+
+      <div class="box">
+         <h3>Damian</h3>
+      </div>
+      <div class="box">
+         <h3>Natelie</h3>
+      </div>
+      <div class="box">
+         <h3>Amber</h3>
+     </div>
+      <div class="box">
+         <h3>Ye Yint</h3>
+      </div>
+      <div class="box">
+         <h3>Javerine</h3>
+      </div>
+
+
+
+   </div>
+
+</section>
+
+<!-- team section ends -->
+<!-- contact section starts  -->
+
+<section class="contact" >
+
+   <div class="heading">
+
+      <h3>contact us</h3>
+   </div>
+
+   <div class="row">
+     <div class="image">
+        <img src="https://media-cdn.tripadvisor.com/media/photo-s/02/b0/48/01/filename-restaurant-jpg.jpg" alt="">
+     </div>
+
+
+      <form action="" method="post">
+         <h3>For Enquires </h3>
+         <input type="text" name="name" required class="box" maxlength="20" placeholder="enter your name">
+         <input type="number" name="number" required class="box" maxlength="20" placeholder="phone number" min="0" max="9999999999" onkeypress="if(this.value.length == 10) return false">
+         <input type="email" name="email"required class="box" maxlengt required class="box" maxlength="20" placeholder="enter your email">
+         <input type="enquire" name="enquire" required class="box" maxlengt required class="box" maxlength="50" placeholder="What is your enquire?">
+         <input type="submit" name="send" value="send message" class="btn">
+      </form>
+
+   </div>
+
+</section>
+
+<!-- contact section ends -->
+
+<!-- footer section starts -->
+<footer class="footer">
+   <div class="container">
+     <section>
+       <div class="box">
+          <img src="../resources/images/logov2_black.png">
+       </div>
+       <div class="box">
+          <p>Turquoise waters lap at white-sand shores. Towering palms rustle overhead. Welcome to Le Tresor.</p>
+       </div>
+       <div class="box">
+          <h3>Follow us</h3>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-instagram"></i>
+       </div>
+       <div class="box newsletter">
+         <h3>Join Newsletter</h3>
+         <input type="text" placeholder="email">
+         <button><i class="fa-solid fa-arrow-right"></i></button>
+       </div>
+     </section>
+     <section>
+       <div class="box">
+          <h3>The Resort</h3>
+          <a href="#">Overview<i class="ti-angle-right"></i></a>
+          <a href="#">Accomodations<i class="ti-angle-right"></i></a>
+          <a href="#">Facilities<i class="ti-angle-right"></i></a>
+          <a href="#">Services<i class="ti-angle-right"></i></a>
+          <a href="#">Dining<i class="ti-angle-right"></i></a>
+          <a href="#">Gallery<i class="ti-angle-right"></i></a>
+          <a href="#">Contact Us<i class="ti-angle-right"></i></a>
+          <a href="#">Events<i class="ti-angle-right"></i></a>
+          <a href="#">Promotions<i class="ti-angle-right"></i></a>
+       </div>
+       <div class="box">
+          <h3>My Account</h3>
+          <a href="#">Log in<i class="ti-angle-right"></i></a>
+          <a href="#">Sign up<i class="ti-angle-right"></i></a>
+       </div>
+     </section>
+     <section>
+       <div class="box">
+          <i class="fas fa-envelope"></i>
+          <h3>Email</h3>
+          <p>LaTimelessTresor@resort.com</p>
+       </div>
+       <div class="box">
+          <i class="fas fa-clock"></i>
+          <h3>Hotline Hours</h3>
+          <p>08:00am to 08:00pm</p>
+       </div>
+       <div class="box">
+          <i class="fas fa-map-marker-alt"></i>
+          <h3>Location</h3>
+          <p>La Baie Classique, Singapore</p>
+       </div>
+       <div class="box">
+          <i class="fas fa-phone"></i>
+          <h3>Contact</h3>
+          <p>+65-9999</p>
+       </div>
+     </section>
+     <hr>
+   </div>
+   <section style="width:100%; background-color: #222">
+    <div class="container" style="padding: 10px;">
+      <div class="tc">
+        <a href="#">Terms & Conditions</a> |
+        <a href="#">Privacy Policy</a>
+      </div>
+      <div style="width:100%; padding: 20px; text-align: center">
+        <p>Copyright 2022 &copy; Le Timeless Tresor | All right reserved.</p>
+      </div>
+    </div>
+   </section>
+</footer>
+<script src="js/flickity.pkgd.min.js"></script>
+<script src="js/index.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
