@@ -51,6 +51,10 @@
   width: 100%;
 }
 
+.form .button-style2 {
+  width: 48%;
+  margin-top: 30px;
+}
 .form p{ /** for the ones that use p **/
   margin-bottom: 10px;
   color: darkgrey;
@@ -66,7 +70,6 @@
   float: left;
   width: 50%;
   padding-right: 15px;
-  margin-bottom: 50px;
 }
 
 .form .wrapper { /** this is to make the form it 65% the width displayed**/
@@ -113,7 +116,7 @@
     padding-right: 0px;
   }
   .form .button-style2 {
-    width: 80%;
+    margin-top: 30px;
   }
   .form .wrapper {
     width: 60%;
