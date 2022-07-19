@@ -147,18 +147,19 @@
       <form action="billardformdone.html" method="post">
         <div class="input-container">
           <p>Hotel Confirmation Number</p>
-          <input class="leftform" type="text" name="" value="">
+          <input class="leftform" type="text" name="" value="" maxlength="4" minlength="4" required>
           <p>Email</p>
-          <input class="leftform" type="text" name="number" value="">
+          <input class="leftform" type="text" name="number" value="" required>
 
         </div>
 
         <div class="input-container">
           <p>Session Date</p>
-          <input class="input-style1" type="date" name="" value="">
+          <input class="input-style1" type="date" id="date" name="" value="" required>
           <div style="width:48%;float:left">
             <p>Time *</p>
-            <select name="time" class="input-style1">
+            <select name="time" class="input-style1" required>
+              <option value="">Time Slot</option>
               <option value="6am">0600</option>
               <option value="8am">0800</option>
               <option value="10am">1000</option>
@@ -172,13 +173,12 @@
         </div>
         <p style="display: inline-block;width: 100%;">*Each session is 2hrs long</p>
         <a href="billardformdone.html" style="display: inline-block;width: 100%;margin-top: 20px;">
-        <button type="button" class="button-style2" name="button" style="width: 48%;">Book Now<i class="ti-angle-right"></i></button>
+        <button type="submit" class="button-style2" name="button" style="width: 48%;">Book Now<i class="ti-angle-right"></i></button>
       </a>
       </form>
-
     </div>
   </div>
-
+  <script src="../js/form.js"></script>
 <!-- forms section end -->
 
 <!-- footer section starts  -->
