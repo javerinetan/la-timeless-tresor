@@ -144,16 +144,16 @@
             <input class="input-style1" type="date" name="date" id="date" required>
             <div style="width:48%; float:left">
               <p>No. of Adult</p>
-              <input type="number" class="input-style1"  name="adult"  id="adult" placeholder="Adult:" min="1" max="5"  required >
+              <input type="number" class="input-style1"  name="adult"  id="adult" placeholder="Adult:" min="1" max="10"  required >
             </div>
             <div style="width:48%;float:right">
               <p>No. of Child</p>
-                <input type="number" class="input-style1" name="child"  id="child" placeholder="Children:" min="0" max="5" required>
+                <input type="number" class="input-style1" name="child"  id="child" placeholder="Children:" min="0" max="10" >
             </div>
           </div>
           <div class="input-container">
             <p>Hotel Confirmation Number</p>
-            <input class="input-style1" type="text" name="" value="" maxlength="4" minlength="4" required>
+            <input class="input-style1" type="text" name="" value="" maxlength="4" minlength="4" pattern=[A-Z\1-9\L]{1,2,1} required>
             <p>Choose Time Slot:</p>
             <select class="input-style1" name="time" required>
               <option value="">time slot</option>
