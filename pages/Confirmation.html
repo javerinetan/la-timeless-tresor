@@ -126,113 +126,20 @@
       </div>
     </div>
   </header>
-<!-- end of the image header-->
-<!-- start of form-->
-<section class = "form">
-    <div class="form container">
-      <div class="wrapper" id="form-section">
-        <h4 class="section-subheading">Breakfast Booking</h4>
-        <h1 class="section-title">Contact Information</h1>
-        <hr class="horizontal-line">
-        <p class="info"> Please do note that the hotel reserves all rights to cancel your
-          reservation shoudld there be a need. Any extra charges needed will be charged to you.
-          Please do call us 7 days before any cancellation.
-          Failure to cancel in advance will result in a fine. Children above 12 years old is consider and adult. If you have any enquries please call <a href="tel:+6588031454">+65 88031454</a></p>
-        <form action = "Confirmation.html " method="get" name="Booking">
-          <div class="input-container">
-            <p>Name</p>
-            <input type="text" id="name" class="input-style1"  name="Name" placeholder="Full Name" pattern=[A-Z\sa-z]{3,20} required>
-            <p>Email</p>
-              <input type="email" id="email" class="input-style1" name="Email address" placeholder="john.doe@email.com" required>
-          </div>
-          <div class="input-container">
-            <p>Your Phone</p>
-            <input type="tel" id="phone" class="input-style1" name="Phone Number" placeholder="65-8803-1454" pattern=(\d{2})-?\s?(\d{4})-?\s?(\d{4}) required>
-              <p>Anything Else?</p>
-              <textarea id="message" name="visitor_message" class="input-style1" placeholder="Tell us if you have any requirement"></textarea>
-          </div>
-          <a href="../pages/Booking_Breakfast.html" style="display: inline-block;width: 100%;">
-            <button type="submit" class="button-style2"  style="width: 48%;">Search<i class="ti-angle-right"></i></button>
-          </a>
-        </form>
-      </div>
-    </div>
-  </section>
-  <!--footer-->
-  <footer class="footer">
-     <div class="container">
-       <section>
-         <div class="box">
-            <img src="../resources/images/logov2_black.png">
-         </div>
-         <div class="box">
-            <p>Turquoise waters lap at white-sand shores. Towering palms rustle overhead. Welcome to Le Tresor.</p>
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-instagram"></i>
-         </div>
-         <div class="box newsletter">
-           <h3>Join Newsletter</h3>
-           <input type="text" placeholder="email">
-           <button><i class="fa-solid fa-arrow-right"></i></button>
-         </div>
-       </section>
-       <section>
-         <div class="box">
-            <h3>The Resort</h3>
-            <a href="#">Overview<i class="ti-angle-right"></i></a>
-            <a href="#">Accomodations<i class="ti-angle-right"></i></a>
-            <a href="#">Facilities<i class="ti-angle-right"></i></a>
-            <a href="#">Services<i class="ti-angle-right"></i></a>
-            <a href="#">Dining<i class="ti-angle-right"></i></a>
-            <a href="#">Gallery<i class="ti-angle-right"></i></a>
-            <a href="#">Contact Us<i class="ti-angle-right"></i></a>
-            <a href="#">Events<i class="ti-angle-right"></i></a>
-            <a href="#">Promotions<i class="ti-angle-right"></i></a>
-         </div>
-         <div class="box">
-            <h3>My Account</h3>
-            <a href="#">Log in<i class="ti-angle-right"></i></a>
-            <a href="#">Sign up<i class="ti-angle-right"></i></a>
-         </div>
-       </section>
-       <section>
-         <div class="box">
-            <i class="fas fa-envelope"></i>
-            <h3>Email</h3>
-            <p>LaTimelessTresor@resort.com</p>
-         </div>
-         <div class="box">
-            <i class="fas fa-clock"></i>
-            <h3>Hotline Hours</h3>
-            <p>08:00am to 08:00pm</p>
-         </div>
-         <div class="box">
-            <i class="fas fa-map-marker-alt"></i>
-            <h3>Location</h3>
-            <p>La Baie Classique, Singapore</p>
-         </div>
-         <div class="box">
-            <i class="fas fa-phone"></i>
-            <h3>Contact</h3>
-            <p>+65-9999</p>
-         </div>
-       </section>
-       <hr>
-     </div>
-     <section style="width:100%; background-color: #222">
-      <div class="container" style="padding: 10px;">
-        <div class="tc">
-          <a href="#">Terms & Conditions</a> |
-          <a href="#">Privacy Policy</a>
-        </div>
-        <div style="width:100%; padding: 20px; text-align: center">
-          <p>Copyright 2022 &copy; Le Timeless Tresor | All right reserved.</p>
-        </div>
-      </div>
-     </section>
-  </footer>
+  <script type="text/javascript">
+<!-- HIDE FROM INCOMPATIBLE BROWSERS
+document.write("<h1>Your form has been submitted!</h1><h2>You entered the following data:</h2>");
+var formData = location.search;
 
+formData = formData.substring(1, formData.length);
+while (formData.indexOf("+") != -1) {
+	formData = formData.replace("+", " ");
+}
+formData = unescape(formData);
+var formArray = formData.split("&");
+for (var i=0; i < formArray.length; ++i) {
+	document.writeln(formArray[i] + "<br />");
+}
 
-
-</body>
+// STOP HIDING FROM INCOMPATIBLE BROWSERS -->
+</script>
