@@ -318,17 +318,20 @@
      <article> <!--this is the create the col-->
        <form action="" method="post">
           <h3>For Enquires </h3>
-          <input type="text" name="name" required class="box" maxlength="20" placeholder="enter your name">
-          <input type="number" name="number" required class="box" maxlength="20" placeholder="phone number" min="0" max="9999999999" onkeypress="if(this.value.length == 10) return false">
-          <input type="email" name="email"required class="box" maxlengt required class="box" maxlength="20" placeholder="enter your email">
-          <input type="enquire" name="enquire" required class="box" maxlengt required class="box" maxlength="50" placeholder="What is your enquire?">
-          <input type="submit" name="send" value="send message" class="btn">
+          <input type="text" id="name" class="box"  name="Name" placeholder="Full Name" pattern=[A-Z\sa-z]{3,20} required>
+          <input type="tel" id="phone" class="box" name="Phone Number" placeholder="65-8803-1454" pattern=(\d{2})-?\s?(\d{4})-?\s?(\d{4}) required>
+          <input type="email" id="email" class="box" name="Email address" placeholder="john.doe@email.com" required>
+          <input type="enquire" name="enquire"  class="box" maxlengt required class="box" maxlength="50" placeholder="What is your enquire?">
+          <input type="submit" name="send" value="send message" class="btn" onclick="not()">
        </form>
    </article>
  </div>
+<script>
+function not(){
+  alert("We will get back to you in 1 to 2 working days. If you have any other enquires you may call 88031454. ")
+}
 
-
-
+</script>
 </section>
 <!--footer-->
 <footer class="footer">
