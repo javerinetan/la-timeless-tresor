@@ -66,6 +66,12 @@
   margin-bottom:15px;
 }
 
+.form select{ /** the box being filed in **/
+  float: left;
+  width:100%;
+  margin-bottom:15px;
+}
+
 .form .input-container { /** this is so that the display will float left and setting the padding size for the form**/
   float: left;
   width: 50%;
