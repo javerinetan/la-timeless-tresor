@@ -10,7 +10,7 @@ if(month < 10) {
   month = '0' + month;
 }
 
-var dateTomorrow = year + "-" + month + "-" + date;
+var dateTomorrow = date + "-" + month + "-" + year;
 var checkinElem = document.querySelector("#checkin-date");
 var checkoutElem = document.querySelector("#checkout-date");
 var reservationdate = document.querySelector("#date");
