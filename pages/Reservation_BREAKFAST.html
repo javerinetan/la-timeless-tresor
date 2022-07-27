@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../resources/images/logo.png">
-    <title>Breakfast Reservation | Le Timeless Trésor</title>
+    <title>Reservation Restaurant| Le Timeless Trésor</title>
     <!--link to css and jv-->
     <link rel="stylesheet" href="../css/jae_forms.css">
     <link rel="stylesheet" href="../css/navbar.css">
@@ -140,8 +140,9 @@
         <p class="info"> Please do note that the hotel reserves all rights to cancel your
           reservation shoudld there be a need. Any extra charges needed will be charged to you.
           Please do call us 7 days before any cancellation.
-          Failure to cancel in advance will result in a fine. Children above 12 years old is consider and adult. If you have any enquries please call <a href="tel:+6588031454">+65 88031454</a></p>
-        <form action = "Confirmation.html " method="post" name="Booking">
+          Failure to cancel in advance will result in a fine. Children above 12 years old is consider and adult. If you have any enquries please call <a onclick="window.open('tel:+6588031454')" style="color: blue">+65 88031454</a></p>
+          <!---so if u click on the phone number it will call--->
+        <form action = "Confirmation.html " method="get" name="Booking">
           <div class="input-container">
             <p>Select Booking Date</p>
             <input class="input-style1" type="date" name="Date" id="date" required>
@@ -186,6 +187,32 @@
       </div>
     </div>
   </section>
+  <section class="recommends">
+    <div class="container">
+      <h1 class="section-title">You may also like</h1>
+      <hr class="horizontal-line">
+      <div class="">
+        <div class="box">
+          <img src="../resources/images/food2.jpg" alt="">
+          <hr class="horizontal-line">
+          <h1 class="section-title-sm">Tea Time Set </h1>
+          <a href="../pages/Form_Tea.html" class="a-style1">Book Now<i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="box">
+          <img src="../resources/images/food3.jpg" alt="">
+          <hr class="horizontal-line">
+          <h1 class="section-title-sm">Dinner In Le Meilleur Restro</h1>
+          <a href="../pages/Form_DinnerIndoor.html" class="a-style1">Book Now<i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="box">
+          <img src="../resources/images/food4.webp" alt="">
+          <hr class="horizontal-line">
+          <h1 class="section-title-sm">Dinner Under the Stars</h1>
+          <a href="../pages/Form_DinnerOutdoor.html" class="a-style1">Book Now<i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
   <script type="text/javascript" src="../js/form.js"></script> <!--for the dates validation made by me -->
   <!--footer-->
   <footer class="footer">
@@ -195,7 +222,7 @@
             <img src="../resources/images/logov2_black.png">
          </div>
          <div class="box">
-            <p>Turquoise waters lap at white-sand shores. Towering palms rustle overhead. Welcome to Le Timeless Trésor.</p>
+            <p>Turquoise waters lap at white-sand shores. Towering palms rustle overhead. Welcome to Le Tresor.</p>
             <i class="fa-brands fa-facebook"></i>
             <i class="fa-brands fa-twitter"></i>
             <i class="fa-brands fa-instagram"></i>
@@ -209,27 +236,27 @@
        <section>
          <div class="box">
             <h3>The Resort</h3>
-            <a href="abouts.html">Overview<i class="ti-angle-right"></i></a>
-            <a href="accommodations.html">Accomodations<i class="ti-angle-right"></i></a>
-            <a href="facilities.html">Facilities<i class="ti-angle-right"></i></a>
-            <a href="services.html">Services<i class="ti-angle-right"></i></a>
-            <a href="foodandbeverage.html">Dining<i class="ti-angle-right"></i></a>
-            <a href="gallery.html">Gallery<i class="ti-angle-right"></i></a>
-            <a href="contactus.html">Contact Us<i class="ti-angle-right"></i></a>
-            <a href="eventdetail.html">Events<i class="ti-angle-right"></i></a>
-            <a href="promotion.html">Promotions<i class="ti-angle-right"></i></a>
+            <a href="#">Overview<i class="ti-angle-right"></i></a>
+            <a href="#">Accomodations<i class="ti-angle-right"></i></a>
+            <a href="#">Facilities<i class="ti-angle-right"></i></a>
+            <a href="#">Services<i class="ti-angle-right"></i></a>
+            <a href="#">Dining<i class="ti-angle-right"></i></a>
+            <a href="#">Gallery<i class="ti-angle-right"></i></a>
+            <a href="#">Contact Us<i class="ti-angle-right"></i></a>
+            <a href="#">Events<i class="ti-angle-right"></i></a>
+            <a href="#">Promotions<i class="ti-angle-right"></i></a>
          </div>
          <div class="box">
             <h3>My Account</h3>
-            <a href="signin.html">Log in<i class="ti-angle-right"></i></a>
-            <a href="signup.html">Sign up<i class="ti-angle-right"></i></a>
+            <a href="#">Log in<i class="ti-angle-right"></i></a>
+            <a href="#">Sign up<i class="ti-angle-right"></i></a>
          </div>
        </section>
        <section>
          <div class="box">
             <i class="fas fa-envelope"></i>
             <h3>Email</h3>
-            <p>LeTimelessTresor@resort.com</p>
+            <p>LaTimelessTresor@resort.com</p>
          </div>
          <div class="box">
             <i class="fas fa-clock"></i>
@@ -261,6 +288,8 @@
       </div>
      </section>
   </footer>
+
+
 
 </body>
 </html>
