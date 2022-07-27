@@ -1,6 +1,7 @@
 /**front part **/
-.main-bg {      /**imgae**/
-  background:linear-gradient(90deg, var(--white), transparent 0%), url('../resources/images/golfmainheader.jpg') no-repeat;
+
+.golf-banner {
+  background-image: url("../resources/images/golfmainheader.jpg");
   top: 0;
   left: 0;
   height: 500px;
@@ -10,10 +11,6 @@
   background-attachment: fixed;
 }
 
-.banner .container {
-  position: absolute;
-  top: 0;
-}
 /**to make the image less bright**/
 .layer {
   background-color: black;
@@ -25,11 +22,12 @@
   width: 100%;
 }
 /**heading fonts**/
-.heading {   /**heading space and position **/
+.heading {
   color: white;
   position: relative;
-  top: 200px;
+  top: 300px;
   text-align: center;
+  animation: title-slide 1s ease-in-out;
 }
 
 .heading h1 {
@@ -47,25 +45,16 @@
   font-size: 20px;
   margin-bottom: 10px;
 }
-/**end of heading**/
-.content{
-  text-align: center;
-  padding-top: 100px;
-}
-/**content image**/
-.section .right img {
-  float: left; /* this so so the image will be on the left while the text is on the right*/
-  width: 55%; /* sizing image to half the page*/
-}
 
-.section .left img {
-  float: right;
-  width: 55%;
-}
-/**content**/
-.section .right, .section .left {
-  float: left;
+.layer {
+  background-color: black;
+  opacity: 0.3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 500px;
   width: 100%;
+<<<<<<< HEAD
   margin: 60px 0px;
 }
 
@@ -86,22 +75,19 @@
 }
 /**content button**/
 .button1 {
-  display: inline-block;
-  padding: 1rem 4.1rem;
-  font-size: 1rem;
-  border: 1px solid #b0a48d;
-  position: relative;
-  color: #b0a48d;
-  background-color: transparent;/* too allow the color to be emoty**/
+=======
 }
-.button1:hover{
-  position: relative;
-  background-color:#bb9c75 ;/**change color when hover*/
-  color: white;
-  padding: 1rem 4.1rem;
-  font-size: 1rem;
-  border: 1px solid #b0a48d;
 
+.form{ /**overall the form color and all being set **/
+  background-color: #F5EFE8;
+>>>>>>> dbebc1aa4324cbb2d3ba2bb6d54c2d8c6351470e
+  display: inline-block;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  width: 100%;
+}
+
+<<<<<<< HEAD
 
 }
 /**content subtitle**/
@@ -141,18 +127,150 @@
     .section .right, .section .left {
       margin: 40px 0px;
     }
+=======
+.form .button-style2 {
+  width: 48%;
+  margin-top: 30px;
+}
+.form p{ /** for the ones that use p **/
+  margin-bottom: 10px;
+  color: darkgrey;
+}
+
+.form input{ /** the box being filed in **/
+  float: left;
+  width:100%;
+  margin-bottom:15px;
+}
+
+.form select{ /** the box being filed in **/
+  float: left;
+  width:100%;
+  margin-bottom:15px;
+}
+
+.form .input-container { /** this is so that the display will float left and setting the padding size for the form**/
+  float: left;
+  width: 50%;
+  padding-right: 15px;
+}
+
+.form .wrapper { /** this is to make the form it 65% the width displayed**/
+  width: 65%;
+}
+
+.form .info{
+  color: black;
+  margin-bottom: 15px;
+}
+
+.form textarea{
+   resize: none;
+   height: 50px;
+}
+
+/** recommendation section **/
+.recommends .container {  /** the area of the box to store this **/
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: inline-block;
+  text-align: center;
+}
+
+.recommends .box{ /** to put it 3 by 1 **/
+  float: left;
+  padding: 15px;/** spacing between each of them **/
+  width: 33.33%; /*this is to make it in the 3 by 3 format */
+}
+
+.recommends .box img{
+  width: 100%;
+  height: 25rem;
+}
+
+/** making it responsive **/
+@media screen and (max-width: 900px) {
+  .heading h1 { /** this is for the front part **/
+    font-size: 40px;
+    letter-spacing: 4px;
+  }
+  .form .input-container {
+    width: 80%;
+    padding-right: 0px;
+  }
+  .form .button-style2 {
+    margin-top: 30px;
+  }
+  .form .wrapper {
+    width: 60%;
+  }
+  .recommends .container {  /** the area of the box to store this **/
+    margin-top: 80px;
+    margin-bottom: 80px;
+    display: inline-block;
+    text-align: center;
+  }
+
+  .recommends .box{ /** to put it 3 by 1 **/
+    float: left;
+    padding: 10px;/** spacing between each of them **/
+    width: 33.33%; /*this is to make it in the 3 by 3 format */
+  }
+
+  .recommends .box img{
+    width: 100%;
+    height: 20rem;
+  }
+  .recommends .section-title-sm{
+    font-size: 25px;
+  }
+  .recomends .section-title{
+    font-size:30px;
+  }
+
+}
 
 
-@media screen and (max-width: 900px){
-      .heading h1 {
-          font-size: 40px;
-          letter-spacing: 4px;
-      }
-    }
+@media screen and (max-width: 600px) {
+  .heading h1 {
+    font-size: 40px;
+    letter-spacing: 4px;
+  }
+  .form .wrapper {
+    width: 100%
+  }
+  .recommends .box{ /** to put it 3 by 1 **/
+    width: 100%; /*this is to make it in the 3 by 3 format */
+  }
+
+}
+>>>>>>> dbebc1aa4324cbb2d3ba2bb6d54c2d8c6351470e
 
 
-@media screen and (max-width: 1200px){
-  .section-title{
-    font-size: 30px;
+@media screen and (max-width: 400px) {
+  .heading h1 {
+    font-size: 28px;
+    letter-spacing: 3px;
+  }
+  .form{
+    background-color: #F5EFE8;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+  }
+  .form .input-container { /** this is so that the display will float left and setting the padding size for the form**/
+    margin-bottom: 20px;
+  }
+
+}
+
+@keyframes title-slide {
+  0% {
+    opacity: 0.8;
+    left: -110px;
+  }
+  100% {
+    opacity: 1;
+    left: 0px;
   }
 }
