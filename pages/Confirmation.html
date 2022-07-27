@@ -149,7 +149,8 @@ while (formData.indexOf("+") != -1) {
 formData = unescape(formData);
 var formArray = formData.split("&");
 for (var i=0; i < formArray.length; ++i) {
-	document.writeln(formArray[i] + "<br />");
+  text = formArray[i].replace("=", ": ");;
+	document.writeln(text + "<br />");
 }
 
 
