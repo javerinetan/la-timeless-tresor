@@ -148,6 +148,7 @@ while (formData.indexOf("+") != -1) {
 }
 formData = unescape(formData);
 var formArray = formData.split("&");
+//ask damian how to remove if empty space 
 for (var i=0; i < formArray.length; ++i) {
   text = formArray[i].replace("=", ": ");;
 	document.writeln(text + "<br />");
