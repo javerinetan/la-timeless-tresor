@@ -146,6 +146,7 @@
     while (formData.indexOf("+") != -1) {
     	formData = formData.replace("+", " ");
     }
+    
     formData = unescape(formData);
     var formArray = formData.split("&");
     for (var i=0; i < formArray.length; ++i) {
