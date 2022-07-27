@@ -1,6 +1,7 @@
 /**front part **/
-.main-bg {      /**imgae**/
-  background:linear-gradient(90deg, var(--white), transparent 0%), url('../resources/images/golfmainheader.jpg') no-repeat;
+
+.golf-banner {
+  background-image: url("../resources/images/golfmainheader.jpg");
   top: 0;
   left: 0;
   height: 500px;
@@ -10,10 +11,6 @@
   background-attachment: fixed;
 }
 
-.banner .container {
-  position: absolute;
-  top: 0;
-}
 /**to make the image less bright**/
 .layer {
   background-color: black;
@@ -25,11 +22,12 @@
   width: 100%;
 }
 /**heading fonts**/
-.heading {   /**heading space and position **/
+.heading {
   color: white;
   position: relative;
-  top: 200px;
+  top: 300px;
   text-align: center;
+  animation: title-slide 1s ease-in-out;
 }
 
 .heading h1 {
@@ -47,235 +45,167 @@
   font-size: 20px;
   margin-bottom: 10px;
 }
-/**end of heading**/
-.content{
-  text-align: center;
-  padding-top: 100px;
-}
-/**content image**/
-.section .right img {
-  float: left; /* this so so the image will be on the left while the text is on the right*/
-  width: 55%; /* sizing image to half the page*/
-}
 
-.section .left img {
-  float: right;
-  width: 55%;
-}
-/**content**/
-.section .right, .section .left {
-  float: left;
+.layer {
+  background-color: black;
+  opacity: 0.3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 500px;
   width: 100%;
-  margin: 60px 0px;
 }
 
-/**content text location**/
-.section .right article {
-  float: left;
-  width: 45%;
-  padding: 50px;
-  text-align: center;
-}
-
-
-.section .left article {
-  float: right;
-  width: 45%;
-  padding: 50px;
-  text-align: center;
-}
-/**content button**/
-.button1 {
+.form{ /**overall the form color and all being set **/
+  background-color: #F5EFE8;
   display: inline-block;
-  padding: 1rem 4.1rem;
-  font-size: 1rem;
-  border: 1px solid #b0a48d;
-  position: relative;
-  color: #b0a48d;
-  background-color: transparent;/* too allow the color to be emoty**/
+  padding-top: 50px;
+  padding-bottom: 100px;
+  width: 100%;
 }
-.button1:hover{
-  position: relative;
-  background-color:#bb9c75 ;/**change color when hover*/
-  color: white;
-  padding: 1rem 4.1rem;
-  font-size: 1rem;
-  border: 1px solid #b0a48d;
+
+.form .button-style2 {
+  width: 48%;
+  margin-top: 30px;
+}
+.form p{ /** for the ones that use p **/
+  margin-bottom: 10px;
+  color: darkgrey;
+}
+
+.form input{ /** the box being filed in **/
+  float: left;
+  width:100%;
+  margin-bottom:15px;
+}
+
+.form select{ /** the box being filed in **/
+  float: left;
+  width:100%;
+  margin-bottom:15px;
+}
+
+.form .input-container { /** this is so that the display will float left and setting the padding size for the form**/
+  float: left;
+  width: 50%;
+  padding-right: 15px;
+}
+
+.form .wrapper { /** this is to make the form it 65% the width displayed**/
+  width: 65%;
+}
+
+.form .info{
+  color: black;
+  margin-bottom: 15px;
+}
+
+.form textarea{
+   resize: none;
+   height: 50px;
+}
+
+/** recommendation section **/
+.recommends .container {  /** the area of the box to store this **/
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: inline-block;
+  text-align: center;
+}
+
+.recommends .box{ /** to put it 3 by 1 **/
+  float: left;
+  padding: 15px;/** spacing between each of them **/
+  width: 33.33%; /*this is to make it in the 3 by 3 format */
+}
+
+.recommends .box img{
+  width: 100%;
+  height: 25rem;
+}
+
+/** making it responsive **/
+@media screen and (max-width: 900px) {
+  .heading h1 { /** this is for the front part **/
+    font-size: 40px;
+    letter-spacing: 4px;
+  }
+  .form .input-container {
+    width: 80%;
+    padding-right: 0px;
+  }
+  .form .button-style2 {
+    margin-top: 30px;
+  }
+  .form .wrapper {
+    width: 60%;
+  }
+  .recommends .container {  /** the area of the box to store this **/
+    margin-top: 80px;
+    margin-bottom: 80px;
+    display: inline-block;
+    text-align: center;
+  }
+
+  .recommends .box{ /** to put it 3 by 1 **/
+    float: left;
+    padding: 10px;/** spacing between each of them **/
+    width: 33.33%; /*this is to make it in the 3 by 3 format */
+  }
+
+  .recommends .box img{
+    width: 100%;
+    height: 20rem;
+  }
+  .recommends .section-title-sm{
+    font-size: 25px;
+  }
+  .recomends .section-title{
+    font-size:30px;
+  }
+
+}
 
 
+@media screen and (max-width: 600px) {
+  .heading h1 {
+    font-size: 40px;
+    letter-spacing: 4px;
+  }
+  .form .wrapper {
+    width: 100%
+  }
+  .recommends .box{ /** to put it 3 by 1 **/
+    width: 100%; /*this is to make it in the 3 by 3 format */
+  }
+
 }
-/**content subtitle**/
-.subtitle {
-    color: darkgray;
+
+
+@media screen and (max-width: 400px) {
+  .heading h1 {
+    font-size: 28px;
+    letter-spacing: 3px;
+  }
+  .form{
+    background-color: #F5EFE8;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+  }
+  .form .input-container { /** this is so that the display will float left and setting the padding size for the form**/
     margin-bottom: 20px;
-    padding:0 40px;
-}
-/*line to seperate tittle and content**/
-.line {
-  width: 40%;
-  height: 1px;
-  display: inline-block;
-  background-color: #aa8453;
-  margin: 20px 0px;
-}
-
-
-  /**awards section**/
-.section3 .container2 {
-    text-align: center;
-    width: 100%;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    display: inline-block;
-}
-
-.section3 .box-conatiner{
-  margin: 0 5rem;
-}
-.section3 img{
-  float: left;
-  width: 25%;
-  padding: 10px;
-  height: 300px;
   }
-/** team section **/
-.section4 .container3 {
-    text-align: center;
-    width: 100%;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    display: inline-block;
-}
-.section4 .column { /*to make it form 3 by 3*/
-  float: left;
-  width: 20%;
-  margin-bottom: 16px;
-  padding: 0 10px;
+
 }
 
-.section4 .card {   /**give an effect of pop out**/
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  margin: 20px;
-}
-
-
-.section4 .container4 { /**to create the tickness of the box for the content**/
-  padding: 20px 25px;
-}
-
-.section4 .title {
-  color: grey;
-}
-
-.section4 .container4{
-  text-align: center;
-}
-
-.section4 i{
-  color: #bb9c75;
-}
-/**Enquires section **/
-.section5 .container5 {
-    text-align: center;
-    width: 100%;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    display: inline-block;
-}
-.section5 .right article {
-  float: left;
-  width: 40%;
-  padding: 0px;
-  text-align: center;
-  display: inline-block;
-}
-.section5 .right img {
-  float: left; /* this so so the image will be on the left while the text is on the right*/
-  width: 60%; /* sizing image to half the page*/
-  height: 50rem;
-}
-
-.section5 form{
-  padding:12.9rem 5rem;
-  text-align: center;
-  float: left;
-  background-color: #F8F5F0;
-}
-
-.section5 h3{
-  font-size: 1.56rem;
-  margin-top: 0.6rem;
-  color:var(--black);
-}
-
-.section5 .box{
-  width: 100%;
-  padding:0.5rem;
-  font-size: 1.125rem;
-  margin:1rem 0;
-}
-
-.section5 .btn{
-    display: inline-block;
-    padding: 1rem 4.1rem;
-    font-size: 1rem;
-    border: 1px solid #b0a48d;
-    position: relative;
-    background: #c4ac80;
-    color: white;
+@keyframes title-slide {
+  0% {
+    opacity: 0.8;
+    left: -110px;
   }
-.section5 .btn:hover{
-    position: relative;
-    background-color:#bb9c75 ;/**change color when hover*/
-    color: white;
-    padding: 1rem 4.1rem;
-    font-size: 1rem;
-    border: 1px solid #b0a48d;
-
-}
-
-  /** to make it responsive**/
-  @media screen and (max-width: 400px){
-      .heading h1 {
-          font-size: 28px;
-          letter-spacing: 3px;
-      }
-      .section5 .right img {
-        height: 40rem;
-      }
-    }
-
-  @media screen and (max-width: 600px) {
-    .heading h1{
-      font-size:40px;
-      letter-spacing: 4px;
-    }
-    .section .right img,   .section5 .right img, .section .left img, .section .right article,.section5 .right article, .section .left article  {
-      width: 100%;
-      float: none;
-    }
-    .section .right, .section .left {
-      margin: 40px 0px;
-    }
-    .section3 img {  /** this is to make sure if to small it will rejust to below   **/
-      width: 100%;
-    }
-    .section4 .column {
-      width: 100%;
-      display: block;
-    }
-
-
-@media screen and (max-width: 900px){
-      .heading h1 {
-          font-size: 40px;
-          letter-spacing: 4px;
-      }
-    }
-
-
-@media screen and (max-width: 1200px){
-  .section-title{
-    font-size: 30px;
+  100% {
+    opacity: 1;
+    left: 0px;
   }
 }
