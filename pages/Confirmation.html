@@ -140,21 +140,19 @@
             Please do call us 7 days before any cancellation.
             Failure to cancel in advance will result in a fine. Children above 12 years old is consider and adult. If you have any enquries please call <a href="tel:+6588031454">+65 88031454</a></p>
   <script type="text/javascript">
-document.write("<h1>Your reservation has been confirm:</h2></br>");
-let formData = location.search;
-formData = formData.substring(1, formData.length);
-while (formData.indexOf("+") != -1) {
-	formData = formData.replace("+", " ");
-}
-formData = unescape(formData);
-var formArray = formData.split("&");
+    document.write("<h1>Your reservation has been confirm:</h2></br>");
+    let formData = location.search;
+    formData = formData.substring(1, formData.length);
+    while (formData.indexOf("+") != -1) {
+    	formData = formData.replace("+", " ");
+    }
+    formData = unescape(formData);
+    var formArray = formData.split("&");
+    for (var i=0; i < formArray.length; ++i) {
+      text = formArray[i].replace("=", ": ");;
+    	document.writeln(text + "<br />");
+    }
 //ask damian how to remove if empty space
-for (var i=0; i < formArray.length; ++i) {
-  text = formArray[i].replace("=", ": ");;
-	document.writeln(text + "<br />");
-}
-
-
 </script>
 <a style="display: inline-block;width: 100%;">
   <button type="submit" class="button-style2" onclick="window.print()" style="width: 48%;">Print confirmation page<i class="ti-angle-right"></i></button>
