@@ -123,7 +123,7 @@
 
 <!--header section starts-->
 
-<header class="banner"> <!--so the banner wont come out-->
+<header class="banner" onclick="dismissBookingForm()"> <!--so the banner wont come out-->
   <div class="layer"></div>
   <div class="tmain-bg"><!--insert image link to css-->
   <div class="container">
@@ -145,19 +145,19 @@
       <h4 class="section-subheading">Facility Booking</h4>
       <h1 class="section-title">book a tennis court</h1>
       <hr class="horizontal-line">
-      <form action="tennisformdone.html" method="post">
+      <form action="tennisformdone.html" method="get">
         <div class="input-container">
           <p>Hotel Confirmation Number</p>
-          <input class="leftform" type="text" id="hotelconf" name="" value="" maxlength="4" minlength="4" required>
+          <input class="leftform" type="text" id="hotelconf" name="Hotel Confirmation Number" value="" maxlength="4" minlength="4" required>
           <p>Email</p>
-          <input class="leftform" type="text" id="email" name="number" value="" required>
+          <input class="leftform" type="text" id="email" name="Number" value="" required>
         </div>
         <div class="input-container">
           <p>Session Date</p>
-          <input class="input-style1" id="date" type="date" name="" value="" required>
+          <input class="input-style1" id="date" type="date" name="Date" value="" required>
           <div style="width:48%;float:left">
             <p>Time *</p>
-            <select name="time" class="input-style1" id="time" required>
+            <select name="Time" class="input-style1" id="time" required>
               <option value="">Time Slot</option>
               <option value="6am">0600</option>
               <option value="8am">0800</option>
@@ -172,7 +172,7 @@
         </div>
         <p style="display: inline-block;width: 100%;">*Each session is 2hrs long</p>
         <a href="tennisformdone.html" style="display: inline-block;width: 100%;margin-top: 20px;">
-        <button type="submit" class="button-style2" name="button" style="width: 48%;">Book Now<i class="ti-angle-right"></i></button>
+        <button type="submit" class="button-style2" style="width: 48%;">Book Now<i class="ti-angle-right"></i></button>
       </a>
       </form>
     </div>

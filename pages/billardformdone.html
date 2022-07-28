@@ -123,7 +123,7 @@
 
 
 <!--header section starts-->
-<header class="banner"> <!--so the banner wont come out-->
+<header class="banner"  onclick="dismissBookingForm()"> <!--so the banner wont come out-->
   <div class="layer"></div>
   <div class="bmain-bg"><!--insert image link to css-->
   <div class="container">
@@ -134,81 +134,39 @@
 </div>
 </header>
 
-<section class = "form">
+<div class="content reveal up">
     <div class="form container">
       <div class="wrapper" id="form-section">
-        <h4 class="section-subheading">Facility Booking</h4>
-        <h1 class="section-title">book a tennis court</h1>
+        <h4 class="section-subheading">Billard Room Booking</h4>
+        <h1 class="section-title">Your reservation has been confirmed</h1>
         <hr class="horizontal-line">
         <p class="info"> Please do note that the hotel reserves all rights to cancel your
-          reservation shoudld there be a need. Any extra charges needed will be charged to you.
+          reservation should there be a need. Any extra charges needed will be charged to you.
           Please do call us 7 days before any cancellation.
-          Failure to cancel in advance will result in a fine. Children above 12 years old is consider and adult. If you have any enquries please call <a href="tel:+6588031454">+65 88031454</a></p>
+          Failure to cancel in advance will result in a fine. Children above 12 years old is considered an adult. If you have any enquries please call <a href="callto:+6588031454">+65 88031454</a></p>
 <script type="text/javascript">
-document.write("<h1>Your reservation has been confirm:</h2></br>");
-let formData = location.search;
-formData = formData.substring(1, formData.length);
-while (formData.indexOf("+") != -1) {
-formData = formData.replace("+", " ");
-}
-formData = unescape(formData);
-var formArray = formData.split("&");
-for (var i=0; i < formArray.length; ++i) {
-text = formArray[i].replace("=", ": ");;
-document.writeln(text + "<br />");
-}
+  document.write("<br/>")
+  var formData = location.search;
 
+  formData = formData.substring(1, formData.length);
+  while (formData.indexOf("+") != -1) {
+    formData = formData.replace("+", " ");
+  }
 
+  formData = unescape(formData);
+  var formArray = formData.split("&");
+  for (var i=0; i < formArray.length; ++i) {
+    text = formArray[i].replace("=", ": ");;
+    document.writeln(text + "<br />");
+  document.write("<br/>")
+  }
+//ask damian how to remove if empty space
 </script>
 <a style="display: inline-block;width: 100%;">
 <button type="submit" class="button-style2" onclick="window.print()" style="width: 48%;">Print confirmation page<i class="ti-angle-right"></i></button>
 </a>
-
-<!-- header section ends -->
-<!-- <div class="content reveal up">
-
-  <div class="form container">
-    <div class="wrapper" id="form-section">
-      <h4 class="section-subheading">Facility Booking</h4>
-      <h1 class="section-title">book a billiard room</h1>
-      <hr class="horizontal-line">
-        <div class="input-container">
-          <p>Hotel Confirmation Number</p>
-          <p class="leftform" id="hotelconf"> </p>
-          <p>Email</p>
-          <p class="leftform" id="email"> </p>
-
-        </div>
-
-        <div class="input-container">
-          <p>Session Date</p>
-          <p class="input-style1" id="date" > </p>
-          <div style="width:48%;float:left">
-            <p>Time *</p>
-            <p name="time" class="input-style1"> </p>
-
-            </select>
-          </div>
-        </div>
-        <p style="display: inline-block;width: 100%;">*Each session is 2hrs long</p>
-        <a href="billardformdone.html" style="display: inline-block;width: 100%;margin-top: 20px;">
-        <button type="submit" class="button-style2" name="button" style="width: 48%;">Book Now<i class="ti-angle-right"></i></button>
-      </a>
-    </div>
-  </div>
-  <script src="../js/form.js"></script> -->
-<!-- forms section starts -->
-<!-- <section class="done">
-    <div class="box-container">
-      <div class="box">
-        <h3>booking confirmed !</h3>
-        <p>An email has been sent to you. if you want to change the booking please change it through the link in that email</p>
-        <a href="facilities.html" class="btn" id="back1">facilities page <i class="ti-angle-right"></i></a>
-        <a href="../index.html" class="btn" id="back2">home page <i class="ti-angle-right"></i></a>
-  </div>
-  </div>
-</section> -->
-
+</div>
+</div>
 
 <!-- forms section end -->
 
