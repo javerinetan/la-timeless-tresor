@@ -4,19 +4,17 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Billard room Booking | Le Timeless Trésor</title>
+   <title>Golf Packages | Le Timeless Trésor</title>
 
    <!-- font awesome cdn link  -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
    <link rel="icon" href="../resources/images/logo.png">
-   <link rel="stylesheet" href="../css/fform.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400;1,400;1,700&display=swap" rel="stylesheet">
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="../css/golf.css">
    <link rel="stylesheet" href="../css/navbar.css">
    <link rel="stylesheet" href="../css/global.css">
 </head>
-<body>
-
-<!-- header section starts  -->
-
 <nav class="topnav" id="myTopnav">
     <div class="container">
       <a href="../index.html" style="padding:0; display:inline">
@@ -31,8 +29,8 @@
           <div class="dropdown-content">
             <a href="#">Overview<i class="ti-angle-right"></i></a>
             <a href="../pages/accommodations.html">Accomodations<i class="ti-angle-right"></i></a>
-            <a href="facilities.html">Facilities<i class="ti-angle-right"></i></a>
-            <a href="services.html">Services<i class="ti-angle-right"></i></a>
+            <a href="#">Facilities<i class="ti-angle-right"></i></a>
+            <a href="#">Services<i class="ti-angle-right"></i></a>
           </div>
         </div>
         <div class="dropdown">
@@ -41,7 +39,7 @@
           </button>
           <div class="dropdown-content">
             <a href="#">The Restaurant<i class="ti-angle-right"></i></a>
-            <a href="#">Reservation<i class="ti-angle-right"></i></a>
+            <a href="../pages/reservation.html">Reservation<i class="ti-angle-right"></i></a>
             <a href="#">Ordering<i class="ti-angle-right"></i></a>
           </div>
         </div>
@@ -51,7 +49,7 @@
           </button>
           <div class="dropdown-content">
             <a href="#news">Events<i class="ti-angle-right"></i></a>
-            <a href="#contact">Promotions<i class="ti-angle-right"></i></a>
+            <a href="../pages/promotions.html">Promotions<i class="ti-angle-right"></i></a>
           </div>
         </div>
         <div class="dropdown">
@@ -59,8 +57,8 @@
            <i class="ti-angle-down"></i>
          </button>
          <div class="dropdown-content">
-             <a href="../pages/gallery.html">Welcome<i class="ti-angle-right"></i></a>
-             <a href="../pages/about.html">History<i class="ti-angle-right"></i></a>
+           <a href="../pages/gallery.html">Welcome<i class="ti-angle-right"></i></a>
+           <a href="../pages/about.html">History<i class="ti-angle-right"></i></a>
          </div>
        </div>
         <a href="#contact">Contact</a>
@@ -120,69 +118,113 @@
     </div>
     <script type="text/javascript" src="../js/nav.js"></script>
   </nav>
-
-
-<!--header section starts-->
-
-<header class="banner"> <!--so the banner wont come out-->
-  <div class="layer"></div>
-  <div class="bmain-bg"><!--insert image link to css-->
-  <div class="container">
-    <div class="heading">
-      <h1 class="content">billiard room booking page</h1>
-    </div>
-  </div>
-</div>
-</header>
-
 <!-- header section ends -->
 
-<div class="content reveal up">
+<!---Welcome page-->
+<div class="intro-bg">
 
-  <div class="form container">
-    <div class="wrapper" id="form-section">
-      <h4 class="section-subheading">Facility Booking</h4>
-      <h1 class="section-title">book a billiard room</h1>
-      <hr class="horizontal-line">
-      <form action="billardformdone.html" method="get">
-        <div class="input-container">
-          <p>Hotel Confirmation Number</p>
-          <input class="leftform" type="text" name="" value="" maxlength="4" minlength="4" required>
-          <p>Email</p>
-          <input class="leftform" type="text" name="number" value="" required>
+   <section class="intro">
 
-        </div>
+      <div class="content">
+           <h3> An Ode </h3>
+           <p>An acclaimed landmark on the worlds golfing scene, An Ode
+              is home to one of the world's
+             finest golf playgrounds, treating guests with an enriching
+             experience to a golfing paradise with its revered 36-hole
+             championship golf courses and a wide range of golfing
+             facilities.</p>
+      </div>
 
-        <div class="input-container">
-          <p>Session Date</p>
-          <input class="input-style1" type="date" id="date" name="" value="" required>
-          <div style="width:48%;float:left">
-            <p>Time *</p>
-            <select name="time" class="input-style1" required>
-              <option value="">Time Slot</option>
-              <option value="6am">0600</option>
-              <option value="8am">0800</option>
-              <option value="10am">1000</option>
-              <option value="12pm">1200</option>
-              <option value="2pm">1400</option>
-              <option value="4pm">1600</option>
-              <option value="6pm">1800</option>
-              <option value="8pm">2000</option>
-            </select>
-          </div>
-        </div>
-        <p style="display: inline-block;width: 100%;">*Each session is 2hrs long</p>
-        <a href="billardformdone.html" style="display: inline-block;width: 100%;margin-top: 20px;">
-        <button type="submit" class="button-style2" name="button" style="width: 48%;">Book Now<i class="ti-angle-right"></i></button>
-      </a>
-      </form>
-    </div>
+   </section>
+
+</div>
+<!---golf course-->
+<section class="Family" >
+
+   <div class="image">
+
+      <img src="https://cdn.vox-cdn.com/thumbor/Y6_6Sz_zNMHfqVRuFldCDAFOb0w=/0x0:1200x800/1200x800/filters:focal(504x304:696x496)/cdn.vox-cdn.com/uploads/chorus_image/image/69338654/unnamed__12_.0.jpg" alt="">
+
+   </div>
+
+   <div class="content">
+      <h3>Mini Golf </h3>
+      <p>The world craziest and most unique mini golf venue, Par none.
+        Forget the usual windmills and castles, putt your stuff through s
+        hark-infested waters and pop culture references like America's
+        favourite cartoon family's couch and into the Nine Iron Throne itself. Each hole will keep you wanting more.
+        We have space for the whole crew, young, old, big, small –
+        no worries. </p>
+      <div class="price">
+        <h4>Prices:<h4>
+        <h5> Children below 12 play for free </h5>
+        <h5> 12-16 years old :$40 </h5>
+        <h5> Adults: $76</h5>
+        <h5> Senior Citizen:$38 </h5>
+      </div>
+
+      <a href="golfbooking.html" class="btn">Book Now</a>
+   </div>
+
+
+
+</section>
+<!-- couse 2 -->
+
+<section class="Classique" >
+
+
+  <div class="content">
+     <h3>Classique Course</h3>
+     <p>Our Classic Course Revels In Its Reputation As One Of The Most Difficult And Dramatic Tests Of Golf In The World,
+       Due To Its Formidable Challenge, The Classique Unfolds Over Hilly Terrain. This Activity Is Only For 16 Years
+       Old And Above.
+     </p>
+     <div class="price">
+      <h4>Prices</h4>
+        <h5>$70 per hotel guest  </h5>
+        <h5>$120 for outside guest</h5>
+     </div>
+     <a href="golfbooking.html"  class="btn">Book Now</a>
+
   </div>
-  <script src="../js/form.js"></script>
-<!-- forms section end -->
 
-<!-- footer section starts  -->
+  <div class="image">
+     <img src="../resources/images/golf2.png" alt="">
+  </div>
+</section>
 
+<!---course 3---->
+<section class="digi" >
+
+   <div class="image">
+
+      <img src="../resources/images/golf3.jpeg" alt="">
+
+   </div>
+
+   <div class="content">
+      <h3>DIGI Golf </h3>
+      <p> Experience The Latest High Technology Of AI At Our
+        Specially Design Golf Course Setup. Improve Accuracy And Aim With Fun,
+        Interactive Way To Play Golf. </p>
+   <div class="price">
+      <h4>Prices:</h4>
+      <h5>$57.50/hr (1-4 people)</h5>
+      <h5>$72.50/hr (5-6 people) </h5>
+   </div>
+
+      <a href="golfbooking.html" class="btn">Book Now</a>
+      <!---link this to the bottom page -->
+   </div>
+
+
+
+</section>
+
+
+<!--booking-->
+<!-- footer section starts -->
 <footer class="footer">
    <div class="container">
      <section>
@@ -257,7 +299,8 @@
    </section>
 </footer>
 
-<!-- footer section ends -->
-
+<script src="js/flickity.pkgd.min.js"></script>
+<script src="js/index.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
