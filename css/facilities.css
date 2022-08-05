@@ -27,36 +27,50 @@ header{
   height: 500px;
 }
 
-.home-bg{
-   background:linear-gradient(90deg, var(--white), transparent 0%), url(../resources/images/hotel1.jpg) no-repeat;
-   background-size:cover;
-   background-position: center;
-   background-attachment: fixed;/*fix the image so it doesnt move when u scroll down**/
-   height: 500px;
-   text-align: center;
-   object-fit: cover;
+/**front part **/
+.main-bg {      
+  background:linear-gradient(90deg, var(--white), transparent 0%), url('../resources/images/hotel.jpg') no-repeat;
+  top: 0;
+  left: 0;
+  height: 500px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
-.home-bg .home{
-   display: flex;
-   align-items: center;
+.banner .container {
+  position: absolute;
+  top: 0;
+}
+/**to make the image less bright**/
+.layer {
+  background-color: black;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 500px;
+  width: 100%;
+}
+/**heading fonts**/
+.heading {   /**heading space and position **/
+  color: white;
+  position: relative;
+  top: 315px;
+  text-align: center;
+  animation: title-slide 1s ease-in-out;
 }
 
-.home-bg .home .content{
-   max-width: 80%;
-   text-align: center;
-   margin-left: auto;
-   margin-right: auto;
-   margin-top: 315px;
-}
-
-.home-bg .home .content h2{
-   font-size: 50px;
-   color:var(--white);
-   font-family: 'LibreBodoni-Regular';
-   font-weight: lighter;
-   text-transform: uppercase;
-   letter-spacing: 8px;
+.heading h1 {
+  font-family: 'LibreBodoni-Regular';
+  font-size: 50px;
+  color: white;
+  margin: 0;
+  font-weight: lighter;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  top: 250px;
 }
 
 .about{
