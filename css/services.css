@@ -22,7 +22,7 @@ header {
 
   .main-bg {
     background:linear-gradient(90deg, var(--white), transparent 0%), url('../resources/images/services.webp') no-repeat;
-    top: 0;
+    top: 10rem;
     left: 0;
     height: 500px;
     width: 100%;

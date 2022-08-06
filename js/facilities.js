@@ -1,5 +1,5 @@
-let outdoor=document.getElementById("outdoor");
-let indoor=document.getElementById("indoor");
+let complimentary=document.getElementById("complimentary");
+let paid=document.getElementById("notFree");
 
 //reset title color
 function resetColor() {
@@ -12,22 +12,22 @@ function showAll() {
   let btn=document.getElementById("btn0");
   resetColor();
   btn.classList="click"
-  indoor.style.display = 'block';
-  outdoor.style.display = 'block';
+  complimentary.style.display = 'block';
+  paid.style.display = 'block';
 }
 
-function showOutdoor(){
+function showComplimentary(){
   let btn=document.getElementById("btn1");
   resetColor();
   btn.classList="click"
-  indoor.style.display = 'none';
-  outdoor.style.display = 'block';
+  paid.style.display = 'none';
+  complimentary.style.display = 'block';
 }
 
-function showIndoor(){
+function showNotFree(){
   let btn=document.getElementById("btn2");
   resetColor();
   btn.classList="click"
-  indoor.style.display = 'block';
-  outdoor.style.display = 'none';
+  paid.style.display = 'block';
+  complimentary.style.display = 'none';
 }

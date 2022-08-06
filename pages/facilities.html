@@ -156,74 +156,11 @@
 <section class="facilities">
     <div class="facilityNav">
       <div onclick="showAll()" class="click" id="btn0">ALL</div>
-      <div onclick="showOutdoor()" class="outdoorBtn" id="btn1">OUTDOOR</div>
-      <div onclick="showIndoor()" class="indoorBtn" id="btn2">INDOOR</div>
+      <div onclick="showComplimentary()" class="" id="btn1">COMPLIMENTARY</div>
+      <div onclick="showNotFree()" class="" id="btn2">NOT FREE</div>
     </div>
 
-      <section class="outdoorFacility" id="outdoor">
-        <div class = "right"> <!--tell where the text should be-->
-          <img src="../resources/images/pool.jpg" alt="pool">
-            <article> <!--this is the create the col-->
-              <h4 class="section-subheading">relaxing time</h4>
-              <h1 class="section-title">Swimming Pool</h1> <!-- key in the class="section-title" cause it states the font for that line, it is in the global css-->
-              <hr class="line"><!--create a line-->
-              <p class="subtitle">enjoy your swim in paradise. let the relaxing waters calm you .
-                  swim in either the indoor or the outdoor pool.
-                  After your swim, sunbathe on a luxurious poolside lounger, or relax in the shade of a palm tree with a view of the calm ocean waves.
-                </p>
-                <p id="oh"><strong>opening hours:</strong> 6am-10pm</p>
-              <a href="poolform.html" class="button1">Book Now</a>
-          </article>
-        </div>
-
-        <div class = "left"> <!--tell where the text should be-->
-          <img src="../resources/images/flowerfield.jpg" alt="flowerfield">
-            <article> <!--this is the create the col-->
-              <h4 class="section-subheading">scenic beauty</h4>
-              <h1 class="section-title">Flower field</h1> <!-- key in the class="section-title" cause it states the font for that line, it is in the global css-->
-              <hr class="line"><!--create a line-->
-              <p class="subtitle">
-                spend your time surrounded by fully bloomed flowers, basking in the sunlight. loosen up here, enjoying the refreshing smell of flowers and feasting on
-                  the beautiful scenary. dont miss the opportunity to see the sunrise amongst the flowers, you wont regret it.
-              </p>
-              <p id="oh"><strong>opening hours:</strong> 24 hours</p>
-              <a href="https://www.gardensbythebay.com.sg/en/things-to-do/attractions.html" target="_blank" class="button1">Learn More</a>
-            </article>
-        </div>
-
-        <div class = "right"> <!--tell where the text should be-->
-          <img src="../resources/images/golf.jpg" alt="golf">
-            <article> <!--this is the create the col-->
-              <h4 class="section-subheading">hole in one</h4>
-              <h1 class="section-title">golf</h1> <!-- key in the class="section-title" cause it states the font for that line, it is in the global css-->
-              <hr class="line"><!--create a line-->
-              <p class="subtitle">
-                The 6493m, par 72 course is one of the few outstanding links-styled golf courses that you can find in here. Featuring 66 pot bunkers of varying sizes and depth,a variety in the length of the holes and many undulations.
-                  there are different courses of varying difficulty to choose from, from family themed to competition difficulty golf courses.
-              </p>
-              <p id="oh"><strong>opening hours:</strong> 6am-10pm</p>
-              <a href="golfpackage.html" class="button1">learn more</a>
-            </article>
-        </div>
-
-        <div class = "left"> <!--tell where the text should be-->
-          <img src="../resources/images/tennis.webp" alt="tennis">
-            <article> <!--this is the create the col-->
-              <h4 class="section-subheading">match time</h4>
-              <h1 class="section-title">tennis court</h1> <!-- key in the class="section-title" cause it states the font for that line, it is in the global css-->
-              <hr class="line"><!--create a line-->
-              <p class="subtitle">
-                Our beautiful premium grade synthetic turf courts are the perfect venue for the athletically inclined who are eager to sweat it out. enjoy playing tennis here with a view and sound of calm waves.
-                book your tennis court session before heading down.
-              </p>
-              <p id="oh"><strong>opening hours:</strong> 8am to 10pm </p>
-              <a href="tennisform.html" class="button1">book now</a>
-            </article>
-        </div>
-      </section>
-
-
-      <section class="indoorFacility" id="indoor">
+      <section class="freeFacility" id="complimentary">
         <div class = "right"> <!--tell where the text should be-->
           <img src="../resources/images/cinema.jpg" alt="cinema">
             <article> <!--this is the create the col-->
@@ -235,12 +172,26 @@
                   it screens a variety of movies from the latest blockbuster release to old favourite, fairytale to horror, from our extensive catalogue on the big screen.
                   simply check the movie screening timing and pop in in our movie theatres.
               </p>
-              <p id="oh"><strong>opening hours:</strong> 9am to 3am</p>
+              <p id="oh"><i class="fa-regular fa-clock"></i> opening Hours 9:00am - 3:00am</p>
               <a href="moviescreening.html" target="_blank" class="button1">movie screenings</a>
             </article>
         </div>
 
         <div class = "left"> <!--tell where the text should be-->
+          <img src="../resources/images/bowling.webp" alt="bowling">
+            <article> <!--this is the create the col-->
+              <h4 class="section-subheading">game night</h4>
+              <h1 class="section-title">bowling alley</h1> <!-- key in the class="section-title" cause it states the font for that line, it is in the global css-->
+              <hr class="line"><!--create a line-->
+              <p class="subtitle">
+                Spend a fun day at the bowling alley. Rent the bowling shoes over the couter for free. Relax in front of 12 big screens, try for a strike on one of twenty bowling lanes.
+              </p>
+              <p id="oh"><i class="fa-regular fa-clock"></i> opening Hours 8:00am - 8:00pm</p>
+              <a href="https://stories.forbestravelguide.com/have-a-ball-at-these-five-luxury-bowling-alleys" target="_blank" class="button1">Learn More</a>
+            </article>
+        </div>
+
+        <div class = "right"> <!--tell where the text should be-->
           <img src="../resources/images/museum.webp" alt="museum">
             <article> <!--this is the create the col-->
               <h4 class="section-subheading">feast your eyes on the best artworks</h4>
@@ -250,55 +201,9 @@
                 spend time viewing artworks and galleries of vintage artifacts here at our resort. some famous artworks are "MonaLesa", "girl with diamond earring" and "the
                    glittery night". enjoy the experience at no cost. simply walk in and enjoy.
               </p>
-              <p id="oh"><strong>opening hours:</strong> 6am-11pm</p>
+              <p id="oh"><i class="fa-regular fa-clock"></i> opening Hours 6:00am - 11:00pm</p>
               <a href="https://www.timeout.com/newyork/art/top-famous-paintings-in-art-history-ranked" target="_blank" class="button1">Learn more</a>
           </article>
-        </div>
-
-        <div class="right">
-          <img src="../resources/images/PhotoBooth.png" alt="PhotoBooth">
-            <article>
-              <h4 class="section-subheading">remember the occasion</h4>
-              <h1 class="section-title">photobooth</h1>
-              <hr class="line">
-              <p class="subtitle">
-                enjoy complientary self-service photobooth prints to take home as a memento. it comes with a variety of overlay designs and filters for your prints
-                  and custom vintage theme props for you to chose from. In each photo session, you will receive 2 prints and a digital copy sent to your phone.
-              </p>
-              <p id="oh"><strong>opening hours:</strong> 24 hours</p>
-              <a href="https://dollop.sg/" target="_blank" class="button1">Learn More</a>
-            </article>
-        </div>
-
-        <div class = "left"> <!--tell where the text should be-->
-          <img src="../resources/images/casino.jpg" alt="casino">
-            <article> <!--this is the create the col-->
-              <h4 class="section-subheading">adrenaline rush</h4>
-              <h1 class="section-title">casino</h1> <!-- key in the class="section-title" cause it states the font for that line, it is in the global css-->
-              <hr class="line"><!--create a line-->
-              <p class="subtitle">
-                The Casino at Le timeless Trésor offers a vast selection of electronic gaming machines worldwide with more than 250 game titles to choose from.
-                   The Le timeless tresor Casino offers a choice of table games to suit all players. All table games are played using Casino gaming chips, which may be purchased either at the tables, or at the casino cage.
-              </p>
-              <p id="op"><strong>opening hours:</strong> 24 hours</p>
-              <p id="oh"><strong>entry fee:</strong> $100 </p>
-              <a href="https://www.gamblingnews.com/blog/best-casinos-in-the-world/" target="_blank" class="button1">learn more</a>
-            </article>
-        </div>
-
-        <div class = "right"> <!--tell where the text should be-->
-          <img src="../resources/images/billard.jpg" alt="Billard">
-            <article> <!--this is the create the col-->
-              <h4 class="section-subheading">game night</h4>
-              <h1 class="section-title">billiard room</h1> <!-- key in the class="section-title" cause it states the font for that line, it is in the global css-->
-              <hr class="line"><!--create a line-->
-              <p class="subtitle">
-                engage in our complimentary billiard room to entertain and enjoy yourselves here. as you play enjoy unlimited drinks from the bar and have fun!
-                  in each room there is 2 billiard table, charging ports and bar with bartender exclusively serving to your needs. book your room in advance to secure a 2 hour play inside.
-              </p>
-              <p id="oh"><strong>opening hours:</strong> 8am to 12am</p>
-              <a href="billardform.html" class="button1">book now</a>
-            </article>
         </div>
 
         <div class = "left"> <!--tell where the text should be-->
@@ -311,38 +216,39 @@
                 relax in paradise with your beloved, and rest assure your children with us for the day. we have the best teachers fluent in all language to take care of your children while you spend
                 time to relax. the children will be engaged with multiple games appropriate for their age. we will fulfill all of their needs and wants so rest assured.
               </p>
-              <p id="oh"><strong>opening hours:</strong> 8am to 8pm</p>
+              <p id="oh"><i class="fa-regular fa-clock"></i> opening Hours 8:00am - 8:00pm</p>
               <a href="https://www.ecda.gov.sg/Parents/Pages/ParentsChooseCCC.aspx" target="_blank" class="button1">Learn More</a>
             </article>
         </div>
 
         <div class="right">
-           <img src="../resources/images/spa.jpg" alt="spa">
-           <article>
-             <h4 class="section-subheading">personalised for you</h4>
-             <h1 class="section-title">spa and massage</h1>
-             <hr class="line">
-             <p class="subtitle">
-               Massages and beauty treatments are a salve for the senses and body. Enjoy personalised treatment spas for beauty and wellness.
-                 Escape to tranquility at Le Massage. we customise our massages to our clients to help you fully relax your muscles and
-                   relief tension. rest assured in our hands. Make your spa reservation online and design your perfect getaway.
-                 </p>
-              <a href="spaform.html" class="button1">Book Now</a>
-          </article>
+          <img src="../resources/images/PhotoBooth.png" alt="PhotoBooth">
+            <article>
+              <h4 class="section-subheading">remember the occasion</h4>
+              <h1 class="section-title">photobooth</h1>
+              <hr class="line">
+              <p class="subtitle">
+                enjoy complientary self-service photobooth prints to take home as a memento. it comes with a variety of overlay designs and filters for your prints
+                  and custom vintage theme props for you to chose from. In each photo session, you will receive 2 prints and a digital copy sent to your phone.
+              </p>
+              <p id="oh"><i class="fa-regular fa-clock"></i> opening Hours 24 hours</p>
+              <a href="https://dollop.sg/" target="_blank" class="button1">Learn More</a>
+            </article>
         </div>
 
         <div class = "left"> <!--tell where the text should be-->
-          <img src="../resources/images/bowling.webp" alt="bowling">
+          <img src="../resources/images/pool.jpg" alt="pool">
             <article> <!--this is the create the col-->
-              <h4 class="section-subheading">game night</h4>
-              <h1 class="section-title">bowling alley</h1> <!-- key in the class="section-title" cause it states the font for that line, it is in the global css-->
+              <h4 class="section-subheading">relaxing time</h4>
+              <h1 class="section-title">Swimming Pool</h1> <!-- key in the class="section-title" cause it states the font for that line, it is in the global css-->
               <hr class="line"><!--create a line-->
-              <p class="subtitle">
-                Spend a fun day at the bowling alley. Rent the bowling shoes over the couter for free. Relax in front of 12 big screens, try for a strike on one of twenty bowling lanes.
-              </p>
-              <p id="oh"><strong>opening hours:</strong> 8am to 8pm</p>
-              <a href="https://stories.forbestravelguide.com/have-a-ball-at-these-five-luxury-bowling-alleys" target="_blank" class="button1">Learn More</a>
-            </article>
+              <p class="subtitle">enjoy your swim in paradise. let the relaxing waters calm you .
+                  swim in either the indoor or the outdoor pool.
+                  After your swim, sunbathe on a luxurious poolside lounger, or relax in the shade of a palm tree with a view of the calm ocean waves.
+                </p>
+                <p id="oh"><i class="fa-regular fa-clock"></i> opening Hours 6:00am - 10:00pm</p>
+              <a href="poolform.html" class="button1">Book Now</a>
+          </article>
         </div>
 
         <div class = "right"> <!--tell where the text should be-->
@@ -356,13 +262,92 @@
                   Catch up on your favourite shows while working out.
                   After an invigorating workout, unwind and soothe tired muscles at the hot pool, sauna and steam facilities in the changing rooms.
               </p>
-              <p id="oh"><strong>opening hours:</strong> 6am-12am </p>
+              <p id="oh"><i class="fa-regular fa-clock"></i> opening Hours 6:00am - 12:00am </p>
               <a href="gymform.html" class="button1">book now</a>
             </article>
         </div>
+
+        <div class = "left"> <!--tell where the text should be-->
+          <img src="../resources/images/tennis.webp" alt="tennis">
+            <article> <!--this is the create the col-->
+              <h4 class="section-subheading">match time</h4>
+              <h1 class="section-title">tennis court</h1> <!-- key in the class="section-title" cause it states the font for that line, it is in the global css-->
+              <hr class="line"><!--create a line-->
+              <p class="subtitle">
+                Our beautiful premium grade synthetic turf courts are the perfect venue for the athletically inclined who are eager to sweat it out. enjoy playing tennis here with a view and sound of calm waves.
+                book your tennis court session before heading down.
+              </p>
+              <p id="oh"><i class="fa-regular fa-clock"></i> opening Hours 8:00am - 10:00pm </p>
+              <a href="tennisform.html" class="button1">book now</a>
+            </article>
+        </div>
       </section>
-    </div>
-</div>
+
+      <section class="notFreeFacility" id="notFree">
+
+        <div class = "right"> <!--tell where the text should be-->
+          <img src="../resources/images/casino.jpg" alt="casino">
+            <article> <!--this is the create the col-->
+              <h4 class="section-subheading">adrenaline rush</h4>
+              <h1 class="section-title">casino</h1> <!-- key in the class="section-title" cause it states the font for that line, it is in the global css-->
+              <hr class="line"><!--create a line-->
+              <p class="subtitle">
+                The Casino at Le timeless Trésor offers a vast selection of electronic gaming machines worldwide with more than 250 game titles to choose from.
+                   The Le timeless tresor Casino offers a choice of table games to suit all players. All table games are played using Casino gaming chips, which may be purchased either at the tables, or at the casino cage.
+              </p>
+              <p id="op"><i class="fa-regular fa-clock"></i> opening Hours 24 hours</p>
+              <p id="oh"><i class="fa-solid fa-hand-holding-dollar"></i> entry Levy $150 </p>
+              <a href="https://www.gamblingnews.com/blog/best-casinos-in-the-world/" target="_blank" class="button1">learn more</a>
+            </article>
+        </div>
+
+        <div class = "left"> <!--tell where the text should be-->
+          <img src="../resources/images/billard.jpg" alt="Billard">
+            <article> <!--this is the create the col-->
+              <h4 class="section-subheading">game night</h4>
+              <h1 class="section-title">billiard room</h1> <!-- key in the class="section-title" cause it states the font for that line, it is in the global css-->
+              <hr class="line"><!--create a line-->
+              <p class="subtitle">
+                engage in our complimentary billiard room to entertain and enjoy yourselves here. as you play enjoy unlimited drinks from the bar and have fun!
+                  in each room there is 2 billiard table, charging ports and bar with bartender exclusively serving to your needs. book your room in advance to secure a 2 hour play inside.
+              </p>
+              <p id="oh"><i class="fa-regular fa-clock"></i> opening Hours 8:00am - 12:00am</p>
+              <a href="billardform.html" class="button1">book now</a>
+            </article>
+        </div>
+
+        <div class = "right"> <!--tell where the text should be-->
+          <img src="../resources/images/golf.jpg" alt="golf">
+            <article> <!--this is the create the col-->
+              <h4 class="section-subheading">hole in one</h4>
+              <h1 class="section-title">golf</h1> <!-- key in the class="section-title" cause it states the font for that line, it is in the global css-->
+              <hr class="line"><!--create a line-->
+              <p class="subtitle">
+                The 6493m, par 72 course is one of the few outstanding links-styled golf courses that you can find in here. Featuring 66 pot bunkers of varying sizes and depth,a variety in the length of the holes and many undulations.
+                  there are different courses of varying difficulty to choose from, from family themed to competition difficulty golf courses.
+              </p>
+              <p id="oh"><i class="fa-regular fa-clock"></i> opening Hours 6:00am - 10:00pm</p>
+              <a href="golfpackage.html" class="button1">learn more</a>
+            </article>
+        </div>
+
+        <div class="left">
+           <img src="../resources/images/spa.jpg" alt="spa">
+           <article>
+             <h4 class="section-subheading">personalised for you</h4>
+             <h1 class="section-title">spa and massage</h1>
+             <hr class="line">
+             <p class="subtitle">
+               Massages and beauty treatments are a salve for the senses and body. Enjoy personalised treatment spas for beauty and wellness.
+                 Escape to tranquility at Le Massage. we customise our massages to our clients to help you fully relax your muscles and
+                   relief tension. rest assured in our hands. Make your spa reservation online and design your perfect getaway.
+                 </p>
+                 <p id="oh"><i class="fa-regular fa-clock"></i> opening Hours 8:00am - 10:00pm</p>
+              <a href="spaform.html" class="button1">Book Now</a>
+          </article>
+        </div>
+
+      </section>
 </section>
 
 <!-- facilities section end -->
