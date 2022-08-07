@@ -1,5 +1,5 @@
 let complimentary=document.getElementById("complimentary");
-let paid=document.getElementById("notFree");
+let paid=document.getElementById("charged");
 
 //reset title color
 function resetColor() {
