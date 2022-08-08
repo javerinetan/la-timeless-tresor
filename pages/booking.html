@@ -134,23 +134,23 @@
       <div style="display:inline-block; width:100%">
         <div>
           <p>Check in</p>
-          <span>-</span>
+          <span id="chkin-display">-</span>
         </div>
         <div>
           <p>Check out</p>
-          <span>-</span>
+          <span id="chkout-display">-</span>
         </div>
         <div>
           <p>Adult</p>
-          <span>-</span>
+          <span id="adult-display">-</span>
         </div>
         <div>
           <p>Child</p>
-          <span>-</span>
+          <span id="child-display">-</span>
         </div>
         <div>
           <p>Room Type</p>
-          <span>-</span>
+          <span id="room-display">-</span>
         </div>
       </div>
       <a class="button-style2" name="button">Proceed<i class="ti-angle-right"></i></a>
@@ -163,40 +163,40 @@
         <form action="index.html" method="post">
           <div class="input-container">
             <p>Check in date</p>
-            <input class="input-style1" type="date" name="" value="">
+            <input class="input-style1" type="date" name="chkin-display" value="-" id="chkin" onchange="updateBooking(this)">
             <div style="width:48%;float:left">
               <p>No. of Adult</p>
-              <select class="input-style1" name="adult">
-                <option value="">1</option>
-                <option value="">2</option>
-                <option value="">3</option>
-                <option value="">4</option>
-                <option value="">5</option>
+              <select class="input-style1" name="adult-display" id="adult" onchange="updateBooking(this)">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
               </select>
             </div>
             <div style="width:48%;float:right">
               <p>No. of Child</p>
-              <select class="input-style1" name="">
-                <option value="">0</option>
-                <option value="">1</option>
-                <option value="">2</option>
-                <option value="">3</option>
-                <option value="">4</option>
-                <option value="">5</option>
+              <select class="input-style1" name="child-display" id="child" onchange="updateBooking(this)">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
               </select>
             </div>
           </div>
           <div class="input-container">
             <p>Check out date</p>
-            <input class="input-style1" type="date" name="" value="">
+            <input class="input-style1" type="date" name="chkout-display" value="-" id="chkout" onchange="updateBooking(this)">
             <p>Room Type</p>
-            <select class="input-style1" name="Room">
-              <option value="">Room Type</option>
-              <option value="">Any</option>
-              <option value="">Junior Suite</option>
-              <option value="">Family Suite</option>
-              <option value="">Deluxe Suite</option>
-              <option value="">Executive Suite</option>
+            <select class="input-style1" name="room-display" id="room" onchange="updateBooking(this)">
+              <option value="-">Room Type</option>
+              <option value="Any">Any</option>
+              <option value="Junior Suite">Junior Suite</option>
+              <option value="Family Suite">Family Suite</option>
+              <option value="Deluxe Suite">Deluxe Suite</option>
+              <option value="Executive Suite">Executive Suite</option>
             </select>
           </div>
           <a href="#results" style="display: inline-block;width: 100%;margin-top: 20px;">
@@ -207,7 +207,8 @@
     </div>
     <div class="result container" id="results">
       <div class="wrapper">
-        <h1>Available Rooms (2)</h1>
+        <h2 class="section-title" style="font-size: 30px;">Available Rooms (2)</h2>
+        <hr class="horizontal-line">
         <div class="box reveal left">
           <div class="image">
             <img src="../resources/images/galleryimg3.jpg" alt="">
