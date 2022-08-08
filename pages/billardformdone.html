@@ -123,32 +123,51 @@
 
 
 <!--header section starts-->
-<header class="banner"> <!--so the banner wont come out-->
+<header class="banner"  onclick="dismissBookingForm()"> <!--so the banner wont come out-->
   <div class="layer"></div>
   <div class="bmain-bg"><!--insert image link to css-->
   <div class="container">
     <div class="heading">
+      <p class="section-subheading">Le Timeless Trésor</p>
       <h1 class="content">billiard room booking page</h1>
     </div>
   </div>
 </div>
 </header>
 
+<div class="content reveal up">
+    <div class="form container">
+      <div class="wrapper" id="form-section">
+        <h4 class="section-subheading">Billard Room Booking</h4>
+        <h1 class="section-title">Your reservation has been confirmed</h1>
+        <hr class="horizontal-line">
+        <p class="info"> Please do note that the hotel reserves all rights to cancel your
+          booking should there be a need. Any extra charges needed will be charged to you.
+          Please do call us 7 days before booking date for any cancellation.
+          Failure to cancel in advance will result in a fine. If you have any enquries please call <a href="tel:+6588031454">+65 88031454</a></p>
+          <script type="text/javascript">
+  document.write("<br/>")
+  var formData = location.search;
 
-<!-- header section ends -->
+  formData = formData.substring(1, formData.length);
+  while (formData.indexOf("+") != -1) {
+    formData = formData.replace("+", " ");
+  }
 
-<!-- forms section starts -->
-<section class="done">
-    <div class="box-container">
-      <div class="box">
-        <h3>booking confirmed !</h3>
-        <p>An email has been sent to you. if you want to change the booking please change it through the link in that email</p>
-        <a href="facilities.html" class="btn" id="back1">facilities page <i class="ti-angle-right"></i></a>
-        <a href="../index.html" class="btn" id="back2">home page <i class="ti-angle-right"></i></a>
-  </div>
-  </div>
-</section>
-
+  formData = unescape(formData);
+  var formArray = formData.split("&");
+  for (var i=0; i < formArray.length; ++i) {
+    text = formArray[i].replace("=", ": ");;
+    document.writeln(text + "<br />");
+  document.write("<br/>")
+  }
+//ask damian how to remove if empty space
+</script>
+<a style="display: inline-block;width: 100%;">
+<button type="submit" class="button-style2" onclick="window.print()" style="width: 48%;">Print confirmation page<i class="ti-angle-right"></i></button>
+</a>
+</div>
+</div>
 
 <!-- forms section end -->
 
@@ -161,7 +180,7 @@
           <img src="../resources/images/logov2_black.png">
        </div>
        <div class="box">
-          <p>Turquoise waters lap at white-sand shores. Towering palms rustle overhead. Welcome to Le Tresor.</p>
+          <p>Turquoise waters lap at white-sand shores. Towering palms rustle overhead. Welcome to Le Timeless Trésor.</p>
           <i class="fa-brands fa-facebook"></i>
           <i class="fa-brands fa-twitter"></i>
           <i class="fa-brands fa-instagram"></i>
@@ -175,27 +194,27 @@
      <section>
        <div class="box">
           <h3>The Resort</h3>
-          <a href="#">Overview<i class="ti-angle-right"></i></a>
-          <a href="#">Accomodations<i class="ti-angle-right"></i></a>
-          <a href="#">Facilities<i class="ti-angle-right"></i></a>
-          <a href="#">Services<i class="ti-angle-right"></i></a>
-          <a href="#">Dining<i class="ti-angle-right"></i></a>
-          <a href="#">Gallery<i class="ti-angle-right"></i></a>
-          <a href="#">Contact Us<i class="ti-angle-right"></i></a>
-          <a href="#">Events<i class="ti-angle-right"></i></a>
-          <a href="#">Promotions<i class="ti-angle-right"></i></a>
+          <a href="abouts.html">Overview<i class="ti-angle-right"></i></a>
+          <a href="accommodations.html">Accomodations<i class="ti-angle-right"></i></a>
+          <a href="facilities.html">Facilities<i class="ti-angle-right"></i></a>
+          <a href="services.html">Services<i class="ti-angle-right"></i></a>
+          <a href="foodandbeverage.html">Dining<i class="ti-angle-right"></i></a>
+          <a href="gallery.html">Gallery<i class="ti-angle-right"></i></a>
+          <a href="contactus.html">Contact Us<i class="ti-angle-right"></i></a>
+          <a href="eventdetail.html">Events<i class="ti-angle-right"></i></a>
+          <a href="promotion.html">Promotions<i class="ti-angle-right"></i></a>
        </div>
        <div class="box">
           <h3>My Account</h3>
-          <a href="#">Log in<i class="ti-angle-right"></i></a>
-          <a href="#">Sign up<i class="ti-angle-right"></i></a>
+          <a href="signin.html">Log in<i class="ti-angle-right"></i></a>
+          <a href="signup.html">Sign up<i class="ti-angle-right"></i></a>
        </div>
      </section>
      <section>
        <div class="box">
           <i class="fas fa-envelope"></i>
           <h3>Email</h3>
-          <p>LaTimelessTresor@resort.com</p>
+          <p>LeTimelessTresor@resort.com</p>
        </div>
        <div class="box">
           <i class="fas fa-clock"></i>
@@ -227,6 +246,7 @@
     </div>
    </section>
 </footer>
+
 
 <!-- footer section ends -->
 

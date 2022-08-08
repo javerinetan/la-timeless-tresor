@@ -4,19 +4,17 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Billiard room Booking | Le Timeless Trésor</title>
+   <title>Golf Packages | Le Timeless Trésor</title>
 
    <!-- font awesome cdn link  -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
    <link rel="icon" href="../resources/images/logo.png">
-   <link rel="stylesheet" href="../css/fform.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400;1,400;1,700&display=swap" rel="stylesheet">
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="../css/golf.css">
    <link rel="stylesheet" href="../css/navbar.css">
    <link rel="stylesheet" href="../css/global.css">
 </head>
-<body>
-
-<!-- header section starts  -->
-
 <nav class="topnav" id="myTopnav">
     <div class="container">
       <a href="../index.html" style="padding:0; display:inline">
@@ -31,8 +29,8 @@
           <div class="dropdown-content">
             <a href="#">Overview<i class="ti-angle-right"></i></a>
             <a href="../pages/accommodations.html">Accomodations<i class="ti-angle-right"></i></a>
-            <a href="facilities.html">Facilities<i class="ti-angle-right"></i></a>
-            <a href="services.html">Services<i class="ti-angle-right"></i></a>
+            <a href="#">Facilities<i class="ti-angle-right"></i></a>
+            <a href="#">Services<i class="ti-angle-right"></i></a>
           </div>
         </div>
         <div class="dropdown">
@@ -41,7 +39,7 @@
           </button>
           <div class="dropdown-content">
             <a href="#">The Restaurant<i class="ti-angle-right"></i></a>
-            <a href="#">Reservation<i class="ti-angle-right"></i></a>
+            <a href="../pages/reservation.html">Reservation<i class="ti-angle-right"></i></a>
             <a href="#">Ordering<i class="ti-angle-right"></i></a>
           </div>
         </div>
@@ -51,7 +49,7 @@
           </button>
           <div class="dropdown-content">
             <a href="#news">Events<i class="ti-angle-right"></i></a>
-            <a href="#contact">Promotions<i class="ti-angle-right"></i></a>
+            <a href="../pages/promotions.html">Promotions<i class="ti-angle-right"></i></a>
           </div>
         </div>
         <div class="dropdown">
@@ -59,8 +57,8 @@
            <i class="ti-angle-down"></i>
          </button>
          <div class="dropdown-content">
-             <a href="../pages/gallery.html">Welcome<i class="ti-angle-right"></i></a>
-             <a href="../pages/about.html">History<i class="ti-angle-right"></i></a>
+           <a href="../pages/gallery.html">Welcome<i class="ti-angle-right"></i></a>
+           <a href="../pages/about.html">History<i class="ti-angle-right"></i></a>
          </div>
        </div>
         <a href="#contact">Contact</a>
@@ -120,60 +118,113 @@
     </div>
     <script type="text/javascript" src="../js/nav.js"></script>
   </nav>
-
-
-<!--header section starts-->
-<header class="banner"> <!--so the banner wont come out-->
-  <div class="layer"></div>
-  <div class="bmain-bg"><!--insert image link to css-->
-  <div class="container">
-    <div class="heading">
-      <h1 class="content">billiard room booking page</h1>
-    </div>
-  </div>
-</div>
-</header>
-
-
 <!-- header section ends -->
 
-<!-- home section starts  -->
+<!---Welcome page-->
+<div class="intro-bg">
 
-<!-- home section ends -->
+   <section class="intro">
+
+      <div class="content">
+           <h3> An Ode </h3>
+           <p>An acclaimed landmark on the worlds golfing scene, An Ode
+              is home to one of the world's
+             finest golf playgrounds, treating guests with an enriching
+             experience to a golfing paradise with its revered 36-hole
+             championship golf courses and a wide range of golfing
+             facilities.</p>
+      </div>
+
+   </section>
+
+</div>
+<!---golf course-->
+<section class="Family" >
+
+   <div class="image">
+
+      <img src="https://cdn.vox-cdn.com/thumbor/Y6_6Sz_zNMHfqVRuFldCDAFOb0w=/0x0:1200x800/1200x800/filters:focal(504x304:696x496)/cdn.vox-cdn.com/uploads/chorus_image/image/69338654/unnamed__12_.0.jpg" alt="">
+
+   </div>
+
+   <div class="content">
+      <h3>Mini Golf </h3>
+      <p>The world craziest and most unique mini golf venue, Par none.
+        Forget the usual windmills and castles, putt your stuff through s
+        hark-infested waters and pop culture references like America's
+        favourite cartoon family's couch and into the Nine Iron Throne itself. Each hole will keep you wanting more.
+        We have space for the whole crew, young, old, big, small –
+        no worries. </p>
+      <div class="price">
+        <h4>Prices:<h4>
+        <h5> Children below 12 play for free </h5>
+        <h5> 12-16 years old :$40 </h5>
+        <h5> Adults: $76</h5>
+        <h5> Senior Citizen:$38 </h5>
+      </div>
+
+      <a href="golfbooking.html" class="btn">Book Now</a>
+   </div>
 
 
-<!-- forms section starts -->
-<section class="form">
-    <div class="row">
 
-     <form action="billardformdone.html" method="post">
-        <h3>choose your a billiard room slot</h3>
-        <label for='date'>Date:</label>
-        <input type="date" name="cdate" required class="box" min="2020-01-01" max="2023-01-01" required>
-        <label for="type">Time: *</label>
-          <select name="time" id="type">
-            <option value="6am">0600</option>
-            <option value="8am">0800</option>
-            <option value="10am">1000</option>
-            <option value="12pm">1200</option>
-            <option value="2pm">1400</option>
-            <option value="4pm">1600</option>
-            <option value="6pm">1800</option>
-            <option value="8pm">2000</option>
-          </select>
-          <p>*each session is 2hrs long</p>
-      <input type="submit" name="send" value="submit" class="btn"></input>
-     </form>
+</section>
+<!-- couse 2 -->
+
+<section class="Classique" >
 
 
+  <div class="content">
+     <h3>Classique Course</h3>
+     <p>Our Classic Course Revels In Its Reputation As One Of The Most Difficult And Dramatic Tests Of Golf In The World,
+       Due To Its Formidable Challenge, The Classique Unfolds Over Hilly Terrain. This Activity Is Only For 16 Years
+       Old And Above.
+     </p>
+     <div class="price">
+      <h4>Prices</h4>
+        <h5>$70 per hotel guest  </h5>
+        <h5>$120 for outside guest</h5>
+     </div>
+     <a href="golfbooking.html"  class="btn">Book Now</a>
+
+  </div>
+
+  <div class="image">
+     <img src="../resources/images/golf2.png" alt="">
   </div>
 </section>
 
+<!---course 3---->
+<section class="digi" >
 
-<!-- forms section end -->
+   <div class="image">
 
-<!-- footer section starts  -->
+      <img src="../resources/images/golf3.jpeg" alt="">
 
+   </div>
+
+   <div class="content">
+      <h3>DIGI Golf </h3>
+      <p> Experience The Latest High Technology Of AI At Our
+        Specially Design Golf Course Setup. Improve Accuracy And Aim With Fun,
+        Interactive Way To Play Golf. </p>
+   <div class="price">
+      <h4>Prices:</h4>
+      <h5>$57.50/hr (1-4 people)</h5>
+      <h5>$72.50/hr (5-6 people) </h5>
+   </div>
+
+      <a href="golfbooking.html" class="btn">Book Now</a>
+      <!---link this to the bottom page -->
+   </div>
+
+
+
+</section>
+
+
+<!--booking-->
+<!-- footer section starts -->
 <footer class="footer">
    <div class="container">
      <section>
@@ -181,7 +232,7 @@
           <img src="../resources/images/logov2_black.png">
        </div>
        <div class="box">
-          <p>Turquoise waters lap at white-sand shores. Towering palms rustle overhead. Welcome to Le Tresor.</p>
+          <p>Turquoise waters lap at white-sand shores. Towering palms rustle overhead. Welcome to Le Timeless Trésor.</p>
           <i class="fa-brands fa-facebook"></i>
           <i class="fa-brands fa-twitter"></i>
           <i class="fa-brands fa-instagram"></i>
@@ -195,27 +246,27 @@
      <section>
        <div class="box">
           <h3>The Resort</h3>
-          <a href="#">Overview<i class="ti-angle-right"></i></a>
-          <a href="#">Accomodations<i class="ti-angle-right"></i></a>
-          <a href="#">Facilities<i class="ti-angle-right"></i></a>
-          <a href="#">Services<i class="ti-angle-right"></i></a>
-          <a href="#">Dining<i class="ti-angle-right"></i></a>
-          <a href="#">Gallery<i class="ti-angle-right"></i></a>
-          <a href="#">Contact Us<i class="ti-angle-right"></i></a>
-          <a href="#">Events<i class="ti-angle-right"></i></a>
-          <a href="#">Promotions<i class="ti-angle-right"></i></a>
+          <a href="abouts.html">Overview<i class="ti-angle-right"></i></a>
+          <a href="accommodations.html">Accomodations<i class="ti-angle-right"></i></a>
+          <a href="facilities.html">Facilities<i class="ti-angle-right"></i></a>
+          <a href="services.html">Services<i class="ti-angle-right"></i></a>
+          <a href="foodandbeverage.html">Dining<i class="ti-angle-right"></i></a>
+          <a href="gallery.html">Gallery<i class="ti-angle-right"></i></a>
+          <a href="contactus.html">Contact Us<i class="ti-angle-right"></i></a>
+          <a href="eventdetail.html">Events<i class="ti-angle-right"></i></a>
+          <a href="promotion.html">Promotions<i class="ti-angle-right"></i></a>
        </div>
        <div class="box">
           <h3>My Account</h3>
-          <a href="#">Log in<i class="ti-angle-right"></i></a>
-          <a href="#">Sign up<i class="ti-angle-right"></i></a>
+          <a href="signin.html">Log in<i class="ti-angle-right"></i></a>
+          <a href="signup.html">Sign up<i class="ti-angle-right"></i></a>
        </div>
      </section>
      <section>
        <div class="box">
           <i class="fas fa-envelope"></i>
           <h3>Email</h3>
-          <p>LaTimelessTresor@resort.com</p>
+          <p>LeTimelessTresor@resort.com</p>
        </div>
        <div class="box">
           <i class="fas fa-clock"></i>
@@ -248,7 +299,8 @@
    </section>
 </footer>
 
-<!-- footer section ends -->
-
+<script src="js/flickity.pkgd.min.js"></script>
+<script src="js/index.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

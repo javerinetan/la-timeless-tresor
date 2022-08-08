@@ -1,258 +1,142 @@
-:root{
-   --main-color:#be9c79;
-   --black: #000000;
-   --white:#ffffff;
-   --light-color:#666666;
-   --border:.2rem solid var(--poopb);
-   --darkbrown: #8c735c;
-   --table: #e2d5c5;
-   --bottom: #ccc6bb;
-   --poopb: #6B4615;
-   --beige: #E8D3B9;
-   --darkbeige: #3F2e19;
+/**front part **/
+.main-bg {      /**imgae**/
+  background:linear-gradient(90deg, var(--white), transparent 0%), url('../resources/images/golf1.png') no-repeat;
+  top: 0;
+  left: 0;
+  height: 500px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
-section{
-   padding:3rem 2rem;
-   max-width: 100%;
-   margin:0 auto;
+.banner .container {
+  position: absolute;
+  top: 0;
 }
-
-/*welcome page*/
-.main-bg{
-   background:linear-gradient(90deg, var(--white), transparent 0%), url('../resources/images/golfmainheader.jpg') no-repeat;
-   background-size: cover;
-   background-position: center;
-   display: flex;
-}
-
-.main-bg .main{
-   min-height: 37.5rem;
-   display: flex;
-   align-items: center;
-
-}
-
-.main-bg .main .content{
-   width: 40rem;
-   text-align: center;
-   padding-top:15rem;
-}
-
-.main-bg .main .content h3{
-   font-size: 3.5rem;
-   color:var(--white);
-   font-family: 'Libre Bodoni', serif;
-   text-align: center;
-
-}
-
-.main-bg .main .content p{
-   padding:1rem 0;
-   font-size: 1rem;
-   color:var(--white);
-   line-height: 2;
-   text-align: center;
-}
-
-
-
-/* form start*/
-
-.form{
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap:4rem;
-  padding: 31.25px;
-
-}
-
-.form .image{
-   flex:1 1 25rem;
-}
-
-.form .image img{
+/**to make the image less bright**/
+.layer {
+  background-color: black;
+  opacity: 0.4;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 500px;
   width: 100%;
 }
-
-.form .content{
-   flex:1 1 25rem;
-}
-.form .content{
-   display: flex;
-   align-items: center;
-   flex-wrap: wrap;
-   gap:0rem;
+/**heading fonts**/
+.heading {   /**heading space and position **/
+  color: white;
+  position: relative;
+  top: 200px;
+  text-align: center;
 }
 
-.form h3{
-  font-family: 'Libre Bodoni', serif;
-  font-size: 2.5rem;
-  color: var(--black);
+.heading h1 {
+  font-family: 'LibreBodoni-Regular';
+  font-size: 50px;
+  color: white;
+  margin: 0;
+  font-weight: lighter;
+  text-transform: uppercase;
+  letter-spacing: 8px;
 }
 
-.form .content form{
-   flex:1 1 25rem;
-   padding:2rem;
-   text-align: center;
-   margin:auto auto;
-   background-color: var(--beige);
-   padding-bottom: 3.5rem;
-   border-radius: 1.5rem;
+.heading p {
+  margin: 0;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+/**end of heading**/
+.content{
+  text-align: center;
+  padding-top: 100px;
+}
+/**content image**/
+.section .right img {
+  float: left; /* this so so the image will be on the left while the text is on the right*/
+  width: 55%; /* sizing image to half the page*/
 }
 
-.form .content form p{
-   line-height: 1.87rem;
-   font-size: 1.56rem;
-   text-align: center;
-   padding: 1.25rem 1.25rem;
-   margin: 1.875rem;
-
+.section .left img {
+  float: right;
+  width: 55%;
 }
-
-.form .content form label{
-   font-size: 1.25rem;
-   margin-bottom: 0rem;
-   font-family: 'Libre Bodoni', serif;
-   text-align: left;
-}
-
-.form .content form h3{
-   font-size: 1.56rem;
-   margin-bottom: 1rem;
-   color:var(--darkbeige);
-   padding-top: 1.5rem;
-}
-
-.form .content form .box{
-   width: 100%;
-   padding:0.81rem;
-   font-size: 1.12rem;
-   border-radius: 8px;
-}
-
-.form-container.adult {
-  margin: 0px;
-}
-
-.form-container.child {
-  margin: 0px;
-}
-
-.form-container .child, .form-container .adult {
-  margin: 0px;
-}
-
-.form-containers.slot {
-  margin: 0px;
-}
-
-.form-containers.cdate {
-  margin: 0px;
-
-}
-
-.form-containers .slot, .form-container .cdate {
-  margin: 0px;
-}
-.form-container {
+/**content**/
+.section .right, .section .left {
   float: left;
-  width: 50%;
-  padding: 4.62px;
-  margin-bottom: 18.75px;
-  border-radius: 8px;
+  width: 100%;
+  margin: 60px 0px;
 }
-.form-containers {
+
+/**content text location**/
+.section .right article {
   float: left;
-  width: 50%;
-  padding: 10px;
-  border-radius: 8px;
-  font-size: 1.12rem;
-}
-
-
-label{
-  display: block;
-  padding-top: 2rem;
-}
-
-input{
- padding-top: 2rem;
-}
-
-select{
-  display: flex;
-  background-color: white;
-  height: 3rem;
-  font-size: 1.12rem;
-}
-/**buttons color**/
-.btn:hover{
-  background-color: var(--darkbrown);
-}
-/**page2**/
-.btn {
-  display: inline-block;
-  background-color: var(--main-color);
-  border-radius: 6.25px;
-  width: 28.1%;
-  line-height: 3.125rem;
-  color: var(--white);
-  margin-top: 1rem;
-  font-size: 1.5rem;
-  padding-left: 0.625rem;
-  padding-right: 0.625rem;
-}
-
-
-/**page3**/
-.btn1 {
-  display: inline-block;
-   background-color: var(--main-color);
-   border-radius: 10px;
-   width: 35%;
-   line-height: 3.125rem;
-   color: var(--white);
-   margin-top: 1rem;
-   font-size: 1rem;
-   padding-left: 0.5rem;
-   padding-right: 0.5rem;
-}
-
-.btn2 {
-  display: inline-block;
-  background-color: var(--main-color);
-  border-radius: 10px;
-  width: 35%;
-  line-height: 3.125rem;
-  color: var(--white);
-  margin-top: 1rem;
-  font-size: 1rem;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-
-}
-
-/*text in button*/
-.form a {
-  color: var(--white);
-  margin-right: 20px;
-  margin-left: 20px;
-  text-align:center;
-}
-
-
-/**page 2**/
-.btn3 {
-  display: inline-block;
-  background-color: var(--main-color);
-  border-radius: 6.25px;
   width: 45%;
-  line-height: 3.125rem;
-  color: var(--white);
-  margin-top: 0rem;
-  font-size: 1.3rem;
-  padding-left: 0.625rem;
-  padding-right: 0.625rem;
+  padding: 50px;
+  text-align: left;
 }
+
+
+.section .left article {
+  float: right;
+  width: 45%;
+  padding: 50px;
+  text-align: right;
+}
+/**content button**/
+.button1 {
+  display: inline-block;
+  padding: 1rem 4.1rem;
+  font-size: 1rem;
+  border: 1px solid #b0a48d;
+  position: relative;
+  color: #b0a48d;
+  background-color: transparent;/* too allow the color to be emoty**/
+}
+.button1:hover{
+  position: relative;
+  background-color:#bb9c75 ;/**change color when hover*/
+  color: white;
+  padding: 1rem 4.1rem;
+  font-size: 1rem;
+  border: 1px solid #b0a48d;
+
+
+}
+/**content subtitle**/
+.subtitle {
+    color: darkgray;
+    margin-bottom: 20px;
+}
+/*line to seperate tittle and content**/
+.line {
+  width: 40%;
+  height: 1px;
+  display: inline-block;
+  background-color: #aa8453;
+  margin: 20px 0px;
+}
+
+
+  /** to make it responsive**/
+  @media screen and (max-width: 400px){
+      .heading h1 {
+          font-size: 28px;
+          letter-spacing: 3px;
+      }
+    }
+
+  @media screen and (max-width: 600px) {
+    .heading h1{
+      font-size:40px;
+      letter-spacing: 4px;
+    }
+    .section .right img,   .section .left img, .section .right article, .section .left article  {
+      width: 100%;
+      float: none;
+      text-align: left;
+    }
+    .section .right, .section .left {
+      margin: 40px 0px;
+    }

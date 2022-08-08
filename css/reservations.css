@@ -76,9 +76,9 @@
 /** making caro**/
 .image-left img{
   width: 50%;
+  height: 30rem;
   margin-top: 100px;
   float: left;
-  height: 30rem;
 }
 
 .image-left article{
@@ -92,11 +92,6 @@
 
 .image-left{
   display: inline-block;
-}
-
-.main-carousel{
-  width:85%!important;
-  margin: auto;
 }
 
 /** to make the page responsive **/

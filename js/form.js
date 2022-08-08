@@ -22,6 +22,7 @@ checkinElem.onchange = function () {
     checkoutElem.setAttribute("min", this.value);
 }
 
+
 function myFunction() {
   alert("Please check your email for the confirmation email. Do verify within 3 hours!");
 }

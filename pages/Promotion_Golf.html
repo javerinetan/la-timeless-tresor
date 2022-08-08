@@ -4,18 +4,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../resources/images/logo.png">
-    <title>Login | Le Timeless Trésor</title>
-    <link rel="stylesheet" href="../css/signin.css">
+    <title>Golf Reservation | Le Timeless Trésor</title>
+    <!--link to css and jv-->
+    <link rel="stylesheet" href="../css/golfbooking.css">
     <link rel="stylesheet" href="../css/navbar.css">
     <link rel="stylesheet" href="../css/global.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
   </head>
-
-  <!---header for navigation--->
   <body>
     <nav class="topnav" id="myTopnav">
       <div class="container">
-        <a href="index.html" style="padding:0; display:inline">
+        <a href="../index.html" style="padding:0; display:inline">
           <img src="../resources/images/logov2_white.png" alt="Logo" class="nav-logo" id="navLogo">
         </a>
         <a href="javascript:void(0);" style="font-size:18px;margin-top: 10px;" class="icon" onclick="displayNav();dismissBookingForm()">&#9776;</a>
@@ -25,10 +24,10 @@
               <i class="ti-angle-down"></i>
             </button>
             <div class="dropdown-content">
-              <a href="#">Overview<i class="ti-angle-right"></i></a>
-              <a href="pages/accommodations.html">Accomodations<i class="ti-angle-right"></i></a>
-              <a href="#">Facilities<i class="ti-angle-right"></i></a>
-              <a href="#">Services<i class="ti-angle-right"></i></a>
+              <a href="../index.html">Overview<i class="ti-angle-right"></i></a>
+              <a href="../pages/accommodations.html">Accomodations<i class="ti-angle-right"></i></a>
+              <a href="../pages/facilities.html">Facilities<i class="ti-angle-right"></i></a>
+              <a href="../pages/services.html">Services<i class="ti-angle-right"></i></a>
             </div>
           </div>
           <div class="dropdown">
@@ -36,8 +35,8 @@
               <i class="ti-angle-down"></i>
             </button>
             <div class="dropdown-content">
-              <a href="#">The Restaurant<i class="ti-angle-right"></i></a>
-              <a href="#">Reservation<i class="ti-angle-right"></i></a>
+              <a href="../pages/">The Restaurant<i class="ti-angle-right"></i></a>
+              <a href="../pages/restaurant_reservation.html">Reservation<i class="ti-angle-right"></i></a>
               <a href="#">Ordering<i class="ti-angle-right"></i></a>
             </div>
           </div>
@@ -46,8 +45,8 @@
               <i class="ti-angle-down"></i>
             </button>
             <div class="dropdown-content">
-              <a href="#news">Events<i class="ti-angle-right"></i></a>
-              <a href="#contact">Promotions<i class="ti-angle-right"></i></a>
+              <a href="../pages/events.html">Events<i class="ti-angle-right"></i></a>
+              <a href="../pages/promotion.html">Promotions<i class="ti-angle-right"></i></a>
             </div>
           </div>
           <div class="dropdown">
@@ -55,12 +54,8 @@
              <i class="ti-angle-down"></i>
            </button>
            <div class="dropdown-content">
-             <a href="pages/gallery.html">Welcome<i class="ti-angle-right"></i></a>
-             <a href="#history">History<i class="ti-angle-right"></i></a>
-             <a href="#signature">Signature<i class="ti-angle-right"></i></a>
-             <a href="#awards">Awards<i class="ti-angle-right"></i></a>
-             <a href="#team">Team<i class="ti-angle-right"></i></a>
-             <a href="#contact">Contact<i class="ti-angle-right"></i></a>
+             <a href="../pages/gallery.html">Welcome<i class="ti-angle-right"></i></a>
+             <a href="../pages/abouts.html">History<i class="ti-angle-right"></i></a>
            </div>
          </div>
           <a href="#contact">Contact</a>
@@ -71,9 +66,9 @@
             </button>
             <div class="dropdown-content" style="min-width:120px">
               <a href="#">Log In<i class="ti-angle-right"></i></a>
-              <a href="#">Sign Up<i class="ti-angle-right"></i></a>
+              <a href="pages/signup.html">Sign Up<i class="ti-angle-right"></i></a>
+            </div>
           </div>
-        </div>
         </div>
       </div>
       <div class="scroll-indicator" id="indicator" onclick="scrollAction()">
@@ -118,49 +113,89 @@
         </div>
         <button class="button-style1">Check<i class="ti-angle-right"></i></button>
       </div>
-      <script type="text/javascript" src="../js/nav.js"></script>
     </nav>
-    <header class="banner" onclick="dismissBookingForm()">
-      <div class="layer">
-      </div>
-      <div id="toppicture">
-      <img src="../resources/images/ab1.jfif" alt="Board">
-      </div>
-
-<div class="content">
-
-  <div class="login">
-    <form action="action_page.php">
-  <div class="container-form">
-    <h1>Login</h1>
-    <p>Please fill in this form to login to an account.</p>
-    <hr>
-
-    <label for="email"><b>Email</b></label>
-    <input type="text" placeholder="Enter Email" name="email" required>
-
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
-
-    <label>
-      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
-    </label>
-
-    <div class="clearfix">
-      <button type="submit" class="signinbtn">Sign in</button>
+    <script type="text/javascript" src="../js/nav.js"></script>
+<!--end of intro-->
+<!--heading-->
+<header class="banner" onclick="dismissBookingForm()"> <!--so the banner wont come out-->
+  <div class="layer"></div>
+  <div class="main-bg"><!--insert image link to css-->
+  <div class="container">
+    <div class="heading">
+      <p class="section-subheading">Le Timeless Trésor</p>
+      <h1 class="title">Classique Golf Course</h1>
     </div>
   </div>
-</form>
+</header>
+<!--end of heading-->
+<!--content header-->
+<section class="intro" >
+  <div class ="content">
+       <h4 class="section-subheading">Le TIMELESS Tressor </h4>
+       <h1 class="section-title">Experience the Delicated Deisgn Course </h1>
+       <hr class="line">
+       <p class="subtitle"> An acclaimed landmark on the worlds golfing scene, An Ode
+          is home to one of the world's
+         finest golf playgrounds, treating guests with an enriching
+         experience to a golfing paradise with its revered 36-hole
+         championship golf courses and a wide range of golfing
+         facilities. </p>
   </div>
-
-<!---If New-->
-  <div class="New">
-    <h1>New?</h1>
-    <h2>Sign up now for a luxurious experience!</h2>
-    <a href="../pages/signup.html">Sign Up</a>
-  </div>
-
+</section>
+<!--content start -->
+<section class="section">
+<!--content1-->
+    <div class = "right"> <!--tell where the text should be-->
+      <img src="https://cdn.vox-cdn.com/thumbor/Y6_6Sz_zNMHfqVRuFldCDAFOb0w=/0x0:1200x800/1200x800/filters:focal(504x304:696x496)/cdn.vox-cdn.com/uploads/chorus_image/image/69338654/unnamed__12_.0.jpg">
+        <article> <!--this is the create the col-->
+          <h4 class="section-subheading">New Course Design</h4>
+          <h1 class="section-title">Mini Golf</h1> <!-- key in the class="section-title" cause it states the font for that line, it is in the global css-->
+          <hr class="line"><!--create a line-->
+          <p class="subtitle">The world craziest and most unique mini golf venue, Par none.
+            Forget the usual windmills and castles, putt your stuff through s
+            hark-infested waters and pop culture references like America's
+            favourite cartoon family's couch and into the Nine Iron Throne itself. Each hole will keep you wanting more.
+            We have space for the whole crew, young, old, big, small –
+            no worries. </p>
+          <p> Prices:</P>
+          <p class="subtitle" > Children Below 12 Play for free <br> 12-16 Years Old: $40 <br> Adults: $76 <br> Senior Citizen: $38 </p>
+          <a href="../pages/golfbooking.html" class="button1">Book Now</a>
+      </article>
+    </div>
+<!--content2-->
+    <div class="left">
+       <img src="../resources/images/golf2.png" alt="image">
+       <article>
+         <h4 class="section-subheading">OG Specially</h4>
+         <h1 class="section-title">Classique Course</h1>
+         <hr class="line">
+         <p class="subtitle">
+           <p class="subtitle">Our Classic Course Revels In Its Reputation As One Of The Most Difficult And Dramatic Tests Of Golf In The World,
+             Due To Its Formidable Challenge, The Classique Unfolds Over Hilly Terrain. This Activity Is Only For 16 Years
+             Old And Above. </p>
+           <p> Prices:</P>
+           <p class="subtitle" > $70 Per Hotel Guest <br>$120 Per For Outside Guest</p>
+           <a href="../pages/golfbooking.html" class="button1">Book Now</a>
+      </article>
+    </div>
+<!--content3-->
+<div class = "right"> <!--tell where the text should be-->
+  <img src="../resources/images/golf3.jpeg">
+    <article> <!--this is the create the col-->
+      <h4 class="section-subheading">Digitial Experience</h4>
+      <h1 class="section-title">Digi Golf</h1> <!-- key in the class="section-title" cause it states the font for that line, it is in the global css-->
+      <hr class="line"><!--create a line-->
+      <p class="subtitle">
+        Experience The Latest High Technology Of AI At Our
+          Specially Design Golf Course Setup. Improve Accuracy And Aim With Fun,
+          Interactive Way To Play Golf.
+      </p>
+      <p>Prices:</p>
+      <p class="subtitle">$57.50/hr (1-4 people) <br>$72.50/hr (5-6 people) </p>
+      <a href="../pages/golfbooking.html" class="button1">Book Now</a>
+  </article>
 </div>
+<!--footer-->
 <footer class="footer">
    <div class="container">
      <section>
@@ -236,6 +271,4 @@
 </footer>
 
 </body>
-
-
 </html>

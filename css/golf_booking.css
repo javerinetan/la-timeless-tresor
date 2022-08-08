@@ -1,5 +1,6 @@
-.banner {
-  background-image: url("../resources/images/bf.png");
+/**front part **/
+.golf-banner {
+  background-image: url("../resources/images/golfmainheader.jpg");
   top: 0;
   left: 0;
   height: 500px;
@@ -9,50 +10,40 @@
   background-attachment: fixed;
 }
 
-.indoor-banner {
-  background-image: url("../resources/images/indoor.jpg");
+/**to make the image less bright**/
+.layer {
+  background-color: black;
+  opacity: 0.4;
+  position: absolute;
   top: 0;
   left: 0;
   height: 500px;
   width: 100%;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+}
+/**heading fonts**/
+.heading {
+  color: white;
+  position: relative;
+  top: 300px;
+  text-align: center;
+  animation: title-slide 1s ease-in-out;
 }
 
-.outdoor-banner {
-  background-image: url("../resources/images/outdoor.jpg");
-  top: 0;
-  left: 0;
-  height: 500px;
-  width: 100%;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+.heading h1 {
+  font-family: 'LibreBodoni-Regular';
+  font-size: 50px;
+  color: white;
+  margin: 0;
+  font-weight: lighter;
+  text-transform: uppercase;
+  letter-spacing: 8px;
 }
 
-.teatime-banner {
-  background-image: url("../resources/images/teatime.jpg");
-  top: 0;
-  left: 0;
-  height: 500px;
-  width: 100%;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+.heading p {
+  margin: 0;
+  font-size: 20px;
+  margin-bottom: 10px;
 }
-
-.confirmation-banner {
-  background-image: url("../resources/images/_on.webp");
-  top: 0;
-  left: 0;
-  height: 500px;
-  width: 100%;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-}
-
 
 .heading {
   color: white;
