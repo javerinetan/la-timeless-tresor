@@ -40,11 +40,15 @@ var navbar = document.getElementById("myTopnav");
 // Get the image and insert it inside the modal - use its "alt" text as a caption
 var img = document.getElementById("myImg");
 var modalImg = document.getElementById("img01");
+var indicator = document.getElementById("indicator");
+var body = document.querySelector("body");
 var captionText = document.getElementById("caption");
 
 function displayModal(image, text) {
   modal.style.display = "block";
   navbar.classList.remove("sticky");
+  indicator.style.display = "none";
+  body.style.overflow = "hidden";
   modalImg.src = image;
   captionText.innerHTML = text;
 }
@@ -52,14 +56,10 @@ function displayModal(image, text) {
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
-// When the user clicks on the empty space outside the image
-function dimiss() {
-  modal.style.display = "none";
-  navbar.classList.add("sticky");
-}
-
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
   modal.style.display = "none";
   navbar.classList.add("sticky");
+  indicator.style.display = "block";
+  body.style.overflow = "auto";
 }
