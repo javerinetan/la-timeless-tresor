@@ -1,7 +1,7 @@
 .banner {
   top: 0;
   left: 0;
-  height: 70vh;
+  height: 100vh;
   width: 100%;
   background-size: cover;
   background-position: center;
@@ -35,16 +35,16 @@
 
 .layer {
   background-color: black;
-  opacity: 0.8;
+  opacity: 0.7;
   position: absolute;
   top: 0;
   left: 0;
-  height: 70vh;
+  height: 100vh;
   width: 100%;
 }
 
 .main-carousel img {
-  height: 70vh;
+  height: 100vh;
   width: 100%;
 }
 
