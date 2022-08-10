@@ -13,7 +13,7 @@ function show(element) {
   document.getElementById("interior").className="interior";
   document.getElementById(element.title).classList.add("display");
   removeHighlight();
-  element.classList.add("click");
+  element.classList.add("highlight");
 }
 
 function removeHighlight() {
@@ -30,7 +30,7 @@ function showAll() {
   document.getElementById("experience").classList.add("display");
   document.getElementById("interior").classList.add("display");
   removeHighlight();
-  document.getElementById("btn0").classList.add("click");
+  document.getElementById("btn0").classList.add("highlight");
 }
 
 // Get the modal

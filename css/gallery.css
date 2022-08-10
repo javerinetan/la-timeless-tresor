@@ -149,7 +149,7 @@ h1, h2 {
   background-position: -99.99% 0;
 }
 
-.click {
+.highlight {
   background-position: -99.99% 0;
   background-color: #cccecf;
 }
@@ -281,14 +281,30 @@ h1, h2 {
   height: 400px;
 }
 
-@media all and (min-width: 600px) {
+@media all and (max-width: 600px) {
   .aside { flex: 1 0 0; }
+  .exteriorColumn {
+    width: 50%;
+  }
 }
 
-@media all and (min-width: 800px) {
+@media all and (max-width: 800px) {
   .main    { flex: 3 0px; }
+  .mainbody {
+    padding-bottom: 120px;
+  }
   .aside-1 { order: 1; }
   .main    { order: 2; }
   .aside-2 { order: 3; }
   .footer  { order: 4; }
+  .exteriorColumn3, .diningColumn3, .experienceColumn3, .interiorColumn3 {
+    width: 50%;
+    height: auto;
+  }
+  .exteriorColumn:nth-child(1) {
+    width: 100%;
+  }
+  .diningColumn3:nth-last-child(3), .experienceColumn3:nth-last-child(3), .interiorColumn3:nth-last-child(3), .exteriorColumn3:nth-last-child(3) {
+    width: 100%;
+  }
 }
