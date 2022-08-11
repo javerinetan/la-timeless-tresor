@@ -85,7 +85,7 @@ function displayRoom(element){
 }
 
 // Carousel
-var carousel = document.querySelector('.carousel');
+var carousel = document.querySelector('.main-carousel');
 var flkty1 = new Flickity( carousel, {
   imagesLoaded: true,
   percentPosition: false,
