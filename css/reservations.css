@@ -1,6 +1,6 @@
 /**front part **/
 .main-bg {      /**imgae**/
-  background:linear-gradient(90deg, var(--white), transparent 0%), url('https://i.pinimg.com/originals/9d/bf/20/9dbf20d5dd22e74d1a4a0163f01ce724.jpg') no-repeat;
+  background: url('https://i.pinimg.com/originals/9d/bf/20/9dbf20d5dd22e74d1a4a0163f01ce724.jpg') no-repeat;
   background-size: cover;
   background-position: center;
   top: 0;
