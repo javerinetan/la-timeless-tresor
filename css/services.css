@@ -7,6 +7,7 @@
   text-align: left;
   font-size: 1rem;
 }
+
 .btn:hover{
    background-color: var(--darkbrown);
 }
@@ -120,7 +121,7 @@ header {
 
 .services .box-container{
    display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+   grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr)); /*make the columns*/
    gap:.5rem;
    align-items: flex-start;
    padding: 1.5rem 5rem;
@@ -132,7 +133,7 @@ header {
    height: 200px;
    margin:15px;
    padding: 15px;
-   border: 1px solid lightgray;
+   border: 1px solid lightgray; /*add border*/
 }
 
 .services .box-container .box img{
@@ -188,16 +189,16 @@ header {
 
 table,td {
   border: 1px solid;
-  border-collapse: collapse;
+  border-collapse: collapse; /*single line only*/
 }
 
 table{
   margin-left: auto;
   margin-right: auto;
   table-layout:fixed;
-  width:50%;
+  width:50%; /*reduce table size*/
   background-color: #F5EFE8;
-  min-width: 19rem;
+  min-width: 19rem; /*too small cant see*/
 }
 
 td{
@@ -218,19 +219,7 @@ h2{
   padding-bottom: 10px
 }
 
-.backferry .hotel{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  align-items: flex-start;
-}
-
-.ferrytable .hotel{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  align-items: flex-start;
-}
-
-.bus .hotel{
+.backferry .hotel, .ferrytable .hotel, .bus .hotel{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   align-items: flex-start;
