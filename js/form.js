@@ -26,12 +26,7 @@ checkinElem.onchange = function () {
     checkoutElem.setAttribute("min", this.value);
 }
 
-
+// prompt the alert box
 function myFunction() {
   alert("Please check your email for the confirmation email. Do verify within 3 hours!");
-}
-
-function display(){
-  let name = form.Name.value;
-  document.write("Name: " + name )
 }
