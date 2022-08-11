@@ -4,9 +4,15 @@
 }
 
 /*Typology*/
-h1{
+.New h1{
   font-family: 'LibreBodoni-Regular', serif;
-  font-size: 100px;
+  font-weight: lighter;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+}
+
+#login{
+  font-weight: bold;
 }
 
 h2{
@@ -45,6 +51,8 @@ input{
 
 
 /*Content*/
+
+
 .content .New { /*Right Content*/
   position: relative;
   left: 65%;
@@ -55,13 +63,20 @@ input{
 }
 
 .content .New h1{
-  margin-left: 80px;
+  margin-top: 100px;
+  margin-left: 150px;
 
 }
 
 .content .New h2{
   margin-top: 1px;
   margin-bottom: 100px;
+}
+
+.content .New hr{
+  border-top: 1px solid red;
+  top:20%;
+
 }
 
 .content .New a{
@@ -81,7 +96,7 @@ input{
 
 .content .login{ /*Left Content*/
   position: absolute;
-  width: 60%;
+  width: 30%;
 }
 
 .container-form h1{
