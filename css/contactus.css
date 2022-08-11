@@ -51,13 +51,16 @@
 }
 
 /*Contact Us*/
-.ContactUs{ /*How large the page is*/
+.ContactUs{ /How large the page is/
   margin-bottom: 250px;
 }
 
+<<<<<<< HEAD
 /* Full-width input fields */
 
 
+=======
+>>>>>>> 63de84cc1039676a4f303b44c68c3efbacc9a6f9
 
 /* Add padding to container elements */
 .contactus .form {
