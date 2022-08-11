@@ -142,29 +142,29 @@ header {
 
 .services .box-container .box h3{
    font-size: 1.3rem;
-   color:var(--black);
+   color: black;
    margin:.4rem 0;
 }
 
 .services .box-container .box p{
    line-height: 1.3rem;
    font-size: .9rem;
-   color:var(--light-color);
+   color:#666666);
    padding-bottom: 12.5px;
 }
 
 .services .box-container .box button{
-  background-color: var(--main-color);
+  background-color: #BB9C75;
   border-radius: 5px
 }
 
 .services .box-container .box a {
-  color: var(--white);
+  color: white;
   line-height: 12.5px;
 }
 
 .services .box-container .box button:hover{
-   background-color: var(--darkbrown);
+   background-color: #8c735c;
 }
 
 /* ferryschedule*/
