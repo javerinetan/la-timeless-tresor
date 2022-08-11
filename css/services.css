@@ -24,7 +24,7 @@ header {
     background:linear-gradient(90deg, var(--white), transparent 0%), url('../resources/images/services.webp') no-repeat;
     top: 10rem;
     left: 0;
-    height: 500px;
+    height: 83vh;
     width: 100%;
     z-index: -1;
     object-fit: cover;
@@ -44,7 +44,7 @@ header {
     position: absolute;
     top: 0;
     left: 0;
-    height: 500px;
+    height: 83vh;
     width: 100%;
   }
   /**heading fonts**/
@@ -170,7 +170,7 @@ header {
   background-attachment: fixed;
   top: 0;
   left: 0;
-  height: 500px;
+  height: 83vh;
   width: 100%;
   z-index: -1;
   object-fit: cover;

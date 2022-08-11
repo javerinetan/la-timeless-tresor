@@ -8,6 +8,7 @@ function resetColor() {
   document.getElementById("btn2").className="";
 }
 
+//show all the facilities
 function showAll() {
   let btn=document.getElementById("btn0");
   resetColor();
@@ -16,6 +17,7 @@ function showAll() {
   paid.style.display = 'block';
 }
 
+//show complimentary facilities
 function showComplimentary(){
   let btn=document.getElementById("btn1");
   resetColor();
@@ -24,6 +26,7 @@ function showComplimentary(){
   complimentary.style.display = 'block';
 }
 
+//show not free facilities
 function showNotFree(){
   let btn=document.getElementById("btn2");
   resetColor();

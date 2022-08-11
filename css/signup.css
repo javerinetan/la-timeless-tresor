@@ -72,6 +72,7 @@
 
 .signup article .container {
   text-align: center;
+  margin-top: 120px;
 }
 
 .box-container {
@@ -112,7 +113,7 @@
 
 .form .button-style1 {
   text-align: center;
-  margin-top: 50px;
+  margin-top: 45px;
 }
 
 @media screen and (max-width: 1200px) {
