@@ -1,3 +1,8 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
 /*Banner*/
 .banner {
   background-image: url("../resources/images/siginin.jpg");

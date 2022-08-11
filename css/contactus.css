@@ -1,3 +1,8 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
 /*TopPicture*/
 .banner{
   background-image: url("../resources/images/desk2.jpg");
