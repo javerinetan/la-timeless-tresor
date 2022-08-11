@@ -1,6 +1,6 @@
 /**front part **/
 .main-bg {      /**imgae**/
-  background:linear-gradient(90deg, var(--white), transparent 0%), url('../resources/images/about_hotelmain.jpg') no-repeat;
+  background:url('../resources/images/about_hotelmain.jpg') no-repeat;
   top: 0;
   left: 0;
   height: 83vh;
