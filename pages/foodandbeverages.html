@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../resources/images/logo.png">
+    <title>Le Meilleur Resto | La Timeless Trésor</title>
+
+    <link rel="stylesheet" href="../css/foodandbeverage.css">
+    <link rel="stylesheet" href="../css/flickity.css" media="screen">
+
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  </head>
+  <!---header for navigation--->
+  <body>
+    <nav class="topnav" id="myTopnav">
+        <div class="container">
+          <a href="../index.html" style="padding:0; display:inline">
+            <img src="../resources/images/logov2_white.png" alt="Logo" class="nav-logo" id="navLogo">
+          </a>
+          <a href="javascript:void(0);" style="font-size:18px;margin-top: 10px;" class="icon" onclick="displayNav()">&#9776;</a>
+          <div class="nav-items">
+            <div class="dropdown">
+              <button class="dropbtn">The Resort
+                <i class="ti-angle-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="abouts.html">About Us<i class="ti-angle-right"></i></a>
+                <a href="accommodations.html">Accomodations<i class="ti-angle-right"></i></a>
+                <a href="facilities.html">Facilities<i class="ti-angle-right"></i></a>
+                <a href="services.html">Services<i class="ti-angle-right"></i></a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">Dining
+                <i class="ti-angle-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="foodandbeverages.html">The Restaurant<i class="ti-angle-right"></i></a>
+                <a href="restaurant_reservation.html">Reservation<i class="ti-angle-right"></i></a>
+                <a href="onlineordering.html">Ordering<i class="ti-angle-right"></i></a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">Events & Promotions
+                <i class="ti-angle-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="eventdetail.html">Events<i class="ti-angle-right"></i></a>
+                <a href="eventreservation.html">Events Reservation<i class="ti-angle-right"></i></a>
+                <a href="promotion.html">Promotions<i class="ti-angle-right"></i></a>
+              </div>
+            </div>
+            <div class="dropdown">
+             <button class="dropbtn">Gallery
+               <i class="ti-angle-down"></i>
+             </button>
+             <div class="dropdown-content">
+               <a href="gallery.html">Overview<i class="ti-angle-right"></i></a>
+               <a href="gallery360.html">360° Photos<i class="ti-angle-right"></i></a>
+             </div>
+           </div>
+            <a href="contactus.html">Contact</a>
+            <a href="booking.html" class="active">Book Now</a>
+            <div class="dropdown">
+              <button class="dropbtn"><img src="../resources/images/user_white.png" alt="account" id="account" width="18px">
+                <i class="ti-angle-down"></i>
+              </button>
+              <div class="dropdown-content" style="min-width:120px">
+                <a href="signin.html">Sign In<i class="ti-angle-right"></i></a>
+                <a href="signup.html">Sign Up<i class="ti-angle-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="scroll-indicator" id="indicator" onclick="scrollAction()">
+          <i class="ti-angle-down"></i>
+        </div>
+        <div class="book-btn" id="sideBtn" onclick="displayBookingForm()">
+          <p class="book-arrow"><i class="ti-angle-up"></i></p>
+          <p class="book-title">Book Now</p>
+        </div>
+        <div class="book-form" id="bookForm">
+          <h4>Le Timeless Trésor</h4>
+          <h2>Check Availability</h2>
+          <input class="chk-in input-style1" type="text" placeholder="Check in" onfocus="(this.type='date')" onblur="(this.type='text')">
+          <input class="chk-out input-style1" type="text" placeholder="Check out" onfocus="(this.type='date')" onblur="(this.type='text')">
+          <select class="room input-style2" name="adult">
+            <option value="">Room Type</option>
+            <option value="Junior Room">Junior Room</option>
+            <option value="Double Room">Double Room</option>
+            <option value="Family Suite">Family Suite</option>
+            <option value="Deluxe Suite">Deluxe Suite</option>
+          </select>
+          <div class="form-container" style="padding: 0px 7.5px 0px 0px">
+            <select class="adult input-style2" name="adult">
+              <option value="">Adult</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+          <div class="form-container" style="padding: 0px 0px 0px 7.5px">
+            <select class="child input-style2" name="">
+              <option value="">Child</option>
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+          <button class="button-style1">Check<i class="ti-angle-right"></i></button>
+        </div>
+        <script type="text/javascript" src="../js/nav.js"></script>
+      </nav>
+    <!--Banner-->
+    <header class="banner" onclick="dismissBookingForm()">
+      <div class="layer">
+      </div>
+      <div class="container">
+        <div class="heading">
+          <p class="section-subheading">Le Timeless Tresor</p>
+          <h1 class="title">Le Meilleur Resto</h1>
+        </div>
+      </div>
+    </header>
+    <!--About-->
+    <section class="section1" onclick="dismissBookingForm()">
+      <div class="container">
+        <article class="reveal left">
+          <h4 class="section-subheading">Le Timeless Tresor</h4>
+          <h1 class="section-title">About Catering</h1>
+          <hr class="horizontal-line">
+          <p class="section-sub-title">Luxury hotel and design hotel wrapped into one. Le Timeless Tresor stands for an exclusive lifestyle and an exceptional experience of space, created by world-class architects.</p>
+          <a href="pages/gallery.html" class="a-style1">Learn more<i class="fa-solid fa-arrow-right"></i></a>
+        </article>
+        <aside class="reveal right">
+          <img src="../resources/images/chef.jpg">
+        </aside>
+      </div>
+    </section>
+    <br>
+    <!---food types on the left side--->
+    <section class="section2">
+      <div class="container" style="text-align: left">
+        <div class='Menu'>
+          <ul class= "Left">
+            <div>
+              <h4 class="section-subheading">Le Timeless Tresor</h4>
+              <h1 class="section-title">The Menu</h1>
+              <hr class="horizontal-line">
+            </div>
+            <span class="Course">
+              <li class="selected">Main Courses</li>
+              <li>Entrees</li>
+              <li>Desserts</li>
+              <li>Drinks</li>
+            </span>
+          </ul>
+          <div class="Center">
+            <ul>
+              <li class="dropdownfab" ><img src="../resources/images/jetstreamsam.png" alt="Food">
+                <p class="dropdown-contentfab">Hello
+                  <br><br>
+                  <a href="#" class="button-style2">Order<i class="ti-angle-right"></i></a>
+                </p>
+              </li>
+              <li class="dropdownfab"><img src="../resources/images/jetstreamsam.png" alt="Food">
+                <p class="dropdown-contentfab">Hello
+                  <br><br>
+                  <a href="#" class="button-style2">Order<i class="ti-angle-right"></i></a>
+                </p>
+              </li>
+              <li class="dropdownfab"><img src="../resources/images/jetstreamsam.png" alt="Food">
+                <p class="dropdown-contentfab">Hello
+                  <br><br>
+                  <a href="#" class="button-style2">Order<i class="ti-angle-right"></i></a>
+                </p>
+              </li>
+                <li class="dropdownfab"><img src="../resources/images/jetstreamsam.png" alt="Food">
+              <p class="dropdown-contentfab">Hello
+                  <br><br>
+                  <a href="#" class="button-style2">Order<i class="ti-angle-right"></i></a>
+                </p>
+              </li>
+                <li class="dropdownfab"><img src="../resources/images/jetstreamsam.png" alt="Food">
+                <p class="dropdown-contentfab">Hello
+                  <br><br>
+                  <a href="#" class="button-style2">Order<i class="ti-angle-right"></i></a>
+                  </p>
+              </li>
+              <li class="dropdownfab"><img src="../resources/images/jetstreamsam.png" alt="Food">
+              <p class="dropdown-contentfab">Hello
+                <br><br>
+                <a href="#" class="button-style2">Order<i class="ti-angle-right"></i></a>
+                </p>
+            </li>
+              </ul>
+              <ul>
+                <li class="dropdownfab" ><img src="../resources/images/jetstreamsam.png" alt="Food">
+                <p class="dropdown-contentfab">Test
+                  <br><br>
+                  <a href="#" class="button-style2">Order<i class="ti-angle-right"></i></a>
+                  </p>
+                </li>
+                <li class="dropdownfab" ><img src="../resources/images/jetstreamsam.png" alt="Food">
+                <p class="dropdown-contentfab">Hello
+                  <br><br>
+                  <a href="#" class="button-style2">Order<i class="ti-angle-right"></i></a>
+                  </p>
+                </li>
+                <li class="dropdownfab" ><img src="../resources/images/jetstreamsam.png" alt="Food">
+                <p class="dropdown-contentfab">Hello
+                  <br><br>
+                  <a href="#" class="button-style2">Order<i class="ti-angle-right"></i></a>
+                  </p>
+                </li>
+                <li class="dropdownfab" ><img src="../resources/images/jetstreamsam.png" alt="Food">
+                <p class="dropdown-contentfab">Hello
+                  <br><br>
+                  <a href="#" class="button-style2">Order<i class="ti-angle-right"></i></a>
+                  </p>
+                </li>
+                <li class="dropdownfab" ><img src="../resources/images/jetstreamsam.png" alt="Food">
+                <p class="dropdown-contentfab">Hello
+                  <br><br>
+                  <a href="#" class="button-style2">Order<i class="ti-angle-right"></i></a>
+                  </p>
+                </li>
+                <li class="dropdownfab" ><img src="../resources/images/jetstreamsam.png" alt="Food">
+                <p class="dropdown-contentfab">Hello
+                  <br><br>
+                  <a href="#" class="button-style2">Order<i class="ti-angle-right"></i></a>
+                  </p>
+                </li>
+              </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section8" onclick="dismissBookingForm()">
+      <div class="layer" style="opacity:0.5"></div>
+      <div class="container">
+        <h4 class="section-subheading">Guest</h4>
+        <h1 class="section-title" style="margin-bottom: 20px;">Testimonials</h1>
+        <div class="review-carousel">
+          <div class="carousel-cell">
+            <p class="section-sub-title">Welcome to the best five-star deluxe hotel in New York. Hotel Welcome to the best five-star deluxe hotel in New York. Donec In Quis The Pellentesque Velit.</p>
+          </div>
+          <div class="carousel-cell">
+            <p class="section-sub-title">Welcome to the best five-star deluxe hotel in New York. Hotel Welcome to the best five-star deluxe hotel in New York. Donec In Quis The Pellentesque Velit.</p>
+          </div>
+          <div class="carousel-cell">
+            <p class="section-sub-title">Welcome to the best five-star deluxe hotel in New York. hotelWelcome to the best five-star deluxe hotel in New York. Donec In Quis The Pellentesque Velit.</p>
+          </div>
+          <div class="carousel-cell">
+            <p class="section-sub-title">Welcome to the best five-star deluxe hotel in New York. Hotel Welcome to the best five-star deluxe hotel in New York. Donec In Quis The Pellentesque Velit.</p>
+          </div>
+          <div class="carousel-cell">
+            <p class="section-sub-title">Welcome to the best five-star deluxe hotel in New York. Hotel Welcome to the best five-star deluxe hotel in New York. Donec In Quis The Pellentesque Velit.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!---Footer-->
+    <footer class="footer">
+       <div class="container">
+         <section>
+           <div class="box">
+              <img src="../resources/images/logov2_black.png">
+           </div>
+           <div class="box">
+              <p>Turquoise waters lap at white-sand shores. Towering palms rustle overhead. Welcome to Le Tresor.</p>
+           </div>
+           <div class="box">
+              <h3>Follow us</h3>
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-instagram"></i>
+           </div>
+         </section>
+         <section>
+           <div class="box">
+              <h3>The Resort</h3>
+              <a href="#">Overview<i class="ti-angle-right"></i></a>
+              <a href="#">Accomodations<i class="ti-angle-right"></i></a>
+              <a href="#">Facilities<i class="ti-angle-right"></i></a>
+              <a href="#">Services<i class="ti-angle-right"></i></a>
+              <a href="#">Dining<i class="ti-angle-right"></i></a>
+              <a href="#">Gallery<i class="ti-angle-right"></i></a>
+              <a href="#">Contact Us<i class="ti-angle-right"></i></a>
+              <a href="#">Events<i class="ti-angle-right"></i></a>
+              <a href="#">Promotions<i class="ti-angle-right"></i></a>
+           </div>
+           <div class="box">
+              <h3>My Account</h3>
+              <a href="#">Log in<i class="ti-angle-right"></i></a>
+              <a href="#">Sign up<i class="ti-angle-right"></i></a>
+           </div>
+         </section>
+         <section>
+           <div class="box">
+              <i class="fas fa-envelope"></i>
+              <h3>Email</h3>
+              <p>LaTimelessTresor@resort.com</p>
+           </div>
+           <div class="box">
+              <i class="fas fa-clock"></i>
+              <h3>Hotline Hours</h3>
+              <p>08:00am to 08:00pm</p>
+           </div>
+           <div class="box">
+              <i class="fas fa-map-marker-alt"></i>
+              <h3>Location</h3>
+              <p>La Baie Classique, Singapore</p>
+           </div>
+           <div class="box">
+              <i class="fas fa-phone"></i>
+              <h3>Contact</h3>
+              <p>+65-9999</p>
+           </div>
+         </section>
+         <hr>
+       </div>
+       <section style="width:100%; background-color: #222">
+        <div class="container" style="padding: 10px;">
+          <div class="tc">
+            <a href="#">Terms & Conditions</a> |
+            <a href="#">Privacy Policy</a>
+          </div>
+          <div style="width:100%; padding: 20px; text-align: center">
+            <p>Copyright 2022 &copy; Le Timeless Tresor | All right reserved.</p>
+          </div>
+        </div>
+       </section>
+    </footer>
+  </body>
+  <script src="../js/flickity.pkgd.min.js"></script>
+  <script src="../js/main.js"></script>
+  <script type="text/javascript">
+    var review = document.querySelector('.review-carousel');
+    var flkty = new Flickity( review, {
+      prevNextButtons: false,
+      autoPlay: 4500,
+      pauseAutoPlayOnHover: false
+    });
+  </script>
+</html>
