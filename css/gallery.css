@@ -255,7 +255,7 @@ h1, h2 {
 }
 
 .exteriorColumn3, .diningColumn3, .experienceColumn3, .interiorColumn3 {
-  width: 33.33%;
+  width: 33.3%;
   float: left;
   height: 400px;
 }
