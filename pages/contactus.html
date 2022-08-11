@@ -7,6 +7,8 @@
 <link rel="stylesheet" href="../css/navbar.css">
 <link rel="stylesheet" href="../css/global.css">
 <link rel="stylesheet" href="../css/contactus.css">
+<link rel="icon" href="../resources/images/logo.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400;1,400;1,700&display=swap" rel="stylesheet">
 </head>
 
@@ -119,15 +121,9 @@
     </div>
     <script type="text/javascript" src="../js/nav.js"></script>
   </nav>
-  <header class="banner" onclick="dismissBookingForm()">
-    <div class="layer">
-    </div>
 
-<!--- Top Picture-->
-<header class='banner' onclick="dismissBookingForm()">
-
-
-  <!--- Words in the picture --->
+<header class="banner" onclick="dismissBookingForm()">
+  <div class="layer"></div>
   <div class="container">
     <div class="heading">
       <p class="section-subheading">Le Timeless Trésor</p>
@@ -136,35 +132,25 @@
   </div>
 </header>
 
-
-
-<!---#contact us button--->
-<div class="ContactUs">
-  <h2>Is there anything else that you want to know? <br>
-    We're always here to help!</h2>
-
-    <!---Form--->
-    <form action="action_page.php">
-    <div class="container-form">
-    <p><b>Send us feedback!</b></p>
-
-    <input type="text" placeholder="Full Name" name="fullname" required>
-
-    <input type="text" placeholder="Email" name="email" required>
-
-    <textarea name="message" placeholder="Message" rows="8" cols="80" required></textarea>
-
-      <button type="submit">Submit</button>
+<section class="contactus">
+  <div class="map">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14464.011438466167!2d-71.0087762250165!3d25.000018789888163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89451ab5034cb7ab%3A0xb600ecf3df7aca4d!2sBermuda%20Triangle!5e0!3m2!1sen!2ssg!4v1660208060470!5m2!1sen!2ssg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+  </div>
+  <div class="form">
+    <div class="wrapper" id="form-section">
+      <h2>Send us your feedback!</h2>
+      <form action="contactus.html" method="post">
+        <div style="width: 100%; display: inline-block; margin-top: 15px">
+          <input type="text" name="" value="" placeholder="First Name" class="input-style2" style="float: left; width: 49%">
+          <input type="text" name="" value="" placeholder="Last Name" class="input-style2" style="float: right; width: 49%">
+        </div>
+        <input type="email" placeholder="Email" name="email" class="input-style2" style="margin-top: 15px; margin-bottom: 22px">
+        <textarea name="message" placeholder="Message" rows="8" cols="80" class="input-style2"></textarea>
+        <a href="#" class="button-style1">Submit<i class="ti-angle-right"></i></a>
+      </form>
     </div>
   </div>
-    </form>
-
-<!---image of the map--->
-<div class="map">
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14464.011438466167!2d-71.0087762250165!3d25.000018789888163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89451ab5034cb7ab%3A0xb600ecf3df7aca4d!2sBermuda%20Triangle!5e0!3m2!1sen!2ssg!4v1660208060470!5m2!1sen!2ssg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
-</div>
-
-
+</section>
 
 <!---Footer-->
 <footer class="footer">
