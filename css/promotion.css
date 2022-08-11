@@ -3,7 +3,7 @@
   background:url('../resources/images/pro2.jpg') no-repeat;
   top: 0;
   left: 0;
-  height: 500px;
+  height: 83vh;
   width: 100%;
   background-size: cover;
   background-position: center;
@@ -21,14 +21,14 @@
   position: absolute;
   top: 0;
   left: 0;
-  height: 500px;
+  height: 83vh;
   width: 100%;
 }
 /**heading fonts**/
 .heading {   /**heading space and position **/
   color: white;
   position: relative;
-  top: 250px;
+  top: 280px;
   text-align: center;
   animation: title-slide 1s ease-in-out;
 }
@@ -121,7 +121,7 @@
 /**romantic package**/
 .content{
   text-align: center; /**to aligin the header*/
-  padding-top: 100px;
+  padding-top: 70px;
 }
 
 /**to make it 3 in one row*/
@@ -173,6 +173,7 @@
   .section .right img,   .section5 .right img, .section .left img, .section .right article,.section5 .right article, .section .left article  {
     width: 100%;
     float: none;
+    text-align: center;
   }
   .section .right, .section .left {
     margin: 40px 0px;
