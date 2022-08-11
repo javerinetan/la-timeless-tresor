@@ -17,16 +17,19 @@
 #WordsInPicture{
   position: absolute;
   top: 25%;
-  left: 35%;
+  left: 30%;
   font-weight: bold;
   font-size: 100px;
-  color: #Aa8453;
+  color: white;
 }
 
 /*typology*/
 h1{
   font-family: 'LibreBodoni-Regular', serif;
   font-size: 100px;
+  font-weight: lighter;
+  text-transform: uppercase;
+  letter-spacing: 8px;
 
 
 }
