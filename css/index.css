@@ -551,7 +551,7 @@
     margin-bottom: 20px;
   }
   .section5 .box {
-    width: 50%;
+    width: 100%;
   }
   .section7 .box {
     width: 100%;
@@ -580,9 +580,6 @@
   }
   .section2 article {
     padding: 0px;
-  }
-  .section5 .box {
-    width: 100%;
   }
   .section5 .box-content {
     margin: 10px 0px;
