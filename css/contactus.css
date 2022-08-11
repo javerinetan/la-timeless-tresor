@@ -3,7 +3,7 @@
   padding: 0px;
 }
 
-/TopPicture/
+/*TopPicture*/
 .banner{
   background-image: url("../resources/images/desk2.jpg");
   top: 0;
@@ -15,7 +15,7 @@
   background-attachment: fixed;
 }
 
-/Words in the Picture/
+/*Words in the Picture*/
 .heading {
   color: white;
   position: relative;
@@ -82,7 +82,7 @@ textarea {
   resize: none;
 }
 
-/Map/
+/*Map*/
 .map{
   display: inline-block;
   position: absolute;
