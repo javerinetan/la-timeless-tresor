@@ -134,7 +134,7 @@ h1, h2 {
 
 .segcontrol div {
   float: left;
-  background-image: linear-gradient(to right, rgba(255,255,255,0) 50%, #ddd 50%);
+  border-bottom: 4px #c4ac80 solid;
   background-position: -0% 0;
   background-size: 200% auto;
   color: #222;

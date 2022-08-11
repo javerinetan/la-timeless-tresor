@@ -314,25 +314,18 @@
 
 !function() {
   var data = [
-    { eventName: 'Lunch Meeting w/ Mark', calendar: 'Work', color: 'orange' },
-    { eventName: 'Interview - Jr. Web Developer', calendar: 'Work', color: 'orange' },
-    { eventName: 'Demo New App to the Board', calendar: 'Work', color: 'orange' },
-    { eventName: 'Dinner w/ Marketing', calendar: 'Work', color: 'orange' },
+    { eventName: 'Bowling Square Off', calendar: 'Sports', color: 'yellow' },
+    { eventName: 'Museum Tour', calendar: 'Leisure', color: 'blue' },
+    { eventName: 'The Swim Race', calendar: 'Sports', color: 'yellow' },
+    { eventName: 'Gym Craze', calendar: 'Sports', color: 'yellow' },
 
-    { eventName: 'Game vs Portalnd', calendar: 'Sports', color: 'blue' },
-    { eventName: 'Game vs Houston', calendar: 'Sports', color: 'blue' },
-    { eventName: 'Game vs Denver', calendar: 'Sports', color: 'blue' },
-    { eventName: 'Game vs San Degio', calendar: 'Sports', color: 'blue' },
+    { eventName: 'Tennis Square Off', calendar: 'Sports', color: 'yellow' },
+    { eventName: 'Casino Night', calendar: 'Exclusive', color: 'orange' },
+    { eventName: 'Billards Sqaure Off', calendar: 'Sports', color: 'yellow' },
+    { eventName: 'Golf Square Off', calendar: 'Sports', color: 'yellow' },
 
-    { eventName: 'School Play', calendar: 'Kids', color: 'yellow' },
-    { eventName: 'Parent/Teacher Conference', calendar: 'Kids', color: 'yellow' },
-    { eventName: 'Pick up from Soccer Practice', calendar: 'Kids', color: 'yellow' },
-    { eventName: 'Ice Cream Night', calendar: 'Kids', color: 'yellow' },
-
-    { eventName: 'Free Tamale Night', calendar: 'Other', color: 'green' },
-    { eventName: 'Bowling Team', calendar: 'Other', color: 'green' },
-    { eventName: 'Teach Kids to Code', calendar: 'Other', color: 'green' },
-    { eventName: 'Startup Weekend', calendar: 'Other', color: 'green' }
+    { eventName: 'Spa and Massage', calendar: 'Leisure', color: 'blue' },
+    { eventName: 'Wedding Space', calendar: 'Exclusive', color: 'orange' },
   ];
 
 
