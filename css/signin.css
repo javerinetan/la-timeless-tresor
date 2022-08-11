@@ -1,46 +1,5 @@
-<<<<<<< HEAD
 .banner {
   background-image: url("../resources/images/siginin.jpg");
-=======
-*{
-  margin: 0px;
-  padding: 0px;
-}
-
-/*Typology*/
-.New h1{
-  font-family: 'LibreBodoni-Regular', serif;
-  font-weight: lighter;
-  text-transform: uppercase;
-}
-
-#login{
-  font-weight: bold;
-}
-
-h2{
-  font-family: 'LibreBodoni-Regular', serif;
-  font-size: 20px;
-}
-
-
-
-
-b{
-  font-family: 'Libre Bodoni', serif;
-
-}
-
-button{
-  font-family: 'Libre Bodoni', serif;
-
-}
-
-
-/*Top Picture*/
-#toppicture{
-  background-image: url("../resources/images/pool2.jpg");
->>>>>>> 3880b736519949295c9f859a8fb7a249db49b497
   top: 0;
   left: 0;
   height: 500px;
