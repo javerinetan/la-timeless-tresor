@@ -75,22 +75,18 @@ h3{
   font-size: 20px;
 }
 
-.ContactUs h3{
-  position: relative;
-  margin-top: 200px;
-
-
-}
 
 /*Form*/
-
 .container-form h1{
   margin-bottom: 20px;
 }
 
 .container-form{
   background-color:#F8F5F0;
-  width: 50%;
+  margin-top: 50px;
+  margin-left: 50px;
+  width: 60%;
+  
 }
 /* Full-width input fields */
   input[type=text], textarea{
@@ -129,11 +125,9 @@ button:hover {
   padding: 16px;
 }
 
-/* Clear floats */
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
+/* Removes resize for text area */
+textarea {
+  resize: none;
 }
 
 /*Map*/
