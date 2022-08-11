@@ -55,9 +55,6 @@
   margin-bottom: 250px;
 }
 
-/* Full-width input fields */
-
-
 
 /* Add padding to container elements */
 .contactus .form {
@@ -95,24 +92,7 @@ textarea {
 }
 
 @media screen and (max-width: 1200px) {
-  .section1 aside img {
-    width: 350px;
-  }
-  .carousel-cell img {
-    display: block;
-    width: 400px;
-  }
-  .section2 aside {
-    width: 60%;
-    float: right;
-  }
-  .section2 article {
-    width: 40%;
-    float: right;
-  }
-  .section-title {
-    font-size: 30px;
-  }
+  
 }
 
 @media screen and (max-width: 900px) {
