@@ -4,24 +4,45 @@
 }
 
 /*TopPicture*/
-#toppicture img{
+.banner{
+  background-image: url("../resources/images/contact.jpg");
+  top: 0;
+  left: 0;
+  height: 500px;
   width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
-
-#toppicture img:hover{
-  opacity:90%;
-}
-
 
 /*Words in the Picture*/
-#WordsInPicture{
-  position: absolute;
-  top: 25%;
-  left: 30%;
-  font-weight: bold;
-  font-size: 100px;
+.heading {
   color: white;
+  position: relative;
+  top: 250px;
+  text-align: center;
+  animation: title-slide 1s ease-in-out;
 }
+
+.heading h1 {
+  font-family: 'LibreBodoni-Regular';
+  font-size: 50px;
+  color: white;
+  margin: 0;
+  font-weight: lighter;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+}
+
+.heading p {
+  margin: 0;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+
+
+
 
 /*typology*/
 h1{
@@ -42,8 +63,8 @@ h3{
 }
 
 /*Contact Us*/
-.ContactUs{
-  margin-bottom: 600px;
+.ContactUs{ /*How large the page is*/
+  margin-bottom: 1500px;
 }
 
 .ContactUs h1{
@@ -68,58 +89,6 @@ h3{
 
 }
 
-/*Bot or Human*/
-#HumBot{
-  margin-left: 50px;
-}
-
-#Bot{
-  background-color: #F8F5F0;
-  font-size: 50px;
-  padding: 60px;
-  border-radius: 25px;
-  border: 5px groove #BB9C72;
-  margin-right: 50px;
-  color: #AA8453;
-}
-
-#Bot:hover{
-  background-color:#F5EFE8;
-  cursor: pointer;
-}
-
-#Bot img{
-  position: absolute;
-  max-width: 80px;
-  margin-left: 75px;
-  margin-top: 70px;
-
-}
-
-
-#Human{
-  background-color: #F8F5F0;
-  font-size: 50px;
-  padding: 60px;
-  border-radius: 25px;
-  border: 5px groove #BB9C72;
-  margin-left:50px;
-  color: #AA8453;
-
-}
-
-#Human:hover{
-  background-color:#F5EFE8;
-  cursor: pointer;
-}
-
-#Human img{
-  position: absolute;
-  max-width: 80px;
-  margin-left: 125px;
-  margin-top: 70px;
-
-}
 
 /*Map*/
 .map{
