@@ -1,11 +1,11 @@
 /**front part **/
 .main-bg {      /**imgae**/
-  background: url('https://i.pinimg.com/originals/9d/bf/20/9dbf20d5dd22e74d1a4a0163f01ce724.jpg') no-repeat;
+  background: url('../resources/images/dinningoverall.jpg') no-repeat;
   background-size: cover;
   background-position: center;
   top: 0;
   left: 0;
-  height: 70vh;
+  height: 83vh;
   width: 100%;
   z-index: -1;
   object-fit: cover;
@@ -23,7 +23,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  height: 70vh;
+  height: 83vh;
   width: 100%;
 }
 /**heading fonts**/
@@ -101,19 +101,32 @@
 
 
 /** to make the page responsive **/
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 400px) {
   .main-carousel{
     width:400px!important;
     margin: auto;
   }
 
-  .heading h1 {
-    font-size: 28px;
-    letter-spacing: 3px;
-  }
 
   .section-sub-title{
     font-size: 11px !important;
+  }
+  .column-l {
+    clear: both;
+    width: 100%;
+  }
+  .column-r {
+    clear: both;
+    width: 100%;
+
+  }
+  .row{
+    margin: 0 20px;
+  }
+  .row img{
+    width: 100%;
+    height: 20rem;
+    margin-top: 50px;
   }
 }
 
