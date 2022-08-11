@@ -105,9 +105,10 @@ button {
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
+  margin-left: 15%;
   border: none;
   cursor: pointer;
-  width: 100%;
+  width: 70%;
   opacity: 0.9;
 }
 
