@@ -33,6 +33,10 @@
   margin-bottom: 10px;
 }
 
+.a-style1 {
+  margin-top: 20px !important;
+}
+
 .layer {
   background-color: black;
   opacity: 0.3;
@@ -198,8 +202,12 @@
     width: 55%;
   }
   .booking-details {
-    width: 35%;
+    width: 40%;
     margin-right: 40px;
+  }
+  .form .input-container {
+    width: 80%;
+    padding-right: 0px;
   }
 }
 
@@ -207,10 +215,6 @@
   .heading h1 {
     font-size: 40px;
     letter-spacing: 4px;
-  }
-  .form .input-container {
-    width: 80%;
-    padding-right: 0px;
   }
   .form .button-style2 {
     width: 80%;

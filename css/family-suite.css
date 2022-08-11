@@ -75,11 +75,12 @@
 
 .room-info .info .button-style1 {
   margin-top: 40px;
+  width: 350px;
 }
 
 .room-info .info .button-style1:hover {
   margin-top: 40px;
-  width: 350px;
+  width: 400px;
 }
 
 .room-info .amenities {

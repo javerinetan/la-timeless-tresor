@@ -190,7 +190,7 @@
             <p>Check out date</p>
             <input class="input-style1" type="date" name="chkout-display" value="-" id="chkout" onchange="updateBooking(this)">
             <p>Room Type</p>
-            <select class="input-style1" name="room-display" id="room" onchange="updateBooking(this)">
+            <select class="input-style1">
               <option value="-">Room Type</option>
               <option value="Any">Any</option>
               <option value="Junior Suite">Junior Suite</option>
@@ -200,51 +200,54 @@
             </select>
           </div>
           <a href="#results" style="display: inline-block;width: 100%;margin-top: 20px;">
-            <button type="button" class="button-style2" name="button" style="width: 48%;">Search<i class="ti-angle-right"></i></button>
+            <button type="button" class="button-style2" name="button" onclick="displayResults()" style="width: 48%;">Search<i class="ti-angle-right"></i></button>
           </a>
         </form>
       </div>
     </div>
     <div class="result container" id="results">
       <div class="wrapper">
-        <h2 class="section-title" style="font-size: 30px;">Available Rooms (2)</h2>
+        <h2 class="section-title" id="results-title" style="font-size: 30px;">No Rooms Available</h2>
         <hr class="horizontal-line">
-        <div class="box reveal left">
-          <div class="image">
-            <img src="../resources/images/galleryimg3.jpg" alt="">
-          </div>
-          <div class="info">
-            <h2 class="section-title-sm">Family suite</h2>
-            <p style="font-weight: bold;font-size: 20px">$450 /night</p>
-            <div class="amenities">
-              <i class="fa-solid fa-person"></i>2-4
-              <i class="fa-solid fa-bath"></i>Bathtub
-              <i class="fa-solid fa-wifi"></i>Internet
-              <i class="fa-solid fa-bed"></i> King-sized
+        <p class="section-sub-title" id="results-sub">We cannot find any Available room. Please try a new search query.</p>
+        <div id="items" style="display:none;">
+          <div class="box reveal left">
+            <div class="image">
+              <img src="../resources/images/galleryimg3.jpg" alt="">
             </div>
-            <a href="pages/gallery.html" class="a-style1">Room details<i class="fa-solid fa-arrow-right"></i></a>
-            <a href="#results" style="display: inline-block;width: 100%;margin-top: 20px;">
-              <button type="button" class="button-style2" name="button" style="width: 100%;">Select this room<i class="ti-angle-right"></i></button>
-            </a>
-          </div>
-        </div>
-        <div class="box reveal left">
-          <div class="image">
-            <img src="../resources/images/room.jpg" alt="">
-          </div>
-          <div class="info">
-            <h2 class="section-title-sm">Deluxe suite</h2>
-            <p style="font-weight: bold;font-size: 20px">$550 /night</p>
-            <div class="amenities">
-              <i class="fa-solid fa-person"></i>2-4
-              <i class="fa-solid fa-bath"></i>Bathtub
-              <i class="fa-solid fa-wifi"></i>Internet
-              <i class="fa-solid fa-bed"></i> King-sized
+            <div class="info">
+              <h2 class="section-title-sm">Family suite</h2>
+              <p style="font-weight: bold;font-size: 20px">$450 /night</p>
+              <div class="amenities">
+                <i class="fa-solid fa-person"></i>2-4
+                <i class="fa-solid fa-bath"></i>Bathtub
+                <i class="fa-solid fa-wifi"></i>Internet
+                <i class="fa-solid fa-bed"></i> King-sized
+              </div>
+              <a href="pages/gallery.html" class="a-style1">Room details<i class="fa-solid fa-arrow-right"></i></a>
+              <a href="#results" style="display: inline-block;width: 100%;margin-top: 20px;">
+                <button type="button" class="button-style2" name="button" style="width: 100%;" onclick="updateRoomType('Family suite','room-display')">Select this room<i class="ti-angle-right"></i></button>
+              </a>
             </div>
-            <a href="pages/gallery.html" class="a-style1">Room details<i class="fa-solid fa-arrow-right"></i></a>
-            <a href="#results" style="display: inline-block;width: 100%;margin-top: 20px;">
-              <button type="button" class="button-style2" name="button" style="width: 100%;">Select this room<i class="ti-angle-right"></i></button>
-            </a>
+          </div>
+          <div class="box reveal left">
+            <div class="image">
+              <img src="../resources/images/galleryimg2.jpg" alt="">
+            </div>
+            <div class="info">
+              <h2 class="section-title-sm">Deluxe suite</h2>
+              <p style="font-weight: bold;font-size: 20px">$550 /night</p>
+              <div class="amenities">
+                <i class="fa-solid fa-person"></i>2-4
+                <i class="fa-solid fa-bath"></i>Bathtub
+                <i class="fa-solid fa-wifi"></i>Internet
+                <i class="fa-solid fa-bed"></i> King-sized
+              </div>
+              <a href="pages/gallery.html" class="a-style1">Room details<i class="fa-solid fa-arrow-right"></i></a>
+              <a href="#results" style="display: inline-block;width: 100%;margin-top: 20px;">
+                <button type="button" class="button-style2" name="button" style="width: 100%;" onclick="updateRoomType('Deluxe suite','room-display')">Select this room<i class="ti-angle-right"></i></button>
+              </a>
+            </div>
           </div>
         </div>
       </div>
