@@ -8,7 +8,6 @@
   font-family: 'LibreBodoni-Regular', serif;
   font-weight: lighter;
   text-transform: uppercase;
-  letter-spacing: 8px;
 }
 
 #login{
@@ -20,10 +19,6 @@ h2{
   font-size: 20px;
 }
 
-a{
-  font-family: 'Libre Bodoni', serif;
-
-}
 
 p{
   font-family: 'Libre Bodoni', serif;
@@ -40,20 +35,25 @@ button{
 
 }
 
-input{
-  font-family: 'Libre Bodoni', serif;
 
-}
 /*Top Picture*/
-#toppicture img{
+#toppicture{
+  background-image: url("../resources/images/pool2.jpg");
+  top: 0;
+  left: 0;
+  height: 500px;
   width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 
-/*Content*/
 
+/***Content***/
 
-.content .New { /*Right Content*/
+ /*Right Content*/
+.content .New {
   position: relative;
   left: 65%;
   width: 30%;
@@ -73,11 +73,6 @@ input{
   margin-bottom: 100px;
 }
 
-.content .New hr{
-  border-top: 1px solid red;
-  top:20%;
-
-}
 
 .content .New a{
   font-size: 100px;
@@ -93,8 +88,8 @@ input{
   background-color: #F8F5F0;
 }
 
-
-.content .login{ /*Left Content*/
+/*Left Content*/
+.content .login{
   position: absolute;
   width: 30%;
 }
@@ -121,8 +116,15 @@ input[type=text]:focus, input[type=password]:focus {
   outline: none;
 }
 
-hr {
-  margin-bottom: 25px;
+#signuplline {
+  position:absolute;
+  width: 40%;
+  height: 1px;
+  display: inline-block;
+  background-color: #aa8453;
+  margin: 30px 0px;
+  left:25%;
+  top: 43%;
 }
 
 /* Set a style for all buttons */
