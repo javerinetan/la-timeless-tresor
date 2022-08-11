@@ -96,11 +96,31 @@
   width: 100%;
   height: 30rem;
   margin-top: 50px;
+  margin-bottom: 30px;
 }
 
-.button-style1{
-  text-align: center;
+/**content button**/
+.button1 {
+  display: inline-block;
+  padding: 1rem 4.1rem;
+  font-size: 1rem;
+  border: 1px solid #b0a48d;
+  position: relative;
+  color: #b0a48d;
+  background-color: transparent;/* too allow the color to be emoty**/
+  margin-top: 40px;
 }
+.button1:hover{
+  position: relative;
+  background-color:#bb9c75 ;/**change color when hover*/
+  color: white;
+  padding: 1rem 4.1rem;
+  font-size: 1rem;
+  border: 1px solid #b0a48d;
+
+
+}
+
 
 /** to make the page responsive **/
 @media screen and (max-width: 400px) {
@@ -150,9 +170,6 @@
 
   .horizontal-line{
     margin: 20px 0px 13px!important;
-  }
-  .boxes{
-    width: 100%;
   }
 
   }
