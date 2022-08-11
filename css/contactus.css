@@ -1,3 +1,8 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
 /*TopPicture*/
 .banner{
   background-image: url("../resources/images/desk2.jpg");
@@ -89,7 +94,7 @@ textarea {
 @media screen and (max-width: 1200px) {
   .map{
     position: relative;
-    width: 100%;
+    width: auto;
   }
   .contactus .form{
     position: relative;
@@ -102,7 +107,7 @@ textarea {
 @media screen and (max-width: 900px) {
   .map{
     position: relative;
-    width: 100%;
+    width: auto;
   }
   .contactus .form{
     position: relative;
@@ -116,7 +121,7 @@ textarea {
 @media screen and (max-width: 600px) {
   .map{
     position: relative;
-    width: 100%;
+    width: auto;
   }
   .contactus .form{
     position: relative;
@@ -129,7 +134,7 @@ textarea {
 @media screen and (max-width: 400px) {
   .map{
     position: relative;
-    width: 100%;
+    width: auto;
   }
   .contactus .form{
     position: relative;
