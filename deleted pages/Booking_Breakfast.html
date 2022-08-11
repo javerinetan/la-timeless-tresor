@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="../resources/images/logo.png">
-  <title>Restaurant Reservation | La Timeless Trésor</title>
+  <title>Restaurant Reservation | Le Timeless Trésor</title>
   <link rel="stylesheet" href="../css/jae_forms.css">
   <link rel="stylesheet" href="../css/navbar.css">
   <link rel="stylesheet" href="../css/global.css">
@@ -138,21 +138,21 @@
           reservation shoudld there be a need. Any extra charges needed will be charged to you.
           Please do call us 7 days before any cancellation.
           Failure to cancel in advance will result in a fine. Children above 12 years old is consider and adult. If you have any enquries please call <a href="tel:+6588031454">+65 88031454</a></p>
-        <form method="Post" name="Booking">
+        <form action = "Confirmation.html " method="get" name="Booking">
           <div class="input-container">
             <p>Name</p>
-            <input type="text" id="name" class="input-style1"  name="visitor_name" placeholder="Full Name" pattern=[A-Z\sa-z]{3,20} required>
-            <p>Anything Else?</p>
-            <textarea id="message" name="visitor_message" class="input-style1" placeholder="Tell us anything else that might be important. Like Allergies" required></textarea>
+            <input type="text" id="name" class="input-style1"  name="Name" placeholder="Full Name" pattern=[A-Z\sa-z]{3,20} required>
+            <p>Email</p>
+              <input type="email" id="email" class="input-style1" name="Email address" placeholder="john.doe@email.com" required>
           </div>
           <div class="input-container">
             <p>Your Phone</p>
-            <input type="tel" id="phone" class="input-style1" name="visitor_phone" placeholder="65-8803-1454" pattern=(\d{2})-?\s?(\d{4})-?\s?(\d{4}) required>
-            <p>Email</p>
-              <input type="email" id="email" class="input-style1" name="visitor_email" placeholder="john.doe@email.com" required>
+            <input type="tel" id="phone" class="input-style1" name="Phone Number" placeholder="65-8803-1454" pattern=(\d{2})-?\s?(\d{4})-?\s?(\d{4}) required>
+              <p>Anything Else?</p>
+              <textarea id="message" name="visitor_message" class="input-style1" placeholder="Tell us if you have any requirement"></textarea>
           </div>
-          <a href="../pages/Booking_Breakfast.html">
-            <button type="button" class="button-style2" onclick="myFunction()" style="width: 48%; ">Submit<i class="ti-angle-right"></i></button>
+          <a href="../pages/Booking_Breakfast.html" style="display: inline-block;width: 100%;">
+            <button type="submit" class="button-style2"  style="width: 48%;">Submit<i class="ti-angle-right"></i></button>
           </a>
         </form>
       </div>

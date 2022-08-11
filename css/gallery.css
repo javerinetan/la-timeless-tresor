@@ -34,6 +34,17 @@ h1, h2 {
   animation: title-slide 1s ease-in-out;
 }
 
+@keyframes title-slide {
+  0% {
+    opacity: 0.8;
+    top: 400px;
+  }
+  100% {
+    opacity: 1;
+    top: 200px;
+  }
+}
+
 .heading h1 {
   font-family: 'LibreBodoni-Regular';
   font-size: 50px;
@@ -138,9 +149,14 @@ h1, h2 {
   background-position: -99.99% 0;
 }
 
+.highlight {
+  background-position: -99.99% 0;
+  background-color: #cccecf;
+}
+
+
 /* Style the Image Used to Trigger the Modal */
 #myImg {
-  border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
 }
@@ -181,7 +197,7 @@ h1, h2 {
   text-align: center;
   color: #ccc;
   padding: 10px 0;
-  height: 150px;
+  height: 80px;
 }
 
 /* Add Animation - Zoom in the Modal */
@@ -213,6 +229,21 @@ h1, h2 {
   cursor: pointer;
 }
 
+/* Modal Image Carousel */
+.carousel {
+  width: 100%;
+}
+
+.carousel-cell {
+  margin-right: 20px;
+  overflow: hidden;
+}
+
+.carousel-cell img {
+  display: block;
+  width: 12%;
+}
+
 /* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 700px){
   .modal-content {
@@ -232,31 +263,49 @@ h1, h2 {
 
 .exteriorColumn, .diningColumn, .experienceColumn, .interiorColumn {
   width: 33.3%;
-  padding: 15px;
   float: left;
 }
 
 .exteriorColumn2, .diningColumn2, .experienceColumn2, .interiorColumn2 {
   width: 50%;
-  padding: 15px;
   float: left;
 }
 
 .exteriorColumn3, .diningColumn3, .experienceColumn3, .interiorColumn3 {
   width: 33.3%;
-  padding: 15px;
   float: left;
   height: 400px;
 }
 
-@media all and (min-width: 600px) {
+
+@media all and (max-width: 600px) {
   .aside { flex: 1 0 0; }
+  .exteriorColumn, .diningColumn {
+    width: 50%;
+  }
 }
 
-@media all and (min-width: 800px) {
+@media all and (max-width: 800px) {
   .main    { flex: 3 0px; }
+  .mainbody {
+    padding-bottom: 120px;
+  }
   .aside-1 { order: 1; }
   .main    { order: 2; }
   .aside-2 { order: 3; }
   .footer  { order: 4; }
+  .exteriorColumn3, .diningColumn3, .experienceColumn3, .interiorColumn3, .experienceColumn, .interiorColumn {
+    width: 50%;
+    height: auto;
+  }
+
+  .exteriorColumn:nth-child(1), .diningColumn:nth-child(3), .experienceColumn2:nth-child(3),
+  .diningColumn3:nth-last-child(1), .exteriorColumn3:nth-last-child(3), .interiorColumn:nth-child(2),
+  .experienceColumn2:nth-child(5) {
+    width: 100%;
+  }
+  .segcontrol {
+    flex-direction: column;
+    height: 150px;
+  }
 }

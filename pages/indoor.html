@@ -4,14 +4,14 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Restaurant booking </title>
+   <title>Restaurant Reservation | Le Timeless Trésor</title>
 
    <!-- font awesome cdn link  -->
    <link rel="icon" href="../resources/images/logo.png">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400;1,400;1,700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+   <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400;1,400;1,700&display=swap" rel="stylesheet">
    <!-- custom css file link  -->
-   <link rel="stylesheet" href="../css/mainformjae.css">
+   <link rel="stylesheet" href="../css/jae_forms.css">
    <link rel="stylesheet" href="../css/navbar.css">
    <link rel="stylesheet" href="../css/global.css">
 
@@ -85,72 +85,74 @@
   <!-- header section ends -->
 <!---Welcome page-->
 
-<div class="main-bg">
-
-   <section class="main">
-
-      <div class="content">
-           <h3> Restaurant Reservation Booking  </h3>
-           <p>Please read the terms and condition before booking. No refunds will be given.</p>
-      </div>
-
-   </section>
-
-</div>
-
-
-<!-- forms section starts -->
-<section class="form" >
-   <div class="image">
-
-      <img src="../resources/images/indoor.jpg" alt="">
-
-   </div>
-
-   <div class="content">
-
-     <form action="indoor2.html" method="POST">
-        <h3>Reservation for Indoor dining </h3>
-
-        <label for='check-in'> Select booking date:</label>
-        <input type="date" name="cdate" required class="box" min="2022-25-05" max="2023-01-01" >
-
-        <div class="form-container" style="padding: 0px 7.5px 0px 0px">
-          <label for="number">Adult:</label>
-        <input type="number" name="number" required class="box" id="adult" maxlength="0.2" placeholder="Adult:" min="1" max="15" onkeypress="if(this.value.length == 2) return false"  >
-        </div>
-
-  <div class="form-container" style="padding: 0px 0px 0px 7.5px">
-      <label for="number">Children:</label>
-          <input type="number" name="number" required class="box" id="child" maxlength="0.2" placeholder="Children:" min="0" max="15" onkeypress="if(this.value.length == 2) return false" >
-</div>
-
-
-
-
-        <label for="type">Choose time slot:</label>
-          <select class="form-container" name="adult" id="type">
-            <option value="6.00pm">6.00pm</option>
-            <option value="6.30pm">6.30pm</option>
-            <option value="7.00pm">7.00pm</option>
-            <option value="7.30pm">7.30pm</option>
-            <option value="8.00pm">8.00pm</option>
-            <option value="8.30pm">8.30pm</option>
-            <option value="9.00pm">9.00pm</option>
-            <option value="9.30pm">9.30pm</option>
-            <option value="10.00pm">10.00pm</option>
-          </select>
-          <button onclick="myFunction()" name="send" value="send message" class="btn3"  id="Nextbtn">Next</button>
-
-
-
-     </form>
-
-
+<header class="indoor-banner" onclick="dismissBookingForm()"> <!-- so the side thing will not come out-->
+  <div class="layer">
   </div>
-
+  <div class="container">
+    <div class="heading">
+      <p class="section-subheading">Le Timeless Trésor</p>
+      <h1 class="title">Restaurant Reservation Booking </h1>
+    </div>
+  </div>
+</header>
+<!-- end of the image header-->
+<!-- start of form-->
+<section class = "form">
+  <div class="form container">
+    <div class="wrapper" id="form-section">
+      <h4 class="section-subheading">Reservation</h4>
+      <h1 class="section-title">Indoor Booking</h1>
+      <hr class="horizontal-line">
+      <p class="info"> Please do note that the hotel reserves all rights to cancel your
+        reservation shoudld there be a need. Any extra charges needed will be charged to you.
+        Please do call us 7 days before any cancellation.
+        Failure to cancel in advance will result in a fine. Children above 12 years old is consider and adult. If you have any enquries please call <a href="callto:+6588031454">+65 88031454</a></p>
+      <form action = "Confirmation.html " method="get" name="Booking">
+        <div class="input-container">
+          <p>Select Booking Date</p>
+          <input class="input-style1" type="date" name="Date" id="date" required>
+          <div style="width:48%; float:left">
+            <p>No. of Adult</p>
+            <input type="number" class="input-style1"  name="Adult"  id="adult" placeholder="Adult:" min="1" max="10"  required >
+          </div>
+          <div style="width:48%;float:right">
+            <p>No. of Child</p>
+              <input type="number" class="input-style1" name="Child"  id="child" placeholder="Children:" min="0" max="10" >
+          </div>
+          <p>Name</p>
+          <input type="text" id="name" class="input-style1"  name="Name" placeholder="Full Name" pattern=[A-Z\sa-z]{3,20} required>
+          <p>Email</p>
+            <input type="email" id="email" class="input-style1" name="Email Address" placeholder="john.doe@email.com" required>
+        </div>
+        <div class="input-container">
+          <p>Hotel Confirmation Number</p>
+          <input class="input-style1" type="text" name="Hotel Confirmation Number" value="" maxlength="4" minlength="4" pattern=[A-Z\1-9\L]{1,2,1} >
+          <p>Choose Time Slot:</p>
+          <select class="input-style1" name="Time Slot:" required>
+            <option value="">time slot</option>
+              <option value="6.00pm">6.00pm</option>
+              <option value="6.30pm">6.30pm</option>
+              <option value="7.00pm">7.00pm</option>
+              <option value="7.30pm">7.30pm</option>
+              <option value="8.00pm">8.00pm</option>
+              <option value="8.30pm">8.30pm</option>
+              <option value="9.00pm">9.00pm</option>
+              <option value="9.30pm">9.30pm</option>
+              <option value="10.00pm">10.00pm</option>
+          </select>
+          <p>Your Phone</p>
+          <input type="tel" id="phone" class="input-style1" name="Phone Number" placeholder="65-8803-1454" pattern=(\d{2})-?\s?(\d{4})-?\s?(\d{4}) required>
+            <p>Anything Else?</p>
+            <textarea id="message" name="Note" class="input-style1" placeholder="Tell us if you have any requirement"></textarea>
+        </div>
+        <a href="../pages/Confirmation.html" style="display: inline-block;width: 100%;">
+          <button type="submit" id="submit" class="button-style2"  style="width: 48%;">Submit<i class="ti-angle-right"></i></button>
+        </a>
+      </form>
+    </div>
+  </div>
 </section>
-
+<script type="text/javascript" src="../js/form.js"></script> <!--for the dates validation made by me -->
 
 <!-- forms section end -->
 
@@ -162,10 +164,7 @@
           <img src="../resources/images/logov2_black.png">
        </div>
        <div class="box">
-          <p>Turquoise waters lap at white-sand shores. Towering palms rustle overhead. Welcome to Le Tresor.</p>
-       </div>
-       <div class="box">
-          <h3>Follow us</h3>
+          <p>Turquoise waters lap at white-sand shores. Towering palms rustle overhead. Welcome to Le Timeless Trésor.</p>
           <i class="fa-brands fa-facebook"></i>
           <i class="fa-brands fa-twitter"></i>
           <i class="fa-brands fa-instagram"></i>
@@ -179,27 +178,27 @@
      <section>
        <div class="box">
           <h3>The Resort</h3>
-          <a href="#">Overview<i class="ti-angle-right"></i></a>
-          <a href="#">Accomodations<i class="ti-angle-right"></i></a>
-          <a href="#">Facilities<i class="ti-angle-right"></i></a>
-          <a href="#">Services<i class="ti-angle-right"></i></a>
-          <a href="#">Dining<i class="ti-angle-right"></i></a>
-          <a href="#">Gallery<i class="ti-angle-right"></i></a>
-          <a href="#">Contact Us<i class="ti-angle-right"></i></a>
-          <a href="#">Events<i class="ti-angle-right"></i></a>
-          <a href="#">Promotions<i class="ti-angle-right"></i></a>
+          <a href="abouts.html">Overview<i class="ti-angle-right"></i></a>
+          <a href="accommodations.html">Accomodations<i class="ti-angle-right"></i></a>
+          <a href="facilities.html">Facilities<i class="ti-angle-right"></i></a>
+          <a href="services.html">Services<i class="ti-angle-right"></i></a>
+          <a href="foodandbeverage.html">Dining<i class="ti-angle-right"></i></a>
+          <a href="gallery.html">Gallery<i class="ti-angle-right"></i></a>
+          <a href="contactus.html">Contact Us<i class="ti-angle-right"></i></a>
+          <a href="eventdetail.html">Events<i class="ti-angle-right"></i></a>
+          <a href="promotion.html">Promotions<i class="ti-angle-right"></i></a>
        </div>
        <div class="box">
           <h3>My Account</h3>
-          <a href="#">Log in<i class="ti-angle-right"></i></a>
-          <a href="#">Sign up<i class="ti-angle-right"></i></a>
+          <a href="signin.html">Log in<i class="ti-angle-right"></i></a>
+          <a href="signup.html">Sign up<i class="ti-angle-right"></i></a>
        </div>
      </section>
      <section>
        <div class="box">
           <i class="fas fa-envelope"></i>
           <h3>Email</h3>
-          <p>LaTimelessTresor@resort.com</p>
+          <p>LeTimelessTresor@resort.com</p>
        </div>
        <div class="box">
           <i class="fas fa-clock"></i>
@@ -231,6 +230,7 @@
     </div>
    </section>
 </footer>
+
 <script src="js/flickity.pkgd.min.js"></script>
 <script src="js/index.js"></script>
 <script src="js/main.js"></script>

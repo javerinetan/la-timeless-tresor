@@ -24,39 +24,53 @@ a{
   }
 
 header{
-  height: 500px;
+  height: 83vh;
 }
 
-.home-bg{
-   background:linear-gradient(90deg, var(--white), transparent 0%), url(../resources/images/hotel.jpg) no-repeat;
-   background-size:cover;
-   background-position: center;
-   background-attachment: fixed;/*fix the image so it doesnt move when u scroll down**/
-   height: 500px;
-   text-align: center;
-   object-fit: cover;
+/**front part **/
+.main-bg {
+  background:linear-gradient(90deg, var(--white), transparent 0%), url('../resources/images/hotel.jpg') no-repeat;
+  top: 0;
+  left: 0;
+  height: 83vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
-.home-bg .home{
-   display: flex;
-   align-items: center;
+.banner .container {
+  position: absolute;
+  top: 0;
+}
+/**to make the image less bright**/
+.layer {
+  background-color: black;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 83vh;
+  width: 100%;
+}
+/**heading fonts**/
+.heading {   /**heading space and position **/
+  color: white;
+  position: relative;
+  top: 315px;
+  text-align: center;
+  animation: title-slide 1s ease-in-out;
 }
 
-.home-bg .home .content{
-   max-width: 80%;
-   text-align: center;
-   margin-left: auto;
-   margin-right: auto;
-   margin-top: 315px;
-}
-
-.home-bg .home .content h2{
-   font-size: 50px;
-   color:var(--white);
-   font-family: 'LibreBodoni-Regular';
-   font-weight: lighter;
-   text-transform: uppercase;
-   letter-spacing: 8px;
+.heading h1 {
+  font-family: 'LibreBodoni-Regular';
+  font-size: 50px;
+  color: white;
+  margin: 0;
+  font-weight: lighter;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  top: 250px;
 }
 
 .about{
@@ -106,7 +120,7 @@ header{
   height: 1px;
   display: inline-block;
   background-color: #aa8453;
-  margin: 20px 0px;
+  margin: 30px 0px;
 }
 
 /* facilities start*/
@@ -116,40 +130,41 @@ header{
 }
 
 #oh{
-  padding-bottom: 1.5rem !important;
+  padding-top: 0rem;
+  padding-bottom: 30px !important;
 }
 
 /**content image**/
-.facilities .right img {
+.right img {
   float: left; /* this so so the image will be on the left while the text is on the right*/
   width: 55%; /* sizing image to half the page*/
 }
 
-.facilities .left img {
+.left img {
   float: right;
   width: 55%;
 }
 /**content**/
-.facilities .right, .facilities .left {
+.right, .left {
   float: left;
   width: 100%;
   margin: 60px 0px;
 }
 
 /**content text location**/
-.facilities .right article {
+.right article {
   float: left;
   width: 45%;
   padding: 50px;
-  text-align: center;
+  text-align: left;
 }
 
 
-.facilities .left article {
+.left article {
   float: right;
   width: 45%;
   padding: 50px;
-  text-align: center;
+  text-align: right;
 }
 /**content button**/
 .button1 {
@@ -172,10 +187,50 @@ header{
 /**content subtitle**/
 .subtitle{
   color: darkgray;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
+/* Segmented Control */
 
+.display {
+  display: block !important;
+}
+
+#facilityNav {
+  float: left;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 50px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  background-color: #FAF7F2;
+}
+
+#facilityNav div {
+  float: left;
+  background-image: linear-gradient(to right, rgba(255,255,255,0) 50%, #ddd 50%);
+  background-position: -0% 0;
+  background-size: 200% auto;
+  font-size: 1.00em;
+  line-height: 1em;
+  text-decoration: none;
+  transition: background-position 0.5s ease-out;
+  cursor: pointer;
+}
+
+#facilityNav div:hover {
+  color: #aa8453;
+  border-bottom: 1px solid;
+}
+
+.click {
+  color: #aa8453;
+  border-bottom: 1px solid;
+}
 
 @media screen and (max-width: 500px){
     .about .content{
@@ -191,12 +246,16 @@ header{
     .horizontal-line{
       margin: 20px 0px !important;
     }
-    .facilities .right img,   .facilities .right img, .facilities .left img, .facilities .right article,.facilities .right article, .facilities .left article  {
+    .right img, .left img, .right article, .left article  {
       width: 100%;
       float: none;
+      text-align: center;
     }
-    .facilities .right, .facilities .left {
+    .right, .left {
       margin: 40px 0px;
+    }
+    .line{
+      margin:30px 0px;
     }
 
   }
@@ -207,11 +266,11 @@ header{
       font-size: 40px;
       letter-spacing: 4px;
   }
-  .facilities .left article {
+  .left article {
     padding: 20px!important;
     font-size: 80%;
   }
-  .facilities .right article {
+  .right article {
     padding: 30px!important;
     font-size: 80%;
   }
@@ -219,7 +278,7 @@ header{
     font-size: 90%!important;
   }
   .section-subheading{
-    font-size: 120%!important;
+    font-size: 100%!important;
   }
   .section-title{
     font-size: 200%!important;

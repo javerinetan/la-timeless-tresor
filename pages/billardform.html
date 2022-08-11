@@ -4,7 +4,7 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Billard room Booking | La Timeless Trésor</title>
+   <title>Billard room Booking | Le Timeless Trésor</title>
 
    <!-- font awesome cdn link  -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
@@ -124,11 +124,12 @@
 
 <!--header section starts-->
 
-<header class="banner"> <!--so the banner wont come out-->
+<header class="banner" onclick="dismissBookingForm()"> <!--so the banner wont come out-->
   <div class="layer"></div>
   <div class="bmain-bg"><!--insert image link to css-->
   <div class="container">
     <div class="heading">
+      <p class="section-subheading">Le Timeless Trésor</p>
       <h1 class="content">billiard room booking page</h1>
     </div>
   </div>
@@ -144,21 +145,20 @@
       <h4 class="section-subheading">Facility Booking</h4>
       <h1 class="section-title">book a billiard room</h1>
       <hr class="horizontal-line">
-      <form action="billardformdone.html" method="post">
+      <form action="billardformdone.html" method="get">
         <div class="input-container">
           <p>Hotel Confirmation Number</p>
-          <input class="leftform" type="text" name="" value="">
+          <input class="leftform" type="text" name="Hotel Confirmation Number" value="" maxlength="4" minlength="4" required>
           <p>Email</p>
-          <input class="leftform" type="text" name="number" value="">
-
+          <input class="leftform" type="text" name="Email" value="" required>
         </div>
-
         <div class="input-container">
           <p>Session Date</p>
-          <input class="input-style1" type="date" name="" value="">
+          <input class="input-style1" type="date" id="date" name="Date" value="" required>
           <div style="width:48%;float:left">
             <p>Time *</p>
-            <select name="time" class="input-style1">
+            <select name="Time" class="input-style1" required>
+              <option value="">Time Slot</option>
               <option value="6am">0600</option>
               <option value="8am">0800</option>
               <option value="10am">1000</option>
@@ -172,13 +172,12 @@
         </div>
         <p style="display: inline-block;width: 100%;">*Each session is 2hrs long</p>
         <a href="billardformdone.html" style="display: inline-block;width: 100%;margin-top: 20px;">
-        <button type="button" class="button-style2" name="button" style="width: 48%;">Book Now<i class="ti-angle-right"></i></button>
+        <button type="submit" class="button-style2" style="width: 48%;">Book Now<i class="ti-angle-right"></i></button>
       </a>
       </form>
-
     </div>
   </div>
-
+  <script src="../js/form.js"></script>
 <!-- forms section end -->
 
 <!-- footer section starts  -->
@@ -190,7 +189,7 @@
           <img src="../resources/images/logov2_black.png">
        </div>
        <div class="box">
-          <p>Turquoise waters lap at white-sand shores. Towering palms rustle overhead. Welcome to Le Tresor.</p>
+          <p>Turquoise waters lap at white-sand shores. Towering palms rustle overhead. Welcome to Le Timeless Trésor.</p>
           <i class="fa-brands fa-facebook"></i>
           <i class="fa-brands fa-twitter"></i>
           <i class="fa-brands fa-instagram"></i>
@@ -204,27 +203,27 @@
      <section>
        <div class="box">
           <h3>The Resort</h3>
-          <a href="#">Overview<i class="ti-angle-right"></i></a>
-          <a href="#">Accomodations<i class="ti-angle-right"></i></a>
-          <a href="#">Facilities<i class="ti-angle-right"></i></a>
-          <a href="#">Services<i class="ti-angle-right"></i></a>
-          <a href="#">Dining<i class="ti-angle-right"></i></a>
-          <a href="#">Gallery<i class="ti-angle-right"></i></a>
-          <a href="#">Contact Us<i class="ti-angle-right"></i></a>
-          <a href="#">Events<i class="ti-angle-right"></i></a>
-          <a href="#">Promotions<i class="ti-angle-right"></i></a>
+          <a href="abouts.html">Overview<i class="ti-angle-right"></i></a>
+          <a href="accommodations.html">Accomodations<i class="ti-angle-right"></i></a>
+          <a href="facilities.html">Facilities<i class="ti-angle-right"></i></a>
+          <a href="services.html">Services<i class="ti-angle-right"></i></a>
+          <a href="foodandbeverage.html">Dining<i class="ti-angle-right"></i></a>
+          <a href="gallery.html">Gallery<i class="ti-angle-right"></i></a>
+          <a href="contactus.html">Contact Us<i class="ti-angle-right"></i></a>
+          <a href="eventdetail.html">Events<i class="ti-angle-right"></i></a>
+          <a href="promotion.html">Promotions<i class="ti-angle-right"></i></a>
        </div>
        <div class="box">
           <h3>My Account</h3>
-          <a href="#">Log in<i class="ti-angle-right"></i></a>
-          <a href="#">Sign up<i class="ti-angle-right"></i></a>
+          <a href="signin.html">Log in<i class="ti-angle-right"></i></a>
+          <a href="signup.html">Sign up<i class="ti-angle-right"></i></a>
        </div>
      </section>
      <section>
        <div class="box">
           <i class="fas fa-envelope"></i>
           <h3>Email</h3>
-          <p>LaTimelessTresor@resort.com</p>
+          <p>LeTimelessTresor@resort.com</p>
        </div>
        <div class="box">
           <i class="fas fa-clock"></i>
@@ -256,6 +255,7 @@
     </div>
    </section>
 </footer>
+
 <!-- footer section ends -->
 
 </body>

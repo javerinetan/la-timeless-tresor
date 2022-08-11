@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="../resources/images/logo.png">
-  <title>Restaurant Reservation | La Timeless Trésor</title>
+  <title>Restaurant Reservation | Le Timeless Trésor</title>
   <link rel="stylesheet" href="../css/jae_forms.css">
   <link rel="stylesheet" href="../css/navbar.css">
   <link rel="stylesheet" href="../css/global.css">
@@ -138,23 +138,26 @@
           reservation shoudld there be a need. Any extra charges needed will be charged to you.
           Please do call us 7 days before any cancellation.
           Failure to cancel in advance will result in a fine. Children above 12 years old is consider and adult. If you have any enquries please call <a href="tel:+6588031454">+65 88031454</a></p>
-        <form action="../pages/Form_Breakfast.html" method="Post" name="Booking">
+        <form action="../pages/Booking_Breakfast.html" method="post" name="Booking">
           <div class="input-container"> <!--to put them in the same colum-->
             <p>Select Booking Date</p>
             <input class="input-style1" type="date" name="date" id="date" required>
             <div style="width:48%; float:left">
               <p>No. of Adult</p>
-              <input type="number" class="input-style1"  name="adult"  id="adult" placeholder="Adult:" min="1" max="5"  required >
+              <input type="number" class="input-style1"  name="adult"  id="adult" placeholder="Adult:" min="1" max="10"  required >
             </div>
             <div style="width:48%;float:right">
               <p>No. of Child</p>
-                <input type="number" class="input-style1" name="child"  id="child" placeholder="Children:" min="0" max="5" required>
+                <input type="number" class="input-style1" name="child"  id="child" placeholder="Children:" min="0" max="10" >
             </div>
           </div>
           <div class="input-container">
+            <p>Hotel Confirmation Number</p>
+            <input class="input-style1" type="text" name="" value="" maxlength="4" minlength="4" pattern=[A-Z\1-9\L]{1,2,1} required>
             <p>Choose Time Slot:</p>
             <select class="input-style1" name="time" required>
-              <<option value="6.00am">6.00am</option>
+              <option value="">time slot</option>
+              <option value="6.00am">6.00am</option>
               <option value="6.30am">6.30am</option>
               <option value="7.00am">7.00am</option>
               <option value="7.30am">7.30am</option>
@@ -165,8 +168,8 @@
               <option value="10.00am">10.00am</option>
             </select>
           </div>
-          <a href="../pages/Booking_Breakfast.html">
-            <button type="button" class="button-style2"  style="width: 48%;">Search<i class="ti-angle-right"></i></button>
+          <a href="../pages/Booking_Breakfast.html" style="display: inline-block;width: 100%;">
+            <button type="submit" class="button-style2"  style="width: 48%;">Search<i class="ti-angle-right"></i></button>
           </a>
         </form>
       </div>

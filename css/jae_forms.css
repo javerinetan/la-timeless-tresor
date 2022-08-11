@@ -9,6 +9,51 @@
   background-attachment: fixed;
 }
 
+.indoor-banner {
+  background-image: url("../resources/images/indoor.jpg");
+  top: 0;
+  left: 0;
+  height: 500px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.outdoor-banner {
+  background-image: url("../resources/images/outdoor.jpg");
+  top: 0;
+  left: 0;
+  height: 500px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.teatime-banner {
+  background-image: url("../resources/images/teatime.jpg");
+  top: 0;
+  left: 0;
+  height: 500px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.confirmation-banner {
+  background-image: url("../resources/images/_on.webp");
+  top: 0;
+  left: 0;
+  height: 500px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+
 .heading {
   color: white;
   position: relative;
@@ -45,11 +90,16 @@
 
 .form{ /**overall the form color and all being set **/
   background-color: #F5EFE8;
-  padding-top: 100px;
+  display: inline-block;
+  padding-top: 50px;
   padding-bottom: 100px;
   width: 100%;
 }
 
+.form .button-style2 {
+  width: 48%;
+  margin-top: 30px;
+}
 .form p{ /** for the ones that use p **/
   margin-bottom: 10px;
   color: darkgrey;
@@ -61,11 +111,16 @@
   margin-bottom:15px;
 }
 
+.form select{ /** the box being filed in **/
+  float: left;
+  width:100%;
+  margin-bottom:15px;
+}
+
 .form .input-container { /** this is so that the display will float left and setting the padding size for the form**/
   float: left;
   width: 50%;
   padding-right: 15px;
-  margin-bottom: 50px;
 }
 
 .form .wrapper { /** this is to make the form it 65% the width displayed**/
@@ -77,6 +132,10 @@
   margin-bottom: 15px;
 }
 
+.form textarea{
+   resize: none;
+   height: 50px;
+}
 
 /** recommendation section **/
 .recommends .container {  /** the area of the box to store this **/
@@ -108,7 +167,7 @@
     padding-right: 0px;
   }
   .form .button-style2 {
-    width: 80%;
+    margin-top: 30px;
   }
   .form .wrapper {
     width: 60%;

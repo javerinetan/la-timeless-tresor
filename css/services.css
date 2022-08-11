@@ -16,17 +16,21 @@ a {
     text-align: center;
   }
 
-  .main-bg {      /**imgae**/
+header {
+  height: 500px;
+}
+
+  .main-bg {
     background:linear-gradient(90deg, var(--white), transparent 0%), url('../resources/images/services.webp') no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    top: 0;
+    top: 10rem;
     left: 0;
-    height: 500px;
+    height: 83vh;
     width: 100%;
     z-index: -1;
     object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
   }
 
   .banner .container {
@@ -36,11 +40,11 @@ a {
   /**to make the image less bright**/
   .layer {
     background-color: black;
-    opacity: 0.3;
+    opacity: 0.5;
     position: absolute;
     top: 0;
     left: 0;
-    height: 500px;
+    height: 83vh;
     width: 100%;
   }
   /**heading fonts**/
@@ -166,7 +170,7 @@ a {
   background-attachment: fixed;
   top: 0;
   left: 0;
-  height: 500px;
+  height: 83vh;
   width: 100%;
   z-index: -1;
   object-fit: cover;

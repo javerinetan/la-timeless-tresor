@@ -13,3 +13,9 @@ function colorChange(){
     display.classList.remove("alt-color");
   }
 }
+
+function updateBooking(element) {
+  console.log(element.name);
+  console.log(element.id);
+  document.getElementById(element.name).innerHTML = document.getElementById(element.id).value;
+}

@@ -87,7 +87,7 @@
   float: left;
   width: 45%;
   padding: 50px;
-  text-align: center;
+  text-align: left;
 }
 
 
@@ -95,7 +95,7 @@
   float: right;
   width: 45%;
   padding: 50px;
-  text-align: center;
+  text-align: right;
 }
 /**content button**/
 .button1 {

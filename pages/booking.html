@@ -121,7 +121,7 @@
     </div>
     <div class="container">
       <div class="heading">
-        <p class="section-subheading">Le Timeless Tresor</p>
+        <p class="section-subheading">Le Timeless Trésor</p>
         <h1 class="title">Craft your experience</h1>
       </div>
     </div>
@@ -134,23 +134,23 @@
       <div style="display:inline-block; width:100%">
         <div>
           <p>Check in</p>
-          <span>-</span>
+          <span id="chkin-display">-</span>
         </div>
         <div>
           <p>Check out</p>
-          <span>-</span>
+          <span id="chkout-display">-</span>
         </div>
         <div>
           <p>Adult</p>
-          <span>-</span>
+          <span id="adult-display">-</span>
         </div>
         <div>
           <p>Child</p>
-          <span>-</span>
+          <span id="child-display">-</span>
         </div>
         <div>
           <p>Room Type</p>
-          <span>-</span>
+          <span id="room-display">-</span>
         </div>
       </div>
       <a class="button-style2" name="button">Proceed<i class="ti-angle-right"></i></a>
@@ -163,40 +163,40 @@
         <form action="index.html" method="post">
           <div class="input-container">
             <p>Check in date</p>
-            <input class="input-style1" type="date" name="" value="">
+            <input class="input-style1" type="date" name="chkin-display" value="-" id="chkin" onchange="updateBooking(this)">
             <div style="width:48%;float:left">
               <p>No. of Adult</p>
-              <select class="input-style1" name="adult">
-                <option value="">1</option>
-                <option value="">2</option>
-                <option value="">3</option>
-                <option value="">4</option>
-                <option value="">5</option>
+              <select class="input-style1" name="adult-display" id="adult" onchange="updateBooking(this)">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
               </select>
             </div>
             <div style="width:48%;float:right">
               <p>No. of Child</p>
-              <select class="input-style1" name="">
-                <option value="">0</option>
-                <option value="">1</option>
-                <option value="">2</option>
-                <option value="">3</option>
-                <option value="">4</option>
-                <option value="">5</option>
+              <select class="input-style1" name="child-display" id="child" onchange="updateBooking(this)">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
               </select>
             </div>
           </div>
           <div class="input-container">
             <p>Check out date</p>
-            <input class="input-style1" type="date" name="" value="">
+            <input class="input-style1" type="date" name="chkout-display" value="-" id="chkout" onchange="updateBooking(this)">
             <p>Room Type</p>
-            <select class="input-style1" name="Room">
-              <option value="">Room Type</option>
-              <option value="">Any</option>
-              <option value="">Junior Suite</option>
-              <option value="">Family Suite</option>
-              <option value="">Deluxe Suite</option>
-              <option value="">Executive Suite</option>
+            <select class="input-style1" name="room-display" id="room" onchange="updateBooking(this)">
+              <option value="-">Room Type</option>
+              <option value="Any">Any</option>
+              <option value="Junior Suite">Junior Suite</option>
+              <option value="Family Suite">Family Suite</option>
+              <option value="Deluxe Suite">Deluxe Suite</option>
+              <option value="Executive Suite">Executive Suite</option>
             </select>
           </div>
           <a href="#results" style="display: inline-block;width: 100%;margin-top: 20px;">
@@ -207,7 +207,8 @@
     </div>
     <div class="result container" id="results">
       <div class="wrapper">
-        <h1>Available Rooms (2)</h1>
+        <h2 class="section-title" style="font-size: 30px;">Available Rooms (2)</h2>
+        <hr class="horizontal-line">
         <div class="box reveal left">
           <div class="image">
             <img src="../resources/images/galleryimg3.jpg" alt="">
@@ -249,6 +250,80 @@
       </div>
     </div>
   </div>
+  <footer class="footer">
+     <div class="container">
+       <section>
+         <div class="box">
+            <img src="../resources/images/logov2_black.png">
+         </div>
+         <div class="box">
+            <p>Turquoise waters lap at white-sand shores. Towering palms rustle overhead. Welcome to Le Timeless Trésor.</p>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+         </div>
+         <div class="box newsletter">
+           <h3>Join Newsletter</h3>
+           <input type="text" placeholder="email">
+           <button><i class="fa-solid fa-arrow-right"></i></button>
+         </div>
+       </section>
+       <section>
+         <div class="box">
+            <h3>The Resort</h3>
+            <a href="abouts.html">Overview<i class="ti-angle-right"></i></a>
+            <a href="accommodations.html">Accomodations<i class="ti-angle-right"></i></a>
+            <a href="facilities.html">Facilities<i class="ti-angle-right"></i></a>
+            <a href="services.html">Services<i class="ti-angle-right"></i></a>
+            <a href="foodandbeverage.html">Dining<i class="ti-angle-right"></i></a>
+            <a href="gallery.html">Gallery<i class="ti-angle-right"></i></a>
+            <a href="contactus.html">Contact Us<i class="ti-angle-right"></i></a>
+            <a href="eventdetail.html">Events<i class="ti-angle-right"></i></a>
+            <a href="promotion.html">Promotions<i class="ti-angle-right"></i></a>
+         </div>
+         <div class="box">
+            <h3>My Account</h3>
+            <a href="signin.html">Log in<i class="ti-angle-right"></i></a>
+            <a href="signup.html">Sign up<i class="ti-angle-right"></i></a>
+         </div>
+       </section>
+       <section>
+         <div class="box">
+            <i class="fas fa-envelope"></i>
+            <h3>Email</h3>
+            <p>LeTimelessTresor@resort.com</p>
+         </div>
+         <div class="box">
+            <i class="fas fa-clock"></i>
+            <h3>Hotline Hours</h3>
+            <p>08:00am to 08:00pm</p>
+         </div>
+         <div class="box">
+            <i class="fas fa-map-marker-alt"></i>
+            <h3>Location</h3>
+            <p>La Baie Classique, Singapore</p>
+         </div>
+         <div class="box">
+            <i class="fas fa-phone"></i>
+            <h3>Contact</h3>
+            <p>+65-9999</p>
+         </div>
+       </section>
+       <hr>
+     </div>
+     <section style="width:100%; background-color: #222">
+      <div class="container" style="padding: 10px;">
+        <div class="tc">
+          <a href="#">Terms & Conditions</a> |
+          <a href="#">Privacy Policy</a>
+        </div>
+        <div style="width:100%; padding: 20px; text-align: center">
+          <p>Copyright 2022 &copy; Le Timeless Tresor | All right reserved.</p>
+        </div>
+      </div>
+     </section>
+  </footer>
+
   <script src="../js/booking.js" type="text/javascript"></script>
   <script src="../js/main.js" type="text/javascript"></script>
 </body>

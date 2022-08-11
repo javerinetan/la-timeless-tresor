@@ -84,35 +84,54 @@
 
       <script type="text/javascript" src="../js/nav.js"></script>
     </nav>
-    <div class="main-bg">
+<!-- header section ends -->
+<!---Welcome page-->
+<div class="main-bg">
 
-       <section class="main">
+   <section class="main">
 
-          <div class="content">
-               <h3> Restaurant Reservation Booking  </h3>
-               <p>Please read the terms and condition before booking. No refunds will be given.</p>
-          </div>
+      <div class="content">
+           <h3> Restaurant Reservation Booking  </h3>
+           <p>Please read the terms and condition before booking. No refunds will be given.</p>
+      </div>
 
-       </section>
+   </section>
 
-    </div>
+</div>
+
 
 <!-- forms section starts -->
- <section class="form" >
-   <div class="image">
-      <img src="../resources/images/teatime.jpg" alt="">
+<section class="form" >
 
-       </div>
-       <div class="content">
-         <form action="" method="POST">
-            <h3>Reservation for Tea Time</h3>
-            <p>an email has been sent to you. If you want to change the booking please call the Le Meilleur Resto. </p>
-          <a href="reservation.html" class="btn1" >Reservation Page<i class="ti-angle-right"></i></a>
-          <a href="#index.html" class="btn2"  >Home  Page<i class="ti-angle-right"></i></a>
-      </div>
+   <div class="image">
+
+      <img src="../resources/images/bf.png" alt="">
+
+   </div>
+
+   <div class="content">
+
+     <form action="breakfast3.html" method="POST">
+
+        <h3>Reservation for Breakfast</h3>
+        <label for="text">Name:</label>
+        <input type="text" name="name" required class="box" maxlength="20" placeholder="enter your name">
+        <label for="tel">Phone Number:</label>
+        <input type="tel" name="phone" required class="box" maxlength="8" placeholder="enter your phone number" min="80000000" max="9999999999" onkeypress="if(this.value.length == 8) return false">
+        <label for="email">Email:</label>
+        <input type="email" name="email"required class="box" maxlengt required class="box" maxlength="50" placeholder="enter your email">
+
+        <button onclick="myFunction()" name="send" value="send message" class="btn"  id="Nextbtn">Submit</button>
+
+
+
+
+
+  </div>
 </section>
 
 
+<!-- forms section end -->
 
 <!-- footer section starts -->
 <footer class="footer">
