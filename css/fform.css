@@ -89,7 +89,7 @@
 .heading {   /**heading space and position **/
   color: white;
   position: relative;
-  top: 315px;
+  top: 250px;
   text-align: center;
 }
 
@@ -103,6 +103,11 @@
   top: 250px;
   text-align: center !important;
   margin:auto;
+}
+
+.heading p{
+  font-size: 20px;
+  margin-bottom: 10px
 }
 
 .horizontal-line{

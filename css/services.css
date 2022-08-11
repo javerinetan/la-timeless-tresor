@@ -21,7 +21,7 @@ header {
 }
 
   .main-bg {
-    background:linear-gradient(90deg, var(--white), transparent 0%), url('../resources/images/services.webp') no-repeat;
+    background:linear-gradient(90deg, var(--white), transparent 0%), url('../resources/images/services.jpg') no-repeat;
     top: 10rem;
     left: 0;
     height: 83vh;
@@ -51,7 +51,7 @@ header {
   .heading {   /**heading space and position **/
     color: white;
     position: relative;
-    top: 315px;
+    top: 250px;
     text-align: center;
   }
 
@@ -64,6 +64,11 @@ header {
     text-transform: uppercase;
     letter-spacing: 8px;
     top: 250px;
+  }
+
+  .heading p{
+    font-size: 20px;
+    margin-bottom: 10px
   }
 
   .about{
