@@ -123,23 +123,42 @@
     <div class="layer">
     </div>
 
-    <div id="toppicture">
-    <img src="../resources/images/contact.jpg" alt="Board">
-    </div>
+<!--- Top Picture-->
+<header class='banner' onclick="dismissBookingForm()">
 
-<!--- Words in the picture --->
-<h1 id="WordsInPicture">Contact Us</h1>
+
+  <!--- Words in the picture --->
+
+  <div class="container">
+    <div class="heading">
+      <p class="section-subheading">Le Timeless Trésor</p>
+      <h1 class="title">contact us</h1>
+    </div>
+  </div>
+</header>
 
 
 
 <!---#contact us button--->
 <div class="ContactUs">
-<h1>Contact Us</h1>
   <h2>Is there anything else that you want to know? <br>
     We're always here to help!</h2>
-  <div id='HumBot'>
-     <h3><span id="Bot"><img src="../resources/images/jetstreamsam.png" alt="Bot">Bot Service</span> or <span id="Human"><img src="../resources/images/jetstreamsam.png" alt="Human">Human Service</span></h3>
+
+    <!---Form--->
+    <form action="action_page.php">
+    <div class="container-form">
+    <p>Send us feedback.</p>
+
+    <input type="text" placeholder="Full Name" name="fullname" required>
+
+    <input type="text" placeholder="Email" name="email" required>
+
+    <textarea name="message" placeholder="Message" rows="8" cols="80" required></textarea>
+
+      <button type="submit">Submit</button>
+    </div>
   </div>
+    </form>
 
 <!---image of the map--->
 <div class="map">
@@ -148,7 +167,10 @@
 </div>
 
 
-<!---Form for Human Service--->
+
+
+
+<!---Footer-->
 <footer class="footer">
    <div class="container">
      <section>
