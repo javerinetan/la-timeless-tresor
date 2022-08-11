@@ -48,6 +48,11 @@
   width: 100%;
 }
 
+.section1 {
+  background-color: #F5EFE8;
+  display: inline-block;
+}
+
 .section1 .container {
   display: inline-block;
   margin-top: 100px;
@@ -61,11 +66,11 @@
 }
 
 .section1 aside {
-  text-align: center;
+  text-align: right;
 }
 
 .section1 aside img {
-  width: 500px;
+  width: 350px;
 }
 
 /*h1, p*/
@@ -102,14 +107,10 @@ p{
   text-align: center;
 }
 
-
-
 /*Cart*/
 .dropdown-cart:hover .dropdown-content-cart {
   display: block;
 }
-
-
 
 .dropdown-cart .dropbtn-cart {
   font-size: 13px;
@@ -164,6 +165,10 @@ p{
   display: block;
 }
 
+.section2 {
+  margin-top: 100px;
+}
+
 @keyframes fade {
   0% {
     opacity: 0;
@@ -194,61 +199,43 @@ p{
 
 .Menu{ /*Main Table*/
   display:table;
-  width: 95%;
-  border: 10px solid #AA8453;
-  border-radius: 30px;
-  padding: 50px 100px 100px 10px;
-  margin:50px;
+  width: 100%;
+  margin-bottom: 100px;
 }
 
 /*Menu Left*/
 .Menu .Left { /*Left Side Table*/
   display:table;
-  border: 10px;
-  border-style: inset;
-  border-color: #BB9C75;
-  border-radius: 30px;
-  margin-left: 50px;
-  padding: 5px;
+  float: left;
+  width: 30%;
+  padding-right: 30px;
 }
 
-.Menu .Left #MainCourse li{ /*Main Course Block in Table*/
+.Menu .Left .Course li { /*Dish Type Blocks in Table*/
   display: block;
-  width: 200px;
-  height: 50px;
-  padding: 5px;
-  margin: 10px 10px 8px;
-  border-radius: 30px 15px;
-  background-color: #F8F5F0;
-  text-align: center;
-  cursor: default;
-}
-
-
-
-.Menu .Left .Course li{ /*Dish Type Blocks in Table*/
-  display: block;
-  width: 100px;
-  height: 30px;
-  padding: 5px;
-  margin: 5px 10px;
-  border-radius: 15px 30px;
+  min-width: 50%;
+  padding: 10px;
+  margin: 10px 0px;
   background-color: #F8F5F0;
   text-align: center;
   cursor: pointer;
+  border-bottom: 4px transparent solid;
+  transition: all 0.3s ease-in-out;
 }
 
-.Menu .Left .Course li:hover{ /*Hover over types of food*/
+.Menu .Left .Course li.selected {
+  border-bottom: 4px #c4ac80 solid;
+}
+
+.Menu .Left .Course li:hover { /*Hover over types of food*/
   background-color: #F5EFE8;
   font-weight: bold;
+  border-bottom: 4px #c4ac80 solid;
 }
 
 /*Menu Images*/
 .Menu img{
   width: 100%;
-  height:300px;
-  margin-bottom: -5px;
-  border-radius: 25px;
 }
 
 /*DropDown*/
@@ -264,7 +251,6 @@ p{
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   padding: 5px 20px;
   z-index: 1;
-  border: 10px solid #F5EFE8;
   width: 100%;
   height: auto;
   overflow: visible;
@@ -306,21 +292,18 @@ p{
 /*Menu Center*/
 .Menu .Center{ /*Center Food*/
   display: table-cell;
-  width: 70%;
+  width: 100%;
   text-align: center;
-
+  float: left;
+  width: 70%;
 }
 
 .Menu .Center li{ /*Blocks for the Food*/
   display: block;
-  width: 400px;
-  height: 400px;
-  padding: auto;
-  margin: 30px auto;
-  border: 10px solid #F8F5F0;
-  border-style: dotted;
-  border-radius: 25px;
-  background-color: #F5EFE8;
+  width: 50%;
+  float: left;
+  padding: 0px 10px;
+  padding-bottom: 30px;
 }
 
 /*Menu Right*/
@@ -343,23 +326,76 @@ text-align: center;
 }
 
 /*Testimony*/
-.Testimonies{ /*Table for Testimony*/
-  display: table;
-  height: auto;
-  width: 100%;
-  border: 5px solid #AA8453;
-}
-
-.Testimonies img{ /*Image*/
-  float: left;
+.section8 {
+  background-image: url('../resources/images/club-sandwich.jpg');
   height: 400px;
-  width: 400px;
-  padding: 50px;
-
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
-.Testimonies p{ /*Text*/
-  text-align: left;
-  margin-left: 350px;
-  margin-top: 125px;;
+.section8 .container {
+  position: relative;
+  bottom: 300px;
+}
+
+.section8 .layer {
+  position: static;
+  height: 400px;
+}
+
+.section8 .section-title{
+  color: white;
+}
+
+.section8 .section-sub-title {
+  width: 60%;
+}
+
+.review-carousel .carousel-cell {
+  width: 100%;
+  height: 150px;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 900px) {
+  .Menu .Left {
+    width: 100%;
+    text-align: center;
+  }
+  .Menu .Center {
+    width: 100%;
+  }
+  .Course li {
+    width: 25%;
+    float: left;
+  }
+  .Menu .Left .Course li {
+    margin: 5px 0px;
+  }
+  .Menu .Left {
+    padding: 0;
+  }
+  .Left {
+    margin-bottom: 20px;
+  }
+
+  .Menu .Center li {
+    padding: 0px 20px;
+    padding-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .section1 aside img {
+    width: 100%;
+  }
+  .section1 aside, .section1 article{
+    width: 100%;
+  }
+  .section1 article {
+    text-align: center;
+    margin-bottom: 20px;
+  }
 }
