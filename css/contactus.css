@@ -3,19 +3,19 @@
   padding: 0px;
 }
 
-/*TopPicture*/
+/TopPicture/
 .banner{
-  background-image: url("../resources/images/contact.jpg");
+  background-image: url("../resources/images/desk2.jpg");
   top: 0;
   left: 0;
-  height: 500px;
+  height: 83vh;
   width: 100%;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
 }
 
-/*Words in the Picture*/
+/Words in the Picture/
 .heading {
   color: white;
   position: relative;
@@ -40,86 +40,41 @@
   margin-bottom: 10px;
 }
 
-
-
-
-
-/*typology*/
-h1{
-  font-family: 'LibreBodoni-Regular', serif;
-  font-size: 100px;
-  font-weight: lighter;
-  text-transform: uppercase;
-  letter-spacing: 8px;
-
-
+.layer {
+  background-color: black;
+  opacity: 0.55;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 83vh;
+  width: 100%;
 }
 
-h3{
-  font-family: 'LibreBodoni-Regular', serif;
-  color: #BB9C75;
-
-
-}
-
-/*Contact Us*/
-.ContactUs{ /*How large the page is*/
+/Contact Us/
+.ContactUs{ /How large the page is/
   margin-bottom: 250px;
 }
 
-
-.ContactUs h2{
-  position: relative;
-  margin-top: 160px;
-  margin-left: 60px;
-  font-size: 20px;
-}
-
-
-/*Form*/
-.container-form p{
-  margin-bottom: 20px;
-}
-
-.container-form{
-  background-color:#F8F5F0;
-  margin-top: 40px;
-  margin-left: 50px;
-  width: 60%;
-
-}
 /* Full-width input fields */
-  input[type=text], textarea{
-  width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  display: inline-block;
-  border: none;
-  background: white;
-}
 
-
-/* Set a style for all buttons */
-button {
-  background-color: #BB9C75;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  margin-left: 15%;
-  border: none;
-  cursor: pointer;
-  width: 70%;
-  opacity: 0.9;
-}
-
-button:hover {
-  opacity:1;
-}
 
 
 /* Add padding to container elements */
-.container-form {
-  padding: 16px;
+.contactus .form {
+  float: right;
+  background-color: #F8F5F0;
+  width: 53%;
+  display: inline-block;
+}
+
+.form .wrapper {
+  margin: 100px 0px;
+  padding: 0px 60px;
+}
+
+.form .button-style1 {
+  text-align: center;
+  margin-top: 45px;
 }
 
 /* Removes resize for text area */
@@ -127,19 +82,14 @@ textarea {
   resize: none;
 }
 
-/*Map*/
+/Map/
 .map{
-  display: block;
+  display: inline-block;
   position: absolute;
-  margin-left: 65%;
-  top: 70%;
-
-
-
+  width:40%
 }
 
 
 .map iframe{
-  width: 550px;
-  height: 800px;
+  height: 692px;
 }
