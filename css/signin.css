@@ -106,7 +106,6 @@ form{
   font-size: 15px !important;
 }
 
-/*Animation*/
 @media screen and (max-width: 1200px) {
   .section1 aside img {
     width: 350px;
@@ -187,6 +186,7 @@ form{
   }
 }
 
+/*Animation*/
 @keyframes title-slide {
   0% {
     opacity: 0.8;
