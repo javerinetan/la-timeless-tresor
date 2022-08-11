@@ -180,6 +180,11 @@
   }
   .boxes {
     width: 100%;
+    padding:10px 0;
+  }
+  .boxes p{
+    margin:0 10px ;
+  }
   }
 
 
