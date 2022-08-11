@@ -64,20 +64,13 @@ h3{
 
 /*Contact Us*/
 .ContactUs{ /*How large the page is*/
-  margin-bottom: 1500px;
+  margin-bottom: 1100px;
 }
 
-.ContactUs h1{
-  position: relative;
-  margin-top: 50px;
-  margin-left: 50px;
-
-
-}
 
 .ContactUs h2{
-  position: absolute;
-  margin-top: -10px;
+  position: relative;
+  margin-top: 100px;
   margin-left: 60px;
   font-size: 20px;
 }
@@ -95,7 +88,7 @@ h3{
   display: block;
   position: absolute;
   margin-left: 65%;
-  top: 75%;
+  top: 70%;
 
 
 
@@ -103,7 +96,6 @@ h3{
 .map{
   background-color: #BB9C75;
   border: 10px dashed #AA8453;
-  border-radius: 40px;
 
 }
 
@@ -113,5 +105,4 @@ h3{
   width: 550px;
   height: 800px;
   border: 10px dashed #AA8453;
-  border-radius: 40px;
 }
