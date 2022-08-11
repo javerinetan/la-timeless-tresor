@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../resources/images/logo.png">
+    <title>Terms & Conditions | Le Timeless Trésor</title>
+    <link rel="stylesheet" href="../css/tc.css">
+
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  </head>
+  <body>
+    <nav class="topnav" id="myTopnav">
+        <div class="container">
+          <a href="../index.html" style="padding:0; display:inline">
+            <img src="../resources/images/logov2_white.png" alt="Logo" class="nav-logo" id="navLogo">
+          </a>
+          <a href="javascript:void(0);" style="font-size:18px;margin-top: 10px;" class="icon" onclick="displayNav()">&#9776;</a>
+          <div class="nav-items">
+            <div class="dropdown">
+              <button class="dropbtn">The Resort
+                <i class="ti-angle-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="abouts.html">About Us<i class="ti-angle-right"></i></a>
+                <a href="accommodations.html">Accomodations<i class="ti-angle-right"></i></a>
+                <a href="facilities.html">Facilities<i class="ti-angle-right"></i></a>
+                <a href="services.html">Services<i class="ti-angle-right"></i></a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">Dining
+                <i class="ti-angle-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="foodandbeverage.html">The Restaurant<i class="ti-angle-right"></i></a>
+                <a href="restaurant_reservation.html">Reservation<i class="ti-angle-right"></i></a>
+                <a href="onlineordering.html">Ordering<i class="ti-angle-right"></i></a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">Events & Promotions
+                <i class="ti-angle-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="events.html">Events<i class="ti-angle-right"></i></a>
+                <a href="eventreservation.html">Events Reservation<i class="ti-angle-right"></i></a>
+                <a href="promotion.html">Promotions<i class="ti-angle-right"></i></a>
+              </div>
+            </div>
+            <div class="dropdown">
+             <button class="dropbtn">Gallery
+               <i class="ti-angle-down"></i>
+             </button>
+             <div class="dropdown-content">
+               <a href="gallery.html">Overview<i class="ti-angle-right"></i></a>
+               <a href="gallery360.html">360° Photos<i class="ti-angle-right"></i></a>
+             </div>
+           </div>
+            <a href="contactus.html">Contact</a>
+            <a href="booking.html" class="active">Book Now</a>
+            <div class="dropdown">
+              <button class="dropbtn"><img src="../resources/images/user_white.png" alt="account" id="account" width="18px">
+                <i class="ti-angle-down"></i>
+              </button>
+              <div class="dropdown-content" style="min-width:120px">
+                <a href="signin.html">Sign In<i class="ti-angle-right"></i></a>
+                <a href="signup.html">Sign Up<i class="ti-angle-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="scroll-indicator" id="indicator" onclick="scrollAction()">
+          <i class="ti-angle-down"></i>
+        </div>
+        <div class="book-btn" id="sideBtn" onclick="displayBookingForm()">
+          <p class="book-arrow"><i class="ti-angle-up"></i></p>
+          <p class="book-title">Book Now</p>
+        </div>
+        <div class="book-form" id="bookForm">
+          <h4>Le Timeless Trésor</h4>
+          <h2>Check Availability</h2>
+          <input class="chk-in input-style1" type="text" placeholder="Check in" onfocus="(this.type='date')" onblur="(this.type='text')">
+          <input class="chk-out input-style1" type="text" placeholder="Check out" onfocus="(this.type='date')" onblur="(this.type='text')">
+          <select class="room input-style2" name="adult">
+            <option value="">Room Type</option>
+            <option value="Junior Room">Junior Room</option>
+            <option value="Double Room">Double Room</option>
+            <option value="Family Suite">Family Suite</option>
+            <option value="Deluxe Suite">Deluxe Suite</option>
+          </select>
+          <div class="form-container" style="padding: 0px 7.5px 0px 0px">
+            <select class="adult input-style2" name="adult">
+              <option value="">Adult</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+          <div class="form-container" style="padding: 0px 0px 0px 7.5px">
+            <select class="child input-style2" name="">
+              <option value="">Child</option>
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+          <a href="../pages/booking.html" style="display:block;width:100%;padding:0"><button class="button-style1">Check Availability<i class="ti-angle-right"></i></button></a>
+        </div>
+        <script type="text/javascript" src="../js/nav.js"></script>
+    </nav>
+    <header class="banner" onclick="dismissBookingForm()">
+        <div class="layer">
+        </div>
+        <div class="container">
+          <div class="heading">
+            <p class="section-subheading">Le Timeless Trésor</p>
+            <h1 class="title">Terms & Conditions</h1>
+          </div>
+        </div>
+    </header>
+    <section class="container" style="padding-top: 100px;padding-bottom: 100px;">
+      <h3>DO NOT CONTINUE TO USE OUR WEBSITE IF YOU DO NOT ACCEPT THE TERMS OF THIS PRIVACY POLICY.</h3><br>
+
+      <h3>PERSONAL INFORMATION</h3>
+      At Le Timeless Trésor, we understand the importance of privacy and are committed to implementing standards for the protection of Personal Information (defined below). In this policy, “Le Timeless Trésor ” means any and all affiliated and/or subsidiary companies, as they may exist from time to time. The words ‘Le Timeless Trésor ’, ‘Le Timeless Trésor ’, ‘we’, or ‘us’ do not include third party hotel owners or third parties involved in the delivery of services. However, we have requested such hotel owners and third party suppliers to adhere to the terms of our Privacy Policy.
+
+      Le Timeless Trésor  will not collect any personally-identifiable information about its visitors and guests (e.g., your name, address, telephone number, or email address) (“Personal Information”) through our websites unless it has been provided to us voluntarily. You may provide us with your Personal Information by making a reservation, by using our services, by providing it to us in communications such as comment cards and surveys, or by participating in a marketing initiative. From time to time, Le Timeless Trésor  offers packages or other services that involve third parties. If you are participating in these packages or services, your Personal Information will be shared with that third party to the extent necessary to provide the service and/or process the purchase or request. We may use the information you provide to send you offers and information about Le Timeless Trésor . If you do not wish to receive such offers and information, you may unsubscribe at any time by following instructions provided in each marketing message.
+
+      Le Timeless Trésor  may manage hotels or resorts for third party owners. Your Personal Information is shared with those third party owners of the property where you intend to stay to the extent necessary for them to process the transaction. All hotels and resorts that are managed by Le Timeless Trésor  are required to agree to abide by the terms of this Privacy Policy.
+      <br><br>
+      <h3>ADDITIONAL INFORMATION COLLECTED AUTOMATICALLY</h3>
+      Le Timeless Trésor  uses “cookies” on our websites, which are pieces of information that an Internet site transfers to a visitor’s hard drive for record-keeping purposes. The use of cookies is an industry standard and they are found almost everywhere on the Internet. We may evaluate content and services and tailor our websites based on other information it collects, such as IP addresses (numbers assigned to a computer whenever the Internet is used), pixel tags, and the type of Internet browser or operating system that is being used. This information is collected in the aggregate, but it may be linked it to Personal Information through cookie use as described above. With most Internet browsers, you can erase cookies from your computer hard drive, block all cookies, or receive a warning before a cookie is stored. Please refer to your browser instructions or help screen to learn more about these functions.
+      <br><br>
+      <h3>WHY COLLECT PERSONAL INFORMATION</h3>
+      Le Timeless Trésor  collects Personal Information for a variety of reasons, including to establish and maintain a responsible business relationship with our visitors and guests, to better understand the needs of our visitors and guests in order to provide better service, to develop and improve products and services for our visitors and guests, and to adhere to legal and regulatory requirements.
+      <br><br>
+      <h3>DATA SECURITY</h3>
+      Le Timeless Trésor  uses safeguards and technology that acts in accordance with applicable laws and industry standards to guard Personal Information against loss, destruction, misuse, improper disclosure, and unauthorized access or modification. These safeguards are routinely tested internally and periodically audited by Le Timeless Trésor ’s IT Department. We make all reasonable efforts to ensure that Personal Information we collect is not altered in any way, or reprocessed in a way that makes it incompatible with the purpose for which it was originally collected.
+      <br><br>
+      <h3>USE</h3>
+      Our website is managed and operated from the United States in accordance with laws of the United States. Any visitors to our website should be aware that the laws of the U.S. may differ from those of your country of residence. If you are located outside of the U.S., the use of this website is at your own risk and you are responsible for compliance with any applicable laws. By using our website and/or providing us with your Personal Information, you consent to the transfers and processing of any Personal Information that you provide and understand that our website will handle your Personal Information in accordance with this Privacy Policy and U.S. law. Consequently, you hereby waive any claims that may arise under the laws and regulations that apply to you in any other country or jurisdiction.
+      <br><br>
+      <h3>GENERAL DATA PROTECTION REGULATION</h3>
+      On May 25, 2018, the General Data Protection Regulation (“GDPR”) began enforcement in the European Economic Area (EEA), the United Kingdom and Switzerland. The GDPR is a new data privacy regulation that applies to organizations that process personal data of EEA, UK and Swiss residents (“Data Subjects”), regardless of where those organizations are located. The law is the most significant change in data privacy regulation in the past 20 years, and Le Timeless Trésor  has been working to prepare for its implementation.
+      <br>
+      What are the key GDPR requirements and what is Le Timeless Trésor  doing to comply?
+      Obtain Opt-In Consent to Send Marketing Communications: GDPR requires that entities obtain consent from EEA, UK and Swiss Data Subjects before sending them marketing communications. Le Timeless Trésor  has updated its method of data capture process to obtain consent from website visitors from countries other than the U.S.
+      <br>
+      Respond to GDPR Data Subject Rights Requests: GDPR grants certain rights to residents of the EEA, UK and Switzerland, including the right to access the data entities have about that Data Subject, the right to correct errors in the data, and the right to request that entities delete certain data. The entity responsible for responding to Data Subject rights requests is the entity that acts as a “Data Controller,” meaning the entity that determines how and why personal data is processed. Le Timeless Trésor  has updated its Brand Standard Privacy Policy information to clarify when Le Timeless Trésor  corporate, owned and managed properties, and franchised properties each act as a Data Controller and, therefore, have certain obligations pursuant to GDPR. You may email Le Timeless Trésor  at GDPR@noblehousehotels.com to submit these requests.
+      <br><br>
+      By using our website you signify your consent and acceptance of this Privacy Policy. Our Privacy Policy is subject to change from time to time.
+    </section>
+    <footer class="footer">
+       <div class="container">
+         <section>
+           <div class="box">
+              <img src="../resources/images/logov2_black.png">
+           </div>
+           <div class="box">
+              <p>Turquoise waters lap at white-sand shores. Towering palms rustle overhead. Welcome to Le Timeless Trésor.</p>
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-instagram"></i>
+           </div>
+           <div class="box newsletter">
+             <h3>Join Newsletter</h3>
+             <input type="text" placeholder="email">
+             <button><i class="fa-solid fa-arrow-right"></i></button>
+           </div>
+         </section>
+         <section>
+           <div class="box">
+              <h3>The Resort</h3>
+              <a href="abouts.html">Overview<i class="ti-angle-right"></i></a>
+              <a href="accommodations.html">Accomodations<i class="ti-angle-right"></i></a>
+              <a href="facilities.html">Facilities<i class="ti-angle-right"></i></a>
+              <a href="services.html">Services<i class="ti-angle-right"></i></a>
+              <a href="foodandbeverage.html">Dining<i class="ti-angle-right"></i></a>
+              <a href="gallery.html">Gallery<i class="ti-angle-right"></i></a>
+              <a href="contactus.html">Contact Us<i class="ti-angle-right"></i></a>
+              <a href="eventdetail.html">Events<i class="ti-angle-right"></i></a>
+              <a href="promotion.html">Promotions<i class="ti-angle-right"></i></a>
+           </div>
+           <div class="box">
+              <h3>My Account</h3>
+              <a href="signin.html">Log in<i class="ti-angle-right"></i></a>
+              <a href="signup.html">Sign up<i class="ti-angle-right"></i></a>
+           </div>
+         </section>
+         <section>
+           <div class="box">
+              <i class="fas fa-envelope"></i>
+              <h3>Email</h3>
+              <p>LeTimelessTresor@resort.com</p>
+           </div>
+           <div class="box">
+              <i class="fas fa-clock"></i>
+              <h3>Hotline Hours</h3>
+              <p>08:00am to 08:00pm</p>
+           </div>
+           <div class="box">
+              <i class="fas fa-map-marker-alt"></i>
+              <h3>Location</h3>
+              <p>La Baie Classique, Singapore</p>
+           </div>
+           <div class="box">
+              <i class="fas fa-phone"></i>
+              <h3>Contact</h3>
+              <p>+65-9999</p>
+           </div>
+         </section>
+         <hr>
+       </div>
+       <section style="width:100%; background-color: #222">
+        <div class="container" style="padding: 10px;">
+          <div class="tc">
+            <a href="#">Terms & Conditions</a> |
+            <a href="#">Privacy Policy</a>
+          </div>
+          <div style="width:100%; padding: 20px; text-align: center">
+            <p>Copyright 2022 &copy; Le Timeless Tresor | All right reserved.</p>
+          </div>
+        </div>
+       </section>
+    </footer>
+  </body>
+</html>
