@@ -107,9 +107,12 @@
 /**content subtitle**/
 .subtitle {
     color: darkgray;
-    margin-bottom: 20px;
-    padding: 0 40px;
-  }
+    margin-bottom: 30px;
+}
+
+.intro .subtitle{
+      padding:0 40px;
+}
 /*line to seperate tittle and content**/
 .line {
   width: 40%;

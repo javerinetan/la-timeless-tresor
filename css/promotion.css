@@ -55,6 +55,11 @@
     margin-bottom: 20px;
     padding:0 40px;
 }
+
+/*so to give abit of white spae */
+.boxes article{
+  padding:0 10px;
+}
 /**content image**/
 .section .right img {
   float: left; /* this so so the image will be on the left while the text is on the right*/
@@ -163,7 +168,7 @@
     .section5 .right img {
       height: 40rem;
     }
-    
+
   }
 
 @media screen and (max-width: 600px) {
