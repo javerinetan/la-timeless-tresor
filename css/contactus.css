@@ -64,29 +64,29 @@ h3{
 
 /*Contact Us*/
 .ContactUs{ /*How large the page is*/
-  margin-bottom: 1100px;
+  margin-bottom: 250px;
 }
 
 
 .ContactUs h2{
   position: relative;
-  margin-top: 100px;
+  margin-top: 160px;
   margin-left: 60px;
   font-size: 20px;
 }
 
 
 /*Form*/
-.container-form h1{
+.container-form p{
   margin-bottom: 20px;
 }
 
 .container-form{
   background-color:#F8F5F0;
-  margin-top: 50px;
+  margin-top: 40px;
   margin-left: 50px;
   width: 60%;
-  
+
 }
 /* Full-width input fields */
   input[type=text], textarea{
@@ -98,10 +98,6 @@ h3{
   background: white;
 }
 
-input[type=text]:focus,textarea:focus{
-  background-color: #f1f1f1;
-  outline: none;
-}
 
 /* Set a style for all buttons */
 button {
@@ -109,9 +105,10 @@ button {
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
+  margin-left: 15%;
   border: none;
   cursor: pointer;
-  width: 100%;
+  width: 70%;
   opacity: 0.9;
 }
 
@@ -140,16 +137,9 @@ textarea {
 
 
 }
-.map{
-  background-color: #BB9C75;
-  border: 10px dashed #AA8453;
-
-}
 
 
 .map iframe{
-  background-color: #BB9C75;
   width: 550px;
   height: 800px;
-  border: 10px dashed #AA8453;
 }
