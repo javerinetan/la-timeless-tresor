@@ -68,21 +68,22 @@
   height: 1px;
   display: inline-block;
   background-color: #aa8453;
-  margin: 20px 0px;
+  margin: 30px 0px;
 }
 /* Create two equal columns that floats next to each other */
 .column-l {
   float: left;
-  width: 50%;
+  width: 48%;
 }
 .column-r {
-  float: left;
-  width: 50%;
-  margin-left: 200px;
+  float: right;
+  width: 48%;
+
 }
 .row{
   margin: 0 50px;
 }
+
 /* Clear floats after the columns */
 .row:after {
   content: "";
