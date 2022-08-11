@@ -13,109 +13,109 @@
   </head>
   <body>
     <nav class="topnav" id="myTopnav">
-      <div class="container">
-        <a href="../index.html" style="padding:0; display:inline">
-          <img src="../resources/images/logov2_white.png" alt="Logo" class="nav-logo" id="navLogo">
-        </a>
-        <a href="javascript:void(0);" style="font-size:18px;margin-top: 10px;" class="icon" onclick="displayNav();dismissBookingForm()">&#9776;</a>
-        <div class="nav-items">
-          <div class="dropdown">
-            <button class="dropbtn">The Resort
-              <i class="ti-angle-down"></i>
-            </button>
-            <div class="dropdown-content">
-              <a href="../index.html">Overview<i class="ti-angle-right"></i></a>
-              <a href="../pages/accommodations.html">Accomodations<i class="ti-angle-right"></i></a>
-              <a href="../pages/facilities.html">Facilities<i class="ti-angle-right"></i></a>
-              <a href="../pages/services.html">Services<i class="ti-angle-right"></i></a>
+        <div class="container">
+          <a href="../index.html" style="padding:0; display:inline">
+            <img src="../resources/images/logov2_white.png" alt="Logo" class="nav-logo" id="navLogo">
+          </a>
+          <a href="javascript:void(0);" style="font-size:18px;margin-top: 10px;" class="icon" onclick="displayNav()">&#9776;</a>
+          <div class="nav-items">
+            <div class="dropdown">
+              <button class="dropbtn">The Resort
+                <i class="ti-angle-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="abouts.html">About Us<i class="ti-angle-right"></i></a>
+                <a href="accommodations.html">Accomodations<i class="ti-angle-right"></i></a>
+                <a href="facilities.html">Facilities<i class="ti-angle-right"></i></a>
+                <a href="services.html">Services<i class="ti-angle-right"></i></a>
+              </div>
             </div>
-          </div>
-          <div class="dropdown">
-            <button class="dropbtn">Dining
-              <i class="ti-angle-down"></i>
-            </button>
-            <div class="dropdown-content">
-              <a href="../pages/">The Restaurant<i class="ti-angle-right"></i></a>
-              <a href="../pages/restaurant_reservation.html">Reservation<i class="ti-angle-right"></i></a>
-              <a href="#">Ordering<i class="ti-angle-right"></i></a>
+            <div class="dropdown">
+              <button class="dropbtn">Dining
+                <i class="ti-angle-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="foodandbeverage.html">The Restaurant<i class="ti-angle-right"></i></a>
+                <a href="restaurant_reservation.html">Reservation<i class="ti-angle-right"></i></a>
+                <a href="onlineordering.html">Ordering<i class="ti-angle-right"></i></a>
+              </div>
             </div>
-          </div>
-          <div class="dropdown">
-            <button class="dropbtn">Events & Promotions
-              <i class="ti-angle-down"></i>
-            </button>
-            <div class="dropdown-content">
-              <a href="../pages/events.html">Events<i class="ti-angle-right"></i></a>
-              <a href="../pages/promotion.html">Promotions<i class="ti-angle-right"></i></a>
+            <div class="dropdown">
+              <button class="dropbtn">Events & Promotions
+                <i class="ti-angle-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="events.html">Events<i class="ti-angle-right"></i></a>
+                <a href="eventreservation.html">Events Reservation<i class="ti-angle-right"></i></a>
+                <a href="promotion.html">Promotions<i class="ti-angle-right"></i></a>
+              </div>
             </div>
-          </div>
-          <div class="dropdown">
-           <button class="dropbtn">Gallery
-             <i class="ti-angle-down"></i>
-           </button>
-           <div class="dropdown-content">
-             <a href="../pages/gallery.html">Welcome<i class="ti-angle-right"></i></a>
-             <a href="../pages/abouts.html">History<i class="ti-angle-right"></i></a>
+            <div class="dropdown">
+             <button class="dropbtn">Gallery
+               <i class="ti-angle-down"></i>
+             </button>
+             <div class="dropdown-content">
+               <a href="gallery.html">Overview<i class="ti-angle-right"></i></a>
+               <a href="gallery360.html">360° Photos<i class="ti-angle-right"></i></a>
+             </div>
            </div>
-         </div>
-          <a href="#contact">Contact</a>
-          <a href="#home" class="active">Book Now</a>
-          <div class="dropdown">
-            <button class="dropbtn"><img src="../resources/images/user_white.png" alt="account" id="account" width="18px">
-              <i class="ti-angle-down"></i>
-            </button>
-            <div class="dropdown-content" style="min-width:120px">
-              <a href="#">Log In<i class="ti-angle-right"></i></a>
-              <a href="pages/signup.html">Sign Up<i class="ti-angle-right"></i></a>
+            <a href="contactus.html">Contact</a>
+            <a href="booking.html" class="active">Book Now</a>
+            <div class="dropdown">
+              <button class="dropbtn"><img src="../resources/images/user_white.png" alt="account" id="account" width="18px">
+                <i class="ti-angle-down"></i>
+              </button>
+              <div class="dropdown-content" style="min-width:120px">
+                <a href="signin.html">Sign In<i class="ti-angle-right"></i></a>
+                <a href="signup.html">Sign Up<i class="ti-angle-right"></i></a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="scroll-indicator" id="indicator" onclick="scrollAction()">
-        <i class="ti-angle-down"></i>
-      </div>
-      <div class="book-btn" id="sideBtn" onclick="displayBookingForm()">
-        <p class="book-arrow"><i class="ti-angle-up"></i></p>
-        <p class="book-title">Book Now</p>
-      </div>
-      <div class="book-form" id="bookForm">
-        <h4>Le Timeless Tresor</h4>
-        <h2>Check Availability</h2>
-        <input class="chk-in input-style1" type="text" placeholder="Check in" onfocus="(this.type='date')" onblur="(this.type='text')">
-        <input class="chk-out input-style1" type="text" placeholder="Check out" onfocus="(this.type='date')" onblur="(this.type='text')">
-        <select class="room input-style2" name="adult">
-          <option value="">Room Type</option>
-          <option value="">Junior Room</option>
-          <option value="">Double Room</option>
-          <option value="">Family Suite</option>
-          <option value="">Deluxe Suite</option>
-        </select>
-        <div class="form-container" style="padding: 0px 7.5px 0px 0px">
-          <select class="adult input-style2" name="adult">
-            <option value="">Adult</option>
-            <option value="">1</option>
-            <option value="">2</option>
-            <option value="">3</option>
-            <option value="">4</option>
-            <option value="">5</option>
-          </select>
+        <div class="scroll-indicator" id="indicator" onclick="scrollAction()">
+          <i class="ti-angle-down"></i>
         </div>
-        <div class="form-container" style="padding: 0px 0px 0px 7.5px">
-          <select class="child input-style2" name="">
-            <option value="">Child</option>
-            <option value="">0</option>
-            <option value="">1</option>
-            <option value="">2</option>
-            <option value="">3</option>
-            <option value="">4</option>
-            <option value="">5</option>
-          </select>
+        <div class="book-btn" id="sideBtn" onclick="displayBookingForm()">
+          <p class="book-arrow"><i class="ti-angle-up"></i></p>
+          <p class="book-title">Book Now</p>
         </div>
-        <button class="button-style1">Check<i class="ti-angle-right"></i></button>
-      </div>
-    </nav>
-    <script type="text/javascript" src="../js/nav.js"></script>
-  </nav>
+        <div class="book-form" id="bookForm">
+          <h4>Le Timeless Trésor</h4>
+          <h2>Check Availability</h2>
+          <input class="chk-in input-style1" type="text" placeholder="Check in" onfocus="(this.type='date')" onblur="(this.type='text')">
+          <input class="chk-out input-style1" type="text" placeholder="Check out" onfocus="(this.type='date')" onblur="(this.type='text')">
+          <select class="room input-style2" name="adult">
+            <option value="">Room Type</option>
+            <option value="Junior Room">Junior Room</option>
+            <option value="Double Room">Double Room</option>
+            <option value="Family Suite">Family Suite</option>
+            <option value="Deluxe Suite">Deluxe Suite</option>
+          </select>
+          <div class="form-container" style="padding: 0px 7.5px 0px 0px">
+            <select class="adult input-style2" name="adult">
+              <option value="">Adult</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+          <div class="form-container" style="padding: 0px 0px 0px 7.5px">
+            <select class="child input-style2" name="">
+              <option value="">Child</option>
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+          <button class="button-style1">Check<i class="ti-angle-right"></i></button>
+        </div>
+        <script type="text/javascript" src="../js/nav.js"></script>
+      </nav>
 
 <!--end of intro-->
 <!--heading-->
