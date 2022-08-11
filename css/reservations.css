@@ -30,7 +30,7 @@
 .heading {   /**heading space and position **/
   color: white;
   position: relative;
-  top: 250px;
+  top: 280px;
   text-align: center;
   animation: title-slide 1s ease-in-out;
 }
@@ -127,6 +127,12 @@
     width: 100%;
     height: 20rem;
     margin-top: 50px;
+  }
+  .line{
+    margin: 20px 0px !important;
+  }
+  .section-title{
+    font-size: ;
   }
 }
 
