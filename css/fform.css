@@ -2,7 +2,7 @@
 
 /*spa form*/
 .smain-bg {
-  background:linear-gradient(90deg, var(--white), transparent 0%), url('../resources/images/spa2.jpg') no-repeat;
+  background: url('../resources/images/spa2.jpg') no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -16,7 +16,7 @@
 
 /*gym form*/
 .gmain-bg {
-  background:linear-gradient(90deg, var(--white), transparent 0%), url('../resources/images/gym3.jpg') no-repeat;
+  background: url('../resources/images/gym3.jpg') no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -30,7 +30,7 @@
 
 /**billard form**/
 .bmain-bg {
-  background:linear-gradient(90deg, var(--white), transparent 0%), url('../resources/images/billard2.jpg') no-repeat;
+  background: url('../resources/images/billard2.jpg') no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -44,7 +44,7 @@
 
 /**tennis form**/
 .tmain-bg {
-  background:linear-gradient(90deg, var(--white), transparent 0%), url('../resources/images/tennis2.jpg') no-repeat;
+  background: url('../resources/images/tennis2.jpg') no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -58,7 +58,7 @@
 
 /*pool form*/
 .pmain-bg {
-  background:linear-gradient(90deg, var(--white), transparent 0%), url('../resources/images/pool2.jpg') no-repeat;
+  background: url('../resources/images/pool2.jpg') no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;

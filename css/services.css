@@ -22,7 +22,7 @@ header {
 }
 
   .main-bg {
-    background:linear-gradient(90deg, var(--white), transparent 0%), url('../resources/images/services.jpg') no-repeat;
+    background: url('../resources/images/services.jpg') no-repeat;
     top: 10rem;
     left: 0;
     height: 83vh;
@@ -170,7 +170,7 @@ header {
 /* ferryschedule*/
 
 .tmain-bg {      /**image**/
-  background:linear-gradient(90deg, var(--white), transparent 0%), url('../resources/images/table.jpg') no-repeat;
+  background: url('../resources/images/table.jpg') no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;

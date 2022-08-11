@@ -4,7 +4,7 @@ header{
 
 /**front part **/
 .main-bg {
-  background:linear-gradient(90deg, var(--white), transparent 0%), url('../resources/images/hotel2.jpg') no-repeat;
+  background: url("../resources/images/hotel2.jpg") no-repeat;
   top: 0;
   left: 0;
   height: 83vh;
