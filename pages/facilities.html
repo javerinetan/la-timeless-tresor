@@ -26,7 +26,7 @@
             <i class="ti-angle-down"></i>
           </button>
           <div class="dropdown-content">
-            <a href="#">Overview<i class="ti-angle-right"></i></a>
+            <a href="abouts.html">About Us<i class="ti-angle-right"></i></a>
             <a href="accommodations.html">Accomodations<i class="ti-angle-right"></i></a>
             <a href="facilities.html">Facilities<i class="ti-angle-right"></i></a>
             <a href="services.html">Services<i class="ti-angle-right"></i></a>
@@ -48,6 +48,7 @@
           </button>
           <div class="dropdown-content">
             <a href="eventdetail.html">Events<i class="ti-angle-right"></i></a>
+            <a href="eventreservation.html">Events Reservation<i class="ti-angle-right"></i></a>
             <a href="promotion.html">Promotions<i class="ti-angle-right"></i></a>
           </div>
         </div>
@@ -56,8 +57,8 @@
            <i class="ti-angle-down"></i>
          </button>
          <div class="dropdown-content">
-             <a href="gallery.html">Welcome<i class="ti-angle-right"></i></a>
-             <a href="abouts.html">History<i class="ti-angle-right"></i></a>
+           <a href="gallery.html">Overview<i class="ti-angle-right"></i></a>
+           <a href="gallery360.html">360° Photos<i class="ti-angle-right"></i></a>
          </div>
        </div>
         <a href="contactus.html">Contact</a>
@@ -87,30 +88,30 @@
       <input class="chk-out input-style1" type="text" placeholder="Check out" onfocus="(this.type='date')" onblur="(this.type='text')">
       <select class="room input-style2" name="adult">
         <option value="">Room Type</option>
-        <option value="">Junior Room</option>
-        <option value="">Double Room</option>
-        <option value="">Family Suite</option>
-        <option value="">Deluxe Suite</option>
+        <option value="Junior Room">Junior Room</option>
+        <option value="Double Room">Double Room</option>
+        <option value="Family Suite">Family Suite</option>
+        <option value="Deluxe Suite">Deluxe Suite</option>
       </select>
       <div class="form-container" style="padding: 0px 7.5px 0px 0px">
         <select class="adult input-style2" name="adult">
           <option value="">Adult</option>
-          <option value="">1</option>
-          <option value="">2</option>
-          <option value="">3</option>
-          <option value="">4</option>
-          <option value="">5</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
         </select>
       </div>
       <div class="form-container" style="padding: 0px 0px 0px 7.5px">
         <select class="child input-style2" name="">
           <option value="">Child</option>
-          <option value="">0</option>
-          <option value="">1</option>
-          <option value="">2</option>
-          <option value="">3</option>
-          <option value="">4</option>
-          <option value="">5</option>
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
         </select>
       </div>
       <button class="button-style1">Check<i class="ti-angle-right"></i></button>
@@ -122,8 +123,8 @@
 <!-- header section ends -->
 
 <!-- home section starts  -->
-<header class="banner" onclick="dismissBookingForm()"> <!--so the banner wont come out-->
-  <div class="layer"></div>
+<header class="banner" onclick="dismissBookingForm()">
+  <div class="layer"></div> <!--  to make the background darker -->
   <div class="main-bg"><!--insert image link to css-->
   <div class="container">
     <div class="heading">
@@ -154,19 +155,20 @@
 
 <!-- facilities section starts -->
 <section class="facilities">
-    <div class="container" id="facilityNav">
+  <div class="category">
+    <div id="facilityNav">
       <div onclick="showAll()" class="click" id="btn0">ALL</div>
       <div onclick="showComplimentary()" class="" id="btn1">COMPLIMENTARY</div>
       <div onclick="showNotFree()" class="" id="btn2">CHARGED</div>
     </div>
-
+  </div>
       <section class="freeFacility" id="complimentary">
-        <div class = "right"> <!--tell where the text should be-->
+        <div class = "right"> <!--position of the facility article-->
           <img src="../resources/images/cinema.jpg" alt="cinema">
-            <article> <!--this is the create the col-->
+            <article> <!--content-->
               <h4 class="section-subheading">movie night</h4>
-              <h1 class="section-title">private cinema room</h1> <!-- key in the class="section-title" cause it states the font for that line, it is in the global css-->
-              <hr class="line"><!--create a line-->
+              <h1 class="section-title">private cinema room</h1>
+              <hr class="line">
               <p class="subtitle">
                 it features a truly unique experience combining luxurious seating, great bars and in-chair waiter service.
                   it screens a variety of movies from the latest blockbuster release to old favourite, fairytale to horror, from our extensive catalogue on the big screen.
@@ -177,12 +179,12 @@
             </article>
         </div>
 
-        <div class = "left"> <!--tell where the text should be-->
+        <div class = "left">
           <img src="../resources/images/bowling.webp" alt="bowling">
-            <article> <!--this is the create the col-->
+            <article>
               <h4 class="section-subheading">game night</h4>
-              <h1 class="section-title">bowling alley</h1> <!-- key in the class="section-title" cause it states the font for that line, it is in the global css-->
-              <hr class="line"><!--create a line-->
+              <h1 class="section-title">bowling alley</h1>
+              <hr class="line">
               <p class="subtitle">
                 Spend a fun day at the bowling alley. Rent the bowling shoes over the couter for free. Relax in front of 12 big screens, try for a strike on one of twenty bowling lanes.
               </p>
@@ -191,12 +193,12 @@
             </article>
         </div>
 
-        <div class = "right"> <!--tell where the text should be-->
+        <div class = "right">
           <img src="../resources/images/museum.webp" alt="museum">
-            <article> <!--this is the create the col-->
+            <article>
               <h4 class="section-subheading">feast your eyes on the best artworks</h4>
-              <h1 class="section-title">vintage museum</h1> <!-- key in the class="section-title" cause it states the font for that line, it is in the global css-->
-              <hr class="line"><!--create a line-->
+              <h1 class="section-title">vintage museum</h1>
+              <hr class="line">
               <p class="subtitle">
                 spend time viewing artworks and galleries of vintage artifacts here at our resort. some famous artworks are "MonaLesa", "girl with diamond earring" and "the
                    glittery night". enjoy the experience at no cost. simply walk in and enjoy.
@@ -206,12 +208,12 @@
           </article>
         </div>
 
-        <div class = "left"> <!--tell where the text should be-->
+        <div class = "left">
           <img src="../resources/images/childcare.jpg" alt="childcare">
-            <article> <!--this is the create the col-->
+            <article>
               <h4 class="section-subheading">date night</h4>
-              <h1 class="section-title">childcare center</h1> <!-- key in the class="section-title" cause it states the font for that line, it is in the global css-->
-              <hr class="line"><!--create a line-->
+              <h1 class="section-title">childcare center</h1>
+              <hr class="line">
               <p class="subtitle">
                 relax in paradise with your beloved, and rest assure your children with us for the day. we have the best teachers fluent in all language to take care of your children while you spend
                 time to relax. the children will be engaged with multiple games appropriate for their age. we will fulfill all of their needs and wants so rest assured.
@@ -236,12 +238,12 @@
             </article>
         </div>
 
-        <div class = "left"> <!--tell where the text should be-->
+        <div class = "left">
           <img src="../resources/images/pool.jpg" alt="pool">
-            <article> <!--this is the create the col-->
+            <article>
               <h4 class="section-subheading">relaxing time</h4>
-              <h1 class="section-title">Swimming Pool</h1> <!-- key in the class="section-title" cause it states the font for that line, it is in the global css-->
-              <hr class="line"><!--create a line-->
+              <h1 class="section-title">Swimming Pool</h1>
+              <hr class="line">
               <p class="subtitle">enjoy your swim in paradise. let the relaxing waters calm you .
                   swim in either the indoor or the outdoor pool.
                   After your swim, sunbathe on a luxurious poolside lounger, or relax in the shade of a palm tree with a view of the calm ocean waves.
@@ -251,12 +253,12 @@
           </article>
         </div>
 
-        <div class = "right"> <!--tell where the text should be-->
+        <div class = "right">
           <img src="../resources/images/gym.jpg" alt="gym">
-            <article> <!--this is the create the col-->
+            <article>
               <h4 class="section-subheading">maintain fit</h4>
-              <h1 class="section-title">gym</h1> <!-- key in the class="section-title" cause it states the font for that line, it is in the global css-->
-              <hr class="line"><!--create a line-->
+              <h1 class="section-title">gym</h1>
+              <hr class="line">
               <p class="subtitle">
                 Exercise with the view of the ocean. we offer a range of training equipment including treadmills, stationary bikes and a Kinesis Technogym pulley wall and free weights for resistance training.
                   Catch up on your favourite shows while working out.
@@ -267,12 +269,12 @@
             </article>
         </div>
 
-        <div class = "left"> <!--tell where the text should be-->
+        <div class = "left">
           <img src="../resources/images/tennis.webp" alt="tennis">
-            <article> <!--this is the create the col-->
+            <article>
               <h4 class="section-subheading">match time</h4>
-              <h1 class="section-title">tennis court</h1> <!-- key in the class="section-title" cause it states the font for that line, it is in the global css-->
-              <hr class="line"><!--create a line-->
+              <h1 class="section-title">tennis court</h1>
+              <hr class="line">
               <p class="subtitle">
                 Our beautiful premium grade synthetic turf courts are the perfect venue for the athletically inclined who are eager to sweat it out. enjoy playing tennis here with a view and sound of calm waves.
                 book your tennis court session before heading down.
@@ -285,12 +287,12 @@
 
       <section class="notFreeFacility" id="charged">
 
-        <div class = "right"> <!--tell where the text should be-->
+        <div class = "right">
           <img src="../resources/images/casino.jpg" alt="casino">
-            <article> <!--this is the create the col-->
+            <article>
               <h4 class="section-subheading">adrenaline rush</h4>
-              <h1 class="section-title">casino</h1> <!-- key in the class="section-title" cause it states the font for that line, it is in the global css-->
-              <hr class="line"><!--create a line-->
+              <h1 class="section-title">casino</h1>
+              <hr class="line">
               <p class="subtitle">
                 The Casino at Le timeless Trésor offers a vast selection of electronic gaming machines worldwide with more than 250 game titles to choose from.
                    The Le timeless tresor Casino offers a choice of table games to suit all players. All table games are played using Casino gaming chips, which may be purchased either at the tables, or at the casino cage.
@@ -301,12 +303,12 @@
             </article>
         </div>
 
-        <div class = "left"> <!--tell where the text should be-->
+        <div class = "left">
           <img src="../resources/images/billard.jpg" alt="Billard">
-            <article> <!--this is the create the col-->
+            <article>
               <h4 class="section-subheading">game night</h4>
-              <h1 class="section-title">billiard room</h1> <!-- key in the class="section-title" cause it states the font for that line, it is in the global css-->
-              <hr class="line"><!--create a line-->
+              <h1 class="section-title">billiard room</h1>
+              <hr class="line">
               <p class="subtitle">
                 engage in our billiard room to entertain and enjoy yourselves here. as you play enjoy unlimited drinks from the bar and have fun!
                   in each room there is 2 billiard table, charging ports and bar with bartender exclusively serving to your needs. book your room in advance to secure a 2 hour play inside.
@@ -316,12 +318,12 @@
             </article>
         </div>
 
-        <div class = "right"> <!--tell where the text should be-->
+        <div class = "right">
           <img src="../resources/images/golf.jpg" alt="golf">
-            <article> <!--this is the create the col-->
+            <article>
               <h4 class="section-subheading">hole in one</h4>
-              <h1 class="section-title">golf</h1> <!-- key in the class="section-title" cause it states the font for that line, it is in the global css-->
-              <hr class="line"><!--create a line-->
+              <h1 class="section-title">golf</h1>
+              <hr class="line">
               <p class="subtitle">
                 The 6493m, par 72 course is one of the few outstanding links-styled golf courses that you can find in here. Featuring 66 pot bunkers of varying sizes and depth,a variety in the length of the holes and many undulations.
                   there are different courses of varying difficulty to choose from, from family themed to competition difficulty golf courses.

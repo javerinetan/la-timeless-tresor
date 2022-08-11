@@ -18,7 +18,7 @@
 /**to make the image less bright**/
 .layer {
   background-color: black;
-  opacity: 0.3;
+  opacity: 0.5;
   position: absolute;
   top: 0;
   left: 0;
@@ -126,7 +126,7 @@
 .movie-content article{
   width: 59%;
   float: left;
-  padding: 77px 55px 39px !important;
+  padding: 77px 55px 39px !important; /*so that all my content takes up the same amt of space*/
   background-color: #F8F5F0;
   z-index: 1;
   text-align: center;

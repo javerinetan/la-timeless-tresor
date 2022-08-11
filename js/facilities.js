@@ -1,7 +1,7 @@
 let complimentary=document.getElementById("complimentary");
 let paid=document.getElementById("charged");
 
-//reset title color
+//reset category color
 function resetColor() {
   document.getElementById("btn0").className="";
   document.getElementById("btn1").className="";
@@ -12,8 +12,8 @@ function resetColor() {
 function showAll() {
   let btn=document.getElementById("btn0");
   resetColor();
-  btn.classList="click"
-  complimentary.style.display = 'block';
+  btn.classList="click" //only with this class name will the colour change
+  complimentary.style.display = 'block'; //so that all faclities will be seen
   paid.style.display = 'block';
 }
 
@@ -22,7 +22,7 @@ function showComplimentary(){
   let btn=document.getElementById("btn1");
   resetColor();
   btn.classList="click"
-  paid.style.display = 'none';
+  paid.style.display = 'none'; //paid section will be removed
   complimentary.style.display = 'block';
 }
 
@@ -32,5 +32,5 @@ function showNotFree(){
   resetColor();
   btn.classList="click"
   paid.style.display = 'block';
-  complimentary.style.display = 'none';
+  complimentary.style.display = 'none'; //complimentary section will be removed
 }
