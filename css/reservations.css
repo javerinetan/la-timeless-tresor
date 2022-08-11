@@ -68,31 +68,35 @@
   height: 1px;
   display: inline-block;
   background-color: #aa8453;
-  margin: 20px 0px;
+  margin: 30px 0px;
 }
-
-
-
-/** making caro**/
-.image-left img{
-  width: 50%;
-  height: 30rem;
-  margin-top: 100px;
+/* Create two equal columns that floats next to each other */
+.column-l {
   float: left;
+  width: 48%;
+}
+.column-r {
+  float: right;
+  width: 48%;
+
+}
+.row{
+  margin: 0 50px;
 }
 
-.image-left article{
-  width: 50%;
-  padding: 180px 100px;
-  float: left;
-  background-color: #F8F5F0;
-  z-index: 1;
-  text-align: center;
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-.image-left{
-  display: inline-block;
+/*image sizing */
+.row img{
+  width: 100%;
 }
+
+
 
 /** to make the page responsive **/
 @media screen and (max-width: 500px) {
@@ -104,19 +108,6 @@
   .heading h1 {
     font-size: 28px;
     letter-spacing: 3px;
-  }
-
-  .image-left img{
-    height: 20rem;
-  }
-
-  .image-left article{
-    width: 100%;
-    padding: 30px 0px !important;
-    float: left;
-    background-color: #F8F5F0;
-    z-index: 1;
-    text-align: center;
   }
 
   .section-sub-title{
@@ -132,12 +123,7 @@
     font-size: 40px;
     letter-spacing: 4px;
   }
-  .image-left article{
-    padding: 39px 20px 18px !important;
-    background-color: #F8F5F0;
-    z-index: 1;
-    text-align: center;
-  }
+
   .horizontal-line{
     margin: 20px 0px 13px!important;
   }
@@ -157,10 +143,7 @@
       font-size: 40px;
       letter-spacing: 4px;
     }
-    .image-left article{
-      width: 100%;
-      padding: 40px;
-    }
+
     .horizontal-line{
       margin: 24px 0px 16px!important;
     }
