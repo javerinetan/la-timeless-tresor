@@ -198,8 +198,11 @@
 }
 
 .room-selector .box.selected {
-  background-color: #c4ac80;
-  color: white;
+  border-bottom: 7px solid #c4ac80;
+}
+
+.room-selector .box.selected i {
+  color: #c4ac80;
 }
 
 .section4 .wrapper {

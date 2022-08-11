@@ -197,6 +197,23 @@ body {
   margin-right: -10px;
 }
 
+.a-button1 {
+    display: inline-block;
+    padding: 1rem 4.1rem;
+    font-size: 1rem;
+    border: 1px solid #b0a48d;
+    position: relative;
+    color: #b0a48d;
+    background-color: transparent;
+    margin-top: 40px;
+    transition: all 0.4s ease-out;
+}
+
+.a-button1:hover {
+  background-color: #c4ac80;
+  color: white;
+}
+
 .input-style1 {
   display: block;
   width: 100%;
