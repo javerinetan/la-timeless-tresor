@@ -4,7 +4,7 @@ header{
 
 /**front part **/
 .main-bg {
-  background: url("../resources/images/hotel2.jpg") no-repeat;
+  background: url("../resources/images/hotel.jpg") no-repeat;
   top: 0;
   left: 0;
   height: 83vh;
@@ -34,7 +34,7 @@ header{
 .heading {   /**heading space and position **/
   color: white;
   position: relative;
-  top: 250px;
+  top: 280px;
   text-align: center;
   animation: title-slide 1s ease-in-out;
 }
@@ -47,7 +47,6 @@ header{
   font-weight: lighter;
   text-transform: uppercase;
   letter-spacing: 8px;
-  top: 250px;
 }
 
 .heading p{

@@ -89,7 +89,7 @@
 .heading {   /**heading space and position **/
   color: white;
   position: relative;
-  top: 250px;
+  top: 280px;
   text-align: center;
 }
 
@@ -100,7 +100,6 @@
   font-weight: lighter;
   text-transform: uppercase;
   letter-spacing: 8px;
-  top: 250px;
   text-align: center !important;
   margin:auto;
 }
