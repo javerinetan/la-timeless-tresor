@@ -45,7 +45,7 @@
                 <i class="ti-angle-down"></i>
               </button>
               <div class="dropdown-content">
-                <a href="eventdetail.html">Events<i class="ti-angle-right"></i></a>
+                <a href="events.html">Events<i class="ti-angle-right"></i></a>
                 <a href="eventreservation.html">Events Reservation<i class="ti-angle-right"></i></a>
                 <a href="promotion.html">Promotions<i class="ti-angle-right"></i></a>
               </div>
@@ -112,7 +112,7 @@
               <option value="5">5</option>
             </select>
           </div>
-          <button class="button-style1">Check<i class="ti-angle-right"></i></button>
+          <a href="../pages/booking.html" style="display:block;width:100%;padding:0"><button class="button-style1">Check Availability<i class="ti-angle-right"></i></button></a>
         </div>
         <script type="text/javascript" src="../js/nav.js"></script>
       </nav>
@@ -157,21 +157,21 @@
         <div class="wrapper" id="form-section">
           <h2>Sign up for free membership</h2>
           <p>Please fill up the form below</p>
-          <form action="index.html" method="post">
+          <form action="#" method="post">
             <div style="width: 100%; display: inline-block; margin-top: 20px">
-              <input type="text" name="" value="" placeholder="First Name" class="input-style2" style="float: left; width: 49%">
-              <input type="text" name="" value="" placeholder="Last Name" class="input-style2" style="float: right; width: 49%">
+              <input type="text" name="" value="" placeholder="First Name" class="input-style2" style="float: left; width: 49%" required>
+              <input type="text" name="" value="" placeholder="Last Name" class="input-style2" style="float: right; width: 49%" required>
             </div>
             <div style="width: 100%; display: inline-block; margin: 10px 0px">
-              <select name="" class="input-style2" style="float: left; width: 49%">
+              <select name="" class="input-style2" style="float: left; width: 49%" required>
                 <option value="">Gender</option>
                 <option value="Male">Male</option>
                 <option value="Female">Female</option>
                 <option value="Others">Others</option>
               </select>
-              <input type="number" name="" min="18" max="99" placeholder="Age" class="input-style2" style="float: right; width: 49%">
+              <input type="number" name="" min="18" max="99" placeholder="Age" class="input-style2" style="float: right; width: 49%" required>
             </div>
-            <select name="" class="input-style2" style="margin-bottom: 15px">
+            <select name="" class="input-style2" style="margin-bottom: 15px" required>
               <option value="">Nationality</option>
                <option value="afghan">Afghan</option>
                <option value="albanian">Albanian</option>
@@ -366,9 +366,9 @@
                <option value="zambian">Zambian</option>
                <option value="zimbabwean">Zimbabwean</option>
             </select>
-            <input type="email" name="" placeholder="Email" class="input-style2" style="margin-bottom: 15px">
-            <input type="text" name="" placeholder="Address" class="input-style2" style="margin-bottom: 15px">
-            <a href="#" class="button-style1">Sign up<i class="ti-angle-right"></i></a>
+            <input type="email" name="" placeholder="Email" class="input-style2" style="margin-bottom: 15px" required>
+            <input type="text" name="" placeholder="Address" class="input-style2" style="margin-bottom: 15px" required>
+            <button type="submit" class="button-style1">Sign up<i class="ti-angle-right"></i></button>
           </form>
         </div>
       </div>
@@ -437,8 +437,8 @@
        <section style="width:100%; background-color: #222">
         <div class="container" style="padding: 10px;">
           <div class="tc">
-            <a href="#">Terms & Conditions</a> |
-            <a href="#">Privacy Policy</a>
+            <a href="../pages/termsandcondition.html">Terms & Conditions</a> |
+            <a href="../pages/privacy.html">Privacy Policy</a>
           </div>
           <div style="width:100%; padding: 20px; text-align: center">
             <p>Copyright 2022 &copy; Le Timeless Tresor | All right reserved.</p>
@@ -446,6 +446,5 @@
         </div>
        </section>
     </footer>
-
   </body>
 </html>

@@ -199,7 +199,7 @@
     padding-bottom: 20px;
   }
   .content .result.container {
-    width: 55%;
+    width: 50%;
   }
   .booking-details {
     width: 40%;
@@ -215,9 +215,6 @@
   .heading h1 {
     font-size: 40px;
     letter-spacing: 4px;
-  }
-  .form .button-style2 {
-    width: 80%;
   }
   .form .wrapper {
     width: 60%;
