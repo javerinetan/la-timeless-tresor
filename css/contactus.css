@@ -1,9 +1,4 @@
-*{
-  margin: 0px;
-  padding: 0px;
-}
-
-/TopPicture/
+/*TopPicture*/
 .banner{
   background-image: url("../resources/images/desk2.jpg");
   top: 0;
@@ -15,7 +10,7 @@
   background-attachment: fixed;
 }
 
-/Words in the Picture/
+/*Words in the Picture*/
 .heading {
   color: white;
   position: relative;
@@ -50,13 +45,10 @@
   width: 100%;
 }
 
-/Contact Us/
-.ContactUs{ /How large the page is/
+/*Contact Us*/
+.ContactUs{ /*How large the page is*/
   margin-bottom: 250px;
 }
-
-/* Full-width input fields */
-
 
 
 /* Add padding to container elements */
@@ -82,14 +74,78 @@ textarea {
   resize: none;
 }
 
-/Map/
+/*Map*/
 .map{
   display: inline-block;
   position: absolute;
-  width:40%
+
 }
 
 
 .map iframe{
   height: 692px;
+}
+
+@media screen and (max-width: 1200px) {
+  .map{
+    position: relative;
+    width: auto;
+  }
+  .contactus .form{
+    position: relative;
+    width: 100%;
+    margin: auto;
+    padding: 0 0 0 0;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .map{
+    position: relative;
+    width: auto;
+  }
+  .contactus .form{
+    position: relative;
+    width: 100%;
+    margin: auto;
+    padding: 0 0 0 0;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+  .map{
+    position: relative;
+    width: auto;
+  }
+  .contactus .form{
+    position: relative;
+    width: 100%;
+    margin: auto;
+    padding: 0 0 0 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .map{
+    position: relative;
+    width: auto;
+  }
+  .contactus .form{
+    position: relative;
+    width: 100%;
+    margin: auto;
+    padding: 0 0 0 0;
+  }
+}
+
+@keyframes title-slide {
+  0% {
+    opacity: 0.8;
+    left: -110px;
+  }
+  100% {
+    opacity: 1;
+    left: 0px;
+  }
 }

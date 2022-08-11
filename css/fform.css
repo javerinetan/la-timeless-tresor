@@ -89,7 +89,7 @@
 .heading {   /**heading space and position **/
   color: white;
   position: relative;
-  top: 315px;
+  top: 250px;
   text-align: center;
 }
 
@@ -105,6 +105,11 @@
   margin:auto;
 }
 
+.heading p{
+  font-size: 20px;
+  margin-bottom: 10px
+}
+
 .horizontal-line{
   width: 40%;
   height: 1px;
@@ -112,7 +117,7 @@
   background-color: #aa8453;
   margin: 30px 0px;
 }
-/*form end*/
+
 .section-title {
   font-size: 38px;
 }
@@ -176,6 +181,7 @@
   box-shadow: none;
   border-radius: 0;
 }
+/*form end*/
 
 /*form done page*/
 .done{

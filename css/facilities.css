@@ -1,5 +1,5 @@
 *{
-   font-family: 'Nunito', sans-serif;
+   font-family: 'Nunito', sans-serif; /*makes all the unclaimed text to be in the same font style*/
    margin:0; padding:0;
    box-sizing: border-box;
    outline: none; border:none;
@@ -29,11 +29,13 @@ header{
 
 /**front part **/
 .main-bg {
-  background:linear-gradient(90deg, var(--white), transparent 0%), url('../resources/images/hotel.jpg') no-repeat;
+  background:linear-gradient(90deg, var(--white), transparent 0%), url('../resources/images/hotel2.jpg') no-repeat;
   top: 0;
   left: 0;
   height: 83vh;
   width: 100%;
+  z-index: -1; /*to allow the layer to be above this background*/
+  object-fit: cover;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -57,7 +59,7 @@ header{
 .heading {   /**heading space and position **/
   color: white;
   position: relative;
-  top: 315px;
+  top: 250px;
   text-align: center;
   animation: title-slide 1s ease-in-out;
 }
@@ -71,6 +73,11 @@ header{
   text-transform: uppercase;
   letter-spacing: 8px;
   top: 250px;
+}
+
+.heading p{
+  font-size: 20px;
+  margin-bottom: 10px
 }
 
 .about{
@@ -196,6 +203,11 @@ header{
   display: block !important;
 }
 
+.category{
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
 #facilityNav {
   float: left;
   width: 100%;
@@ -224,12 +236,10 @@ header{
 
 #facilityNav div:hover {
   color: #aa8453;
-  border-bottom: 1px solid;
 }
 
 .click {
   color: #aa8453;
-  border-bottom: 1px solid;
 }
 
 @media screen and (max-width: 500px){
