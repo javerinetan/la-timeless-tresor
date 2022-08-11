@@ -7,6 +7,7 @@
   <link href="../css/eventreservation.css" rel="stylesheet">
   <link rel="stylesheet" href="../css/navbar.css">
   <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/fform.css">
   <link rel="icon" href="../resources/images/logo.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
@@ -130,102 +131,48 @@
       </header>
     </div>
     <div class="mainbody">
-      <div class="container1" style="text-align: center">
-        <h4 class="section-subheading">EVENTS</h4>
-        <h1 class="section-title">Event Reservation</h1>
-      <hr class="horizontal-line">
-      <article class="container">
-        <div class="eventvideo">
-          <h2>WEDDING CELEBRATION</h2>
-          <h1>SAY "YES"</h1>
-          <div class="video">
-            <div class="play-backdrop"></div>
-            <div class="play-button">
-              <svg class="play-circles" viewBox="0 0 152 152">
-                <circle class="play-circle-01" fill="none" stroke="#fff" stroke-width="3" stroke-dasharray="343 343" cx="76" cy="76" r="72.7"/>
-                <circle class="play-circle-02" fill="none" stroke="#fff" stroke-width="3" stroke-dasharray="309 309" cx="76" cy="76" r="65.5"/>
-              </svg>
-              <div class="play-perspective">
-                <button class="play-close"></button>
-                <div class="play-triangle">
-                  <div class="play-video">
-                    <iframe width="600" height="400" src="https://www.youtube.com/embed/gNqkf5KPqDc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                  </div>
+      <!-- forms section starts -->
+      <div class="content reveal up">
+
+        <div class="form container">
+          <div class="wrapper" id="form-section">
+            <h4 class="section-subheading">Facility Booking</h4>
+            <h1 class="section-title">book a pool session</h1>
+            <hr class="horizontal-line">
+            <form action="poolformdone.html" method="get">
+              <div class="input-container">
+                <p>Hotel Confirmation Number</p>
+                <input class="leftform" type="text" name="Hotel Confirmation Number" value="" maxlength="4" minlength="4" required>
+                <p>Email</p>
+                <input class="leftform" type="text" name="Email" value="" required>
+              </div>
+              <div class="input-container">
+                <p>Session Date</p>
+                <input class="input-style1" type="date" id="date" name="Date" value="" required>
+                <div style="width:48%;float:left">
+                  <p>Time *</p>
+                  <select name="Time" class="input-style1" required>
+                    <option value="">Time Slot</option>
+                    <option value="6am">0600</option>
+                    <option value="8am">0800</option>
+                    <option value="10am">1000</option>
+                    <option value="12pm">1200</option>
+                    <option value="2pm">1400</option>
+                    <option value="4pm">1600</option>
+                    <option value="6pm">1800</option>
+                    <option value="8pm">2000</option>
+                  </select>
                 </div>
               </div>
-            </div>
+              <p style="display: inline-block;width: 100%;">*Each session is 2hrs long</p>
+              <a href="poolformdone.html" style="display: inline-block;width: 100%;margin-top: 20px;">
+              <button type="submit" class="button-style2" style="width: 48%;">Book Now<i class="ti-angle-right"></i></button>
+            </a>
+            </form>
           </div>
         </div>
-        <aside class="eventType">
-          <h1 class="eventdesc">RENEWAL OF VOWS</h1>
-          <h2 class="eventdesc2">Your moment of magic</h2>
-          <p class="eventdesc3">Choose an intimate ceremony or bring your family and friends to celebrate your love for each other again.<br><br> The natural beauty of a ceremony by the sea, the pure romance of a wedding in the Maldives. We'll craft a perfectly<br><br>
-            tailored event for your renewal of vows, designed just for you and your beloved.<br><br> You can renew your vows on a private sandbox or on the jungle-fringed beaches of our tropical island - a<br><br> photographer in tow to catch every moment. </p>
-          <a class="cta" href="#"><span class="text-small text-small_16">DOWNLOAD OUR BROCHURE</span></a>
-        </aside>
-        <section class="eventreservationform">
-          <h1 id="formsubtitle">RESERVE NOW</h1>
-          <h2 id="formtitle">EVENT RESERVATION</h2>
-          <div class="circle-steps mb-56">
-            <div class="circle-steps__item is-active" data-step-form-step="0">
-              <div class="circle-steps__number flex-container align-center p mb-8">
-                <div class="steps-line steps-line_1"></div>
-                <div class="number">
-                  <p>1</p>
-                </div>
-              </div>
-              <div class="text-small text-small_14 text-center">
-                EVENT
-              </div>
-            </div>
-            <div class="circle-steps__item" data-step-form-step="1">
-              <div class="circle-steps__number flex-container align-center p mb-8">
-                <div class="steps-line steps-line_2"></div>
-                <div class="number">
-                  <p>2</p>
-                </div>
-              </div>
-              <div class="text-small text-small_14 text-center">
-                ACCOMODATION
-              </div>
-            </div>
-            <div class="circle-steps__item" data-step-form-step="2">
-              <div class="circle-steps__number flex-container align-center p mb-8">
-                <div class="steps-line steps-line_3"></div>
-                <div class="number">
-                  <p>3</p>
-                </div>
-              </div>
-              <div class="text-small text-small_14 text-center">
-                CONTACT DETAILS
-              </div>
-            </div>
-        </div>
-        <div class="container">
-  <form action="">
-   <div class="form-row">
-     <div class="form-group col-md-6">
-        <label for="name"></label>
-        <input type="text" class="form-control" id="name" placeholder="Type of Event*"required>
-     </div>
-     <div class="form-group col-md-6">
-        <label for="country"></label>
-        <input type="text" class="form-control" id="country" placeholder="Event Name*"required>
-     </div>
-     <div class="form-group col-md-6">
-        <label for="arrival"></label>
-        <input type="text" class="form-control" id="arrival" onfocus="(this.type='date')" onblur="(this.type='text')" placeholder="Date of the Event*" required>
-     </div>
-     <div class="form-group col-md-6">
-        <label for="infant"></label>
-        <input type="number" class="form-control" id="infant" placeholder="Number of People*">
-     </div>
-    </div>
-    <a class="cta1" href="#"><span class="text-small text-small_16">NEXT STEP: ACCOMODATION</span></a>
-  </form>
-</div>
-</section>
-</article>
+      <script src="../js/form.js"></script>
+      <!-- forms section end -->
 <footer class="footer">
    <div class="container">
      <section>
