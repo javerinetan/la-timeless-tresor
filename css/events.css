@@ -669,7 +669,7 @@ section .container {
   overflow-y: scroll;
 }
 
-.event1 {
+.event1, .event2, .event3, .event4, .event5, .event6, .event7, .event8, .event9, .event10 {
   background-color: white;
   margin-top: 2%;
   margin-left: 2%;
@@ -679,54 +679,14 @@ section .container {
   box-shadow: 1px 1px 10px #888888;
 }
 
-.event2 {
-  background-color: white;
-  margin-top: 2%;
-  margin-left: 2%;
-  margin-bottom: 5%;
-  margin-right: 2%;
-  height: 350px;
-  box-shadow: 1px 1px 10px #888888;
-}
-
-.event3 {
-  background-color: white;
-  margin-top: 2%;
-  margin-left: 2%;
-  margin-bottom: 5%;
-  margin-right: 2%;
-  height: 350px;
-  box-shadow: 1px 1px 10px #888888;
-}
-
-.event4 {
-  background-color: white;
-  margin-top: 2%;
-  margin-left: 2%;
-  margin-bottom: 5%;
-  margin-right: 2%;
-  height: 350px;
-  box-shadow: 1px 1px 10px #888888;
-}
-
-.event5 {
-  background-color: white;
-  margin-top: 2%;
-  margin-left: 2%;
-  margin-bottom: 5%;
-  margin-right: 2%;
-  height: 350px;
-  box-shadow: 1px 1px 10px #888888;
-}
 
 .eventType {
   font-size: 10px;
   display: block;
-  float: left;
 }
 
 .eventdesc {
-  float: left;
+  text-align: center;
   font-size: 15px;
   color: #777778;
   padding-top: 50px;
@@ -734,14 +694,16 @@ section .container {
 }
 
 .eventdesc2 {
+  text-align: center;
   font-family: Lucida Handwriting;
   font-size: 15px;
   color: #aa8453;
-  padding-top: 80px;
+  padding-top: 10px;
   padding-left: 20px;
 }
 
 .eventdesc3 {
+  text-align: center;
   font-size: 15px;
   color: black;
   padding-top: 30px;
@@ -755,7 +717,6 @@ section .container {
   color: #b0a48d;
   position: relative;
   transition: color .35s cubic-bezier(.3,.1,.3,1),background-color .35s cubic-bezier(.3,.1,.3,1);
-  margin-left: 20px;
   margin-top: 40px;
 }
 
