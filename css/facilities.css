@@ -29,7 +29,7 @@ header{
 
 /**front part **/
 .main-bg {
-  background:linear-gradient(90deg, var(--white), transparent 0%), url('../resources/images/hotel.jpg') no-repeat;
+  background:linear-gradient(90deg, var(--white), transparent 0%), url('../resources/images/hotel2.jpg') no-repeat;
   top: 0;
   left: 0;
   height: 83vh;
@@ -57,7 +57,7 @@ header{
 .heading {   /**heading space and position **/
   color: white;
   position: relative;
-  top: 315px;
+  top: 250px;
   text-align: center;
   animation: title-slide 1s ease-in-out;
 }
@@ -71,6 +71,11 @@ header{
   text-transform: uppercase;
   letter-spacing: 8px;
   top: 250px;
+}
+
+.heading p{
+  font-size: 20px;
+  margin-bottom: 10px
 }
 
 .about{
