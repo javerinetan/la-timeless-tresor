@@ -207,6 +207,7 @@
     font-size:30px;
   }
 
+
 }
 
 
@@ -238,6 +239,10 @@
   }
   .form .input-container { /** this is so that the display will float left and setting the padding size for the form**/
     margin-bottom: 20px;
+  }
+  .form .button-style2 {
+    width: 100%;
+    margin-top: 30px;
   }
 
 }
