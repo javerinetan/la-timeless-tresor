@@ -98,10 +98,6 @@ h3{
   background: white;
 }
 
-input[type=text]:focus,textarea:focus{
-  background-color: #f1f1f1;
-  outline: none;
-}
 
 /* Set a style for all buttons */
 button {
