@@ -53,15 +53,15 @@
 
 /**Body**/
 /*Left Side*/
-.section-title {
+.section-title { /*Welcome Back*/
   font-size: 38px;
 }
 
-.section-sub-title {
+.section-sub-title { /*We're glad that your're Back*/
   color: darkgray;
 }
 
-.section-subheading {
+.section-subheading { /*Exclusive Members*/
   text-transform: uppercase;
   color: #aa8453;
   font-size: 18px;
