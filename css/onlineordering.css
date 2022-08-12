@@ -1,7 +1,20 @@
+.banner {
+    background-image: url(../resources/images/onlineorderbanner.jpg);
+    top: 0;
+    left: 0;
+    height: 70vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
 .container1 {
   position: relative;
   display:inline-block;
   padding:0px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .centered1 {
@@ -12,4 +25,30 @@
   text-align: center;
   color: white;
   font-size: 25px;
+}
+
+.menulist {
+  width: 100%;
+}
+
+.form .input-container {
+    float: left;
+    width: 60%;
+    padding-right: 15px;
+    margin-bottom: 15px;
+}
+
+.lists {
+    float: right;
+    width: 40%;
+}
+
+.desc {
+  float: left;
+  width: 50%;
+  padding-bottom: 50px;
+}
+
+.form p {
+  padding-top: 20px;
 }
