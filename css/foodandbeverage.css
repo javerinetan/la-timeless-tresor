@@ -152,6 +152,19 @@
   animation: growDown 300ms ease-in-out forwards;
 }
 
+.dropdownfab b{
+font-family: 'LibreBodoni-Regular';
+font-weight: lighter;
+text-transform: uppercase;
+}
+
+.price{
+  font-family: 'LibreBodoni-Regular';
+  font-weight: lighter;
+  text-transform: uppercase;
+  color: #aa8453;
+}
+
 @keyframes growDown { /*Animation For the Dropdown*/
  0% {
    transform: scaleY(0)
