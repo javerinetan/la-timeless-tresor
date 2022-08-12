@@ -93,7 +93,7 @@
   display: inline-block;
 }
 
-.form .wrapper {
+.form .wrapper { /*Overall Box of the Sign in*/
   margin: 100px 0px;
   padding: 0px 60px;
 }
@@ -107,7 +107,7 @@ form{
   margin-top: 45px;
 }
 
-.a-style1{ /*Password*/
+.a-style1{ /*Forget Password*/
   font-size: 15px !important;
 }
 
