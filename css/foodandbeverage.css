@@ -141,13 +141,13 @@
   animation: growDown 300ms ease-in-out forwards;
 }
 
-.dropdownfab b{
+.dropdownfab b{ /*bold*/
 font-family: 'LibreBodoni-Regular';
 font-weight: lighter;
 text-transform: uppercase;
 }
 
-.price{
+.price{ /*Price*/
   font-family: 'LibreBodoni-Regular';
   font-weight: lighter;
   text-transform: uppercase;
