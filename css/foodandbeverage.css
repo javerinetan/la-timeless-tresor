@@ -181,7 +181,7 @@ text-transform: uppercase;
 
 .Menu .Center li{ /*Blocks for the Food*/
   display: block;
-  width: 50%;
+  width: 33.33%;
   float: left;
   padding: 0px 10px;
   padding-bottom: 30px;
