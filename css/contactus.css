@@ -69,7 +69,7 @@
   padding: 0px 60px;
 }
 
-.form .button-style1 {
+.form .button-style1 { /*Submit Button*/
   text-align: center;
   margin-top: 45px;
 }
@@ -91,6 +91,7 @@ textarea {
   height: 692px;
 }
 
+/*Smaller Window*/
 @media screen and (max-width: 1200px) {
   .map{
     position: relative;
