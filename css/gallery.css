@@ -16,10 +16,10 @@ h1, h2 {
 }
 
 .banner {
-  background-image: url("../resources/images/banner.jpg");
+  background-image: url("../resources/images/gallerybanner2.jpg");
   top: 0;
   left: 0;
-  height: 70vh;
+  height: 83vh;
   width: 100%;
   background-size: cover;
   background-position: center;
@@ -29,7 +29,7 @@ h1, h2 {
 .heading {
   color: white;
   position: relative;
-  top: 200px;
+  top: 280px;
   text-align: center;
   animation: title-slide 1s ease-in-out;
 }
@@ -37,11 +37,11 @@ h1, h2 {
 @keyframes title-slide {
   0% {
     opacity: 0.8;
-    top: 400px;
+    top: 500px;
   }
   100% {
     opacity: 1;
-    top: 200px;
+    top: 280px;
   }
 }
 
