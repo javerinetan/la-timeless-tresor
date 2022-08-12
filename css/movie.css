@@ -1,12 +1,12 @@
 
 .mmain-bg {      /**imgae**/
-  background:linear-gradient(90deg, var(--white), transparent 0%), url('../resources/images/cinema2.webp') no-repeat;
+  background: url('../resources/images/cinema2.webp') no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   top: 0;
   left: 0;
-  height: 500px;
+  height: 83vh;
   width: 100%;
   z-index: -1;
 }
@@ -22,7 +22,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  height: 500px;
+  height: 83vh;
   width: 100%;
 }
 /**heading fonts**/

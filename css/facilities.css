@@ -205,19 +205,6 @@ header{
 }
 
 @media screen and (max-width: 500px){
-    .about .content{
-      font-size: 85% !important;
-      margin: 10px;
-    }
-    .page-name {
-      font-size: 200% !important;
-    }
-    .hotel-name{
-      font-size: 80% !important;
-    }
-    .horizontal-line{
-      margin: 20px 0px !important;
-    }
     .right img, .left img, .right article, .left article  {
       width: 100%;
       float: none;
@@ -234,10 +221,6 @@ header{
 
 
 @media screen and (max-width: 900px){
-  .heading h1 {
-      font-size: 40px;
-      letter-spacing: 4px;
-  }
   .left article {
     padding: 20px!important;
     font-size: 80%;
@@ -248,12 +231,6 @@ header{
   }
   .subtitle {
     font-size: 90%!important;
-  }
-  .section-subheading{
-    font-size: 100%!important;
-  }
-  .section-title{
-    font-size: 200%!important;
   }
   .button1 {
     padding: 0.8rem 3.28rem;

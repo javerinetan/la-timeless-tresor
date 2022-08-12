@@ -149,7 +149,7 @@ header {
 .services .box-container .box p{
    line-height: 1.3rem;
    font-size: .9rem;
-   color:#666666);
+   color:#666666;
    padding-bottom: 12.5px;
 }
 
@@ -225,30 +225,14 @@ h2{
   align-items: flex-start;
 }
 
-@media screen and (max-width: 400px){
-  .heading h1 {
-    font-size: 35px;
-    letter-spacing: 4px;
-  }
-  .about .content{
-    font-size: 85% !important;
-  }
-  .page-name {
-    font-size: 200% !important;
-  }
-  .hotel-name{
-    font-size: 80% !important;
-  }
-  .horizontal-line{
-    margin: 20px 0px 13px!important;
-  }
-  .about{
-    margin-top:100px !important;
+@media screen and (max-width: 420px){
+  #about{
+    margin-top:20rem !important;
   }
   .services .box-container{
     display: block;
     text-align: center;
-    padding: 3.3rem; /*idk how to settle this boxcontainer ..*/
+    padding: 4.5rem; /*idk how to settle this boxcontainer ..*/
     padding-top: 0;
     margin-left: auto;
     margin-right: auto;
@@ -266,13 +250,6 @@ h2{
   }
   h2{
     font-size: 1.1rem;
-  }
-}
-
-@media screen and (max-width: 600px){
-  .heading h1 {
-    font-size: 35px;
-    letter-spacing: 4px;
   }
 }
 
