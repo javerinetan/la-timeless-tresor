@@ -163,7 +163,7 @@
         <form action="index.html" method="post">
           <div class="input-container">
             <p>Check in date</p>
-            <input class="input-style1" type="date" name="chkin-display" value="-" id="chkin" onchange="updateBooking(this)">
+            <input class="input-style1" type="date" name="chkin-display" value="-" id="chkin" onchange="updateBooking(this)" required>
             <div style="width:48%;float:left">
               <p>No. of Adult</p>
               <select class="input-style1" name="adult-display" id="adult" onchange="updateBooking(this)">
@@ -188,7 +188,7 @@
           </div>
           <div class="input-container">
             <p>Check out date</p>
-            <input class="input-style1" type="date" name="chkout-display" value="-" id="chkout" onchange="updateBooking(this)">
+            <input class="input-style1" type="date" name="chkout-display" value="-" id="chkout" onchange="updateBooking(this)" required>
             <p>Room Type</p>
             <select class="input-style1">
               <option value="-">Room Type</option>
@@ -317,8 +317,8 @@
      <section style="width:100%; background-color: #222">
       <div class="container" style="padding: 10px;">
         <div class="tc">
-          <a href="#">Terms & Conditions</a> |
-          <a href="#">Privacy Policy</a>
+          <a href="../pages/termsandcondition.html">Terms & Conditions</a> |
+          <a href="../pages/privacy.html">Privacy Policy</a>
         </div>
         <div style="width:100%; padding: 20px; text-align: center">
           <p>Copyright 2022 &copy; Le Timeless Tresor | All right reserved.</p>

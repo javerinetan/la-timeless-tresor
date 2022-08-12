@@ -1,0 +1,58 @@
+.banner {
+  background-image: url("../resources/images/pool2.jpg");
+  top: 0;
+  left: 0;
+  height: 500px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.heading {
+  color: white;
+  position: relative;
+  top: 315px;
+  text-align: center;
+  animation: title-slide 1s ease-in-out;
+}
+
+.heading h1 {
+  font-family: 'LibreBodoni-Regular';
+  font-size: 50px;
+  color: white;
+  margin: 0;
+  font-weight: lighter;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+}
+
+.heading p {
+  margin: 0;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.layer {
+  background-color: black;
+  opacity: 0.55;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 500px;
+  width: 100%;
+}
+
+.section-title {
+  font-size: 38px;
+}
+
+.section-sub-title {
+  color: darkgray;
+}
+
+.section-subheading {
+  text-transform: uppercase;
+  color: #aa8453;
+  font-size: 18px;
+}

@@ -1,18 +1,18 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Event Reservation | Le Timeless Trésor</title>
-  <link href="../css/eventreservation.css" rel="stylesheet">
-  <link rel="stylesheet" href="../css/navbar.css">
-  <link rel="stylesheet" href="../css/global.css">
-  <link rel="stylesheet" href="../css/fform.css">
-  <link rel="icon" href="../resources/images/logo.png">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-</head>
-<body onload="showAll()">
-  <nav class="topnav" id="myTopnav">
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../resources/images/logo.png">
+    <title>Reservation | Le Timeless Trésor</title>
+    <!--link to css and jv-->
+    <link rel="stylesheet" href="../css/jae_forms.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  </head>
+  <body>
+    <nav class="topnav" id="myTopnav">
       <div class="container">
         <a href="../index.html" style="padding:0; display:inline">
           <img src="../resources/images/logov2_white.png" alt="Logo" class="nav-logo" id="navLogo">
@@ -117,80 +117,51 @@
       <script type="text/javascript" src="../js/nav.js"></script>
     </nav>
 
-    <!-- Image + Header -->
-    <div>
-        <header class="banner" onclick="dismissBookingForm()">
-          <div class="layer">
-          </div>
-        <div class="container">
-          <div class="heading">
-            <p class="section-subheading">EVENTS</p>
-            <h1 class="title">EVENT RESERVATION</h1>
-          </div>
-        </div>
-      </header>
+<!--end of intro-->
+<!-- start the page about intro-->
+  <header class="confirmation-banner" onclick="dismissBookingForm()"> <!-- so the side thing will not come out-->
+    <div class="layer">
     </div>
-    <div class="mainbody">
-      <!-- start of form-->
-      <div class="content reveal up">
-      <section class = "form">
-          <div class="form container">
-            <div class="wrapper" id="form-section">
-              <h4 class="section-subheading">Event Booking</h4>
-              <h1 class="section-title">Reservation</h1>
-              <hr class="horizontal-line">
-              <p class="info"> Please do note that the hotel reserves all rights to cancel your
-                reservation should there be a need. Any extra charges needed will be charged to you.
-                Please do call us 7 days before any cancellation.
-                Failure to cancel in advance will result in a fine. Children above 12 years old is consider and adult. If you have any enquries please call<a href="callto:+6588031454" style="color: blue;">+65 88031454</a></p>
-                <!---so if u click on the phone number it will call--->
-              <form action = "eventreservationconfirmation.html" method="get" name="Booking">
-                <div class="input-container">
-                  <p>Select Booking Date</p>
-                  <input class="input-style1" type="date" name="Date" id="date" required>
-                  <div style="width:48%; float:left">
-                    <p>No. of Adult</p>
-                    <input type="number" class="input-style1"  name="Adult"  id="adult" placeholder="Adult:" min="1" max="10"  required >
-                  </div>
-                  <div style="width:48%;float:right">
-                    <p>No. of Child</p>
-                      <input type="number" class="input-style1" name="Child"  id="child" placeholder="Children:" min="0" max="10" >
-                  </div>
-                  <p>Name</p>
-                  <input type="text" id="name" class="input-style1"  name="Name" placeholder="Full Name" pattern=[A-Z\sa-z]{3,20} required>
-                  <p>Email</p>
-                    <input type="email" id="email" class="input-style1" name="Email Address" placeholder="john.doe@email.com" required>
-                </div>
-                <div class="input-container">
-                  <p>Type of Event</p>
-                  <input class="input-style1" type="text" name="Type of Event" value="" maxlength="4" minlength="4" pattern=[A-Z\1-9\L]{1,2,1} >
-                  <p>Choose Time Slot:</p>
-                  <select class="input-style1" name="Time Slot:" required>
-                    <option value="">time slot</option>
-                    <option value="6.00am">6.00am</option>
-                    <option value="6.30am">6.30am</option>
-                    <option value="7.00am">7.00am</option>
-                    <option value="7.30am">7.30am</option>
-                    <option value="8.00am">8.00am</option>
-                    <option value="8.30am">8.30am</option>
-                    <option value="9.00am">9.00am</option>
-                    <option value="9.30am">9.30am</option>
-                    <option value="10.00am">10.00am</option>
-                  </select>
-                  <p>Your Phone</p>
-                  <input type="tel" id="phone" class="input-style1" name="Phone Number" placeholder="65-8803-1454" pattern=(\d{2})-?\s?(\d{4})-?\s?(\d{4}) required>
-                    <p>Anything Else?</p>
-                    <textarea id="message" name="Note" class="input-style1" placeholder="Tell us if you have any requirement"></textarea>
-                </div>
-                <a href="../pages/eventreservationconfirmation.html" style="display: inline-block;width: 100%;">
-                  <button type="submit" id="submit" class="button-style2"  style="width: 48%;">Submit<i class="ti-angle-right"></i></button>
-                </a>
-              </form>
-            </div>
-          </div>
-        </section>
+    <div class="container">
+      <div class="heading">
+        <p class="section-subheading">Le Timeless Trésor</p>
+        <h1 class="title">Online Ordering</h1>
       </div>
-        <script type="text/javascript" src="../js/form.js"></script> <!--for the dates validation made by me -->
+    </div>
+  </header>
+  <section class = "form">
+      <div class="form container">
+        <div class="wrapper" id="form-section">
+          <h4 class="section-subheading">Confirmation of Order(s)</h4>
+          <h1 class="section-title">Online Order</h1>
+          <hr class="horizontal-line">
+          <p class="info">Please check your email for any payment required. Please do note that the hotel reserves all rights to cancel your
+            reservation shoudld there be a need. Any extra charges needed will be charged to you.
+            If you have any enquries please call <a href="callto:+6588031454">+65 88031454</a></p>
+  <script type="text/javascript">
+    document.write("<h1>Your order has been confirm:</h2></br>");
+    var formData = location.search;
+
+    formData = formData.substring(1, formData.length);
+    while (formData.indexOf("+") != -1) {
+    	formData = formData.replace("+", " ");
+    }
+
+    formData = unescape(formData);
+    var formArray = formData.split("&");
+    for (var i=0; i < formArray.length; ++i) {
+      text = formArray[i].replace("=", ": ");;
+    	document.writeln(text + "<br />");
+    }
+
+</script>
+<a style="display: inline-block;width: 100%;">
+  <button type="submit" class="button-style2" onclick="window.print()" style="width: 48%;">Print confirmation page<i class="ti-angle-right"></i></button>
+ </a>
+ </div>
+ </div>
+</section>
+<!-- footer section starts -->
 <footer class="footer">
    <div class="container">
      <section>
@@ -265,8 +236,8 @@
    </section>
 </footer>
 
-      <script src="../js/main.js"></script>
-      <script src="../js//moment.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-      <script src="../js/eventreservation.js" type="text/javascript"></script>
+<script src="js/flickity.pkgd.min.js"></script>
+<script src="js/index.js"></script>
+<script src="js/main.js"></script>
 </body>
+</html>
