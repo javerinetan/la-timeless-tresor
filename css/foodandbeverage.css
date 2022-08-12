@@ -169,17 +169,7 @@ text-transform: uppercase;
  display: block;
  background-color: #F8F5F0;
 }
-.Add{ /*Add Box*/
- font-size: 50px;
- background-color: #F5EFE8;
- border-radius: 15px;
- padding: 5px;
-}
-.Add:hover{ /*Add Box Hover*/
- background-color: white;
- font-weight: bolder;
- cursor: pointer;
-}
+
 /*Menu Center*/
 .Menu .Center{ /*Center Food*/
   display: table-cell;
