@@ -64,6 +64,17 @@
   background-attachment: fixed;
 }
 
+.sailing-banner{
+  background-image: url("../resources/images/windsailing2.jpeg");
+  top: 0;
+  left: 0;
+  height: 500px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
 
 .heading {
   color: white;
