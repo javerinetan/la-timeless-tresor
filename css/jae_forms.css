@@ -64,6 +64,17 @@
   background-attachment: fixed;
 }
 
+.sailing-banner{
+  background-image: url("../resources/images/windsailing2.jpeg");
+  top: 0;
+  left: 0;
+  height: 500px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
 
 .heading {
   color: white;
@@ -207,6 +218,7 @@
     font-size:30px;
   }
 
+
 }
 
 
@@ -238,6 +250,10 @@
   }
   .form .input-container { /** this is so that the display will float left and setting the padding size for the form**/
     margin-bottom: 20px;
+  }
+  .form .button-style2 {
+    width: 100%;
+    margin-top: 30px;
   }
 
 }

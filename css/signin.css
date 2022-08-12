@@ -52,16 +52,16 @@
 }
 
 /**Body**/
-/*Article*/
-.section-title {
+/*Left Side*/
+.section-title { /*Welcome Back*/
   font-size: 38px;
 }
 
-.section-sub-title {
+.section-sub-title { /*We're glad that your're Back*/
   color: darkgray;
 }
 
-.section-subheading {
+.section-subheading { /*Exclusive Members*/
   text-transform: uppercase;
   color: #aa8453;
   font-size: 18px;
@@ -85,29 +85,24 @@
   margin-top:120px;
 }
 
-
-.signin .form {
-  float: left;
+/*Right Side*/
+.signin .form { /*Background Color + Width of Form*/
   background-color: #F8F5F0;
   width: 40%;
   display: inline-block;
 }
 
-.form .wrapper {
+.form .wrapper { /*Overall Size of the Sign In Box*/
   margin: 100px 0px;
   padding: 0px 60px;
 }
 
-form{
-  margin-top: 20px;
-}
-
-.form .button-style1 {
+.form .button-style1 { /*Sign in Button*/
   text-align: center;
   margin-top: 45px;
 }
 
-.a-style1{ /*Password*/
+.a-style1{ /*Forget Password*/
   font-size: 15px !important;
 }
 

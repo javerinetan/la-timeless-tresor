@@ -7,6 +7,7 @@ var indicator = document.getElementById("indicator");
 
 var firstLoad = true;
 
+// responsive navbar menu
 function displayNav() {
   var x = document.getElementById("myTopnav");
 
@@ -17,6 +18,7 @@ function displayNav() {
   }
 }
 
+// navbar switching behaviour
 window.onscroll = function() {
   if (window.pageYOffset >= 250) {
     navbar.classList.add("sticky");
@@ -44,6 +46,7 @@ window.onscroll = function() {
   }
 }
 
+// display booking form
 function displayBookingForm() {
   if (!form.className.includes("show-form")) {
     form.classList.add("show-form");
@@ -54,11 +57,13 @@ function displayBookingForm() {
   }
 }
 
+// closes booking form
 function dismissBookingForm(){
   form.classList.remove("show-form");
   sidebtn.classList.remove("btn-active");
 }
 
+// action button behaviour
 function scrollAction(){
   if (window.pageYOffset >= 300){
     window.scrollTo(0, 0);

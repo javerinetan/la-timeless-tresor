@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../resources/images/logo.png">
+    <title>Wind Sailing Reservation | Le Timeless Trésor</title>
+    <!--link to css and jv-->
+    <link rel="stylesheet" href="../css/jae_forms.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  </head>
+  <body>
+    <nav class="topnav" id="myTopnav">
+          <div class="container">
+            <a href="../index.html" style="padding:0; display:inline">
+              <img src="../resources/images/logov2_white.png" alt="Logo" class="nav-logo" id="navLogo">
+            </a>
+            <a href="javascript:void(0);" style="font-size:18px;margin-top: 10px;" class="icon" onclick="displayNav()">&#9776;</a>
+            <div class="nav-items">
+              <div class="dropdown">
+                <button class="dropbtn">The Resort
+                  <i class="ti-angle-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="abouts.html">About Us<i class="ti-angle-right"></i></a>
+                  <a href="accommodations.html">Accomodations<i class="ti-angle-right"></i></a>
+                  <a href="facilities.html">Facilities<i class="ti-angle-right"></i></a>
+                  <a href="services.html">Services<i class="ti-angle-right"></i></a>
+                </div>
+              </div>
+              <div class="dropdown">
+                <button class="dropbtn">Dining
+                  <i class="ti-angle-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="foodandbeverage.html">The Restaurant<i class="ti-angle-right"></i></a>
+                  <a href="restaurant_reservation.html">Reservation<i class="ti-angle-right"></i></a>
+                  <a href="onlineordering.html">Ordering<i class="ti-angle-right"></i></a>
+                </div>
+              </div>
+              <div class="dropdown">
+                <button class="dropbtn">Events & Promotions
+                  <i class="ti-angle-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="events.html">Events<i class="ti-angle-right"></i></a>
+                  <a href="eventreservation.html">Events Reservation<i class="ti-angle-right"></i></a>
+                  <a href="promotion.html">Promotions<i class="ti-angle-right"></i></a>
+                </div>
+              </div>
+              <div class="dropdown">
+               <button class="dropbtn">Gallery
+                 <i class="ti-angle-down"></i>
+               </button>
+               <div class="dropdown-content">
+                 <a href="gallery.html">Overview<i class="ti-angle-right"></i></a>
+                 <a href="gallery360.html">360° Photos<i class="ti-angle-right"></i></a>
+               </div>
+             </div>
+              <a href="contactus.html">Contact</a>
+              <a href="booking.html" class="active">Book Now</a>
+              <div class="dropdown">
+                <button class="dropbtn"><img src="../resources/images/user_white.png" alt="account" id="account" width="18px">
+                  <i class="ti-angle-down"></i>
+                </button>
+                <div class="dropdown-content" style="min-width:120px">
+                  <a href="signin.html">Sign In<i class="ti-angle-right"></i></a>
+                  <a href="signup.html">Sign Up<i class="ti-angle-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="scroll-indicator" id="indicator" onclick="scrollAction()">
+            <i class="ti-angle-down"></i>
+          </div>
+          <div class="book-btn" id="sideBtn" onclick="displayBookingForm()">
+            <p class="book-arrow"><i class="ti-angle-up"></i></p>
+            <p class="book-title">Book Now</p>
+          </div>
+          <div class="book-form" id="bookForm">
+            <h4>Le Timeless Trésor</h4>
+            <h2>Check Availability</h2>
+            <input class="chk-in input-style1" type="text" placeholder="Check in" onfocus="(this.type='date')" onblur="(this.type='text')">
+            <input class="chk-out input-style1" type="text" placeholder="Check out" onfocus="(this.type='date')" onblur="(this.type='text')">
+            <select class="room input-style2" name="adult">
+              <option value="">Room Type</option>
+              <option value="Junior Room">Junior Room</option>
+              <option value="Double Room">Double Room</option>
+              <option value="Family Suite">Family Suite</option>
+              <option value="Deluxe Suite">Deluxe Suite</option>
+            </select>
+            <div class="form-container" style="padding: 0px 7.5px 0px 0px">
+              <select class="adult input-style2" name="adult">
+                <option value="">Adult</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+            <div class="form-container" style="padding: 0px 0px 0px 7.5px">
+              <select class="child input-style2" name="">
+                <option value="">Child</option>
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+            <button class="button-style1">Check<i class="ti-angle-right"></i></button>
+          </div>
+          <script type="text/javascript" src="../js/nav.js"></script>
+        </nav>
+<!---header -->
+<header class="sailing-banner" onclick="dismissBookingForm()"> <!-- so the side thing will not come out-->
+  <div class="layer">
+  </div>
+  <div class="container">
+    <div class="heading">
+      <p class="section-subheading">Le Timeless Trésor</p>
+      <h1 class="title">Wind Sailing </h1>
+    </div>
+  </div>
+</header>
+
+<!--next-->
+
+<section class = "form">
+  <div class="form container">
+    <div class="wrapper" id="form-section">
+      <h4 class="section-subheading">Reservation</h4>
+      <h1 class="section-title">Wind Sailing</h1>
+      <hr class="horizontal-line">
+      <p class="info"> Please do note that the hotel reserves all rights to cancel your
+        reservation shoudld there be a need. Any extra charges needed will be charged to you.
+        Please do call us 7 days before any cancellation.
+        Failure to cancel in advance will result in a fine. Children above 12 years old is consider and adult. If you have any enquries please call <a href="callto:+6588031454">+65 88031454</a></p>
+      <form action = "Promotions_Sailing_CONFIRM.html " method="get" name="Booking">
+        <div class="input-container">
+          <p>Select Booking Date</p>
+          <input class="input-style1" type="date" name="Date" id="date" required>
+          <div style="width:48%; float:left">
+            <p>No. of Adult</p>
+            <input type="number" class="input-style1"  name="Adult"  id="adult" placeholder="Adult:" min="1" max="10"  required >
+          </div>
+          <div style="width:48%;float:right">
+            <p>No. of Child</p>
+              <input type="number" class="input-style1" name="Child"  id="child" placeholder="Children:" min="0" max="10" >
+          </div>
+          <p>Name</p>
+          <input type="text" id="name" class="input-style1"  name="Name" placeholder="Full Name" pattern=[A-Z\sa-z]{3,20} required>
+          <p>Email</p>
+            <input type="email" id="email" class="input-style1" name="Email Address" placeholder="john.doe@email.com" required>
+        </div>
+        <div class="input-container">
+          <p>Hotel Confirmation Number</p>
+          <input class="input-style1" type="text" name="Hotel Confirmation Number" value="" maxlength="4" minlength="4" pattern=[A-Z\1-9\L]{1,2,1} >
+          <p>Select the course:</p>
+            <select class="input-style1" name="Course Type" required>
+              <option value="">Course Type</option>
+              <option value="Minigolf">Mini Golf</option>
+              <option value="classique Course">Classique Course</option>
+              <option value="Digi Course">DIGI course</option>
+            </select>
+            <p>Choose Time Slot:</p>
+            <select class="input-style1" name="Time Slot:" required>
+              <option value="">Time Slot</option>
+              <option value="6.00am">6.00am</option>
+              <option value="6.30am">6.30am</option>
+              <option value="7.00am">7.00am</option>
+              <option value="7.30am">7.30am</option>
+              <option value="8.00am">8.00am</option>
+              <option value="8.30am">8.30am</option>
+              <option value="9.00am">9.00am</option>
+              <option value="9.30am">9.30am</option>
+              <option value="10.00am">10.00am</option>
+              <option value="10.30am">10.30am</option>
+              <option value="11.00am">11.00am</option>
+              <option value="11.30am">11.30am</option>
+              <option value="12.00pm">12.00pm</option>
+              <option value="12.30pm">12.30pm</option>
+              <option value="1.00pm">1.00pm</option>
+              <option value="1.30pm">1.30pm</option>
+              <option value="2.00pm">2.00pm</option>
+              <option value="2.30pm">2.30pm</option>
+              <option value="3.00pm">3.00pm</option>
+              <option value="3.30pm">3.30pm</option>
+              <option value="4.00pm">4.00pm</option>
+              <option value="4.30pm">4.30pm</option>
+              <option value="5.00pm">5.00pm</option>
+              <option value="5.30pm">5.30pm</option>
+              <option value="6.00pm">6.00pm</option>
+              <option value="6.30pm">6.30pm</option>
+              <option value="7.00pm">7.00pm</option>
+              <option value="7.30pm">7.30pm</option>
+              <option value="8.00pm">8.00pm</option>
+              <option value="8.30pm">8.30pm</option>
+              <option value="9.00pm">9.00pm</option>
+            </select>
+          <p>Your Phone</p>
+          <input type="tel" id="phone" class="input-style1" name="Phone Number" placeholder="65-8803-1454" pattern=(\d{2})-?\s?(\d{4})-?\s?(\d{4}) required>
+        </div>
+        <a href="../pages/Promotions_Sailing_CONFIRM.html" style="display: inline-block;width: 100%;">
+          <button type="submit" id="submit" class="button-style2"  style="width: 48%;">Submit<i class="ti-angle-right"></i></button>
+        </a>
+      </form>
+    </div>
+  </div>
+</section>
+<script type="text/javascript" src="../js/form.js"></script> <!--for the dates validation made by me -->
+
+
+<!-- forms section end -->
+<!-- footer section starts -->
+<footer class="footer">
+   <div class="container">
+     <section>
+       <div class="box">
+          <img src="../resources/images/logov2_black.png">
+       </div>
+       <div class="box">
+          <p>Turquoise waters lap at white-sand shores. Towering palms rustle overhead. Welcome to Le Timeless Trésor.</p>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-instagram"></i>
+       </div>
+       <div class="box newsletter">
+         <h3>Join Newsletter</h3>
+         <input type="text" placeholder="email">
+         <button><i class="fa-solid fa-arrow-right"></i></button>
+       </div>
+     </section>
+     <section>
+       <div class="box">
+          <h3>The Resort</h3>
+          <a href="abouts.html">Overview<i class="ti-angle-right"></i></a>
+          <a href="accommodations.html">Accomodations<i class="ti-angle-right"></i></a>
+          <a href="facilities.html">Facilities<i class="ti-angle-right"></i></a>
+          <a href="services.html">Services<i class="ti-angle-right"></i></a>
+          <a href="foodandbeverage.html">Dining<i class="ti-angle-right"></i></a>
+          <a href="gallery.html">Gallery<i class="ti-angle-right"></i></a>
+          <a href="contactus.html">Contact Us<i class="ti-angle-right"></i></a>
+          <a href="eventdetail.html">Events<i class="ti-angle-right"></i></a>
+          <a href="promotion.html">Promotions<i class="ti-angle-right"></i></a>
+       </div>
+       <div class="box">
+          <h3>My Account</h3>
+          <a href="signin.html">Log in<i class="ti-angle-right"></i></a>
+          <a href="signup.html">Sign up<i class="ti-angle-right"></i></a>
+       </div>
+     </section>
+     <section>
+       <div class="box">
+          <i class="fas fa-envelope"></i>
+          <h3>Email</h3>
+          <p>LeTimelessTresor@resort.com</p>
+       </div>
+       <div class="box">
+          <i class="fas fa-clock"></i>
+          <h3>Hotline Hours</h3>
+          <p>08:00am to 08:00pm</p>
+       </div>
+       <div class="box">
+          <i class="fas fa-map-marker-alt"></i>
+          <h3>Location</h3>
+          <p>La Baie Classique, Singapore</p>
+       </div>
+       <div class="box">
+          <i class="fas fa-phone"></i>
+          <h3>Contact</h3>
+          <p>+65-9999</p>
+       </div>
+     </section>
+     <hr>
+   </div>
+   <section style="width:100%; background-color: #222">
+    <div class="container" style="padding: 10px;">
+      <div class="tc">
+        <a href="#">Terms & Conditions</a> |
+        <a href="#">Privacy Policy</a>
+      </div>
+      <div style="width:100%; padding: 20px; text-align: center">
+        <p>Copyright 2022 &copy; Le Timeless Tresor | All right reserved.</p>
+      </div>
+    </div>
+   </section>
+</footer>
+
+<script src="js/flickity.pkgd.min.js"></script>
+<script src="js/index.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

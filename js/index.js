@@ -7,11 +7,13 @@ var indicator = document.getElementById("indicator");
 
 var firstLoad = true;
 
+// if scroll down, hide book form
 if (window.innerWidth > 1000){
   form.classList.add("show-form");
   sidebtn.classList.add("btn-active");
 }
 
+// responsive navbar menu
 function displayNav() {
   var x = document.getElementById("myTopnav");
 
@@ -22,6 +24,7 @@ function displayNav() {
   }
 }
 
+// Scrolling behaviour
 window.onscroll = function() {
   if (window.pageYOffset >= 250) {
     navbar.classList.add("sticky");
@@ -49,6 +52,7 @@ window.onscroll = function() {
   }
 }
 
+// Show the book now form
 function displayBookingForm() {
   if (!form.className.includes("show-form")) {
     form.classList.add("show-form");
@@ -59,11 +63,13 @@ function displayBookingForm() {
   }
 }
 
+// Dismiss form behaviour
 function dismissBookingForm(){
   form.classList.remove("show-form");
   sidebtn.classList.remove("btn-active");
 }
 
+// Action button behaviour
 function scrollAction(){
   if (window.pageYOffset >= 300){
     window.scrollTo(0, 0);

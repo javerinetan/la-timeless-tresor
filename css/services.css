@@ -21,6 +21,7 @@ header {
   height: 500px;
 }
 
+
   .main-bg {
     background: url('../resources/images/services.jpg') no-repeat;
     top: 10rem;
@@ -241,11 +242,19 @@ h2{
   .horizontal-line{
     margin: 20px 0px 13px!important;
   }
+  .about{
+    margin-top:100px !important;
+  }
   .services .box-container{
-    padding:1.5px; /*idk how to settle this boxcontainer ..*/
-    gap:0;
-    margin-left: 1.5rem;
-    margin-right: 2rem;
+    display: block;
+    text-align: center;
+    padding: 3.3rem; /*idk how to settle this boxcontainer ..*/
+    padding-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .services .box-container .box{
+    margin-bottom: 50px;
   }
   /*for timtable*/
   table{
