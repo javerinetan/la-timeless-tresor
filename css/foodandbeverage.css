@@ -2,6 +2,8 @@
   margin: 0px;
   padding: 0px;
 }
+
+/*Banner*/
 .banner {
   background-image: url("../resources/images/dining.jpg");
   top: 0;
@@ -43,6 +45,7 @@
   width: 100%;
 }
 
+/*Description*/
 .section1 {
   background-color: #F5EFE8;
   display: inline-block;
