@@ -70,20 +70,9 @@
   width: 350px;
 }
 
-/*Food on the Left Side*/
+/*Food Types on the Left Side*/
 .section2 {
   margin-top: 100px;
-}
-
-@keyframes fade {
-  0% {
-    opacity: 0;
-    margin-top: 20px;
-  }
-  100% {
-    opacity: 1;
-    margin-top: 0px;
-  }
 }
 
 /*Menu Remove list style*/
@@ -152,13 +141,13 @@
   animation: growDown 300ms ease-in-out forwards;
 }
 
-.dropdownfab b{
+.dropdownfab b{ /*bold*/
 font-family: 'LibreBodoni-Regular';
 font-weight: lighter;
 text-transform: uppercase;
 }
 
-.price{
+.price{ /*Price*/
   font-family: 'LibreBodoni-Regular';
   font-weight: lighter;
   text-transform: uppercase;
@@ -180,17 +169,7 @@ text-transform: uppercase;
  display: block;
  background-color: #F8F5F0;
 }
-.Add{ /*Add Box*/
- font-size: 50px;
- background-color: #F5EFE8;
- border-radius: 15px;
- padding: 5px;
-}
-.Add:hover{ /*Add Box Hover*/
- background-color: white;
- font-weight: bolder;
- cursor: pointer;
-}
+
 /*Menu Center*/
 .Menu .Center{ /*Center Food*/
   display: table-cell;
