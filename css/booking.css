@@ -140,6 +140,11 @@
   margin-top: 18px;
 }
 
+.booking-details input {
+  background-color: transparent;
+  pointer-events: none;
+}
+
 .booking-details.alt-color {
   background-color: #F5EFE8;
 }

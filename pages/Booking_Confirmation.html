@@ -1,17 +1,17 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="../resources/images/logo.png">
-  <title>Booking | La Timeless Trésor</title>
-  <link rel="stylesheet" href="../css/booking.css">
-
-  <link rel="stylesheet" href="../css/navbar.css">
-  <link rel="stylesheet" href="../css/global.css">
-  <script src="https://kit.fontawesome.com/b230c50492.js" crossorigin="anonymous"></script>
-</head>
-<body>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../resources/images/logo.png">
+    <title>Booking | Le Timeless Trésor</title>
+    <!--link to css and jv-->
+    <link rel="stylesheet" href="../css/jae_forms.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  </head>
+  <body>
   <nav class="topnav" id="myTopnav">
       <div class="container">
         <a href="../index.html" style="padding:0; display:inline">
@@ -45,7 +45,7 @@
               <i class="ti-angle-down"></i>
             </button>
             <div class="dropdown-content">
-              <a href="eventdetail.html">Events<i class="ti-angle-right"></i></a>
+              <a href="events.html">Events<i class="ti-angle-right"></i></a>
               <a href="eventreservation.html">Events Reservation<i class="ti-angle-right"></i></a>
               <a href="promotion.html">Promotions<i class="ti-angle-right"></i></a>
             </div>
@@ -75,7 +75,7 @@
       <div class="scroll-indicator" id="indicator" onclick="scrollAction()">
         <i class="ti-angle-down"></i>
       </div>
-      <div class="book-btn" id="sideBtn" onclick="displayBookingForm()" style="display:none;">
+      <div class="book-btn" id="sideBtn" onclick="displayBookingForm()">
         <p class="book-arrow"><i class="ti-angle-up"></i></p>
         <p class="book-title">Book Now</p>
       </div>
@@ -116,143 +116,52 @@
       </div>
       <script type="text/javascript" src="../js/nav.js"></script>
     </nav>
-  <header class="banner" onclick="dismissBookingForm()">
-    <div class="layer">
-    </div>
+  <!--end of intro-->
+  <!-- start the page about intro-->
+  <header class="confirmation-banner" onclick="dismissBookingForm()"> <!-- so the side thing will not come out-->
+    <div class="layer"></div>
     <div class="container">
       <div class="heading">
         <p class="section-subheading">Le Timeless Trésor</p>
-        <h1 class="title">Craft your experience</h1>
+        <h1 class="title">Booking confirmation</h1>
       </div>
     </div>
   </header>
-  <div class="content reveal up">
-    <div class="booking-details" id="bookingDetails">
-      <h4 class="section-subheading">Le Timeless Trésor</h4>
-      <h2 class="section-title-sm" style="margin:0px;">Your stay</h2>
-      <hr class="horizontal-line">
-      <form action="Booking_Confirmation.html" method="get" style="display:inline-block; width:100%">
-        <div>
-          <p>Check in</p>
-          <input id="chkin-display" type="text" name="Check-in Date" value="-">
-        </div>
-        <div>
-          <p>Check out</p>
-          <input id="chkout-display" type="text" name="Check-out Date" value="-">
-        </div>
-        <div>
-          <p>Adult</p>
-          <input id="adult-display" type="text" name="no. of Adult" value="-">
-        </div>
-        <div>
-          <p>Child</p>
-          <input id="child-display" type="text" name="no. of Child" value="-">
-        </div>
-        <div>
-          <p>Room Type</p>
-          <input id="room-display" type="text" name="Room Type" value="-">
-        </div>
-        <button type="submit" class="button-style1">Proceed<i class="ti-angle-right"></i></button>
-      </form>
-    </div>
+  <section class = "form">
     <div class="form container">
       <div class="wrapper" id="form-section">
-        <h4 class="section-subheading">Booking</h4>
-        <h1 class="section-title">Check Availability</h1>
+        <h4 class="section-subheading">Booking Confirmed</h4>
+        <h1 class="section-title" id="title"></h1>
         <hr class="horizontal-line">
-        <form action="index.html" method="post">
-          <div class="input-container">
-            <p>Check in date</p>
-            <input class="input-style1" type="date" name="chkin-display" value="-" id="chkin" onchange="updateBooking(this)" required>
-            <div style="width:48%;float:left">
-              <p>No. of Adult</p>
-              <select class="input-style1" name="adult-display" id="adult" onchange="updateBooking(this)">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-              </select>
-            </div>
-            <div style="width:48%;float:right">
-              <p>No. of Child</p>
-              <select class="input-style1" name="child-display" id="child" onchange="updateBooking(this)">
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-              </select>
-            </div>
-          </div>
-          <div class="input-container">
-            <p>Check out date</p>
-            <input class="input-style1" type="date" name="chkout-display" value="-" id="chkout" onchange="updateBooking(this)" required>
-            <p>Room Type</p>
-            <select class="input-style1">
-              <option value="-">Room Type</option>
-              <option value="Any">Any</option>
-              <option value="Junior Suite">Junior Suite</option>
-              <option value="Family Suite">Family Suite</option>
-              <option value="Deluxe Suite">Deluxe Suite</option>
-              <option value="Executive Suite">Executive Suite</option>
-            </select>
-          </div>
-          <a href="#results" style="display: inline-block;width: 100%;margin-top: 20px;">
-            <button type="button" class="button-style2" name="button" onclick="displayResults()" style="width: 48%;">Search<i class="ti-angle-right"></i></button>
-          </a>
-        </form>
+        <p class="info" id="info"></p>
+        <script type="text/javascript">
+          var items = [];
+          document.write("<h1>Booking details:</h2></br>");
+          var formData = location.search;
+
+          formData = formData.substring(1, formData.length);
+          while (formData.indexOf("+") != -1) {
+            formData = formData.replace("+", " ");
+          }
+
+          formData = unescape(formData);
+          var formArray = formData.split("&");
+          for (var i=0; i < formArray.length; ++i) {
+            text = formArray[i].replace("=", ": ");
+            document.writeln(text + "<br />");
+            items.push(text.split(": ")[1]);
+          }
+
+          document.getElementById("title").innerHTML = "See you at, " + items[0];
+          document.getElementById("info").innerHTML = "Your timeless experience begins. Welcome to le timeless Trésor.";
+        </script>
+        <a style="display: inline-block;width: 100%;">
+          <button type="submit" class="button-style2" onclick="window.print()" style="width: 48%;">Print confirmation page<i class="ti-angle-right"></i></button>
+        </a>
       </div>
     </div>
-    <div class="result container" id="results">
-      <div class="wrapper">
-        <h2 class="section-title" id="results-title" style="font-size: 30px;">No Rooms Available</h2>
-        <hr class="horizontal-line">
-        <p class="section-sub-title" id="results-sub">We cannot find any Available room. Please try a new search query.</p>
-        <div id="items" style="display:none;">
-          <div class="box reveal left">
-            <div class="image">
-              <img src="../resources/images/galleryimg3.jpg" alt="">
-            </div>
-            <div class="info">
-              <h2 class="section-title-sm">Family suite</h2>
-              <p style="font-weight: bold;font-size: 20px">$450 /night</p>
-              <div class="amenities">
-                <i class="fa-solid fa-person"></i>2-4
-                <i class="fa-solid fa-bath"></i>Bathtub
-                <i class="fa-solid fa-wifi"></i>Internet
-                <i class="fa-solid fa-bed"></i> King-sized
-              </div>
-              <a href="pages/gallery.html" class="a-style1">Room details<i class="fa-solid fa-arrow-right"></i></a>
-              <a href="#results" style="display: inline-block;width: 100%;margin-top: 20px;">
-                <button type="button" class="button-style2" name="button" style="width: 100%;" onclick="updateRoomType('Family suite','room-display')">Select this room<i class="ti-angle-right"></i></button>
-              </a>
-            </div>
-          </div>
-          <div class="box reveal left">
-            <div class="image">
-              <img src="../resources/images/galleryimg2.jpg" alt="">
-            </div>
-            <div class="info">
-              <h2 class="section-title-sm">Deluxe suite</h2>
-              <p style="font-weight: bold;font-size: 20px">$550 /night</p>
-              <div class="amenities">
-                <i class="fa-solid fa-person"></i>2-4
-                <i class="fa-solid fa-bath"></i>Bathtub
-                <i class="fa-solid fa-wifi"></i>Internet
-                <i class="fa-solid fa-bed"></i> King-sized
-              </div>
-              <a href="pages/gallery.html" class="a-style1">Room details<i class="fa-solid fa-arrow-right"></i></a>
-              <a href="#results" style="display: inline-block;width: 100%;margin-top: 20px;">
-                <button type="button" class="button-style2" name="button" style="width: 100%;" onclick="updateRoomType('Deluxe suite','room-display')">Select this room<i class="ti-angle-right"></i></button>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  </section>
+<!-- footer section starts -->
   <footer class="footer">
      <div class="container">
        <section>
@@ -317,8 +226,8 @@
      <section style="width:100%; background-color: #222">
       <div class="container" style="padding: 10px;">
         <div class="tc">
-          <a href="../pages/termsandcondition.html">Terms & Conditions</a> |
-          <a href="../pages/privacy.html">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a> |
+          <a href="#">Privacy Policy</a>
         </div>
         <div style="width:100%; padding: 20px; text-align: center">
           <p>Copyright 2022 &copy; Le Timeless Tresor | All right reserved.</p>
@@ -326,7 +235,6 @@
       </div>
      </section>
   </footer>
-
-  <script src="../js/booking.js" type="text/javascript"></script>
-  <script src="../js/main.js" type="text/javascript"></script>
+  <script src="../js/main.js"></script>
 </body>
+</html>
