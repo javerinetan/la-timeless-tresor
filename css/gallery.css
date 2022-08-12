@@ -120,12 +120,12 @@ h1, h2 {
 
 .segcontrol {
   float: left;
-  width: 100%;
-  margin: 0 auto;
+  width: 98%;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  margin: 0px 10px;
   height: 50px;
   margin-bottom: 50px;
   margin-top: 80px;
@@ -157,6 +157,7 @@ h1, h2 {
 
 /* Style the Image Used to Trigger the Modal */
 #myImg {
+  padding: 10px;
   cursor: pointer;
   transition: 0.3s;
 }
