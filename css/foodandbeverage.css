@@ -296,6 +296,7 @@
   margin-right: 10px;
 }
 
+/*Smaller Windows*/
 @media screen and (max-width: 900px) {
   .Menu .Left {
     width: 100%;
