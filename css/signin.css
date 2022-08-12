@@ -86,8 +86,7 @@
 }
 
 /*Right Side*/
-.signin .form {
-  float: left;
+.signin .form { /*Background Color + Width of Form*/
   background-color: #F8F5F0;
   width: 40%;
   display: inline-block;
@@ -98,11 +97,7 @@
   padding: 0px 60px;
 }
 
-form{
-  margin-top: 20px;
-}
-
-.form .button-style1 {
+.form .button-style1 { /*Sign in Button*/
   text-align: center;
   margin-top: 45px;
 }
