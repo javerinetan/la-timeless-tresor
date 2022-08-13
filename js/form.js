@@ -97,16 +97,28 @@ function validateform(){
       counter++;
     }
     //
-    // var number = /^\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$/
-    // if (!number.test(tel.value)){
-    //   counter++;
-    // }
+
 
     var number = /^[0-9]{8}$/;
     if (!number.test(phoneNo.value)){
       counter++;
     }
+    /*
+          var phone_input = document.getElementById("myform_phone");
 
+          phone_input.addEventListener('input', () => {
+            phone_input.setCustomValidity('');
+            phone_input.checkValidity();
+          });
+
+          phone_input.addEventListener('invalid', () => {
+            if(phone_input.value === '') {
+              phone_input.setCustomValidity('Enter phone number!');
+            } else {
+              phone_input.setCustomValidity('Enter phone number in this format: 6588031454');
+            }
+          });
+          */
 
     if (counter > 0){
       validate=false;
