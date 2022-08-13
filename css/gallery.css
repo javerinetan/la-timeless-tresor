@@ -117,7 +117,7 @@ h1, h2 {
 
 .display {
   display: block !important;
-  animation: zoom 1s ease-in-out;
+  animation: fade-up 1s ease-in-out;
 }
 
 .segcontrol {
