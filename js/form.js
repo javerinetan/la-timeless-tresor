@@ -98,7 +98,6 @@ function validateform(){
     }
     //
 
-
     var number = /^[0-9]{8}$/;
     if (!number.test(phoneNo.value)){
       counter++;
