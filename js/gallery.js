@@ -46,7 +46,7 @@ var body = document.querySelector("body");
 var captionText = document.getElementById("caption");
 
 function displayModal(image, text) {
-  modal.style.display = "block";
+  modal.style.display = "flex";
   indicator.style.display = "none";
   modalImg.src = image;
   captionText.innerHTML = text;
