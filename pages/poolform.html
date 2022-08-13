@@ -13,7 +13,6 @@
    <link rel="stylesheet" href="../css/fform.css">
    <link rel="stylesheet" href="../css/navbar.css">
    <link rel="stylesheet" href="../css/global.css">
-   <script src="try.js" defer></script>
 
 </head>
 <body>
@@ -141,32 +140,31 @@
 <!--form start-->
 <section class="formContainer">
     <div class="card">
-        <div class="parent">
+        <div class="status">
             <div class="top-div">
               <h4 class="section-subheading">Facility Booking</h4>
               <h1 class="section-title">book a pool session</h1>
             </div>
             <div class="progressbar">
               <div class="progress" id="progress"></div>
-
-              <div class="progress-step progress-step-active" data-title="Intro"></div>
-              <div class="progress-step" data-title="Contact"></div>
-              <div class="progress-step" data-title="ID"></div>
+              <!-- if u have more pages add the topic here -->
+              <div class="progress-step progress-step-active" data-title="Information"></div>
+              <div class="progress-step" data-title="Session"></div>
 
             </div>
         </div>
 
-        <div class="page currently">
+        <article class="page currently">
           <p>Full Name</p>
-            <input type="text" placeholder="Full name" require>
+            <input type="text" placeholder="Full name" required>
           <p>email</p>
-            <input type="email" require>
+            <input type="email" required>
           <div class="button">
             <button id="next" class="button-style1">next<i class="ti-angle-right"></i></button>
           </div>
-        </div>
+        </article>
 
-        <div class="page">
+        <article class="page">
           <p>Session Date</p>
           <input type="date" id="date" name="Date" value="" required>
           <p>Time *</p>
@@ -181,38 +179,43 @@
             <option value="6pm">1800</option>
             <option value="8pm">2000</option>
           </select>
+          <br>
           *Each session is 2hrs long</p>
+          <!-- can add on size of the familiy -->
           <div class="button button_gap" id="doubBtn">
               <button class="back-click"><i class="ti-angle-left"></i>Back</button>
               <button class="next-click">Next<i class="ti-angle-right"></i></button>
+              <!--only put class finish click if this is the last page, else use next-click-->
           </div>
+        </article>
 
-        </div>
+        <article class="page">
+          <p>Session Date</p>
+          <input type="date" id="date" name="Date" value="" required>
 
-         <div class="page">
-           <input></input>
-
-
-          
-            <div class="button button_gap1" id="doubBtn">
-                <button class="back-click"><i class="ti-angle-left"></i>Back</button>
-                <button class="finish-click">Finish<i class="ti-angle-right"></i></button>
-            </div>
-
-        </div>
+          <!-- can add on size of the familiy -->
+          <div class="button button_gap" id="doubBtn">
+              <button class="back-click"><i class="ti-angle-left"></i>Back</button>
+              <button class="finish-click">Next<i class="ti-angle-right"></i></button>
+              <!--only put class finish click if this is the last page, else use next-click-->
+          </div>
+        </article>
 
         <!-- donepart -->
-        <div class="page">
-            <div class="content">
-               <h2>Congratulations! <span id="shown_name"></span></h2>
-               <p>You have completed onboarding,you can start using the Eden!</p>
+
+        <article class="page">
+            <div class="confirmation">
+               <p> Please do note that the hotel reserves all rights to cancel your
+                 reservation should there be a need. Any extra charges needed will be charged to you.
+                 Please do call us 7 days before reservation date for any cancellation.
+                 Failure to cancel in advance will result in a fine. If you have any enquries please call <a href="tel:+6588031454">+65 88031454</a>
+               </p>
             </div>
-            <div class="button launch">
-                <button>Launch Eden</button>
+            <div class="button">
+                <button class="button-style1" onclick="window.print()">Print confirmation page</button>
             </div>
 
-        </div>
-
+        </article>
 
     </div>
 
