@@ -38,17 +38,17 @@ back_click.forEach(function(back_page){
 });
 
 finish_click.addEventListener('click',function(){
-//   if(!validateform()){
-//         return false;
-//         }
-         formnumber++;
-         updateform();
-         var remove_progress=document.querySelector(".progressbar");
-         remove_progress.classList.add('d-none');
-         var title= document.querySelector(".section-title");
-         title.innerHTML="Your Reservation has been confirmed";
-         var status=document.querySelector(".status");
-         status.style.marginBottom="20px";
+  if(!validateform()){
+      return false;
+  }
+   formnumber++;
+   updateform();
+   var remove_progress=document.querySelector(".progressbar");
+   remove_progress.classList.add('d-none');
+   var title= document.querySelector(".section-title");
+   title.innerHTML="Your Reservation has been confirmed";
+   var status=document.querySelector(".status");
+   status.style.marginBottom="20px";
 });
 
 
@@ -93,15 +93,20 @@ function validateform(){
     })
 
     var filter = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/
-
     if (!filter.test(email.value)){
       counter++;
     }
+    //
+    // var number = /^\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$/
+    // if (!number.test(tel.value)){
+    //   counter++;
+    // }
 
-    var number = /^\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$/
-    if (!number.test(tel.value)){
+    var number = /^[0-9]{8}$/;
+    if (!number.test(phoneNo.value)){
       counter++;
     }
+
 
     if (counter > 0){
       validate=false;

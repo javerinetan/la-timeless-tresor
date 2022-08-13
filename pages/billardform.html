@@ -4,12 +4,13 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Pool Booking | Le Timeless Trésor</title>
+   <title>billiard Room Booking | Le Timeless Trésor</title>
 
    <!-- font awesome cdn link  -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
    <link rel="icon" href="../resources/images/logo.png">
-   <link rel="stylesheet" href="../css/form.css">
+   <link rel="stylesheet" href="../css/forms.css">
+   <link rel="stylesheet" href="../css/fform.css">
    <link rel="stylesheet" href="../css/navbar.css">
    <link rel="stylesheet" href="../css/global.css">
 
@@ -122,21 +123,33 @@
     <script type="text/javascript" src="../js/nav.js"></script>
   </nav>
 
+<!--header section starts-->
+
+<header class="banner" onclick="dismissBookingForm()"> <!--so the banner wont come out-->
+  <div class="layer"></div>
+  <div class="bmain-bg"><!--insert image link to css-->
+  <div class="container">
+    <div class="heading">
+      <p class="section-subheading">Le Timeless Trésor</p>
+      <h1 class="content"> billiard room booking page</h1>
+    </div>
+  </div>
+</div>
+</header>
+
 <!--form start-->
 <section class="formContainer">
     <div class="card">
         <div class="status">
             <div class="top-div">
               <h4 class="section-subheading">Facility Booking</h4>
-              <h1 class="section-title">book a pool session</h1>
+              <h1 class="section-title">book a billiard room</h1>
             </div>
             <div class="progressbar">
               <div class="progress" id="progress"></div>
               <!-- if u have more pages add the topic here -->
               <div class="progress-step progress-step-active" data-title="Information"></div>
-              <div class="progress-step" data-title="Session"></div>
-              <div class="progress-step" data-title="Session"></div>
-
+              <div class="progress-step" data-title="Date & Time"></div>
             </div>
         </div>
 
@@ -147,6 +160,9 @@
             <input type="text" placeholder="Full name" required>
           <p>email</p>
             <input type="email" id="email" required>
+            <p>Phone Number</p>
+            <input type="number" id="phone" placeholder="88031454" minlength="8" maxlength="10" required>
+
           <div class="button">
             <button id="next" class="button-style1">next<i class="ti-angle-right"></i></button>
           </div>
@@ -169,19 +185,6 @@
           </select>
           <br>
           *Each session is 2hrs long</p>
-          <!-- can add on size of the familiy -->
-          <div class="button button_gap" id="doubBtn">
-              <button class="back-click"><i class="ti-angle-left"></i>Back</button>
-              <button class="next-click">Next<i class="ti-angle-right"></i></button>
-              <!--only put class finish click if this is the last page, else use next-click-->
-          </div>
-        </article>
-
-
-        <article class="page">
-          <p>No. of Child</p>
-            <input type="number" name="Child"  id="child" placeholder="Children:" min="0" max="10" >
-
           <!-- can add on size of the familiy -->
           <div class="button button_gap" id="doubBtn">
               <button class="back-click"><i class="ti-angle-left"></i>Back</button>
