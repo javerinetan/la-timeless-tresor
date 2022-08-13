@@ -1,0 +1,212 @@
+.teatime-banner {
+  background-image: url("../resources/images/teatime.jpg");
+  top: 0;
+  left: 0;
+  height: 500px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.formContainer{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+a{
+  color: #aa8453;
+}
+
+.card{
+    height:116vh;
+    width:450px;
+    background-color:#fff;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    border-radius:10px;
+    padding:10px 20px;
+    box-sizing:border-box;
+}
+
+.page{
+    display:none;
+}
+
+.currently{
+    display:block !important;
+}
+.d-none{
+    display:none !important;
+}
+
+.status{
+    margin-top:20px;
+    margin-bottom:50px;
+    z-index: -2; /*so the progress bar wont be behind this*/
+}
+
+.card .top-div{
+   display:block;
+   justify-content:center;
+   align-items:center;
+
+}
+
+.top-div img{
+    width:20px;
+    margin-right:7px;
+    font-family: 'LibreBodoni-Regular';
+    font-weight: 100;
+    font-size: 40px;
+    text-align: center;
+}
+
+.progressbar {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  counter-reset: step;
+  margin: 2rem 0 4rem;
+}
+
+.progressbar::before, .progress { /*the outline*/
+  content: "";
+  position: absolute;
+  top: 50%; /* make the line to be in the center of the circle*/
+  transform: translateY(-50%);
+  height: 3px;
+  width: 100%;
+  background-color: #dcdcdc;
+}
+
+.progress {
+  background-color: #c4ac80;
+  width: 0%;
+  transition: 0.3s;
+  z-index: 2
+}
+
+.progress-step {
+  width: 2.1875rem;
+  height: 2.1875rem;
+  background-color: #dcdcdc;
+  border-radius: 50%; /*the circle progress part*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3; /*so that it doesnt get covered by the progress bar*/
+  color:white;
+}
+
+.progress-step::before {
+  counter-increment: step; /*add number*/
+  content: counter(step); /*increment the number*/
+}
+
+.progress-step::after {
+  content: attr(data-title);
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.progress-step-active {
+  background-color: #c4ac80;
+  color: white;
+}
+
+.confirmation p{
+    margin-top:0;
+    font-size:15px;
+    color:#9ca4b4;
+}
+.page p{
+  margin-top: 30px;
+}
+
+input, select{
+    border:1px solid black;
+    outline:none;
+    margin-top: 5px;
+    padding: 15px 25px;
+    box-sizing:border-box;
+    display: block;
+    width: 100%;
+    font-size: 15px;
+}
+
+::placeholder{
+    color:#ccc;
+}
+
+
+.warning{
+    border:1px solid red !important;
+}
+
+.button{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-top:50px;
+}
+
+#doubBtn .back-click, #doubBtn .next-click, #doubBtn .finish-click{
+    width:45%;
+    background-color:#c4ac80;
+    font-size: 15px;
+    color:#fff;
+    padding: 20px;
+    letter-spacing: 3px;
+    cursor:pointer;
+    transition: all 0.3s ease-out;
+}
+
+#doubBtn .back-click{
+  float:right;
+  margin-right:20px;
+}
+
+#doubBtn .next-click, #doubBtn .finish-click{
+  float:left;
+  margin-left: 20px;
+}
+
+.next-click:hover .ti-angle-right, .finish-click:hover .ti-angle-right{
+  opacity: 1;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  margin-right: -10px;
+}
+
+.back-click:hover .ti-angle-left { /*idk how to do the angle to the left..*/
+  opacity: 1;
+  margin-left: -10px;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes scale {
+  0%, 100% {
+    transform: none;
+  }
+  50% {
+    transform: scale3d(1.1, 1.1, 1);
+  }
+}
+@keyframes fill {
+  100% {
+    box-shadow: inset 0px 0px 0px 30px #7ac142;
+  }
+}
