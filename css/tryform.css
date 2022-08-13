@@ -5,6 +5,10 @@
     align-items:center;
 }
 
+a{
+  color: #aa8453;
+}
+
 .card{
     height:116vh;
     width:450px;
@@ -27,7 +31,7 @@
     display:none !important;
 }
 
-.parent{
+.status{
     margin-top:20px;
     margin-bottom:50px;
     z-index: -2; /*so the progress bar wont be behind this*/
@@ -62,7 +66,7 @@
   position: absolute;
   top: 50%; /* make the line to be in the center of the circle*/
   transform: translateY(-50%);
-  height: 4px;
+  height: 3px;
   width: 100%;
   background-color: #dcdcdc;
 }
@@ -104,29 +108,20 @@
   color: white;
 }
 
-.content{
-    /*margin-top:60px;*/
-    /*text-align:center;*/
-    /*margin-bottom:30px;*/
-}
-.content h2{
-    font-size:22px;
-}
-.content p{
-    font-size:12px;
+.confirmation p{
+    margin-top:0;
+    font-size:15px;
     color:#9ca4b4;
-    font-weight:600;
 }
 .page p{
   margin-top: 30px;
 }
 
 input, select{
-    height:40px;
     border:1px solid black;
     outline:none;
     margin-top: 5px;
-    padding: 23px 25px;
+    padding: 15px 25px;
     box-sizing:border-box;
     display: block;
     width: 100%;
@@ -149,8 +144,7 @@ input, select{
     margin-top:50px;
 }
 
-#doubBtn .back-click, #doubBtn .next-click{
-    float:right;
+#doubBtn .back-click, #doubBtn .next-click, #doubBtn .finish-click{
     width:45%;
     background-color:#c4ac80;
     font-size: 15px;
@@ -166,12 +160,12 @@ input, select{
   margin-right:20px;
 }
 
-#doubBtn .next-click{
+#doubBtn .next-click, #doubBtn .finish-click{
   float:left;
   margin-left: 20px;
 }
 
-.next-click:hover .ti-angle-right{
+.next-click:hover .ti-angle-right, .finish-click:hover .ti-angle-right{
   opacity: 1;
   color: white;
   font-size: 12px;
