@@ -83,9 +83,13 @@
 
 .Menu{ /*Main Table*/
   display:table;
-
   width: 100%;
   margin-bottom: 100px;
+}
+
+.display {
+  display: block !important;
+  animation: fade-left 1s ease-in-out;
 }
 
 /*Menu Left*/

@@ -5,10 +5,12 @@ var flkty = new Flickity( review, {
   pauseAutoPlayOnHover: false
 });
 
+document.getElementById("maincourses").classList.add("display");
+
 function displayMenu(element){
   var menus = ["maincourses", "entrees","desserts", "drinks"];
   for (var i in menus) {
-    document.getElementById(menus[i]).style.display = "none";
+    document.getElementById(menus[i]).className="";
   }
   boxes = document.querySelectorAll('.Course li');
   for (const box of boxes) {
@@ -17,5 +19,5 @@ function displayMenu(element){
 
   element.classList.add('selected');
 
-  document.getElementById(element.title).style.display = "block";
+  document.getElementById(element.title).classList.add("display");
 }
