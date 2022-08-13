@@ -188,7 +188,6 @@ h1, h2 {
 .modal-content {
   margin: auto;
   display: block;
-  width: 80%;
   max-width: 700px;
 }
 
@@ -217,9 +216,9 @@ h1, h2 {
 
 /* The Close Button */
 .close {
-  position: absolute;
-  top: 15px;
-  right: 35px;
+  position: relative;
+  top: 0px;
+  left: 400px;
   color: #f1f1f1;
   font-size: 40px;
   font-weight: bold;
@@ -245,7 +244,7 @@ h1, h2 {
 
 .carousel-cell img {
   display: block;
-  width: 12%;
+  width: 100%;
 }
 
 .exteriorColumn, .diningColumn, .experienceColumn, .interiorColumn {
