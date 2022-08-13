@@ -119,8 +119,7 @@
 
 /*Menu Images*/
 .Menu img{
-  width: 300px;
-  height: 300px;
+  width: 100%;
 }
 
 /*DropDown*/
@@ -280,9 +279,7 @@ text-transform: uppercase;
     text-align: center;
     margin-bottom: 20px;
   }
-  .Menu img {
-    float: left;
-    width: 160px;
-    height: 120px;
+  .Menu .Center li {
+    width: 50%;
   }
 }
