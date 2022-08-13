@@ -92,7 +92,6 @@ function validateform(){
     let sum= inputCounter + selectCounter;
     if (sum > 0){
       validate=false;
-      alert("Please fill in all the field(s)")
     }
 
     return validate;
@@ -113,10 +112,14 @@ if(month < 10) {
 
 //set the check in and check out date
 var dateTomorrow = year + "-" + month + "-" + date;
+var dateTomorrow = year + "-" + month + "-" + date;
+var checkinElem = document.querySelector("#checkin-date");
+var checkoutElem = document.querySelector("#checkout-date");
+var reservationdate = document.querySelector("#date");
 
-var reservationdate = document.querySelectorAll("#date");
+reservationdate.setAttribute("min",dateTomorrow) //this is so it starts one day after the day it is today
+checkinElem.setAttribute("min", dateTomorrow);
 
-reservationdate.forEach(function(date){
-  date.setAttribute("min",dateTomorrow) //this is so it starts one day after the day it is today
-
-})
+checkinElem.onchange = function () {
+    checkoutElem.setAttribute("min", this.value);
+}

@@ -150,10 +150,13 @@
               <!-- if u have more pages add the topic here -->
               <div class="progress-step progress-step-active" data-title="Information"></div>
               <div class="progress-step" data-title="Session"></div>
+              <div class="progress-step" data-title="Session"></div>
 
             </div>
         </div>
 
+        <form>
+          
         <article class="page currently">
           <p>Full Name</p>
             <input type="text" placeholder="Full name" required>
@@ -189,9 +192,10 @@
           </div>
         </article>
 
+
         <article class="page">
-          <p>Session Date</p>
-          <input type="date" id="date" name="Date" value="" required>
+          <p>No. of Child</p>
+            <input type="number" name="Child"  id="child" placeholder="Children:" min="0" max="10" >
 
           <!-- can add on size of the familiy -->
           <div class="button button_gap" id="doubBtn">
@@ -216,6 +220,7 @@
             </div>
 
         </article>
+      </form>
 
     </div>
 
