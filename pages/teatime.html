@@ -144,8 +144,8 @@
     <div class="card">
         <div class="status">
             <div class="top-div">
-              <h4 class="section-subheading">Facility Booking</h4>
-              <h1 class="section-title">book a pool session</h1>
+              <h4 class="section-subheading">Restaurant Booking</h4>
+              <h1 class="section-title">Tea Time Reservation</h1>
             </div>
             <div class="progressbar">
               <div class="progress" id="progress"></div>
@@ -163,7 +163,9 @@
           <p>Full Name</p>
             <input type="text" placeholder="Full name" required>
           <p>email</p>
-            <input type="email" required>
+          <input type="email" id="email" name="Email Address" placeholder="john.doe@email.com" required>
+          <p>Your Phone</p>
+          <input type="tel" id="phone" name="Phone Number" placeholder="phone number" pattern=(\d{2})-?\s?(\d{4})-?\s?(\d{4}) required>
           <div class="button">
             <button id="next" class="button-style1">next<i class="ti-angle-right"></i></button>
           </div>
