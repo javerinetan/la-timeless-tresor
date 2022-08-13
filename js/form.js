@@ -98,6 +98,11 @@ function validateform(){
       counter++;
     }
 
+    var number = /^\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$/
+    if (!number.test(tel.value)){
+      counter++;
+    }
+
     if (counter > 0){
       validate=false;
     }
