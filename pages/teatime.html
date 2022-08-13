@@ -235,11 +235,21 @@
               <i class="fa fa-cc-discover" style="color:orange;"></i>
           </div>
           <p> Name on Card </p>
-          <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+          <input type="text" id="cname" name="cardname" placeholder="John More Doe" required>
           <p> Credit Card Number </p>
-          <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+          <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444" required>
           <p>Exp Month </p>
-          <input id="myInput" type="text" name="months" placeholder="Country">
+          <input id="myInput" type="text" name="months" placeholder="Country" required>
+          <div class="row">
+            <div class="column-l">
+              <p>Exp Year</p>
+              <input type="text" id="expyear" name="expyear" placeholder="2018" required>
+            </div>
+            <div class="column-r">
+              <p>CVV</p>
+              <input type="text" id="cvv" name="cvv" placeholder="352" min="3" max="3" required>
+            </div>
+          </div>
 
 
           <!-- can add on size of the familiy -->
