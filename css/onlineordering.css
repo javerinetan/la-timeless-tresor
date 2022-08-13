@@ -108,3 +108,8 @@
 .form p {
   padding-top: 15px;
 }
+
+#message {
+  resize: none;
+  height: 50px;
+}
