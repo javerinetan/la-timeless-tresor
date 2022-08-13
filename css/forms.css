@@ -27,8 +27,12 @@ a{
 .currently{
     display:block !important;
 }
-.d-none{
+.d-none{ /*to remove the progress bar*/
     display:none !important;
+}
+
+#space{
+  display:none!important;
 }
 
 .status{

@@ -1,5 +1,5 @@
 var create_workspace=document.querySelector("#next");
-var next_click=document.querySelectorAll(".next-click");
+var next_click=document.querySelectorAll(".next-click"); //array with all the button with that class name
 var back_click=document.querySelectorAll(".back-click");
 var finish_click=document.querySelector(".finish-click");
 var page_form=document.querySelectorAll(".page");
@@ -38,9 +38,9 @@ back_click.forEach(function(back_page){
 });
 
 finish_click.addEventListener('click',function(){
-  if(!validateform()){
-      return false;
-  }
+   if(!validateform()){
+        return false;
+    }
    formnumber++;
    updateform();
    var remove_progress=document.querySelector(".progressbar");
@@ -102,22 +102,22 @@ function validateform(){
     if (!number.test(phoneNo.value)){
       counter++;
     }
-    /*
-          var phone_input = document.getElementById("myform_phone");
 
-          phone_input.addEventListener('input', () => {
-            phone_input.setCustomValidity('');
-            phone_input.checkValidity();
-          });
+    // var phone_input = document.getElementById("myform_phone");
+    //
+    // phone_input.addEventListener('input', () => {
+    //   phone_input.setCustomValidity('');
+    //   phone_input.checkValidity();
+    // });
+    //
+    // phone_input.addEventListener('invalid', () => {
+    //   if(phone_input.value === '') {
+    //     phone_input.setCustomValidity('Enter phone number!');
+    //   } else {
+    //     phone_input.setCustomValidity('Enter phone number in this format: 6588031454');
+    //   }
+    // });
 
-          phone_input.addEventListener('invalid', () => {
-            if(phone_input.value === '') {
-              phone_input.setCustomValidity('Enter phone number!');
-            } else {
-              phone_input.setCustomValidity('Enter phone number in this format: 6588031454');
-            }
-          });
-          */
 
     if (counter > 0){
       validate=false;
@@ -125,10 +125,6 @@ function validateform(){
 
     return validate;
 }
-
-
-
-
 
 //this is to get the current date time
 //split them to variable
