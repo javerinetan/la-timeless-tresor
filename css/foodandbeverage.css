@@ -5,19 +5,19 @@
 
 /*Banner*/
 .banner {
-  background-image: url("../resources/images/dining.jpg");
+  background-image: url("../resources/images/restauarant.jpg");
   top: 0;
   left: 0;
-  height: 70vh;
+  height: 83vh;
   width: 100%;
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
   background-attachment: fixed;
 }
 .heading {
   color: white;
   position: relative;
-  top: 250px;
+  top: 280px;
   text-align: center;
   animation: title-slide 1s ease-in-out;
 }
@@ -41,7 +41,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  height: 70vh;
+  height: 83vh;
   width: 100%;
 }
 
@@ -286,5 +286,8 @@ text-transform: uppercase;
   }
   .Menu .Center li {
     width: 50%;
+  }
+  .button-style2 {
+    width: 100% !important;
   }
 }

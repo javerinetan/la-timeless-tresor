@@ -11,7 +11,7 @@ a{
 
 .card{
     height:116vh;
-    width:450px;
+    width:500px;
     background-color:#fff;
     margin-top: 100px;
     margin-bottom: 20px;
@@ -132,7 +132,6 @@ input, select{
     color:#ccc;
 }
 
-
 .warning{
     border:1px solid red !important;
 }
@@ -179,6 +178,13 @@ input, select{
   color: white;
   font-size: 12px;
   font-weight: bold;
+}
+
+#error {
+  margin: 0px;
+  margin-top: 20px !important;
+  color: red;
+  display: none;
 }
 
 @keyframes stroke {

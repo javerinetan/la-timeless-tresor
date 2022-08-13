@@ -2,7 +2,7 @@
   background-image: url("../resources/images/bf.png");
   top: 0;
   left: 0;
-  height: 500px;
+  height: 83vh;
   width: 100%;
   background-size: cover;
   background-position: center;
@@ -13,7 +13,7 @@
   background-image: url("../resources/images/indoor.jpg");
   top: 0;
   left: 0;
-  height: 500px;
+  height: 83vh;
   width: 100%;
   background-size: cover;
   background-position: center;
@@ -24,7 +24,7 @@
   background-image: url("../resources/images/outdoor.jpg");
   top: 0;
   left: 0;
-  height: 500px;
+  height: 83vh;
   width: 100%;
   background-size: cover;
   background-position: center;
@@ -35,7 +35,7 @@
   background-image: url("../resources/images/teatime.jpg");
   top: 0;
   left: 0;
-  height: 500px;
+  height: 83vh;
   width: 100%;
   background-size: cover;
   background-position: center;
@@ -46,7 +46,7 @@
   background-image: url("../resources/images/_on.webp");
   top: 0;
   left: 0;
-  height: 500px;
+  height: 83vh;
   width: 100%;
   background-size: cover;
   background-position: center;
@@ -57,7 +57,7 @@
   background-image: url("../resources/images/golfmainheader.jpg");
   top: 0;
   left: 0;
-  height: 500px;
+  height: 83vh;
   width: 100%;
   background-size: cover;
   background-position: center;
@@ -68,7 +68,7 @@
   background-image: url("../resources/images/windsailing2.jpeg");
   top: 0;
   left: 0;
-  height: 500px;
+  height: 83vh;
   width: 100%;
   background-size: cover;
   background-position: center;
@@ -79,7 +79,7 @@
 .heading {
   color: white;
   position: relative;
-  top: 300px;
+  top: 280px;
   text-align: center;
   animation: title-slide 1s ease-in-out;
 }
@@ -102,11 +102,11 @@
 
 .layer {
   background-color: black;
-  opacity: 0.3;
+  opacity: 0.4;
   position: absolute;
   top: 0;
   left: 0;
-  height: 500px;
+  height: 600px;
   width: 100%;
 }
 
