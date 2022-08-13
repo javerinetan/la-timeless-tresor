@@ -46,10 +46,8 @@ var body = document.querySelector("body");
 var captionText = document.getElementById("caption");
 
 function displayModal(image, text) {
-  modal.style.display = "block";
-  navbar.classList.remove("sticky");
+  modal.style.display = "flex";
   indicator.style.display = "none";
-  body.style.overflow = "hidden";
   modalImg.src = image;
   captionText.innerHTML = text;
 }
@@ -60,7 +58,6 @@ var span = document.getElementsByClassName("close")[0];
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
   modal.style.display = "none";
-  navbar.classList.add("sticky");
   indicator.style.display = "block";
   body.style.overflow = "auto";
 }
