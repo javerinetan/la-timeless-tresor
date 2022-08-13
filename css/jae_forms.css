@@ -143,6 +143,7 @@
   float: left;
   width: 50%;
   padding-right: 15px;
+  margin-bottom: 40px;
 }
 
 .form .wrapper { /** this is to make the form it 65% the width displayed**/

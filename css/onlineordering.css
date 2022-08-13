@@ -50,7 +50,6 @@
   position: absolute;
   top: 0;
   left: 0;
-  height: 100%;
   width: 100%;
 }
 
@@ -92,7 +91,7 @@
     float: left;
     width: 55%;
     padding-right: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 90px;
 }
 
 .lists {
