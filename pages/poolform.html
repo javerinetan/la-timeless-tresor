@@ -9,118 +9,121 @@
    <!-- font awesome cdn link  -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
    <link rel="icon" href="../resources/images/logo.png">
+   <link rel="stylesheet" href="../css/tryform.css">
    <link rel="stylesheet" href="../css/fform.css">
    <link rel="stylesheet" href="../css/navbar.css">
    <link rel="stylesheet" href="../css/global.css">
+   <script src="try.js" defer></script>
+
 </head>
 <body>
 
-<!-- header section starts  -->
-
+<!--header section starts-->
 <nav class="topnav" id="myTopnav">
-      <div class="container">
-        <a href="../index.html" style="padding:0; display:inline">
-          <img src="../resources/images/logov2_white.png" alt="Logo" class="nav-logo" id="navLogo">
-        </a>
-        <a href="javascript:void(0);" style="font-size:18px;margin-top: 10px;" class="icon" onclick="displayNav()">&#9776;</a>
-        <div class="nav-items">
-          <div class="dropdown">
-            <button class="dropbtn">The Resort
-              <i class="ti-angle-down"></i>
-            </button>
-            <div class="dropdown-content">
-              <a href="abouts.html">About Us<i class="ti-angle-right"></i></a>
-              <a href="accommodations.html">Accomodations<i class="ti-angle-right"></i></a>
-              <a href="facilities.html">Facilities<i class="ti-angle-right"></i></a>
-              <a href="services.html">Services<i class="ti-angle-right"></i></a>
-            </div>
+    <div class="container">
+      <a href="../index.html" style="padding:0; display:inline">
+        <img src="../resources/images/logov2_white.png" alt="Logo" class="nav-logo" id="navLogo">
+      </a>
+      <a href="javascript:void(0);" style="font-size:18px;margin-top: 10px;" class="icon" onclick="displayNav()">&#9776;</a>
+      <div class="nav-items">
+        <div class="dropdown">
+          <button class="dropbtn">The Resort
+            <i class="ti-angle-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="abouts.html">About Us<i class="ti-angle-right"></i></a>
+            <a href="accommodations.html">Accomodations<i class="ti-angle-right"></i></a>
+            <a href="facilities.html">Facilities<i class="ti-angle-right"></i></a>
+            <a href="services.html">Services<i class="ti-angle-right"></i></a>
           </div>
-          <div class="dropdown">
-            <button class="dropbtn">Dining
-              <i class="ti-angle-down"></i>
-            </button>
-            <div class="dropdown-content">
-              <a href="foodandbeverage.html">The Restaurant<i class="ti-angle-right"></i></a>
-              <a href="restaurant_reservation.html">Reservation<i class="ti-angle-right"></i></a>
-              <a href="onlineordering.html">Ordering<i class="ti-angle-right"></i></a>
-            </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Dining
+            <i class="ti-angle-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="foodandbeverage.html">The Restaurant<i class="ti-angle-right"></i></a>
+            <a href="restaurant_reservation.html">Reservation<i class="ti-angle-right"></i></a>
+            <a href="onlineordering.html">Ordering<i class="ti-angle-right"></i></a>
           </div>
-          <div class="dropdown">
-            <button class="dropbtn">Events & Promotions
-              <i class="ti-angle-down"></i>
-            </button>
-            <div class="dropdown-content">
-              <a href="events.html">Events<i class="ti-angle-right"></i></a>
-              <a href="eventreservation.html">Events Reservation<i class="ti-angle-right"></i></a>
-              <a href="promotion.html">Promotions<i class="ti-angle-right"></i></a>
-            </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Events & Promotions
+            <i class="ti-angle-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="eventdetail.html">Events<i class="ti-angle-right"></i></a>
+            <a href="eventreservation.html">Events Reservation<i class="ti-angle-right"></i></a>
+            <a href="promotion.html">Promotions<i class="ti-angle-right"></i></a>
           </div>
-          <div class="dropdown">
-           <button class="dropbtn">Gallery
-             <i class="ti-angle-down"></i>
-           </button>
-           <div class="dropdown-content">
-             <a href="gallery.html">Overview<i class="ti-angle-right"></i></a>
-             <a href="gallery360.html">360° Photos<i class="ti-angle-right"></i></a>
-           </div>
+        </div>
+        <div class="dropdown">
+         <button class="dropbtn">Gallery
+           <i class="ti-angle-down"></i>
+         </button>
+         <div class="dropdown-content">
+           <a href="gallery.html">Overview<i class="ti-angle-right"></i></a>
+           <a href="gallery360.html">360° Photos<i class="ti-angle-right"></i></a>
          </div>
-          <a href="contactus.html">Contact</a>
-          <a href="booking.html" class="active">Book Now</a>
-          <div class="dropdown">
-            <button class="dropbtn"><img src="../resources/images/user_white.png" alt="account" id="account" width="18px">
-              <i class="ti-angle-down"></i>
-            </button>
-            <div class="dropdown-content" style="min-width:120px">
-              <a href="signin.html">Sign In<i class="ti-angle-right"></i></a>
-              <a href="signup.html">Sign Up<i class="ti-angle-right"></i></a>
-            </div>
+       </div>
+        <a href="contactus.html">Contact</a>
+        <a href="booking.html" class="active">Book Now</a>
+        <div class="dropdown">
+          <button class="dropbtn"><img src="../resources/images/user_white.png" alt="account" id="account" width="18px">
+            <i class="ti-angle-down"></i>
+          </button>
+          <div class="dropdown-content" style="min-width:120px">
+            <a href="signin.html">Log In<i class="ti-angle-right"></i></a>
+            <a href="signup.html">Sign Up<i class="ti-angle-right"></i></a>
           </div>
         </div>
       </div>
-      <div class="scroll-indicator" id="indicator" onclick="scrollAction()">
-        <i class="ti-angle-down"></i>
-      </div>
-      <div class="book-btn" id="sideBtn" onclick="displayBookingForm()">
-        <p class="book-arrow"><i class="ti-angle-up"></i></p>
-        <p class="book-title">Book Now</p>
-      </div>
-      <div class="book-form" id="bookForm">
-        <h4>Le Timeless Trésor</h4>
-        <h2>Check Availability</h2>
-        <input class="chk-in input-style1" type="text" placeholder="Check in" onfocus="(this.type='date')" onblur="(this.type='text')">
-        <input class="chk-out input-style1" type="text" placeholder="Check out" onfocus="(this.type='date')" onblur="(this.type='text')">
-        <select class="room input-style2" name="adult">
-          <option value="">Room Type</option>
-          <option value="Junior Room">Junior Room</option>
-          <option value="Double Room">Double Room</option>
-          <option value="Family Suite">Family Suite</option>
-          <option value="Deluxe Suite">Deluxe Suite</option>
+    </div>
+    <div class="scroll-indicator" id="indicator" onclick="scrollAction()">
+      <i class="ti-angle-down"></i>
+    </div>
+    <div class="book-btn" id="sideBtn" onclick="displayBookingForm()">
+      <p class="book-arrow"><i class="ti-angle-up"></i></p>
+      <p class="book-title">Book Now</p>
+    </div>
+    <div class="book-form" id="bookForm">
+      <h4>Le Timeless Trésor</h4>
+      <h2>Check Availability</h2>
+      <input class="chk-in input-style1" type="text" placeholder="Check in" onfocus="(this.type='date')" onblur="(this.type='text')">
+      <input class="chk-out input-style1" type="text" placeholder="Check out" onfocus="(this.type='date')" onblur="(this.type='text')">
+      <select class="room input-style2" name="adult">
+        <option value="">Room Type</option>
+        <option value="Junior Room">Junior Room</option>
+        <option value="Double Room">Double Room</option>
+        <option value="Family Suite">Family Suite</option>
+        <option value="Deluxe Suite">Deluxe Suite</option>
+      </select>
+      <div class="form-container" style="padding: 0px 7.5px 0px 0px">
+        <select class="adult input-style2" name="adult">
+          <option value="">Adult</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
         </select>
-        <div class="form-container" style="padding: 0px 7.5px 0px 0px">
-          <select class="adult input-style2" name="adult">
-            <option value="">Adult</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-          </select>
-        </div>
-        <div class="form-container" style="padding: 0px 0px 0px 7.5px">
-          <select class="child input-style2" name="">
-            <option value="">Child</option>
-            <option value="0">0</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-          </select>
-        </div>
-        <a href="../pages/booking.html" style="display:block;width:100%;padding:0"><button class="button-style1">Check Availability<i class="ti-angle-right"></i></button></a>
       </div>
-      <script type="text/javascript" src="../js/nav.js"></script>
-    </nav>
+      <div class="form-container" style="padding: 0px 0px 0px 7.5px">
+        <select class="child input-style2" name="">
+          <option value="">Child</option>
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+      </div>
+      <button class="button-style1">Check<i class="ti-angle-right"></i></button>
+    </div>
+    <script type="text/javascript" src="../js/nav.js"></script>
+  </nav>
+
 <!--header section starts-->
 
 <header class="banner" onclick="dismissBookingForm()"> <!--so the banner wont come out-->
@@ -135,51 +138,85 @@
 </div>
 </header>
 
-<!-- header section ends -->
+<!--form start-->
+<section class="formContainer">
+    <div class="card">
+        <div class="parent">
+            <div class="top-div">
+              <h4 class="section-subheading">Facility Booking</h4>
+              <h1 class="section-title">book a pool session</h1>
+            </div>
+            <div class="progressbar">
+              <div class="progress" id="progress"></div>
 
+              <div class="progress-step progress-step-active" data-title="Intro"></div>
+              <div class="progress-step" data-title="Contact"></div>
+              <div class="progress-step" data-title="ID"></div>
 
-
-<!-- forms section starts -->
-<div class="content reveal up">
-
-  <div class="form container">
-    <div class="wrapper" id="form-section">
-      <h4 class="section-subheading">Facility Booking</h4>
-      <h1 class="section-title">book a pool session</h1>
-      <hr class="horizontal-line">
-      <form action="poolformdone.html" method="get">
-        <div class="input-container">
-          <p>Hotel Confirmation Number</p>
-          <input class="leftform" type="text" name="Hotel Confirmation Number" value="" maxlength="4" minlength="4" required>
-          <p>Email</p>
-          <input class="leftform" type="text" name="Email" value="" required>
+            </div>
         </div>
-        <div class="input-container">
-          <p>Session Date</p>
-          <input class="input-style1" type="date" id="date" name="Date" value="" required>
-          <div style="width:48%;float:left">
-            <p>Time *</p>
-            <select name="Time" class="input-style1" required>
-              <option value="">Time Slot</option>
-              <option value="6am">0600</option>
-              <option value="8am">0800</option>
-              <option value="10am">1000</option>
-              <option value="12pm">1200</option>
-              <option value="2pm">1400</option>
-              <option value="4pm">1600</option>
-              <option value="6pm">1800</option>
-              <option value="8pm">2000</option>
-            </select>
+
+        <div class="page currently">
+          <p>Full Name</p>
+            <input type="text" placeholder="Full name" require>
+          <p>email</p>
+            <input type="email" require>
+          <div class="button">
+            <button id="next" class="button-style1">next<i class="ti-angle-right"></i></button>
           </div>
         </div>
-        <p style="display: inline-block;width: 100%;">*Each session is 2hrs long</p>
-        <a href="poolformdone.html" style="display: inline-block;width: 100%;margin-top: 20px;">
-        <button type="submit" class="button-style2" style="width: 48%;">Book Now<i class="ti-angle-right"></i></button>
-      </a>
-      </form>
+
+        <div class="page">
+          <p>Session Date</p>
+          <input type="date" id="date" name="Date" value="" required>
+          <p>Time *</p>
+          <select name="Time" required>
+            <option value="">Time Slot</option>
+            <option value="6am">0600</option>
+            <option value="8am">0800</option>
+            <option value="10am">1000</option>
+            <option value="12pm">1200</option>
+            <option value="2pm">1400</option>
+            <option value="4pm">1600</option>
+            <option value="6pm">1800</option>
+            <option value="8pm">2000</option>
+          </select>
+          *Each session is 2hrs long</p>
+          <div class="button button_gap" id="doubBtn">
+              <button class="back-click"><i class="ti-angle-left"></i>Back</button>
+              <button class="next-click">Next<i class="ti-angle-right"></i></button>
+          </div>
+
+        </div>
+
+         <div class="page">
+           <input></input>
+
+
+          
+            <div class="button button_gap1" id="doubBtn">
+                <button class="back-click"><i class="ti-angle-left"></i>Back</button>
+                <button class="finish-click">Finish<i class="ti-angle-right"></i></button>
+            </div>
+
+        </div>
+
+        <!-- donepart -->
+        <div class="page">
+            <div class="content">
+               <h2>Congratulations! <span id="shown_name"></span></h2>
+               <p>You have completed onboarding,you can start using the Eden!</p>
+            </div>
+            <div class="button launch">
+                <button>Launch Eden</button>
+            </div>
+
+        </div>
+
+
     </div>
-  </div>
-<script src="../js/form.js"></script>
+
+</section>
 <!-- forms section end -->
 
 <!-- footer section starts  -->
@@ -257,8 +294,8 @@
     </div>
    </section>
 </footer>
+<script src="../js/try.js"></script>
 
-<script src="js/main.js"></script>
 <!-- footer section ends -->
 
 </body>
