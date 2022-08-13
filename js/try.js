@@ -99,7 +99,6 @@ function updateform(){
 }
 
 function validateform(){
-    date();
     let validate=true; //overall
     // let inputValidate=true;
     // let selectValidate=true;
