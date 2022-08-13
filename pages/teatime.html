@@ -10,6 +10,7 @@
    <link rel="icon" href="../resources/images/logo.png">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!---for the credit card image--->
    <!-- custom css file link  -->
    <link rel="stylesheet" href="../css/jae_forms.css">
    <link rel="stylesheet" href="../css/forms.css">
@@ -152,7 +153,7 @@
               <!-- if u have more pages add the topic here -->
               <div class="progress-step progress-step-active" data-title="Information"></div>
               <div class="progress-step" data-title="Booking"></div>
-              <div class="progress-step" data-title="Session"></div>
+              <div class="progress-step" data-title="Payment"></div>
 
             </div>
         </div>
@@ -172,22 +173,50 @@
         </article>
 
         <article class="page">
-          <p>Date</p>
+          <p>Select Booking Date</p>
           <input type="date" id="date" name="Date" value="" required>
-          <p>Time *</p>
-          <select name="Time" required>
-            <option value="">Time Slot</option>
-            <option value="6am">0600</option>
-            <option value="8am">0800</option>
-            <option value="10am">1000</option>
-            <option value="12pm">1200</option>
-            <option value="2pm">1400</option>
-            <option value="4pm">1600</option>
-            <option value="6pm">1800</option>
-            <option value="8pm">2000</option>
+          <p>Time</p>
+          <select name="Time Slot:" required>
+            <option value="">time slot</option>
+            <option value="2.00am">2.00am</option>
+            <option value="2.30am">2.30am</option>
+            <option value="3.00am">3.00am</option>
+            <option value="3.30am">3.30am</option>
+            <option value="4.00am">4.00am</option>
+            <option value="4.30am">4.30am</option>
           </select>
-          <br>
-          *Each session is 2hrs long</p>
+          <div class="row">
+            <div class="column-l">
+              <p>No. of Adult</p>
+              <select name="Adult" name="" required>
+                <option value="">Adult</option>
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+            <div class="column-r">
+              <p>No. of Child</p>
+              <select name="child" name="" required>
+                <option value="">Child</option>
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+          </div>
+          <p>Anything Else?</p>
+          <textarea id="message" name="Note" style=" resize: none;
+           height: 50px;
+           border:1px solid black;
+           width:100%;
+           " placeholder="Tell us if you have any requirement"></textarea>
           <!-- can add on size of the familiy -->
           <div class="button button_gap" id="doubBtn">
               <button class="back-click"><i class="ti-angle-left"></i>Back</button>
@@ -198,21 +227,25 @@
 
 
         <article class="page">
-          <p>No. of Child</p>
-          <select name="child" name="" required>
-            <option value="">Child</option>
-            <option value="0">0</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-          </select>
+          <p>Accepted Cards</p>
+          <div class="icon-container">
+              <i class="fa fa-cc-visa" style="color:navy;"></i>
+              <i class="fa fa-cc-amex" style="color:blue;"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+              <i class="fa fa-cc-discover" style="color:orange;"></i>
+          </div>
+          <p> Name on Card </p>
+          <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+          <p> Credit Card Number </p>
+          <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+          <p>Exp Month </p>
+          <input id="myInput" type="text" name="months" placeholder="Country">
+
 
           <!-- can add on size of the familiy -->
           <div class="button button_gap" id="doubBtn">
               <button class="back-click"><i class="ti-angle-left"></i>Back</button>
-              <button class="finish-click">Submit<i class="ti-angle-right"></i></button>
+              <button class="finish-click" >Submit<i class="ti-angle-right"></i></button>
               <!--only put class finish click if this is the last page, else use next-click-->
           </div>
         </article>
@@ -220,7 +253,8 @@
         <!-- donepart -->
 
         <article class="page">
-            <div class="confirmation">
+          <div>
+            <input type="text" name="" id="space" value="" required> <!--extra input is needed to so that the form wont automatically end it is hidden in the html-->
                <p> Please do note that the hotel reserves all rights to cancel your
                  reservation should there be a need. Any extra charges needed will be charged to you.
                  Please do call us 7 days before reservation date for any cancellation.
