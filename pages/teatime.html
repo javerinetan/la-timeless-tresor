@@ -165,7 +165,7 @@
           <p>email</p>
           <input type="email" id="email" name="Email Address" placeholder="john.doe@email.com" required>
           <p>Your Phone</p>
-          <input type="tel" id="phone" name="Phone Number" placeholder="phone number" minlength="8" maxlength="10"required>
+          <input type="text" id="phone" name="Phone Number" placeholder="phone number" minlength="8" maxlength="10"required>
           <div class="button">
             <button id="next" class="button-style1">next<i class="ti-angle-right"></i></button>
           </div>
@@ -190,7 +190,7 @@
           *Each session is 2hrs long</p>
           <!-- can add on size of the familiy -->
           <div class="button button_gap" id="doubBtn">
-              <button class="back-click"><i class="ti-angle-left">Back</i></button>
+              <button class="back-click"><i class="ti-angle-left"></i>Back</button>
               <button class="next-click">Next<i class="ti-angle-right"></i></button>
               <!--only put class finish click if this is the last page, else use next-click-->
           </div>
@@ -199,7 +199,15 @@
 
         <article class="page">
           <p>No. of Child</p>
-            <input type="number" name="Child"  id="child" placeholder="Children:" min="0" max="10" >
+          <select name="child" name="" required>
+            <option value="">Child</option>
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
 
           <!-- can add on size of the familiy -->
           <div class="button button_gap" id="doubBtn">
