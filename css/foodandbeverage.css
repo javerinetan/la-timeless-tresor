@@ -73,6 +73,7 @@
 /*Food Types on the Left Side*/
 .section2 {
   margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 /*Menu Remove list style*/
@@ -207,7 +208,7 @@ text-transform: uppercase;
 
 /*Testimony*/
 .section8 {
-  background-image: url('../resources/images/club-sandwich.jpg');
+  background-image: url('../resources/images/salmon.jpeg');
   height: 400px;
   background-position: center;
   background-repeat: no-repeat;
