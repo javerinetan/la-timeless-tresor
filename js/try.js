@@ -92,7 +92,7 @@ function validateform(){
     let sum= inputCounter + selectCounter;
     if (sum > 0){
       validate=false;
-      alert("Please fill in all the field(s)")
+      displayError("Please fill in all the field(s)")
     }
 
     return validate;
@@ -120,3 +120,8 @@ reservationdate.forEach(function(date){
   date.setAttribute("min",dateTomorrow) //this is so it starts one day after the day it is today
 
 })
+
+function displayError(message) {
+  document.getElementById("error").innerHTML = message;
+  document.getElementById("error").style.display = "block"
+}
