@@ -270,22 +270,40 @@ h1, h2 {
 /* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 700px){
   .modal-content {
-    width: 100%;
+    width: 80%;
   }
 }
 
 @media all and (max-width: 600px) {
-  .aside { flex: 1 0 0; }
   .exteriorColumn, .diningColumn {
     width: 50%;
+  }
+  .close {
+      position: relative;
+      top: 0px;
+      left: 150px;
+      color: #f1f1f1;
+      font-size: 40px;
+      font-weight: bold;
+      transition: 0.3s;
   }
 }
 
 @media all and (max-width: 800px) {
-  .main    { flex: 3 0px; }
   .mainbody {
     padding-bottom: 120px;
   }
+
+  .close {
+      position: relative;
+      top: 0px;
+      left: 280px;
+      color: #f1f1f1;
+      font-size: 40px;
+      font-weight: bold;
+      transition: 0.3s;
+  }
+
   .aside-1 { order: 1; }
   .main    { order: 2; }
   .aside-2 { order: 3; }
