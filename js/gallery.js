@@ -12,6 +12,7 @@ function show(element) {
   document.getElementById("experience").className="experience";
   document.getElementById("interior").className="interior";
   document.getElementById(element.title).classList.add("display");
+  document.getElementById(element.title).classList.add("display");
   removeHighlight();
   element.classList.add("highlight");
 }

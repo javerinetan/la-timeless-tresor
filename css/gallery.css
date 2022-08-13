@@ -112,10 +112,12 @@ h1, h2 {
 /* Segmented Control */
 .all, .exterior, .dining, .experience, .interior{
   display: none;
+  transition: all 2s ease-in-out;
 }
 
 .display {
   display: block !important;
+  animation: zoom 1s ease-in-out;
 }
 
 .segcontrol {
@@ -134,24 +136,25 @@ h1, h2 {
 
 .segcontrol div {
   float: left;
-  border-bottom: 4px #c4ac80 solid;
   background-position: -0% 0;
   background-size: 200% auto;
   color: #222;
   font-size: 1.00em;
   line-height: 1 em;
   text-decoration: none;
-  transition: background-position 0.5s ease-out;
+  transition: all 0.3s ease-out;
   cursor: pointer;
 }
 
 .segcontrol div:hover {
   background-position: -99.99% 0;
+  border-bottom: 4px #c4ac80 solid;
 }
 
 .highlight {
   background-position: -99.99% 0;
   background-color: #cccecf;
+  border-bottom: 4px #c4ac80 solid;
 }
 
 
