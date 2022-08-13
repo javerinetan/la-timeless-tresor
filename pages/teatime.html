@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400;1,400;1,700&display=swap" rel="stylesheet">
    <!-- custom css file link  -->
    <link rel="stylesheet" href="../css/jae_forms.css">
+   <link rel="stylesheet" href="../css/forms.css">
    <link rel="stylesheet" href="../css/navbar.css">
    <link rel="stylesheet" href="../css/global.css">
    <link rel="stylesheet" href="css/flickity.css" media="screen">
@@ -139,7 +140,93 @@
 </header>
 <!-- end of the image header-->
 <!-- start of form-->
+<section class="formContainer">
+    <div class="card">
+        <div class="status">
+            <div class="top-div">
+              <h4 class="section-subheading">Facility Booking</h4>
+              <h1 class="section-title">book a pool session</h1>
+            </div>
+            <div class="progressbar">
+              <div class="progress" id="progress"></div>
+              <!-- if u have more pages add the topic here -->
+              <div class="progress-step progress-step-active" data-title="Information"></div>
+              <div class="progress-step" data-title="Session"></div>
+              <div class="progress-step" data-title="Session"></div>
 
+            </div>
+        </div>
+
+        <form>
+
+        <article class="page currently">
+          <p>Full Name</p>
+            <input type="text" placeholder="Full name" required>
+          <p>email</p>
+            <input type="email" required>
+          <div class="button">
+            <button id="next" class="button-style1">next<i class="ti-angle-right"></i></button>
+          </div>
+        </article>
+
+        <article class="page">
+          <p>Session Date</p>
+          <input type="date" id="date" name="Date" value="" required>
+          <p>Time *</p>
+          <select name="Time" required>
+            <option value="">Time Slot</option>
+            <option value="6am">0600</option>
+            <option value="8am">0800</option>
+            <option value="10am">1000</option>
+            <option value="12pm">1200</option>
+            <option value="2pm">1400</option>
+            <option value="4pm">1600</option>
+            <option value="6pm">1800</option>
+            <option value="8pm">2000</option>
+          </select>
+          <br>
+          *Each session is 2hrs long</p>
+          <!-- can add on size of the familiy -->
+          <div class="button button_gap" id="doubBtn">
+              <button class="back-click"><i class="ti-angle-left"></i>Back</button>
+              <button class="next-click">Next<i class="ti-angle-right"></i></button>
+              <!--only put class finish click if this is the last page, else use next-click-->
+          </div>
+        </article>
+
+
+        <article class="page">
+          <p>No. of Child</p>
+            <input type="number" name="Child"  id="child" placeholder="Children:" min="0" max="10" >
+
+          <!-- can add on size of the familiy -->
+          <div class="button button_gap" id="doubBtn">
+              <button class="back-click"><i class="ti-angle-left"></i>Back</button>
+              <button class="finish-click">Submit<i class="ti-angle-right"></i></button>
+              <!--only put class finish click if this is the last page, else use next-click-->
+          </div>
+        </article>
+
+        <!-- donepart -->
+
+        <article class="page">
+            <div class="confirmation">
+               <p> Please do note that the hotel reserves all rights to cancel your
+                 reservation should there be a need. Any extra charges needed will be charged to you.
+                 Please do call us 7 days before reservation date for any cancellation.
+                 Failure to cancel in advance will result in a fine. If you have any enquries please call <a href="tel:+6588031454">+65 88031454</a>
+               </p>
+            </div>
+            <div class="button">
+                <button class="button-style1" onclick="window.print()">Print confirmation page</button>
+            </div>
+
+        </article>
+      </form>
+
+    </div>
+
+</section>
 <script type="text/javascript" src="../js/form.js"></script> <!--for the dates validation made by me -->
 
 <!-- forms section end -->
@@ -225,3 +312,5 @@
 <script src="js/main.js"></script>
 </body>
 </html>
+
+<script type="text/javascript" src="../js/form.js"></script> <!--for the dates validation made by me -->

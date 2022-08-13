@@ -92,7 +92,6 @@ function validateform(){
     let sum= inputCounter + selectCounter;
     if (sum > 0){
       validate=false;
-      alert("Please fill in all the field(s)")
     }
 
     return validate;
