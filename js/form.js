@@ -6,6 +6,9 @@ var page_form=document.querySelectorAll(".page");
 var list=document.querySelectorAll(".progress-bar li")
 var progress = document.getElementById("progress");
 var progressSteps = document.querySelectorAll(".progress-step");
+var email=document.querySelector("#email");
+var phoneNo=document.querySelector("#phone");
+
 let formnumber=0;
 
 create_workspace.addEventListener('click',function(){
@@ -72,13 +75,12 @@ function updateform(){
 
 function validateform(){
     let validate=true; //overall
-    let inputCounter=0;
-    let selectCounter=0;
+    let counter=0;
     var validate_form=document.querySelectorAll(".page.currently input");
     validate_form.forEach(function(val){
         if(val.hasAttribute('required')){
             if(val.value.length==0){
-                inputCounter++;
+                counter++;
             }
         }
     });
@@ -86,16 +88,25 @@ function validateform(){
     var slot=document.querySelectorAll(".page.currently select");
     slot.forEach(function(selection){
       if (selection.value==""){
-        selectCounter++;
+        counter++;
       }
     })
-    let sum= inputCounter + selectCounter;
-    if (sum > 0){
+
+    var filter = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/
+
+    if (!filter.test(email.value)){
+      counter++;
+    }
+
+    if (counter > 0){
       validate=false;
     }
 
     return validate;
 }
+
+
+
 
 
 //this is to get the current date time

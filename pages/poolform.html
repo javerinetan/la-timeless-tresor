@@ -9,7 +9,7 @@
    <!-- font awesome cdn link  -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
    <link rel="icon" href="../resources/images/logo.png">
-   <link rel="stylesheet" href="../css/form.css">
+   <link rel="stylesheet" href="../css/forms.css">
    <link rel="stylesheet" href="../css/fform.css">
    <link rel="stylesheet" href="../css/navbar.css">
    <link rel="stylesheet" href="../css/global.css">
@@ -161,7 +161,10 @@
           <p>Full Name</p>
             <input type="text" placeholder="Full name" required>
           <p>email</p>
-            <input type="email" required>
+            <input type="email" id="email" required>
+            <p>Phone Number</p>
+            <input type="text" id="phone"  name="Phone Number" placeholder="88031454" minlength="8" maxlength="10" required>
+
           <div class="button">
             <button id="next" class="button-style1">next<i class="ti-angle-right"></i></button>
           </div>
@@ -195,7 +198,15 @@
 
         <article class="page">
           <p>No. of Child</p>
-            <input type="number" name="Child"  id="child" placeholder="Children:" min="0" max="10" >
+          <select name="child" name="" required>
+            <option value="">Child</option>
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
 
           <!-- can add on size of the familiy -->
           <div class="button button_gap" id="doubBtn">
