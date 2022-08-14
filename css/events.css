@@ -479,9 +479,8 @@ h1, h2 {
 
 .eventslist {
   display: block;
-  width: 800px;
+  width: 60%;
   height: 975px;
-  padding: 5px;
   float: right;
   margin-top: 80px;
   overflow: hidden;
@@ -494,7 +493,7 @@ h1, h2 {
   margin-left: 2%;
   margin-bottom: 5%;
   margin-right: 2%;
-  height: 350px;
+  height: 320px;
   box-shadow: 1px 1px 10px #888888;
 }
 
@@ -508,7 +507,7 @@ h1, h2 {
   text-align: center;
   font-size: 15px;
   color: #777778;
-  padding-top: 50px;
+  padding-top: 30px;
   padding-left: 20px;
 }
 
@@ -536,7 +535,7 @@ h1, h2 {
   color: #b0a48d;
   position: relative;
   transition: color .35s cubic-bezier(.3,.1,.3,1),background-color .35s cubic-bezier(.3,.1,.3,1);
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .cta:hover {
@@ -565,37 +564,34 @@ h1, h2 {
   background: #555;
 }
 
-#eventimage1 {
-  padding: 20px;
-  width: 45%;
+#eventimage1, #eventimage2, #eventimage3, #eventimage4, #eventimage5 {
+  width: 50%;
   height: 100%;
   float: left;
 }
 
-#eventimage2 {
-  padding: 20px;
-  width: 45%;
-  height: 100%;
-  float: left;
+@media screen and (max-width: 1200px) {
+  .eventslist, #calendar, .header, .details {
+    width: 100%;
+  }
+  .mainbody {
+    padding-bottom: 100px;
+  }
+  .day {
+    width: 90px;
+  }
 }
 
-#eventimage3 {
-  padding: 20px;
-  width: 45%;
-  height: 100%;
-  float: left;
-}
-
-#eventimage4 {
-  padding: 20px;
-  width: 45%;
-  height: 100%;
-  float: left;
-}
-
-#eventimage5 {
-  padding: 20px;
-  width: 45%;
-  height: 100%;
-  float: left;
+@media screen and (max-width: 700px) {
+  .event1, .event2, .event3, .event4, .event5, .event6, .event7, .event8, .event9, .event10 {
+    height: auto;
+  }
+  #eventimage1, #eventimage2, #eventimage3, #eventimage4, #eventimage5 {
+    width: 100%;
+    padding: 0px;
+    margin-bottom: 20px;
+  }
+  .day {
+    width: 60px;
+  }
 }
