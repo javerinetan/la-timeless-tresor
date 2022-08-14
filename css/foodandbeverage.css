@@ -5,7 +5,7 @@
 
 /*Banner*/
 .banner {
-  background-image: url("../resources/images/restauarant.jpg");
+  background-image: url("../resources/images/f&bbanner.jpg");
   top: 0;
   left: 0;
   height: 83vh;
@@ -212,7 +212,7 @@ text-transform: uppercase;
 
 /*Testimony*/
 .section8 {
-  background-image: url('../resources/images/salmon.jpeg');
+  background-image: url('../resources/images/testimonialimage.jpg');
   height: 400px;
   background-position: center;
   background-repeat: no-repeat;

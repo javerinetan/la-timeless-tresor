@@ -43,7 +43,7 @@
 }
 
 .confirmation-banner {
-  background-image: url("../resources/images/_on.webp");
+  background-image: url("../resources/images/bookconfirmbanner.jpg");
   top: 0;
   left: 0;
   height: 83vh;
@@ -156,7 +156,7 @@
 }
 
 textarea{
-   resize: none; 
+   resize: none;
    height: 50px;
    border:1px solid black;
    width:100%;
