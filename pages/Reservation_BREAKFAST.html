@@ -145,8 +145,7 @@
               <div class="progress" id="progress"></div>
               <!-- if u have more pages add the topic here -->
               <div class="progress-step progress-step-active" data-title="Information"></div>
-              <div class="progress-step" data-title="Booking"></div>
-              <div class="progress-step" data-title="Payment"></div>
+              <div class="progress-step" data-title="Booking Details"></div>
 
             </div>
         </div>
@@ -214,52 +213,12 @@
            <!-- can add on size of the familiy -->
           <div class="button button_gap" id="doubBtn">
               <button class="back-click"><i class="ti-angle-left"></i>Back</button>
-              <button class="next-click">Next<i class="ti-angle-right"></i></button>
+              <button class="finish-click">Submit<i class="ti-angle-right"></i></button>
             <!-- only put class finish click if this is the last page, else use next-click -->
           </div>
         </article>
 
 
-        <article class="page">
-          <p>Accepted Cards</p>
-          <div class="icon-container">
-              <i class="fa fa-cc-visa" style="color:navy;font-size:48px;" ></i>
-              <i class="fa fa-cc-amex" style="color:blue;font-size:48px;"></i>
-              <i class="fa fa-cc-mastercard" style="color:red;font-size:48px;"></i>
-              <i class="fa fa-cc-discover" style="color:orange;font-size:48px;"></i>
-          </div>
-          <p> Name on Card </p>
-          <input type="text" id="cname" name="cardname" placeholder="John More Doe" required>
-          <p> Credit Card Number </p>
-          <input type="number" id="ccnum" name="cardnumber" placeholder="1111222233334444" minlength="16" maxlength="16" pattern=".{8,8}" required>
-          <!-- <p>Exp Month </p>
-          <input id="myInput" type="text" name="months" placeholder="Country" required> -->
-
-          <div class="row">
-            <div class="column-l">
-              <!-- <p>Exp Year</p>
-              <input type="text" id="expyear" name="expyear" placeholder="2018" required> -->
-              <p> expiration date</p>
-              <span class="expiration">
-                 <input type="number" name="month" id="month" placeholder="MM" maxlength="2" size="2" pattern="(0[1-9]|1[0-2])" />
-                 <span>&nbsp;/&nbsp;</span>
-                 <input type="number" name="year" id="year" pattern="^.{2,2}" placeholder="YY" maxlength="2" size="2" />
-              </span>
-            </div>
-            <div class="column-r">
-              <p>CVV</p>
-              <input type="number" id="cvv" name="cvv" placeholder="123" minlength="3" maxlength="3" pattern=".{3,3}" required>
-            </div>
-          </div>
-
-
-          <!-- can add on size of the familiy -->
-          <div class="button button_gap" id="doubBtn">
-              <button class="back-click"><i class="ti-angle-left"></i>Back</button>
-              <button class="finish-click">Submit<i class="ti-angle-right"></i></button>
-              <!--only put class finish click if this is the last page, else use next-click-->
-          </div>
-        </article>
 
         <!-- donepart -->
 
@@ -267,14 +226,14 @@
           <input type="text" name="" id="space" value="" required> <!--extra input is needed to so that the form wont automatically end it is hidden in the html-->
 
           <div class="confirmation">
-               <p> Please do note that the hotel reserves all rights to cancel your
+               <p> Please check your email for confirmation email. Please do note that the hotel reserves all rights to cancel your
                  reservation should there be a need. Any extra charges needed will be charged to you.
                  Please do call us 7 days before reservation date for any cancellation.
                  Failure to cancel in advance will result in a fine. If you have any enquries please call <a href="tel:+6588031454">+65 88031454</a>
                </p>
             </div>
             <div class="button">
-            <a onclick="window.open('../resources/Inovice/breakfast.pdf', '_blank')" class="button-style1">Print confirmation page</a>
+            <a href="../pages/restaurant_reservation.html" class="button-style1">Back to reservation page</a>
 
             </div>
 
