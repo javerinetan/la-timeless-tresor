@@ -12,111 +12,113 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
   </head>
   <body>
+    <!-- header section starts  -->
     <nav class="topnav" id="myTopnav">
-      <div class="container">
-        <a href="../index.html" style="padding:0; display:inline">
-          <img src="../resources/images/logov2_white.png" alt="Logo" class="nav-logo" id="navLogo">
-        </a>
-        <a href="javascript:void(0);" style="font-size:18px;margin-top: 10px;" class="icon" onclick="displayNav()">&#9776;</a>
-        <div class="nav-items">
-          <div class="dropdown">
-            <button class="dropbtn">The Resort
-              <i class="ti-angle-down"></i>
-            </button>
-            <div class="dropdown-content">
-              <a href="abouts.html">About Us<i class="ti-angle-right"></i></a>
-              <a href="accommodations.html">Accomodations<i class="ti-angle-right"></i></a>
-              <a href="facilities.html">Facilities<i class="ti-angle-right"></i></a>
-              <a href="services.html">Services<i class="ti-angle-right"></i></a>
+          <div class="container">
+            <a href="../index.html" style="padding:0; display:inline">
+              <img src="../resources/images/logov2_white.png" alt="Logo" class="nav-logo" id="navLogo">
+            </a>
+            <a href="javascript:void(0);" style="font-size:18px;margin-top: 10px;" class="icon" onclick="displayNav()">&#9776;</a>
+            <div class="nav-items">
+              <div class="dropdown">
+                <button class="dropbtn">The Resort
+                  <i class="ti-angle-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="abouts.html">About Us<i class="ti-angle-right"></i></a>
+                  <a href="accommodations.html">Accomodations<i class="ti-angle-right"></i></a>
+                  <a href="facilities.html">Facilities<i class="ti-angle-right"></i></a>
+                  <a href="services.html">Services<i class="ti-angle-right"></i></a>
+                </div>
+              </div>
+              <div class="dropdown">
+                <button class="dropbtn">Dining
+                  <i class="ti-angle-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="foodandbeverage.html">The Restaurant<i class="ti-angle-right"></i></a>
+                  <a href="restaurant_reservation.html">Reservation<i class="ti-angle-right"></i></a>
+                  <a href="onlineordering.html">Ordering<i class="ti-angle-right"></i></a>
+                </div>
+              </div>
+              <div class="dropdown">
+                <button class="dropbtn">Events & Promotions
+                  <i class="ti-angle-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="events.html">Events<i class="ti-angle-right"></i></a>
+                  <a href="eventreservation.html">Events Reservation<i class="ti-angle-right"></i></a>
+                  <a href="promotion.html">Promotions<i class="ti-angle-right"></i></a>
+                </div>
+              </div>
+              <div class="dropdown">
+               <button class="dropbtn">Gallery
+                 <i class="ti-angle-down"></i>
+               </button>
+               <div class="dropdown-content">
+                 <a href="gallery.html">Overview<i class="ti-angle-right"></i></a>
+                 <a href="gallery360.html">360° Photos<i class="ti-angle-right"></i></a>
+               </div>
+             </div>
+              <a href="contactus.html">Contact</a>
+              <a href="booking.html" class="active">Book Now</a>
+              <div class="dropdown">
+                <button class="dropbtn"><img src="../resources/images/user_white.png" alt="account" id="account" width="18px">
+                  <i class="ti-angle-down"></i>
+                </button>
+                <div class="dropdown-content" style="min-width:120px">
+                  <a href="signin.html">Sign In<i class="ti-angle-right"></i></a>
+                  <a href="signup.html">Sign Up<i class="ti-angle-right"></i></a>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="dropdown">
-            <button class="dropbtn">Dining
-              <i class="ti-angle-down"></i>
-            </button>
-            <div class="dropdown-content">
-              <a href="foodandbeverage.html">The Restaurant<i class="ti-angle-right"></i></a>
-              <a href="restaurant_reservation.html">Reservation<i class="ti-angle-right"></i></a>
-              <a href="onlineordering.html">Ordering<i class="ti-angle-right"></i></a>
-            </div>
+          <div class="scroll-indicator" id="indicator" onclick="scrollAction()">
+            <i class="ti-angle-down"></i>
           </div>
-          <div class="dropdown">
-            <button class="dropbtn">Events & Promotions
-              <i class="ti-angle-down"></i>
-            </button>
-            <div class="dropdown-content">
-              <a href="events.html">Events<i class="ti-angle-right"></i></a>
-              <a href="eventreservation.html">Events Reservation<i class="ti-angle-right"></i></a>
-              <a href="promotion.html">Promotions<i class="ti-angle-right"></i></a>
-            </div>
+          <div class="book-btn" id="sideBtn" onclick="displayBookingForm()">
+            <p class="book-arrow"><i class="ti-angle-up"></i></p>
+            <p class="book-title">Book Now</p>
           </div>
-          <div class="dropdown">
-           <button class="dropbtn">Gallery
-             <i class="ti-angle-down"></i>
-           </button>
-           <div class="dropdown-content">
-             <a href="gallery.html">Overview<i class="ti-angle-right"></i></a>
-             <a href="gallery360.html">360° Photos<i class="ti-angle-right"></i></a>
-           </div>
-         </div>
-          <a href="contactus.html">Contact</a>
-          <a href="booking.html" class="active">Book Now</a>
-          <div class="dropdown">
-            <button class="dropbtn"><img src="../resources/images/user_white.png" alt="account" id="account" width="18px">
-              <i class="ti-angle-down"></i>
-            </button>
-            <div class="dropdown-content" style="min-width:120px">
-              <a href="signin.html">Sign In<i class="ti-angle-right"></i></a>
-              <a href="signup.html">Sign Up<i class="ti-angle-right"></i></a>
+          <div class="book-form" id="bookForm">
+            <h4>Le Timeless Trésor</h4>
+            <h2>Check Availability</h2>
+            <input class="chk-in input-style1" type="text" placeholder="Check in" onfocus="(this.type='date')" onblur="(this.type='text')">
+            <input class="chk-out input-style1" type="text" placeholder="Check out" onfocus="(this.type='date')" onblur="(this.type='text')">
+            <select class="room input-style2" name="adult">
+              <option value="">Room Type</option>
+              <option value="Junior Room">Junior Room</option>
+              <option value="Double Room">Double Room</option>
+              <option value="Family Suite">Family Suite</option>
+              <option value="Deluxe Suite">Deluxe Suite</option>
+            </select>
+            <div class="form-container" style="padding: 0px 7.5px 0px 0px">
+              <select class="adult input-style2" name="adult">
+                <option value="">Adult</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
             </div>
+            <div class="form-container" style="padding: 0px 0px 0px 7.5px">
+              <select class="child input-style2" name="">
+                <option value="">Child</option>
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+            <a href="../pages/booking.html" style="display:block;width:100%;padding:0 ;"><button class="button-style1">Check Availability<i class="ti-angle-right"></i></button></a>
           </div>
-        </div>
-      </div>
-      <div class="scroll-indicator" id="indicator" onclick="scrollAction()">
-        <i class="ti-angle-down"></i>
-      </div>
-      <div class="book-btn" id="sideBtn" onclick="displayBookingForm()">
-        <p class="book-arrow"><i class="ti-angle-up"></i></p>
-        <p class="book-title">Book Now</p>
-      </div>
-      <div class="book-form" id="bookForm">
-        <h4>Le Timeless Trésor</h4>
-        <h2>Check Availability</h2>
-        <input class="chk-in input-style1" type="text" placeholder="Check in" onfocus="(this.type='date')" onblur="(this.type='text')">
-        <input class="chk-out input-style1" type="text" placeholder="Check out" onfocus="(this.type='date')" onblur="(this.type='text')">
-        <select class="room input-style2" name="adult">
-          <option value="">Room Type</option>
-          <option value="Junior Room">Junior Room</option>
-          <option value="Double Room">Double Room</option>
-          <option value="Family Suite">Family Suite</option>
-          <option value="Deluxe Suite">Deluxe Suite</option>
-        </select>
-        <div class="form-container" style="padding: 0px 7.5px 0px 0px">
-          <select class="adult input-style2" name="adult">
-            <option value="">Adult</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-          </select>
-        </div>
-        <div class="form-container" style="padding: 0px 0px 0px 7.5px">
-          <select class="child input-style2" name="">
-            <option value="">Child</option>
-            <option value="0">0</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-          </select>
-        </div>
-        <button class="button-style1">Check<i class="ti-angle-right"></i></button>
-      </div>
-      <script type="text/javascript" src="../js/nav.js"></script>
-    </nav>
-<!--end of intro-->
+          <script type="text/javascript" src="../js/nav.js"></script>
+        </nav>
+
+  <!-- header section ends -->
 <!--heading-->
 <header class="banner" onclick="dismissBookingForm()"> <!--so the banner wont come out-->
   <div class="layer"></div>
@@ -136,7 +138,7 @@
        <h4 class="section-subheading">Le Timeless TRÉSOR</h4>
        <h1 class="section-title">Fine dining specially for you </h1>
        <hr class="line">
-       <p class = "subtitle">Enjoy The Finest Dining Experience At Le Meilleur Resto With Fantastic Views And Savor The Culinary Masterpieces. Our World-Renowned Chef Sources Seafood, Produce And Spices From The Islands To Create A Menu Worthy Of Paradise. </p>
+       <p class = "subtitle">Enjoy The Finest Dining Experience At Le Meilleur Resto With Fantastic Views And Savor The Culinary Masterpieces. Our World-Renowned Chef Sources Seafood, Produce And Spices From The Islands To Create A Menu Worthy Of Paradise.All prices are before gst and service charge </p>
   </div>
 </section>
 <!-- start of content -->
@@ -144,7 +146,7 @@
   <div class="column-l">
     <img src="../resources/images/breakfast.jpg" alt ="">
     <article>
-    <h3 class="section-title">Breakfast</h3>
+    <h3 class="section-title">Petit-Déjeuner</h3>
     <hr class="line">
     <p class ="pricing"> $30 per person </p>
     <p class="section-sub-title" >Taste the savoury breakfast buffee from france<br> a variety of food from france at you table with freshly baked variety of bread </p>
@@ -154,7 +156,7 @@
   <div class="column-r">
     <img src="../resources/images/food2.jpg" alt ="">
     <article>
-    <h3 class= "section-title"> Tea Time Set  </h3>
+    <h3 class= "section-title"> Tea Time @ The Courtyard </h3>
     <hr class="line">
     <p class ="pricing"> $35 per set  </p>
     <p class="section-sub-title">Taste the classic taste of  france sweet treats<br>Endulged yourself in our freshly brewed wide selection of tea from our tea house in france</p>
@@ -166,7 +168,7 @@
   <div class="column-l">
     <img src="../resources/images/food3.jpg" alt ="">
     <article>
-    <h3 class= "section-title"> Dinner </h3>
+    <h3 class= "section-title"> La Brassie Dinner</h3>
     <hr class="line">
     <p class ="pricing">  Starting from $888++  </p>
     <p class="section-sub-title"> Experience the high class of french dinning

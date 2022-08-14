@@ -7,16 +7,18 @@
    <title>Restaurant Reservation | Le Timeless Trésor</title>
 
    <!-- font awesome cdn link  -->
-   <link rel="icon" href="../resources/images/logo.png">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-   <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400;1,400;1,700&display=swap" rel="stylesheet">
-   <!-- custom css file link  -->
+   <!--link to css and jv-->
    <link rel="stylesheet" href="../css/jae_forms.css">
+   <link rel="stylesheet" href="../css/forms.css">
+   <link rel="icon" href="../resources/images/logo.png">
    <link rel="stylesheet" href="../css/navbar.css">
    <link rel="stylesheet" href="../css/global.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 <body>
+  <!-- header section starts  -->
   <nav class="topnav" id="myTopnav">
         <div class="container">
           <a href="../index.html" style="padding:0; display:inline">
@@ -117,11 +119,12 @@
               <option value="5">5</option>
             </select>
           </div>
-          <button class="button-style1">Check<i class="ti-angle-right"></i></button>
+          <a href="../pages/booking.html" style="display:block;width:100%;padding:0 ;"><button class="button-style1">Check Availability<i class="ti-angle-right"></i></button></a>
         </div>
         <script type="text/javascript" src="../js/nav.js"></script>
       </nav>
-  <!-- header section ends -->
+
+<!-- header section ends -->
 <!---Welcome page-->
 
 <header class="indoor-banner" onclick="dismissBookingForm()"> <!-- so the side thing will not come out-->
@@ -136,60 +139,114 @@
 </header>
 <!-- end of the image header-->
 <!-- start of form-->
-<section class = "form">
-  <div class="form container">
-    <div class="wrapper" id="form-section">
-      <h4 class="section-subheading">Reservation</h4>
-      <h1 class="section-title">Indoor Booking</h1>
-      <hr class="horizontal-line">
-      <p class="info"> Please do note that the hotel reserves all rights to cancel your
-        reservation shoudld there be a need. Any extra charges needed will be charged to you.
-        Please do call us 7 days before any cancellation.
-        Failure to cancel in advance will result in a fine. Children above 12 years old is consider and adult. If you have any enquries please call <a href="callto:+6588031454">+65 88031454</a></p>
-      <form action = "Confirmation.html " method="get" name="Booking">
-        <div class="input-container">
-          <p>Select Booking Date</p>
-          <input class="input-style1" type="date" name="Date" id="date" required>
-          <div style="width:48%; float:left">
-            <p>No. of Adult</p>
-            <input type="number" class="input-style1"  name="Adult"  id="adult" placeholder="Adult:" min="1" max="10"  required >
-          </div>
-          <div style="width:48%;float:right">
-            <p>No. of Child</p>
-              <input type="number" class="input-style1" name="Child"  id="child" placeholder="Children:" min="0" max="10" >
-          </div>
-          <p>Name</p>
-          <input type="text" id="name" class="input-style1"  name="Name" placeholder="Full Name" pattern=[A-Z\sa-z]{3,20} required>
-          <p>Email</p>
-            <input type="email" id="email" class="input-style1" name="Email Address" placeholder="john.doe@email.com" required>
+<section class="formContainer">
+    <div class="card">
+        <div class="status">
+            <div class="top-div">
+              <h4 class="section-subheading">Restaurant Booking</h4>
+              <h1 class="section-title">LA BRASSERIE</h1>
+            </div>
+            <div class="progressbar">
+              <div class="progress" id="progress"></div>
+              <!-- if u have more pages add the topic here -->
+              <div class="progress-step progress-step-active" data-title="Information"></div>
+              <div class="progress-step" data-title="Booking Details"></div>
+
+            </div>
         </div>
-        <div class="input-container">
-          <p>Hotel Confirmation Number</p>
-          <input class="input-style1" type="text" name="Hotel Confirmation Number" value="" maxlength="4" minlength="4" pattern=[A-Z\1-9\L]{1,2,1} >
-          <p>Choose Time Slot:</p>
-          <select class="input-style1" name="Time Slot:" required>
-            <option value="">time slot</option>
-              <option value="6.00pm">6.00pm</option>
-              <option value="6.30pm">6.30pm</option>
-              <option value="7.00pm">7.00pm</option>
-              <option value="7.30pm">7.30pm</option>
-              <option value="8.00pm">8.00pm</option>
-              <option value="8.30pm">8.30pm</option>
-              <option value="9.00pm">9.00pm</option>
-              <option value="9.30pm">9.30pm</option>
-              <option value="10.00pm">10.00pm</option>
-          </select>
+
+        <form>
+
+        <article class="page currently">
+          <p>Full Name</p>
+            <input type="text" placeholder="Full name" required>
+          <p>email</p>
+          <input type="email" id="email" name="Email Address" placeholder="john.doe@email.com" required>
           <p>Your Phone</p>
-          <input type="tel" id="phone" class="input-style1" name="Phone Number" placeholder="65-8803-1454" pattern=(\d{2})-?\s?(\d{4})-?\s?(\d{4}) required>
-            <p>Anything Else?</p>
-            <textarea id="message" name="Note" class="input-style1" placeholder="Tell us if you have any requirement"></textarea>
-        </div>
-        <a href="../pages/Confirmation.html" style="display: inline-block;width: 100%;">
-          <button type="submit" id="submit" class="button-style2"  style="width: 48%;">Submit<i class="ti-angle-right"></i></button>
-        </a>
+          <input type="text" id="phone" name="Phone Number" placeholder="phone number" minlength="8" maxlength="10"required>
+          <div class="button">
+            <button id="next" class="button-style1">next<i class="ti-angle-right"></i></button>
+          </div>
+        </article>
+
+        <article class="page">
+          <p>Select Booking Date</p>
+          <input type="date" id="date" name="Date" value="" required>
+          <p>Time</p>
+          <select name="Time Slot:" required>
+            <option value="">time slot</option>
+            <option value="7.00am">7.00am</option>
+            <option value="7.30am">7.30am</option>
+            <option value="8.00am">8.00am</option>
+            <option value="8.30am">9.30am</option>
+            <option value="9.00am">9.00am</option>
+            <option value="9.30am">9.30am</option>
+            <option value="10.00am">10.00am</option>
+            <option value="10.30am">10.30am</option>
+            <option value="11.00am">11.00am</option>
+            <option value="11.30am">11.30am</option>
+          </select>
+
+          <div class="row">
+            <div class="column-l">
+              <p>No. of Adult</p>
+              <select name="Adult" name="" required>
+                <option value="">Adult</option>
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+            <div class="column-r">
+              <p>No. of Child</p>
+              <select name="child" name="" required>
+                <option value="">Child</option>
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+          </div>
+          <p>Anything Else?</p>
+          <input type="text" name="note" placeholder="Tell us if there is anything we should note" >
+           <!-- can add on size of the familiy -->
+          <div class="button button_gap" id="doubBtn">
+              <button class="back-click"><i class="ti-angle-left"></i>Back</button>
+              <button class="finish-click">Submit<i class="ti-angle-right"></i></button>
+            <!-- only put class finish click if this is the last page, else use next-click -->
+          </div>
+        </article>
+
+
+
+        <!-- donepart -->
+
+        <article class="page">
+          <input type="text" name="" id="space" value="" required> <!--extra input is needed to so that the form wont automatically end it is hidden in the html-->
+
+          <div class="confirmation">
+               <p> Please check your email for confirmation email. Please do note that the hotel reserves all rights to cancel your
+                 reservation should there be a need. Any extra charges needed will be charged to you.
+                 Please do call us 7 days before reservation date for any cancellation.
+                 Failure to cancel in advance will result in a fine. If you have any enquries please call <a href="tel:+6588031454">+65 88031454</a>
+               </p>
+            </div>
+            <div class="button">
+            <a href="../pages/restaurant_reservation.html" class="button-style1">Back to reservation page</a>
+
+            </div>
+
+        </article>
       </form>
+
     </div>
-  </div>
+
 </section>
 <script type="text/javascript" src="../js/form.js"></script> <!--for the dates validation made by me -->
 
