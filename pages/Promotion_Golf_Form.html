@@ -6,12 +6,16 @@
     <link rel="icon" href="../resources/images/logo.png">
     <title>Golf Reservation | Le Timeless Trésor</title>
     <!--link to css and jv-->
-    <link rel="stylesheet" href="../css/golf_booking.css">
+    <link rel="stylesheet" href="../css/jae_forms.css">
+    <link rel="stylesheet" href="../css/forms.css">
+    <link rel="icon" href="../resources/images/logo.png">
     <link rel="stylesheet" href="../css/navbar.css">
     <link rel="stylesheet" href="../css/global.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
+    <!-- header section starts  -->
     <nav class="topnav" id="myTopnav">
           <div class="container">
             <a href="../index.html" style="padding:0; display:inline">
@@ -112,12 +116,13 @@
                 <option value="5">5</option>
               </select>
             </div>
-            <button class="button-style1">Check<i class="ti-angle-right"></i></button>
+            <a href="../pages/booking.html" style="display:block;width:100%;padding:0 ;"><button class="button-style1">Check Availability<i class="ti-angle-right"></i></button></a>
           </div>
           <script type="text/javascript" src="../js/nav.js"></script>
         </nav>
-<!---header -->
-<header class="golf-banner" onclick="dismissBookingForm()"> <!-- so the side thing will not come out-->
+
+  <!-- header section ends -->
+  <header class="golf-banner" onclick="dismissBookingForm()"> <!-- so the side thing will not come out-->
   <div class="layer">
   </div>
   <div class="container">
@@ -130,45 +135,48 @@
 
 <!--next-->
 
-<section class = "form">
-  <div class="form container">
-    <div class="wrapper" id="form-section">
-      <h4 class="section-subheading">Reservation</h4>
-      <h1 class="section-title">Golf Booking</h1>
-      <hr class="horizontal-line">
-      <p class="info"> Please do note that the hotel reserves all rights to cancel your
-        reservation shoudld there be a need. Any extra charges needed will be charged to you.
-        Please do call us 7 days before any cancellation.
-        Failure to cancel in advance will result in a fine. Children above 12 years old is consider and adult. If you have any enquries please call <a href="callto:+6588031454">+65 88031454</a></p>
-      <form action = "Promotions_Golf_CONFIRM.html " method="get" name="Booking">
-        <div class="input-container">
-          <p>Select Booking Date</p>
-          <input class="input-style1" type="date" name="Date" id="date" required>
-          <div style="width:48%; float:left">
-            <p>No. of Adult</p>
-            <input type="number" class="input-style1"  name="Adult"  id="adult" placeholder="Adult:" min="1" max="10"  required >
-          </div>
-          <div style="width:48%;float:right">
-            <p>No. of Child</p>
-              <input type="number" class="input-style1" name="Child"  id="child" placeholder="Children:" min="0" max="10" >
-          </div>
-          <p>Name</p>
-          <input type="text" id="name" class="input-style1"  name="Name" placeholder="Full Name" pattern=[A-Z\sa-z]{3,20} required>
-          <p>Email</p>
-            <input type="email" id="email" class="input-style1" name="Email Address" placeholder="john.doe@email.com" required>
+<!-- start of form-->
+<section class="formContainer">
+    <div class="card">
+        <div class="status">
+            <div class="top-div">
+              <h4 class="section-subheading">Promotion Booking</h4>
+              <h1 class="section-title">Golf Course </h1>
+            </div>
+            <div class="progressbar">
+              <div class="progress" id="progress"></div>
+              <!-- if u have more pages add the topic here -->
+              <div class="progress-step progress-step-active" data-title="Information"></div>
+              <div class="progress-step" data-title="Date and Package"></div>
+              <div class="progress-step" data-title="Payment"></div>
+
+            </div>
         </div>
-        <div class="input-container">
-          <p>Hotel Confirmation Number</p>
-          <input class="input-style1" type="text" name="Hotel Confirmation Number" value="" maxlength="4" minlength="4" pattern=[A-Z\1-9\L]{1,2,1} >
-          <p>Select the course:</p>
-            <select class="input-style1" name="Course Type" required>
-              <option value="">Course Type</option>
-              <option value="Minigolf">Mini Golf</option>
-              <option value="classique Course">Classique Course</option>
-              <option value="Digi Course">DIGI course</option>
+
+        <form>
+
+        <article class="page currently">
+          <p>Full Name</p>
+            <input type="text" placeholder="Full name" required>
+          <p>email</p>
+          <input type="email" id="email" name="Email Address" placeholder="john.doe@email.com" required>
+          <p>Your Phone</p>
+          <input type="text" id="phone" name="Phone Number" placeholder="phone number" minlength="8" maxlength="10"required>
+          <div class="button">
+            <button id="next" class="button-style1">next<i class="ti-angle-right"></i></button>
+          </div>
+        </article>
+        <article class="page">
+          <p>Select your Gateaway:</p>
+            <select name=" Getaway" required>
+              <option value="">Package</option>
+              <option value="Mini Golfr">Mini Golf</option>
+              <option value="Classique Course">Classique Course</option>
+              <option value="Digi Golf">Digi Golf</option>
             </select>
+
             <p>Choose Time Slot:</p>
-            <select class="input-style1" name="Time Slot:" required>
+            <select  name="Time Slot:" required>
               <option value="">Time Slot</option>
               <option value="6.00am">6.00am</option>
               <option value="6.30am">6.30am</option>
@@ -202,20 +210,83 @@
               <option value="8.30pm">8.30pm</option>
               <option value="9.00pm">9.00pm</option>
             </select>
-          <p>Your Phone</p>
-          <input type="tel" id="phone" class="input-style1" name="Phone Number" placeholder="65-8803-1454" pattern=(\d{2})-?\s?(\d{4})-?\s?(\d{4}) required>
-        </div>
-        <a href="../pages/Promotions_Golf_CONFIRM.html" style="display: inline-block;width: 100%;">
-          <button type="submit" id="submit" class="button-style2"  style="width: 48%;">Submit<i class="ti-angle-right"></i></button>
-        </a>
+            <p>Hotel Confrimation Code</p>
+              <input type="text" placeholder="confirmation code">
+           <!-- can add on size of the familiy -->
+          <div class="button button_gap" id="doubBtn">
+              <button class="back-click"><i class="ti-angle-left"></i>Back</button>
+              <button class="next-click">Next<i class="ti-angle-right"></i></button>
+            <!-- only put class finish click if this is the last page, else use next-click -->
+          </div>
+        </article>
+
+
+        <article class="page">
+          <p>Accepted Cards</p>
+          <div class="icon-container">
+              <i class="fa fa-cc-visa" style="color:navy;font-size:48px;" ></i>
+              <i class="fa fa-cc-amex" style="color:blue;font-size:48px;"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;font-size:48px;"></i>
+              <i class="fa fa-cc-discover" style="color:orange;font-size:48px;"></i>
+          </div>
+          <p> Name on Card </p>
+          <input type="text" id="cname" name="cardname" placeholder="John More Doe" required>
+          <p> Credit Card Number </p>
+          <input type="number" id="ccnum" name="cardnumber" placeholder="1111222233334444" minlength="16" maxlength="16" pattern=".{8,8}" required>
+          <!-- <p>Exp Month </p>
+          <input id="myInput" type="text" name="months" placeholder="Country" required> -->
+
+          <div class="row">
+            <div class="column-l">
+              <!-- <p>Exp Year</p>
+              <input type="text" id="expyear" name="expyear" placeholder="2018" required> -->
+              <p> expiration date</p>
+              <span class="expiration">
+                 <input type="number" name="month" id="month" placeholder="MM" maxlength="2" size="2" pattern="(0[1-9]|1[0-2])" />
+                 <span>&nbsp;/&nbsp;</span>
+                 <input type="number" name="year" id="year" pattern="^.{2,2}" placeholder="YY" maxlength="2" size="2" />
+              </span>
+            </div>
+            <div class="column-r">
+              <p>CVV</p>
+              <input type="number" id="cvv" name="cvv" placeholder="123" minlength="3" maxlength="3" pattern=".{3,3}" required>
+            </div>
+          </div>
+
+
+          <!-- can add on size of the familiy -->
+          <div class="button button_gap" id="doubBtn">
+              <button class="back-click"><i class="ti-angle-left"></i>Back</button>
+              <button class="finish-click">Submit<i class="ti-angle-right"></i></button>
+              <!--only put class finish click if this is the last page, else use next-click-->
+          </div>
+        </article>
+
+        <!-- donepart -->
+
+        <article class="page">
+          <input type="text" name="" id="space" value="" required> <!--extra input is needed to so that the form wont automatically end it is hidden in the html-->
+
+          <div class="confirmation">
+               <p> Please do note that the hotel reserves all rights to cancel your
+                 reservation should there be a need. Any extra charges needed will be charged to you.
+                 Please do call us 7 days before reservation date for any cancellation.
+                 Failure to cancel in advance will result in a fine. If you have any enquries please call <a href="tel:+6588031454">+65 88031454</a>
+               </p>
+            </div>
+            <div class="button">
+            <a href="../resources/Inovice/Golf.pdf" class="button-style1">Print confirmation page</a>
+
+            </div>
+
+        </article>
       </form>
+
     </div>
-  </div>
+
 </section>
 <script type="text/javascript" src="../js/form.js"></script> <!--for the dates validation made by me -->
-
-
-<!-- forms section end -->
+<!--end of form-->
 <!-- footer section starts -->
 <footer class="footer">
    <div class="container">
