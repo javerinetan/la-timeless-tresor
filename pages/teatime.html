@@ -121,11 +121,10 @@
               <option value="5">5</option>
             </select>
           </div>
-          <button class="button-style1">Check<i class="ti-angle-right"></i></button>
+          <a href="../pages/booking.html" style="display:block;width:100%;padding:0 ;"><button class="button-style1">Check Availability<i class="ti-angle-right"></i></button></a>
         </div>
         <script type="text/javascript" src="../js/nav.js"></script>
       </nav>
-
 
 <!-- header section ends -->
 <!---Welcome page-->
@@ -175,16 +174,25 @@
         <article class="page">
           <p>Select Booking Date</p>
           <input type="date" id="date" name="Date" value="" required>
-          <p>Time</p>
-          <select name="Time Slot:" required>
-            <option value="">time slot</option>
-            <option value="2.00am">2.00am</option>
-            <option value="2.30am">2.30am</option>
-            <option value="3.00am">3.00am</option>
-            <option value="3.30am">3.30am</option>
-            <option value="4.00am">4.00am</option>
-            <option value="4.30am">4.30am</option>
-          </select>
+          <div class="row">
+            <div class="column-l">
+              <p>Time</p>
+              <select name="Time Slot:" required>
+                <option value="">time slot</option>
+                <option value="2.00am">2.00am</option>
+                <option value="2.30am">2.30am</option>
+                <option value="3.00am">3.00am</option>
+                <option value="3.30am">3.30am</option>
+                <option value="4.00am">4.00am</option>
+                <option value="4.30am">4.30am</option>
+              </select>
+            </div>
+            <div class="column-r">
+                <p> Number of sets </p>
+                <input type="number" name="Sets:" placeholder="number of tea time sets" minlength="1" maxlength="2" required>
+            </div>
+          </div>
+
           <div class="row">
             <div class="column-l">
               <p>No. of Adult</p>
@@ -212,11 +220,7 @@
             </div>
           </div>
           <p>Anything Else?</p>
-          <textarea id="message" name="Note" style=" resize: none;
-           height: 50px;
-           border:1px solid black;
-           width:100%;
-           " placeholder="Tell us if you have any requirement"></textarea>
+          <input type="text" name="note" placeholder="Tell us if there is anything we should note" required>
            <!-- can add on size of the familiy -->
           <div class="button button_gap" id="doubBtn">
               <button class="back-click"><i class="ti-angle-left"></i>Back</button>
@@ -279,7 +283,7 @@
                  Failure to cancel in advance will result in a fine. If you have any enquries please call <a href="tel:+6588031454">+65 88031454</a>
                </p>
             </div>
-            <div class="button"> 
+            <div class="button">
             <a href="../resources/Inovice/TeaTimeSet.pdf" class="button-style1">Print confirmation page</a>
 
             </div>
