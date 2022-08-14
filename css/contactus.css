@@ -60,7 +60,7 @@
 .contactus .form {
   float: right;
   background-color: #F8F5F0;
-  width: 65%;
+  width: 50%;
   display: inline-block;
 }
 
@@ -83,6 +83,8 @@ textarea {
 .map{
   display: inline-block;
   position: absolute;
+  width: 50%;
+  float: left
 }
 
 .map iframe{
@@ -90,19 +92,6 @@ textarea {
 }
 
 /*Smaller Window*/
-@media screen and (max-width: 1200px) {
-  .map{
-    position: relative;
-    width: auto;
-  }
-  .contactus .form{
-    position: relative;
-    width: 100%;
-    margin: auto;
-    padding: 0 0 0 0;
-  }
-}
-
 @media screen and (max-width: 900px) {
   .map{
     position: relative;
@@ -114,31 +103,8 @@ textarea {
     margin: auto;
     padding: 0 0 0 0;
   }
-
-}
-
-@media screen and (max-width: 600px) {
-  .map{
-    position: relative;
-    width: auto;
-  }
-  .contactus .form{
-    position: relative;
+  .map, .form {
     width: 100%;
-    margin: auto;
-    padding: 0 0 0 0;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .map{
-    position: relative;
-    width: auto;
-  }
-  .contactus .form{
-    position: relative;
-    width: 100%;
-    margin: auto;
-    padding: 0 0 0 0;
+    float: none;
   }
 }
