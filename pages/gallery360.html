@@ -2,43 +2,66 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>360 Video</title>
-    <meta name="description" content="360 Video — A-Frame">
-    <script src="../../../dist/aframe-master.js"></script>
-    <script src="../../js/play-on-click.js"></script>
-    <script src="../../js/hide-on-play.js"></script>
+    <title>360&deg; Image Gallery</title>
+    <meta name="description" content="360&deg; Image Gallery - A-Frame">
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-event-set-component@5/dist/aframe-event-set-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-layout-component@5.3.0/dist/aframe-layout-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-template-component@3.2.1/dist/aframe-template-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-proxy-event-component@2.1.0/dist/aframe-proxy-event-component.min.js"></script>
+
+    <!-- Image link template to be reused. -->
+    <script id="link" type="text/html">
+      <a-entity class="link"
+        geometry="primitive: plane; height: 1; width: 1"
+        material="shader: flat; src: ${thumb}"
+        event-set__mouseenter="scale: 1.2 1.2 1"
+        event-set__mouseleave="scale: 1 1 1"
+        event-set__click="_target: #image-360; _delay: 300; material.src: ${src}"
+        proxy-event="event: click; to: #image-360; as: fade"
+        sound="on: click; src: #click-sound"></a-entity>
+    </script>
   </head>
   <body>
     <a-scene>
       <a-assets>
-        <!--
-        SOURCE
-        Author: Bitmovin
-        URL:    https://bitmovin.com/demos/vr-360
-        -->
-        <video id="video"
-               loop
-               crossorigin="anonymous"
-               playsinline webkit-playsinline
-               src="https://bitmovin-a.akamaihd.net/content/playhouse-vr/progressive.mp4">
-        </video>
+        <img id="room" crossorigin="anonymous" src="https://thumbs.dreamstime.com/b/grodno-belarus-november-full-seamless-spherical-panorama-degrees-angle-view-interior-kitchen-vacation-house-equirectangular-139801700.jpg">
+        <img id="room-thumb" crossorigin="anonymous" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/08/bf/06/59/killashee-hotel-spa-leisure.jpg?w=500&h=-1&s=1">
+        <img id="pool" crossorigin="anonymous" src="https://cdna.artstation.com/p/assets/panos/images/015/838/536/large/karl-robert-graham-shackleton-indoor-pool-360-render-3.jpg?1549875459">
+        <img id="pool-thumb" crossorigin="anonymous" src="https://scubadiverlife.com/wp-content/uploads/2011/07/tropicaldiving-256x256.jpg">
+        <img id="billiards" crossorigin="anonymous" src="https://thumbs.dreamstime.com/b/minsk-belarus-february-full-seamless-spherical-panorama-degrees-angle-inside-interior-luxury-stylish-gold-casino-billiards-143944095.jpg">
+        <img id="billiards-thumb" crossorigin="anonymous" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS10z-9N_LiIFIWp8JTKPGn39EuxFJsVXx11g&usqp=CAU">
+        <img id="bar-thumb" crossorigin="anonymous" src="https://rmdgroupsd.com/wp-content/uploads/2019/08/RMD-Consulting-Development-Customer-Service-min-256x256.jpg">
+        <img id="sechelt-thumb" crossorigin="anonymous" src="https://scubadiverlife.com/wp-content/uploads/2020/07/malaysia-thegem-post-thumb-large.jpg">
+        <audio id="click-sound" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/audio/click.ogg"></audio>
+        <img id="bar" crossorigin="anonymous" src="https://thumbs.dreamstime.com/b/grodno-belarus-november-full-spherical-seamless-panorama-degrees-interior-stylish-chester-vintage-restaurant-nightclub-bar-145443398.jpg">
+        <img id="sechelt" crossorigin="anonymous" src="https://images.squarespace-cdn.com/content/v1/5568ec94e4b06c17240d5220/1443508568279-5KM5IBNCU4HDIQGMTCC3/Homepage+LEI.jpg?format=2500w">
       </a-assets>
-      <a-videosphere
-        rotation="0 -90 0" src="#video"
-        play-on-click>
-      </a-videosphere>
 
-      <a-camera>
-        <a-entity
-          position="0 0 -1.5"
-          text="align:center;
-                width:6;
-                wrapCount:100;
-                color: white;
-                value: Click or tap to start video"
-          hide-on-play="#video">
-        </a-entity>
-      </a-camera>
+      <!-- 360-degree image. -->
+      <a-sky id="image-360" radius="10" src="#room"
+             animation__fade="property: components.material.material.color; type: color; from: #FFF; to: #000; dur: 300; startEvents: fade"
+             animation__fadeback="property: components.material.material.color; type: color; from: #000; to: #FFF; dur: 300; startEvents: animationcomplete__fade"></a-sky>
+
+      <!-- Image links. -->
+      <a-entity id="links" layout="type: line; margin: 1.5" position="-3 -1 -4">
+        <a-entity template="src: #link" data-src="#bar" data-thumb="#bar-thumb"></a-entity>
+        <a-entity template="src: #link" data-src="#room" data-thumb="#room-thumb"></a-entity>
+        <a-entity template="src: #link" data-src="#sechelt" data-thumb="#sechelt-thumb"></a-entity>
+        <a-entity template="src: #link" data-src="#billiards" data-thumb="#billiards-thumb"></a-entity>
+        <a-entity template="src: #link" data-src="#pool" data-thumb="#pool-thumb"></a-entity>
+      </a-entity>
+
+      <!-- Camera + cursor. -->
+      <a-entity camera look-controls>
+        <a-cursor
+          id="cursor"
+          animation__click="property: scale; startEvents: click; from: 0.1 0.1 0.1; to: 1 1 1; dur: 150"
+          animation__fusing="property: fusing; startEvents: fusing; from: 1 1 1; to: 0.1 0.1 0.1; dur: 1500"
+          event-set__mouseenter="_event: mouseenter; color: springgreen"
+          event-set__mouseleave="_event: mouseleave; color: black"
+          raycaster="objects: .link"></a-cursor>
+      </a-entity>
     </a-scene>
   </body>
 </html>
