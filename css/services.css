@@ -1,3 +1,71 @@
+* {
+  font-family: 'LibreBodoni-Regular';
+}
+
+::-webkit-scrollbar-track{
+   background-color: white !important;
+}
+
+h1, h2 {
+  letter-spacing: 2.5px;
+}
+
+.banner {
+  background-image: url("../resources/images/gallerybanner2.jpg");
+  top: 0;
+  left: 0;
+  height: 83vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.heading {
+  color: white;
+  position: relative;
+  top: 280px;
+  text-align: center;
+  animation: title-slide 1s ease-in-out;
+}
+
+@keyframes title-slide {
+  0% {
+    opacity: 0.8;
+    top: 500px;
+  }
+  100% {
+    opacity: 1;
+    top: 280px;
+  }
+}
+
+.heading h1 {
+  font-family: 'LibreBodoni-Regular';
+  font-size: 50px;
+  color: white;
+  margin: 0;
+  font-weight: lighter;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+}
+
+.heading p {
+  margin: 0;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.layer {
+  background-color: black;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
 .btn{
   background-color: var(--main-color);
   line-height: 15.6px;
