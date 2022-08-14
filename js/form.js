@@ -285,3 +285,8 @@ function myFunction() {
 //
 // /*initiate the autocomplete function on the "myInput" element, and pass along the months array as possible autocomplete values:*/
 // autocomplete(document.getElementById("myInput"), months);
+
+
+function closed(){
+  alert("Sorry all the slots have been booked! We are so sorry!");
+}
