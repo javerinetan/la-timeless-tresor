@@ -189,7 +189,14 @@
             </div>
             <div class="column-r">
                 <p> Number of sets </p>
-                <input type="number" name="Sets:" placeholder="number of tea time sets" minlength="1" maxlength="2" required>
+                <select name="Time Slot:" required>
+                  <option value="">Sets</option>
+                  <option value="1">2</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
             </div>
           </div>
 
@@ -220,7 +227,7 @@
             </div>
           </div>
           <p>Anything Else?</p>
-          <input type="text" name="note" placeholder="Tell us if there is anything we should note" required>
+          <input type="text" name="note" placeholder="Tell us if there is anything we should note" >
            <!-- can add on size of the familiy -->
           <div class="button button_gap" id="doubBtn">
               <button class="back-click"><i class="ti-angle-left"></i>Back</button>
@@ -284,7 +291,7 @@
                </p>
             </div>
             <div class="button">
-            <a href="../resources/Inovice/TeaTimeSet.pdf" class="button-style1">Print confirmation page</a>
+            <a onclick="window.open('../resources/Inovice/TeaTimeSet.pdf', '_blank')" class="button-style1">Print confirmation page</a>
 
             </div>
 
