@@ -236,10 +236,20 @@
           </div>
           <p> Name on Card </p>
           <input type="text" id="cname" name="cardname" placeholder="John More Doe" required>
-          <p> Credit Card Number </p>
-          <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444" required>
+
           <p>Exp Month </p>
           <input id="myInput" type="text" name="months" placeholder="Country" required>
+          <div class="row">
+            <div class="column-l">
+              <p> Credit Card Number </p>
+              <input type="number" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444" required>
+            </div>
+            <div class="column-r">
+              <p>Exp Date </p>
+              <input id="months" type="number" name="months" placeholder="months" min='1' max='2'  style=" width: 45%; float: left;" required>
+              <input id="months" type="number" name="months" placeholder="date" min='1' max='2' style=" width: 45%; float: left;"required>
+            </div>
+          </div>
           <div class="row">
             <div class="column-l">
               <p>Exp Year</p>
@@ -247,7 +257,7 @@
             </div>
             <div class="column-r">
               <p>CVV</p>
-              <input type="text" id="cvv" name="cvv" placeholder="352" min="3" max="3" required>
+              <input type="password" id="cvv" name="cvv" placeholder="352" min="3" max="3" required>
             </div>
           </div>
 
