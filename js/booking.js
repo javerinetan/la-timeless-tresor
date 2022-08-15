@@ -1,12 +1,15 @@
+var checkinElem = document.querySelector("#chkin");
+var checkoutElem = document.querySelector("#chkout");
 var display = document.getElementById("bookingDetails");
 var form = document.getElementById("form-section");
+var price = 0;
 
 window.addEventListener('scroll', colorChange);
+checkinElem.valueAsDate = new Date();
+document.getElementById('chkin-display').value = checkinElem.value;
 
 // changes booking detail form color
 function colorChange(){
-  // console.log(window.pageYOffset);
-  // console.log(window.innerHeight + form.clientHeight);
   if (window.pageYOffset >= window.innerHeight) {
     display.classList.add("alt-color");
   }
@@ -25,12 +28,24 @@ function displayResults() {
 // updates booking details
 function updateBooking(element) {
   document.getElementById(element.name).value = document.getElementById(element.id).value;
+  updatePrice();
 }
 
 // update room type in booking details
-function updateRoomType(name, id) {
-  console.log(id);
+function updateRoomType(name, prc, id) {
   document.getElementById(id).value = name;
+  price = prc;
+  updatePrice();
+}
+
+function updatePrice(){
+  var chkin = new Date(checkinElem.value);
+  var chkout = new Date(checkoutElem.value);
+  if (chkin != "Invalid Date" && chkout != "Invalid Date") {
+    var days = (chkout - chkin) / (1000 * 3600 * 24);
+    var total = price * days;
+    document.getElementById('submit').innerHTML = 'Proceed - $'+ total +'<i class="ti-angle-right"></i>';
+  }
 }
 
 //this is to get the current date time
@@ -38,7 +53,7 @@ function updateRoomType(name, id) {
 var currentDateTime = new Date();
 var year = currentDateTime.getFullYear();
 var month = (currentDateTime.getMonth() + 1);
-var date = (currentDateTime.getDate() + 1);
+var date = (currentDateTime.getDate());
 
 //make sure that date is correct
 if(date < 10) {
@@ -49,9 +64,8 @@ if(month < 10) {
 }
 
 //set the check in and check out date
-var dateTomorrow = year + "-" + month + "-" + date;
-var checkinElem = document.querySelector("#chkin");
-var checkoutElem = document.querySelector("#chkout");
+var dateTomorrow = year + "-" + month + "-" + (date + 1);
+var dateToday = year + "-" + month + "-" + date;
 
-checkinElem.setAttribute("min", dateTomorrow);
+checkinElem.setAttribute("min", dateToday);
 checkoutElem.setAttribute("min", dateTomorrow);
