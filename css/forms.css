@@ -5,8 +5,13 @@
     align-items:center;
 }
 
-a{
+#phonenumber{
   color: #aa8453;
+}
+
+a{
+  color:white;
+  text-transform: uppercase;
 }
 
 .card{
