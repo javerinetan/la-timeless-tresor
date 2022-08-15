@@ -128,7 +128,7 @@
   <div class="container">
     <div class="heading">
       <p class="section-subheading">Le Timeless Trésor</p>
-      <h1 class="title">Golf Booking </h1>
+      <h1 class="title">Mini Golf Booking </h1>
     </div>
   </div>
 </header>
@@ -141,7 +141,7 @@
         <div class="status">
             <div class="top-div">
               <h4 class="section-subheading">Promotion Booking</h4>
-              <h1 class="section-title">Golf Course </h1>
+              <h1 class="section-title">Mini Golf </h1>
             </div>
             <div class="progressbar">
               <div class="progress" id="progress"></div>
@@ -167,51 +167,71 @@
           </div>
         </article>
         <article class="page">
-          <p>Select your Gateaway:</p>
-            <select name=" Getaway" required>
-              <option value="">Package</option>
-              <option value="Mini Golfr">Mini Golf</option>
-              <option value="Classique Course">Classique Course</option>
-              <option value="Digi Golf">Digi Golf</option>
-            </select>
+            <div class="row">
+              <div class="column-l">
+                <p>Choose Time Slot:</p>
+                <select  name="Time Slot:" required>
+                  <option value="">Time Slot</option>
+                  <option value="6.00am">6.00am</option>
+                  <option value="6.30am">6.30am</option>
+                  <option value="7.00am">7.00am</option>
+                  <option value="7.30am">7.30am</option>
+                  <option value="8.00am">8.00am</option>
+                  <option value="8.30am">8.30am</option>
+                  <option value="9.00am">9.00am</option>
+                  <option value="9.30am">9.30am</option>
+                  <option value="10.00am">10.00am</option>
+                  <option value="10.30am">10.30am</option>
+                  <option value="11.00am">11.00am</option>
+                  <option value="11.30am">11.30am</option>
+                  <option value="12.00pm">12.00pm</option>
+                  <option value="12.30pm">12.30pm</option>
+                  <option value="1.00pm">1.00pm</option>
+                  <option value="1.30pm">1.30pm</option>
+                  <option value="2.00pm">2.00pm</option>
+                  <option value="2.30pm">2.30pm</option>
+                  <option value="3.00pm">3.00pm</option>
+                  <option value="3.30pm">3.30pm</option>
+                  <option value="4.00pm">4.00pm</option>
+                  <option value="4.30pm">4.30pm</option>
+                  <option value="5.00pm">5.00pm</option>
+                  <option value="5.30pm">5.30pm</option>
+                  <option value="6.00pm">6.00pm</option>
+                  <option value="6.30pm">6.30pm</option>
+                  <option value="7.00pm">7.00pm</option>
+                  <option value="7.30pm">7.30pm</option>
+                  <option value="8.00pm">8.00pm</option>
+                  <option value="8.30pm">8.30pm</option>
+                  <option value="9.00pm">9.00pm</option>
+                </select>
+              </div>
+              <div class="column-r">
+                <p>Hotel Confrimation Code</p>
+                  <input type="text" placeholder="confirmation code">
+              </div>
+            </div>
+            <div class="row">
+              <div class="column-l">
+                <p>Children(below 12):</p>
+                <input type="number" id="children" name="Children" minlength="1" maxlength="2" >
+              </div>
+              <div class="column-r">
+                <p>Teenagers:</p>
+                <input type="number" id="Teenagers" name="Teenagers" minlength="1" maxlength="2">
+              </div>
+            </div>
+            <div class="row">
+              <div class="column-l">
+                <p>Adults:</p>
+                <input type="number" id="Adults" name="Adults" minlength="1" maxlength="2" >
+              </div>
+              <div class="column-r">
+                <p>Senior Citizen(60 and above):</p>
+                <input type="number" id="Senior Citizen" name="Senior Citizen" minlength="1" maxlength="2" >
+              </div>
+            </div>
 
-            <p>Choose Time Slot:</p>
-            <select  name="Time Slot:" required>
-              <option value="">Time Slot</option>
-              <option value="6.00am">6.00am</option>
-              <option value="6.30am">6.30am</option>
-              <option value="7.00am">7.00am</option>
-              <option value="7.30am">7.30am</option>
-              <option value="8.00am">8.00am</option>
-              <option value="8.30am">8.30am</option>
-              <option value="9.00am">9.00am</option>
-              <option value="9.30am">9.30am</option>
-              <option value="10.00am">10.00am</option>
-              <option value="10.30am">10.30am</option>
-              <option value="11.00am">11.00am</option>
-              <option value="11.30am">11.30am</option>
-              <option value="12.00pm">12.00pm</option>
-              <option value="12.30pm">12.30pm</option>
-              <option value="1.00pm">1.00pm</option>
-              <option value="1.30pm">1.30pm</option>
-              <option value="2.00pm">2.00pm</option>
-              <option value="2.30pm">2.30pm</option>
-              <option value="3.00pm">3.00pm</option>
-              <option value="3.30pm">3.30pm</option>
-              <option value="4.00pm">4.00pm</option>
-              <option value="4.30pm">4.30pm</option>
-              <option value="5.00pm">5.00pm</option>
-              <option value="5.30pm">5.30pm</option>
-              <option value="6.00pm">6.00pm</option>
-              <option value="6.30pm">6.30pm</option>
-              <option value="7.00pm">7.00pm</option>
-              <option value="7.30pm">7.30pm</option>
-              <option value="8.00pm">8.00pm</option>
-              <option value="8.30pm">8.30pm</option>
-              <option value="9.00pm">9.00pm</option>
-            </select>
-            <p>Hotel Confrimation Code</p>
-              <input type="text" placeholder="confirmation code">
+
            <!-- can add on size of the familiy -->
           <div class="button button_gap" id="doubBtn">
               <button class="back-click"><i class="ti-angle-left"></i>Back</button>
@@ -275,7 +295,7 @@
                </p>
             </div>
             <div class="button">
-            <a href="../resources/Inovice/Golf.pdf" class="button-style1">Print confirmation page</a>
+            <a  onclick="window.open('../resources/Inovice/Golf.pdf', '_blank')" class="button-style1">Print confirmation page</a>
 
             </div>
 
