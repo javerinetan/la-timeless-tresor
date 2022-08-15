@@ -10,7 +10,27 @@
 <link rel="icon" href="../resources/images/logo.png">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400;1,400;1,700&display=swap" rel="stylesheet">
+<script type="text/javascript">
+
+function button(){
+  var html = '<div class="alert">
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+  <strong>Danger!</strong> Indicates a dangerous or potentially negative action.
+  </div>'
+  getElementByClass('alert').innerHTML = html
+
+
+
+}
+
+
+</script>
 </head>
+<div id='alert'>
+
+
+</div>
+
 
 <!---header for navigation--->
 <body>
@@ -145,7 +165,7 @@
         </div>
         <input type="email" placeholder="Email" name="email" class="input-style2" style="margin-top: 15px; margin-bottom: 22px;text-transform:none" required>
         <textarea name="message" placeholder="Message" rows="8" cols="80" class="input-style2"style='text-transform:none' required></textarea>
-        <button type="submit" class="button-style1">Submit<i class="ti-angle-right"></i></button>
+        <button type="submit" class="button-style1" onclick="button()">Submit<i class="ti-angle-right"></i></button>
       </form>
     </div>
   </div>
