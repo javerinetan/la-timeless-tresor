@@ -68,6 +68,15 @@
 	transition: all 0.3s ease-in-out;
 }
 
+.ti-angle-left {
+	opacity: 0;
+	color: #aa8453;
+	padding-right: 2px;
+	font-size: 10px;
+	font-weight: bold;
+	transition: all 0.3s ease-in-out;
+}
+
 .dropdown-content a:hover .ti-angle-right {
   opacity: 1;
 	padding-left: 5px;

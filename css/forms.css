@@ -146,6 +146,7 @@ form input, select{
     display: block;
     width: 100%;
     font-size: 15px;
+    text-transform: none !important;
 }
 
 ::placeholder{
@@ -172,12 +173,14 @@ form input, select{
 
 #doubBtn .back-click{
   float:right;
-  margin-right:20px;
+  margin-right: 20px;
+  transition: all 0.3s ease-out;
 }
 
 #doubBtn .next-click, #doubBtn .finish-click{
   float:left;
   margin-left: 20px;
+  transition: all 0.3s ease-out;
 }
 
 .next-click:hover .ti-angle-right, .finish-click:hover .ti-angle-right{
