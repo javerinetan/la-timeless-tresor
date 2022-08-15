@@ -85,6 +85,7 @@ function validateform(){
         if(val.hasAttribute('required')){
             if(val.value.length==0){
                 counter++;
+                console.log("asd invalid`");
             }
         }
     });
@@ -93,17 +94,20 @@ function validateform(){
     slot.forEach(function(selection){
       if (selection.value==""){
         counter++;
+        console.log("selection invalid`");
       }
     })
 
     var filter = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/
     if (!filter.test(email.value)){
       counter++;
+      console.log("email invalid`");
     }
 
     var number = /^[0-9]{8}$/;
     if (!number.test(phoneNo.value)){
       counter++;
+      console.log("phone invalid`");
     }
 
     // var expMonth= (0[1-9]|1[0-2]);
