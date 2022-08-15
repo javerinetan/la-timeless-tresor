@@ -87,8 +87,8 @@
       <div class="book-form" id="bookForm">
         <h4>Le Timeless Trésor</h4>
         <h2>Check Availability</h2>
-        <input class="chk-in input-style1" type="text" placeholder="Check in" onfocus="(this.type='date')" onblur="(this.type='text')">
-        <input class="chk-out input-style1" type="text" placeholder="Check out" onfocus="(this.type='date')" onblur="(this.type='text')">
+        <input class="chk-in input-style1" type="text" placeholder="check in" onfocus="(this.type='date')" onblur="(this.type='text')">
+        <input class="chk-out input-style1" type="text" placeholder="check out" onfocus="(this.type='date')" onblur="(this.type='text')">
         <select class="room input-style2" name="adult">
           <option value="">Room Type</option>
           <option value="Junior Room">Junior Room</option>
@@ -147,7 +147,8 @@
                 <hr class="horizontal-line">
                 <p class="info" style="color: black;"> Please do note that the hotel reserves all rights to cancel your
                   reservation should there be a need. Any extra charges needed will be charged to you.
-                  If you have any enquries please call<a href="callto:+6588031454" style="color: blue;">+65 88031454</a>
+                  <br>
+                  If you have any enquries please call <a href="callto:+6588031454" style="color: blue;">+65 88031454</a>
                 </p>
                 <p class="info" style="color: black;">We guarantee you the fastest service. <br> We are here to satisfy your hunger and have curated all your favorite dishes. <br> Go ahead and take a look at our resort's online menu on the right!</p>
               </section>
@@ -165,14 +166,14 @@
             <div class="card">
                 <div class="status">
                     <div class="top-div">
-                      <h4 class="section-subheading">Online foood orderiung</h4>
+                      <h4 class="section-subheading">Online food ordering</h4>
                       <h1 class="section-title">Order now form</h1>
                     </div>
                     <div class="progressbar">
                       <div class="progress" id="progress"></div>
                       <!-- if u have more pages add the topic here -->
                       <div class="progress-step progress-step-active" data-title="Information"></div>
-                      <div class="progress-step" data-title="Booking"></div>
+                      <div class="progress-step" data-title="Ordering"></div>
                       <div class="progress-step" data-title="Payment"></div>
 
                     </div>
@@ -182,61 +183,31 @@
 
                 <article class="page currently">
                   <p>Full Name</p>
-                    <input type="text" placeholder="Full name" required>
+                    <input type="text" placeholder="full name" required>
                   <p>email</p>
-                  <input type="email" id="email" name="Email Address" placeholder="john.doe@email.com" required>
+                  <input type="email" id="email" name="email" placeholder="nurul@email.com" required>
                   <p>Your Phone</p>
-                  <input type="text" id="phone" name="Phone Number" placeholder="phone number" minlength="8" maxlength="10"required>
+                  <input type="text" id="phone" name="phone number" placeholder="phone number" minlength="8" maxlength="10"required>
                   <div class="button">
                     <button id="next" class="button-style1">next<i class="ti-angle-right"></i></button>
                   </div>
                 </article>
 
                 <article class="page">
-                  <p>Select Booking Date</p>
+                  <p>Select Order Date</p>
                   <input type="date" id="date" name="Date" value="" required>
-                  <p>Time</p>
-                  <select name="Time Slot:" required>
-                    <option value="">time slot</option>
-                    <option value="2.00am">2.00am</option>
-                    <option value="2.30am">2.30am</option>
-                    <option value="3.00am">3.00am</option>
-                    <option value="3.30am">3.30am</option>
-                    <option value="4.00am">4.00am</option>
-                    <option value="4.30am">4.30am</option>
-                  </select>
-                  <div class="row">
-                    <div class="column-l">
-                      <p>No. of Adult</p>
-                      <select name="Adult" name="" required>
-                        <option value="">Adult</option>
-                        <option value="0">0</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                      </select>
-                    </div>
-                    <div class="column-r">
-                      <p>No. of Child</p>
-                      <select name="child" name="" required>
-                        <option value="">Child</option>
-                        <option value="0">0</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                      </select>
-                    </div>
-                  </div>
-                  <p>Anything Else?</p>
+                  <p>Time of Delivery</p>
                   <textarea id="message" name="Note" style=" resize: none;
                    height: 50px;
                    border:1px solid black;
                    width:100%;
-                   " placeholder="Tell us if you have any requirement"></textarea>
+                   " placeholder=" 10am" required></textarea>
+                   <p>Menu Item and Quantity</p>
+                   <textarea id="message" name="Note" style=" resize: none;
+                    height: 50px;
+                    border:1px solid black;
+                    width:100%;
+                    " placeholder=" carbonara, 2"></textarea>
                    <!-- can add on size of the familiy -->
                   <div class="button button_gap" id="doubBtn">
                       <button class="back-click"><i class="ti-angle-left"></i>Back</button>
@@ -255,7 +226,7 @@
                       <i class="fa fa-cc-discover" style="color:orange;font-size:48px;"></i>
                   </div>
                   <p> Name on Card </p>
-                  <input type="text" id="cname" name="cardname" placeholder="John More Doe" required>
+                  <input type="text" id="cname" name="cardname" placeholder="nurul" required>
                   <p> Credit Card Number </p>
                   <input type="number" id="ccnum" name="cardnumber" placeholder="1111222233334444" minlength="16" maxlength="16" pattern=".{8,8}" required>
                   <!-- <p>Exp Month </p>
@@ -291,7 +262,6 @@
 
                 <article class="page">
                   <input type="text" name="" id="space" value="" required> <!--extra input is needed to so that the form wont automatically end it is hidden in the html-->
-
                   <div class="confirmation">
                        <p> Please do note that the hotel reserves all rights to cancel your
                          reservation should there be a need. Any extra charges needed will be charged to you.
@@ -300,7 +270,7 @@
                        </p>
                     </div>
                     <div class="button">
-                    <a href="../resources/Inovice/TeaTimeSet.pdf" class="button-style1">Print confirmation page</a>
+                    <a href="../resources/invoice/food.pdf" class="button-style1">Print confirmation page</a>
 
                     </div>
 

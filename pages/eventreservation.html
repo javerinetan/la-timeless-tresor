@@ -83,8 +83,8 @@
       <div class="book-form" id="bookForm">
         <h4>Le Timeless Trésor</h4>
         <h2>Check Availability</h2>
-        <input class="chk-in input-style1" type="text" placeholder="Check in" onfocus="(this.type='date')" onblur="(this.type='text')">
-        <input class="chk-out input-style1" type="text" placeholder="Check out" onfocus="(this.type='date')" onblur="(this.type='text')">
+        <input class="chk-in input-style1" type="text" placeholder="check in" onfocus="(this.type='date')" onblur="(this.type='text')">
+        <input class="chk-out input-style1" type="text" placeholder="check out" onfocus="(this.type='date')" onblur="(this.type='text')">
         <select class="room input-style2" name="adult">
           <option value="">Room Type</option>
           <option value="Junior Room">Junior Room</option>
@@ -140,10 +140,14 @@
               <h4 class="section-subheading">Event Booking</h4>
               <h1 class="section-title">Reservation</h1>
               <hr class="horizontal-line">
-              <p class="info" style=" color: black; margin-bottom: 30px;"> Please do note that the hotel reserves all rights to cancel your
-                reservation should there be a need. Any extra charges needed will be charged to you.
+              <p class="info" style=" color: black; margin-bottom: 30px;">
+                Please do note that the hotel reserves all rights to cancel your reservation should there be a need.
+                <br>
+                Any extra charges needed will be charged to you.
                 Please do call us 7 days before any cancellation.
-                Failure to cancel in advance will result in a fine. Children above 12 years old is consider and adult. If you have any enquries please call<a href="callto:+6588031454" style="color: blue;">+65 88031454</a></p>
+                <br>
+                Failure to cancel in advance will result in a fine. Children above 12 years old is consider and adult.
+                If you have any enquries please call <a href="callto:+6588031454" style="color: blue;">+65 88031454</a></p>
                 <!---so if u click on the phone number it will call--->
 
             </div>
@@ -153,15 +157,14 @@
                   <div class="card">
                       <div class="status">
                           <div class="top-div">
-                            <h4 class="section-subheading">Evbent</h4>
+                            <h4 class="section-subheading">Event</h4>
                             <h1 class="section-title">Reservation</h1>
                           </div>
                           <div class="progressbar">
                             <div class="progress" id="progress"></div>
                             <!-- if u have more pages add the topic here -->
                             <div class="progress-step progress-step-active" data-title="Information"></div>
-                            <div class="progress-step" data-title="Date & Time"></div>
-
+                            <div class="progress-step" data-title="Booking"></div>
                           </div>
                       </div>
 
@@ -169,9 +172,9 @@
 
                       <article class="page currently">
                         <p>Full Name</p>
-                          <input type="text" placeholder="Full name" required>
+                          <input type="text" placeholder="full name" required>
                         <p>email</p>
-                          <input type="email" id="email" required>
+                          <input type="email" placeholder="email" id="email" required>
                           <p>Phone Number</p>
                           <input type="number" id="phone" placeholder="88031454" minlength="8" maxlength="10" required>
 
@@ -211,16 +214,15 @@
                         <input type="text" name="" id="space" value="" required> <!--extra input is needed to so that the form wont automatically end it is hidden in the html-->
 
                           <div class="confirmation">
-                             <p> Please do note that the hotel reserves all rights to cancel your
+                             <p> Event has been booked. Please do note that the hotel reserves all rights to cancel your
                                reservation should there be a need. Any extra charges needed will be charged to you.
                                Please do call us 7 days before reservation date for any cancellation.
                                Failure to cancel in advance will result in a fine. If you have any enquries please call <a href="tel:+6588031454">+65 88031454</a>
                              </p>
                           </div>
                           <div class="button">
-                              <button class="button-style1" onclick="window.print()">Print confirmation page</button>
+                            <a href="../index.html"><input type="button" class="button-style1" value="Back to Home"></input></a>
                           </div>
-
                       </article>
                     </form>
                   </div>
