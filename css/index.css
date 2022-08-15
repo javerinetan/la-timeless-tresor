@@ -14,7 +14,7 @@
 
 .layer {
   background-color: black;
-  opacity: 0.5;
+  opacity: 0.6;
   position: absolute;
   top: 0;
   left: 0;
@@ -44,6 +44,33 @@
   margin: 0;
   font-size: 20px;
   margin-bottom: 10px;
+}
+
+
+.con-details {
+  color: white;
+  position: absolute;
+  width: 100%;
+  bottom: 70px;
+  text-align: center;
+  animation: title-slide-left 1s ease-in-out;
+}
+
+.con-details p {
+  color: gainsboro;
+  animation: title-slide-left 1s ease-in-out;
+}
+
+.con-details p:nth-child(1) {
+  float: left;
+}
+
+.con-details p:nth-child(2) {
+  float: right;
+}
+
+.con-details i{
+  color: #aa8453;
 }
 
 .section1 .container {
