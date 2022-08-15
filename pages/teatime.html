@@ -7,20 +7,17 @@
    <title>Restaurant Reservation | Le Timeless Trésor</title>
 
    <!-- font awesome cdn link  -->
-   <link rel="icon" href="../resources/images/logo.png">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400;1,400;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!---for the credit card image--->
-   <!-- custom css file link  -->
    <link rel="stylesheet" href="../css/jae_forms.css">
    <link rel="stylesheet" href="../css/forms.css">
+   <link rel="icon" href="../resources/images/logo.png">
    <link rel="stylesheet" href="../css/navbar.css">
    <link rel="stylesheet" href="../css/global.css">
-   <link rel="stylesheet" href="css/flickity.css" media="screen">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 <body>
-  <!-- Promotions header section starts  -->
+  <!-- header section starts  -->
   <nav class="topnav" id="myTopnav">
         <div class="container">
           <a href="../index.html" style="padding:0; display:inline">
@@ -121,11 +118,10 @@
               <option value="5">5</option>
             </select>
           </div>
-          <button class="button-style1">Check<i class="ti-angle-right"></i></button>
+          <a href="../pages/booking.html" style="display:block;width:100%;padding:0 ;"><button class="button-style1">Check Availability<i class="ti-angle-right"></i></button></a>
         </div>
         <script type="text/javascript" src="../js/nav.js"></script>
       </nav>
-
 
 <!-- header section ends -->
 <!---Welcome page-->
@@ -146,14 +142,13 @@
         <div class="status">
             <div class="top-div">
               <h4 class="section-subheading">Restaurant Booking</h4>
-              <h1 class="section-title">Tea Time Reservation</h1>
+              <h1 class="section-title">Tea Time @ The Courtyard</h1>
             </div>
             <div class="progressbar">
               <div class="progress" id="progress"></div>
               <!-- if u have more pages add the topic here -->
               <div class="progress-step progress-step-active" data-title="Information"></div>
-              <div class="progress-step" data-title="Booking"></div>
-              <div class="progress-step" data-title="Payment"></div>
+              <div class="progress-step" data-title="Booking details"></div>
 
             </div>
         </div>
@@ -175,16 +170,32 @@
         <article class="page">
           <p>Select Booking Date</p>
           <input type="date" id="date" name="Date" value="" required>
-          <p>Time</p>
-          <select name="Time Slot:" required>
-            <option value="">time slot</option>
-            <option value="2.00am">2.00am</option>
-            <option value="2.30am">2.30am</option>
-            <option value="3.00am">3.00am</option>
-            <option value="3.30am">3.30am</option>
-            <option value="4.00am">4.00am</option>
-            <option value="4.30am">4.30am</option>
-          </select>
+          <div class="row">
+            <div class="column-l">
+              <p>Time</p>
+              <select name="Time Slot:" required>
+                <option value="">time slot</option>
+                <option value="2.00am">2.00am</option>
+                <option value="2.30am">2.30am</option>
+                <option value="3.00am">3.00am</option>
+                <option value="3.30am">3.30am</option>
+                <option value="4.00am">4.00am</option>
+                <option value="4.30am">4.30am</option>
+              </select>
+            </div>
+            <div class="column-r">
+                <p> Number of sets </p>
+                <select name="Time Slot:" required>
+                  <option value="">Sets</option>
+                  <option value="1">2</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+            </div>
+          </div>
+
           <div class="row">
             <div class="column-l">
               <p>No. of Adult</p>
@@ -212,60 +223,15 @@
             </div>
           </div>
           <p>Anything Else?</p>
-          <textarea id="message" name="Note" style=" resize: none;
-           height: 50px;
-           border:1px solid black;
-           width:100%;
-           " placeholder="Tell us if you have any requirement"></textarea>
+          <input type="text" name="note" placeholder="Tell us if there is anything we should note" >
            <!-- can add on size of the familiy -->
           <div class="button button_gap" id="doubBtn">
               <button class="back-click"><i class="ti-angle-left"></i>Back</button>
-              <button class="next-click">Next<i class="ti-angle-right"></i></button>
+              <button class="finish-click">Submit<i class="ti-angle-right"></i></button>
             <!-- only put class finish click if this is the last page, else use next-click -->
           </div>
         </article>
 
-
-        <article class="page">
-          <p>Accepted Cards</p>
-          <div class="icon-container">
-              <i class="fa fa-cc-visa" style="color:navy;font-size:48px;" ></i>
-              <i class="fa fa-cc-amex" style="color:blue;font-size:48px;"></i>
-              <i class="fa fa-cc-mastercard" style="color:red;font-size:48px;"></i>
-              <i class="fa fa-cc-discover" style="color:orange;font-size:48px;"></i>
-          </div>
-          <p> Name on Card </p>
-          <input type="text" id="cname" name="cardname" placeholder="John More Doe" required>
-          <p> Credit Card Number </p>
-          <input type="number" id="ccnum" name="cardnumber" placeholder="1111222233334444" minlength="16" maxlength="16" pattern=".{8,8}" required>
-          <!-- <p>Exp Month </p>
-          <input id="myInput" type="text" name="months" placeholder="Country" required> -->
-
-          <div class="row">
-            <div class="column-l">
-              <!-- <p>Exp Year</p>
-              <input type="text" id="expyear" name="expyear" placeholder="2018" required> -->
-              <p> expiration date</p>
-              <span class="expiration">
-                 <input type="number" name="month" id="month" placeholder="MM" maxlength="2" size="2" pattern="(0[1-9]|1[0-2])" />
-                 <span>&nbsp;/&nbsp;</span>
-                 <input type="number" name="year" id="year" pattern="^.{2,2}" placeholder="YY" maxlength="2" size="2" />
-              </span>
-            </div>
-            <div class="column-r">
-              <p>CVV</p>
-              <input type="number" id="cvv" name="cvv" placeholder="123" minlength="3" maxlength="3" pattern=".{3,3}" required>
-            </div>
-          </div>
-
-
-          <!-- can add on size of the familiy -->
-          <div class="button button_gap" id="doubBtn">
-              <button class="back-click"><i class="ti-angle-left"></i>Back</button>
-              <button class="finish-click">Submit<i class="ti-angle-right"></i></button>
-              <!--only put class finish click if this is the last page, else use next-click-->
-          </div>
-        </article>
 
         <!-- donepart -->
 
@@ -273,17 +239,16 @@
           <input type="text" name="" id="space" value="" required> <!--extra input is needed to so that the form wont automatically end it is hidden in the html-->
 
           <div class="confirmation">
-               <p> Please do note that the hotel reserves all rights to cancel your
+               <p> Please check your email for confirmation email. Please do note that the hotel reserves all rights to cancel your
                  reservation should there be a need. Any extra charges needed will be charged to you.
                  Please do call us 7 days before reservation date for any cancellation.
                  Failure to cancel in advance will result in a fine. If you have any enquries please call <a href="tel:+6588031454">+65 88031454</a>
                </p>
             </div>
-            <div class="button"> 
-            <a href="../resources/Inovice/TeaTimeSet.pdf" class="button-style1">Print confirmation page</a>
+            <div class="button">
+            <a href="../pages/restaurant_reservation.html" class="button-style1">Back to reservation page</a>
 
             </div>
-
         </article>
       </form>
 

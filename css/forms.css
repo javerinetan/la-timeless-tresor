@@ -202,6 +202,12 @@ form input, select{
   color: red;
   display: none;
 }
+@media screen and (max-width: 400px) {
+  .card{
+    margin-bottom: 0px;
+    height: 140vh;
+    padding: 10px 40px;
+  }
 
 @keyframes stroke {
   100% {

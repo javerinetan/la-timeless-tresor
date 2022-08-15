@@ -6,6 +6,7 @@
   <title>Event Reservation | Le Timeless Trésor</title>
   <link rel="stylesheet" href="../css/navbar.css">
   <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/forms.css">
   <link rel="stylesheet" href="../css/fform.css">
   <link rel="stylesheet" href="../css/eventreservation.css">
   <link rel="icon" href="../resources/images/logo.png">
@@ -144,51 +145,86 @@
                 Please do call us 7 days before any cancellation.
                 Failure to cancel in advance will result in a fine. Children above 12 years old is consider and adult. If you have any enquries please call<a href="callto:+6588031454" style="color: blue;">+65 88031454</a></p>
                 <!---so if u click on the phone number it will call--->
-              <form action = "eventreservationconfirmation.html" method="get" name="Booking">
-                <div class="input-container" style="margin-bottom: 70px;">
-                  <p>Select Booking Date</p>
-                  <input class="input-style1" type="date" name="Date" id="date" required>
-                  <div style="width:48%; float:left">
-                    <p>No. of Adult</p>
-                    <input type="number" class="input-style1"  name="Adult"  id="adult" placeholder="Adult:" min="1" max="10"  required >
-                  </div>
-                  <div style="width:48%;float:right">
-                    <p>No. of Child</p>
-                      <input type="number" class="input-style1" name="Child"  id="child" placeholder="Children:" min="0" max="10" >
-                  </div>
-                  <p>Name</p>
-                  <input type="text" id="name" class="input-style1"  name="Name" placeholder="Full Name" pattern=[A-Z\sa-z]{3,20} required>
-                  <p>Email</p>
-                    <input type="email" id="email" class="input-style1" name="Email Address" placeholder="john.doe@email.com" required>
-                </div>
-                <div class="input-container">
-                  <p>Type of Event</p>
-                  <input class="input-style1" type="text" name="Type of Event" value="" maxlength="4" minlength="4" pattern=[A-Z\1-9\L]{1,2,1} >
-                  <p>Choose Time Slot:</p>
-                  <select class="input-style1" name="Time Slot:" style="margin-bottom: 15px;" required>
-                    <option value="">time slot</option>
-                    <option value="6.00am">6.00am</option>
-                    <option value="6.30am">6.30am</option>
-                    <option value="7.00am">7.00am</option>
-                    <option value="7.30am">7.30am</option>
-                    <option value="8.00am">8.00am</option>
-                    <option value="8.30am">8.30am</option>
-                    <option value="9.00am">9.00am</option>
-                    <option value="9.30am">9.30am</option>
-                    <option value="10.00am">10.00am</option>
-                  </select>
-                  <p>Your Phone</p>
-                  <input type="tel" id="phone" class="input-style1" name="Phone Number" placeholder="65-8803-1454" pattern=(\d{2})-?\s?(\d{4})-?\s?(\d{4}) required>
-                    <p>Anything Else?</p>
-                    <textarea id="message" name="Note" class="input-style1" placeholder="Tell us if you have any requirement"></textarea>
-                </div>
-                <a href="../pages/eventreservationconfirmation.html" style="display: inline-block;width: 100%;">
-                  <button type="submit" id="submit" class="button-style2"  style="width: 48%;">Submit<i class="ti-angle-right"></i></button>
-                </a>
-              </form>
+
             </div>
           </div>
         </section>
+        <section class="formContainer" style="width:100%">
+                  <div class="card">
+                      <div class="status">
+                          <div class="top-div">
+                            <h4 class="section-subheading">Evbent</h4>
+                            <h1 class="section-title">Reservation</h1>
+                          </div>
+                          <div class="progressbar">
+                            <div class="progress" id="progress"></div>
+                            <!-- if u have more pages add the topic here -->
+                            <div class="progress-step progress-step-active" data-title="Information"></div>
+                            <div class="progress-step" data-title="Date & Time"></div>
+
+                          </div>
+                      </div>
+
+                      <form>
+
+                      <article class="page currently">
+                        <p>Full Name</p>
+                          <input type="text" placeholder="Full name" required>
+                        <p>email</p>
+                          <input type="email" id="email" required>
+                          <p>Phone Number</p>
+                          <input type="number" id="phone" placeholder="88031454" minlength="8" maxlength="10" required>
+
+                        <div class="button">
+                          <button id="next" class="button-style1">next<i class="ti-angle-right"></i></button>
+                        </div>
+                      </article>
+
+                      <article class="page">
+                        <p>Session Date</p>
+                        <input type="date" id="date" name="Date" value="" required>
+                        <p>Time *</p>
+                        <select name="Time" required>
+                          <option value="">Time Slot</option>
+                          <option value="6am">0600</option>
+                          <option value="8am">0800</option>
+                          <option value="10am">1000</option>
+                          <option value="12pm">1200</option>
+                          <option value="2pm">1400</option>
+                          <option value="4pm">1600</option>
+                          <option value="6pm">1800</option>
+                          <option value="8pm">2000</option>
+                        </select>
+                        <br>
+                        *Each session is 2hrs long</p>
+                        <!-- can add on size of the familiy -->
+                        <div class="button button_gap" id="doubBtn">
+                            <button class="back-click"><i class="ti-angle-left"></i>Back</button>
+                            <button class="finish-click">Submit<i class="ti-angle-right"></i></button>
+                            <!--only put class finish click if this is the last page, else use next-click-->
+                        </div>
+                      </article>
+
+                      <!-- donepart -->
+
+                      <article class="page">
+                        <input type="text" name="" id="space" value="" required> <!--extra input is needed to so that the form wont automatically end it is hidden in the html-->
+
+                          <div class="confirmation">
+                             <p> Please do note that the hotel reserves all rights to cancel your
+                               reservation should there be a need. Any extra charges needed will be charged to you.
+                               Please do call us 7 days before reservation date for any cancellation.
+                               Failure to cancel in advance will result in a fine. If you have any enquries please call <a href="tel:+6588031454">+65 88031454</a>
+                             </p>
+                          </div>
+                          <div class="button">
+                              <button class="button-style1" onclick="window.print()">Print confirmation page</button>
+                          </div>
+
+                      </article>
+                    </form>
+                  </div>
+                </section>
       </div>
         <script type="text/javascript" src="../js/form.js"></script> <!--for the dates validation made by me -->
 <footer class="footer">
@@ -267,6 +303,7 @@
 
       <script src="../js/main.js"></script>
       <script src="../js//moment.min.js"></script>
+      <script type="text/javascript" src="../js/form.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
       <script src="../js/eventreservation.js" type="text/javascript"></script>
 </body>
