@@ -47,7 +47,7 @@
 .heading {
   color: white;
   position: relative;
-  top: 250px;
+  top: 280px;
   text-align: center;
   animation: title-slide 1s ease-in-out;
 }
