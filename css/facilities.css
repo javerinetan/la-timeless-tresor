@@ -196,7 +196,7 @@ header{
   font-size: 1.00em;
   line-height: 1em;
   text-decoration: none;
-  transition: background-position 0.5s ease-out;
+  transition: all 0.3s ease-out;
   cursor: pointer;
 }
 
