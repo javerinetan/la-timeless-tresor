@@ -51,7 +51,7 @@
   color: white;
   position: absolute;
   width: 100%;
-  bottom: 70px;
+  bottom: 80px;
   text-align: center;
   animation: title-slide-left 1s ease-in-out;
 }
@@ -59,14 +59,6 @@
 .con-details p {
   color: gainsboro;
   animation: title-slide-left 1s ease-in-out;
-}
-
-.con-details p:nth-child(1) {
-  float: left;
-}
-
-.con-details p:nth-child(2) {
-  float: right;
 }
 
 .con-details i{
@@ -77,6 +69,14 @@
   display: inline-block;
   margin-top: 100px;
   margin-bottom: 100px;
+}
+
+.con-details .container {
+  text-align: left;
+}
+
+.con-details p {
+  margin-bottom: 5px;
 }
 
 .section1 aside, .section1 article {
