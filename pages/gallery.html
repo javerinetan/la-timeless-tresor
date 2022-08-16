@@ -142,6 +142,29 @@
           <div onclick="show(this)" title="experience" id="btn3">EXPERIENCE</div>
         </div>
         <div style="display: inline-block;overflow: hidden;">
+          <div class="eventvideo" id="promovideo">
+          <div class="video">
+            <div class="play-backdrop"></div>
+            <div class="play-button">
+              <svg class="play-circles" viewBox="0 0 152 152">
+                <circle class="play-circle-01" fill="none" stroke="#fff" stroke-width="3" stroke-dasharray="343 343" cx="76" cy="76" r="72.7"/>
+                <circle class="play-circle-02" fill="none" stroke="#fff" stroke-width="3" stroke-dasharray="309 309" cx="76" cy="76" r="65.5"/>
+              </svg>
+              <div class="play-perspective">
+                <button class="play-close"></button>
+                <div class="play-triangle">
+                  <div class="play-video">
+                    <video id="video" width="320" height="240" controls>
+                      <source src="../resources/media/video.mp4" type="video/mp4">
+                          Your browser does not support the video tag.
+                    </video>
+                    <!--<iframe width="600" height="400" src="../resources/media/video.mp4?autoplay=1&cc_load_policy=1" id="video" title="Promotional Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> !-->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
           <!-- The Modal -->
           <div id="myModal" class="modal">
             <!-- Modal Content (The Image) -->
@@ -273,5 +296,6 @@
   <script src="../js/flickity.pkgd.min.js"></script>
   <script src="../js/main.js"></script>
   <script src="../js//moment.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script type="text/javascript" src="../js/gallery.js"></script>
 </body>
