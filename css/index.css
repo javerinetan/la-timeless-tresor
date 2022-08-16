@@ -46,12 +46,11 @@
   margin-bottom: 10px;
 }
 
-
 .con-details {
   color: white;
   position: absolute;
   width: 100%;
-  bottom: 80px;
+  bottom: 60px;
   text-align: center;
   animation: title-slide-left 1s ease-in-out;
 }
@@ -59,6 +58,18 @@
 .con-details p {
   color: gainsboro;
   text-transform: none;
+}
+
+.con-details .container {
+  text-align: center;
+}
+
+.con-details p:nth-child(1) {
+  float: left;
+}
+
+.con-details p:nth-child(2) {
+  float: right;
 }
 
 .con-details i{
@@ -70,14 +81,6 @@
   display: inline-block;
   margin-top: 100px;
   margin-bottom: 100px;
-}
-
-.con-details .container {
-  text-align: left;
-}
-
-.con-details p {
-  margin-bottom: 5px;
 }
 
 .section1 aside, .section1 article {
@@ -352,12 +355,23 @@
   width: 100%;
 }
 
+.section7 {
+  background-image: url("../resources/images/gallery_images/exterior4.jpg");
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
 .section7 .container {
   text-align: center;
-  width: 100%;
-  margin-bottom: 100px;
-  padding-top: 65px;
-  padding-bottom: 65px;
+  width: 85%;
+  margin: 120px 0px;
+  padding-top: 70px;
+  padding-bottom: 50px;
+  padding-right: 70px;
+  padding-left: 0px;
   background-color: #F5EFE8;
   display: inline-block;
 }
@@ -376,7 +390,7 @@
 }
 
 .section7 .box {
-  width: 33%;
+  width: 100%;
   float: left;
   text-align: left;
 }
@@ -387,22 +401,26 @@
 
 .section7 .box h4 {
   font-size: 20px;
-  margin-bottom: 10px;
 }
 
-.section7 .grid button {
+.section7 .box button {
   margin: 0 auto;
   display: inline-block;
 }
 
-.section7 .grid button {
+.section7 .box button {
   margin: 0 auto;
   margin-top: 30px;
   display: inline-block;
 }
 
+.section7 .box  hr {
+  margin: 10px 0px;
+}
+
 .box-content1 {
   background-image: url('../resources/images/pr81.png');
+  margin-left: 80px !important ;
 }
 
 .box-content2{
@@ -413,27 +431,43 @@
   background-image: url('../resources/images/newImg3.jpg');
 }
 
-.box-content1, .box-content2, .box-content3 {
-  margin: 30px;
-  padding: 20px;
-  height: 450px;
-  margin-bottom: 110px;
+.box-content4{
+  background-image: url('../resources/images/p2_love.png');
+}
+
+.box-content5{
+  background-image: url('../resources/images/newImg3.jpg');
+}
+
+.box-content1, .box-content2, .box-content3, .box-content4, .box-content5 {
+  margin: 10px;
+  padding: 10px;
+  width: 280px;
+  height: 420px;
+  margin-bottom: 80px;
   background-color: black;
   background-position: center;
   background-size: cover;
 }
 
-.box-content1 .title, .box-content2 .title, .box-content3 .title {
+.box-content1 .title, .box-content2 .title, .box-content3 .title, .box-content4 .title, .box-content5 .title {
   background-color: white;
   display: inline-block;
   position: relative;
   top: 300px;
-  padding: 30px;
+  padding: 25px;
   width: 100%;
+  min-height: 180px;
   transition: all 0.4s ease-in-out;
 }
 
-.box-content1:hover .title, .box-content2:hover .title, .box-content3:hover .title {
+.box-content1 .title a, .box-content2 .title a, .box-content3 .title a, .box-content4 .title a, .box-content5 .title a {
+  margin-top: 15px;
+  position: absolute;
+  bottom: 25px;
+}
+
+.box-content1:hover .title, .box-content2:hover .title, .box-content3:hover .title, .box-content4:hover .title, .box-content5:hover .title {
   top: 280px;
 }
 
@@ -543,6 +577,21 @@
     font-size: 40px;
     letter-spacing: 4px;
   }
+  .con-details {
+    bottom: 80px;
+  }
+  .con-details .container {
+    text-align: left;
+  }
+  .con-details p {
+    margin-bottom: 5px;
+  }
+  .con-details p:nth-child(1) {
+    float: none;
+  }
+  .con-details p:nth-child(2) {
+    float: none;
+  }
   .section1 aside, .section1 article{
       width: 100%;
       text-align: center;
@@ -551,7 +600,7 @@
     margin-top: 50px;
   }
   .section1 aside img {
-    width: 350px;
+    width: 380px;
   }
   .section1 .section-subheading {
     text-align: center;

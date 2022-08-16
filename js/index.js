@@ -123,3 +123,13 @@ flkty1.on( 'scroll', function() {
     img.style[ transformProp ] = 'translateX(' + x  + 'px)';
   });
 });
+
+var events = document.querySelector('.events-carousel');
+var flkty = new Flickity( events, {
+  imagesLoaded: true,
+  percentPosition: false,
+  contain: true,
+  freeScroll: true,
+  prevNextButtons: false,
+  pageDots: true,
+});
