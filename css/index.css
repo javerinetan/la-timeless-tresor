@@ -58,11 +58,12 @@
 
 .con-details p {
   color: gainsboro;
-  animation: title-slide-left 1s ease-in-out;
+  text-transform: none;
 }
 
 .con-details i{
   color: #aa8453;
+  padding-right: 10px;
 }
 
 .section1 .container {
@@ -401,11 +402,11 @@
 }
 
 .box-content1 {
-  background-image: url('../resources/images/newImg1.jpg');
+  background-image: url('../resources/images/pr81.png');
 }
 
 .box-content2{
-  background-image: url('../resources/images/newImg2.jpg');
+  background-image: url('../resources/images/p2_love.png');
 }
 
 .box-content3{
