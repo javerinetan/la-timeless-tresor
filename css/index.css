@@ -362,26 +362,28 @@
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  display: inline-block;
+  width: 100%
 }
 
 .section7 .container {
-  text-align: center;
+  text-align: left;
   width: 85%;
   margin: 120px 0px;
-  padding-top: 70px;
-  padding-bottom: 50px;
-  padding-right: 70px;
-  padding-left: 0px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  padding-right: 0px;
   background-color: #F5EFE8;
   display: inline-block;
+  float: right;
 }
 
 .section7 .section-title{
-  text-align: center;
+  text-align: left;
 }
 
 .section7 .section-subheading {
-  text-align: center;
+  text-align: left;
   font-size: 15px;
 }
 
@@ -420,7 +422,7 @@
 
 .box-content1 {
   background-image: url('../resources/images/pr81.png');
-  margin-left: 80px !important ;
+  margin-left: 0px !important;
 }
 
 .box-content2{
@@ -437,13 +439,14 @@
 
 .box-content5{
   background-image: url('../resources/images/newImg3.jpg');
+  margin-right: 80px !important ;
 }
 
 .box-content1, .box-content2, .box-content3, .box-content4, .box-content5 {
   margin: 10px;
   padding: 10px;
   width: 280px;
-  height: 420px;
+  height: 400px;
   margin-bottom: 80px;
   background-color: black;
   background-position: center;
@@ -454,7 +457,7 @@
   background-color: white;
   display: inline-block;
   position: relative;
-  top: 300px;
+  top: 260px;
   padding: 25px;
   width: 100%;
   min-height: 180px;
@@ -468,7 +471,7 @@
 }
 
 .box-content1:hover .title, .box-content2:hover .title, .box-content3:hover .title, .box-content4:hover .title, .box-content5:hover .title {
-  top: 280px;
+  top: 250px;
 }
 
 .section8 {
