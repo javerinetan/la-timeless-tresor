@@ -75,7 +75,7 @@ a {
   }
 
 header {
-  height: 500px;
+  height: 83vh;
 }
 
 
@@ -174,21 +174,22 @@ header {
 
 .services{
   padding-top: .44rem;
+  justify-content:center;
+  align-items:center;
 }
 
 .services .box-container{
    display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr)); /*make the columns*/
-   gap:.5rem;
-   align-items: flex-start;
-   padding: 1.5rem 5rem;
+   grid-template-columns: repeat(auto-fit, minmax(260px, 0px)); /*make the columns*/
+   margin-left: 70px;
+   grid-gap: 38px;
 }
 
 .services .box-container .box{
    text-align: center;
    width: 15rem;
    height: 200px;
-   margin:15px;
+   /* margin:15px; */
    padding: 15px;
    border: 1px solid lightgray; /*add border*/
 }
@@ -282,20 +283,19 @@ h2{
   align-items: flex-start;
 }
 
-@media screen and (max-width: 420px){
-  #about{
-    margin-top:20rem !important;
-  }
+@media screen and (max-width: 540px){
   .services .box-container{
     display: block;
     text-align: center;
-    padding: 4.5rem; /*idk how to settle this boxcontainer ..*/
+    /* padding: 4.5rem; /*idk how to settle this boxcontainer ..*/ */
     padding-top: 0;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: auto !important;
+    margin-right: auto!important;
   }
   .services .box-container .box{
     margin-bottom: 50px;
+    margin-left:auto;
+    margin-right: auto;
   }
   /*for timtable*/
   table{
@@ -307,6 +307,19 @@ h2{
   }
   h2{
     font-size: 1.1rem;
+  }
+  .section-title{
+    font-size: 35px !important;
+  }
+  .section-subheading{
+    font-size: 15px!important;
+  }
+  .about .content{
+    font-size: 15px;
+    margin-top: 0;
+  }
+  .heading{
+    top:200px;
   }
 }
 

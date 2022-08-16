@@ -216,6 +216,16 @@ header{
     .line{
       margin:30px 0px;
     }
+    .section-title{
+      font-size: 35px !important;
+    }
+    .section-subheading{
+      font-size: 15px !important;
+    }
+    .about .content{
+      font-size: 15px;
+      margin-top: 0;
+    }
 
   }
 
@@ -228,9 +238,6 @@ header{
   .right article {
     padding: 30px!important;
     font-size: 80%;
-  }
-  .subtitle {
-    font-size: 90%!important;
   }
   .button1 {
     padding: 0.8rem 3.28rem;
