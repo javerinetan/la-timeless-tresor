@@ -373,7 +373,8 @@
   padding-top: 80px;
   padding-bottom: 80px;
   padding-right: 0px;
-  background-color: #F5EFE8;
+  padding-left: 80px;
+  background-color: white;
   display: inline-block;
   float: right;
 }
@@ -454,7 +455,7 @@
 }
 
 .box-content1 .title, .box-content2 .title, .box-content3 .title, .box-content4 .title, .box-content5 .title {
-  background-color: white;
+  background-color: #F5EFE8;
   display: inline-block;
   position: relative;
   top: 260px;
