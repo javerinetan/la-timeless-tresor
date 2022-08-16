@@ -318,9 +318,7 @@ h2{
     font-size: 15px;
     margin-top: 0;
   }
-  .heading{
-    top:200px;
-  }
+
 }
 
 @media screen and (max-width: 900px){
