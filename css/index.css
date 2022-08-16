@@ -426,28 +426,33 @@
   margin-left: 0px !important;
 }
 
-.box-content2{
+.box-content2 {
   background-image: url('../resources/images/p2_love.png');
 }
 
-.box-content3{
+.box-content3 {
   background-image: url('../resources/images/newImg3.jpg');
 }
 
-.box-content4{
+.box-content4 {
   background-image: url('../resources/images/p2_love.png');
 }
 
-.box-content5{
+.box-content5 {
   background-image: url('../resources/images/newImg3.jpg');
-  margin-right: 80px !important ;
 }
 
-.box-content1, .box-content2, .box-content3, .box-content4, .box-content5 {
+.box-content6 {
+  background-color: white !important;
+  display: flex;
+  align-items: center;
+}
+
+.box-content1, .box-content2, .box-content3, .box-content4, .box-content5, .box-content6  {
   margin: 10px;
   padding: 10px;
-  width: 280px;
-  height: 400px;
+  width: 250px;
+  height: 330px;
   margin-bottom: 80px;
   background-color: black;
   background-position: center;
@@ -660,6 +665,14 @@
   .section7 .box-content {
     padding: 10px;
   }
+  .section7 .container {
+    width: 90%;
+    margin: 100px 0px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-right: 0px;
+    padding-left: 60px;
+  }
 }
 
 @media screen and (max-width: 400px) {
@@ -684,6 +697,14 @@
   }
   .section5 .box-content {
     margin: 10px 0px;
+  }
+  .section7 .container {
+    width: 100%;
+    margin: 120px 0px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-right: 0px;
+    padding-left: 40px;
   }
 }
 

@@ -129,7 +129,6 @@ var flkty = new Flickity( events, {
   imagesLoaded: true,
   percentPosition: false,
   contain: true,
-  freeScroll: true,
   prevNextButtons: false,
   pageDots: true,
 });
