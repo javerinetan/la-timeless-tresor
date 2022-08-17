@@ -313,7 +313,7 @@
 
 .section6 .wrapper {
   width: 100%;
-  margin-bottom: 80px;
+  margin: 40px 0px;
   display: inline-block;
 }
 
@@ -336,7 +336,7 @@
   float: left;
   width: 45%;
   padding: 40px 80px;
-  padding-left: 40px;
+  padding-left: 50px;
   text-align: left;
 }
 
@@ -349,7 +349,7 @@
   float: right;
   width: 45%;
   padding: 40px 80px;
-  padding-right: 40px;
+  padding-right: 50px;
   display: inline-block;
   text-align: right;
 }
@@ -369,12 +369,23 @@
   width: 100%
 }
 
+.section7 .title-container {
+  float:left;
+  width:30%;
+  padding-right: 30px;
+}
+
+.section7 .events-carousel {
+  float:left;
+  width:70%;
+}
+
 .section7 .container {
   text-align: left;
   width: 85%;
   margin: 120px 0px;
   padding-top: 80px;
-  padding-bottom: 80px;
+  padding-bottom: 60px;
   padding-right: 0px;
   padding-left: 80px;
   background-color: white;
@@ -589,10 +600,26 @@
     margin-top: 80px;
   }
   .section6 .wrapper {
-    margin-bottom: 0px;
+    margin: 0px;
   }
   .section6 .right article, .section6 .left article {
-    padding: 90px 80px;
+    padding: 90px 40px;
+  }
+  .section6 .left article {
+    text-align: left;
+  }
+  .section6 .btn-container {
+    float: left;
+  }
+  .section7 .title-container {
+    float:none;
+    width:100%;
+    margin-bottom: 20px;
+  }
+
+  .section7 .events-carousel {
+    float:none;
+    width:100%;
   }
 }
 
@@ -670,7 +697,7 @@
     width: 100%;
   }
   .section6 .right article {
-    padding: 40px;
+    padding: 60px 40px;
   }
   .section7 .box {
     width: 100%;
