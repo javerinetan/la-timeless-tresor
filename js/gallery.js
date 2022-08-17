@@ -140,6 +140,7 @@ const openTL = new TimelineMax({ paused: true })
 const button = document.querySelector(".play-button")
 const backdrop = document.querySelector(".play-backdrop")
 const close = document.querySelector(".play-close")
+var video = document.getElementById("video")
 
 button.addEventListener("mouseover", () => rotateTL.play())
 button.addEventListener("mouseleave", () => rotateTL.reverse())
@@ -148,8 +149,14 @@ backdrop.addEventListener("click", () => openTL.reverse())
 close.addEventListener("click", e => {
   e.stopPropagation()
   openTL.reverse()
+  video.pause()
+})
+
+backdrop.addEventListener("click", function(){
+  video.pause()
 })
 
 button.addEventListener("click", function() {
-  document.getElementsById("video").play()
+  video.currentTime = 0;
+  video.play()
 })
