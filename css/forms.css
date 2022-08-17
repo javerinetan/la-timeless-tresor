@@ -177,12 +177,14 @@ form input, select{
 }
 
 #doubBtn .back-click{
+  text-transform: uppercase;
   float:right;
   margin-right: 20px;
   transition: all 0.3s ease-out;
 }
 
 #doubBtn .next-click, #doubBtn .finish-click{
+  text-transform: uppercase;
   float:left;
   margin-left: 20px;
   transition: all 0.3s ease-out;
