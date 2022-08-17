@@ -75,12 +75,12 @@
 
 .room-info .info .button-style1 {
   margin-top: 40px;
-  width: 350px;
+  width: 60%;
 }
 
 .room-info .info .button-style1:hover {
   margin-top: 40px;
-  width: 400px;
+  width: 65%;
 }
 
 .room-info .amenities {
@@ -130,6 +130,13 @@
   .heading h1 {
     font-size: 40px;
     letter-spacing: 4px;
+  }
+  .room-info .info .button-style1 {
+    width: 90%
+  }
+  .room-info .info .button-style1:hover {
+    margin-top: 40px;
+    width: 100%;
   }
 }
 
