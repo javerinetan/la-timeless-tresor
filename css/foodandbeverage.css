@@ -133,6 +133,11 @@
   position: relative;
   display: inline-block;
 }
+
+.dropdownfab .horizontal-line{ /*Main Dropdown*/
+  margin: 20px;
+}
+
 .dropdown-contentfab{ /*Content Of Dropdown*/
   display: none;
   position: absolute;
@@ -245,6 +250,12 @@ text-transform: uppercase;
   margin-right: 10px;
 }
 
+@media screen and (max-width: 1200px) {
+  .Menu img {
+    height: 200px;
+  }
+}
+
 /*Smaller Windows*/
 @media screen and (max-width: 900px) {
   .Menu .Left {
@@ -267,7 +278,9 @@ text-transform: uppercase;
   .Left {
     margin-bottom: 20px;
   }
-
+  .Menu img {
+    height: 150px;
+  }
   .Menu .Center li {
     padding: 0px 20px;
     padding-bottom: 20px;

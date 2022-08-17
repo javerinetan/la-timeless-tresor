@@ -149,7 +149,11 @@
 
 .section3 .box-conatiner{
   margin: 0 10rem;
+  text-align: center;
+  margin-bottom: 60px;
+  display: inline-block;
 }
+
 .section3 img{
   float: left;
   width:25%;
@@ -267,9 +271,12 @@
       .section4 img{
         height:20rem;
       }
+      .section4 .column {
+        width: 100% !important;
+      }
     }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 900px) {
     .heading h1{
       font-size:40px;
       letter-spacing: 4px;
@@ -282,13 +289,14 @@
       margin: 40px 0px;
     }
     .section3 img {  /** this is to make sure if to small it will rejust to below   **/
-      width: 100%;
+      width: 50%;
+      float: none;
+      height: auto;
     }
     .section4 .column {
-      width: 100%;
-      display: block;
+      width: 50%;
     }
-
+}
 
 @media screen and (max-width: 900px){
       .heading h1 {
