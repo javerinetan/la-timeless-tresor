@@ -205,7 +205,23 @@ header{
   border-bottom: 4px #c4ac80 solid;
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 900px){
+    .left article {
+      padding: 20px!important;
+      font-size: 80%;
+    }
+    .right article {
+      padding: 30px!important;
+      font-size: 80%;
+    }
+    .button1 {
+      padding: 0.8rem 3.28rem;
+      font-size: 0.8rem;
+    }
+    .button1:hover{
+      font-size: 0.8rem;
+      padding: 0.8rem 3.28rem;
+    }
     .right img, .left img, .right article, .left article  {
       width: 100%;
       float: none;
@@ -227,29 +243,7 @@ header{
       font-size: 15px;
       margin-top: 0;
     }
-
   }
-
-
-@media screen and (max-width: 900px){
-  .left article {
-    padding: 20px!important;
-    font-size: 80%;
-  }
-  .right article {
-    padding: 30px!important;
-    font-size: 80%;
-  }
-  .button1 {
-    padding: 0.8rem 3.28rem;
-    font-size: 0.8rem;
-  }
-  .button1:hover{
-    font-size: 0.8rem;
-    padding: 0.8rem 3.28rem;
-  }
-}
-
 
 @media screen and (max-width: 1200px){
   .section-title{

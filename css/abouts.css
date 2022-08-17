@@ -148,17 +148,21 @@
 }
 
 .section3 .box-conatiner{
-  margin: 0 10rem;
   text-align: center;
   margin-bottom: 60px;
   display: inline-block;
+  width: 100%;
+  padding: 0px 40px;
+  display: flex;
+  place-content: center;
 }
 
 .section3 img{
   float: left;
-  width:25%;
-  padding: 5px;
-  }
+  width: 15%;
+  height: auto;
+  padding: 20px;
+}
 /** team section **/
 .section4 .container3 {
     text-align: center;
@@ -289,22 +293,22 @@
       margin: 40px 0px;
     }
     .section3 img {  /** this is to make sure if to small it will rejust to below   **/
-      width: 50%;
+      width: 20%;
+      padding: 10px;
       float: none;
       height: auto;
     }
     .section4 .column {
       width: 50%;
     }
-}
-
-@media screen and (max-width: 900px){
-      .heading h1 {
-          font-size: 40px;
-          letter-spacing: 4px;
-      }
+    .heading h1 {
+        font-size: 40px;
+        letter-spacing: 4px;
     }
-
+    .section3 .box-conatiner {
+      display: block;
+    }
+}
 
 @media screen and (max-width: 1200px){
   .section-title{
