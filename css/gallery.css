@@ -236,8 +236,8 @@ h1, h2 {
 .play-triangle {
   width: 600px;
   cursor: pointer;
+  background-color: white;
 }
-
 
 /* Style the Image Used to Trigger the Modal */
 #myImg {

@@ -153,10 +153,12 @@ close.addEventListener("click", e => {
 })
 
 backdrop.addEventListener("click", function(){
+  document.getElementById("vid-bg").style.backgroundColor = "white";
   video.pause()
 })
 
 button.addEventListener("click", function() {
+  document.getElementById("vid-bg").style.backgroundColor = "black";
   video.currentTime = 0;
   video.play()
 })
