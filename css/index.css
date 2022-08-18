@@ -72,6 +72,15 @@
   float: right;
 }
 
+.con-details a {
+  color: gainsboro;
+  transition: all 0.3s ease-in-out;
+}
+
+.con-details a:hover {
+  color: #aa8453;
+}
+
 .con-details i{
   color: #aa8453;
   padding-right: 10px;
