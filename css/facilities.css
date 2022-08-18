@@ -96,6 +96,11 @@ header{
   margin: 30px 0px;
 }
 
+.display {
+  display: block !important;
+  animation: fade-up 1s ease-in-out;
+}
+
 .line {
   width: 40%;
   height: 1px;

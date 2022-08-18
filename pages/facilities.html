@@ -11,7 +11,7 @@
    <link rel="stylesheet" href="../css/navbar.css">
    <link rel="stylesheet" href="../css/global.css">
 </head>
-<body>
+<body onload="showAll()">
 
 <!-- header section starts  -->
 <nav class="topnav" id="myTopnav">
@@ -160,7 +160,7 @@
         <div onclick="showNotFree()" class="" id="btn2">CHARGABLE</div>
       </div>
     </div>
-      <section class="freeFacility" id="complimentary">
+      <section class="freeFacility" id="complimentary" style="display:none;">
         <div class = "right"> <!--position of the facility article-->
           <img src="../resources/images/cinema.jpg" alt="cinema">
             <article> <!--content-->
@@ -283,7 +283,7 @@
         </div>
       </section>
 
-      <section class="notFreeFacility" id="charged">
+      <section class="notFreeFacility" id="charged" style="display:none;">
 
         <div class = "right">
           <img src="../resources/images/casino.jpg" alt="casino">
