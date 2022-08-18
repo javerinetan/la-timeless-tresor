@@ -201,8 +201,14 @@ header{
 }
 
 #facilityNav div:hover, .click {
-  color: #aa8453;
-  border-bottom: 4px #c4ac80 solid;
+  border-bottom: 3px #c4ac80 solid;
+}
+
+@media screen and (max-width: 400px){
+  #facilityNav{
+    flex-direction: column;
+    height: 150px;
+  }
 }
 
 @media screen and (max-width: 900px){

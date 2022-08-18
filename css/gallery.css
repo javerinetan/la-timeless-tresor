@@ -148,7 +148,7 @@ h1, h2 {
 
 .segcontrol div:hover {
   background-position: -99.99% 0;
-  border-bottom: 4px #c4ac80 solid;
+  border-bottom: 3px #c4ac80 solid;
 }
 
 .highlight {
