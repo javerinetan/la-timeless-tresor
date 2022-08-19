@@ -91,6 +91,7 @@
   position: relative;
   top: 280px;
   text-align: center;
+  animation: title-slide 1s ease-in-out;
 }
 
 .heading h1 {
