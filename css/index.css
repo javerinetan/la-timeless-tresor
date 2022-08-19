@@ -446,23 +446,24 @@
 }
 
 .box-content1 {
-  background-image: url('../resources/images/weddingspace.jpg');
+  background-image: url('../resources/images/p3_fam.png');
 }
 
 .box-content2{
-  background-image: url('../resources/images/gallery_images/experience2.jpg');
+  background-image: url('../resources/images/weddingspace.jpg');
 }
 
 .box-content3 {
-  background-image: url('../resources/images/newImg3.jpg');
+  background-image: url('../resources/images/gallery_images/experience2.jpg');
 }
 
 .box-content4{
-  background-image: url('../resources/images/museum.webp');
+  background-image: url('../resources/images/spa.jpg');
+  background-position: left;
 }
 
 .box-content5{
-  background-image: url('../resources/images/weddingspace.jpg');
+  background-image: url('../resources/images/museum.webp');
 }
 
 .box-content6 {
