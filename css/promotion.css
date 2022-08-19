@@ -126,7 +126,8 @@
 /**romantic package**/
 .content{
   text-align: center; /**to aligin the header*/
-  padding-top: 70px;
+  padding-top: 100px;
+  padding-bottom: 60px;
 }
 
 /**to make it 3 in one row*/

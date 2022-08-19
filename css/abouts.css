@@ -30,6 +30,7 @@
   position: relative;
   top: 280px;
   text-align: center;
+  animation: title-slide 1s ease-in-out;
 }
 
 .heading h1 {
@@ -50,7 +51,8 @@
 /**end of heading**/
 .content{
   text-align: center;
-  padding-top:70px;
+  padding-top: 100px;
+  padding-bottom: 60px;
 }
 /**content image**/
 .section .right img {

@@ -13,8 +13,8 @@ function showAll() {
   let btn=document.getElementById("btn0");
   resetColor();
   btn.classList="click" //only with this class name will the colour change
-  complimentary.style.display = 'block'; //so that all faclities will be seen
-  paid.style.display = 'block';
+  complimentary.classList.add("display"); //so that all faclities will be seen
+  paid.classList.add("display");
 }
 
 //show complimentary facilities
@@ -22,8 +22,8 @@ function showComplimentary(){
   let btn=document.getElementById("btn1");
   resetColor();
   btn.classList="click"
-  paid.style.display = 'none'; //paid section will be removed
-  complimentary.style.display = 'block';
+  paid.classList.remove("display"); //paid section will be removed
+  complimentary.classList.add("display");;
 }
 
 //show not free facilities
@@ -31,6 +31,6 @@ function showNotFree(){
   let btn=document.getElementById("btn2");
   resetColor();
   btn.classList="click"
-  paid.style.display = 'block';
-  complimentary.style.display = 'none'; //complimentary section will be removed
+  paid.classList.add("display");
+  complimentary.classList.remove("display"); //complimentary section will be removed
 }

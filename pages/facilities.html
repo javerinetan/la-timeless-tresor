@@ -11,7 +11,7 @@
    <link rel="stylesheet" href="../css/navbar.css">
    <link rel="stylesheet" href="../css/global.css">
 </head>
-<body>
+<body onload="showAll()">
 
 <!-- header section starts  -->
 <nav class="topnav" id="myTopnav">
@@ -137,7 +137,7 @@
 <!-- home section ends -->
 
 <!-- about section starts  -->
-<section class="about" id="about">
+<section class="about reveal up" id="about">
   <h4 class="hotel-name">indulgent experiences</h4>
   <h1 class="page-name">Facilities</h1>
   <hr class="horizontal-line">
@@ -152,7 +152,7 @@
 <!-- about section ends -->
 
 <!-- facilities section starts -->
-<section class="facilities">
+<section class="facilities reveal fade">
     <div class="container">
       <div id="facilityNav">
         <div onclick="showAll()" class="click" id="btn0">ALL</div>
@@ -160,7 +160,7 @@
         <div onclick="showNotFree()" class="" id="btn2">CHARGABLE</div>
       </div>
     </div>
-      <section class="freeFacility" id="complimentary">
+      <section class="freeFacility" id="complimentary" style="display:none;">
         <div class = "right"> <!--position of the facility article-->
           <img src="../resources/images/cinema.jpg" alt="cinema">
             <article> <!--content-->
@@ -177,7 +177,7 @@
             </article>
         </div>
 
-        <div class = "left">
+        <div class = "reveal up left">
           <img src="../resources/images/museum.jpg" alt="museum">
             <article>
               <h4 class="section-subheading">feast your eyes on the best artworks</h4>
@@ -192,7 +192,7 @@
           </article>
         </div>
 
-        <div class = "right">
+        <div class = "reveal up right">
           <img src="../resources/images/pool.jpg" alt="pool">
             <article>
               <h4 class="section-subheading">relaxing time</h4>
@@ -207,7 +207,7 @@
           </article>
         </div>
 
-        <div class = "left">
+        <div class = "reveal up left">
           <img src="../resources/images/childcare.jpg" alt="childcare">
             <article>
               <h4 class="section-subheading">date night</h4>
@@ -222,7 +222,7 @@
             </article>
         </div>
 
-        <div class="right">
+        <div class="reveal up right">
           <img src="../resources/images/PhotoBooth.png" alt="PhotoBooth">
             <article>
               <h4 class="section-subheading">remember the occasion</h4>
@@ -237,7 +237,7 @@
             </article>
         </div>
 
-        <div class = "left">
+        <div class = "reveal up left">
           <img src="../resources/images/bowling.webp" alt="bowling">
             <article>
               <h4 class="section-subheading">game night</h4>
@@ -251,7 +251,7 @@
             </article>
         </div>
 
-        <div class = "right">
+        <div class = "reveal up right">
           <img src="../resources/images/gym.jpg" alt="gym">
             <article>
               <h4 class="section-subheading">maintain fit</h4>
@@ -267,7 +267,7 @@
             </article>
         </div>
 
-        <div class = "left">
+        <div class = "reveal up left">
           <img src="../resources/images/tennis.webp" alt="tennis">
             <article>
               <h4 class="section-subheading">match time</h4>
@@ -283,9 +283,9 @@
         </div>
       </section>
 
-      <section class="notFreeFacility" id="charged">
+      <section class="notFreeFacility" id="charged" style="display:none;">
 
-        <div class = "right">
+        <div class = "reveal up right">
           <img src="../resources/images/casino.jpg" alt="casino">
             <article>
               <h4 class="section-subheading">adrenaline rush</h4>
@@ -301,7 +301,7 @@
             </article>
         </div>
 
-        <div class = "left">
+        <div class = "reveal up left">
           <img src="../resources/images/billard.jpg" alt="Billard">
             <article>
               <h4 class="section-subheading">game night</h4>
@@ -316,7 +316,7 @@
             </article>
         </div>
 
-        <div class = "right">
+        <div class = "reveal up right">
           <img src="../resources/images/golf.jpg" alt="golf">
             <article>
               <h4 class="section-subheading">hole in one</h4>
@@ -331,7 +331,7 @@
             </article>
         </div>
 
-        <div class="left">
+        <div class="reveal up left">
            <img src="../resources/images/spa.jpg" alt="spa">
            <article>
              <h4 class="section-subheading">personalised for you</h4>
@@ -429,7 +429,7 @@
 </footer>
 
 <!-- footer section ends -->
-<script src="js/main.js"></script>
+<script src="../js/main.js"></script>
 <script type="text/javascript" src="../js/facilities.js"></script>
 
 </body>
