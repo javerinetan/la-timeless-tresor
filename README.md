@@ -1,3 +1,3 @@
 # la-timeless-tresor
-my brunch
-hello
+Le Timeless Tresor Project 
+UX Design 
