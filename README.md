@@ -13,7 +13,7 @@
 <div align="center">
 
 </div>
-![My Image]https://user-images.githubusercontent.com/90853880/213100483-02df3a3e-a8a9-40ac-9e3f-3a36910a78c5.png)
+![My Image](https://user-images.githubusercontent.com/90853880/213100483-02df3a3e-a8a9-40ac-9e3f-3a36910a78c5.png)
 <br/>
 
 <center>
