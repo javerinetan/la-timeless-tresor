@@ -13,7 +13,7 @@
 <div align="center">
 
 </div>
-![My Image](https://user-images.githubusercontent.com/90853880/213100483-02df3a3e-a8a9-40ac-9e3f-3a36910a78c5.png)
+![logov2_black](https://user-images.githubusercontent.com/90853880/213101037-14131f9d-1357-49f7-a300-4739c6e588e0.png)
 <br/>
 
 <center>
