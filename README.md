@@ -8,7 +8,7 @@
 
 <h2 align="center">
    Le Timeless Trésor<br/>
-  <a href="https://letimelesstresor.netlify.app/" target="_blank">Letimelesstresor.netify</a>
+  <a href="https://letimelesstresor.netlify.app/" target="_blank">Le Timeless Trésor.netify</a>
 </h2>
 
 ![logov2_black](https://user-images.githubusercontent.com/90853880/213101037-14131f9d-1357-49f7-a300-4739c6e588e0.png)
