@@ -23,22 +23,27 @@
 </center>
 
 
-## Project Scope/Client's Problem 
+## Scope
 
-You can fork this repo to modify and make changes of your own. Please give me proper credit by linking back to [Soumyajit4419](https://github.com/soumyajit4419/Portfolio). Thanks!
+We were tasked to create a design and develop an interactive prototype, using HTML, CSS and JavaScript of a website for a hotel.
+Each mememer has to create one content intensive webpage and one interactive online form webpage
+
+## Role 
+
+UX Designer
+
+## Date 
+April 2022 - Auguest 2022 
 
 ## Built With
 
-My personal portfolio <a href="http://soumya-jit.tech/" target="_blank">soumyajit.tech</a> which features some of my github projects as well as my resume and technical skills.<br/>
-
 This project was built using these technologies.
 
-- React.js
-- Node.js
-- Express.js
-- CSS3
-- VsCode
-- Vercel
+- HTML 
+- CSS
+- Javascript
+
+It was then published onto netify. <a href="[http://soumya-jit.tech/](https://letimelesstresor.netlify.app/)" target="_blank">soumyajit.tech</a>
 
 ## Features
 
