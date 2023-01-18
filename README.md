@@ -7,11 +7,11 @@
 
 
 <h2 align="center">
-  Portfolio Website - v2.0<br/>
-  <a href="http://soumya-jit.tech/" target="_blank">soumyajit.tech</a>
+   Le Timeless Trésor<br/>
+  <a href="https://letimelesstresor.netlify.app/" target="_blank">Letimelesstresor.netify</a>
 </h2>
 <div align="center">
-  <img alt="Demo" src="./Images/readme-img1.png" />
+  <img alt="Demo" src="../media/MyMovie.mov" />
 </div>
 
 <br/>
