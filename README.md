@@ -11,7 +11,7 @@
   <a href="https://letimelesstresor.netlify.app/" target="_blank">Letimelesstresor.netify</a>
 </h2>
 <div align="center">
-  <img href="/resources/images/logov2_black.png" alt="Demo"/>
+![Uploading logov2_black.png…]()
 </div>
 
 <br/>
