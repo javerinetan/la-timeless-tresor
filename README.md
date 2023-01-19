@@ -11,9 +11,9 @@
   <a href="https://letimelesstresor.netlify.app/" target="_blank">Le Timeless Trésor.netify</a>
 </h2>
 
-<div align="center">
+
 [<img src="https://i.ytimg.com/vi/Hc79sDi3f0U/maxresdefault.jpg" width="50%">](https://www.youtube.com/watch?v=Hc79sDi3f0U "Now in Android: 55")
-</div>
+
 
 
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com) &nbsp;
