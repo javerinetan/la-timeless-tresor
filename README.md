@@ -34,15 +34,17 @@ April 2022 - Auguest 2022
 
 **📖 Multi-Page Layout**
 
-**🎨 Styled with HTML, CSS, JS with special themed colour**
+**🎨 Styled with HTML, CSS, JS with special themed colour. All pages are coded by us. Please do not take our code without crediting us.**
 
 **📱Responsive on many different devices**
 
 ## Memebers: 
-🙎‍♂️Damian :
-👱Natelie: 
-👩Amber:
-👧🏻Javerine:
+**🙎‍♂️Damian :Homepage, Accomdations, Ordering,Sign In , Sign Up **
+**👨‍Ye Yint: The Restraunt , Contact**
+**👱Natelie: Events, Events Reservation, Gallery, 360 Photos** 
+**👩Amber:Facilities Services**
+**👧🏻Javerine:About Us, Reservation, Promotions **
+
 
 
 
