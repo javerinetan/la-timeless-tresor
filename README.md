@@ -1,11 +1,3 @@
-<p> UXD Project </p> 
-
-<p>Project Scope/Client’s Problem</P>
-<p>Your Role & Solution</p>
-<p>Your Work Process</P>
-<p>Outcome & Results Achieved</p>
-
-
 <h2 align="center">
    Le Timeless Trésor<br/>
   <a href="https://letimelesstresor.netlify.app/" target="_blank">Le Timeless Trésor.netify</a>
