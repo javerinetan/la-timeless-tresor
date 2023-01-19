@@ -11,7 +11,7 @@
   <a href="https://letimelesstresor.netlify.app/" target="_blank">Le Timeless Trésor.netify</a>
 </h2>
 
-[<img ![logov2_black](https://user-images.githubusercontent.com/90853880/213531200-b62d686e-a492-4798-ab2e-11cffb2e4e33.png)](https://www.youtube.com/watch?v=IMENVfR-2eA)
+[![logov2_black](https://user-images.githubusercontent.com/90853880/213531200-b62d686e-a492-4798-ab2e-11cffb2e4e33.png)](https://www.youtube.com/watch?v=IMENVfR-2eA)
 
 
 
