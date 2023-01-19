@@ -42,13 +42,13 @@ April 2022 - Auguest 2022
 
 🙎‍♂️Damian :Homepage, Accomdations, Ordering,Sign In , Sign Up 
 
-**👨‍Ye Yint: The Restraunt , Contact**
+👨‍Ye Yint: The Restraunt , Contact
 
-**👱Natelie: Events, Events Reservation, Gallery, 360 Photos** 
+👱Natelie: Events, Events Reservation, Gallery, 360 Photos
 
-**👩Amber:Facilities Services**
+👩Amber:Facilities Services
 
-👧🏻Javerine:About Us, Reservation, Promotions 
+👧🏻Javerine:About Us, Reservation, Promotions , Golf , Golf Booking Page, Romance Booking Page, Family Booking Page
 
 
 
