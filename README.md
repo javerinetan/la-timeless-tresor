@@ -25,7 +25,6 @@ We chose this name as we wanted the memories that our guests make at our resort 
 The resort website was designed based on our user survey where 95.7% and _87% of our respondents chose a monochromatic scheme and a brown colour template respectively. 
 
 ## Role 
-
 UX Designer
 
 ## Date 
@@ -38,5 +37,8 @@ April 2022 - Auguest 2022
 **🎨 Styled with HTML, CSS, JS with special themed colour**
 
 **📱Responsive on many different devices**
+
+## Pages: 
+
 
 
