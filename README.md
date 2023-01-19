@@ -13,8 +13,8 @@
 
 [![logov2_black](https://user-images.githubusercontent.com/90853880/213531200-b62d686e-a492-4798-ab2e-11cffb2e4e33.png)](https://www.youtube.com/watch?v=IMENVfR-2eA)
 
-<p> Click on the image/logo to view our self made video of our 5 star luxary hotel on youtube </p>
-<p> or you can click on this link: https://www.youtube.com/watch?v=IMENVfR-2eA </p>
+<p> Click on the image/logo to view our self made video of our 5 star luxary hotel on youtube 
+   <br/> or you can click on this link: https://www.youtube.com/watch?v=IMENVfR-2eA </p>
 
 
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com) &nbsp;
