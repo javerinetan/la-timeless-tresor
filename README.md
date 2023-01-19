@@ -37,7 +37,7 @@ This project was built using these technologies.
 - CSS
 - Javascript
 
-It was then published onto netify. <a href="(https://letimelesstresor.netlify.app/)" target="_blank">letimelesstresor.netify</a>
+It was then published onto netify. <a href="[https://letimelesstresor.netlify.app/]" target="_blank">letimelesstresor.netify</a>
 
 ## Features
 
