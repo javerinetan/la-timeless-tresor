@@ -48,7 +48,7 @@ April 2022 - Auguest 2022
 
 **👩Amber:Facilities Services**
 
-**👧🏻Javerine:About Us, Reservation, Promotions **
+👧🏻Javerine:About Us, Reservation, Promotions 
 
 
 
