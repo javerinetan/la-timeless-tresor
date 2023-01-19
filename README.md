@@ -51,6 +51,6 @@ April 2022 - Auguest 2022
 👧🏻Javerine:About Us, Reservation, Promotions, Forms
 
 <h1 align= "center"> Work Process </h1> 
-- ![#1589F0](https://placehold.co/15x15/1589F0/1589F0.png) `#1589F0`
+<p style="blue"> Wireframes </p> 
 
 
