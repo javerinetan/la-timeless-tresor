@@ -38,7 +38,11 @@ April 2022 - Auguest 2022
 
 **📱Responsive on many different devices**
 
-## Pages: 
+## Memebers: 
+🙎‍♂️Damian :
+👱Natelie: 
+👩Amber:
+👧🏻Javerine:
 
 
 
