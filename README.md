@@ -60,7 +60,8 @@ April 2022 - Auguest 2022
 - Based on our goal for Le Timeless Trésor, we build a system along with the logo. 
    - The logo was designed by the inspiration of creating a icon to represent treasure of the time of our visiotors.
   
-- We created the base template of color schemes to use for our hotel website 
+- We created the base template of color schemes to use for our hotel website:
+<div algin "center">![unknown](https://user-images.githubusercontent.com/90853880/213608523-2cebcf63-f17d-4d9e-8798-5c3a2bcc5b0b.png)</div>
 
 💬<i> References/ Features to include to our website </i>
 
