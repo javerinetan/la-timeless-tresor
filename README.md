@@ -52,6 +52,7 @@ April 2022 - Auguest 2022
 
 <h1 align= "center"> Work Process </h1> 
 ✍️<i> Sitemap </i>
+   <img width="719" alt="sitemap" src="https://user-images.githubusercontent.com/90853880/213607188-d0f9f1e2-c0f6-4e47-8a27-0478350a26f6.png">
    
 🎨✏️<i>Wireframe</i>
    <br />
