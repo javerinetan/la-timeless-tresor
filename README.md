@@ -52,6 +52,13 @@ April 2022 - Auguest 2022
 
 <h1 align= "center"> Work Process </h1> 
 
--[x] Wireframe
+```diff
+- text in red
++ text in green
+! text in orange
+# text in gray
+@@ text in purple (and bold)@@
+```
+- Wireframes
 
 
