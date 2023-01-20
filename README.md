@@ -21,7 +21,7 @@ Our team has been assigned to design and develop an interactive prototype of a h
 
 ## What is Le Timeless Tresor ?
 The name is a mix of english and french, with tresor translating to treasure. 
-We chose this name as we wanted the memories that our guests make at our resort to be a timeless treasure for them. 
+We chose this name as we want the memories that our guests make at our resort to be a timeless treasure for them. 
 The resort website was designed based on our user survey where 95.7% and _87% of our respondents chose a monochromatic scheme and a brown colour template respectively. 
 
 ## Role 
