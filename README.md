@@ -65,12 +65,12 @@ April 2022 - Auguest 2022
 <div align="center"><img width="750" alt="Screenshot 2023-01-20 105910" src="https://user-images.githubusercontent.com/90853880/213608633-ea622708-1bcf-4316-bd24-3f9c8b05dd92.png"></div>
 
 
-💬<i> References/ Features to include to our website </i>
+💬<i> References/ Features included to our website </i>
 
 - This are the website that we reference to base on the design we prefered and improving on these ideas to make our website better. 
 <a href="https://docs.google.com/document/d/1D6m8H17grLfOxrVk1OYEcZxodajLchxxZOqRLz2XyHw/edit?usp=sharing " target="_blank">Key features to include</a>
 
-   
+🔨<i> Protoyping by skecthing and on Pencil app </i>
    
 
 
