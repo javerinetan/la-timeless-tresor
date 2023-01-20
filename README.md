@@ -51,14 +51,6 @@ April 2022 - Auguest 2022
 👧🏻Javerine:About Us, Reservation, Promotions, Forms
 
 <h1 align= "center"> Work Process </h1> 
-
-```diff
-- text in red
-+ text in green
-! text in orange
-# text in gray
-@@ text in purple (and bold)@@
-```
-- Wireframes
+<span style="color: blue;">Wireframes</span>
 
 
