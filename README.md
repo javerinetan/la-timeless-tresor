@@ -51,6 +51,7 @@ April 2022 - Auguest 2022
 👧🏻Javerine:About Us, Reservation, Promotions, Forms
 
 <h1 align= "center"> Work Process </h1> 
+feat: Add network icon (feathericons#94)
 🎨✏️<i>Wireframe<i>
    <br />
    
@@ -58,6 +59,7 @@ April 2022 - Auguest 2022
    - The logo was designed by the inspiration of creating a icon to represent treasure of the time of our visiotors.
   
 - We created the base template of color schemes to use for our hotel website 
+   
    
 
 
