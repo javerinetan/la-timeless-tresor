@@ -51,8 +51,9 @@ April 2022 - Auguest 2022
 👧🏻Javerine:About Us, Reservation, Promotions, Forms
 
 <h1 align= "center"> Work Process </h1> 
-feat: Add network icon (feathericons#94)
-🎨✏️<i>Wireframe<i>
+✍️<i> Sitemap </i>
+   
+🎨✏️<i>Wireframe</i>
    <br />
    
 - Based on our goal for Le Timeless Trésor, we build a system along with the logo. 
