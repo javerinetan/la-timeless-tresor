@@ -51,6 +51,6 @@ April 2022 - Auguest 2022
 👧🏻Javerine:About Us, Reservation, Promotions, Forms
 
 <h1 align= "center"> Work Process </h1> 
-<i>Wireframe<i>
+<p style="font-size: 30px"><i>Wireframe<i></p>
 
 
