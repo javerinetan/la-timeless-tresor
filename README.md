@@ -1,3 +1,7 @@
+<style>p{color:Blue;}</style>
+
+
+
 <h2 align="center">
    Le Timeless Trésor<br/>
   <a href="https://letimelesstresor.netlify.app/" target="_blank">Le Timeless Trésor.netify</a>
@@ -51,11 +55,6 @@ April 2022 - Auguest 2022
 👧🏻Javerine:About Us, Reservation, Promotions, Forms
 
 <h1 align= "center"> Work Process </h1> 
-<style>
-p {
-  color: green;
-}
-</style>
 <p">Wireframes</p>
 
 
