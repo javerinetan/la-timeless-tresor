@@ -61,7 +61,7 @@ April 2022 - Auguest 2022
    - The logo was designed by the inspiration of creating a icon to represent treasure of the time of our visiotors.
   
 - We created the base template of color schemes to use for our hotel website:
-<div algin="center"><img width="575" alt="Screenshot 2023-01-20 105910" src="https://user-images.githubusercontent.com/90853880/213608633-ea622708-1bcf-4316-bd24-3f9c8b05dd92.png"></div>
+<div align="center"><img width="575" alt="Screenshot 2023-01-20 105910" src="https://user-images.githubusercontent.com/90853880/213608633-ea622708-1bcf-4316-bd24-3f9c8b05dd92.png"></div>
 
 💬<i> References/ Features to include to our website </i>
 
