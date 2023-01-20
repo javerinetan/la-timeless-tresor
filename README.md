@@ -62,9 +62,11 @@ April 2022 - Auguest 2022
   
 - We created the base template of color schemes to use for our hotel website 
 
-💬<i> References to help us design our website </i>
-This are the website that we reference to base on the design we prefered and improving on these ideas to make our website better. 
-https://docs.google.com/document/d/1D6m8H17grLfOxrVk1OYEcZxodajLchxxZOqRLz2XyHw/edit?usp=sharing 
+💬<i> References/ Features to include to our website </i>
+
+- This are the website that we reference to base on the design we prefered and improving on these ideas to make our website better. 
+<a href="https://docs.google.com/document/d/1D6m8H17grLfOxrVk1OYEcZxodajLchxxZOqRLz2XyHw/edit?usp=sharing " target="_blank">Key features to include</a>
+
    
    
 
