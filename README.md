@@ -54,7 +54,9 @@ April 2022 - Auguest 2022
 🎨✏️<i>Wireframe<i>
    <br />
 - Based on our goal for Le Timeless Trésor, we build a system along with the logo. 
+   
 - The logo was designed by the inspiration of creating a icon to represent treasure of the time of our visiotors.
+   
 - 
 
 
