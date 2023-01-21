@@ -87,7 +87,9 @@ I started by creating the about us page first as it was a lot of content . This 
 
 🧪 <i> Deployment and testing </i>
 
-We optimised it on mobile and different screen sizes for computer too. We individually tested a few screen sizes like iPhone, 
+We optimised it on mobile and different screen sizes for computer too. We individually tested a few screen sizes like iPhone, and different computer size like 14 , 15,16,20 inch computers screen sizes. 
+
+<h1 align= "center"> Outcome </h1> 
 
 
 
