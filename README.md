@@ -76,7 +76,7 @@ April 2022 - Auguest 2022
  
  Sketched Prototype: 
  <img width="100%" alt="Handrawncopy" src="https://user-images.githubusercontent.com/90853880/213840951-b116d88e-4dc5-4d8b-ad59-5bd5018c0819.png">
-
+When sketching the prototype, I created pop up visuals to represent the buttons and drop down menu. This allows me to better visualise if my design was easy to use and navigate around.  
  
  <a href= "https://www.canva.com/design/DAFAgdUdTn8/rTm-HCans2BLLxNRgDd92w/viewutm_content=DAFAgdUdTn8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target = "_blank">  Link to drafted prototype on pencil app
 
