@@ -81,6 +81,7 @@ When sketching the prototype, I created pop up visuals to represent the buttons 
  <a href= "https://www.canva.com/design/DAFAgdUdTn8/rTm-HCans2BLLxNRgDd92w/viewutm_content=DAFAgdUdTn8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target = "_blank">  Link to drafted prototype on pencil app
 
  👩‍💻<i> Development </i>
+
 Once all our sketches was approved by each member, we started developing our website using HTML and CSS. Our leader Damian created a GitHub repository to help us intergrate our project together. 
 I started by creating the about us page first as it was a lot of content . This was my first time using HTML and CSS to code a website. It was a learning experience as I watched and learned from online website how to code different parts of website.
 
