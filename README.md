@@ -72,6 +72,8 @@ April 2022 - Auguest 2022
 
 🔨<i> Protoyping by skecthing and on Pencil app </i>
  
+ Next was the prototyping stage where designed the different pages by sketching and using the pencil app to improve the design quality. I took into consideration user experience and easy navigation. Defining the features I wanted on the site, which was to ensure that the users will be able to get the information they want presented in a nice and organised manner.
+ 
  Sketched Prototype: 
  <img width="100%" alt="Handrawncopy" src="https://user-images.githubusercontent.com/90853880/213840951-b116d88e-4dc5-4d8b-ad59-5bd5018c0819.png">
 
