@@ -71,6 +71,7 @@ April 2022 - Auguest 2022
 <a href="https://docs.google.com/document/d/1D6m8H17grLfOxrVk1OYEcZxodajLchxxZOqRLz2XyHw/edit?usp=sharing " target="_blank">Key features and references.</a>
 
 🔨<i> Protoyping by skecthing and on Pencil app </i>
-  <a href= "https://www.canva.com/design/DAFAgdUdTn8/rTm-HCans2BLLxNRgDd92w/viewutm_content=DAFAgdUdTn8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target = "_blank">  Link to drafted prototype on pencil app
+ 
+ <a href= "https://www.canva.com/design/DAFAgdUdTn8/rTm-HCans2BLLxNRgDd92w/viewutm_content=DAFAgdUdTn8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target = "_blank">  Link to drafted prototype on pencil app
 
 
