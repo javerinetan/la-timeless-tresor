@@ -91,6 +91,10 @@ We optimised it on mobile and different screen sizes for computer too. We indivi
 
 <h1 align= "center"> Outcome </h1> 
 
+After we had deployed our website, we asked for opinions from different age group of people what they feel about our website and if they face any issues using it . More than 90% of our users were pleased without our design and felt that the website looks like a hotel they will definitely want go to. 
+Overall we were very satisfied with the final outcome as it look legitimate and was able to be approved by many different users. 
+
+<h1 align= "center"> Difficulties </h1> 
 
 
 
