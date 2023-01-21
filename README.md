@@ -72,6 +72,12 @@ April 2022 - Auguest 2022
 
 🔨<i> Protoyping by skecthing and on Pencil app </i>
  
+ Sketched Prototype: 
+ <img width="100%" alt="Handrawncopy" src="https://user-images.githubusercontent.com/90853880/213840951-b116d88e-4dc5-4d8b-ad59-5bd5018c0819.png">
+
+ 
  <a href= "https://www.canva.com/design/DAFAgdUdTn8/rTm-HCans2BLLxNRgDd92w/viewutm_content=DAFAgdUdTn8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target = "_blank">  Link to drafted prototype on pencil app
+
+  
 
 
