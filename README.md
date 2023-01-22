@@ -96,5 +96,5 @@ Overall we were very satisfied with the final outcome as it look legitimate and 
 
 <h1 align= "center"> Difficulties </h1> 
 
-
+As this is the first time I did coding for any website, I face many issues like using the css to style my webpage. Thankfully I had the best teammates who supported and guided me along, teaching me how to code and have fun at the same time . 
 
