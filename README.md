@@ -15,6 +15,9 @@
 [![forthebadge](https://forthebadge.com/images/badges/uses-css.svg)](https://forthebadge.com)
 
 </center>
+## Grade Received 
+
+💯 Distinction
 
 ## Scope
 Our team has been assigned to design and develop an interactive prototype of a hotel website using HTML, CSS, and JavaScript. Each team member is responsible for creating one content-rich webpage and one interactive online form webpage.
