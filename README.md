@@ -103,6 +103,7 @@ We ensured optimal performance on various devices by optimizing the website for 
 After successfully deploying our website, we sought feedback from a diverse range of users to gauge their perception of the design and usability. To our satisfaction, a vast majority of our users expressed positive reactions to the website's appearance and felt it was indicative of a hotel they would want to visit. Overall, we were extremely pleased with the final outcome as it was not only visually appealing but also received approval from a diverse group of users. different users. 
 
 <h1 align= "center"> Presentation </h1> 
+   
 ![hi](https://user-images.githubusercontent.com/90853880/215035090-3c321fe5-4f5d-47eb-9993-fbd6d7161bd8.jpg)
 
 
