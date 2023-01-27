@@ -104,6 +104,7 @@ After successfully deploying our website, we sought feedback from a diverse rang
 
 <h1 align= "center"> Presentation </h1> 
 <div align="center" > 
+   
 ![hi](https://user-images.githubusercontent.com/90853880/215035090-3c321fe5-4f5d-47eb-9993-fbd6d7161bd8.jpg)</div>
 
 
