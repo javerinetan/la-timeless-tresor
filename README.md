@@ -102,6 +102,9 @@ We ensured optimal performance on various devices by optimizing the website for 
 
 After successfully deploying our website, we sought feedback from a diverse range of users to gauge their perception of the design and usability. To our satisfaction, a vast majority of our users expressed positive reactions to the website's appearance and felt it was indicative of a hotel they would want to visit. Overall, we were extremely pleased with the final outcome as it was not only visually appealing but also received approval from a diverse group of users. different users. 
 
+<h1 align= "center"> Presentation </h1> 
+![WhatsApp Image 2023-01-27 at 15 48 53](https://user-images.githubusercontent.com/90853880/215034996-bbbaac6c-4a93-4a11-82df-808fd8d43e56.jpg)
+
 <h1 align= "center"> Difficulties </h1> 
    
 As a beginner in website development, I encountered various challenges, particularly with styling using CSS. However, with the support and guidance of my skilled teammates, I was able to overcome these obstacles and learn the art of coding while enjoying the process.
