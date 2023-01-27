@@ -99,6 +99,5 @@ After we had deployed our website, we asked for opinions from different age grou
 Overall we were very satisfied with the final outcome as it look legitimate and was able to be approved by many different users. 
 
 <h1 align= "center"> Difficulties </h1> 
-
-As this is the first time I did coding for any website, I face many issues like using the css to style my webpage. Thankfully I had the best teammates who supported and guided me along, teaching me how to code and have fun at the same time . 
+As a beginner in website development, I encountered various challenges, particularly with styling using CSS. However, with the support and guidance of my skilled teammates, I was able to overcome these obstacles and learn the art of coding while enjoying the process.
 
