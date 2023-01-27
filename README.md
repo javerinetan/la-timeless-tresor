@@ -21,12 +21,14 @@
 💯 Distinction
 
 ## Scope
-Our team has been assigned to design and develop an interactive prototype of a hotel website using HTML, CSS, and JavaScript. Each team member is responsible for creating one content-rich webpage and one interactive online form webpage.
+
+Our team was tasked with creating an interactive prototype of a hotel website utilizing HTML, CSS, and JavaScript. Each team member was assigned to design and develop one content-rich webpage and one interactive webpage, which would include an online form.
 
 ## What is Le Timeless Tresor ?
-The name is a mix of english and french, with tresor translating to treasure. 
-We chose this name as we want the memories that our guests make at our resort to be a timeless treasure for them. 
-The resort website was designed based on our user survey where 95.7% and 87% of our respondents chose a monochromatic scheme and a brown colour template respectively. 
+
+The name "Tresor" is a combination of English and French, with "tresor" translating to "treasure" in English. We chose this name as it represents the precious memories that guests will create during their stay at our resort.
+
+The design of the resort website was based on the feedback from a user survey. The survey revealed that 95.7% of respondents preferred a monochromatic color scheme and 87% chose a brown color template.
 
 ## Role 
 UX Designer
@@ -61,7 +63,7 @@ April 2022 - Auguest 2022
 🎨✏️<i>Wireframe</i>
    <br />
    
-- Based on our goal for Le Timeless Trésor, we build a system along with the logo. 
+- Based on our goal for Le Timeless Trésor, we build our design base on our theme. 
    - The logo was designed by the inspiration of creating a icon to represent treasure of the time of our visiotors.
   
 - Color scheme template we use for our hotel website:
@@ -76,11 +78,11 @@ April 2022 - Auguest 2022
 
 🔨<i> Protoyping by skecthing and on Pencil app </i>
  
- Next was the prototyping stage where designed the different pages by sketching and using the pencil app to improve the design quality. I took into consideration user experience and easy navigation. Defining the features I wanted on the site, which was to ensure that the users will be able to get the information they want presented in a nice and organised manner.
+After the research phase, we moved on to the prototyping stage. In this stage, we designed the various pages by sketching and using the pencil app to enhance the design quality. I focused on user experience and easy navigation while designing. I defined the features I wanted on the site, with the goal of ensuring that users would be able to easily find and access the information they needed, presented in an organized and visually pleasing manner.
  
  Sketched Prototype: 
  <img width="100%" alt="Handrawncopy" src="https://user-images.githubusercontent.com/90853880/213840951-b116d88e-4dc5-4d8b-ad59-5bd5018c0819.png">
-When sketching the prototype, I created pop up visuals to represent the buttons and drop down menu. This allows me to better visualise if my design was easy to use and navigate around.  
+While sketching the prototype, I included pop-up visuals to represent buttons and drop-down menus. This allowed me to better visualize the ease of use and navigability of my design, helping me to make improvements where needed.
  
  <a href= "https://www.canva.com/design/DAFAgdUdTn8/rTm-HCans2BLLxNRgDd92w/viewutm_content=DAFAgdUdTn8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target = "_blank">  Link to drafted prototype on pencil app
 
