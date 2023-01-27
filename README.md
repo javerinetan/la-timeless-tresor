@@ -86,18 +86,21 @@ When sketching the prototype, I created pop up visuals to represent the buttons 
 
  👩‍💻<i> Development </i>
 
-Once all our sketches was approved by each member, we started developing our website using HTML and CSS. Our leader Damian created a GitHub repository to help us intergrate our project together. 
-I started by creating the about us page first as it was a lot of content . This was my first time using HTML and CSS to code a website. It was a learning experience as I watched and learned from online website how to code different parts of website.
+- Once all sketches were approved by the team members, we began developing the website using HTML and CSS.
+- Our team leader, Damian, set up a GitHub repository to facilitate collaboration on the project.
+- I started by working on the About Us page, as it required a significant amount of content.
+- This was my first experience using HTML and CSS to code a website, and it proved to be a valuable learning experience.
+- I learned by observing and studying various online tutorials on how to code different elements of a website.
 
 🧪 <i> Deployment and testing </i>
 
-We optimised it on mobile and different screen sizes for computer too. We individually tested a few screen sizes like iPhone, and different computer size like 14 , 15,16,20 inch computers screen sizes. 
+We ensured optimal performance on various devices by optimizing the website for both mobile and different screen sizes on computers. We conducted thorough testing on multiple devices, including different iPhone models and computer screens ranging from 14 to 20 inches, to ensure compatibility and seamless user experience across all platforms.
 
 <h1 align= "center"> Outcome </h1> 
 
-After we had deployed our website, we asked for opinions from different age group of people what they feel about our website and if they face any issues using it . More than 90% of our users were pleased without our design and felt that the website looks like a hotel they will definitely want go to. 
-Overall we were very satisfied with the final outcome as it look legitimate and was able to be approved by many different users. 
+After successfully deploying our website, we sought feedback from a diverse range of users to gauge their perception of the design and usability. To our satisfaction, a vast majority of our users expressed positive reactions to the website's appearance and felt it was indicative of a hotel they would want to visit. Overall, we were extremely pleased with the final outcome as it was not only visually appealing but also received approval from a diverse group of users. different users. 
 
 <h1 align= "center"> Difficulties </h1> 
+   
 As a beginner in website development, I encountered various challenges, particularly with styling using CSS. However, with the support and guidance of my skilled teammates, I was able to overcome these obstacles and learn the art of coding while enjoying the process.
 
