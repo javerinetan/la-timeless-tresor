@@ -20,7 +20,7 @@
 
 💯 Distinction
 
-## Scope
+## Project Scope
 
 Our team was tasked with creating an interactive prototype of a hotel website utilizing HTML, CSS, and JavaScript. Each team member was assigned to design and develop one content-rich webpage and one interactive webpage, which would include an online form.
 
