@@ -88,12 +88,18 @@ While sketching the prototype, I included pop-up visuals to represent buttons an
 
  👩‍💻<i> Development </i>
 
-- Once all sketches were approved by the team members, we began developing the website using HTML and CSS.
+- Once all sketches were approved by each team members, we began developing the website using HTML and CSS.
 - Our team leader, Damian, set up a GitHub repository to facilitate collaboration on the project.
+   - This improve the collaboration and streamline the deveopment process, as all the members were able to work on the same file, allowing the integration process to be smooth sailing 
 - I started by working on the About Us page, as it required a significant amount of content.
 - This was my first experience using HTML and CSS to code a website, and it proved to be a valuable learning experience.
 - I learned by observing and studying various online tutorials on how to code different elements of a website.
 
+ 👩‍💻<i> Coding </i>
+ Here is some code written by me: 
+![image](https://user-images.githubusercontent.com/90853880/217618767-65b76f75-e25a-4bd2-9dbe-98c46167e3ce.png)
+![image](https://user-images.githubusercontent.com/90853880/217619048-f6296bba-5414-4bb2-961a-320c8e6ef0cf.png)
+   
 🧪 <i> Deployment and testing </i>
 
 We ensured optimal performance on various devices by optimizing the website for both mobile and different screen sizes on computers. We conducted thorough testing on multiple devices, including different iPhone models and computer screens ranging from 14 to 20 inches, to ensure compatibility and seamless user experience across all platforms.
