@@ -95,7 +95,7 @@ While sketching the prototype, I included pop-up visuals to represent buttons an
 - This was my first experience using HTML and CSS to code a website, and it proved to be a valuable learning experience.
 - I learned by observing and studying various online tutorials on how to code different elements of a website.
 
-   👩‍💻Here is some <i>code</i> written by me:
+👩‍💻Here is some <i>code</i> written by me:
 ![image](https://user-images.githubusercontent.com/90853880/217618767-65b76f75-e25a-4bd2-9dbe-98c46167e3ce.png)
 ![image](https://user-images.githubusercontent.com/90853880/217619048-f6296bba-5414-4bb2-961a-320c8e6ef0cf.png)
    
