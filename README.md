@@ -112,6 +112,11 @@ After successfully deploying our website, we sought feedback from a diverse rang
    
 ![hi](https://user-images.githubusercontent.com/90853880/215035090-3c321fe5-4f5d-47eb-9993-fbd6d7161bd8.jpg)</div>
 
+## Feedback 
+- Good team work 
+- Excellent integration 
+- Well explained 
+- Interactive and excellent design 
 
 <h1 align= "center"> Difficulties </h1> 
    
