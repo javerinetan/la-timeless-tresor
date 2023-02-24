@@ -24,9 +24,9 @@
 
 Our team was tasked with creating an interactive prototype of a hotel website utilizing HTML, CSS, and JavaScript. Each team member was assigned to design and develop one content-rich webpage and one interactive webpage, which would include an online form.
 
-## What is Le Timeless Tresor ?
+## What is Le Timeless Trésor ?
 
-The name "Tresor" is a combination of English and French, with "tresor" translating to "treasure" in English. We chose this name as it represents the precious memories that guests will create during their stay at our resort.
+The name "Trésor" is a combination of English and French, with "trésor" translating to "treasure" in English. We chose this name as it represents the precious memories that guests will create during their stay at our resort.
 
 The design of the resort website was based on the feedback from a user survey. The survey revealed that 95.7% of respondents preferred a monochromatic color scheme and 87% chose a brown color template.
 
@@ -34,7 +34,7 @@ The design of the resort website was based on the feedback from a user survey. T
 UX Designer
 
 ## Date 
-April 2022 - Auguest 2022 
+April 2022 - August 2022 
 
 ## Features
 
@@ -44,17 +44,17 @@ April 2022 - Auguest 2022
 
 **📱Responsive on many different devices**
 
-## Memebers: 
+## Members: 
 
-🙎‍♂️Damian :Homepage, Accomdations, Ordering , Sign In , Sign Up 
+🙎‍♂️Damian: Homepage, Accomdations, Ordering , Sign In , Sign Up 
 
 👨‍Ye Yint: The Restraunt , Contact
 
 👱Natelie: Events, Events Reservation, Gallery, 360 Photos
 
-👩Amber:Facilities, Services, Forms
+👩Amber: Facilities, Services, Forms
 
-👧🏻Javerine:About Us, Reservation, Promotions, Forms
+👧🏻Javerine: About Us, Reservation, Promotions, Forms
 
 <h1 align= "center"> Work Process </h1> 
 ✍️<i> Sitemap </i>
@@ -67,13 +67,13 @@ April 2022 - Auguest 2022
    - The logo was designed by the inspiration of creating a icon to represent treasure of the time of our visiotors.
   
 - Color scheme template we use for our hotel website:
-   - These colors were choosen base on the idea of creating a luxury feel and minimalist hotel. 
+   - These colors were chosen based on the idea of creating a luxury feel and minimalist hotel. 
 <div align="center"><img width="750" alt="Screenshot 2023-01-20 105910" src="https://user-images.githubusercontent.com/90853880/213608633-ea622708-1bcf-4316-bd24-3f9c8b05dd92.png"></div>
 
 
-💬<i> References/ Features included to our website </i>
+💬<i> References/ Features included in our website </i>
 
-- This are the website that we reference to base on the design we prefered and improving on these ideas to make our website better. 
+- These are the websites that we referenced to base on the design we preferred, and improving on these ideas to make our website better. 
 <a href="https://docs.google.com/document/d/1D6m8H17grLfOxrVk1OYEcZxodajLchxxZOqRLz2XyHw/edit?usp=sharing " target="_blank">Key features and references.</a>
 
 🔨<i> Protoyping by skecthing and on Pencil app </i>
@@ -90,12 +90,12 @@ While sketching the prototype, I included pop-up visuals to represent buttons an
 
 - Once all sketches were approved by each team members, we began developing the website using HTML and CSS.
 - Our team leader, Damian, set up a GitHub repository to facilitate collaboration on the project.
-   - This improve the collaboration and streamline the deveopment process, as all the members were able to work on the same file, allowing the integration process to be smooth sailing 
+   - This improved the collaboration and streamlined the deveopment process, as all the members were able to work on the same file, allowing the integration process to be smooth sailing 
 - I started by working on the About Us page, as it required a significant amount of content.
 - This was my first experience using HTML and CSS to code a website, and it proved to be a valuable learning experience.
 - I learned by observing and studying various online tutorials on how to code different elements of a website.
 
-👩‍💻Here is some <i>code</i> written by me:
+👩‍💻Here is some <i>codes</i> written by me:
 ![image](https://user-images.githubusercontent.com/90853880/217618767-65b76f75-e25a-4bd2-9dbe-98c46167e3ce.png)
 ![image](https://user-images.githubusercontent.com/90853880/217619048-f6296bba-5414-4bb2-961a-320c8e6ef0cf.png)
    
@@ -105,7 +105,7 @@ We ensured optimal performance on various devices by optimizing the website for 
 
 <h1 align= "center"> Outcome </h1> 
 
-After successfully deploying our website, we sought feedback from a diverse range of users to gauge their perception of the design and usability. To our satisfaction, a vast majority of our users expressed positive reactions to the website's appearance and felt it was indicative of a hotel they would want to visit. Overall, we were extremely pleased with the final outcome as it was not only visually appealing but also received approval from a diverse group of users. different users. 
+After successfully deploying our website, we sought feedback from a diverse range of users to gauge their perception of the design and usability. To our satisfaction, a vast majority of our users expressed positive reactions to the website's appearance and felt it was indicative of a hotel they would want to visit. Overall, we were extremely pleased with the final outcome as it was not only visually appealing but also received approval from a diverse group of users.
 
 <h1 align= "center"> Presentation Day!</h1> 
 <div align="center" > 
@@ -120,5 +120,5 @@ After successfully deploying our website, we sought feedback from a diverse rang
 
 <h1 align= "center"> Difficulties </h1> 
    
-As a beginner in website development, I encountered various challenges, particularly with styling using CSS. However, with the support and guidance of my skilled teammates, I was able to overcome these obstacles and learn the art of coding while enjoying the process.
+As a beginner to website development, I encountered various challenges, particularly with styling using CSS. However, with the support and guidance of my skilled teammates, I was able to overcome these obstacles and learn the art of coding while enjoying the process.
 
