@@ -74,7 +74,7 @@ April 2022 - August 2022
 💬<i> References/ Features included in our website </i>
 
 - These are the websites that we referenced to base on the design we preferred, and improving on these ideas to make our website better. 
-<a href="https://docs.google.com/document/d/1D6m8H17grLfOxrVk1OYEcZxodajLchxxZOqRLz2XyHw/edit?usp=sharing " target="_blank">Key features and references.</a>
+<a href="https://docs.google.com/document/d/1D6m8H17grLfOxrVk1OYEcZxodajLchxxZOqRLz2XyHw/edit?usp=sharing" target="_blank">Key features and references.</a>
 
 🔨<i> Protoyping by skecthing and on Pencil app </i>
  
